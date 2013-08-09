@@ -1,0 +1,313 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/string/BidiComplex</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/string/BidiComplex<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<p>See the <a href="/reference-guide/1.9/dojox/string.html" target="_blank">dojox/string/BidiComplex reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__ceCopyText" class="inline-link"> _ceCopyText</a><span class="parameters">(</span>elem) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__ceCutText" class="inline-link"> _ceCutText</a><span class="parameters">(</span>elem) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__ceKeyDown" class="inline-link"> _ceKeyDown</a><span class="parameters">(</span>event) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__ceKeyUp" class="inline-link"> _ceKeyUp</a><span class="parameters">(</span>event) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__getCaretPos" class="inline-link"> _getCaretPos</a><span class="parameters">(</span>event, elem) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__parse" class="inline-link"> _parse</a><span class="parameters">(</span>str, pattern) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__processCopy" class="inline-link"> _processCopy</a><span class="parameters">(</span>elem, text, isReverse) <span>This function strips the unicode directional controls when the text copied to the Clipboard</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_string_BidiComplex__setSelectedRange" class="inline-link"> _setSelectedRange</a><span class="parameters">(</span>elem, selectionStart, selectionEnd) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_string_BidiComplex_attachInput" class="inline-link"> attachInput</a><span class="parameters">(</span>field, pattern) <span>Attach key listeners to the INPUT field to accomodate dynamic complex BiDi expressions</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_string_BidiComplex_createDisplayString" class="inline-link"> createDisplayString</a><span class="parameters">(</span>str, pattern) <span>Create the display string by adding the Unicode direction Markers</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_string_BidiComplex_stripSpecialCharacters" class="inline-link"> stripSpecialCharacters</a><span class="parameters">(</span>str) <span>removes all Unicode directional markers from the string</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__ceCopyText"></a><span class="functionIcon">_ceCopyText</span><span class="parameters">(elem)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__ceCutText"></a><span class="functionIcon">_ceCutText</span><span class="parameters">(elem)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__ceKeyDown"></a><span class="functionIcon">_ceKeyDown</span><span class="parameters">(event)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__ceKeyUp"></a><span class="functionIcon">_ceKeyUp</span><span class="parameters">(event)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__getCaretPos"></a><span class="functionIcon">_getCaretPos</span><span class="parameters">(event, elem)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__parse"></a><span class="functionIcon">_parse</span><span class="parameters">(str, pattern)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pattern</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__processCopy"></a><span class="functionIcon">_processCopy</span><span class="parameters">(elem, text, isReverse)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>This function strips the unicode directional controls when the text copied to the Clipboard</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">text</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isReverse</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex__setSelectedRange"></a><span class="functionIcon">_setSelectedRange</span><span class="parameters">(elem, selectionStart, selectionEnd)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">selectionStart</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">selectionEnd</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex_attachInput"></a><span class="functionIcon">attachInput</span><span class="parameters">(field, pattern)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Attach key listeners to the INPUT field to accomodate dynamic complex BiDi expressions</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">field</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pattern</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex_createDisplayString"></a><span class="functionIcon">createDisplayString</span><span class="parameters">(str, pattern)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create the display string by adding the Unicode direction Markers</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pattern</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiComplex_stripSpecialCharacters"></a><span class="functionIcon">stripSpecialCharacters</span><span class="parameters">(str)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiComplex" class="jsdoc-link">dojox/string/BidiComplex</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>removes all Unicode directional markers from the string</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

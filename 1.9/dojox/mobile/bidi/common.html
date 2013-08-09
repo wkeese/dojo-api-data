@@ -1,0 +1,120 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/bidi/common</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/mobile/bidi/common<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<p>See the <a href="/reference-guide/1.9/dojox/mobile/bidi.html" target="_blank">dojox/mobile/bidi/common reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon"><a href="#1_9dojox_mobile_bidi_common_MARK" class="inline-link"> MARK </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_9dojox_mobile_bidi_common_enforceTextDirWithUcc" class="inline-link"> enforceTextDirWithUcc</a><span class="parameters">(</span>text, textDir) <span>Wraps by UCC (Unicode control characters) displayed text according to textDir.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_mobile_bidi_common_removeUCCFromText" class="inline-link"> removeUCCFromText</a><span class="parameters">(</span>text) <span>Removes UCC from input string.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_mobile_bidi_common_setTextDirForButtons" class="inline-link"> setTextDirForButtons</a><span class="parameters">(</span>widget) <span>Sets textDir property to children.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_bidi_common_MARK"></a><span class="objectIcon">MARK</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/bidi/common" class="jsdoc-link">dojox/mobile/bidi/common</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_bidi_common_enforceTextDirWithUcc"></a><span class="functionIcon">enforceTextDirWithUcc</span><span class="parameters">(text, textDir)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bidi/common" class="jsdoc-link">dojox/mobile/bidi/common</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Wraps by UCC (Unicode control characters) displayed text according to textDir.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>There&#39;s a dir problem with some HTML elements. For some Android browsers Hebrew text is displayed right to left also 
+when dir is set to LTR.
+Therefore the only solution is to use UCC to display the text in correct orientation.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">text</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The text to be wrapped.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">textDir</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>Text direction.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_bidi_common_removeUCCFromText"></a><span class="functionIcon">removeUCCFromText</span><span class="parameters">(text)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bidi/common" class="jsdoc-link">dojox/mobile/bidi/common</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Removes UCC from input string.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">text</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The text to be stripped from UCC.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_bidi_common_setTextDirForButtons"></a><span class="functionIcon">setTextDirForButtons</span><span class="parameters">(widget)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bidi/common" class="jsdoc-link">dojox/mobile/bidi/common</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets textDir property to children.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">widget</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>parent widget</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

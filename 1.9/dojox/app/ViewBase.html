@@ -1,0 +1,224 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/app/ViewBase</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/app/ViewBase<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<div class="jsdoc-full-summary"><p>View base class with model &amp; controller capabilities. Subclass must implement rendering capabilities.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ViewBase<span class="parameters">(params);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/app/ViewBase">dojox/app/ViewBase</a></div>
+<div class="jsdoc-summary"><p>Constructs a ViewBase instance.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">params</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description"><p>view parameters, include:
+
+</p>
+<ul>
+<li>app: the app</li>
+<li>id: view id</li>
+<li>name: view name</li>
+<li>parent: parent view</li>
+<li>controller: view controller module identifier</li>
+<li>children: children views</li>
+</ul>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.9/dojox/app.html" target="_blank">dojox/app/ViewBase reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_9dojox_app_ViewBase__createDataStore" class="inline-link"> _createDataStore</a><span class="parameters">(</span>) <span>Create data store instance for View specific stores</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_app_ViewBase__loadViewController" class="inline-link"> _loadViewController</a><span class="parameters">(</span>) <span>Load view controller by configuration or by default.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_app_ViewBase__setupModel" class="inline-link"> _setupModel</a><span class="parameters">(</span>) <span>Load views model if it is not already loaded then call _startup.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_app_ViewBase__startLayout" class="inline-link"> _startLayout</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_9dojox_app_ViewBase__startup" class="inline-link"> _startup</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_afterActivate" class="inline-link"> afterActivate</a><span class="parameters">(</span>) <span>view life cycle afterActivate()</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_afterDeactivate" class="inline-link"> afterDeactivate</a><span class="parameters">(</span>) <span>view life cycle afterDeactivate()</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_beforeActivate" class="inline-link"> beforeActivate</a><span class="parameters">(</span>) <span>view life cycle beforeActivate()</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_beforeDeactivate" class="inline-link"> beforeDeactivate</a><span class="parameters">(</span>) <span>view life cycle beforeDeactivate()</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Constructs a ViewBase instance.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>view life cycle destroy()</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>view life cycle init()</span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_load" class="inline-link"> load</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_9dojox_app_ViewBase_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>start view object.
+load view template, view controller implement and startup all widgets in view template.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase__createDataStore"></a><span class="functionIcon">_createDataStore</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create data store instance for View specific stores
+</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase__loadViewController"></a><span class="functionIcon">_loadViewController</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Load view controller by configuration or by default.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase__setupModel"></a><span class="functionIcon">_setupModel</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Load views model if it is not already loaded then call _startup.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase__startLayout"></a><span class="functionIcon">_startLayout</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>startup widgets in view template.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase__startup"></a><span class="functionIcon">_startup</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>startup widgets in view template.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_afterActivate"></a><span class="functionIcon">afterActivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>view life cycle afterActivate()</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_afterDeactivate"></a><span class="functionIcon">afterDeactivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>view life cycle afterDeactivate()</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_beforeActivate"></a><span class="functionIcon">beforeActivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>view life cycle beforeActivate()</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_beforeDeactivate"></a><span class="functionIcon">beforeDeactivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>view life cycle beforeDeactivate()</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Constructs a ViewBase instance.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">params</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>view parameters, include:
+
+</p>
+<ul>
+<li>app: the app</li>
+<li>id: view id</li>
+<li>name: view name</li>
+<li>parent: parent view</li>
+<li>controller: view controller module identifier</li>
+<li>children: children views</li>
+</ul>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>view life cycle destroy()</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>view life cycle init()</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_load"></a><span class="functionIcon">load</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_app_ViewBase_start"></a><span class="functionIcon">start</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>start view object.
+load view template, view controller implement and startup all widgets in view template.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function | instance</span></div>
+        <div class="jsdoc-return-description"><p>start view object.
+load view template, view controller implement and startup all widgets in view template.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
