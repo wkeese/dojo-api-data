@@ -6,7 +6,7 @@ At initialization, and when the properties are updated, creates the data from da
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/mvc/_base.StatefulSeries<span class="parameters">(items);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _base.StatefulSeries<span class="parameters">(items);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mvc/StatefulSeries">dojox/mvc/StatefulSeries</a></div>
 <table class="jsdoc-parameters">
@@ -22,36 +22,37 @@ At initialization, and when the properties are updated, creates the data from da
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/mvc.html" target="_blank">dojox/mvc/_base.StatefulSeries reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><p>Two seconds later, the chart changes from 25%/25%/50% to 10%/10%/80%, as the data model changes:</p>
-<pre><code>    &lt;html&gt;
-      &lt;head&gt;
+    <h3>Example 1</h3><p>Two seconds later, the chart changes from 25%/25%/50% to 10%/10%/80%, as the data model changes:
+
+</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
         &lt;script type=&quot;text/javascript&quot; src=&quot;/path/to/dojo/dojo.js&quot;&gt;&lt;/script&gt;
         &lt;script&gt;
-          require([
-            &quot;dojo/Stateful&quot;, &quot;dojox/mvc/at&quot;, &quot;dojox/mvc/StatefulSeries&quot;,
-            &quot;dojox/charting/Chart&quot;, &quot;dojox/charting/themes/PlotKit/blue&quot;, &quot;dojox/charting/plot2d/Pie&quot;,
-            &quot;dojo/domReady!&quot;
-          ], function(Stateful, at, StatefulSeries, Chart, blue){
-            var model = new Stateful({First: 25, Second: 25, Third: 50});
-            new Chart(&quot;chart&quot;)
-             .setTheme(blue)
-             .addPlot(&quot;default&quot;, {type: &quot;Pie&quot;})
-             .addSeries(&quot;default&quot;, new StatefulSeries([at(model, &quot;First&quot;), at(model, &quot;Second&quot;), at(model, &quot;Third&quot;)])).render();
-            setTimeout(function(){ model.set(&quot;First&quot;, 10); model.set(&quot;Second&quot;, 10); model.set(&quot;Third&quot;, 80); }, 2000);
-          });
+            require([
+                &quot;dojo/Stateful&quot;, &quot;dojox/mvc/at&quot;, &quot;dojox/mvc/StatefulSeries&quot;,
+                &quot;dojox/charting/Chart&quot;, &quot;dojox/charting/themes/PlotKit/blue&quot;, &quot;dojox/charting/plot2d/Pie&quot;,
+                &quot;dojo/domReady!&quot;
+            ], function(Stateful, at, StatefulSeries, Chart, blue){
+                var model = new Stateful({First: 25, Second: 25, Third: 50});
+                new Chart(&quot;chart&quot;)
+                 .setTheme(blue)
+                 .addPlot(&quot;default&quot;, {type: &quot;Pie&quot;})
+                 .addSeries(&quot;default&quot;, new StatefulSeries([at(model, &quot;First&quot;), at(model, &quot;Second&quot;), at(model, &quot;Third&quot;)])).render();
+                setTimeout(function(){ model.set(&quot;First&quot;, 10); model.set(&quot;Second&quot;, 10); model.set(&quot;Third&quot;, 80); }, 2000);
+            });
         &lt;/script&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
         &lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
   </div>
 </div>

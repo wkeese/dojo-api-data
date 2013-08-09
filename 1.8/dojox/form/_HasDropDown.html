@@ -3,7 +3,6 @@
 <h1 class="objectIcon36 jsdoc-title">dojox/form/_HasDropDown<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines Javascript language extensions.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/form.html" target="_blank">dojox/form/_HasDropDown reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -152,7 +151,8 @@ Notice that by default, _mixin executes a so-called &quot;shallow copy&quot; and
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Object</span></div>
-        <div class="jsdoc-return-description">dest, as modified</div>
+        <div class="jsdoc-return-description"><p>dest, as modified</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_form__HasDropDown__toArray"></a><span class="functionIcon">_toArray</span><span class="parameters">(obj, offset, startWith)</span> <span title="private" class="jsdoc-private"> </span>
@@ -263,17 +263,18 @@ return object or in props.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">an Object of anonymous type</div>
+        <div class="jsdoc-return-description"><p>an Object of anonymous type</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var foo = { bar: &quot;baz&quot; };
-  var thinger = lang.delegate(foo, { thud: &quot;xyzzy&quot;});
-  thinger.bar == &quot;baz&quot;; // delegated to foo
-  foo.thud == undefined; // by definition
-  thinger.thud == &quot;xyzzy&quot;; // mixed in from props
-  foo.bar = &quot;thonk&quot;;
-  thinger.bar == &quot;thonk&quot;; // still delegated to foo&#39;s bar</code></pre>
+            <h3>Example 1</h3><pre><code>var foo = { bar: &quot;baz&quot; };
+var thinger = lang.delegate(foo, { thud: &quot;xyzzy&quot;});
+thinger.bar == &quot;baz&quot;; // delegated to foo
+foo.thud == undefined; // by definition
+thinger.thud == &quot;xyzzy&quot;; // mixed in from props
+foo.bar = &quot;thonk&quot;;
+thinger.bar == &quot;thonk&quot;; // still delegated to foo&#39;s bar</code></pre>
 
           </div>
         </div>
@@ -315,18 +316,18 @@ the chain. Useful for object and method detection.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> // define an object
- var foo = {
-    bar: { }
- };
+            <h3>Example 1</h3><pre><code>// define an object
+var foo = {
+      bar: { }
+};
 
- // search the global scope
- lang.exists(&quot;foo.bar&quot;); // true
- lang.exists(&quot;foo.bar.baz&quot;); // false
+// search the global scope
+lang.exists(&quot;foo.bar&quot;); // true
+lang.exists(&quot;foo.bar.baz&quot;); // false
 
- // search from a particular scope
- lang.exists(&quot;bar&quot;, foo); // true
- lang.exists(&quot;bar.baz&quot;, foo); // false</code></pre>
+// search from a particular scope
+lang.exists(&quot;bar&quot;, foo); // true
+lang.exists(&quot;bar.baz&quot;, foo); // false</code></pre>
 
           </div>
         </div>
@@ -450,27 +451,32 @@ scope to be hitched.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  lang.hitch(foo, &quot;bar&quot;)();</code></pre>
-<p>runs foo.bar() in the scope of foo</p>
+            <h3>Example 1</h3><pre><code>lang.hitch(foo, &quot;bar&quot;)();</code></pre>
+<p>runs foo.bar() in the scope of foo
+</p>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  lang.hitch(foo, myFunction);</code></pre>
-<p>returns a function that runs myFunction in the scope of foo</p>
+            <h3>Example 2</h3><pre><code>lang.hitch(foo, myFunction);</code></pre>
+<p>returns a function that runs myFunction in the scope of foo
+</p>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Expansion on the default positional arguments passed along from
-hitch. Passed args are mixed first, additional args after.</p>
-<pre><code>  var foo = { bar: function(a, b, c){ console.log(a, b, c); } };
-  var fn = lang.hitch(foo, &quot;bar&quot;, 1, 2);
-  fn(3); // logs &quot;1, 2, 3&quot;</code></pre>
+hitch. Passed args are mixed first, additional args after.
+
+</p>
+<pre><code>var foo = { bar: function(a, b, c){ console.log(a, b, c); } };
+var fn = lang.hitch(foo, &quot;bar&quot;, 1, 2);
+fn(3); // logs &quot;1, 2, 3&quot;</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  var foo = { bar: 2 };
-  lang.hitch(foo, function(){ this.bar = 10; })();</code></pre>
-<p>execute an anonymous function in scope of foo</p>
+            <h3>Example 4</h3><pre><code>var foo = { bar: 2 };
+lang.hitch(foo, function(){ this.bar = 10; })();</code></pre>
+<p>execute an anonymous function in scope of foo
+</p>
 
           </div>
         </div>
@@ -550,7 +556,8 @@ isArray().</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Boolean</span></div>
-        <div class="jsdoc-return-description">If it walks like a duck and quacks like a duck, return `true`</div>
+        <div class="jsdoc-return-description"><p>If it walks like a duck and quacks like a duck, return <code>true</code></p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_form__HasDropDown_isFunction"></a><span class="functionIcon">isFunction</span><span class="parameters">(it)</span> 
@@ -659,50 +666,57 @@ value &quot;wins&quot;.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">dest, as modified</div>
+        <div class="jsdoc-return-description"><p>dest, as modified</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>make a shallow copy of an object</p>
-<pre><code>  var copy = lang.mixin({}, source);</code></pre>
+            <h3>Example 1</h3><p>make a shallow copy of an object
+
+</p>
+<pre><code>var copy = lang.mixin({}, source);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>many class constructors often take an object which specifies
 values to be configured on the object. In this case, it is
-often simplest to call <code>lang.mixin</code> on the <code>this</code> object:</p>
-<pre><code>  declare(&quot;acme.Base&quot;, null, {
-    constructor: function(properties){
-      // property configuration:
-      lang.mixin(this, properties);
+often simplest to call <code>lang.mixin</code> on the <code>this</code> object:
 
-      console.log(this.quip);
-      //  ...
+</p>
+<pre><code>declare(&quot;acme.Base&quot;, null, {
+    constructor: function(properties){
+        // property configuration:
+        lang.mixin(this, properties);
+
+        console.log(this.quip);
+        //  ...
     },
     quip: &quot;I wasn&#39;t born yesterday, you know - I&#39;ve seen movies.&quot;,
     // ...
-  });
+});
 
-  // create an instance of the class and configure it
-  var b = new acme.Base({quip: &quot;That&#39;s what it does!&quot; });</code></pre>
+// create an instance of the class and configure it
+var b = new acme.Base({quip: &quot;That&#39;s what it does!&quot; });</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>copy in properties from multiple objects</p>
-<pre><code>  var flattened = lang.mixin(
+            <h3>Example 3</h3><p>copy in properties from multiple objects
+
+</p>
+<pre><code>var flattened = lang.mixin(
     {
-      name: &quot;Frylock&quot;,
-      braces: true
+        name: &quot;Frylock&quot;,
+        braces: true
     },
     {
-      name: &quot;Carl Brutanananadilewski&quot;
+        name: &quot;Carl Brutanananadilewski&quot;
     }
-  );
+);
 
-  // will print &quot;Carl Brutanananadilewski&quot;
-  console.log(flattened.name);
-  // will print &quot;true&quot;
-  console.log(flattened.braces);</code></pre>
+// will print &quot;Carl Brutanananadilewski&quot;
+console.log(flattened.name);
+// will print &quot;true&quot;
+console.log(flattened.braces);</code></pre>
 
           </div>
         </div>
@@ -715,8 +729,10 @@ often simplest to call <code>lang.mixin</code> on the <code>this</code> object:<
         <div class="jsdoc-full-summary"><p>similar to hitch() except that the scope object is left to be
 whatever the execution context eventually becomes.</p>
 </div>
-        <div class="jsdoc-full-summary"><p>Calling lang.partial is the functional equivalent of calling:</p>
-<pre><code>  lang.hitch(null, funcName, ...);</pre></code>
+        <div class="jsdoc-full-summary"><p>Calling lang.partial is the functional equivalent of calling:
+
+</p>
+<pre><code>lang.hitch(null, funcName, ...);</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -779,60 +795,61 @@ of characters, which doesn&#39;t include &quot;}&quot;.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
-        <div class="jsdoc-return-description">Returns the substituted string.</div>
+        <div class="jsdoc-return-description"><p>Returns the substituted string.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // uses a dictionary for substitutions:
-  lang.replace(&quot;Hello, {name.first} {name.last} AKA {nick}!&quot;,
+            <h3>Example 1</h3><pre><code>// uses a dictionary for substitutions:
+lang.replace(&quot;Hello, {name.first} {name.last} AKA {nick}!&quot;,
     {
-      nick: &quot;Bob&quot;,
-      name: {
-        first:  &quot;Robert&quot;,
-        middle: &quot;X&quot;,
-        last:    &quot;Cringely&quot;
-      }
+        nick: &quot;Bob&quot;,
+        name: {
+            first:  &quot;Robert&quot;,
+            middle: &quot;X&quot;,
+            last:       &quot;Cringely&quot;
+        }
     });
-  // returns: Hello, Robert Cringely AKA Bob!</code></pre>
+// returns: Hello, Robert Cringely AKA Bob!</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // uses an array for substitutions:
-  lang.replace(&quot;Hello, {0} {2}!&quot;,
+            <h3>Example 2</h3><pre><code>// uses an array for substitutions:
+lang.replace(&quot;Hello, {0} {2}!&quot;,
     [&quot;Robert&quot;, &quot;X&quot;, &quot;Cringely&quot;]);
-  // returns: Hello, Robert Cringely!</code></pre>
+// returns: Hello, Robert Cringely!</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code>  // uses a function for substitutions:
-  function sum(a){
+            <h3>Example 3</h3><pre><code>// uses a function for substitutions:
+function sum(a){
     var t = 0;
     arrayforEach(a, function(x){ t += x; });
     return t;
-  }
-  lang.replace(
+}
+lang.replace(
     &quot;{count} payments averaging {avg} USD per payment.&quot;,
     lang.hitch(
-      { payments: [11, 16, 12] },
-      function(_, key){
-        switch(key){
-          case &quot;count&quot;: return this.payments.length;
-          case &quot;min&quot;:    return Math.min.apply(Math, this.payments);
-          case &quot;max&quot;:    return Math.max.apply(Math, this.payments);
-          case &quot;sum&quot;:    return sum(this.payments);
-          case &quot;avg&quot;:    return sum(this.payments) / this.payments.length;
+        { payments: [11, 16, 12] },
+        function(_, key){
+            switch(key){
+                case &quot;count&quot;: return this.payments.length;
+                case &quot;min&quot;:     return Math.min.apply(Math, this.payments);
+                case &quot;max&quot;:     return Math.max.apply(Math, this.payments);
+                case &quot;sum&quot;:     return sum(this.payments);
+                case &quot;avg&quot;:     return sum(this.payments) / this.payments.length;
+            }
         }
-      }
     )
-  );
-  // prints: 3 payments averaging 13 USD per payment.</code></pre>
+);
+// prints: 3 payments averaging 13 USD per payment.</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  // uses an alternative PHP-like pattern for substitutions:
-  lang.replace(&quot;Hello, ${0} ${2}!&quot;,
+            <h3>Example 4</h3><pre><code>// uses an alternative PHP-like pattern for substitutions:
+lang.replace(&quot;Hello, ${0} ${2}!&quot;,
     [&quot;Robert&quot;, &quot;X&quot;, &quot;Cringely&quot;], /\$\{([^\}]+)\}/g);
-  // returns: Hello, Robert Cringely!</code></pre>
+// returns: Hello, Robert Cringely!</code></pre>
 
           </div>
         </div>
@@ -884,19 +901,26 @@ value if setting is successful or <code>undefined</code> if not.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>set the value of <code>foo.bar.baz</code>, regardless of whether
-intermediate objects already exist:</p>
-<pre><code> lang.setObject(&quot;foo.bar.baz&quot;, value);</code></pre>
+intermediate objects already exist:
+
+</p>
+<pre><code>lang.setObject(&quot;foo.bar.baz&quot;, value);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>without <code>lang.setObject</code>, we often see code like this:</p>
-<pre><code> // ensure that intermediate objects are available
- if(!obj[&quot;parent&quot;]){ obj.parent = {}; }
- if(!obj.parent[&quot;child&quot;]){ obj.parent.child = {}; }
- // now we can safely set the property
- obj.parent.child.prop = &quot;some value&quot;;</code></pre>
-<p>whereas with <code>lang.setObject</code>, we can shorten that to:</p>
-<pre><code> lang.setObject(&quot;parent.child.prop&quot;, &quot;some value&quot;, obj);</code></pre>
+            <h3>Example 2</h3><p>without <code>lang.setObject</code>, we often see code like this:
+
+</p>
+<pre><code>// ensure that intermediate objects are available
+if(!obj[&quot;parent&quot;]){ obj.parent = {}; }
+if(!obj.parent[&quot;child&quot;]){ obj.parent.child = {}; }
+// now we can safely set the property
+obj.parent.child.prop = &quot;some value&quot;;</code></pre>
+<p>whereas with <code>lang.setObject</code>, we can shorten that to:
+
+
+</p>
+<pre><code>lang.setObject(&quot;parent.child.prop&quot;, &quot;some value&quot;, obj);</code></pre>
 
           </div>
         </div>
@@ -930,7 +954,8 @@ lang.string.trim()</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
-        <div class="jsdoc-return-description">Returns the trimmed string</div>
+        <div class="jsdoc-return-description"><p>Returns the trimmed string</p>
+</div>
       </div>
     </div>
   </div>

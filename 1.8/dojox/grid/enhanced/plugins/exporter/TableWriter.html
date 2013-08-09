@@ -2,13 +2,13 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/exporter/TableWriter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a>
 </div>
 <div class="jsdoc-full-summary"><p>Export grid to HTML table format. Primarily used by Printer plugin.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/exporter/TableWriter<span class="parameters">(writerArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new TableWriter<span class="parameters">(writerArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter">dojox/grid/enhanced/plugins/exporter/TableWriter</a></div>
 <div class="jsdoc-summary"><p>The generated table only defines the col/rowspan, height and width of
@@ -200,7 +200,8 @@ all the cells in the style attribute, no other attributes
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
-        <div class="jsdoc-return-description">The well formatted attributes for the given html table.tag</div>
+        <div class="jsdoc-return-description"><p>The well formatted attributes for the given html table.tag</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContent"></a><span class="functionIcon">afterContent</span><span class="parameters">()</span> 
@@ -226,18 +227,21 @@ all the cells in the style attribute, no other attributes
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     spCols
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterHeader"></a><span class="functionIcon">afterHeader</span><span class="parameters">()</span> 
@@ -247,7 +251,8 @@ all the cells in the style attribute, no other attributes
         <div class="jsdoc-full-summary"><p>The header line has been handled.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterSubrow"></a><span class="functionIcon">afterSubrow</span><span class="parameters">(arg_obj)</span> 
@@ -313,8 +318,11 @@ all the cells in the style attribute, no other attributes
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the contents and then call afterContent.
-- false: skip all the contents, won't call afterContent.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the contents and then call afterContent.</li>
+<li>false: skip all the contents, won&#39;t call afterContent.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContentRow"></a><span class="functionIcon">beforeContentRow</span><span class="parameters">(argObj)</span> 
@@ -332,19 +340,24 @@ all the cells in the style attribute, no other attributes
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     spCols
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the current data row and then call afterContentRow.
-- false: skip the current data row, won't call afterContentRow.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the current data row and then call afterContentRow.</li>
+<li>false: skip the current data row, won&#39;t call afterContentRow.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeHeader"></a><span class="functionIcon">beforeHeader</span><span class="parameters">(grid)</span> 
@@ -368,8 +381,11 @@ Is there anything we should do now?</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the header row and then call afterHeader.
-- false: skip the header row, won't call afterHeader.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the header row and then call afterHeader.</li>
+<li>false: skip the header row, won&#39;t call afterHeader.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeSubrow"></a><span class="functionIcon">beforeSubrow</span><span class="parameters">(arg_obj)</span> 

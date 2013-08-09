@@ -14,7 +14,7 @@ a separate DOM element and programmatic is within the drawing.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/drawing/ui/Toolbar<span class="parameters">(props,node);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Toolbar<span class="parameters">(props,node);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/drawing/ui/Toolbar">dojox/drawing/ui/Toolbar</a></div>
 <table class="jsdoc-parameters">
@@ -42,17 +42,18 @@ a separate DOM element and programmatic is within the drawing.</p>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  dojo.connect(myDrawing, &quot;onSurfaceReady&quot;, function(){
+    <h3>Example 1</h3><pre><code>dojo.connect(myDrawing, &quot;onSurfaceReady&quot;, function(){
     new dojox.drawing.ui.Toolbar({
-      drawing:myDrawing,
-      tools:&quot;all&quot;,
-      plugs:&quot;all&quot;,
-      selected:&quot;ellipse&quot;
+        drawing:myDrawing,
+        tools:&quot;all&quot;,
+        plugs:&quot;all&quot;,
+        selected:&quot;ellipse&quot;
     });
-  });</code></pre>
-<p></p>
-<pre><code> &lt;div dojoType=&quot;dojox.drawing.ui.Toolbar&quot; id=&quot;gfxToolbarNode&quot; drawingId=&quot;drawingNode&quot;
-    class=&quot;gfxToolbar&quot; tools=&quot;all&quot; plugs=&quot;all&quot; selected=&quot;ellipse&quot; orient=&quot;H&quot;&gt;&lt;/div&gt;</code></pre>
+});
+
+
+&lt;div dojoType=&quot;dojox.drawing.ui.Toolbar&quot; id=&quot;gfxToolbarNode&quot; drawingId=&quot;drawingNode&quot;
+      class=&quot;gfxToolbar&quot; tools=&quot;all&quot; plugs=&quot;all&quot; selected=&quot;ellipse&quot; orient=&quot;H&quot;&gt;&lt;/div&gt;</code></pre>
 
   </div>
 </div>

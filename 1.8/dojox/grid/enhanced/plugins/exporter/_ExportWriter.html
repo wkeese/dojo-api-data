@@ -19,7 +19,7 @@ It carries context arguments that make sense when they are called.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/exporter/_ExportWriter<span class="parameters">(writerArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _ExportWriter<span class="parameters">(writerArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a></div>
 <div class="jsdoc-summary"><p>Writer initializations goes here.</p>
@@ -144,7 +144,8 @@ which contains some writer-specific arguments given by the user.</p>
 Do some clean up work if you need to.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_afterContentRow"></a><span class="functionIcon">afterContentRow</span><span class="parameters">(argObj)</span> 
@@ -162,18 +163,21 @@ Do some clean up work if you need to.</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     spCols
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_afterHeader"></a><span class="functionIcon">afterHeader</span><span class="parameters">()</span> 
@@ -183,7 +187,8 @@ Do some clean up work if you need to.</p>
         <div class="jsdoc-full-summary"><p>The header line has been handled.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_afterSubrow"></a><span class="functionIcon">afterSubrow</span><span class="parameters">(argObj)</span> 
@@ -201,20 +206,23 @@ Do some clean up work if you need to.</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     view,viewIdx,
     subrow,subrowIdx,
     spCols(if isHeader==false)
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_afterView"></a><span class="functionIcon">afterView</span><span class="parameters">(argObj)</span> 
@@ -232,18 +240,21 @@ Do some clean up work if you need to.</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     view,viewIdx,
     spCols(if isHeader==false)
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeContent"></a><span class="functionIcon">beforeContent</span><span class="parameters">(items)</span> 
@@ -267,8 +278,11 @@ Do some clean up work if you need to.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the contents and then call afterContent.
-- false: skip all the contents, won't call afterContent.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the contents and then call afterContent.</li>
+<li>false: skip all the contents, won&#39;t call afterContent.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeContentRow"></a><span class="functionIcon">beforeContentRow</span><span class="parameters">(argObj)</span> 
@@ -286,19 +300,24 @@ Do some clean up work if you need to.</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     spCols
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the current data row and then call afterContentRow.
-- false: skip the current data row, won't call afterContentRow.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the current data row and then call afterContentRow.</li>
+<li>false: skip the current data row, won&#39;t call afterContentRow.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeHeader"></a><span class="functionIcon">beforeHeader</span><span class="parameters">(grid)</span> 
@@ -322,8 +341,11 @@ Is there anything we should do now?</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the header row and then call afterHeader.
-- false: skip the header row, won't call afterHeader.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the header row and then call afterHeader.</li>
+<li>false: skip the header row, won&#39;t call afterHeader.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeSubrow"></a><span class="functionIcon">beforeSubrow</span><span class="parameters">(argObj)</span> 
@@ -341,21 +363,26 @@ Is there anything we should do now?</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     view,viewIdx,
     subrow,subrowIdx,
     spCols(if isHeader==false)
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the current subrow and then call afterSubrow.
-- false: skip the current subrow, won't call afterSubrow.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the current subrow and then call afterSubrow.</li>
+<li>false: skip the current subrow, won&#39;t call afterSubrow.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeView"></a><span class="functionIcon">beforeView</span><span class="parameters">(argObj)</span> 
@@ -373,19 +400,24 @@ Is there anything we should do now?</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     view,viewIdx,
     spCols(if isHeader==false)
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">- true: go on handling the current view and then call afterView.
-- false: skip the current view, won't call afterView.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>true: go on handling the current view and then call afterView.</li>
+<li>false: skip the current view, won&#39;t call afterView.</li>
+</ul>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(writerArgs)</span> 
@@ -427,21 +459,24 @@ which contains some writer-specific arguments given by the user.</p>
           <tr>
             <td class="jsdoc-param-name">argObj</td>
             <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:
+
+</p>
+<pre><code>{
     grid,isHeader,
     row,rowIdx,
     view,viewIdx,
     subrow,subrowIdx,
     cell,cellIdx,
     spCols(if isHeader==false)
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
@@ -451,7 +486,8 @@ which contains some writer-specific arguments given by the user.</p>
         <div class="jsdoc-full-summary"><p>Export to a string.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
-        <div class="jsdoc-return-description">The exported result string.</div>
+        <div class="jsdoc-return-description"><p>The exported result string.</p>
+</div>
       </div>
     </div>
   </div>

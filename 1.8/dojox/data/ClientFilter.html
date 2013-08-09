@@ -3,7 +3,7 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/ClientFilter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/ClientFilter<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ClientFilter<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/ClientFilter">dojox/data/ClientFilter</a></div>
 <div class="jsdoc-summary"><p>To a update a result set after a notification (onNew, onSet, and onDelete),
@@ -31,7 +31,6 @@ cause all queries to be cached by default unless the cache queryOption is explic
 This can be defined in the constructor options for ServiceStore/JsonRestStore and subtypes.
 </p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/data/ClientFilter.html" target="_blank">dojox/data/ClientFilter reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -219,11 +218,13 @@ This can be defined in the constructor options for ServiceStore/JsonRestStore an
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>to make a updated-result-set data store from an existing data store:</p>
-<pre><code>  declare(&quot;dojox.data.MyLiveDataStore&quot;,
+            <h3>Example 1</h3><p>to make a updated-result-set data store from an existing data store:
+
+</p>
+<pre><code>declare(&quot;dojox.data.MyLiveDataStore&quot;,
     dojox.data.MyDataStore,dojox.data.ClientFilter], // subclass LiveResultSets if available
     {}
-  );</code></pre>
+);</code></pre>
 
           </div>
         </div>
@@ -364,9 +365,12 @@ and adding items as required by the query and sort parameters.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | number</span></div>
-        <div class="jsdoc-return-description">- 0: Indicates it could not successfully update the result set
-- 1: Indicates it could successfully handle all the notifications, but no changes were made to the result set
-- 2: Indicates it successfully handled all the notifications and result set has been updated.</div>
+        <div class="jsdoc-return-description"><ul>
+<li>0: Indicates it could not successfully update the result set</li>
+<li>1: Indicates it could successfully handle all the notifications, but no changes were made to the result set</li>
+<li>2: Indicates it successfully handled all the notifications and result set has been updated.</li>
+</ul>
+</div>
       </div>
     </div>
     <h2>Events</h2>

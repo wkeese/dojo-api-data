@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/html/_base</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/html/_base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/html.html" target="_blank">dojox/html/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -38,22 +37,28 @@ a path is considered relative if it doesn&#39;t start with &#39;/&#39; and not c
 a path is considered relative if it doesn&#39;t start with &#39;/&#39; and not contains &#39;:&#39;</p>
 </div>
         <div class="jsdoc-full-summary"><p>Say we fetch a HTML page from level1/page.html
-It has some inline CSS:</p>
-<pre><code>    @import &quot;css/page.css&quot; tv, screen;
-    ...
-    background-image: url(images/aplhaimage.png);</pre></code>
-<p></p>
+It has some inline CSS:
+
+</p>
+<pre><code>@import &quot;css/page.css&quot; tv, screen;
+...
+background-image: url(images/aplhaimage.png);</pre></code>
 <p>as we fetched this HTML and therefore this CSS
-from level1/page.html, these paths needs to be adjusted to:</p>
-<pre><code>    @import &#39;level1/css/page.css&#39; tv, screen;
-    ...
-    background-image: url(level1/images/alphaimage.png);</pre></code>
-<p></p>
-<p>In IE it will also adjust relative paths in AlphaImageLoader()</p>
-<pre><code>    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/alphaimage.png&#39;);</pre></code>
-<p>will be adjusted to:</p>
-<pre><code>    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;level1/images/alphaimage.png&#39;);</pre></code>
-<p></p>
+from level1/page.html, these paths needs to be adjusted to:
+
+</p>
+<pre><code>@import &#39;level1/css/page.css&#39; tv, screen;
+...
+background-image: url(level1/images/alphaimage.png);</pre></code>
+<p>In IE it will also adjust relative paths in AlphaImageLoader()
+
+</p>
+<pre><code>filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/alphaimage.png&#39;);</pre></code>
+<p>will be adjusted to:
+
+
+</p>
+<pre><code>filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;level1/images/alphaimage.png&#39;);</pre></code>
 <p>Please note that any relative paths in AlphaImageLoader in external css files wont work, as
 the paths in AlphaImageLoader is MUST be declared relative to the HTML page,
 not relative to the CSS file that declares it</p>
@@ -243,10 +248,12 @@ This can be an html string, a node reference or a NodeList, dojo/NodeList, Array
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>A safe string/node/nodelist content replacement/injection with hooks for extension
-Example Usage:</p>
-<pre><code>  dojo.html.set(node, &quot;some string&quot;);
-  dojo.html.set(node, contentNode, {options});
-  dojo.html.set(node, myNode.childNodes, {options});</code></pre>
+Example Usage:
+
+</p>
+<pre><code>dojo.html.set(node, &quot;some string&quot;);
+dojo.html.set(node, contentNode, {options});
+dojo.html.set(node, myNode.childNodes, {options});</code></pre>
 
           </div>
         </div>

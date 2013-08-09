@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/color/_base</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/color/_base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/color.html" target="_blank">dojox/color/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -82,74 +81,14 @@ can reuse a previously allocated Color object for the result</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">start</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li>r</li>
-<li>g</li>
-<li>b</li>
-<li>a</li>
-<li>_set</li>
-<li><p>setColor: <p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and sets this color instance to that value.
-</p></p>
-</li>
-<li><p>sanitize: <p>Ensures the object has correct attributes</p></p>
-</li>
-<li><p>toRgb: <p>Returns 3 component array of rgb values</p></p>
-</li>
-<li><p>toRgba: <p>Returns a 4 component array of rgba values from the color
-represented by this object.</p></p>
-</li>
-<li><p>toHex: <p>Returns a CSS color string in hexadecimal representation</p></p>
-</li>
-<li><p>toCss: <p>Returns a css color string in rgb(a) representation</p></p>
-</li>
-<li><p>toString: <p>Returns a visual representation of the color</p></p>
-</li>
-<li><p>named: <p>Dictionary list of all CSS named colors, by name. Values are 3-item arrays with corresponding RG and B values.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-type">dojo/_base/Color</td>
+            <td class="jsdoc-param-description">
             </td>
           </tr>
           <tr>
             <td class="jsdoc-param-name">end</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li>r</li>
-<li>g</li>
-<li>b</li>
-<li>a</li>
-<li>_set</li>
-<li><p>setColor: <p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and sets this color instance to that value.
-</p></p>
-</li>
-<li><p>sanitize: <p>Ensures the object has correct attributes</p></p>
-</li>
-<li><p>toRgb: <p>Returns 3 component array of rgb values</p></p>
-</li>
-<li><p>toRgba: <p>Returns a 4 component array of rgba values from the color
-represented by this object.</p></p>
-</li>
-<li><p>toHex: <p>Returns a CSS color string in hexadecimal representation</p></p>
-</li>
-<li><p>toCss: <p>Returns a css color string in rgb(a) representation</p></p>
-</li>
-<li><p>toString: <p>Returns a visual representation of the color</p></p>
-</li>
-<li><p>named: <p>Dictionary list of all CSS named colors, by name. Values are 3-item arrays with corresponding RG and B values.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-type">dojo/_base/Color</td>
+            <td class="jsdoc-param-description">
             </td>
           </tr>
           <tr>
@@ -160,39 +99,9 @@ represented by this object.</p></p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">obj</td>
-            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-type">dojo/_base/Color</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>An object with the following properties:
-
-</p>
-<ul>
-<li>r</li>
-<li>g</li>
-<li>b</li>
-<li>a</li>
-<li>_set</li>
-<li><p>setColor: <p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and sets this color instance to that value.
-</p></p>
-</li>
-<li><p>sanitize: <p>Ensures the object has correct attributes</p></p>
-</li>
-<li><p>toRgb: <p>Returns 3 component array of rgb values</p></p>
-</li>
-<li><p>toRgba: <p>Returns a 4 component array of rgba values from the color
-represented by this object.</p></p>
-</li>
-<li><p>toHex: <p>Returns a CSS color string in hexadecimal representation</p></p>
-</li>
-<li><p>toCss: <p>Returns a css color string in rgb(a) representation</p></p>
-</li>
-<li><p>toString: <p>Returns a visual representation of the color</p></p>
-</li>
-<li><p>named: <p>Dictionary list of all CSS named colors, by name. Values are 3-item arrays with corresponding RG and B values.</p></p>
-</li>
-</ul>
-
+              <div><em>Optional</em></div>
             </td>
           </tr>
         </table>
@@ -224,20 +133,23 @@ and creates a new Color instance to work from.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Work with a Color instance:</p>
-<pre><code> var c = new Color();
- c.setColor([0,0,0]); // black
- var hex = c.toHex(); // #000000</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Work with a Color instance:
+
+</p>
+<pre><code>var c = new Color();
+c.setColor([0,0,0]); // black
+var hex = c.toHex(); // #000000</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Work with a node&#39;s color:</p>
-<pre><code> var color = dojo.style(&quot;someNode&quot;, &quot;backgroundColor&quot;);
- var n = new Color(color);
- // adjust the color some
- n.r *= .5;
- console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
+            <h3>Example 2</h3><p>Work with a node&#39;s color:
+
+</p>
+<pre><code>var color = dojo.style(&quot;someNode&quot;, &quot;backgroundColor&quot;);
+var n = new Color(color);
+// adjust the color some
+n.r *= .5;
+console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
 
           </div>
         </div>
@@ -264,61 +176,19 @@ element in sequence to the rgb(a) values of the color.</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">obj</td>
-            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-type">dojo/_base/Color</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>An object with the following properties:
-
-</p>
-<ul>
-<li>r</li>
-<li>g</li>
-<li>b</li>
-<li>a</li>
-<li>_set</li>
-<li><p>setColor: <p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and sets this color instance to that value.
-</p></p>
-</li>
-<li><p>sanitize: <p>Ensures the object has correct attributes</p></p>
-</li>
-<li><p>toRgb: <p>Returns 3 component array of rgb values</p></p>
-</li>
-<li><p>toRgba: <p>Returns a 4 component array of rgba values from the color
-represented by this object.</p></p>
-</li>
-<li><p>toHex: <p>Returns a CSS color string in hexadecimal representation</p></p>
-</li>
-<li><p>toCss: <p>Returns a css color string in rgb(a) representation</p></p>
-</li>
-<li><p>toString: <p>Returns a visual representation of the color</p></p>
-</li>
-<li><p>named: <p>Dictionary list of all CSS named colors, by name. Values are 3-item arrays with corresponding RG and B values.</p></p>
-</li>
-<li><p>blendColors: <p>Blend colors end and start with weight from 0 to 1, 0.5 being a 50/50 blend,
-can reuse a previously allocated Color object for the result</p></p>
-</li>
-<li><p>fromRgb: <p>Returns a <code>Color</code> instance from a string of the form
-&quot;rgb(...)&quot; or &quot;rgba(...)&quot;. Optionally accepts a <code>Color</code>
-object to update with the parsed value and return instead of
-creating a new object.</p></p>
-</li>
-<li><p>fromHex: <p>Converts a hex string with a &#39;#&#39; prefix to a color object.
-Supports 12-bit #rgb shorthand. Optionally accepts a
-<code>Color</code> object to update with the parsed value.
-</p></p>
-</li>
-</ul>
-
+              <div><em>Optional</em></div>
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">A Color object. If obj is passed, it will be the return value.</div>
+        <div class="jsdoc-return-description"><p>A Color object. If obj is passed, it will be the return value.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> var myColor = dojo.colorFromArray([237,237,237,0.5]); // grey, 50% alpha</code></pre>
+            <h3>Example 1</h3><pre><code>var myColor = dojo.colorFromArray([237,237,237,0.5]); // grey, 50% alpha</code></pre>
 
           </div>
         </div>
@@ -423,62 +293,24 @@ Supports 12-bit #rgb shorthand. Optionally accepts a
           </tr>
           <tr>
             <td class="jsdoc-param-name">obj</td>
-            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-type">dojo/_base/Color</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>An object with the following properties:
-
-</p>
-<ul>
-<li>r</li>
-<li>g</li>
-<li>b</li>
-<li>a</li>
-<li>_set</li>
-<li><p>setColor: <p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and sets this color instance to that value.
-</p></p>
-</li>
-<li><p>sanitize: <p>Ensures the object has correct attributes</p></p>
-</li>
-<li><p>toRgb: <p>Returns 3 component array of rgb values</p></p>
-</li>
-<li><p>toRgba: <p>Returns a 4 component array of rgba values from the color
-represented by this object.</p></p>
-</li>
-<li><p>toHex: <p>Returns a CSS color string in hexadecimal representation</p></p>
-</li>
-<li><p>toCss: <p>Returns a css color string in rgb(a) representation</p></p>
-</li>
-<li><p>toString: <p>Returns a visual representation of the color</p></p>
-</li>
-<li><p>named: <p>Dictionary list of all CSS named colors, by name. Values are 3-item arrays with corresponding RG and B values.</p></p>
-</li>
-<li><p>blendColors: <p>Blend colors end and start with weight from 0 to 1, 0.5 being a 50/50 blend,
-can reuse a previously allocated Color object for the result</p></p>
-</li>
-<li><p>fromRgb: <p>Returns a <code>Color</code> instance from a string of the form
-&quot;rgb(...)&quot; or &quot;rgba(...)&quot;. Optionally accepts a <code>Color</code>
-object to update with the parsed value and return instead of
-creating a new object.</p></p>
-</li>
-</ul>
-
+              <div><em>Optional</em></div>
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">A Color object. If obj is passed, it will be the return value.
+        <div class="jsdoc-return-description"><p>A Color object. If obj is passed, it will be the return value.
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> var thing = dojo.colorFromHex(&quot;#ededed&quot;); // grey, longhand</code></pre>
-<p></p>
+            <h3>Example 1</h3><pre><code>var thing = dojo.colorFromHex(&quot;#ededed&quot;); // grey, longhand</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code> var thing = dojo.colorFromHex(&quot;#000&quot;); // black, shorthand</code></pre>
+            <h3>Example 2</h3><pre><code>var thing = dojo.colorFromHex(&quot;#000&quot;); // black, shorthand</code></pre>
 
           </div>
         </div>
@@ -612,60 +444,15 @@ rgb or rgba strings such as &quot;rgb(133, 200, 16)&quot; or &quot;rgba(10, 10,
           </tr>
           <tr>
             <td class="jsdoc-param-name">obj</td>
-            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-type">dojo/_base/Color</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>An object with the following properties:
-
-</p>
-<ul>
-<li>r</li>
-<li>g</li>
-<li>b</li>
-<li>a</li>
-<li>_set</li>
-<li><p>setColor: <p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and sets this color instance to that value.
-</p></p>
-</li>
-<li><p>sanitize: <p>Ensures the object has correct attributes</p></p>
-</li>
-<li><p>toRgb: <p>Returns 3 component array of rgb values</p></p>
-</li>
-<li><p>toRgba: <p>Returns a 4 component array of rgba values from the color
-represented by this object.</p></p>
-</li>
-<li><p>toHex: <p>Returns a CSS color string in hexadecimal representation</p></p>
-</li>
-<li><p>toCss: <p>Returns a css color string in rgb(a) representation</p></p>
-</li>
-<li><p>toString: <p>Returns a visual representation of the color</p></p>
-</li>
-<li><p>named: <p>Dictionary list of all CSS named colors, by name. Values are 3-item arrays with corresponding RG and B values.</p></p>
-</li>
-<li><p>blendColors: <p>Blend colors end and start with weight from 0 to 1, 0.5 being a 50/50 blend,
-can reuse a previously allocated Color object for the result</p></p>
-</li>
-<li><p>fromRgb: <p>Returns a <code>Color</code> instance from a string of the form
-&quot;rgb(...)&quot; or &quot;rgba(...)&quot;. Optionally accepts a <code>Color</code>
-object to update with the parsed value and return instead of
-creating a new object.</p></p>
-</li>
-<li><p>fromHex: <p>Converts a hex string with a &#39;#&#39; prefix to a color object.
-Supports 12-bit #rgb shorthand. Optionally accepts a
-<code>Color</code> object to update with the parsed value.
-</p></p>
-</li>
-<li><p>fromArray: <p>Builds a <code>Color</code> from a 3 or 4 element array, mapping each
-element in sequence to the rgb(a) values of the color.</p></p>
-</li>
-</ul>
-
+              <div><em>Optional</em></div>
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">A Color object. If obj is passed, it will be the return value.</div>
+        <div class="jsdoc-return-description"><p>A Color object. If obj is passed, it will be the return value.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_color__base_Palette"></a><span class="functionIcon">Palette</span><span class="parameters">(base)</span> 

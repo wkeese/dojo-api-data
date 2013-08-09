@@ -2,13 +2,13 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/MobileCalendar</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/calendar/MobileCalendar<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a>
 </div>
 <div class="jsdoc-full-summary"><p>This class defines a calendar widget that display events in time designed to be used in mobile environment.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/calendar/MobileCalendar<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new MobileCalendar<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/calendar/CalendarBase">dojox/calendar/CalendarBase</a></div>
 <table class="jsdoc-parameters">
@@ -24,7 +24,6 @@
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/MobileCalendar reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -91,17 +90,20 @@ the events represented by this item.</span><span title="inherited from dojox/cal
     </li>
     <li class="functionIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_cssClassFunc" class="inline-link"> cssClassFunc </a><span>Optional function that returns a css class name to apply to item renderers that are displaying the specified item in parameter.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_currentView" class="inline-link"> currentView </a><span>The current view displayed by the Calendar object.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
     <li class="dateIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_date" class="inline-link"> date </a><span>The reference date used to determine along with the dateInterval 
 and dateIntervalSteps properties the time interval to display.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_dateInterval" class="inline-link"> dateInterval </a><span>The date interval used to compute along with the date and 
 dateIntervalSteps the time interval to display.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_dateIntervalSteps" class="inline-link"> dateIntervalSteps </a><span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    <li class="numberIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_dateIntervalSteps" class="inline-link"> dateIntervalSteps </a><span>The number of date intervals used to compute along with the date and 
+dateInterval the time interval to display.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_datePackage" class="inline-link"> datePackage </a><span>JavaScript namespace to find Calendar routines.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="functionIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_decodeDate" class="inline-link"> decodeDate </a><span>An optional function to transform store date into Date objects.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_decodeDate" class="inline-link"> decodeDate </a><span>An optional function to transform store date into Date objects.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
@@ -114,7 +116,7 @@ time range has changed.</span><span title="inherited from dojox/calendar/StoreMi
     <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_editable" class="inline-link"> editable </a><span>A flag that indicates whether or not the user can edit
 items in the data provider.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="functionIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_encodeDate" class="inline-link"> encodeDate </a><span>An optional function to transform Date objects into store date.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_encodeDate" class="inline-link"> encodeDate </a><span>An optional function to transform Date objects into store date.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
     <li class="dateIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_endDate" class="inline-link"> endDate </a><span>The end date of the displayed time interval (included).</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
@@ -126,9 +128,9 @@ the events represented by this item.</span><span title="inherited from dojox/cal
     <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.</span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
     </li>
-    <li class="functionIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_formatItemTimeFunc" class="inline-link"> formatItemTimeFunc </a><span>Optional function to format the time of day of the item renderers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_formatItemTimeFunc" class="inline-link"> formatItemTimeFunc </a><span>Optional function to format the time of day of the item renderers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_hoveredItem" class="inline-link"> hoveredItem </a><span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_hoveredItem" class="inline-link"> hoveredItem </a><span>Current render item which is under the mouse cursor.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
@@ -143,11 +145,17 @@ system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inheri
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_matrixViewProps" class="inline-link"> matrixViewProps </a><span>Map of property/value passed to the constructor of the matrix view.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
+    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_maxDate" class="inline-link"> maxDate </a><span>The maximum date.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_minDate" class="inline-link"> minDate </a><span>The minimum date.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
     <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_moveEnabled" class="inline-link"> moveEnabled </a><span>A flag that indicates whether the user can move items displayed.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_query" class="inline-link"> query </a><span>A query that can be passed to when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_queryOptions" class="inline-link"> queryOptions </a><span>Options to be applied when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
     <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_resizeEnabled" class="inline-link"> resizeEnabled </a><span>A flag that indicates whether the items can be resized.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
@@ -174,6 +182,9 @@ the events represented by this item.</span><span title="inherited from dojox/cal
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_subColumnAttr" class="inline-link"> subColumnAttr </a><span>The attribute of the store item that contains the sub column name of 
+the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+    </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_summaryAttr" class="inline-link"> summaryAttr </a><span>The attribute of the store item that contains the summary of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
@@ -181,7 +192,7 @@ the events represented by this item.</span><span title="inherited from dojox/cal
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dojox/calendar/MobileCalendar" class="jsdoc-inherited"></span>
     </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_textDir" class="inline-link"> textDir </a><span>Bi-directional support,  the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_calendar_MobileCalendar_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
@@ -217,7 +228,12 @@ the widget DOM, as specified by commands parameter.</span><span title="private" 
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
     </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__cleanItemStoreState" class="inline-link"> _cleanItemStoreState</a><span class="parameters">(</span>id) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+    </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__computeCurrentView" class="inline-link"> _computeCurrentView</a><span class="parameters">(</span>startDate, endDate, duration) <span>If the time range is lasting less than seven days returns the column view or the matrix view otherwise.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__computeTimeIntervalImpl" class="inline-link"> _computeTimeIntervalImpl</a><span class="parameters">(</span>d) <span>Computes the displayed time interval according to the date, dateInterval and 
+dateIntervalSteps if date is not null or startDate and endDate properties otherwise.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__computeVisibleItems" class="inline-link"> _computeVisibleItems</a><span class="parameters">(</span>renderData) <span>Computes the data items that are in the displayed interval.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
@@ -235,6 +251,8 @@ this.containerNode must be able to receive children, or exceptions will be throw
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__getCurrentViewAttr" class="inline-link"> _getCurrentViewAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__getItemStoreStateObj" class="inline-link"> _getItemStoreStateObj</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__getSelectedItemsAttr" class="inline-link"> _getSelectedItemsAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
     </li>
@@ -264,6 +282,8 @@ registered with watch() if the value has changed.</span><span title="private" cl
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__setHoveredItem" class="inline-link"> _setHoveredItem</a><span class="parameters">(</span>item, renderer) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__setItemsAttr" class="inline-link"> _setItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__setItemStoreState" class="inline-link"> _setItemStoreState</a><span class="parameters">(</span>item, state) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
@@ -304,8 +324,7 @@ originally used for setting element.dir according to this.textDir.</span><span t
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_columnViewColumnHeaderClick" class="inline-link"> columnViewColumnHeaderClick</a><span class="parameters">(</span>e) <span>Function called when the cell of a column header of the column view is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_computeTimeInterval" class="inline-link"> computeTimeInterval</a><span class="parameters">(</span>) <span>Computes the displayed time interval according to the date, dateInterval and
-dateIntervalSteps if date is not null or startDate and endDate properties otherwise.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_computeTimeInterval" class="inline-link"> computeTimeInterval</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_configureButtons" class="inline-link"> configureButtons</a><span class="parameters">(</span>) <span>Set the localized labels of the buttons and the event handlers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
@@ -320,7 +339,7 @@ dateIntervalSteps if date is not null or startDate and endDate properties otherw
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
@@ -334,7 +353,9 @@ descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-i
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_dispatchChange" class="inline-link"> dispatchChange</a><span class="parameters">(</span>oldSelectedItem, newSelectedItem, renderer, triggerEvent) <span>Dispatch a selection change event.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
-  myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+
+
+myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_floorDate" class="inline-link"> floorDate</a><span class="parameters">(</span>date, unit, steps, reuse) <span>floors the date to the unit.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
     </li>
@@ -349,6 +370,8 @@ descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-i
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_getItemStoreState" class="inline-link"> getItemStoreState</a><span class="parameters">(</span>item) <span>Returns the creation state of an item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
@@ -412,6 +435,8 @@ but before the widget template is instantiated.</span><span title="inherited fro
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_renderItemToItem" class="inline-link"> renderItemToItem</a><span class="parameters">(</span>renderItem, store) <span>Create a store item based on the render item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
     </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+    </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_selectFromEvent" class="inline-link"> selectFromEvent</a><span class="parameters">(</span>e, item, renderer, dispatch) <span>Applies selection triggered by an user interaction</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
@@ -451,6 +476,16 @@ such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"><
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onRendererCreated" class="inline-link"> _onRendererCreated</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onRendererDestroyed" class="inline-link"> _onRendererDestroyed</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onRendererRecycled" class="inline-link"> _onRendererRecycled</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onRendererReused" class="inline-link"> _onRendererReused</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onRenderersLayoutDone" class="inline-link"> _onRenderersLayoutDone</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onViewAdded" class="inline-link"> _onViewAdded</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_MobileCalendar__onViewRemoved" class="inline-link"> _onViewRemoved</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
@@ -462,7 +497,7 @@ hidden.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>) <span>Called when the selection changed.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onColumnHeaderClick" class="inline-link"> onColumnHeaderClick</a><span class="parameters">(</span>e) <span>Event dispatched when a column header cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onColumnHeaderClick" class="inline-link"> onColumnHeaderClick</a><span class="parameters">(</span>e) <span>Event dispatched when a column header cell is dispatched.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onCurrentViewChange" class="inline-link"> onCurrentViewChange</a><span class="parameters">(</span>e) <span>Event dispatched when the current view has changed.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
@@ -498,13 +533,13 @@ been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onItemRollOver" class="inline-link"> onItemRollOver</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererCreated" class="inline-link"> onRendererCreated</a><span class="parameters">(</span>renderer) <span>Event dispatched when an item renderer has been created.</span><span title="TODO" class="jsdoc-extension"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererCreated" class="inline-link"> onRendererCreated</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been created.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererDestroyed" class="inline-link"> onRendererDestroyed</a><span class="parameters">(</span>renderer) <span>Event dispatched when an item renderer is destroyed.</span><span title="TODO" class="jsdoc-extension"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererDestroyed" class="inline-link"> onRendererDestroyed</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer is destroyed.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererRecycled" class="inline-link"> onRendererRecycled</a><span class="parameters">(</span>renderer) <span>Event dispatched when an item renderer has been recycled.</span><span title="TODO" class="jsdoc-extension"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererRecycled" class="inline-link"> onRendererRecycled</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been recycled.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererReused" class="inline-link"> onRendererReused</a><span class="parameters">(</span>renderer) <span>Event dispatched when an item renderer that was recycled is reused.</span><span title="TODO" class="jsdoc-extension"></span>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRendererReused" class="inline-link"> onRendererReused</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer that was recycled is reused.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_MobileCalendar_onRenderersLayoutDone" class="inline-link"> onRenderersLayoutDone</a><span class="parameters">(</span>view) <span>Event triggered when item renderers layout has been done.</span><span title="TODO" class="jsdoc-extension"></span>
     </li>
@@ -636,7 +671,7 @@ have their .startup() called immediately before a parent widget
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The attribute of the store item that contains the all day state of 
-the events represented by this item.  Default is &quot;allDay&quot;.</p>
+the events represented by this item.    Default is &quot;allDay&quot;.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -660,7 +695,7 @@ the events represented by this item.  Default is &quot;allDay&quot;.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Deprecated.  Instead of attributeMap, widget should have a _setXXXAttr attribute
+        <div class="jsdoc-summary"><p>Deprecated. Instead of attributeMap, widget should have a _setXXXAttr attribute
 for each XXX attribute to be mapped to the DOM.
 
 </p>
@@ -680,20 +715,26 @@ and the value reflects a binding to a:
 
 </p>
 <ul>
-<li><p>DOM node attribute
-|    focus: {node: &quot;focusNode&quot;, type: &quot;attribute&quot;}
+<li><p>DOM node attribute</p>
+<p>  focus: {node: &quot;focusNode&quot;, type: &quot;attribute&quot;}
 Maps this.focus to this.focusNode.focus</p>
 </li>
-<li><p>DOM node innerHTML
-|    title: { node: &quot;titleNode&quot;, type: &quot;innerHTML&quot; }
+</ul>
+<ul>
+<li><p>DOM node innerHTML</p>
+<p>  title: { node: &quot;titleNode&quot;, type: &quot;innerHTML&quot; }
 Maps this.title to this.titleNode.innerHTML</p>
 </li>
-<li><p>DOM node innerText
-|    title: { node: &quot;titleNode&quot;, type: &quot;innerText&quot; }
+</ul>
+<ul>
+<li><p>DOM node innerText</p>
+<p>  title: { node: &quot;titleNode&quot;, type: &quot;innerText&quot; }
 Maps this.title to this.titleNode.innerText</p>
 </li>
-<li><p>DOM node CSS class
-|    myClass: { node: &quot;domNode&quot;, type: &quot;class&quot; }
+</ul>
+<ul>
+<li><p>DOM node CSS class</p>
+<p>  myClass: { node: &quot;domNode&quot;, type: &quot;class&quot; }
 Maps this.myClass to this.domNode.className</p>
 </li>
 </ul>
@@ -707,8 +748,7 @@ formats of the above list.
 <ul>
 <li>string --&gt; { node: string, type: &quot;attribute&quot; }, for example:</li>
 </ul>
-<pre><code>  &quot;focusNode&quot; ---&gt; { node: &quot;focusNode&quot;, type: &quot;attribute&quot; }</pre></code>
-<p></p>
+<pre><code>&quot;focusNode&quot; ---&gt; { node: &quot;focusNode&quot;, type: &quot;attribute&quot; }</pre></code>
 <ul>
 <li>&quot;&quot; --&gt; { node: &quot;domNode&quot;, type: &quot;attribute&quot; }</li>
 </ul>
@@ -751,20 +791,20 @@ formats of the above list.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.
 For example, for myWidget:
 
+
 </p>
-<pre><code>  &lt;div data-dojo-type=myWidget&gt;
+<pre><code>&lt;div data-dojo-type=myWidget&gt;
     &lt;b&gt; here&#39;s a plain DOM node
     &lt;span data-dojo-type=subWidget&gt;and a widget&lt;/span&gt;
     &lt;i&gt; and another plain DOM node &lt;/i&gt;
-  &lt;/div&gt;</pre></code>
-<p></p>
+&lt;/div&gt;</pre></code>
 <p>containerNode would point to:
 
+
 </p>
-<pre><code>    &lt;b&gt; here&#39;s a plain DOM node
-    &lt;span data-dojo-type=subWidget&gt;and a widget&lt;/span&gt;
-    &lt;i&gt; and another plain DOM node &lt;/i&gt;</pre></code>
-<p></p>
+<pre><code>&lt;b&gt; here&#39;s a plain DOM node
+&lt;span data-dojo-type=subWidget&gt;and a widget&lt;/span&gt;
+&lt;i&gt; and another plain DOM node &lt;/i&gt;</pre></code>
 <p>In templated widgets, &quot;containerNode&quot; is set via a
 data-dojo-attach-point assignment.
 
@@ -808,6 +848,15 @@ A createItem function must be defined on the view or the calendar object.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_currentView"></a><span class="objectIcon">currentView</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The current view displayed by the Calendar object.
+The currentViewChange event can be used to react on a view change.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_date"></a><span class="dateIcon">date</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -831,6 +880,10 @@ Valid values are &quot;day&quot;, &quot;week&quot; (default value) and &quot;mon
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+        <div class="jsdoc-summary"><p>The number of date intervals used to compute along with the <code>date</code> and 
+<code>dateInterval</code> the time interval to display.
+Default value is 1.     </p>
+</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_datePackage"></a><span class="objectIcon">datePackage</span>
@@ -841,11 +894,11 @@ Valid values are &quot;day&quot;, &quot;week&quot; (default value) and &quot;mon
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_decodeDate"></a><span class="functionIcon">decodeDate</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_decodeDate"></a><span class="objectIcon">decodeDate</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>An optional function to transform store date into Date objects.  Default is null. </p>
+        <div class="jsdoc-summary"><p>An optional function to transform store date into Date objects. Default is null. </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -890,11 +943,11 @@ The user can click on an item renderer, or use the keyboard or touch devices, to
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_encodeDate"></a><span class="functionIcon">encodeDate</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_encodeDate"></a><span class="objectIcon">encodeDate</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>An optional function to transform Date objects into store date.  Default is null. </p>
+        <div class="jsdoc-summary"><p>An optional function to transform Date objects into store date. Default is null. </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -902,7 +955,7 @@ The user can click on an item renderer, or use the keyboard or touch devices, to
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The end date of the displayed time interval (included).    </p>
+        <div class="jsdoc-summary"><p>The end date of the displayed time interval (included).     </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -911,7 +964,7 @@ The user can click on an item renderer, or use the keyboard or touch devices, to
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The attribute of the store item that contains the end time of 
-the events represented by this item.  Default is &quot;endTime&quot;.</p>
+the events represented by this item.    Default is &quot;endTime&quot;.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -934,7 +987,7 @@ it was recently clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_formatItemTimeFunc"></a><span class="functionIcon">formatItemTimeFunc</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_formatItemTimeFunc"></a><span class="objectIcon">formatItemTimeFunc</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -947,6 +1000,8 @@ The function takes the date and render data object as arguments and returns a St
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+        <div class="jsdoc-summary"><p>Current render item which is under the mouse cursor.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_id"></a><span class="stringIcon">id</span>
@@ -999,6 +1054,28 @@ formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a
 </div>
       </div>
       <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_maxDate"></a><span class="dateIcon">maxDate</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The maximum date. 
+If date is set, the displayed time interval the most in the future
+will the time interval containing this date.
+If endDate property is set, this mininum value of endDate.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_minDate"></a><span class="dateIcon">minDate</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The minimum date. 
+If date property is set, the displayed time interval the most in the past 
+will the time interval containing this date.
+If startDate property is set, this mininum value of startDate. </p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_moveEnabled"></a><span class="booleanIcon">moveEnabled</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -1022,6 +1099,14 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>A query that can be passed to when querying the store.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_queryOptions"></a><span class="objectIcon">queryOptions</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Options to be applied when querying the store.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -1089,7 +1174,7 @@ Default value is &quot;single&quot;.</li>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The attribute of the store item that contains the start time of 
-the events represented by this item.  Default is &quot;startTime&quot;. </p>
+the events represented by this item.    Default is &quot;startTime&quot;. </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -1109,12 +1194,21 @@ the events represented by this item.  Default is &quot;startTime&quot;. </p>
 </div>
       </div>
       <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_subColumnAttr"></a><span class="stringIcon">subColumnAttr</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The attribute of the store item that contains the sub column name of 
+the events represented by this item.    Default is &quot;calendar&quot;.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_summaryAttr"></a><span class="stringIcon">summaryAttr</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The attribute of the store item that contains the summary of 
-the events represented by this item.  Default is &quot;summary&quot;.</p>
+the events represented by this item.    Default is &quot;summary&quot;.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -1137,7 +1231,7 @@ Deprecated: use templateString with require([... &quot;<a class="jsdoc-link" hre
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Bi-directional support,  the main variable which is responsible for the direction of the text.
+        <div class="jsdoc-summary"><p>Bi-directional support, the main variable which is responsible for the direction of the text.
 The text direction can be different than the GUI direction by using this parameter in creation
 of a widget.
 
@@ -1416,9 +1510,9 @@ to DOMNode inside the widget, or alternately pointing to a subwidget</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -1449,6 +1543,27 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__cleanItemStoreState"></a><span class="functionIcon">_cleanItemStoreState</span><span class="parameters">(id)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | boolean</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__computeCurrentView"></a><span class="functionIcon">_computeCurrentView</span><span class="parameters">(startDate, endDate, duration)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -1471,20 +1586,44 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
           <tr>
             <td class="jsdoc-param-name">endDate</td>
             <td class="jsdoc-param-type">Date</td>
-            <td class="jsdoc-param-description"><p>The end date of the displayed time interval  </p>
+            <td class="jsdoc-param-description"><p>The end date of the displayed time interval </p>
  
             </td>
           </tr>
           <tr>
             <td class="jsdoc-param-name">duration</td>
             <td class="jsdoc-param-type">Integer</td>
-            <td class="jsdoc-param-description"><p>Duration of the     </p>
+            <td class="jsdoc-param-description"><p>Duration of the         </p>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/calendar/ViewBase">dojox/calendar/ViewBase</a> | undefined</span></div>
-        <div class="jsdoc-return-description">The view to display.</div>
+        <div class="jsdoc-return-description"><p>The view to display.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__computeTimeIntervalImpl"></a><span class="functionIcon">_computeTimeIntervalImpl</span><span class="parameters">(d)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Computes the displayed time interval according to the date, dateInterval and 
+dateIntervalSteps if date is not null or startDate and endDate properties otherwise.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">d</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__computeVisibleItems"></a><span class="functionIcon">_computeVisibleItems</span><span class="parameters">(renderData)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1648,6 +1787,27 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__getItemStoreStateObj"></a><span class="functionIcon">_getItemStoreStateObj</span><span class="parameters">(item)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__getSelectedItemsAttr"></a><span class="functionIcon">_getSelectedItemsAttr</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
@@ -1902,6 +2062,32 @@ registered with watch() if the value has changed.</p>
           <tr>
             <td class="jsdoc-param-name">value</td>
             <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__setItemStoreState"></a><span class="functionIcon">_setItemStoreState</span><span class="parameters">(item, state)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">state</td>
+            <td class="jsdoc-param-type">String</td>
             <td class="jsdoc-param-description">
             </td>
           </tr>
@@ -2301,10 +2487,8 @@ Show the time range defined by the clicked date.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Computes the displayed time interval according to the date, dateInterval and
-dateIntervalSteps if date is not null or startDate and endDate properties otherwise.</p>
-</div>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array | undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_configureButtons"></a><span class="functionIcon">configureButtons</span><span class="parameters">()</span> 
@@ -2357,17 +2541,18 @@ destruction.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">A handle that can be passed to `disconnect` in order to disconnect before
-the widget is destroyed.</div>
+        <div class="jsdoc-return-description"><p>A handle that can be passed to <code>disconnect</code> in order to disconnect before
+the widget is destroyed.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var btn = new Button();
-  // when foo.bar() is called, call the listener we&#39;re going to
-  // provide in the scope of btn
-  btn.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var btn = new Button();
+// when foo.bar() is called, call the listener we&#39;re going to
+// provide in the scope of btn
+btn.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.toString());
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -2445,7 +2630,7 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The action triggerred when the day button is clicked.
-By default, sets the dateInterval property to &quot;day&quot; and
+By default, sets the dateInterval property to &quot;day&quot; and 
 the &quot;dateIntervalSteps&quot; to 1.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -2495,9 +2680,11 @@ Returns an object handle with a remove method (that returns null) (replaces clea
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"></div>
+        <div class="jsdoc-full-summary"><p>Destroy this widget, but not its descendants.
+This method will, however, destroy internal widgets such as those used within a template.</p>
+</div>
         <table class="jsdoc-parameters">
           <tr>
             <th>Parameter</th>
@@ -2506,8 +2693,10 @@ Returns an object handle with a remove method (that returns null) (replaces clea
           </tr>
           <tr>
             <td class="jsdoc-param-name">preserveDom</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>If true, this method will leave the original DOM structure alone.
+Note: This will not yet work with _Templated widgets</p>
+ 
             </td>
           </tr>
         </table>
@@ -2653,7 +2842,7 @@ widgets yet.</p>
           <tr>
             <td class="jsdoc-param-name">triggerEvent</td>
             <td class="jsdoc-param-type">Event</td>
-            <td class="jsdoc-param-description"><p>The event that lead to the selection of the item.       </p>
+            <td class="jsdoc-param-description"><p>The event that lead to the selection of the item.           </p>
  
             </td>
           </tr>
@@ -2664,9 +2853,10 @@ widgets yet.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Used by widgets to signal that a synthetic event occurred, ex:</p>
-<pre><code>  myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</code></pre>
-<p></p>
+        <div class="jsdoc-full-summary"><p>Used by widgets to signal that a synthetic event occurred, ex:
+
+</p>
+<pre><code>myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</code></pre>
 <p>Emits an event on this.domNode named type.toLowerCase(), based on eventObj.
 Also calls onType() method, if present, and returns value from that method.
 By default passes eventObj to callback, but will pass callbackArgs instead, if specified.
@@ -2738,7 +2928,7 @@ Modifies eventObj by adding missing parameters (bubbles, cancelable, widget).</p
           <tr>
             <td class="jsdoc-param-name">reuse</td>
             <td class="jsdoc-param-type">Boolean</td>
-            <td class="jsdoc-param-description"><p>Whether use the specified instance or create a new one. Default is false.      </p>
+            <td class="jsdoc-param-description"><p>Whether use the specified instance or create a new one. Default is false.           </p>
  
             </td>
           </tr>
@@ -2803,7 +2993,7 @@ Modifies eventObj by adding missing parameters (bubbles, cancelable, widget).</p
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The action triggerred when the 4 days button is clicked.
-By default, sets the dateInterval property to &quot;day&quot; and
+By default, sets the dateInterval property to &quot;day&quot; and 
 the &quot;dateIntervalSteps&quot; to 4.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -2887,6 +3077,37 @@ Does not return nested widgets, nor widgets that are part of this widget&#39;s t
         <div><strong>Returns: </strong><span class="jsdoc-return-type">null</span></div>
       </div>
       <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_getItemStoreState"></a><span class="functionIcon">getItemStoreState</span><span class="parameters">(item)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the creation state of an item. 
+This state is changing during the interactive creation of an item.
+Valid values are:
+- &quot;unstored&quot;: The event is being interactively created. It is not in the store yet.
+- &quot;storing&quot;: The creation gesture has ended, the event is being added to the store.
+- &quot;stored&quot;: The event is not in the two previous states, and is assumed to be in the store 
+(not checking because of performance reasons, use store API for testing existence in store).
+item: Object
+The item.
+returns: String</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | string</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -2932,7 +3153,7 @@ text, if was defined by the programmer through textDir.</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Changes the displayed time interval to show the current day.
-Sets the date property to the current day, the dateInterval property to &quot;day&quot; and
+Sets the date property to the current day, the dateInterval property to &quot;day&quot; and 
 the &quot;dateIntervalSteps&quot; to 1.</p>
 </div>
       </div>
@@ -2943,8 +3164,8 @@ the &quot;dateIntervalSteps&quot; to 1.</p>
         </div>
         <div class="jsdoc-full-summary"><p>Installs the default actions on newly created default views.
 By default this action is registering:
-- the matrixViewRowHeaderClick method  on the rowHeaderClick event of the matrix view.
-- the columnViewColumnHeaderClick method  on the columnHeaderClick event of the column view.</p>
+- the matrixViewRowHeaderClick method   on the rowHeaderClick event of the matrix view.
+- the columnViewColumnHeaderClick method    on the columnHeaderClick event of the column view.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -2995,7 +3216,7 @@ By default it is using the editable property value.</p>
           <tr>
             <td class="jsdoc-param-name">item</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>The item represented by the renderer.</p>
+            <td class="jsdoc-param-description"><p>The data item represented by the renderer.</p>
  
             </td>
           </tr>
@@ -3049,7 +3270,7 @@ By default it is using the moveEnabled property value.</p>
           <tr>
             <td class="jsdoc-param-name">item</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>The item represented by the renderer.</p>
+            <td class="jsdoc-param-description"><p>The data item represented by the renderer.</p>
  
             </td>
           </tr>
@@ -3080,7 +3301,7 @@ By default it is using the resizedEnabled property value.</p>
           <tr>
             <td class="jsdoc-param-name">item</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>The item represented by the renderer.</p>
+            <td class="jsdoc-param-description"><p>The data item represented by the renderer.</p>
  
             </td>
           </tr>
@@ -3110,7 +3331,7 @@ By default it is using the resizedEnabled property value.</p>
           <tr>
             <td class="jsdoc-param-name">item</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>The item to test the selection for.      </p>
+            <td class="jsdoc-param-description"><p>The item to test the selection for.         </p>
  
             </td>
           </tr>
@@ -3131,7 +3352,7 @@ By default it is using the resizedEnabled property value.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Tests if the specified date represents the starts of day.</p>
+        <div class="jsdoc-full-summary"><p>Tests if the specified date represents the starts of day. </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -3177,15 +3398,19 @@ By default it is using the resizedEnabled property value.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Creates the render item based on the dojo.store item. It must be of the form:</p>
-<pre><code>  {
+        <div class="jsdoc-full-summary"><p>Creates the render item based on the dojo.store item. It must be of the form:
+
+</p>
+<pre><code>{
     id: Object,
     startTime: Date,
     endTime: Date,
     summary: String
-  }</code></pre>
-<p>By default it is building an object using the store id, the summaryAttr,
-startTimeAttr and endTimeAttr properties as well as decodeDate property if not null.
+}</code></pre>
+<p>By default it is building an object using the store id, the summaryAttr, 
+
+</p>
+<p>startTimeAttr and endTimeAttr properties as well as decodeDate property if not null. 
 Other fields or way to query fields can be used if needed.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -3243,7 +3468,7 @@ The implementation is doing the foolowing actions:
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The action triggered when the month button is clicked.
-By default, sets the dateInterval property to &quot;month&quot; and
+By default, sets the dateInterval property to &quot;month&quot; and 
 the &quot;dateIntervalSteps&quot; to 1.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -3334,8 +3559,11 @@ widget&#39;s scope you must do <code>myWidget.on(&quot;click&quot;, lang.hitch(m
 already removed/destroyed manually.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The array of specified handles, so you can do for example:
-|    var handle = this.own(on(...))[0];</div>
+        <div class="jsdoc-return-description"><p>The array of specified handles, so you can do for example:
+
+</p>
+<pre><code>var handle = this.own(on(...))[0];</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
@@ -3379,32 +3607,33 @@ the position argument can be a numeric index or a string
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dijit/_WidgetBase">dijit/_WidgetBase</a> | function</span></div>
-        <div class="jsdoc-return-description">Provides a useful return of the newly created dijit._Widget instance so you
-can "chain" this function by instantiating, placing, then saving the return value
-to a variable.</div>
+        <div class="jsdoc-return-description"><p>Provides a useful return of the newly created dijit._Widget instance so you
+can &quot;chain&quot; this function by instantiating, placing, then saving the return value
+to a variable.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // create a Button with no srcNodeRef, and place it in the body:
-  var button = new Button({ label:&quot;click&quot; }).placeAt(win.body());
-  // now, &#39;button&#39; is still the widget reference to the newly created button
-  button.on(&quot;click&quot;, function(e){ console.log(&#39;click&#39;); }));</code></pre>
+            <h3>Example 1</h3><pre><code>// create a Button with no srcNodeRef, and place it in the body:
+var button = new Button({ label:&quot;click&quot; }).placeAt(win.body());
+// now, &#39;button&#39; is still the widget reference to the newly created button
+button.on(&quot;click&quot;, function(e){ console.log(&#39;click&#39;); }));</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // create a button out of a node with id=&quot;src&quot; and append it to id=&quot;wrapper&quot;:
-  var button = new Button({},&quot;src&quot;).placeAt(&quot;wrapper&quot;);</code></pre>
+            <h3>Example 2</h3><pre><code>// create a button out of a node with id=&quot;src&quot; and append it to id=&quot;wrapper&quot;:
+var button = new Button({},&quot;src&quot;).placeAt(&quot;wrapper&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code>  // place a new button as the first element of some div
-  var button = new Button({ label:&quot;click&quot; }).placeAt(&quot;wrapper&quot;,&quot;first&quot;);</code></pre>
+            <h3>Example 3</h3><pre><code>// place a new button as the first element of some div
+var button = new Button({ label:&quot;click&quot; }).placeAt(&quot;wrapper&quot;,&quot;first&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  // create a contentpane and add it to a TabContainer
-  var tc = dijit.byId(&quot;myTabs&quot;);
-  new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(tc)</code></pre>
+            <h3>Example 4</h3><pre><code>// create a contentpane and add it to a TabContainer
+var tc = dijit.byId(&quot;myTabs&quot;);
+new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(tc)</code></pre>
 
           </div>
         </div>
@@ -3467,7 +3696,7 @@ template.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Refreshes all the visual rendering of the calendar.</p>
+        <div class="jsdoc-full-summary"><p>Refreshes all the visual rendering of the calendar. </p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
@@ -3497,17 +3726,21 @@ template.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Create a store item based on the render item. It must be of the form:</p>
-<pre><code>  {
+        <div class="jsdoc-full-summary"><p>Create a store item based on the render item. It must be of the form:
+
+</p>
+<pre><code>{
     id: Object
     startTime: Date,
     endTime: Date,
     summary: String
-  }</code></pre>
+}</code></pre>
 <p>By default it is building an object using the summaryAttr, startTimeAttr and endTimeAttr properties
-and encodeDate property if not null. If the encodeDate property is null a Date object will be set in the start and end time.
+
+</p>
+<p>and encodeDate property if not null. If the encodeDate property is null a Date object will be set in the start and end time.
 When using a JsonRest store, for example, it is recommended to transfer dates using the ISO format (see dojo.date.stamp).
-In that case, provide a custom function to the encodeDate property that is using the date ISO encoding provided by Dojo.</p>
+In that case, provide a custom function to the encodeDate property that is using the date ISO encoding provided by Dojo. </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -3531,6 +3764,13 @@ In that case, provide a custom function to the encodeDate property that is using
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_resize"></a><span class="functionIcon">resize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_selectFromEvent"></a><span class="functionIcon">selectFromEvent</span><span class="parameters">(e, item, renderer, dispatch)</span> 
@@ -3562,7 +3802,7 @@ In that case, provide a custom function to the encodeDate property that is using
           <tr>
             <td class="jsdoc-param-name">renderer</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>The visual renderer of the selected/deselected item.      </p>
+            <td class="jsdoc-param-description"><p>The visual renderer of the selected/deselected item.            </p>
  
             </td>
           </tr>
@@ -3575,7 +3815,8 @@ In that case, provide a custom function to the encodeDate property that is using
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | boolean</span></div>
-        <div class="jsdoc-return-description">Returns true if the selection has changed and false otherwise.</div>
+        <div class="jsdoc-return-description"><p>Returns true if the selection has changed and false otherwise.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
@@ -3597,12 +3838,12 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
 </p>
 <p>set() may also be called with a hash of name/value pairs, ex:
 
+
 </p>
-<pre><code>  myWidget.set({
+<pre><code>myWidget.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  });</pre></code>
-<p></p>
+});</pre></code>
 <p>This is equivalent to calling <code>set(foo, &quot;Howdy&quot;)</code> and <code>set(bar, 3)</code></p>
 </div>
         <table class="jsdoc-parameters">
@@ -3712,12 +3953,12 @@ implicit use of this widget as the target object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var btn = new Button();
-  // when /my/topic is published, this button changes its label to
-  // be the parameter of the topic.
-  btn.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var btn = new Button();
+// when /my/topic is published, this button changes its label to
+// be the parameter of the topic.
+btn.subscribe(&quot;/my/topic&quot;, function(v){
     this.set(&quot;label&quot;, v);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -3860,10 +4101,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_weekButtonClick"></a><span class="functionIcon">weekButtonClick</span><span class="parameters">(e)</span> 
@@ -3871,7 +4115,7 @@ can be used to discontinue watching this property:
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The action triggered when the week button is clicked.
-By default, sets the dateInterval property to &quot;week&quot; and
+By default, sets the dateInterval property to &quot;week&quot; and 
 the &quot;dateIntervalSteps&quot; to 1.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -3916,6 +4160,31 @@ If type is a synthetic event like touch.press then returns undefined.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__onRendererCreated"></a><span class="functionIcon">_onRendererCreated</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__onRendererDestroyed"></a><span class="functionIcon">_onRendererDestroyed</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__onRendererRecycled"></a><span class="functionIcon">_onRendererRecycled</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__onRendererReused"></a><span class="functionIcon">_onRendererReused</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__onRenderersLayoutDone"></a><span class="functionIcon">_onRenderersLayoutDone</span><span class="parameters">(view)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar__onViewAdded"></a><span class="functionIcon">_onViewAdded</span><span class="parameters">(view)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
@@ -3946,7 +4215,7 @@ hidden.</p>
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onColumnHeaderClick"></a><span class="functionIcon">onColumnHeaderClick</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Event dispatched when a column header cell is clicked.</p>
+        <div class="jsdoc-summary"><p>Event dispatched when a column header cell is dispatched.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
@@ -3983,7 +4252,7 @@ been clicked.</p>
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onGridDoubleClick"></a><span class="functionIcon">onGridDoubleClick</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Event dispatched when the grid has been double-clicked.</p>
+        <div class="jsdoc-summary"><p>Event dispatched when the grid has been double-clicked. </p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
@@ -4039,7 +4308,7 @@ been clicked.</p>
         <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onItemEditMoveGesture"></a><span class="functionIcon">onItemEditMoveGesture</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Event dispatched during a move editing gesture.</p>
+        <div class="jsdoc-summary"><p>Event dispatched during a move editing gesture.     </p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
@@ -4060,28 +4329,28 @@ been clicked.</p>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererCreated"></a><span class="functionIcon">onRendererCreated</span><span class="parameters">(renderer)</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererCreated"></a><span class="functionIcon">onRendererCreated</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Event dispatched when an item renderer has been created.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererDestroyed"></a><span class="functionIcon">onRendererDestroyed</span><span class="parameters">(renderer)</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererDestroyed"></a><span class="functionIcon">onRendererDestroyed</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Event dispatched when an item renderer is destroyed.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererRecycled"></a><span class="functionIcon">onRendererRecycled</span><span class="parameters">(renderer)</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererRecycled"></a><span class="functionIcon">onRendererRecycled</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Event dispatched when an item renderer has been recycled.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererReused"></a><span class="functionIcon">onRendererReused</span><span class="parameters">(renderer)</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_MobileCalendar_onRendererReused"></a><span class="functionIcon">onRendererReused</span><span class="parameters">(e)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Event dispatched when an item renderer that was recycled is reused.</p>

@@ -3,7 +3,7 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/filter/FilterLayer.ServerSideFilterLayer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/filter/FilterLayer.ServerSideFilterLayer<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new FilterLayer.ServerSideFilterLayer<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/filter/FilterLayer">dojox/grid/enhanced/plugins/filter/FilterLayer</a></div>
 <table class="jsdoc-parameters">
@@ -72,7 +72,9 @@
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterLayer_ServerSideFilterLayer_useCommands" class="inline-link"> useCommands</a><span class="parameters">(</span>toUse) <span>If you only want to modify the user request, instead of sending a separate command
 to server before fetch, just call:
-    this.useCommand(false);</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+
+
+this.useCommand(false);</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
     </li>
   </ul>
 </div>
@@ -267,7 +269,8 @@ to server before fetch, just call:
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The content of the command if cmdContent is undefined</div>
+        <div class="jsdoc-return-description"><p>The content of the command if cmdContent is undefined</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_filter_FilterLayer_ServerSideFilterLayer_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
@@ -373,7 +376,8 @@ If this pattern does not exist, the whole class name will be this layer&#39;s na
 It&#39;s better to override this method if your class name is too complicated.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The name of this layer.</div>
+        <div class="jsdoc-return-description"><p>The name of this layer.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_filter_FilterLayer_ServerSideFilterLayer_originFetch"></a><span class="functionIcon">originFetch</span><span class="parameters">()</span> 
@@ -409,8 +413,10 @@ It&#39;s better to override this method if your class name is too complicated.</
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-link">dojox/grid/enhanced/plugins/_StoreLayer</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>If you only want to modify the user request, instead of sending a separate command
-to server before fetch, just call:</p>
-<pre><code>    this.useCommand(false);</code></pre>
+to server before fetch, just call:
+
+</p>
+<pre><code>this.useCommand(false);</code></pre>
 </div>
         <table class="jsdoc-parameters">
           <tr>

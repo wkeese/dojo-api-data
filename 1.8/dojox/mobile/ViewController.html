@@ -10,12 +10,11 @@ retrieved and parsed to create a new target view.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/mobile/ViewController<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ViewController<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mobile/ViewController">dojox/mobile/ViewController</a></div>
 <div class="jsdoc-summary"><p>Creates a new instance of the class.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mobile/ViewController.html" target="_blank">dojox/mobile/ViewController reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -130,9 +129,10 @@ by default &quot;<a class="jsdoc-link" href="/api/1.8/dojox/mobile/dh/SuffixFile
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
-        <div class="jsdoc-return-description">An array containing the currently showing view, the destination view
+        <div class="jsdoc-return-description"><p>An array containing the currently showing view, the destination view
 and the transition parameters, or an empty array if the moveTo argument
-could not be parsed.</div>
+could not be parsed. </p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_mobile_ViewController_getInstance"></a><span class="functionIcon">getInstance</span><span class="parameters">()</span> 
@@ -176,9 +176,10 @@ a DOM node specified by target.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/Deferred">dojo/_base/Deferred</a> | instance</span></div>
-        <div class="jsdoc-return-description">Deferred object that resolves when the external view is
+        <div class="jsdoc-return-description"><p>Deferred object that resolves when the external view is
 ready and a transition starts. Note that it resolves before
-the transition is complete.</div>
+the transition is complete.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
@@ -186,26 +187,26 @@ the transition is complete.</div>
 <code>&lt;body&gt;</code>, and performs a transition to the new view with the
 slide animation.
 
+
 </p>
-<pre><code>  var vc = ViewController.getInstance();
-  vc.openExternalView({
-      url: &quot;view1.html&quot;,
-      transition: &quot;slide&quot;
-  }, win.body());</code></pre>
-<p></p>
+<pre><code>var vc = ViewController.getInstance();
+vc.openExternalView({
+    url: &quot;view1.html&quot;, 
+    transition: &quot;slide&quot;
+}, win.body());</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>If you want to perform a view transition without animation,
 you can give transition:&quot;none&quot; to transOpts.
 
+
 </p>
-<pre><code>  var vc = ViewController.getInstance();
-  vc.openExternalView({
-      url: &quot;view1.html&quot;,
-      transition: &quot;none&quot;
-  }, win.body());</code></pre>
-<p></p>
+<pre><code>var vc = ViewController.getInstance();
+vc.openExternalView({
+    url: &quot;view1.html&quot;, 
+    transition: &quot;none&quot;
+}, win.body());</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -213,23 +214,24 @@ you can give transition:&quot;none&quot; to transOpts.
 not want to perform a view transition to it, you can give noTransition:true to transOpts.
 This may be useful when you want to preload external views before the user starts using them.
 
+
 </p>
-<pre><code>  var vc = ViewController.getInstance();
-  vc.openExternalView({
-      url: &quot;view1.html&quot;,
-      noTransition: true
-  }, win.body());</code></pre>
-<p></p>
+<pre><code>var vc = ViewController.getInstance();
+vc.openExternalView({
+    url: &quot;view1.html&quot;, 
+    noTransition: true
+}, win.body());</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>To do something when the external view is ready:
 
+
 </p>
-<pre><code>  var vc = ViewController.getInstance();
-  Deferred.when(vc.openExternalView({...}, win.body()), function(){
-      doSomething();
-  });</code></pre>
+<pre><code>var vc = ViewController.getInstance();
+Deferred.when(vc.openExternalView({...}, win.body()), function(){
+    doSomething();
+});</code></pre>
 
           </div>
         </div>

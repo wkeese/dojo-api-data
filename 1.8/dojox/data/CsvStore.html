@@ -20,7 +20,7 @@ Also note that values containing quotes must be escaped with two consecutive quo
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/CsvStore<span class="parameters">(keywordParameters);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new CsvStore<span class="parameters">(keywordParameters);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/CsvStore">dojox/data/CsvStore</a></div>
 <div class="jsdoc-summary"><p>initializer</p>
@@ -44,7 +44,6 @@ Also note that values containing quotes must be escaped with two consecutive quo
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data/CsvStore.html" target="_blank">dojox/data/CsvStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -346,15 +345,26 @@ columns in the CSV data.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>For example, given this CSV string as input:</p>
-<pre><code>    &quot;Title, Year, Producer \n Alien, 1979, Ridley Scott \n Blade Runner, 1982, Ridley Scott&quot;</code></pre>
-<p>this._dataArray will be set to:</p>
-<pre><code>    [[&quot;Alien&quot;, &quot;1979&quot;, &quot;Ridley Scott&quot;],
-    [&quot;Blade Runner&quot;, &quot;1982&quot;, &quot;Ridley Scott&quot;]]</code></pre>
-<p>And this._attributes will be set to:</p>
-<pre><code>    [&quot;Title&quot;, &quot;Year&quot;, &quot;Producer&quot;]</code></pre>
-<p>And this._attributeIndexes will be set to:</p>
-<pre><code>    { &quot;Title&quot;:0, &quot;Year&quot;:1, &quot;Producer&quot;:2 }</code></pre>
+            <h3>Example 1</h3><p>For example, given this CSV string as input:
+
+</p>
+<pre><code>&quot;Title, Year, Producer \n Alien, 1979, Ridley Scott \n Blade Runner, 1982, Ridley Scott&quot;</code></pre>
+<p>this._dataArray will be set to:
+
+
+</p>
+<pre><code>[[&quot;Alien&quot;, &quot;1979&quot;, &quot;Ridley Scott&quot;],
+[&quot;Blade Runner&quot;, &quot;1982&quot;, &quot;Ridley Scott&quot;]]</code></pre>
+<p>And this._attributes will be set to:
+
+
+</p>
+<pre><code>[&quot;Title&quot;, &quot;Year&quot;, &quot;Producer&quot;]</code></pre>
+<p>And this._attributeIndexes will be set to:
+
+
+</p>
+<pre><code>{ &quot;Title&quot;:0, &quot;Year&quot;:1, &quot;Producer&quot;:2 }</code></pre>
 
           </div>
         </div>
@@ -593,8 +603,10 @@ that as the request object to the handler.
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>The keywordArgs parameter may either be an instance of
 conforming to dojo/data/api/Request or may be a simple anonymous object
-that may contain any of the following:</p>
-<pre><code>  {
+that may contain any of the following:
+
+</p>
+<pre><code>{
     query: query-object or query-string,
     queryOptions: object,
     onBegin: Function,
@@ -605,9 +617,11 @@ that may contain any of the following:</p>
     start: int
     count: int
     sort: array
-  }</code></pre>
+}</code></pre>
 <p>All implementations should accept keywordArgs objects with any of
-the 9 standard properties: query, onBegin, onItem, onComplete, onError
+
+</p>
+<p>the 9 standard properties: query, onBegin, onItem, onComplete, onError
 scope, sort, start, and count.  Some implementations may accept additional
 properties in the keywordArgs object as valid parameters, such as
 {includeOutliers:true}.
@@ -640,13 +654,14 @@ an attribute named attrFoo, with a value that starts with &#39;value&#39;.
 <p>The queryOptions parameter is an optional parameter used to specify options that may modify
 the query in some fashion, such as doing a case insensitive search, or doing a deep search
 where all items in a hierarchical representation of data are scanned instead of just the root
-items.  It currently defines two options that all datastores should attempt to honor if possible:</p>
-<pre><code>  {
+items.  It currently defines two options that all datastores should attempt to honor if possible:
+
+</p>
+<pre><code>{
     ignoreCase: boolean, // Whether or not the query should match case sensitively or not.  Default behaviour is false.
-    deep: boolean  // Whether or not a fetch should do a deep search of items and all child
-            // items instead of just root-level items in a datastore.  Default is false.
-  }</code></pre>
-<p></p>
+    deep: boolean   // Whether or not a fetch should do a deep search of items and all child
+                    // items instead of just root-level items in a datastore.  Default is false.
+}</code></pre>
 <h4>The <em>onBegin</em> parameter.</h4>
 <p>function(size, request);
 If an onBegin callback function is provided, the callback function
@@ -719,13 +734,17 @@ millions of item matches to be paired down to something reasonable.
 <p>If a sort parameter is specified, this is a indication to the datastore to
 sort the items in some manner before returning the items.  The array is an array of
 javascript objects that must conform to the following format to be applied to the
-fetching of items:</p>
-<pre><code>  {
+fetching of items:
+
+</p>
+<pre><code>{
     attribute: attribute || attribute-name-string,
     descending: true|false;   // Optional.  Default is false.
-  }</code></pre>
+}</code></pre>
 <p>Note that when comparing attributes, if an item contains no value for the attribute
-(undefined), then it the default ascending sort logic should push it to the bottom
+
+</p>
+<p>(undefined), then it the default ascending sort logic should push it to the bottom
 of the list.  In the descending order case, it such items should appear at the top of the list.</p>
  
             </td>
@@ -1054,9 +1073,9 @@ The CsvStore always loads all items, so if it&#39;s an item, then it&#39;s loade
 
 </p>
 <p>From the <a class="jsdoc-link" href="/api/1.8/dojo/data/api/Read#loadItem">dojo/data/api/Read.loadItem</a> docs:
-If a call to isItemLoaded() returns true before loadItem() is even called,
-then loadItem() need not do any work at all and will not even invoke
-the callback handlers.</p>
+    If a call to isItemLoaded() returns true before loadItem() is even called,
+    then loadItem() need not do any work at all and will not even invoke
+    the callback handlers.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

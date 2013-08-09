@@ -2,13 +2,13 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/Series</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/Series<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/charting/Element" class="jsdoc-link">dojox/charting/Element,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/charting/Element" class="jsdoc-link">dojox/charting/Element</a>
 </div>
 <div class="jsdoc-full-summary"><p>An object representing a series of data for plotting on a chart.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/charting/Series<span class="parameters">(chart,data,kwArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Series<span class="parameters">(chart,data,kwArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/charting/Series">dojox/charting/Series</a></div>
 <div class="jsdoc-summary"><p>Create a new data series object for use within charting.</p>
@@ -45,7 +45,6 @@ destroy(), and setSeriesObject().</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/charting.html" target="_blank">dojox/charting/Series reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -268,7 +267,8 @@ destroy(), and setSeriesObject().</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/Element">dojox/charting/Element</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to this object for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to this object for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_Series_clear"></a><span class="functionIcon">clear</span><span class="parameters">()</span> 
@@ -408,10 +408,11 @@ destroy(), and setSeriesObject().</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">|  {
-|    text: processed text, maybe truncated or not,
-|    truncated: whether text has been truncated
-|  }</div>
+        <div class="jsdoc-return-description"><pre><code>{
+    text: processed text, maybe truncated or not,
+    truncated: whether text has been truncated
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_Series_getTextWithLimitLength"></a><span class="functionIcon">getTextWithLimitLength</span><span class="parameters">(s, font, limitWidth, truncated)</span> 
@@ -460,10 +461,11 @@ destroy(), and setSeriesObject().</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">|  {
-|    text: processed text, maybe truncated or not,
-|    truncated: whether text has been truncated
-|  }</div>
+        <div class="jsdoc-return-description"><pre><code>{
+    text: processed text, maybe truncated or not,
+    truncated: whether text has been truncated
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_Series_purgeGroup"></a><span class="functionIcon">purgeGroup</span><span class="parameters">()</span> 
@@ -473,7 +475,8 @@ destroy(), and setSeriesObject().</p>
         <div class="jsdoc-full-summary"><p>Clear any elements out of our group, and destroy the group.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/Element">dojox/charting/Element</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to this object for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to this object for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_Series_update"></a><span class="functionIcon">update</span><span class="parameters">(data)</span> 

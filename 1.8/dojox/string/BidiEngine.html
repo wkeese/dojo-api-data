@@ -4,11 +4,11 @@
 <div class="jsdoc-full-summary"><p>This class provides a bidi transformation engine, i.e.
 functions for reordering and shaping bidi text.</p>
 </div>
-<div class="jsdoc-full-summary"><p>Bidi stands for support for languages with a bidirectional script.
+<div class="jsdoc-full-summary"><p>Bidi stands for support for languages with a bidirectional script. 
 
 </p>
 <p>Usually Unicode Bidi Algorithm used by OS platform (and web browsers) is capable of properly transforming
-Bidi text and as a result it is adequately displayed on the screen. However, in some situations,
+Bidi text and as a result it is adequately displayed on the screen. However, in some situations, 
 Unicode Bidi Algorithm is not invoked or is not properly applied. This may occur in situation in which software
 responsible for rendering the text is not leveraging Unicode Bidi Algorithm implemented by OS (e.g. dojox.GFX renderers).
 
@@ -26,15 +26,19 @@ responsible for rendering the text is not leveraging Unicode Bidi Algorithm impl
 
 </p>
 <ol>
-<li>No support for following numeric shaping options:</li>
+<li>No support for following numeric shaping options:<ul>
 <li>H - Hindi,</li>
 <li>C - Contextual,</li>
 <li>N - Nominal.</li>
-<li>No support for following shaping options:</li>
+</ul>
+</li>
+<li>No support for following shaping options:<ul>
 <li>I - Initial shaping,</li>
 <li>M - Middle shaping,</li>
 <li>F - Final shaping,</li>
 <li>B - Isolated shaping.</li>
+</ul>
+</li>
 <li>No support for source-to-target or/and target-to-source maps.</li>
 <li>No support for LRE/RLE/LRO/RLO/PDF (they are handled like neutrals).</li>
 <li>No support for Windows compatibility.</li>
@@ -42,7 +46,6 @@ responsible for rendering the text is not leveraging Unicode Bidi Algorithm impl
 <li>No support for code pages (currently only UTF-8 is supported. Ideally we should convert from any code page to UTF-8).</li>
 </ol>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/string.html" target="_blank">dojox/string/BidiEngine reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -70,8 +73,8 @@ to its first strong directional character.</span>
         <div class="jsdoc-full-summary"><p>Central public API for Bidi engine. Transforms the text according to formatIn, formatOut parameters.
 If formatIn or formatOut parametrs are not valid throws an exception.</p>
 </div>
-        <div class="jsdoc-full-summary"><p>Both formatIn and formatOut parameters are 5 letters long strings.
-For example - &quot;ILYNN&quot;. Each letter is associated with specific attribute of Bidi layout.
+        <div class="jsdoc-full-summary"><p>Both formatIn and formatOut parameters are 5 letters long strings. 
+For example - &quot;ILYNN&quot;. Each letter is associated with specific attribute of Bidi layout. 
 Possible and default values for each one of the letters are provided below:
 
 </p>
@@ -80,80 +83,94 @@ Possible and default values for each one of the letters are provided below:
 </p>
 <ul>
 <li>Letter position/index:
-1</li>
+  1</li>
 <li>Letter meaning:
-Ordering Schema.</li>
-<li>Possible values:</li>
+  Ordering Schema.</li>
+<li>Possible values:<ul>
 <li>I - Implicit (Logical).</li>
 <li>V - Visual.</li>
+</ul>
+</li>
 <li>Default value:
-I</li>
+  I</li>
 </ul>
 <p>Second letter:
 
 </p>
 <ul>
 <li>Letter position/index:
-2</li>
+  2</li>
 <li>Letter meaning:
-Orientation.</li>
-<li>Possible values:</li>
+  Orientation.</li>
+<li>Possible values:<ul>
 <li>L - Left To Right.</li>
 <li>R - Right To Left.</li>
 <li>C - Contextual Left to Right.</li>
 <li>D - Contextual Right to Left.</li>
+</ul>
+</li>
 <li>Default value:
-L</li>
+  L       </li>
 </ul>
 <p>Third letter:
 
 </p>
 <ul>
 <li>Letter position/index:
-3</li>
+  3</li>
 <li>Letter meaning:
-Symmetric Swapping.</li>
-<li>Possible values:</li>
+  Symmetric Swapping.</li>
+<li>Possible values:<ul>
 <li>Y - Symmetric swapping is on.</li>
 <li>N - Symmetric swapping is off.</li>
+</ul>
+</li>
 <li>Default value:
-Y</li>
+  Y       </li>
 </ul>
 <p>Fourth letter:
 
 </p>
 <ul>
 <li>Letter position/index:
-4</li>
+  4</li>
 <li>Letter meaning:
-Shaping.</li>
-<li>Possible values:</li>
+  Shaping.</li>
+<li>Possible values:<ul>
 <li>S - Text is shaped.</li>
 <li>N - Text is not shaped.</li>
+</ul>
+</li>
 <li>Default value:
-N</li>
+  N               </li>
 </ul>
 <p>Fifth letter:
 
 </p>
 <ul>
 <li>Letter position/index:
-5</li>
+  5</li>
 <li>Letter meaning:
-Numeric Shaping.</li>
-<li>Possible values:</li>
+  Numeric Shaping.</li>
+<li>Possible values:<ul>
 <li>N - Nominal.</li>
+</ul>
+</li>
 <li>Default value:
-N</li>
+  N               </li>
 </ul>
 <p>The output of this function is original text (passed via first argument) transformed from input Bidi layout (second argument)
-to output Bidi layout (last argument).
+to output Bidi layout (last argument). 
 
 </p>
-<p>Sample call:</p>
-<pre><code>  mytext = bidiTransform(&quot;HELLO WORLD&quot;, &quot;ILYNN&quot;, &quot;VLYNN&quot;);</pre></code>
-<p>In this case, &quot;HELLO WORLD&quot; text is transformed from Logical - LTR to Visual - LTR Bidi layout with
-default values for symmetric swapping (Yes), shaping (Not shaped) and numeric shaping (Nominal).</p>
+<p>Sample call:
+
+</p>
+<pre><code>mytext = bidiTransform(&quot;HELLO WORLD&quot;, &quot;ILYNN&quot;, &quot;VLYNN&quot;);</pre></code>
+<p>In this case, &quot;HELLO WORLD&quot; text is transformed from Logical - LTR to Visual - LTR Bidi layout with 
+
+</p>
+<p>default values for symmetric swapping (Yes), shaping (Not shaped) and numeric shaping (Nominal).</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -183,9 +200,10 @@ default values for symmetric swapping (Yes), shaping (Not shaped) and numeric sh
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | string | undefined</span></div>
-        <div class="jsdoc-return-description">Original text transformed from input Bidi layout (second argument)
+        <div class="jsdoc-return-description"><p>Original text transformed from input Bidi layout (second argument)
 to output Bidi layout (last argument).
-Throws an exception if the bidi layout strings are not valid.</div>
+Throws an exception if the bidi layout strings are not valid.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_string_BidiEngine_checkContextual"></a><span class="functionIcon">checkContextual</span><span class="parameters">(text)</span> 
@@ -210,10 +228,11 @@ to its first strong directional character.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
-        <div class="jsdoc-return-description">/*String*/
-"ltr" or "rtl" according to the first strong character.
+        <div class="jsdoc-return-description"><p>/<em>String</em>/
+&quot;ltr&quot; or &quot;rtl&quot; according to the first strong character.
 If there is no strong character, returns the value of the
-document dir property.</div>
+document dir property.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_string_BidiEngine_hasBidiChar"></a><span class="functionIcon">hasBidiChar</span><span class="parameters">(text)</span> 
@@ -223,7 +242,7 @@ document dir property.</div>
         <div class="jsdoc-full-summary"><p>Return true if text contains RTL directed character.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Iterates over the text string, letter by letter starting from its beginning,
-searching for RTL directed character.
+searching for RTL directed character. 
 Return true if found else false. Needed for vml transformation.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -241,9 +260,10 @@ Return true if found else false. Needed for vml transformation.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">/*Boolean*/
+        <div class="jsdoc-return-description"><p>/<em>Boolean</em>/
 true - if text has a RTL directed character.
-false - otherwise.</div>
+false - otherwise. </p>
+</div>
       </div>
     </div>
   </div>

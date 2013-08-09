@@ -2,16 +2,15 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/dgauges/RectangularScale</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/dgauges/RectangularScale<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/dgauges/ScaleBase" class="jsdoc-link">dojox/dgauges/ScaleBase,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/dgauges/ScaleBase" class="jsdoc-link">dojox/dgauges/ScaleBase</a>
 </div>
 <div class="jsdoc-full-summary"><p>The rectangular scale. A scaler must be set to use this class.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/dgauges/RectangularScale<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new RectangularScale<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/dgauges/RectangularScale">dojox/dgauges/RectangularScale</a></div>
-<p>See the <a href="/reference-guide/1.8/dojox/dgauges.html" target="_blank">dojox/dgauges/RectangularScale reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -279,9 +278,9 @@ This property is mandatory for using the scale.</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -420,7 +419,7 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleBase" class="jsdoc-link">dojox/dgauges/ScaleBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Add an indicator to the scale. Before calling this function, ensure
+        <div class="jsdoc-full-summary"><p>Add an indicator to the scale. Before calling this function, ensure 
 this scale has already been added to a gauge using the addElement method
 of the gauge.</p>
 </div>
@@ -495,10 +494,12 @@ to watch for.</p>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
 this just retrieves the object&#39;s property.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful({foo: 3});
-  stateful.get(&quot;foo&quot;) // returns 3
-  stateful.foo // returns 3</pre></code>
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful({foo: 3});
+stateful.get(&quot;foo&quot;) // returns 3
+stateful.foo // returns 3</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -515,7 +516,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_getIndicator"></a><span class="functionIcon">getIndicator</span><span class="parameters">(name)</span> 
@@ -539,7 +541,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">IndicatorBase | undefined</span></div>
-        <div class="jsdoc-return-description">The indicator associated with the name parameter.</div>
+        <div class="jsdoc-return-description"><p>The indicator associated with the name parameter.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_getIndicatorRenderer"></a><span class="functionIcon">getIndicatorRenderer</span><span class="parameters">(name)</span> 
@@ -563,7 +566,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">dojox/gfx/canvas/Shape | undefined</span></div>
-        <div class="jsdoc-return-description">The GFX shape of the indicator.</div>
+        <div class="jsdoc-return-description"><p>The GFX shape of the indicator.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_invalidateRendering"></a><span class="functionIcon">invalidateRendering</span><span class="parameters">()</span> 
@@ -595,7 +599,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | number</span></div>
-        <div class="jsdoc-return-description">A position in pixels.</div>
+        <div class="jsdoc-return-description"><p>A position in pixels.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(mixin)</span> <span title="private" class="jsdoc-private"> </span>
@@ -647,7 +652,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">IndicatorBase | undefined</span></div>
-        <div class="jsdoc-return-description">The removed indicator.</div>
+        <div class="jsdoc-return-description"><p>The removed indicator.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
@@ -658,19 +664,23 @@ For example:</p>
 </div>
         <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
 the property. A programmatic setter may be defined in subclasses.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful();
-  stateful.watch(function(name, oldValue, value){
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful();
+stateful.watch(function(name, oldValue, value){
     // this will be called on the set below
-  }
-  stateful.set(foo, 5);</pre></code>
-<p></p>
-<p>set() may also be called with a hash of name/value pairs, ex:</p>
-<pre><code>  myObj.set({
+}
+stateful.set(foo, 5);</pre></code>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+</p>
+<pre><code>myObj.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  })</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+})</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -694,7 +704,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">The function returns this dojo.Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The function returns this dojo.Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_tickLabelFunc"></a><span class="functionIcon">tickLabelFunc</span><span class="parameters">(tickItem)</span> 
@@ -718,7 +729,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | null | undefined</span></div>
-        <div class="jsdoc-return-description">The text to be aligned with the tick. If null, the tick has no label.</div>
+        <div class="jsdoc-return-description"><p>The text to be aligned with the tick. If null, the tick has no label.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_tickShapeFunc"></a><span class="functionIcon">tickShapeFunc</span><span class="parameters">(group, scale, tickItem)</span> 
@@ -787,7 +799,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | undefined</span></div>
-        <div class="jsdoc-return-description">The value represented by pos.</div>
+        <div class="jsdoc-return-description"><p>The value represented by pos. </p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularScale_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
@@ -823,10 +836,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
     </div>
   </div>

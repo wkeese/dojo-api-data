@@ -20,10 +20,12 @@ The following attributes are supported on each item:
 <li>ddUrl - A URL that can be used to provide driving directions from the center of the search results to this search results</li>
 <li>ddUrlToHere - A URL that can be used to provide driving directions from this search result to a user specified location</li>
 <li>staticMapUrl - The published date, in RFC-822 format</li>
-<li>viewport - Recommended viewport for the query results (same for all results in a query)</li>
+<li>viewport - Recommended viewport for the query results (same for all results in a query)<ul>
 <li>center - contains lat, lng properties</li>
 <li>span - lat, lng properties for the viewport span</li>
 <li>ne, sw - lat, lng properties for the viewport corners</li>
+</ul>
+</li>
 </ul>
 <p>The query accepts the following parameters:
 
@@ -36,7 +38,7 @@ The following attributes are supported on each item:
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/GoogleSearchStore.LocalSearch<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new GoogleSearchStore.LocalSearch<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/GoogleSearchStore">dojox/data/GoogleSearchStore</a></div>
 <div class="jsdoc-summary"><p>The GoogleSearchStore is a Datastore interface to
@@ -62,7 +64,6 @@ the Google search service. The constructor accepts the following arguments:
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data.html" target="_blank">dojox/data/GoogleSearchStore.LocalSearch reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>

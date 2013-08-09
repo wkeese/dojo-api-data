@@ -3,13 +3,12 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/gfx3d/_base.Viewport<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/gfx3d/_base.Viewport<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _base.Viewport<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx3d/object">dojox/gfx3d/object</a></div>
 <div class="jsdoc-summary"><p>a viewport/container for 3D objects, which knows
 the camera and lightings</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/gfx3d.html" target="_blank">dojox/gfx3d/_base.Viewport reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -1183,8 +1182,9 @@ by group-like objects</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined | null</span></div>
-        <div class="jsdoc-return-description">dojox/gfx/shape.Shape | Null
-a fully instantiated surface-specific Shape object</div>
+        <div class="jsdoc-return-description"><p>dojox/gfx/shape.Shape | Null
+a fully instantiated surface-specific Shape object</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Viewport_createText"></a><span class="functionIcon">createText</span><span class="parameters">(text)</span> 
@@ -1580,12 +1580,13 @@ words, the clipping area is defined in the shape parent coordinate system and th
             <h3>Example 1</h3><p>The following example shows how to clip a gfx image with all the possible clip geometry: a rectangle,
 an ellipse, a circle (using the ellipse geometry), a polyline and a path:
 
+
 </p>
-<pre><code>  surface.createImage({src:img, width:200,height:200}).setClip({x:10,y:10,width:50,height:50});
-  surface.createImage({src:img, x:100,y:50,width:200,height:200}).setClip({cx:200,cy:100,rx:20,ry:30});
-  surface.createImage({src:img, x:0,y:350,width:200,height:200}).setClip({cx:100,cy:425,rx:60,ry:60});
-  surface.createImage({src:img, x:300,y:0,width:200,height:200}).setClip({points:[350,0,450,50,380,130,300,110]});
-  surface.createImage({src:img, x:300,y:350,width:200,height:200}).setClip({d:&quot;M 350,350 C314,414 317,557 373,450.0000 z&quot;});</code></pre>
+<pre><code>surface.createImage({src:img, width:200,height:200}).setClip({x:10,y:10,width:50,height:50});
+surface.createImage({src:img, x:100,y:50,width:200,height:200}).setClip({cx:200,cy:100,rx:20,ry:30});
+surface.createImage({src:img, x:0,y:350,width:200,height:200}).setClip({cx:100,cy:425,rx:60,ry:60});
+surface.createImage({src:img, x:300,y:0,width:200,height:200}).setClip({points:[350,0,450,50,380,130,300,110]});
+surface.createImage({src:img, x:300,y:350,width:200,height:200}).setClip({d:&quot;M 350,350 C314,414 317,557 373,450.0000 z&quot;});</code></pre>
 
           </div>
         </div>

@@ -47,7 +47,7 @@ on a chart).
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/charting/SimpleTheme<span class="parameters">(kwArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new SimpleTheme<span class="parameters">(kwArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/charting/SimpleTheme">dojox/charting/SimpleTheme</a></div>
 <div class="jsdoc-summary"><p>Initialize a theme using the keyword arguments.  Note that the arguments
@@ -66,112 +66,114 @@ look like the example (above), and may include a few more parameters.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/charting.html" target="_blank">dojox/charting/SimpleTheme reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><p>The default theme (and structure) looks like so:</p>
-<pre><code>  // all objects are structs used directly in dojox.gfx
-  chart:{
+    <h3>Example 1</h3><p>The default theme (and structure) looks like so:
+
+</p>
+<pre><code>// all objects are structs used directly in dojox.gfx
+chart:{
     stroke: null,
     fill: &quot;white&quot;,
     pageStyle: null // suggested page style as an object suitable for dojo.style()
-  },
-  plotarea:{
+},
+plotarea:{
     stroke: null,
     fill: &quot;white&quot;
-  },
-  axis:{
-    stroke:  { // the axis itself
-      color: &quot;#333&quot;,
-      width: 1
+},
+axis:{
+    stroke: { // the axis itself
+        color: &quot;#333&quot;,
+        width: 1
     },
-    tick: {  // used as a foundation for all ticks
-      color:     &quot;#666&quot;,
-      position:  &quot;center&quot;,
-      font:      &quot;normal normal normal 7pt Tahoma&quot;,  // labels on axis
-      fontColor: &quot;#333&quot;                // color of labels
+    tick: { // used as a foundation for all ticks
+        color:     &quot;#666&quot;,
+        position:  &quot;center&quot;,
+        font:      &quot;normal normal normal 7pt Tahoma&quot;,   // labels on axis
+        fontColor: &quot;#333&quot;                               // color of labels
     },
     majorTick:  { // major ticks on axis, and used for major gridlines
-      width:  1,
-      length: 6
+        width:  1,
+        length: 6
     },
     minorTick:  { // minor ticks on axis, and used for minor gridlines
-      width:  0.8,
-      length: 3
+        width:  0.8,
+        length: 3
     },
     microTick:  { // minor ticks on axis, and used for minor gridlines
-      width:  0.5,
-      length: 1
+        width:  0.5,
+        length: 1
     },
     title: {
-      gap:  15,
-      font: &quot;normal normal normal 11pt Tahoma&quot;,  // title font
-      fontColor: &quot;#333&quot;,              // title font color
-      orientation: &quot;axis&quot;            // &quot;axis&quot;: facing the axis, &quot;away&quot;: facing away
+        gap:  15,
+        font: &quot;normal normal normal 11pt Tahoma&quot;,   // title font
+        fontColor: &quot;#333&quot;,                          // title font color
+        orientation: &quot;axis&quot;                     // &quot;axis&quot;: facing the axis, &quot;away&quot;: facing away
     }
-  },
-  series: {
-    stroke:  {width: 1.5, color: &quot;#333&quot;},    // line
-    outline: {width: 0.1, color: &quot;#ccc&quot;},    // outline
+},
+series: {
+    stroke:  {width: 1.5, color: &quot;#333&quot;},       // line
+    outline: {width: 0.1, color: &quot;#ccc&quot;},       // outline
     //shadow:  {dx: 1, dy: 1, width: 2, color: [0, 0, 0, 0.3]},
-    shadow: null,                // no shadow
-    fill:    &quot;#ccc&quot;,              // fill, if appropriate
-    font:    &quot;normal normal normal 8pt Tahoma&quot;,  // if there&#39;s a label
-    fontColor: &quot;#000&quot;              // color of labels
-    labelWiring: {width: 1, color: &quot;#ccc&quot;},    // connect marker and target data item(slice, column, bar...)
-  },
-  marker: {  // any markers on a series
-    symbol:  &quot;m-3,3 l3,-6 3,6 z&quot;,        // symbol
-    stroke:  {width: 1.5, color: &quot;#333&quot;},    // stroke
-    outline: {width: 0.1, color: &quot;#ccc&quot;},    // outline
-    shadow: null,                // no shadow
-    fill:    &quot;#ccc&quot;,              // fill if needed
-    font:    &quot;normal normal normal 8pt Tahoma&quot;,  // label
+    shadow: null,                               // no shadow
+    fill:    &quot;#ccc&quot;,                            // fill, if appropriate
+    font:    &quot;normal normal normal 8pt Tahoma&quot;, // if there&#39;s a label
+    fontColor: &quot;#000&quot;                           // color of labels
+    labelWiring: {width: 1, color: &quot;#ccc&quot;},     // connect marker and target data item(slice, column, bar...)
+},
+marker: {   // any markers on a series
+    symbol:  &quot;m-3,3 l3,-6 3,6 z&quot;,               // symbol
+    stroke:  {width: 1.5, color: &quot;#333&quot;},       // stroke
+    outline: {width: 0.1, color: &quot;#ccc&quot;},       // outline
+    shadow: null,                               // no shadow
+    fill:    &quot;#ccc&quot;,                            // fill if needed
+    font:    &quot;normal normal normal 8pt Tahoma&quot;, // label
     fontColor: &quot;#000&quot;
-  },
-  grid: {  // grid, when not present axis tick strokes are used instead
-    majorLine: {  // major grid line
-      color:     &quot;#666&quot;,
-      width:  1,
-      length: 6
+},
+grid: { // grid, when not present axis tick strokes are used instead
+    majorLine: {    // major grid line
+        color:     &quot;#666&quot;,
+        width:  1,
+        length: 6
     },
-    minorLine: {  // minor grid line
-      color:     &quot;#666&quot;,
-      width:  0.8,
-      length: 3
+    minorLine: {    // minor grid line
+        color:     &quot;#666&quot;,
+        width:  0.8,
+        length: 3
     }
-  },
-  indicator: {
-    lineStroke:  {width: 1.5, color: &quot;#333&quot;},    // line
-    lineOutline: {width: 0.1, color: &quot;#ccc&quot;},    // line outline
-    lineShadow: null,                // no line shadow
-    stroke:  {width: 1.5, color: &quot;#333&quot;},      // label background stroke
-    outline: {width: 0.1, color: &quot;#ccc&quot;},      // label background outline
-    shadow: null,                  // no label background shadow
-    fill:  &quot;#ccc&quot;,                  // label background fill
-    radius: 3,                    // radius of the label background
-    font:    &quot;normal normal normal 10pt Tahoma&quot;,  // label font
-    fontColor: &quot;#000&quot;                // label color
-    markerFill:    &quot;#ccc&quot;,              // marker fill
-    markerSymbol:  &quot;m-3,0 c0,-4 6,-4 6,0 m-6,0 c0,4 6,4 6,0&quot;,  // marker symbol
-    markerStroke:  {width: 1.5, color: &quot;#333&quot;},    // marker stroke
-    markerOutline: {width: 0.1, color: &quot;#ccc&quot;},    // marker outline
-    markerShadow: null,                // no marker shadow
-  }</code></pre>
-<p></p>
+},
+indicator: {
+    lineStroke:  {width: 1.5, color: &quot;#333&quot;},       // line
+    lineOutline: {width: 0.1, color: &quot;#ccc&quot;},       // line outline
+    lineShadow: null,                               // no line shadow
+    stroke:  {width: 1.5, color: &quot;#333&quot;},           // label background stroke
+    outline: {width: 0.1, color: &quot;#ccc&quot;},           // label background outline
+    shadow: null,                                   // no label background shadow
+    fill:  &quot;#ccc&quot;,                                  // label background fill
+    radius: 3,                                      // radius of the label background
+    font:    &quot;normal normal normal 10pt Tahoma&quot;,    // label font
+    fontColor: &quot;#000&quot;                               // label color
+    markerFill:    &quot;#ccc&quot;,                          // marker fill
+    markerSymbol:  &quot;m-3,0 c0,-4 6,-4 6,0 m-6,0 c0,4 6,4 6,0&quot;,   // marker symbol
+    markerStroke:  {width: 1.5, color: &quot;#333&quot;},     // marker stroke
+    markerOutline: {width: 0.1, color: &quot;#ccc&quot;},     // marker outline
+    markerShadow: null,                             // no marker shadow
+}</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><p>Defining a new theme is pretty simple:</p>
-<pre><code>  var Grasslands = new SimpleTheme({
-    colors: [ &quot;#70803a&quot;, &quot;#dde574&quot;, &quot;#788062&quot;, &quot;#b1cc5d&quot;, &quot;#eff2c2&quot; ]
-  });
+    <h3>Example 2</h3><p>Defining a new theme is pretty simple:
 
-  myChart.setTheme(Grasslands);</code></pre>
+</p>
+<pre><code>var Grasslands = new SimpleTheme({
+    colors: [ &quot;#70803a&quot;, &quot;#dde574&quot;, &quot;#788062&quot;, &quot;#b1cc5d&quot;, &quot;#eff2c2&quot; ]
+});
+
+myChart.setTheme(Grasslands);</code></pre>
 
   </div>
 </div>
@@ -287,7 +289,7 @@ dictionary of keys and path segments.</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  myTheme.addMarker(&quot;Ellipse&quot;, foo);</code></pre>
+            <h3>Example 1</h3><pre><code>myTheme.addMarker(&quot;Ellipse&quot;, foo);</code></pre>
 
           </div>
         </div>
@@ -335,7 +337,8 @@ dictionary of keys and path segments.</span>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/SimpleTheme">dojox/charting/SimpleTheme</a> | undefined</span></div>
-        <div class="jsdoc-return-description">The new theme.</div>
+        <div class="jsdoc-return-description"><p>The new theme.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_SimpleTheme_clear"></a><span class="functionIcon">clear</span><span class="parameters">()</span> 
@@ -353,7 +356,8 @@ dictionary of keys and path segments.</span>
         <div class="jsdoc-full-summary"><p>Clone the current theme.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">dojox.charting.SimpleTheme | instance</span></div>
-        <div class="jsdoc-return-description">The cloned theme; any alterations made will not affect the original.</div>
+        <div class="jsdoc-return-description"><p>The cloned theme; any alterations made will not affect the original.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_SimpleTheme_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(kwArgs)</span> 
@@ -467,7 +471,8 @@ look like the example (above), and may include a few more parameters.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
-        <div class="jsdoc-return-description">An object of the structure { series, marker, symbol }</div>
+        <div class="jsdoc-return-description"><p>An object of the structure { series, marker, symbol }</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_SimpleTheme_post"></a><span class="functionIcon">post</span><span class="parameters">(theme, elementType)</span> 
@@ -498,7 +503,8 @@ look like the example (above), and may include a few more parameters.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/SimpleTheme">dojox/charting/SimpleTheme</a> | undefined</span></div>
-        <div class="jsdoc-return-description">The post-processed theme.</div>
+        <div class="jsdoc-return-description"><p>The post-processed theme.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_SimpleTheme_reverseFills"></a><span class="functionIcon">reverseFills</span><span class="parameters">()</span> 
@@ -532,7 +538,7 @@ dictionary of keys and path segments.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  myTheme.setMarkers({ &quot;CIRCLE&quot;: foo });</code></pre>
+            <h3>Example 1</h3><pre><code>myTheme.setMarkers({ &quot;CIRCLE&quot;: foo });</code></pre>
 
           </div>
         </div>

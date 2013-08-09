@@ -64,8 +64,9 @@ happens. ie It won&#39;t swap out if it diesn&#39;t have to.</p>
             <h3>Example 1</h3><p>By default, it considers only node addition/removal
 to be &quot;changing&quot;
 
+
 </p>
-<pre><code>  {% buffer %}{% for item in items %}&lt;li&gt;{{ item }}&lt;/li&gt;{% endfor %}{% endbuffer %}</code></pre>
+<pre><code>{% buffer %}{% for item in items %}&lt;li&gt;{{ item }}&lt;/li&gt;{% endfor %}{% endbuffer %}</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -77,7 +78,7 @@ to be &quot;changing&quot;
 <li>class: Watch for a classname to be changed</li>
 <li>text: Watch for any text to be changed</li>
 </ul>
-<pre><code>  {% buffer node class %}{% for item in items %}&lt;li&gt;{{ item }}&lt;/li&gt;{% endfor %}{% endbuffer %}</code></pre>
+<pre><code>{% buffer node class %}{% for item in items %}&lt;li&gt;{{ item }}&lt;/li&gt;{% endfor %}{% endbuffer %}</code></pre>
 
           </div>
         </div>

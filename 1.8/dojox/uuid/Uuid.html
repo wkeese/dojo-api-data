@@ -18,7 +18,6 @@ methods for inspecting existing UUIDs.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/uuid.html" target="_blank">dojox/uuid/Uuid reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -35,13 +34,6 @@ uuid = new dojox.uuid.Uuid();
 dojox.uuid.assert(!uuid.isEqual(dojox.uuid.NIL_UUID));</p>
 
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojox_uuid_Uuid__uuidString" class="inline-link"> _uuidString </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
 </div>
 <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
 <div class="jsdoc-summary-list">
@@ -80,15 +72,6 @@ the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</span>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
-    <h2>Properties</h2>
-    <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid__uuidString"></a><span class="objectIcon">_uuidString</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
-        </div>
-      </div>
-    </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
@@ -109,26 +92,8 @@ in IETF RFC 4122: <a href="http://www.ietf.org/rfc/rfc4122.txt">http://www.ietf.
           </tr>
           <tr>
             <td class="jsdoc-param-name">otherUuid</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>toString: <p>This method returns a standard 36-character string representing
-the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</p></p>
-</li>
-<li><p>_uuidString</p>
-</li>
-<li><p>compare: <p>Given two UUIDs to compare, this method returns 0, 1, or -1.</p></p>
-</li>
-<li><p>setGenerator: <p>Sets the default generator, which will be used by the
-&quot;new dojox.uuid.Uuid()&quot; constructor if no parameters
-are passed in.</p></p>
-</li>
-<li><p>getGenerator: <p>Returns the default generator.  See setGenerator().</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-type">dojox/uuid/Uuid</td>
+            <td class="jsdoc-param-description">
             </td>
           </tr>
         </table>
@@ -153,26 +118,14 @@ intended to match the sample implementation in IETF RFC 4122:
           </tr>
           <tr>
             <td class="jsdoc-param-name">uuidOne</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li>_uuidString</li>
-</ul>
-
+            <td class="jsdoc-param-type">dojox/uuid/Uuid</td>
+            <td class="jsdoc-param-description">
             </td>
           </tr>
           <tr>
             <td class="jsdoc-param-name">uuidTwo</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li>_uuidString</li>
-</ul>
-
+            <td class="jsdoc-param-type">dojox/uuid/Uuid</td>
+            <td class="jsdoc-param-description">
             </td>
           </tr>
         </table>
@@ -257,7 +210,8 @@ timestamp to be returned either as a JavaScript Date object or as a
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Returns the timestamp value as a JavaScript Date object or a 15-character string of hex digits.</div>
+        <div class="jsdoc-return-description"><p>Returns the timestamp value as a JavaScript Date object or a 15-character string of hex digits.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
@@ -313,28 +267,8 @@ dojox.uuid.assert(version == dojox.uuid.version.TIME_BASED);</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">otherUuid</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>toString: <p>This method returns a standard 36-character string representing
-the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</p></p>
-</li>
-<li><p>compare: <p>Compares this UUID to another UUID, and returns 0, 1, or -1.</p></p>
-</li>
-<li><p>_uuidString</p>
-</li>
-<li><p>compare: <p>Given two UUIDs to compare, this method returns 0, 1, or -1.</p></p>
-</li>
-<li><p>setGenerator: <p>Sets the default generator, which will be used by the
-&quot;new dojox.uuid.Uuid()&quot; constructor if no parameters
-are passed in.</p></p>
-</li>
-<li><p>getGenerator: <p>Returns the default generator.  See setGenerator().</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-type">dojox/uuid/Uuid</td>
+            <td class="jsdoc-param-description">
             </td>
           </tr>
         </table>

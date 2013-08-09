@@ -103,8 +103,9 @@
             <h3>Example 1</h3><p><code>contextItems</code> and <code>contextStore</code> should be an item list
 and a data store that get assigned to <code>newVariable</code>
 
+
 </p>
-<pre><code>  {% bind_data contextItems to contextStore as newVariable %}</code></pre>
+<pre><code>{% bind_data contextItems to contextStore as newVariable %}</code></pre>
 
           </div>
         </div>
@@ -142,8 +143,10 @@ and a data store that get assigned to <code>newVariable</code>
             <h3>Example 1</h3><p>You can only use this with data stores that work in a synchronous
 way (meaning that <code>onComplete</code> is fired during the <code>fetch</code> call).
 A <code>sync</code> flag is sent to the fetch call so that stores that usually
-work asynchronously make themselves syncrhonous if possible.</p>
-<pre><code>  {% bind_query contextQuery to contextStore as newVariable %}</code></pre>
+work asynchronously make themselves syncrhonous if possible.
+
+</p>
+<pre><code>{% bind_query contextQuery to contextStore as newVariable %}</code></pre>
 
           </div>
         </div>

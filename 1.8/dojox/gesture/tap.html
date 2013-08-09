@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gesture/tap</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/gesture/tap<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/gesture/Base" class="jsdoc-link">dojox/gesture/Base,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/gesture/Base" class="jsdoc-link">dojox/gesture/Base</a>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -17,7 +17,6 @@
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/gesture.html" target="_blank">dojox/gesture/tap reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -280,7 +279,7 @@ the returned handle will be used internally by dojo/on</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gesture/tap" class="jsdoc-link">dojox/gesture/tap</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Update the gesture data with new tap info</p>
+        <div class="jsdoc-full-summary"><p>Update the gesture data with new tap info </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -340,16 +339,19 @@ Also provides the machinery for managing gesture bubbling.</p>
 </div>
         <div class="jsdoc-full-summary"><ol>
 <li><p>e._locking is used to make sure only the most inner node
-will be processed for the same gesture, suppose we have:
-|  on(inner, dojox.gesture.tap, func1);
-|  on(outer, dojox.gesture.tap, func2);
-only the inner node will be processed by tap gesture, once matched,
-the &#39;tap&#39; event will be bubbled up from inner to outer, dojo.StopEvent(e)
-can be used at any level to stop the &#39;tap&#39; event.</p>
+will be processed for the same gesture, suppose we have:</p>
+<p> on(inner, dojox.gesture.tap, func1);
+ on(outer, dojox.gesture.tap, func2);
+only the inner node will be processed by tap gesture, once matched,</p>
 </li>
-<li><p>Once a node starts being processed, all it&#39;s descendant nodes will be locked.
-The same gesture won&#39;t be processed on its descendant nodes until the lock is released.</p>
-</li>
+</ol>
+<p>the &#39;tap&#39; event will be bubbled up from inner to outer, dojo.StopEvent(e)
+can be used at any level to stop the &#39;tap&#39; event.
+
+</p>
+<ol>
+<li>Once a node starts being processed, all it&#39;s descendant nodes will be locked.
+The same gesture won&#39;t be processed on its descendant nodes until the lock is released.</li>
 </ol>
 </div>
         <table class="jsdoc-parameters">

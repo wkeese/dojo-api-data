@@ -2,9 +2,8 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/_base._Controller</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mvc/_base._Controller<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful,   </a><a href="/api/1.8/dojox/mvc/_atBindingMixin" class="jsdoc-link">dojox/mvc/_atBindingMixin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful, </a><a href="/api/1.8/dojox/mvc/_atBindingMixin" class="jsdoc-link">dojox/mvc/_atBindingMixin</a>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mvc.html" target="_blank">dojox/mvc/_base._Controller reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -97,9 +96,9 @@ and setter names.</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -227,7 +226,8 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-full-summary"><p>Returns list of all properties in this widget, except &quot;id&quot;.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String[] | undefined</span></div>
-        <div class="jsdoc-return-description">The list of all properties in this widget, except "id"..</div>
+        <div class="jsdoc-return-description"><p>The list of all properties in this widget, except &quot;id&quot;..</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_mvc__base__Controller__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
@@ -344,10 +344,12 @@ Otherwise, queue it up to this._refs so that _dbstartup() can pick it up.</p>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
 this just retrieves the object&#39;s property.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful({foo: 3});
-  stateful.get(&quot;foo&quot;) // returns 3
-  stateful.foo // returns 3</pre></code>
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful({foo: 3});
+stateful.get(&quot;foo&quot;) // returns 3
+stateful.foo // returns 3</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -364,7 +366,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_mvc__base__Controller_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> 
@@ -474,10 +477,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
     </div>
   </div>

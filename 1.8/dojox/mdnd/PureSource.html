@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/PureSource</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/PureSource<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/dnd/Selector" class="jsdoc-link">dojo/dnd/Selector,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/dnd/Selector" class="jsdoc-link">dojo/dnd/Selector</a>
 </div>
 <div class="jsdoc-full-summary"><p>A Source Object, which can be used only as a DnD source.
 A Source can contained several dnd items.
@@ -10,7 +10,7 @@ A dnd item is not a source.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/mdnd/PureSource<span class="parameters">(node,params);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new PureSource<span class="parameters">(node,params);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mdnd/PureSource">dojox/mdnd/PureSource</a></div>
 <div class="jsdoc-summary"><p>Initialize a new PureSource.</p>
@@ -38,7 +38,6 @@ object which is mixed-in to the &#39;dojo.dnd.Source&#39; instance.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/mdnd.html" target="_blank">dojox/mdnd/PureSource reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -225,8 +224,10 @@ the <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Container#Item">dojo/dnd/Conta
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/dnd/Selector" class="jsdoc-link">dojo/dnd/Selector</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The set of id&#39;s that are currently selected, such that this.selection[id] == 1
-if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;s like:</p>
-<pre><code>    for(var id in this.selection)</pre></code>
+if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;s like:
+
+</p>
+<pre><code>for(var id in this.selection)</pre></code>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -359,7 +360,8 @@ if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">True if user clicked on "approved" items.</div>
+        <div class="jsdoc-return-description"><p>True if user clicked on &quot;approved&quot; items.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_mdnd_PureSource__markDndStatus"></a><span class="functionIcon">_markDndStatus</span><span class="parameters">(copy)</span> <span title="private" class="jsdoc-private"> </span>
@@ -521,7 +523,8 @@ It is separated to be overwritten dynamically, if needed.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">True, if we need to copy items, false to move.</div>
+        <div class="jsdoc-return-description"><p>True, if we need to copy items, false to move.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_mdnd_PureSource_creator"></a><span class="functionIcon">creator</span><span class="parameters">()</span> 
@@ -772,7 +775,8 @@ see <code>dojo/dnd/Container.forInItems()</code> for details</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | instance</span></div>
-        <div class="jsdoc-return-description">New dojox.mdnd.PureSource instance.</div>
+        <div class="jsdoc-return-description"><p>New dojox.mdnd.PureSource instance.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_mdnd_PureSource_on"></a><span class="functionIcon">on</span><span class="parameters">(type, listener)</span> 

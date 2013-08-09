@@ -2,11 +2,10 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/_RendererMixin</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/calendar/_RendererMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a>
 </div>
 <div class="jsdoc-full-summary"><p>This class is the base class of calendar renderers.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/_RendererMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -38,6 +37,8 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
     </li>
     <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_selected" class="inline-link"> selected </a><span>Indicates that the item displayed by this renderer is selected.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
     </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_storeState" class="inline-link"> storeState </a><span>Indicates that the item displayed by this renderer is not in the store, being saved to the store or in the store.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_visibilityLimits" class="inline-link"> visibilityLimits </a><span></span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
     </li>
   </ul>
@@ -66,6 +67,8 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
     <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
     </li>
     <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setState" class="inline-link"> _setState</a><span class="parameters">(</span>prop, value, cssClass) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setStoreStateAttr" class="inline-link"> _setStoreStateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
     </li>
     <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setText" class="inline-link"> _setText</a><span class="parameters">(</span>node, text, allowHTML) <span>Set the text to the specified node.</span><span title="private" class="jsdoc-private"> </span>
     </li>
@@ -179,6 +182,14 @@ and setter names.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_storeState"></a><span class="booleanIcon">storeState</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Indicates that the item displayed by this renderer is not in the store, being saved to the store or in the store.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_visibilityLimits"></a><span class="objectIcon">visibilityLimits</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -195,9 +206,9 @@ and setter names.</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -486,6 +497,26 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setStoreStateAttr"></a><span class="functionIcon">_setStoreStateAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setText"></a><span class="functionIcon">_setText</span><span class="parameters">(node, text, allowHTML)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
@@ -531,10 +562,12 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
 this just retrieves the object&#39;s property.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful({foo: 3});
-  stateful.get(&quot;foo&quot;) // returns 3
-  stateful.foo // returns 3</pre></code>
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful({foo: 3});
+stateful.get(&quot;foo&quot;) // returns 3
+stateful.foo // returns 3</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -551,7 +584,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_getDisplayValue"></a><span class="functionIcon">getDisplayValue</span><span class="parameters">(part)</span> 
@@ -604,19 +638,23 @@ For example:</p>
 </div>
         <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
 the property. A programmatic setter may be defined in subclasses.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful();
-  stateful.watch(function(name, oldValue, value){
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful();
+stateful.watch(function(name, oldValue, value){
     // this will be called on the set below
-  }
-  stateful.set(foo, 5);</pre></code>
-<p></p>
-<p>set() may also be called with a hash of name/value pairs, ex:</p>
-<pre><code>  myObj.set({
+}
+stateful.set(foo, 5);</pre></code>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+</p>
+<pre><code>myObj.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  })</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+})</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -640,7 +678,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">The function returns this dojo.Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The function returns this dojo.Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_updateRendering"></a><span class="functionIcon">updateRendering</span><span class="parameters">(w, h)</span> 
@@ -707,10 +746,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
     </div>
   </div>

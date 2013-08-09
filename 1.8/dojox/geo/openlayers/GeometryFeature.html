@@ -2,19 +2,19 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/GeometryFeature</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/geo/openlayers/GeometryFeature<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a>
 </div>
 <div class="jsdoc-full-summary"><p>A Feature encapsulating a geometry.</p>
 </div>
 <div class="jsdoc-full-summary"><p>This Feature renders a geometry such as a Point or LineString geometry. This Feature
 is responsible for reprojecting the geometry before creating a gfx shape to display it.
-By default the shape created is a circle for a Point geometry and a polyline for a
-LineString geometry. User can change these behavior by overriding the createShape
+By default the shape created is a circle for a Point geometry and a polyline for a 
+LineString geometry. User can change these behavior by overriding the createShape 
 method to create the desired shape.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/geo/openlayers/GeometryFeature<span class="parameters">(geometry);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new GeometryFeature<span class="parameters">(geometry);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/openlayers/GeometryFeature">dojox/geo/openlayers/GeometryFeature</a></div>
 <div class="jsdoc-summary"><p>Constructs a GeometryFeature for the specified geometry.</p>
@@ -33,15 +33,14 @@ method to create the desired shape.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/GeometryFeature reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var geom = new dojox.geo.openlayers.Point({x:0, y:0});
-  var gf = new dojox.geo.openlayers.GeometryFeature(geom);</code></pre>
+    <h3>Example 1</h3><pre><code>var geom = new dojox.geo.openlayers.Point({x:0, y:0});
+var gf = new dojox.geo.openlayers.GeometryFeature(geom);</code></pre>
 
   </div>
 </div>
@@ -415,7 +414,8 @@ User may replace this method to produce a custom shape.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The resulting shape.</div>
+        <div class="jsdoc-return-description"><p>The resulting shape.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_getCoordinateSystem"></a><span class="functionIcon">getCoordinateSystem</span><span class="parameters">()</span> 
@@ -425,7 +425,8 @@ User may replace this method to produce a custom shape.</p>
         <div class="jsdoc-full-summary"><p>Returns the coordinate system in which coordinates of this feature are expressed.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The coordinate system in which coordinates of this feature are expressed.</div>
+        <div class="jsdoc-return-description"><p>The coordinate system in which coordinates of this feature are expressed.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_getFill"></a><span class="functionIcon">getFill</span><span class="parameters">()</span> 
@@ -435,7 +436,8 @@ User may replace this method to produce a custom shape.</p>
         <div class="jsdoc-full-summary"><p>Returns the fill style</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The fill style</div>
+        <div class="jsdoc-return-description"><p>The fill style</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_getLayer"></a><span class="functionIcon">getLayer</span><span class="parameters">()</span> 
@@ -445,7 +447,8 @@ User may replace this method to produce a custom shape.</p>
         <div class="jsdoc-full-summary"><p>Returns the Layer to which this feature belongs.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The layer to which this feature belongs.</div>
+        <div class="jsdoc-return-description"><p>The layer to which this feature belongs.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_getShape"></a><span class="functionIcon">getShape</span><span class="parameters">()</span> 
@@ -455,17 +458,19 @@ User may replace this method to produce a custom shape.</p>
         <div class="jsdoc-full-summary"><p>Returns the shape rendering the geometry</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | null | undefined</span></div>
-        <div class="jsdoc-return-description">The shape used to render the geometry.</div>
+        <div class="jsdoc-return-description"><p>The shape used to render the geometry.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_getShapeProperties"></a><span class="functionIcon">getShapeProperties</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GeometryFeature" class="jsdoc-link">dojox/geo/openlayers/GeometryFeature</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns the shape properties.</p>
+        <div class="jsdoc-full-summary"><p>Returns the shape properties. </p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
-        <div class="jsdoc-return-description">The shape properties.</div>
+        <div class="jsdoc-return-description"><p>The shape properties.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_getStroke"></a><span class="functionIcon">getStroke</span><span class="parameters">()</span> 
@@ -475,14 +480,15 @@ User may replace this method to produce a custom shape.</p>
         <div class="jsdoc-full-summary"><p>Returns the stroke style</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The stroke style</div>
+        <div class="jsdoc-return-description"><p>The stroke style</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GeometryFeature_remove"></a><span class="functionIcon">remove</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GeometryFeature" class="jsdoc-link">dojox/geo/openlayers/GeometryFeature</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Removes the shape from the Surface.
+        <div class="jsdoc-full-summary"><p>Removes the shape from the Surface. 
 Called when the feature is removed from the layer.</p>
 </div>
       </div>
@@ -491,8 +497,8 @@ Called when the feature is removed from the layer.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GeometryFeature" class="jsdoc-link">dojox/geo/openlayers/GeometryFeature</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Render a geometry.
-Called by the Layer on which the feature is added.</p>
+        <div class="jsdoc-full-summary"><p>Render a geometry. 
+Called by the Layer on which the feature is added. </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -631,7 +637,7 @@ Called by the Layer on which the feature is added.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GeometryFeature" class="jsdoc-link">dojox/geo/openlayers/GeometryFeature</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Sets the shape properties.</p>
+        <div class="jsdoc-full-summary"><p>Sets the shape properties. </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -648,7 +654,7 @@ Called by the Layer on which the feature is added.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
-        <div class="jsdoc-return-description"><p>Sets the shape properties.</p>
+        <div class="jsdoc-return-description"><p>Sets the shape properties. </p>
 </div>
       </div>
       <div class="jsdoc-field">

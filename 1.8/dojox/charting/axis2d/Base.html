@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/axis2d/Base</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/axis2d/Base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/charting/Element" class="jsdoc-link">dojox/charting/Element,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/charting/Element" class="jsdoc-link">dojox/charting/Element</a>
 </div>
 <div class="jsdoc-full-summary"><p>The base class for any axis.  This is more of an interface/API
 definition than anything else; see dojox.charting.axis2d.Default
@@ -10,7 +10,7 @@ for more details.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/charting/axis2d/Base<span class="parameters">(chart,kwArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Base<span class="parameters">(chart,kwArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Base">dojox/charting/axis2d/Base</a></div>
 <div class="jsdoc-summary"><p>Return a new base axis.</p>
@@ -279,7 +279,8 @@ for more details.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Base">dojox/charting/axis2d/Base</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to the axis for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to the axis for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_cleanGroup"></a><span class="functionIcon">cleanGroup</span><span class="parameters">(creator)</span> 
@@ -304,7 +305,8 @@ for more details.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/Element">dojox/charting/Element</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to this object for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to this object for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_clear"></a><span class="functionIcon">clear</span><span class="parameters">()</span> 
@@ -314,7 +316,8 @@ for more details.</p>
         <div class="jsdoc-full-summary"><p>Stub function for clearing the axis.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Base">dojox/charting/axis2d/Base</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to the axis for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to the axis for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(chart, kwArgs)</span> 
@@ -370,7 +373,8 @@ for more details.</p>
         <div class="jsdoc-full-summary"><p>A stub function to return any offsets needed for axis and series rendering.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">An object of the form { l, r, t, b }.</div>
+        <div class="jsdoc-return-description"><p>An object of the form { l, r, t, b }.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_getScaler"></a><span class="functionIcon">getScaler</span><span class="parameters">()</span> 
@@ -380,7 +384,8 @@ for more details.</p>
         <div class="jsdoc-full-summary"><p>A stub function to return the scaler object created during calculate.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | null</span></div>
-        <div class="jsdoc-return-description">The scaler object (see dojox.charting.scaler.linear for more information)</div>
+        <div class="jsdoc-return-description"><p>The scaler object (see dojox.charting.scaler.linear for more information)</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_getTextWidth"></a><span class="functionIcon">getTextWidth</span><span class="parameters">(s, font)</span> 
@@ -456,10 +461,11 @@ for more details.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">|  {
-|    text: processed text, maybe truncated or not,
-|    truncated: whether text has been truncated
-|  }</div>
+        <div class="jsdoc-return-description"><pre><code>{
+    text: processed text, maybe truncated or not,
+    truncated: whether text has been truncated
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_getTextWithLimitLength"></a><span class="functionIcon">getTextWithLimitLength</span><span class="parameters">(s, font, limitWidth, truncated)</span> 
@@ -508,10 +514,11 @@ for more details.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">|  {
-|    text: processed text, maybe truncated or not,
-|    truncated: whether text has been truncated
-|  }</div>
+        <div class="jsdoc-return-description"><pre><code>{
+    text: processed text, maybe truncated or not,
+    truncated: whether text has been truncated
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_getTicks"></a><span class="functionIcon">getTicks</span><span class="parameters">()</span> 
@@ -521,7 +528,8 @@ for more details.</p>
         <div class="jsdoc-full-summary"><p>A stub function to return the object that helps define how ticks are rendered.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | null</span></div>
-        <div class="jsdoc-return-description">The ticks object.</div>
+        <div class="jsdoc-return-description"><p>The ticks object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_initialized"></a><span class="functionIcon">initialized</span><span class="parameters">()</span> 
@@ -531,7 +539,8 @@ for more details.</p>
         <div class="jsdoc-full-summary"><p>Return a flag as to whether or not this axis has been initialized.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | boolean</span></div>
-        <div class="jsdoc-return-description">If the axis is initialized or not.</div>
+        <div class="jsdoc-return-description"><p>If the axis is initialized or not.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_purgeGroup"></a><span class="functionIcon">purgeGroup</span><span class="parameters">()</span> 
@@ -541,7 +550,8 @@ for more details.</p>
         <div class="jsdoc-full-summary"><p>Clear any elements out of our group, and destroy the group.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/Element">dojox/charting/Element</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to this object for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to this object for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Base_render"></a><span class="functionIcon">render</span><span class="parameters">(dim, offsets)</span> 
@@ -570,7 +580,8 @@ for more details.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Base">dojox/charting/axis2d/Base</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to the axis for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to the axis for functional chaining.</p>
+</div>
       </div>
     </div>
   </div>

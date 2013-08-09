@@ -2,45 +2,60 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/ServiceStore</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/ServiceStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>note that dojox.rpc.Service is not required, you can create your own services
-A ServiceStore is a readonly data store that provides a data.data interface to an RPC service.</p>
-<pre><code>    var myServices = new dojox.rpc.Service(dojo.moduleUrl(&quot;dojox.rpc.tests.resources&quot;, &quot;test.smd&quot;));
-    var serviceStore = new dojox.data.ServiceStore({service:myServices.ServiceStore});</pre></code>
-<p></p>
+A ServiceStore is a readonly data store that provides a data.data interface to an RPC service.
+
+</p>
+<pre><code>var myServices = new dojox.rpc.Service(dojo.moduleUrl(&quot;dojox.rpc.tests.resources&quot;, &quot;test.smd&quot;));
+var serviceStore = new dojox.data.ServiceStore({service:myServices.ServiceStore});</pre></code>
 <p>The ServiceStore also supports lazy loading. References can be made to objects that have not been loaded.
-For example if a service returned:</p>
-<pre><code>    {&quot;name&quot;:&quot;Example&quot;,&quot;lazyLoadedObject&quot;:{&quot;$ref&quot;:&quot;obj2&quot;}}</pre></code>
-<p></p>
-<p>And this object has accessed using the dojo.data API:</p>
-<pre><code>    var obj = serviceStore.getValue(myObject,&quot;lazyLoadedObject&quot;);</pre></code>
-<p>The object would automatically be requested from the server (with an object id of &quot;obj2&quot;).</p>
+For example if a service returned:
+
+</p>
+<pre><code>{&quot;name&quot;:&quot;Example&quot;,&quot;lazyLoadedObject&quot;:{&quot;$ref&quot;:&quot;obj2&quot;}}</pre></code>
+<p>And this object has accessed using the dojo.data API:
+
+</p>
+<pre><code>var obj = serviceStore.getValue(myObject,&quot;lazyLoadedObject&quot;);</pre></code>
+<p>The object would automatically be requested from the server (with an object id of &quot;obj2&quot;).
+</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/ServiceStore<span class="parameters">(options);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ServiceStore<span class="parameters">(options);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/ServiceStore">dojox/data/ServiceStore</a></div>
 <div class="jsdoc-summary"><p>ServiceStore can do client side caching and result set updating if
-dojox.data.ClientFilter is loaded. Do this add:</p>
-<pre><code>  dojo.require(&quot;dojox.data.ClientFilter&quot;)</code></pre>
+dojox.data.ClientFilter is loaded. Do this add:
+
+</p>
+<pre><code>dojo.require(&quot;dojox.data.ClientFilter&quot;)</code></pre>
 <p>prior to loading the ServiceStore (ClientFilter must be loaded before ServiceStore).
-To utilize client side filtering with a subclass, you can break queries into
+
+</p>
+<p>To utilize client side filtering with a subclass, you can break queries into
 client side and server side components by putting client side actions in
-clientFilter property in fetch calls. For example you could override fetch:</p>
-<pre><code>  fetch: function(args){
+clientFilter property in fetch calls. For example you could override fetch:
+
+</p>
+<pre><code>fetch: function(args){
     // do the sorting and paging on the client side
     args.clientFilter = {start:args.start, count: args.count, sort: args.sort};
     // args.query will be passed to the service object for the server side handling
     return this.inherited(arguments);
-  }</code></pre>
+}</code></pre>
 <p>When extending this class, if you would like to create lazy objects, you can follow
-the example from dojox.data.tests.stores.ServiceStore:</p>
-<pre><code>  var lazyItem = {
+
+</p>
+<p>the example from dojox.data.tests.stores.ServiceStore:
+
+</p>
+<pre><code>var lazyItem = {
     _loadObject: function(callback){
-      this.name=&quot;loaded&quot;;
-      delete this._loadObject;
-      callback(this);
+        this.name=&quot;loaded&quot;;
+        delete this._loadObject;
+        callback(this);
     }
-  };</code></pre>
+};</code></pre>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -92,7 +107,6 @@ callbacks are unnecessary. This will only work with a synchronous capable servic
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data/ServiceStore.html" target="_blank">dojox/data/ServiceStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -190,7 +204,7 @@ does not support paging, and the response is the full set of items, where the
 total count is equal to the numer of items returned. If the server does support
 paging, an estimateCountFactor of 2 is a good value for estimating the total count
 It is also possible to override _processResults if the server can provide an exact
-total count.  </p>
+total count.    </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -326,27 +340,37 @@ A ServiceStore can be configured from a JSON Schema. Queries are just
 passed through to the underlying services</p>
 </div>
         <div class="jsdoc-full-summary"><p>ServiceStore can do client side caching and result set updating if
-dojox.data.ClientFilter is loaded. Do this add:</p>
-<pre><code>  dojo.require(&quot;dojox.data.ClientFilter&quot;)</pre></code>
+dojox.data.ClientFilter is loaded. Do this add:
+
+</p>
+<pre><code>dojo.require(&quot;dojox.data.ClientFilter&quot;)</pre></code>
 <p>prior to loading the ServiceStore (ClientFilter must be loaded before ServiceStore).
-To utilize client side filtering with a subclass, you can break queries into
+
+</p>
+<p>To utilize client side filtering with a subclass, you can break queries into
 client side and server side components by putting client side actions in
-clientFilter property in fetch calls. For example you could override fetch:</p>
-<pre><code>  fetch: function(args){
+clientFilter property in fetch calls. For example you could override fetch:
+
+</p>
+<pre><code>fetch: function(args){
     // do the sorting and paging on the client side
     args.clientFilter = {start:args.start, count: args.count, sort: args.sort};
     // args.query will be passed to the service object for the server side handling
     return this.inherited(arguments);
-  }</pre></code>
+}</pre></code>
 <p>When extending this class, if you would like to create lazy objects, you can follow
-the example from dojox.data.tests.stores.ServiceStore:</p>
-<pre><code>  var lazyItem = {
+
+</p>
+<p>the example from dojox.data.tests.stores.ServiceStore:
+
+</p>
+<pre><code>var lazyItem = {
     _loadObject: function(callback){
-      this.name=&quot;loaded&quot;;
-      delete this._loadObject;
-      callback(this);
+        this.name=&quot;loaded&quot;;
+        delete this._loadObject;
+        callback(this);
     }
-  };</pre></code>
+};</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -547,7 +571,7 @@ it as an array.</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>returns the attributes which are used to make up the
-identity of an item.  Basically returns this.idAttribute</p>
+identity of an item.    Basically returns this.idAttribute</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -661,7 +685,7 @@ identity of an item.  Basically returns this.idAttribute</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Gets the value of an item&#39;s &#39;property&#39; and returns
-it.  If this value is an array it is just returned,
+it. If this value is an array it is just returned,
 if not, the value is added to an array and that is returned.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -786,12 +810,12 @@ a lazy value as well (doesn&#39;t need to be an item).</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  store.loadItem({
+            <h3>Example 1</h3><pre><code>store.loadItem({
     item: item, // this item may or may not be loaded
     onItem: function(item){
-      // do something with the item
+        // do something with the item
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

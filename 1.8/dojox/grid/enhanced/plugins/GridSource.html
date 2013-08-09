@@ -2,14 +2,14 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/GridSource</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/GridSource<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/dnd/Source" class="jsdoc-link">dojo/dnd/Source,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/dnd/Source" class="jsdoc-link">dojo/dnd/Source</a>
 </div>
 <div class="jsdoc-full-summary"><p>A special source that can accept grid contents.
 Only for non-grid widgets or domNodes.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/GridSource<span class="parameters">(node,params);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new GridSource<span class="parameters">(node,params);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Source">dojo/dnd/Source</a></div>
 <div class="jsdoc-summary"><p>a constructor of the Source</p>
@@ -297,8 +297,10 @@ the <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Container#Item">dojo/dnd/Conta
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/dnd/Selector" class="jsdoc-link">dojo/dnd/Selector</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The set of id&#39;s that are currently selected, such that this.selection[id] == 1
-if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;s like:</p>
-<pre><code>    for(var id in this.selection)</pre></code>
+if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;s like:
+
+</p>
+<pre><code>for(var id in this.selection)</pre></code>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -841,17 +843,17 @@ see <code>dojo/dnd/Container.forInItems()</code> for details</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var cells = grid.layout.cells;
-  var store = grid.store;
-  var cache = grid._by_idx;
-  var res = &quot;Grid Cells from &quot; + grid.id + &quot;:&lt;br/&gt;&quot;;
-  for(var r = leftTopCell.row; r &lt;= rightBottomCell.row; ++r){
+            <h3>Example 1</h3><pre><code>var cells = grid.layout.cells;
+var store = grid.store;
+var cache = grid._by_idx;
+var res = &quot;Grid Cells from &quot; + grid.id + &quot;:&lt;br/&gt;&quot;;
+for(var r = leftTopCell.row; r &lt;= rightBottomCell.row; ++r){
     for(var c = leftTopCell.col; c &lt;= rightBottomCell.col; ++c){
-      res += store.getValue(cache[r].item, cells[c].field) + &quot;, &quot;;
+        res += store.getValue(cache[r].item, cells[c].field) + &quot;, &quot;;
     }
     res = res.substring(0, res.length - 2) + &quot;;&lt;br/&gt;&quot;;
-  }
-  return res;</code></pre>
+}
+return res;</code></pre>
 
           </div>
         </div>
@@ -885,13 +887,13 @@ see <code>dojo/dnd/Container.forInItems()</code> for details</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var cells = grid.layout.cells;
-  var res = &quot;Grid Columns from &quot; + grid.id + &quot;:&quot;;
-  for(var i = 0; i &lt; colIndexes.length; ++i){
+            <h3>Example 1</h3><pre><code>var cells = grid.layout.cells;
+var res = &quot;Grid Columns from &quot; + grid.id + &quot;:&quot;;
+for(var i = 0; i &lt; colIndexes.length; ++i){
     var c = colIndexes[i];
     res += (cells[c].name || cells[c].field) + &quot;, &quot;;
-  }
-  return res.substring(0, res.length - 2);</code></pre>
+}
+return res.substring(0, res.length - 2);</code></pre>
 
           </div>
         </div>
@@ -947,21 +949,21 @@ see <code>dojo/dnd/Container.forInItems()</code> for details</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var cells = grid.layout.cells;
-  var store = grid.store;
-  var cache = grid._by_idx;
-  var res = &quot;Grid Rows from &quot; + grid.id + &quot;:&lt;br/&gt;&quot;;
-  for(var i = 0; i &lt; rowIndexes.length; ++i){
+            <h3>Example 1</h3><pre><code>var cells = grid.layout.cells;
+var store = grid.store;
+var cache = grid._by_idx;
+var res = &quot;Grid Rows from &quot; + grid.id + &quot;:&lt;br/&gt;&quot;;
+for(var i = 0; i &lt; rowIndexes.length; ++i){
     var r = rowIndexes[i];
     res += &quot;Row &quot; + r + &quot;: &quot;;
     for(var j = 0; j &lt; cells.length; ++j){
-      if(!cells[j].hidden){
-        res += store.getValue(cache[r].item, cells[j].field) + &quot;, &quot;;
-      }
+        if(!cells[j].hidden){
+            res += store.getValue(cache[r].item, cells[j].field) + &quot;, &quot;;
+        }
     }
     res = res.substring(0, res.length - 2) + &quot;;&lt;br/&gt;&quot;;
-  }
-  return res;</code></pre>
+}
+return res;</code></pre>
 
           </div>
         </div>

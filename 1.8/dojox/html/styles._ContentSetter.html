@@ -3,7 +3,7 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/html/styles._ContentSetter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/html/styles._ContentSetter<span class="parameters">(params,node);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new styles._ContentSetter<span class="parameters">(params,node);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/html">dojo/html</a></div>
 <div class="jsdoc-summary"><p>Provides a configurable, extensible object to wrap the setting on content on a node
@@ -28,7 +28,6 @@ call the set() method to actually set the content..</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/html.html" target="_blank">dojox/html/styles._ContentSetter reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -48,7 +47,7 @@ and the real content stripped of ,  wrapper before injection</span>
     <li class="booleanIcon"><a href="#1_8dojox_html_styles__ContentSetter_extractContent" class="inline-link"> extractContent </a><span>Should the content be treated as a full html document,
 and the real content stripped of &lt;html&gt; &lt;body&gt; wrapper before injection</span>
     </li>
-    <li class="stringIcon"><a href="#1_8dojox_html_styles__ContentSetter_id" class="inline-link"> id </a><span>Usually only used internally, and auto-generated with each instance</span>
+    <li class="objectIcon"><a href="#1_8dojox_html_styles__ContentSetter_id" class="inline-link"> id </a><span>Usually only used internally, and auto-generated with each instance</span>
     </li>
     <li class="domnodeIcon"><a href="#1_8dojox_html_styles__ContentSetter_node" class="inline-link"> node </a><span>An node which will be the parent element that we set content into</span>
     </li>
@@ -160,7 +159,7 @@ and the real content stripped of <code>&lt;html&gt; &lt;body&gt;</code> wrapper 
 </div>
       </div>
       <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_html_styles__ContentSetter_id"></a><span class="stringIcon">id</span>
+        <div class="jsdoc-title"><a name="1_8dojox_html_styles__ContentSetter_id"></a><span class="objectIcon">id</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
@@ -188,7 +187,7 @@ and the real content stripped of <code>&lt;html&gt; &lt;body&gt;</code> wrapper 
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
-        <div class="jsdoc-summary"><p>Flag passed to parser.  Root for attribute names to search for.    If scopeName is dojo,
+        <div class="jsdoc-summary"><p>Flag passed to parser.  Root for attribute names to search for.   If scopeName is dojo,
 will search for data-dojo-type (or dojoType).  For backwards compatibility
 reasons defaults to dojo._scopeName (which is &quot;dojo&quot; except when
 multi-version support is used, when it will be something like dojo16, dojo20, etc.)</p>
@@ -223,7 +222,7 @@ multi-version support is used, when it will be something like dojo16, dojo20, et
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
-        <div class="jsdoc-summary"><p>Start the child widgets after parsing them.    Only obeyed if parseContent is true.</p>
+        <div class="jsdoc-summary"><p>Start the child widgets after parsing them.   Only obeyed if parseContent is true.</p>
 </div>
       </div>
     </div>

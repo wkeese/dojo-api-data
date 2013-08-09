@@ -62,11 +62,16 @@ function or the evaluator function.</li>
 <li>+, -, /, *, &amp;, |, %, (, ), &lt;, &gt;, &lt;=, &gt;=, != - These operators behave just as they do
 in JavaScript.</li>
 </ul>
-<pre><code>  dojox.json.query(queryString,object)</pre></code>
-<p>and</p>
-<pre><code>  dojox.json.query(queryString)(object)</pre></code>
+<pre><code>dojox.json.query(queryString,object)</pre></code>
+<p>and
+
+
+</p>
+<pre><code>dojox.json.query(queryString)(object)</pre></code>
 <p>always return identical results. The first one immediately evaluates, the second one returns a
-function that then evaluates the object.
+
+</p>
+<p>function that then evaluates the object.
 </p>
 </div>
 <table class="jsdoc-parameters">
@@ -91,33 +96,41 @@ function that then evaluates the object.
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/json/query.html" target="_blank">dojox/json/query reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  dojox.json.query(&quot;foo&quot;,{foo:&quot;bar&quot;})</code></pre>
+    <h3>Example 1</h3><pre><code>dojox.json.query(&quot;foo&quot;,{foo:&quot;bar&quot;})</code></pre>
 <p>This will return &quot;bar&quot;.
+
 </p>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  evaluator = dojox.json.query(&quot;?foo=&#39;bar&#39;&amp;rating&gt;3&quot;);</code></pre>
+    <h3>Example 2</h3><pre><code>evaluator = dojox.json.query(&quot;?foo=&#39;bar&#39;&amp;rating&gt;3&quot;);</code></pre>
 <p>This creates a function that finds all the objects in an array with a property
-foo that is equals to &quot;bar&quot; and with a rating property with a value greater
-than 3.</p>
-<pre><code>  evaluator([{foo:&quot;bar&quot;,rating:4},{foo:&quot;baz&quot;,rating:2}])</code></pre>
-<p>This returns:</p>
-<pre><code>  {foo:&quot;bar&quot;,rating:4}</code></pre>
-<p></p>
+
+</p>
+<p>foo that is equals to &quot;bar&quot; and with a rating property with a value greater
+than 3.
+
+</p>
+<pre><code>evaluator([{foo:&quot;bar&quot;,rating:4},{foo:&quot;baz&quot;,rating:2}])</code></pre>
+<p>This returns:
+
+
+</p>
+<pre><code>{foo:&quot;bar&quot;,rating:4}</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>  evaluator = dojox.json.query(&quot;$[?price&lt;15.00][\rating][0:10]&quot;);</code></pre>
+    <h3>Example 3</h3><pre><code>evaluator = dojox.json.query(&quot;$[?price&lt;15.00][\rating][0:10]&quot;);</code></pre>
 <p>This finds objects in array with a price less than 15.00 and sorts then
-by rating, highest rated first, and returns the first ten items in from this
+
+</p>
+<p>by rating, highest rated first, and returns the first ten items in from this
 filtered and sorted list.</p>
 
   </div>
@@ -199,11 +212,16 @@ function or the evaluator function.</li>
 <li>+, -, /, *, &amp;, |, %, (, ), &lt;, &gt;, &lt;=, &gt;=, != - These operators behave just as they do
 in JavaScript.</li>
 </ul>
-<pre><code>  dojox.json.query(queryString,object)</pre></code>
-<p>and</p>
-<pre><code>  dojox.json.query(queryString)(object)</pre></code>
+<pre><code>dojox.json.query(queryString,object)</pre></code>
+<p>and
+
+
+</p>
+<pre><code>dojox.json.query(queryString)(object)</pre></code>
 <p>always return identical results. The first one immediately evaluates, the second one returns a
-function that then evaluates the object.
+
+</p>
+<p>function that then evaluates the object.
 </p>
 </div>
         <table class="jsdoc-parameters">
@@ -231,26 +249,35 @@ function that then evaluates the object.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  dojox.json.query(&quot;foo&quot;,{foo:&quot;bar&quot;})</code></pre>
+            <h3>Example 1</h3><pre><code>dojox.json.query(&quot;foo&quot;,{foo:&quot;bar&quot;})</code></pre>
 <p>This will return &quot;bar&quot;.
+
 </p>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  evaluator = dojox.json.query(&quot;?foo=&#39;bar&#39;&amp;rating&gt;3&quot;);</code></pre>
+            <h3>Example 2</h3><pre><code>evaluator = dojox.json.query(&quot;?foo=&#39;bar&#39;&amp;rating&gt;3&quot;);</code></pre>
 <p>This creates a function that finds all the objects in an array with a property
-foo that is equals to &quot;bar&quot; and with a rating property with a value greater
-than 3.</p>
-<pre><code>  evaluator([{foo:&quot;bar&quot;,rating:4},{foo:&quot;baz&quot;,rating:2}])</code></pre>
-<p>This returns:</p>
-<pre><code>  {foo:&quot;bar&quot;,rating:4}</code></pre>
-<p></p>
+
+</p>
+<p>foo that is equals to &quot;bar&quot; and with a rating property with a value greater
+than 3.
+
+</p>
+<pre><code>evaluator([{foo:&quot;bar&quot;,rating:4},{foo:&quot;baz&quot;,rating:2}])</code></pre>
+<p>This returns:
+
+
+</p>
+<pre><code>{foo:&quot;bar&quot;,rating:4}</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code>  evaluator = dojox.json.query(&quot;$[?price&lt;15.00][\rating][0:10]&quot;);</code></pre>
+            <h3>Example 3</h3><pre><code>evaluator = dojox.json.query(&quot;$[?price&lt;15.00][\rating][0:10]&quot;);</code></pre>
 <p>This finds objects in array with a price less than 15.00 and sorts then
-by rating, highest rated first, and returns the first ten items in from this
+
+</p>
+<p>by rating, highest rated first, and returns the first ten items in from this
 filtered and sorted list.</p>
 
           </div>

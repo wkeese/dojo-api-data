@@ -1,10 +1,188 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/drawing/manager/Anchors</div>
-<h1 class="objectIcon36 jsdoc-title">dojox/drawing/manager/Anchors<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title">dojox/drawing/manager/Anchors<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Anchors<span class="parameters">(options);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/drawing/manager/Anchors">dojox/drawing/manager/Anchors</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">options</td>
+    <td class="jsdoc-param-type">dojox.__stencilArgs</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_add" class="inline-link"> add</a><span class="parameters">(</span>item) <span>Creates anchor points on a Stencil, based on the
+Stencil&#39;s points.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_remove" class="inline-link"> remove</a><span class="parameters">(</span>item) <span>Destroys the anchor points for a Stencil.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onAddAnchor" class="inline-link"> onAddAnchor</a><span class="parameters">(</span>anchor) <span>Event fires when anchor is created</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onAnchorDown" class="inline-link"> onAnchorDown</a><span class="parameters">(</span>anchor) <span>Event fired on anchor mousedown</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onAnchorDrag" class="inline-link"> onAnchorDrag</a><span class="parameters">(</span>anchor) <span>Event fired when anchor is moved</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onAnchorUp" class="inline-link"> onAnchorUp</a><span class="parameters">(</span>anchor) <span>Event fired on anchor mouseup</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onChangeStyle" class="inline-link"> onChangeStyle</a><span class="parameters">(</span>stencil) <span>if the Stencil changes color while were&#39;s selected
+this moves the anchors to the back.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onRenderStencil" class="inline-link"> onRenderStencil</a><span class="parameters">(</span>) <span>Event fires when an anchor calls a Stencil&#39;s render method</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onReset" class="inline-link"> onReset</a><span class="parameters">(</span>stencil) <span>Event fires when an anchor&#39;s reset method is called</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_manager_Anchors_onTransformPoint" class="inline-link"> onTransformPoint</a><span class="parameters">(</span>anchor) <span>Event fired on anchor drag</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_add"></a><span class="functionIcon">add</span><span class="parameters">(item)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Creates anchor points on a Stencil, based on the
+Stencil&#39;s points.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">Stencil</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">dojox.__stencilArgs</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_remove"></a><span class="functionIcon">remove</span><span class="parameters">(item)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Destroys the anchor points for a Stencil.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">Stencil</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onAddAnchor"></a><span class="functionIcon">onAddAnchor</span><span class="parameters">(anchor)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fires when anchor is created</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onAnchorDown"></a><span class="functionIcon">onAnchorDown</span><span class="parameters">(anchor)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fired on anchor mousedown</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onAnchorDrag"></a><span class="functionIcon">onAnchorDrag</span><span class="parameters">(anchor)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fired when anchor is moved</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onAnchorUp"></a><span class="functionIcon">onAnchorUp</span><span class="parameters">(anchor)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fired on anchor mouseup</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onChangeStyle"></a><span class="functionIcon">onChangeStyle</span><span class="parameters">(stencil)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>if the Stencil changes color while were&#39;s selected
+this moves the anchors to the back. Fix it.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onRenderStencil"></a><span class="functionIcon">onRenderStencil</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fires when an anchor calls a Stencil&#39;s render method</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onReset"></a><span class="functionIcon">onReset</span><span class="parameters">(stencil)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fires when an anchor&#39;s reset method is called</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_manager_Anchors_onTransformPoint"></a><span class="functionIcon">onTransformPoint</span><span class="parameters">(anchor)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/drawing/manager/Anchors" class="jsdoc-link">dojox/drawing/manager/Anchors</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Event fired on anchor drag</p>
+</div>
+      </div>
+    </div>
   </div>
 </div>

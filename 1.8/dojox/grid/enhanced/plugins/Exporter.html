@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Exporter</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Exporter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provide functions to export the grid data into a given format.
 
@@ -12,13 +12,13 @@
 </p>
 <ol>
 <li>exportFormatter: function(data, cell, rowIndex, item)
-Provide a way to customize how data should look in exported string.
-Note that usually the formatter of grid cell should not be used here (it can return HTML or even widget).</li>
+ Provide a way to customize how data should look in exported string.
+ Note that usually the formatter of grid cell should not be used here (it can return HTML or even widget).</li>
 </ol>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/Exporter<span class="parameters">(grid,args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Exporter<span class="parameters">(grid,args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/Exporter">dojox/grid/enhanced/plugins/Exporter</a></div>
 <div class="jsdoc-summary"><p>only newed by _Plugin</p>
@@ -49,21 +49,20 @@ Note that usually the formatter of grid cell should not be used here (it can ret
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  function onExported(exported_text){
+    <h3>Example 1</h3><pre><code>function onExported(exported_text){
     //custom code here...
-  }
-  dijit.byId(&quot;my_grid_id&quot;).exportTo(&quot;csv&quot;,  //registered export format, mandatory
-    {                    //the whole object is optional.
-      fetchArgs: {start:0,count:1000},  //keywordArgs for fetch, optional
-      writerArgs: {separator:&#39;;&#39;},    //export writer specific arguments, optional
+}
+dijit.byId(&quot;my_grid_id&quot;).exportTo(&quot;csv&quot;,    //registered export format, mandatory
+    {                                       //the whole object is optional.
+        fetchArgs: {start:0,count:1000},    //keywordArgs for fetch, optional
+        writerArgs: {separator:&#39;;&#39;},        //export writer specific arguments, optional
     },
     function(str){
-      //call back function, mandatory
-  });
-  var result = dijit.byId(&quot;my_grid_id&quot;).exportSelectedTo(&quot;table&quot;,     //registered export format, mandatory
-                            {separator:&#39;|&#39;} //export writer specific arguments, optional
-  );</code></pre>
-<p></p>
+        //call back function, mandatory
+});
+var result = dijit.byId(&quot;my_grid_id&quot;).exportSelectedTo(&quot;table&quot;,     //registered export format, mandatory
+                                                    {separator:&#39;|&#39;} //export writer specific arguments, optional
+);</code></pre>
 
   </div>
 </div>
@@ -234,7 +233,8 @@ which is given in the context object(arg_obj).</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">undefined</div>
+        <div class="jsdoc-return-description"><p>undefined</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Exporter__getExportWriter"></a><span class="functionIcon">_getExportWriter</span><span class="parameters">(fileType, writerArgs)</span> <span title="private" class="jsdoc-private"> </span>
@@ -361,11 +361,11 @@ and the given rows(items), then return the writer output.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when foo.bar() is called, call the listener in the scope of plugin
-  plugin.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.xxx());//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -453,13 +453,15 @@ then pass the exported text to a given function(onExported).</p>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>includes:</p>
-<pre><code>  {
+              <div><em>Optional</em></div><p>includes:
+
+</p>
+<pre><code>{
     fetchArgs: object?
-      Any arguments for store.fetch
+        Any arguments for store.fetch
     writerArgs: object?
-      Arguments for the given format writer
-  }</code></pre>
+        Arguments for the given format writer
+}</code></pre>
  
             </td>
           </tr>
@@ -508,7 +510,8 @@ then pass the exported text to a given function(onExported).</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string | undefined</span></div>
-        <div class="jsdoc-return-description">The exported string</div>
+        <div class="jsdoc-return-description"><p>The exported string</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Exporter_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
@@ -596,12 +599,12 @@ of this object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when /my/topic is published, call the subscriber in the scope of plugin
-  // with passed parameter - &quot;v&quot;
-  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
     console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

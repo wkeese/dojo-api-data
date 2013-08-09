@@ -26,88 +26,101 @@ simple, chainable way.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/NodeList/delegate.html" target="_blank">dojox/NodeList/delegate reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><p>create a node list from a node</p>
-<pre><code>  new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+    <h3>Example 1</h3><p>create a node list from a node
+
+</p>
+<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it</p>
-<pre><code>  var l = dojo.query(&quot;.thinger&quot;);
-  l.forEach(function(node, index, nodeList){
+    <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
+
+</p>
+<pre><code>var l = dojo.query(&quot;.thinger&quot;);
+l.forEach(function(node, index, nodeList){
     console.log(index, node.innerHTML);
-  });</code></pre>
+});</code></pre>
 
   </div>
   <div class="jsdoc-example">
     <h3>Example 3</h3><p>use native and Dojo-provided array methods to manipulate a
-NodeList without needing to use dojo.* functions explicitly:</p>
-<pre><code>  var l = dojo.query(&quot;.thinger&quot;);
-  // since NodeLists are real arrays, they have a length
-  // property that is both readable and writable and
-  // push/pop/shift/unshift methods
-  console.log(l.length);
-  l.push(dojo.create(&quot;span&quot;));
+NodeList without needing to use dojo.* functions explicitly:
 
-  // dojo&#39;s normalized array methods work too:
-  console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-  // ...including the special &quot;function as string&quot; shorthand
-  console.log( l.every(&quot;item.nodeType == 1&quot;) );
+</p>
+<pre><code>var l = dojo.query(&quot;.thinger&quot;);
+// since NodeLists are real arrays, they have a length
+// property that is both readable and writable and
+// push/pop/shift/unshift methods
+console.log(l.length);
+l.push(dojo.create(&quot;span&quot;));
 
-  // NodeLists can be [..] indexed, or you can use the at()
-  // function to get specific items wrapped in a new NodeList:
-  var node = l[3]; // the 4th element
-  var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
+// dojo&#39;s normalized array methods work too:
+console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
+// ...including the special &quot;function as string&quot; shorthand
+console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><p>the style functions you expect are all there too:</p>
-<pre><code>  // style() as a getter...
-  var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-  // ...and as a setter:
-  dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-  // class manipulation
-  dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-  // even getting the coordinates of all the items
-  var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+// NodeLists can be [..] indexed, or you can use the at()
+// function to get specific items wrapped in a new NodeList:
+var node = l[3]; // the 4th element
+var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:</p>
-<pre><code>  // remove all of the elements in the list from their
-  // parents (akin to &quot;deleting&quot; them from the document)
-  dojo.query(&quot;.thinger&quot;).orphan();
-  // place all elements in the list at the front of #foo
-  dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
+    <h3>Example 4</h3><p>the style functions you expect are all there too:
+
+</p>
+<pre><code>// style() as a getter...
+var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
+// ...and as a setter:
+dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
+// class manipulation
+dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
+// even getting the coordinates of all the items
+var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+
+</p>
+<pre><code>// remove all of the elements in the list from their
+// parents (akin to &quot;deleting&quot; them from the document)
+dojo.query(&quot;.thinger&quot;).orphan();
+// place all elements in the list at the front of #foo
+dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
 
   </div>
   <div class="jsdoc-example">
     <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:</p>
-<pre><code>  // like dojo.connect(), but with implicit scope
-  dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
+and shortcut handlers are provided for most DOM events:
 
-  // many common event handlers are already available directly:
-  dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-  var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-  dojo.query(&quot;p&quot;)
+</p>
+<pre><code>// like dojo.connect(), but with implicit scope
+dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
+
+// many common event handlers are already available directly:
+dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
+var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
+dojo.query(&quot;p&quot;)
     .onmouseenter(toggleHovered)
     .onmouseleave(toggleHovered);</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:</p>
-<pre><code>  dojo.query(&quot;.thinger&quot;)
+    <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
+
+</p>
+<pre><code>dojo.query(&quot;.thinger&quot;)
     .onclick(function(e){ /* ... */ })
     .at(1, 3, 8) // get a subset
-      .style(&quot;padding&quot;, &quot;5px&quot;)
-      .forEach(console.log);</code></pre>
+        .style(&quot;padding&quot;, &quot;5px&quot;)
+        .forEach(console.log);</code></pre>
 
   </div>
 </div>
@@ -716,81 +729,95 @@ simple, chainable way.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>create a node list from a node</p>
-<pre><code>  new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+            <h3>Example 1</h3><p>create a node list from a node
+
+</p>
+<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it</p>
-<pre><code>  var l = dojo.query(&quot;.thinger&quot;);
-  l.forEach(function(node, index, nodeList){
+            <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
+
+</p>
+<pre><code>var l = dojo.query(&quot;.thinger&quot;);
+l.forEach(function(node, index, nodeList){
     console.log(index, node.innerHTML);
-  });</code></pre>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>use native and Dojo-provided array methods to manipulate a
-NodeList without needing to use dojo.* functions explicitly:</p>
-<pre><code>  var l = dojo.query(&quot;.thinger&quot;);
-  // since NodeLists are real arrays, they have a length
-  // property that is both readable and writable and
-  // push/pop/shift/unshift methods
-  console.log(l.length);
-  l.push(dojo.create(&quot;span&quot;));
+NodeList without needing to use dojo.* functions explicitly:
 
-  // dojo&#39;s normalized array methods work too:
-  console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-  // ...including the special &quot;function as string&quot; shorthand
-  console.log( l.every(&quot;item.nodeType == 1&quot;) );
+</p>
+<pre><code>var l = dojo.query(&quot;.thinger&quot;);
+// since NodeLists are real arrays, they have a length
+// property that is both readable and writable and
+// push/pop/shift/unshift methods
+console.log(l.length);
+l.push(dojo.create(&quot;span&quot;));
 
-  // NodeLists can be [..] indexed, or you can use the at()
-  // function to get specific items wrapped in a new NodeList:
-  var node = l[3]; // the 4th element
-  var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
+// dojo&#39;s normalized array methods work too:
+console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
+// ...including the special &quot;function as string&quot; shorthand
+console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>the style functions you expect are all there too:</p>
-<pre><code>  // style() as a getter...
-  var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-  // ...and as a setter:
-  dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-  // class manipulation
-  dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-  // even getting the coordinates of all the items
-  var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+// NodeLists can be [..] indexed, or you can use the at()
+// function to get specific items wrapped in a new NodeList:
+var node = l[3]; // the 4th element
+var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:</p>
-<pre><code>  // remove all of the elements in the list from their
-  // parents (akin to &quot;deleting&quot; them from the document)
-  dojo.query(&quot;.thinger&quot;).orphan();
-  // place all elements in the list at the front of #foo
-  dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
+            <h3>Example 4</h3><p>the style functions you expect are all there too:
+
+</p>
+<pre><code>// style() as a getter...
+var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
+// ...and as a setter:
+dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
+// class manipulation
+dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
+// even getting the coordinates of all the items
+var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+
+</p>
+<pre><code>// remove all of the elements in the list from their
+// parents (akin to &quot;deleting&quot; them from the document)
+dojo.query(&quot;.thinger&quot;).orphan();
+// place all elements in the list at the front of #foo
+dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:</p>
-<pre><code>  // like dojo.connect(), but with implicit scope
-  dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
+and shortcut handlers are provided for most DOM events:
 
-  // many common event handlers are already available directly:
-  dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-  var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-  dojo.query(&quot;p&quot;)
+</p>
+<pre><code>// like dojo.connect(), but with implicit scope
+dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
+
+// many common event handlers are already available directly:
+dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
+var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
+dojo.query(&quot;p&quot;)
     .onmouseenter(toggleHovered)
     .onmouseleave(toggleHovered);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:</p>
-<pre><code>  dojo.query(&quot;.thinger&quot;)
+            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
+
+</p>
+<pre><code>dojo.query(&quot;.thinger&quot;)
     .onclick(function(e){ /* ... */ })
     .at(1, 3, 8) // get a subset
-      .style(&quot;padding&quot;, &quot;5px&quot;)
-      .forEach(console.log);</code></pre>
+        .style(&quot;padding&quot;, &quot;5px&quot;)
+        .forEach(console.log);</code></pre>
 
           </div>
         </div>
@@ -938,22 +965,22 @@ the nodes in this NodeList if the query matches more than one element.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>How to make a <code>dojo/NodeList</code> method that only returns the third node in
-the dojo/NodeList but allows access to the original NodeList by using this._stash:</p>
-<pre><code>  dojo.extend(NodeList, {
+the dojo/NodeList but allows access to the original NodeList by using this._stash:
+
+</p>
+<pre><code>dojo.extend(NodeList, {
     third: function(){
-      var newNodeList = NodeList(this[2]);
-      return newNodeList._stash(this);
+        var newNodeList = NodeList(this[2]);
+        return newNodeList._stash(this);
     }
-  });
-  // then see how _stash applies a sub-list, to be .end()&#39;ed out of
-  dojo.query(&quot;.foo&quot;)
+});
+// then see how _stash applies a sub-list, to be .end()&#39;ed out of
+dojo.query(&quot;.foo&quot;)
     .third()
-      .addClass(&quot;thirdFoo&quot;)
+        .addClass(&quot;thirdFoo&quot;)
     .end()
     // access to the orig .foo list
-    .removeClass(&quot;foo&quot;)
-</code></pre>
-<p></p>
+    .removeClass(&quot;foo&quot;)</code></pre>
 
           </div>
         </div>
@@ -1094,12 +1121,12 @@ see <code>dojox.fx.addClass</code></p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">dojo.Animation</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">[object Value(type: function, value: undefined)]</span></div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // fade all elements with class &quot;bar&quot; to to 50% opacity
-  dojo.query(&quot;.bar&quot;).addClassFx(&quot;bar&quot;).play();</code></pre>
+            <h3>Example 1</h3><pre><code>// fade all elements with class &quot;bar&quot; to to 50% opacity
+dojo.query(&quot;.bar&quot;).addClassFx(&quot;bar&quot;).play();</code></pre>
 
           </div>
         </div>
@@ -1158,46 +1185,58 @@ list.  Returns the original list.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>appends content to the end if the position is omitted</p>
-<pre><code>  dojo.query(&quot;h3 &gt; p&quot;).addContent(&quot;hey there!&quot;);</code></pre>
+            <h3>Example 1</h3><p>appends content to the end if the position is omitted
+
+</p>
+<pre><code>dojo.query(&quot;h3 &gt; p&quot;).addContent(&quot;hey there!&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>add something to the front of each element that has a
-&quot;thinger&quot; property:</p>
-<pre><code>  dojo.query(&quot;[thinger]&quot;).addContent(&quot;...&quot;, &quot;first&quot;);</code></pre>
+&quot;thinger&quot; property:
+
+</p>
+<pre><code>dojo.query(&quot;[thinger]&quot;).addContent(&quot;...&quot;, &quot;first&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>adds a header before each element of the list</p>
-<pre><code>  dojo.query(&quot;.note&quot;).addContent(&quot;&lt;h4&gt;NOTE:&lt;/h4&gt;&quot;, &quot;before&quot;);</code></pre>
+            <h3>Example 3</h3><p>adds a header before each element of the list
+
+</p>
+<pre><code>dojo.query(&quot;.note&quot;).addContent(&quot;&lt;h4&gt;NOTE:&lt;/h4&gt;&quot;, &quot;before&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>add a clone of a DOM node to the end of every element in
-the list, removing it from its existing parent.</p>
-<pre><code>  dojo.query(&quot;.note&quot;).addContent(dojo.byId(&quot;foo&quot;));</code></pre>
+the list, removing it from its existing parent.
+
+</p>
+<pre><code>dojo.query(&quot;.note&quot;).addContent(dojo.byId(&quot;foo&quot;));</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>Append nodes from a templatized string.</p>
-<pre><code>  dojo.require(&quot;dojo.string&quot;);
-  dojo.query(&quot;.note&quot;).addContent({
+            <h3>Example 5</h3><p>Append nodes from a templatized string.
+
+</p>
+<pre><code>dojo.require(&quot;dojo.string&quot;);
+dojo.query(&quot;.note&quot;).addContent({
     template: &#39;&lt;b&gt;${id}: &lt;/b&gt;&lt;span&gt;${name}&lt;/span&gt;&#39;,
     id: &quot;user332&quot;,
     name: &quot;Mr. Anderson&quot;
-  });</code></pre>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Append nodes from a templatized string that also has widgets parsed.</p>
-<pre><code>  dojo.require(&quot;dojo.string&quot;);
-  dojo.require(&quot;dojo.parser&quot;);
-  var notes = dojo.query(&quot;.note&quot;).addContent({
+            <h3>Example 6</h3><p>Append nodes from a templatized string that also has widgets parsed.
+
+</p>
+<pre><code>dojo.require(&quot;dojo.string&quot;);
+dojo.require(&quot;dojo.parser&quot;);
+var notes = dojo.query(&quot;.note&quot;).addContent({
     template: &#39;&lt;button dojoType=&quot;dijit/form/Button&quot;&gt;${text}&lt;/button&gt;&#39;,
     parse: true,
     text: &quot;Send&quot;
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -1273,19 +1312,28 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the appended content.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the appended content.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;div&quot;).after(&quot;&lt;span&gt;after&lt;/span&gt;&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;&lt;span&gt;after&lt;/span&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;&lt;span&gt;after&lt;/span&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).after(&quot;&lt;span&gt;after&lt;/span&gt;&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;&lt;span&gt;after&lt;/span&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;&lt;span&gt;after&lt;/span&gt;</code></pre>
 
           </div>
         </div>
@@ -1304,17 +1352,23 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red prev&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue prev&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red second&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.second&quot;).prevAll().andSelf();</code></pre>
-<p>returns the two divs with class of &quot;prev&quot;, as well as the div with class &quot;second&quot;.</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.second&quot;).prevAll().andSelf();</code></pre>
+<p>returns the two divs with class of &quot;prev&quot;, as well as the div with class &quot;second&quot;.
+</p>
 
           </div>
         </div>
@@ -1379,14 +1433,18 @@ NodeList-fx methods.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Another way to fade out:</p>
-<pre><code>  dojo.query(&quot;.thinger&quot;).anim({ opacity: 0 });</code></pre>
+            <h3>Example 1</h3><p>Another way to fade out:
+
+</p>
+<pre><code>dojo.query(&quot;.thinger&quot;).anim({ opacity: 0 });</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>animate all elements with the &quot;thigner&quot; class to a width of 500
-pixels over half a second</p>
-<pre><code>  dojo.query(&quot;.thinger&quot;).anim({ width: 500 }, 700);</code></pre>
+pixels over half a second
+
+</p>
+<pre><code>dojo.query(&quot;.thinger&quot;).anim({ width: 500 }, 700);</code></pre>
 
           </div>
         </div>
@@ -1418,30 +1476,30 @@ an <code>auto</code> parameter.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/fx#Animation">dojo/_base/fx.Animation</a>|<a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a> | undefined</span></div>
-        <div class="jsdoc-return-description">A special args member `auto` can be passed to automatically play the animation.
+        <div class="jsdoc-return-description"><p>A special args member <code>auto</code> can be passed to automatically play the animation.
 If args.auto is present, the original dojo/NodeList will be returned for further
-chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()'ed
+chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()&#39;ed
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  dojo.query(&quot;.zork&quot;).animateProperty({
+            <h3>Example 1</h3><pre><code>dojo.query(&quot;.zork&quot;).animateProperty({
     duration: 500,
     properties: {
-      color:    { start: &quot;black&quot;, end: &quot;white&quot; },
-      left:    { end: 300 }
+        color:      { start: &quot;black&quot;, end: &quot;white&quot; },
+        left:       { end: 300 }
     }
-  }).play();</code></pre>
-<p></p>
+}).play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  dojo.query(&quot;.grue&quot;).animateProperty({
+            <h3>Example 2</h3><pre><code>dojo.query(&quot;.grue&quot;).animateProperty({
     auto:true,
     properties: {
-      height:240
+        height:240
     }
-  }).onclick(handler);</code></pre>
+}).onclick(handler);</code></pre>
 
           </div>
         </div>
@@ -1471,19 +1529,28 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the appended content.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the appended content.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;div&quot;).append(&quot;&lt;span&gt;append&lt;/span&gt;&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;span&gt;append&lt;/span&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;span&gt;append&lt;/span&gt;&lt;/div&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).append(&quot;&lt;span&gt;append&lt;/span&gt;&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;span&gt;append&lt;/span&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;span&gt;append&lt;/span&gt;&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -1514,20 +1581,29 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the matched nodes from the query.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the matched nodes from the query.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;span&gt;append&lt;/span&gt;
-  &lt;p&gt;Hello Mars&lt;/p&gt;
-  &lt;p&gt;Hello World&lt;/p&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;span&quot;).appendTo(&quot;p&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;p&gt;Hello Mars&lt;span&gt;append&lt;/span&gt;&lt;/p&gt;
-  &lt;p&gt;Hello World&lt;span&gt;append&lt;/span&gt;&lt;/p&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;span&gt;append&lt;/span&gt;
+&lt;p&gt;Hello Mars&lt;/p&gt;
+&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;span&quot;).appendTo(&quot;p&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;p&gt;Hello Mars&lt;span&gt;append&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Hello World&lt;span&gt;append&lt;/span&gt;&lt;/p&gt;</code></pre>
 
           </div>
         </div>
@@ -1562,23 +1638,27 @@ list and go backwards.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Shorten the list to the first, second, and third elements</p>
-<pre><code>  query(&quot;a&quot;).at(0, 1, 2).forEach(fn);</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Shorten the list to the first, second, and third elements
+
+</p>
+<pre><code>query(&quot;a&quot;).at(0, 1, 2).forEach(fn);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Retrieve the first and last elements of a unordered list:</p>
-<pre><code>  query(&quot;ul &gt; li&quot;).at(0, -1).forEach(cb);</code></pre>
-<p></p>
+            <h3>Example 2</h3><p>Retrieve the first and last elements of a unordered list:
+
+</p>
+<pre><code>query(&quot;ul &gt; li&quot;).at(0, -1).forEach(cb);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Do something for the first element only, but end() out back to
-the original list and continue chaining:</p>
-<pre><code>  query(&quot;a&quot;).at(0).onclick(fn).end().forEach(function(n){
+the original list and continue chaining:
+
+</p>
+<pre><code>query(&quot;a&quot;).at(0).onclick(fn).end().forEach(function(n){
     console.log(n); // all anchors on the page.
-  })</code></pre>
+})</code></pre>
 
           </div>
         </div>
@@ -1614,24 +1694,31 @@ NodeList. See also <code>dojo.attr</code></p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">if no value is passed, the result is an array of attribute values
-If a value is passed, the return is this NodeList</div>
+        <div class="jsdoc-return-description"><p>if no value is passed, the result is an array of attribute values
+If a value is passed, the return is this NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Make all nodes with a particular class focusable:</p>
-<pre><code>  dojo.query(&quot;.focusable&quot;).attr(&quot;tabIndex&quot;, -1);</code></pre>
+            <h3>Example 1</h3><p>Make all nodes with a particular class focusable:
+
+</p>
+<pre><code>dojo.query(&quot;.focusable&quot;).attr(&quot;tabIndex&quot;, -1);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Disable a group of buttons:</p>
-<pre><code>  dojo.query(&quot;button.group&quot;).attr(&quot;disabled&quot;, true);</code></pre>
+            <h3>Example 2</h3><p>Disable a group of buttons:
+
+</p>
+<pre><code>dojo.query(&quot;button.group&quot;).attr(&quot;disabled&quot;, true);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>innerHTML can be assigned or retrieved as well:</p>
-<pre><code>  // get the innerHTML (as an array) for each list item
-  var ih = dojo.query(&quot;li.replaceable&quot;).attr(&quot;innerHTML&quot;);</code></pre>
+            <h3>Example 3</h3><p>innerHTML can be assigned or retrieved as well:
+
+</p>
+<pre><code>// get the innerHTML (as an array) for each list item
+var ih = dojo.query(&quot;li.replaceable&quot;).attr(&quot;innerHTML&quot;);</code></pre>
 
           </div>
         </div>
@@ -1661,19 +1748,28 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the appended content.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the appended content.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;div&quot;).before(&quot;&lt;span&gt;before&lt;/span&gt;&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;span&gt;before&lt;/span&gt;&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
-  &lt;span&gt;before&lt;/span&gt;&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).before(&quot;&lt;span&gt;before&lt;/span&gt;&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;span&gt;before&lt;/span&gt;&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;span&gt;before&lt;/span&gt;&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -1705,24 +1801,35 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">all immediate child elements for the nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>all immediate child elements for the nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.container&quot;).children();</code></pre>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.container&quot;).children();</code></pre>
 <p>returns the four divs that are children of the container div.
-Running this code:</p>
-<pre><code>  dojo.query(&quot;.container&quot;).children(&quot;.red&quot;);</code></pre>
-<p>returns the two divs that have the class &quot;red&quot;.</p>
+
+</p>
+<p>Running this code:
+
+</p>
+<pre><code>dojo.query(&quot;.container&quot;).children(&quot;.red&quot;);</code></pre>
+<p>returns the two divs that have the class &quot;red&quot;.
+</p>
 
           </div>
         </div>
@@ -1737,28 +1844,37 @@ Running this code:</p>
         <div class="jsdoc-full-summary"><p>Only the DOM nodes are cloned, not any attached event handlers.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">a cloned set of the original nodes.</div>
+        <div class="jsdoc-return-description"><p>a cloned set of the original nodes.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.red&quot;).clone().appendTo(&quot;.container&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.red&quot;).clone().appendTo(&quot;.container&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -1797,22 +1913,29 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the closest parent that matches the query, including the current
-node in this dojo/NodeList if it matches the query.</div>
+        <div class="jsdoc-return-description"><p>the closest parent that matches the query, including the current
+node in this dojo/NodeList if it matches the query.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.red&quot;).closest(&quot;.container&quot;);</code></pre>
-<p>returns the div with class &quot;container&quot;.</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.red&quot;).closest(&quot;.container&quot;);</code></pre>
+<p>returns the div with class &quot;container&quot;.
+</p>
 
           </div>
         </div>
@@ -1897,15 +2020,19 @@ event. May also be a function reference.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>add an onclick handler to every button on the page</p>
-<pre><code>  query(&quot;div:nth-child(odd)&quot;).connect(&quot;onclick&quot;, function(e){
+            <h3>Example 1</h3><p>add an onclick handler to every button on the page
+
+</p>
+<pre><code>query(&quot;div:nth-child(odd)&quot;).connect(&quot;onclick&quot;, function(e){
     console.log(&quot;clicked!&quot;);
-  });</code></pre>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>attach foo.bar() to every odd div&#39;s onmouseover</p>
-<pre><code>  query(&quot;div:nth-child(odd)&quot;).connect(&quot;onmouseover&quot;, foo, &quot;bar&quot;);</code></pre>
+            <h3>Example 2</h3><p>attach foo.bar() to every odd div&#39;s onmouseover
+
+</p>
+<pre><code>query(&quot;div:nth-child(odd)&quot;).connect(&quot;onmouseover&quot;, foo, &quot;bar&quot;);</code></pre>
 
           </div>
         </div>
@@ -1944,81 +2071,95 @@ simple, chainable way.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>create a node list from a node</p>
-<pre><code>  new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+            <h3>Example 1</h3><p>create a node list from a node
+
+</p>
+<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it</p>
-<pre><code>  var l = dojo.query(&quot;.thinger&quot;);
-  l.forEach(function(node, index, nodeList){
+            <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
+
+</p>
+<pre><code>var l = dojo.query(&quot;.thinger&quot;);
+l.forEach(function(node, index, nodeList){
     console.log(index, node.innerHTML);
-  });</code></pre>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>use native and Dojo-provided array methods to manipulate a
-NodeList without needing to use dojo.* functions explicitly:</p>
-<pre><code>  var l = dojo.query(&quot;.thinger&quot;);
-  // since NodeLists are real arrays, they have a length
-  // property that is both readable and writable and
-  // push/pop/shift/unshift methods
-  console.log(l.length);
-  l.push(dojo.create(&quot;span&quot;));
+NodeList without needing to use dojo.* functions explicitly:
 
-  // dojo&#39;s normalized array methods work too:
-  console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-  // ...including the special &quot;function as string&quot; shorthand
-  console.log( l.every(&quot;item.nodeType == 1&quot;) );
+</p>
+<pre><code>var l = dojo.query(&quot;.thinger&quot;);
+// since NodeLists are real arrays, they have a length
+// property that is both readable and writable and
+// push/pop/shift/unshift methods
+console.log(l.length);
+l.push(dojo.create(&quot;span&quot;));
 
-  // NodeLists can be [..] indexed, or you can use the at()
-  // function to get specific items wrapped in a new NodeList:
-  var node = l[3]; // the 4th element
-  var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
+// dojo&#39;s normalized array methods work too:
+console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
+// ...including the special &quot;function as string&quot; shorthand
+console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>the style functions you expect are all there too:</p>
-<pre><code>  // style() as a getter...
-  var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-  // ...and as a setter:
-  dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-  // class manipulation
-  dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-  // even getting the coordinates of all the items
-  var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+// NodeLists can be [..] indexed, or you can use the at()
+// function to get specific items wrapped in a new NodeList:
+var node = l[3]; // the 4th element
+var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:</p>
-<pre><code>  // remove all of the elements in the list from their
-  // parents (akin to &quot;deleting&quot; them from the document)
-  dojo.query(&quot;.thinger&quot;).orphan();
-  // place all elements in the list at the front of #foo
-  dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
+            <h3>Example 4</h3><p>the style functions you expect are all there too:
+
+</p>
+<pre><code>// style() as a getter...
+var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
+// ...and as a setter:
+dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
+// class manipulation
+dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
+// even getting the coordinates of all the items
+var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+
+</p>
+<pre><code>// remove all of the elements in the list from their
+// parents (akin to &quot;deleting&quot; them from the document)
+dojo.query(&quot;.thinger&quot;).orphan();
+// place all elements in the list at the front of #foo
+dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:</p>
-<pre><code>  // like dojo.connect(), but with implicit scope
-  dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
+and shortcut handlers are provided for most DOM events:
 
-  // many common event handlers are already available directly:
-  dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-  var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-  dojo.query(&quot;p&quot;)
+</p>
+<pre><code>// like dojo.connect(), but with implicit scope
+dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
+
+// many common event handlers are already available directly:
+dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
+var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
+dojo.query(&quot;p&quot;)
     .onmouseenter(toggleHovered)
     .onmouseleave(toggleHovered);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:</p>
-<pre><code>  dojo.query(&quot;.thinger&quot;)
+            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
+
+</p>
+<pre><code>dojo.query(&quot;.thinger&quot;)
     .onclick(function(e){ /* ... */ })
     .at(1, 3, 8) // get a subset
-      .style(&quot;padding&quot;, &quot;5px&quot;)
-      .forEach(console.log);</code></pre>
+        .style(&quot;padding&quot;, &quot;5px&quot;)
+        .forEach(console.log);</code></pre>
 
           </div>
         </div>
@@ -2082,34 +2223,41 @@ If a string, and <code>value</code> absent, act as a getter, returning the data 
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object|Anything|Nothing</span></div>
-        <div class="jsdoc-return-description">When used as a setter via `dojo/NodeList`, a NodeList instance is returned
-for further chaining. When used as a getter via `dojo/NodeList` an ARRAY
+        <div class="jsdoc-return-description"><p>When used as a setter via <code>dojo/NodeList</code>, a NodeList instance is returned
+for further chaining. When used as a getter via <code>dojo/NodeList</code> an ARRAY
 of items is returned. The items in the array correspond to the elements
 in the original list. This is true even when the list length is 1, eg:
-when looking up a node by ID (#foo)</div>
+when looking up a node by ID (#foo)</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Set a key <code>bar</code> to some data, then retrieve it.</p>
-<pre><code>  dojo.query(&quot;.foo&quot;).data(&quot;bar&quot;, &quot;touched&quot;);
-  var touched = dojo.query(&quot;.foo&quot;).data(&quot;bar&quot;);
-  if(touched[0] == &quot;touched&quot;){ alert(&#39;win&#39;); }</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Set a key <code>bar</code> to some data, then retrieve it.
+
+</p>
+<pre><code>dojo.query(&quot;.foo&quot;).data(&quot;bar&quot;, &quot;touched&quot;);
+var touched = dojo.query(&quot;.foo&quot;).data(&quot;bar&quot;);
+if(touched[0] == &quot;touched&quot;){ alert(&#39;win&#39;); }</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Get all the data items for a given node.</p>
-<pre><code>  var list = dojo.query(&quot;.foo&quot;).data();
-  var first = list[0];</code></pre>
-<p></p>
+            <h3>Example 2</h3><p>Get all the data items for a given node.
+
+</p>
+<pre><code>var list = dojo.query(&quot;.foo&quot;).data();
+var first = list[0];</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Set the data to a complex hash. Overwrites existing keys with new value</p>
-<pre><code>  dojo.query(&quot;.foo&quot;).data({ bar:&quot;baz&quot;, foo:&quot;bar&quot; });</code></pre>
-<p>Then get some random key:</p>
-<pre><code>  dojo.query(&quot;.foo&quot;).data(&quot;foo&quot;); // returns [`bar`]</code></pre>
-<p></p>
+            <h3>Example 3</h3><p>Set the data to a complex hash. Overwrites existing keys with new value
+
+</p>
+<pre><code>dojo.query(&quot;.foo&quot;).data({ bar:&quot;baz&quot;, foo:&quot;bar&quot; });</code></pre>
+<p>Then get some random key:
+
+
+</p>
+<pre><code>dojo.query(&quot;.foo&quot;).data(&quot;foo&quot;); // returns [`bar`]</code></pre>
 
           </div>
         </div>
@@ -2163,10 +2311,14 @@ anchor nodes which are (immediate) children of the nodes in myNodeList.</p>
             <td class="jsdoc-param-name">fn</td>
             <td class="jsdoc-param-type">Function</td>
             <td class="jsdoc-param-description"><p>Callback function passed the event object, and where this == the node that matches the selector.
-That means that for example, after setting up a handler via</p>
-<pre><code>     dojo.query(&quot;body&quot;).delegate(&quot;fieldset&quot;, &quot;onclick&quot;, ...)</code></pre>
+That means that for example, after setting up a handler via
+
+</p>
+<pre><code>dojo.query(&quot;body&quot;).delegate(&quot;fieldset&quot;, &quot;onclick&quot;, ...)</code></pre>
 <p>clicking on a fieldset or <em>any nodes inside of a fieldset</em> will be reported
-as a click on the fieldset itself.</p>
+
+</p>
+<p>as a click on the fieldset itself.</p>
  
             </td>
           </tr>
@@ -2175,9 +2327,9 @@ as a click on the fieldset itself.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  dojo.query(&quot;navbar&quot;).delegate(&quot;a&quot;, &quot;onclick&quot;, function(evt){
-      console.log(&quot;user clicked anchor &quot;, this.node);
-  });</code></pre>
+            <h3>Example 1</h3><pre><code>dojo.query(&quot;navbar&quot;).delegate(&quot;a&quot;, &quot;onclick&quot;, function(evt){
+        console.log(&quot;user clicked anchor &quot;, this.node);
+});</code></pre>
 
           </div>
         </div>
@@ -2240,14 +2392,13 @@ is no parent NodeList, an empty NodeList is returned.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  dojo.query(&quot;a&quot;)
+            <h3>Example 1</h3><pre><code>dojo.query(&quot;a&quot;)
     .filter(&quot;.disabled&quot;)
-      // operate on the anchors that only have a disabled class
-      .style(&quot;color&quot;, &quot;grey&quot;)
+        // operate on the anchors that only have a disabled class
+        .style(&quot;color&quot;, &quot;grey&quot;)
     .end()
     // jump back to the list of anchors
     .style(...)</code></pre>
-<p></p>
 
           </div>
         </div>
@@ -2263,20 +2414,27 @@ is no parent NodeList, an empty NodeList is returned.</p>
 original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the even nodes in this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>the even nodes in this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;interior red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;interior blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;interior red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;interior blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.interior&quot;).even();</code></pre>
-<p>returns the two divs with class &quot;blue&quot;</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.interior&quot;).even();</code></pre>
+<p>returns the two divs with class &quot;blue&quot;
+</p>
 
           </div>
         </div>
@@ -2342,15 +2500,18 @@ an <code>auto</code> parameter.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/fx#Animation">dojo/_base/fx.Animation</a>|<a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a> | undefined</span></div>
-        <div class="jsdoc-return-description">A special args member `auto` can be passed to automatically play the animation.
+        <div class="jsdoc-return-description"><p>A special args member <code>auto</code> can be passed to automatically play the animation.
 If args.auto is present, the original dojo/NodeList will be returned for further
-chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()'ed
+chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()&#39;ed
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Fade in all tables with class &quot;blah&quot;:</p>
-<pre><code>  dojo.query(&quot;table.blah&quot;).fadeIn().play();</code></pre>
+            <h3>Example 1</h3><p>Fade in all tables with class &quot;blah&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;table.blah&quot;).fadeIn().play();</code></pre>
 
           </div>
         </div>
@@ -2381,28 +2542,34 @@ an <code>auto</code> parameter.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/fx#Animation">dojo/_base/fx.Animation</a>|<a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a> | undefined</span></div>
-        <div class="jsdoc-return-description">A special args member `auto` can be passed to automatically play the animation.
+        <div class="jsdoc-return-description"><p>A special args member <code>auto</code> can be passed to automatically play the animation.
 If args.auto is present, the original dojo/NodeList will be returned for further
-chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()'ed
+chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()&#39;ed
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Fade out all elements with class &quot;zork&quot;:</p>
-<pre><code>  dojo.query(&quot;.zork&quot;).fadeOut().play();</code></pre>
+            <h3>Example 1</h3><p>Fade out all elements with class &quot;zork&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;.zork&quot;).fadeOut().play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Fade them on a delay and do something at the end:</p>
-<pre><code>  var fo = dojo.query(&quot;.zork&quot;).fadeOut();
-  dojo.connect(fo, &quot;onEnd&quot;, function(){ /*...*/ });
-  fo.play();</code></pre>
+            <h3>Example 2</h3><p>Fade them on a delay and do something at the end:
+
+</p>
+<pre><code>var fo = dojo.query(&quot;.zork&quot;).fadeOut();
+dojo.connect(fo, &quot;onEnd&quot;, function(){ /*...*/ });
+fo.play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Using <code>auto</code>:</p>
-<pre><code>  dojo.query(&quot;li&quot;).fadeOut({ auto:true }).filter(filterFn).forEach(doit);</code></pre>
-<p></p>
+            <h3>Example 3</h3><p>Using <code>auto</code>:
+
+</p>
+<pre><code>dojo.query(&quot;li&quot;).fadeOut({ auto:true }).filter(filterFn).forEach(doit);</code></pre>
 
           </div>
         </div>
@@ -2435,16 +2602,20 @@ objects.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>&quot;regular&quot; JS filter syntax as exposed in dojo.filter:</p>
-<pre><code>  dojo.query(&quot;*&quot;).filter(function(item){
+            <h3>Example 1</h3><p>&quot;regular&quot; JS filter syntax as exposed in dojo.filter:
+
+</p>
+<pre><code>dojo.query(&quot;*&quot;).filter(function(item){
     // highlight every paragraph
     return (item.nodeName == &quot;p&quot;);
-  }).style(&quot;backgroundColor&quot;, &quot;yellow&quot;);</code></pre>
+}).style(&quot;backgroundColor&quot;, &quot;yellow&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>the same filtering using a CSS selector</p>
-<pre><code>  dojo.query(&quot;*&quot;).filter(&quot;p&quot;).styles(&quot;backgroundColor&quot;, &quot;yellow&quot;);</code></pre>
+            <h3>Example 2</h3><p>the same filtering using a CSS selector
+
+</p>
+<pre><code>dojo.query(&quot;*&quot;).filter(&quot;p&quot;).styles(&quot;backgroundColor&quot;, &quot;yellow&quot;);</code></pre>
 
           </div>
         </div>
@@ -2460,20 +2631,27 @@ objects.</p>
 original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the first node in this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>the first node in this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue first&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue last&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.blue&quot;).first();</code></pre>
-<p>returns the div with class &quot;blue&quot; and &quot;first&quot;.</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.blue&quot;).first();</code></pre>
+<p>returns the div with class &quot;blue&quot; and &quot;first&quot;.
+</p>
 
           </div>
         </div>
@@ -2547,24 +2725,35 @@ usage of this method, not the HTML that was inserted.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">if no value is passed, the result is String, the innerHTML of the first node.
-If a value is passed, the return is this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>if no value is passed, the result is String, the innerHTML of the first node.
+If a value is passed, the return is this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;/div&gt;</code></pre>
-<p>This code inserts <code>&lt;p&gt;Hello World&lt;/p&gt;</code> into both divs:</p>
-<pre><code>  dojo.query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;/div&gt;</code></pre>
+<p>This code inserts <code>&lt;p&gt;Hello World&lt;/p&gt;</code> into both divs:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
-<p>This code returns <code>&lt;p&gt;Hello Mars&lt;/p&gt;</code>:</p>
-<pre><code>  var message = dojo.query(&quot;div&quot;).innerHTML();</code></pre>
+            <h3>Example 2</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>This code returns <code>&lt;p&gt;Hello Mars&lt;/p&gt;</code>:
+
+
+</p>
+<pre><code>var message = dojo.query(&quot;div&quot;).innerHTML();</code></pre>
 
           </div>
         </div>
@@ -2604,7 +2793,8 @@ docs</a></p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Positive Integer or 0 for a match, -1 of not found.</div>
+        <div class="jsdoc-return-description"><p>Positive Integer or 0 for a match, -1 of not found.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_innerHTML"></a><span class="functionIcon">innerHTML</span><span class="parameters">(value)</span> 
@@ -2641,24 +2831,35 @@ usage of this method, not the HTML that was inserted.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">if no value is passed, the result is String, the innerHTML of the first node.
-If a value is passed, the return is this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>if no value is passed, the result is String, the innerHTML of the first node.
+If a value is passed, the return is this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;/div&gt;</code></pre>
-<p>This code inserts <code>&lt;p&gt;Hello World&lt;/p&gt;</code> into both divs:</p>
-<pre><code>  dojo.query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;/div&gt;</code></pre>
+<p>This code inserts <code>&lt;p&gt;Hello World&lt;/p&gt;</code> into both divs:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
-<p>This code returns <code>&lt;p&gt;Hello Mars&lt;/p&gt;</code>:</p>
-<pre><code>  var message = dojo.query(&quot;div&quot;).innerHTML();</code></pre>
+            <h3>Example 2</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>This code returns <code>&lt;p&gt;Hello Mars&lt;/p&gt;</code>:
+
+
+</p>
+<pre><code>var message = dojo.query(&quot;div&quot;).innerHTML();</code></pre>
 
           </div>
         </div>
@@ -2689,20 +2890,29 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the matched nodes from the query.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the matched nodes from the query.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;span&gt;after&lt;/span&gt;
-  &lt;p&gt;Hello Mars&lt;/p&gt;
-  &lt;p&gt;Hello World&lt;/p&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;span&quot;).insertAfter(&quot;p&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;p&gt;Hello Mars&lt;/p&gt;&lt;span&gt;after&lt;/span&gt;
-  &lt;p&gt;Hello World&lt;/p&gt;&lt;span&gt;after&lt;/span&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;span&gt;after&lt;/span&gt;
+&lt;p&gt;Hello Mars&lt;/p&gt;
+&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;span&quot;).insertAfter(&quot;p&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;p&gt;Hello Mars&lt;/p&gt;&lt;span&gt;after&lt;/span&gt;
+&lt;p&gt;Hello World&lt;/p&gt;&lt;span&gt;after&lt;/span&gt;</code></pre>
 
           </div>
         </div>
@@ -2733,20 +2943,29 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the matched nodes from the query.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the matched nodes from the query.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;span&gt;before&lt;/span&gt;
-  &lt;p&gt;Hello Mars&lt;/p&gt;
-  &lt;p&gt;Hello World&lt;/p&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;span&quot;).insertBefore(&quot;p&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;span&gt;before&lt;/span&gt;&lt;p&gt;Hello Mars&lt;/p&gt;
-  &lt;span&gt;before&lt;/span&gt;&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;span&gt;before&lt;/span&gt;
+&lt;p&gt;Hello Mars&lt;/p&gt;
+&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;span&quot;).insertBefore(&quot;p&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;span&gt;before&lt;/span&gt;&lt;p&gt;Hello Mars&lt;/p&gt;
+&lt;span&gt;before&lt;/span&gt;&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
 
           </div>
         </div>
@@ -2784,8 +3003,10 @@ srcNodeRef.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Grabs all buttons in the page and converts them to dijit/form/Button&#39;s.</p>
-<pre><code>  var buttons = query(&quot;button&quot;).instantiate(Button, {showLabel: true});</code></pre>
+            <h3>Example 1</h3><p>Grabs all buttons in the page and converts them to dijit/form/Button&#39;s.
+
+</p>
+<pre><code>var buttons = query(&quot;button&quot;).instantiate(Button, {showLabel: true});</code></pre>
 
           </div>
         </div>
@@ -2801,20 +3022,27 @@ srcNodeRef.</p>
 original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the last node in this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>the last node in this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue first&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue last&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.blue&quot;).last();</code></pre>
-<p>returns the last div with class &quot;blue&quot;,</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.blue&quot;).last();</code></pre>
+<p>returns the last div with class &quot;blue&quot;,
+</p>
 
           </div>
         </div>
@@ -2854,7 +3082,8 @@ docs</a></p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Positive Integer or 0 for a match, -1 of not found.</div>
+        <div class="jsdoc-return-description"><p>Positive Integer or 0 for a match, -1 of not found.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_map"></a><span class="functionIcon">map</span><span class="parameters">(func, obj)</span> 
@@ -2922,24 +3151,35 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the next element for nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>the next element for nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue first&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue last&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).next();</code></pre>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).next();</code></pre>
 <p>returns the div with class &quot;red&quot; and has innerHTML of &quot;Red Two&quot;.
-Running this code:</p>
-<pre><code>  dojo.query(&quot;.last&quot;).next(&quot;.red&quot;);</code></pre>
-<p>does not return any elements.</p>
+
+</p>
+<p>Running this code:
+
+</p>
+<pre><code>dojo.query(&quot;.last&quot;).next(&quot;.red&quot;);</code></pre>
+<p>does not return any elements.
+</p>
 
           </div>
         </div>
@@ -2971,24 +3211,35 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">all sibling elements that come after the nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>all sibling elements that come after the nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue first&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red next&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue next&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).nextAll();</code></pre>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).nextAll();</code></pre>
 <p>returns the two divs with class of &quot;next&quot;.
-Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).nextAll(&quot;.red&quot;);</code></pre>
-<p>returns the one div with class &quot;red&quot; and innerHTML &quot;Red Two&quot;.</p>
+
+</p>
+<p>Running this code:
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).nextAll(&quot;.red&quot;);</code></pre>
+<p>returns the one div with class &quot;red&quot; and innerHTML &quot;Red Two&quot;.
+</p>
 
           </div>
         </div>
@@ -3004,20 +3255,27 @@ Running this code:</p>
 original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the odd nodes in this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>the odd nodes in this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;interior red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;interior blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;interior red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;interior blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.interior&quot;).odd();</code></pre>
-<p>returns the two divs with class &quot;red&quot;</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.interior&quot;).odd();</code></pre>
+<p>returns the two divs with class &quot;red&quot;
+</p>
 
           </div>
         </div>
@@ -3027,14 +3285,24 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Listen for events on the nodes in the NodeList. Basic usage is:</p>
-<pre><code> query(&quot;.my-class&quot;).on(&quot;click&quot;, listener);</code></pre>
+        <div class="jsdoc-full-summary"><p>Listen for events on the nodes in the NodeList. Basic usage is:
+
+</p>
+<pre><code>query(&quot;.my-class&quot;).on(&quot;click&quot;, listener);</code></pre>
 <p>This supports event delegation by using selectors as the first argument with the event names as
-pseudo selectors. For example:</p>
-<pre><code> dojo.query(&quot;#my-list&quot;).on(&quot;li:click&quot;, listener);</code></pre>
+
+</p>
+<p>pseudo selectors. For example:
+
+</p>
+<pre><code>dojo.query(&quot;#my-list&quot;).on(&quot;li:click&quot;, listener);</code></pre>
 <p>This will listen for click events within <code>&lt;li&gt;</code> elements that are inside the <code>#my-list</code> element.
-Because on supports CSS selector syntax, we can use comma-delimited events as well:</p>
-<pre><code> dojo.query(&quot;#my-list&quot;).on(&quot;li button:mouseover, li:click&quot;, listener);</code></pre>
+
+</p>
+<p>Because on supports CSS selector syntax, we can use comma-delimited events as well:
+
+</p>
+<pre><code>dojo.query(&quot;#my-list&quot;).on(&quot;li button:mouseover, li:click&quot;, listener);</code></pre>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -3081,7 +3349,8 @@ from their parents and returns them as a new NodeList.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">NodeList containing the orphaned elements</div>
+        <div class="jsdoc-return-description"><p>NodeList containing the orphaned elements</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_parent"></a><span class="functionIcon">parent</span><span class="parameters">(query)</span> 
@@ -3110,23 +3379,34 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">immediate parent elements for nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>immediate parent elements for nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue first&quot;&gt;&lt;span class=&quot;text&quot;&gt;Blue One&lt;/span&gt;&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;&lt;span class=&quot;text&quot;&gt;Blue Two&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.text&quot;).parent();</code></pre>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.text&quot;).parent();</code></pre>
 <p>returns the two divs with class &quot;blue&quot;.
-Running this code:</p>
-<pre><code>  dojo.query(&quot;.text&quot;).parent(&quot;.first&quot;);</code></pre>
-<p>returns the one div with class &quot;blue&quot; and &quot;first&quot;.</p>
+
+</p>
+<p>Running this code:
+
+</p>
+<pre><code>dojo.query(&quot;.text&quot;).parent(&quot;.first&quot;);</code></pre>
+<p>returns the one div with class &quot;blue&quot; and &quot;first&quot;.
+</p>
 
           </div>
         </div>
@@ -3158,24 +3438,37 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">all parent elements for nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>all parent elements for nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue first&quot;&gt;&lt;span class=&quot;text&quot;&gt;Blue One&lt;/span&gt;&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;&lt;span class=&quot;text&quot;&gt;Blue Two&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.text&quot;).parents();</code></pre>
-<p>returns the two divs with class &quot;blue&quot;, the div with class &quot;container&quot;,</p>
-<pre><code>  the body element and the html element.</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.text&quot;).parents(&quot;.container&quot;);</code></pre>
-<p>returns the one div with class &quot;container&quot;.</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.text&quot;).parents();</code></pre>
+<p>returns the two divs with class &quot;blue&quot;, the div with class &quot;container&quot;,
+
+
+</p>
+<pre><code>the body element and the html element.</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.text&quot;).parents(&quot;.container&quot;);</code></pre>
+<p>returns the one div with class &quot;container&quot;.
+</p>
 
           </div>
         </div>
@@ -3260,16 +3553,25 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
 not the appended content.
 assume a DOM created by this markup:
-|  <div id="foo"><p>Hello Mars</p></div>
-|  <div id="bar"><p>Hello World</p></div>
-Running this code:
-|  dojo.query("div").prepend("<span>prepend</span>");
-Results in this DOM structure:
-|  <div id="foo"><span>prepend</span><p>Hello Mars</p></div>
-|  <div id="bar"><span>prepend</span><p>Hello World</p></div></div>
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).prepend(&quot;&lt;span&gt;prepend&lt;/span&gt;&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;span&gt;prepend&lt;/span&gt;&lt;p&gt;Hello Mars&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;span&gt;prepend&lt;/span&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_prependTo"></a><span class="functionIcon">prependTo</span><span class="parameters">(query)</span> 
@@ -3297,20 +3599,29 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">dojo/NodeList, the nodes currently in this NodeList will be returned,
-not the matched nodes from the query.</div>
+        <div class="jsdoc-return-description"><p>dojo/NodeList, the nodes currently in this NodeList will be returned,
+not the matched nodes from the query.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;span&gt;prepend&lt;/span&gt;
-  &lt;p&gt;Hello Mars&lt;/p&gt;
-  &lt;p&gt;Hello World&lt;/p&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;span&quot;).prependTo(&quot;p&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;p&gt;&lt;span&gt;prepend&lt;/span&gt;Hello Mars&lt;/p&gt;
-  &lt;p&gt;&lt;span&gt;prepend&lt;/span&gt;Hello World&lt;/p&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;span&gt;prepend&lt;/span&gt;
+&lt;p&gt;Hello Mars&lt;/p&gt;
+&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;span&quot;).prependTo(&quot;p&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;p&gt;&lt;span&gt;prepend&lt;/span&gt;Hello Mars&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;prepend&lt;/span&gt;Hello World&lt;/p&gt;</code></pre>
 
           </div>
         </div>
@@ -3342,24 +3653,35 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the previous element for nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>the previous element for nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue first&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).prev();</code></pre>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).prev();</code></pre>
 <p>returns the div with class &quot;red&quot; and has innerHTML of &quot;Red One&quot;.
-Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).prev(&quot;.blue&quot;);</code></pre>
-<p>does not return any elements.</p>
+
+</p>
+<p>Running this code:
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).prev(&quot;.blue&quot;);</code></pre>
+<p>does not return any elements.
+</p>
 
           </div>
         </div>
@@ -3393,24 +3715,35 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">all sibling elements that come before the nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>all sibling elements that come before the nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red prev&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue prev&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red second&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.second&quot;).prevAll();</code></pre>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.second&quot;).prevAll();</code></pre>
 <p>returns the two divs with class of &quot;prev&quot;.
-Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).prevAll(&quot;.red&quot;);</code></pre>
-<p>returns the one div with class &quot;red prev&quot; and innerHTML &quot;Red One&quot;.</p>
+
+</p>
+<p>Running this code:
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).prevAll(&quot;.red&quot;);</code></pre>
+<p>returns the one div with class &quot;red prev&quot; and innerHTML &quot;Red One&quot;.
+</p>
 
           </div>
         </div>
@@ -3445,20 +3778,29 @@ each search.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;
     &lt;p&gt;
-      bacon is tasty, &lt;span&gt;dontcha think?&lt;/span&gt;
+        bacon is tasty, &lt;span&gt;dontcha think?&lt;/span&gt;
     &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;
     &lt;p&gt;great comedians may not be funny &lt;span&gt;in person&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;</code></pre>
-<p>If we are presented with the following definition for a NodeList:</p>
-<pre><code>  var l = new NodeList(dojo.byId(&quot;foo&quot;), dojo.byId(&quot;bar&quot;));</code></pre>
+&lt;/div&gt;</code></pre>
+<p>If we are presented with the following definition for a NodeList:
+
+
+</p>
+<pre><code>var l = new NodeList(dojo.byId(&quot;foo&quot;), dojo.byId(&quot;bar&quot;));</code></pre>
 <p>it&#39;s possible to find all span elements under paragraphs
-contained by these elements with this sub-query:</p>
-<pre><code>  var spans = l.query(&quot;p span&quot;);</code></pre>
+
+</p>
+<p>contained by these elements with this sub-query:
+
+</p>
+<pre><code>var spans = l.query(&quot;p span&quot;);</code></pre>
 
           </div>
         </div>
@@ -3487,7 +3829,8 @@ from their parents and returns them as a new NodeList.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">NodeList containing the orphaned elements</div>
+        <div class="jsdoc-return-description"><p>NodeList containing the orphaned elements</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_removeAttr"></a><span class="functionIcon">removeAttr</span><span class="parameters">(name)</span> 
@@ -3536,7 +3879,8 @@ will be deleted.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">this list</div>
+        <div class="jsdoc-return-description"><p>this list</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_removeClassFx"></a><span class="functionIcon">removeClassFx</span><span class="parameters">(cssClass, args)</span> 
@@ -3565,11 +3909,11 @@ see <code>dojox.fx.removeClass</code></p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">dojo.Animation</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">[object Value(type: function, value: undefined)]</span></div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> dojo.query(&quot;.box&quot;).removeClassFx(&quot;bar&quot;).play();</code></pre>
+            <h3>Example 1</h3><pre><code>dojo.query(&quot;.box&quot;).removeClassFx(&quot;bar&quot;).play();</code></pre>
 
           </div>
         </div>
@@ -3624,14 +3968,17 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">The nodes currently in this NodeList will be returned, not the matched nodes
+        <div class="jsdoc-return-description"><p>The nodes currently in this NodeList will be returned, not the matched nodes
 from the query. The nodes currently in this NodeLIst could have
-been cloned, so the returned NodeList will include the cloned nodes.</div>
+been cloned, so the returned NodeList will include the cloned nodes.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;spacer&quot;&gt;___&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;spacer&quot;&gt;___&lt;/div&gt;
@@ -3640,11 +3987,17 @@ been cloned, so the returned NodeList will include the cloned nodes.</div>
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;spacer&quot;&gt;___&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.red&quot;).replaceAll(&quot;.blue&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.red&quot;).replaceAll(&quot;.blue&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;spacer&quot;&gt;___&lt;/div&gt;
     &lt;div class=&quot;spacer&quot;&gt;___&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
@@ -3653,7 +4006,7 @@ been cloned, so the returned NodeList will include the cloned nodes.</div>
     &lt;div class=&quot;spacer&quot;&gt;___&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -3716,27 +4069,36 @@ any attached event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">The nodes currently in this NodeList will be returned, not the replacing content.
-Note that the returned nodes have been removed from the DOM.</div>
+        <div class="jsdoc-return-description"><p>The nodes currently in this NodeList will be returned, not the replacing content.
+Note that the returned nodes have been removed from the DOM.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.red&quot;).replaceWith(&#39;&lt;div class=&quot;green&quot;&gt;Green&lt;/div&gt;&#39;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.red&quot;).replaceWith(&#39;&lt;div class=&quot;green&quot;&gt;Green&lt;/div&gt;&#39;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;green&quot;&gt;Green&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;green&quot;&gt;Green&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -3768,25 +4130,38 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">all sibling elements for nodes in this dojo/NodeList.</div>
+        <div class="jsdoc-return-description"><p>all sibling elements for nodes in this dojo/NodeList.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     Some Text
     &lt;div class=&quot;blue first&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).siblings();</code></pre>
-<p>returns the two divs with class &quot;red&quot; and the other div</p>
-<pre><code>  with class &quot;blue&quot; that does not have &quot;first&quot;.</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.first&quot;).siblings(&quot;.red&quot;);</code></pre>
-<p>returns the two div with class &quot;red&quot;.</p>
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).siblings();</code></pre>
+<p>returns the two divs with class &quot;red&quot; and the other div
+
+
+</p>
+<pre><code>with class &quot;blue&quot; that does not have &quot;first&quot;.</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.first&quot;).siblings(&quot;.red&quot;);</code></pre>
+<p>returns the two div with class &quot;red&quot;.
+</p>
 
           </div>
         </div>
@@ -3858,18 +4233,19 @@ an <code>auto</code> parameter.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/fx#Animation">dojo/_base/fx.Animation</a>|<a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a> | undefined</span></div>
-        <div class="jsdoc-return-description">A special args member `auto` can be passed to automatically play the animation.
+        <div class="jsdoc-return-description"><p>A special args member <code>auto</code> can be passed to automatically play the animation.
 If args.auto is present, the original dojo/NodeList will be returned for further
-chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()'ed
+chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()&#39;ed
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  Move all tables with class &quot;blah&quot; to 300/300:
-  dojo.query(&quot;table.blah&quot;).slideTo({
+            <h3>Example 1</h3><pre><code>Move all tables with class &quot;blah&quot; to 300/300:
+dojo.query(&quot;table.blah&quot;).slideTo({
     left: 40,
     top: 50
-  }).play();</code></pre>
+}).play();</code></pre>
 
           </div>
         </div>
@@ -3994,8 +4370,9 @@ spliced into the NodeList</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">if no value is passed, the result is an array of strings.
-If a value is passed, the return is this NodeList</div>
+        <div class="jsdoc-return-description"><p>if no value is passed, the result is an array of strings.
+If a value is passed, the return is this NodeList</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_NodeList_delegate_text"></a><span class="functionIcon">text</span><span class="parameters">(value)</span> 
@@ -4020,24 +4397,35 @@ nodes in the NodeList in one string.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function | string</span></div>
-        <div class="jsdoc-return-description">if no value is passed, the result is String, the text value of the first node.
-If a value is passed, the return is this dojo/NodeList</div>
+        <div class="jsdoc-return-description"><p>if no value is passed, the result is String, the text value of the first node.
+If a value is passed, the return is this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;/div&gt;</code></pre>
-<p>This code inserts &quot;Hello World&quot; into both divs:</p>
-<pre><code>  dojo.query(&quot;div&quot;).text(&quot;Hello World&quot;);</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;/div&gt;</code></pre>
+<p>This code inserts &quot;Hello World&quot; into both divs:
+
+
+</p>
+<pre><code>dojo.query(&quot;div&quot;).text(&quot;Hello World&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars &lt;span&gt;today&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-  &lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
-<p>This code returns &quot;Hello Mars today&quot;:</p>
-<pre><code>  var message = dojo.query(&quot;div&quot;).text();</code></pre>
+            <h3>Example 2</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div id=&quot;foo&quot;&gt;&lt;p&gt;Hello Mars &lt;span&gt;today&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;bar&quot;&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>This code returns &quot;Hello Mars today&quot;:
+
+
+</p>
+<pre><code>var message = dojo.query(&quot;div&quot;).text();</code></pre>
 
           </div>
         </div>
@@ -4106,11 +4494,11 @@ see <code>dojox.fx.toggleClass</code></p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">dojo.Animation</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">[object Value(type: function, value: undefined)]</span></div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> dojo.query(&quot;.box&quot;).toggleClass(&quot;bar&quot;).play();</code></pre>
+            <h3>Example 1</h3><pre><code>dojo.query(&quot;.box&quot;).toggleClass(&quot;bar&quot;).play();</code></pre>
 
           </div>
         </div>
@@ -4147,24 +4535,30 @@ is returned.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function | undefined | null</span></div>
-        <div class="jsdoc-return-description">if no value is passed, the result is String or an Array, for the value of the
+        <div class="jsdoc-return-description"><p>if no value is passed, the result is String or an Array, for the value of the
 first node.
-If a value is passed, the return is this dojo/NodeList</div>
+If a value is passed, the return is this dojo/NodeList</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;input type=&quot;text&quot; value=&quot;foo&quot;&gt;
-  &lt;select multiple&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;input type=&quot;text&quot; value=&quot;foo&quot;&gt;
+&lt;select multiple&gt;
     &lt;option value=&quot;red&quot; selected&gt;Red&lt;/option&gt;
     &lt;option value=&quot;blue&quot;&gt;Blue&lt;/option&gt;
     &lt;option value=&quot;yellow&quot; selected&gt;Yellow&lt;/option&gt;
-  &lt;/select&gt;</code></pre>
-<p>This code gets and sets the values for the form fields above:</p>
-<pre><code>  dojo.query(&#39;[type=&quot;text&quot;]&#39;).val(); //gets value foo
-  dojo.query(&#39;[type=&quot;text&quot;]&#39;).val(&quot;bar&quot;); //sets the input&#39;s value to &quot;bar&quot;
-  dojo.query(&quot;select&quot;).val() //gets array value [&quot;red&quot;, &quot;yellow&quot;]
-  dojo.query(&quot;select&quot;).val([&quot;blue&quot;, &quot;yellow&quot;]) //Sets the blue and yellow options to selected.</code></pre>
+&lt;/select&gt;</code></pre>
+<p>This code gets and sets the values for the form fields above:
+
+
+</p>
+<pre><code>dojo.query(&#39;[type=&quot;text&quot;]&#39;).val(); //gets value foo
+dojo.query(&#39;[type=&quot;text&quot;]&#39;).val(&quot;bar&quot;); //sets the input&#39;s value to &quot;bar&quot;
+dojo.query(&quot;select&quot;).val() //gets array value [&quot;red&quot;, &quot;yellow&quot;]
+dojo.query(&quot;select&quot;).val([&quot;blue&quot;, &quot;yellow&quot;]) //Sets the blue and yellow options to selected.</code></pre>
 
           </div>
         </div>
@@ -4195,22 +4589,25 @@ an <code>auto</code> parameter.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/fx#Animation">dojo/_base/fx.Animation</a>|<a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a> | undefined</span></div>
-        <div class="jsdoc-return-description">A special args member `auto` can be passed to automatically play the animation.
+        <div class="jsdoc-return-description"><p>A special args member <code>auto</code> can be passed to automatically play the animation.
 If args.auto is present, the original dojo/NodeList will be returned for further
-chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()'ed
+chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()&#39;ed
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Fade in all tables with class &quot;blah&quot;:</p>
-<pre><code>  dojo.query(&quot;table.blah&quot;).wipeIn().play();</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Fade in all tables with class &quot;blah&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;table.blah&quot;).wipeIn().play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Utilizing <code>auto</code> to get the NodeList back:</p>
-<pre><code>  dojo.query(&quot;.titles&quot;).wipeIn({ auto:true }).onclick(someFunction);</code></pre>
-<p></p>
+            <h3>Example 2</h3><p>Utilizing <code>auto</code> to get the NodeList back:
+
+</p>
+<pre><code>dojo.query(&quot;.titles&quot;).wipeIn({ auto:true }).onclick(someFunction);</code></pre>
 
           </div>
         </div>
@@ -4241,15 +4638,18 @@ an <code>auto</code> parameter.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/fx#Animation">dojo/_base/fx.Animation</a>|<a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a> | undefined</span></div>
-        <div class="jsdoc-return-description">A special args member `auto` can be passed to automatically play the animation.
+        <div class="jsdoc-return-description"><p>A special args member <code>auto</code> can be passed to automatically play the animation.
 If args.auto is present, the original dojo/NodeList will be returned for further
-chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()'ed
+chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be .play()&#39;ed
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Wipe out all tables with class &quot;blah&quot;:</p>
-<pre><code>  dojo.query(&quot;table.blah&quot;).wipeOut().play();</code></pre>
+            <h3>Example 1</h3><p>Wipe out all tables with class &quot;blah&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;table.blah&quot;).wipeOut().play();</code></pre>
 
           </div>
         </div>
@@ -4279,19 +4679,28 @@ event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">the nodes in the current NodeList will be returned,
-not the nodes from html argument.</div>
+        <div class="jsdoc-return-description"><p>the nodes in the current NodeList will be returned,
+not the nodes from html argument.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;b&gt;one&lt;/b&gt;
-  &lt;b&gt;two&lt;/b&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;b&quot;).wrap(&quot;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&quot;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div&gt;&lt;span&gt;&lt;b&gt;one&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;
-  &lt;div&gt;&lt;span&gt;&lt;b&gt;two&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;b&gt;one&lt;/b&gt;
+&lt;b&gt;two&lt;/b&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;b&quot;).wrap(&quot;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&quot;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div&gt;&lt;span&gt;&lt;b&gt;one&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;&lt;b&gt;two&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -4318,29 +4727,38 @@ nodes in this NodeList as the child of the html.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">the nodes in the current NodeList will be returned,
-not the nodes from html argument.</div>
+        <div class="jsdoc-return-description"><p>the nodes in the current NodeList will be returned,
+not the nodes from html argument.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.red&quot;).wrapAll(&#39;&lt;div class=&quot;allRed&quot;&gt;&lt;/div&gt;&#39;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.red&quot;).wrapAll(&#39;&lt;div class=&quot;allRed&quot;&gt;&lt;/div&gt;&#39;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;allRed&quot;&gt;
-      &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
-      &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
+        &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
+        &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
           </div>
         </div>
@@ -4370,27 +4788,36 @@ event handlers.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">the nodes in the current NodeList will be returned,
-not the nodes from html argument.</div>
+        <div class="jsdoc-return-description"><p>the nodes in the current NodeList will be returned,
+not the nodes from html argument.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>assume a DOM created by this markup:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+            <h3>Example 1</h3><p>assume a DOM created by this markup:
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;Red One&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;Red Two&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p>Running this code:</p>
-<pre><code>  dojo.query(&quot;.red&quot;).wrapInner(&#39;&lt;span class=&quot;special&quot;&gt;&lt;/span&gt;&#39;);</code></pre>
-<p>Results in this DOM structure:</p>
-<pre><code>  &lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</code></pre>
+<p>Running this code:
+
+
+</p>
+<pre><code>dojo.query(&quot;.red&quot;).wrapInner(&#39;&lt;span class=&quot;special&quot;&gt;&lt;/span&gt;&#39;);</code></pre>
+<p>Results in this DOM structure:
+
+
+</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;&lt;span class=&quot;special&quot;&gt;Red One&lt;/span&gt;&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue One&lt;/div&gt;
     &lt;div class=&quot;red&quot;&gt;&lt;span class=&quot;special&quot;&gt;Red Two&lt;/span&gt;&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;Blue Two&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
           </div>
         </div>

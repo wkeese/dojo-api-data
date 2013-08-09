@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/Bind.ModelRefController</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mvc/Bind.ModelRefController<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller</a>
 </div>
 <div class="jsdoc-full-summary"><p>A controller that keeps a reference to dojo/Stateful-based data model.</p>
 </div>
@@ -14,14 +14,13 @@
 <li>Stores data to model via <a class="jsdoc-link" href="/api/1.8/dojo/Stateful">dojo/Stateful</a> set() interface</li>
 <li>Watches for change in model via <a class="jsdoc-link" href="/api/1.8/dojo/Stateful">dojo/Stateful</a> watch() interface (The callback is called when there is a change in data model, as well as when the data model itself is replaced with different one)</li>
 </ul>
-<p>Can also be used to do some application-specific stuffs upon change in properties in model, by defining setter functions.
+<p>Can also be used to do some application-specific stuffs upon change in properties in model, by defining setter functions. 
 Doing so will help keep models and widgets free from application-specific logic, and will help keep application logic free from specifics of models and widgets.
 Such kind of setter functions can be defined in the same manner as widgets (_setXXXAttr()).
 
 </p>
 <p>NOTE - If this class is used with a widget by data-dojo-mixins, make sure putting the widget in data-dojo-type and putting this class to data-dojo-mixins.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mvc.html" target="_blank">dojox/mvc/Bind.ModelRefController reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -30,28 +29,30 @@ Such kind of setter functions can be defined in the same manner as widgets (_set
   <div class="jsdoc-example">
     <h3>Example 1</h3><p>The text box refers to &quot;value&quot; property in the controller (with &quot;ctrl&quot; ID).
 The controller provides the &quot;value&quot; property on behalf of the model (&quot;model&quot; property in the controller).
-Two seconds later, the text box changes from &quot;Foo&quot; to &quot;Bar&quot; as the controller changes the data model it refers to.</p>
-<pre><code>    &lt;html&gt;
-      &lt;head&gt;
+Two seconds later, the text box changes from &quot;Foo&quot; to &quot;Bar&quot; as the controller changes the data model it refers to.
+
+</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
         &lt;script src=&quot;/path/to/dojo-toolkit/dojo/dojo.js&quot; type=&quot;text/javascript&quot; data-dojo-config=&quot;parseOnLoad: 0&quot;&gt;&lt;/script&gt;
         &lt;script type=&quot;text/javascript&quot;&gt;
-          require([
-            &quot;dojo/parser&quot;, &quot;dojo/Stateful&quot;, &quot;dijit/registry&quot;,
-            &quot;dijit/form/TextBox&quot;, &quot;dojox/mvc/ModelRefController&quot;, &quot;dojo/domReady!&quot;
-          ], function(parser, Stateful, registry){
-            modelFoo = new Stateful({value: &quot;Foo&quot;});
-            modelBar = new Stateful({value: &quot;Bar&quot;});
-            setTimeout(function(){ registry.byId(&quot;ctrl&quot;).set(&quot;model&quot;, modelBar); }, 2000);
-            parser.parse();
-          });
+            require([
+                &quot;dojo/parser&quot;, &quot;dojo/Stateful&quot;, &quot;dijit/registry&quot;,
+                &quot;dijit/form/TextBox&quot;, &quot;dojox/mvc/ModelRefController&quot;, &quot;dojo/domReady!&quot;
+            ], function(parser, Stateful, registry){
+                modelFoo = new Stateful({value: &quot;Foo&quot;});
+                modelBar = new Stateful({value: &quot;Bar&quot;});
+                setTimeout(function(){ registry.byId(&quot;ctrl&quot;).set(&quot;model&quot;, modelBar); }, 2000);
+                parser.parse();
+            });
         &lt;/script&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
         &lt;script type=&quot;dojo/require&quot;&gt;at: &quot;dojox/mvc/at&quot;&lt;/script&gt;
         &lt;span id=&quot;ctrl&quot; data-dojo-type=&quot;dojox/mvc/ModelRefController&quot; data-dojo-props=&quot;model: modelFoo&quot;&gt;&lt;/span&gt;
         &lt;input type=&quot;text&quot; data-dojo-type=&quot;dijit/form/TextBox&quot; data-dojo-props=&quot;value: at(&#39;widget:ctrl&#39;, &#39;value&#39;)&quot;&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
   </div>
 </div>
@@ -187,9 +188,9 @@ Used when this controller needs data model (as input) that is different from the
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -317,7 +318,8 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-full-summary"><p>Returns list of all properties in this widget, except &quot;id&quot;.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String[] | undefined</span></div>
-        <div class="jsdoc-return-description">The list of all properties in this widget, except "id"..</div>
+        <div class="jsdoc-return-description"><p>The list of all properties in this widget, except &quot;id&quot;..</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_mvc_Bind_ModelRefController__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>

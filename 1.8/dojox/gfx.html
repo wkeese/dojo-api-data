@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/gfx<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/gfx.html" target="_blank">dojox/gfx reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -156,7 +155,7 @@ class list currently applied to the node.</span><span title="private" class="jsd
     </li>
     <li class="functionIcon "><a href="#1_8dojox_gfx_Moveable" class="inline-link"> Moveable</a><span class="parameters">(</span>) <span></span>
     </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_Mover" class="inline-link"> Mover</a><span class="parameters">(</span>) <span>a constructor of custom Mover</span>
+    <li class="functionIcon "><a href="#1_8dojox_gfx_Mover" class="inline-link"> Mover</a><span class="parameters">(</span>) <span></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_normalizeColor" class="inline-link"> normalizeColor</a><span class="parameters">(</span>color) <span>converts any legal color representation to normalized
 dojo/Color object</span><span title="inherited from dojox/gfx/_base" class="jsdoc-inherited"></span>
@@ -165,8 +164,6 @@ dojo/Color object</span><span title="inherited from dojox/gfx/_base" class="jsdo
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_normalizeParameters" class="inline-link"> normalizeParameters</a><span class="parameters">(</span>existed, update) <span>updates an existing object with properties from an &#39;update&#39;
 object</span><span title="inherited from dojox/gfx/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_Path" class="inline-link"> Path</a><span class="parameters">(</span>) <span></span>
     </li>
     <li class="functionIcon "><a href="#1_8dojox_gfx_Point" class="inline-link"> Point</a><span class="parameters">(</span>) <span></span>
     </li>
@@ -732,7 +729,8 @@ class list currently applied to the node.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/gfx.Surface">dojox/gfx.Surface</a></span></div>
-        <div class="jsdoc-return-description">newly created surface</div>
+        <div class="jsdoc-return-description"><p>newly created surface</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_decompose"></a><span class="functionIcon">decompose</span><span class="parameters">(matrix)</span> 
@@ -743,8 +741,10 @@ class list currently applied to the node.</p>
 </div>
         <div class="jsdoc-full-summary"><p>This function decompose a matrix into four logical components:
 translation, rotation, scaling, and one more rotation using SVD.
-The components should be applied in following order:</p>
-<pre><code> [translate, rotate(angle2), scale, rotate(angle1)]</pre></code>
+The components should be applied in following order:
+
+</p>
+<pre><code>[translate, rotate(angle2), scale, rotate(angle1)]</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -831,7 +831,8 @@ The components should be applied in following order:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
-        <div class="jsdoc-return-description">the formatted value</div>
+        <div class="jsdoc-return-description"><p>the formatted value</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_getVectorFont"></a><span class="functionIcon">getVectorFont</span><span class="parameters">(url)</span> 
@@ -921,7 +922,8 @@ The components should be applied in following order:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined | object</span></div>
-        <div class="jsdoc-return-description">new object with new and default properties</div>
+        <div class="jsdoc-return-description"><p>new object with new and default properties</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_Matrix2D"></a><span class="functionIcon">Matrix2D</span><span class="parameters">(arg)</span> 
@@ -960,8 +962,7 @@ all objects of the array are normalized and multiplied sequentially.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/Mover" class="jsdoc-link">dojox/gfx/Mover</a>
         </div>
-        <div class="jsdoc-full-summary"><p>a constructor of custom Mover</p>
-</div>
+        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_normalizeColor"></a><span class="functionIcon">normalizeColor</span><span class="parameters">(color)</span> 
@@ -1009,7 +1010,8 @@ dojo/Color object</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | number | undefined</span></div>
-        <div class="jsdoc-return-description">pixels</div>
+        <div class="jsdoc-return-description"><p>pixels</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_normalizeParameters"></a><span class="functionIcon">normalizeParameters</span><span class="parameters">(existed, update)</span> 
@@ -1044,13 +1046,6 @@ the existed object</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object</span></div>
         <div class="jsdoc-return-description"><p>the target object to be updated</p>
 </div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_Path"></a><span class="functionIcon">Path</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/path" class="jsdoc-link">dojox/gfx/path</a>
-        </div>
-        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_Point"></a><span class="functionIcon">Point</span><span class="parameters">()</span> 
@@ -1163,7 +1158,8 @@ ignored), and family. Note that the Font.size attribute is limited to numeric CS
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
-        <div class="jsdoc-return-description">object in dojox/gfx.defaultFont format</div>
+        <div class="jsdoc-return-description"><p>object in dojox/gfx.defaultFont format</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_Surface"></a><span class="functionIcon">Surface</span><span class="parameters">()</span> 

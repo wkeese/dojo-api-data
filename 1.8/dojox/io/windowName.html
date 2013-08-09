@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/io/windowName</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/io/windowName<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/io/windowName.html" target="_blank">dojox/io/windowName reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -86,27 +85,41 @@ frame&#39;s window.name.
 should check for the presence of a parameter window.name=true and if a request includes
 such a parameter, it should respond to the request with an HTML
 document that sets it&#39;s window.name to the string that is to be
-delivered to the client. For example, if a client makes a window.name request like:</p>
-<pre><code>  http://othersite.com/greeting?windowname=true</pre></code>
-<p>And server wants to respond to the client with &quot;Hello&quot;, it should return an html page:</p>
-<pre><code>  &lt;html&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-  window.name=&quot;Hello&quot;;
-  &lt;/script&gt;&lt;/html&gt;</pre></code>
+delivered to the client. For example, if a client makes a window.name request like:
+
+</p>
+<pre><code>http://othersite.com/greeting?windowname=true</pre></code>
+<p>And server wants to respond to the client with &quot;Hello&quot;, it should return an html page:
+
+
+</p>
+<pre><code>&lt;html&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+window.name=&quot;Hello&quot;;
+&lt;/script&gt;&lt;/html&gt;</pre></code>
 <p>One can provide XML or JSON data by simply quoting the data as a string, and parsing the data
-on the client.
+
+</p>
+<p>on the client.
 If you use the authorization window.name protocol, the requester should include an
-authElement element in the args, and a request will be created like:</p>
-<pre><code>  http://othersite.com/greeting?windowname=auth</pre></code>
-<p>And the server can respond like this:</p>
-<pre><code>  &lt;html&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-  var loc = window.name;
-  authorizationButton.onclick = function(){
+authElement element in the args, and a request will be created like:
+
+</p>
+<pre><code>http://othersite.com/greeting?windowname=auth</pre></code>
+<p>And the server can respond like this:
+
+
+</p>
+<pre><code>&lt;html&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+var loc = window.name;
+authorizationButton.onclick = function(){
     window.name=&quot;Hello&quot;;
     location = loc;
-  };
-  &lt;/script&gt;&lt;/html&gt;</pre></code>
+};
+&lt;/script&gt;&lt;/html&gt;</pre></code>
 <p>When using windowName from a XD Dojo build, make sure to set the
-dojo.dojoBlankHtmlUrl property to a local URL.</p>
+
+</p>
+<p>dojo.dojoBlankHtmlUrl property to a local URL.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

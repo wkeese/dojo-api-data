@@ -6,7 +6,6 @@
 <div class="jsdoc-full-summary"><p>a set of functions to animate properties based on
 normalized CSS class definitions.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/fx/style.html" target="_blank">dojox/fx/style reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -87,15 +86,14 @@ duration, easing and so on.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  .bar { line-height: 12px; }
-  .foo { line-height: 40px; }
-  &lt;div class=&quot;bar&quot; id=&quot;test&quot;&gt;
-  Multi&lt;br&gt;line&lt;br&gt;text
-  &lt;/div&gt;
+            <h3>Example 1</h3><pre><code>   .bar { line-height: 12px; }
+   .foo { line-height: 40px; }
+   &lt;div class=&quot;bar&quot; id=&quot;test&quot;&gt;
+   Multi&lt;br&gt;line&lt;br&gt;text
+   &lt;/div&gt;
 
-  // animate to line-height:40px
-  dojo.fx.addClass(&quot;test&quot;, &quot;foo&quot;).play();</code></pre>
-<p></p>
+   // animate to line-height:40px
+   dojo.fx.addClass(&quot;test&quot;, &quot;foo&quot;).play();</code></pre>
 
           </div>
         </div>
@@ -146,8 +144,8 @@ a standard CSS className from a that node.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // animate the removal of &quot;foo&quot; from a node with id=&quot;bar&quot;
-  dojox.fx.removeClass(&quot;bar&quot;, &quot;foo&quot;).play()</code></pre>
+            <h3>Example 1</h3><pre><code>// animate the removal of &quot;foo&quot; from a node with id=&quot;bar&quot;
+dojox.fx.removeClass(&quot;bar&quot;, &quot;foo&quot;).play()</code></pre>
 
           </div>
         </div>
@@ -205,13 +203,13 @@ Pass a boolean condition if you want to explicitly add or remove.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // add the class &quot;sampleClass&quot; to a node id=&quot;theNode&quot;
-  dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;,true).play();</code></pre>
+            <h3>Example 1</h3><pre><code>// add the class &quot;sampleClass&quot; to a node id=&quot;theNode&quot;
+dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;,true).play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // toggle the class &quot;sampleClass&quot; on the node id=&quot;theNode&quot;
-  dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;).play();</code></pre>
+            <h3>Example 2</h3><pre><code>// toggle the class &quot;sampleClass&quot; on the node id=&quot;theNode&quot;
+dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;).play();</code></pre>
 
           </div>
         </div>

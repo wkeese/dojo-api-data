@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/editor/plugins/TablePlugins</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/editor/plugins/TablePlugins<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>A collection of Plugins for inserting and modifying tables in the Editor
 See end of this document for all available plugs
@@ -14,7 +14,7 @@ and dojox/editorPlugins/tests/editorTablePlugs.html for an example
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/editor/plugins/TablePlugins<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new TablePlugins<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/_editor/_Plugin">dijit/_editor/_Plugin</a></div>
 <div class="jsdoc-summary"><p>Create the plugin.</p>
@@ -34,7 +34,6 @@ and dojox/editorPlugins/tests/editorTablePlugs.html for an example
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/editor/plugins/TablePlugins.html" target="_blank">dojox/editor/plugins/TablePlugins reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -81,8 +80,7 @@ button is updated appropriately.</span><span title="private" class="jsdoc-privat
     </li>
     <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_begEdit" class="inline-link"> begEdit</a><span class="parameters">(</span>) <span></span>
     </li>
-    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
-that is added to the toolbar to control this plugin.</span>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Make a connect.connect() that is automatically disconnected when this plugin is destroyed.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
     </li>
@@ -319,10 +317,7 @@ button is updated appropriately.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
-that is added to the toolbar to control this plugin.
-This is used to instantiate the button, unless <code>button</code> itself is specified directly.</p>
-</div>
+        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_connect"></a><span class="functionIcon">connect</span><span class="parameters">(o, f, tf)</span> 
@@ -407,14 +402,25 @@ Similar to <code>dijit/_Widget.connect()</code>.</p>
 potentially be retrieved via a getter method. If no getter is defined, this
 just retrieves the object&#39;s property.
 For example, if the plugin has a properties &quot;foo&quot;
-and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:</p>
-<pre><code>  plugin.get(&quot;foo&quot;);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin._getFooAttr();</pre></code>
-<p>and:</p>
-<pre><code>  plugin.get(&quot;bar&quot;);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin.bar;</pre></code>
+and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:
+
+</p>
+<pre><code>plugin.get(&quot;foo&quot;);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin._getFooAttr();</pre></code>
+<p>and:
+
+
+</p>
+<pre><code>plugin.get(&quot;bar&quot;);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin.bar;</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -462,7 +468,8 @@ and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:</p>
         <div class="jsdoc-full-summary"><p>Gets the selected cells from the passed table.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Array</span></div>
-        <div class="jsdoc-return-description">array of TDs or empty array</div>
+        <div class="jsdoc-return-description"><p>array of TDs or empty array</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_getTableInfo"></a><span class="functionIcon">getTableInfo</span><span class="parameters">(forceNewData)</span> 
@@ -545,21 +552,34 @@ supported in other browsers, it may help with the undo problem.</p>
         <div class="jsdoc-full-summary"><p>Sets named properties on a plugin which may potentially be handled by a
 setter in the plugin.
 For example, if the plugin has a properties &quot;foo&quot;
-and &quot;bar&quot; and a method named &quot;_setFooAttr&quot;, calling:</p>
-<pre><code>  plugin.set(&quot;foo&quot;, &quot;Howdy!&quot;);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin._setFooAttr(&quot;Howdy!&quot;);</pre></code>
-<p>and:</p>
-<pre><code>  plugin.set(&quot;bar&quot;, 3);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin.bar = 3;</pre></code>
-<p></p>
-<p>set() may also be called with a hash of name/value pairs, ex:</p>
-<pre><code>  plugin.set({
+and &quot;bar&quot; and a method named &quot;_setFooAttr&quot;, calling:
+
+</p>
+<pre><code>plugin.set(&quot;foo&quot;, &quot;Howdy!&quot;);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin._setFooAttr(&quot;Howdy!&quot;);</pre></code>
+<p>and:
+
+
+</p>
+<pre><code>plugin.set(&quot;bar&quot;, 3);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin.bar = 3;</pre></code>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+</p>
+<pre><code>plugin.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  })</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+})</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

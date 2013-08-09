@@ -3,7 +3,6 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/_DatePickerMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A mixin for date picker widget.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mobile.html" target="_blank">dojox/mobile/_DatePickerMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -78,7 +77,7 @@
         <div class="jsdoc-summary"><p>A string representing the date value.
 The setter of this property first converts the value argument by calling 
 the fromISOString method of the <a class="jsdoc-link" href="/api/1.8/dojo/date/stamp">dojo/date/stamp</a> module, then sets the 
-values of the picker according to the resulting  Date object. 
+values of the picker according to the resulting Date object. 
 If the string cannot be parsed by fromISOString, the method does nothing.
 Example: set(&quot;value&quot;, &quot;2012-1-20&quot;); // January 20, 2012
 The getter returns the string formatted as described in the <a class="jsdoc-link" href="/api/1.8/dojo/date/stamp">dojo/date/stamp</a> 
@@ -113,7 +112,8 @@ module.</p>
         <div class="jsdoc-full-summary"><p>Gets the current date as a String formatted according to a subset of the ISO-8601 standard.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
-        <div class="jsdoc-return-description">A string formatted as described in the dojo/date/stamp module.</div>
+        <div class="jsdoc-return-description"><p>A string formatted as described in the dojo/date/stamp module.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_mobile__DatePickerMixin__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
@@ -143,7 +143,7 @@ Date object. If the string cannot be parsed by fromISOString, the method does no
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  set(&quot;value&quot;, &quot;2012-1-20&quot;); // January 20, 2012</code></pre>
+            <h3>Example 1</h3><pre><code>set(&quot;value&quot;, &quot;2012-1-20&quot;); // January 20, 2012</code></pre>
 
           </div>
         </div>
@@ -179,7 +179,7 @@ passed to the setter of the slots without formatting.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  set(&quot;values&quot;, [2012, 1, 20]); // January 20, 2012</code></pre>
+            <h3>Example 1</h3><pre><code>set(&quot;values&quot;, [2012, 1, 20]); // January 20, 2012</code></pre>
 
           </div>
         </div>
@@ -197,7 +197,7 @@ passed to the setter of the slots without formatting.
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/_DatePickerMixin" class="jsdoc-link">dojox/mobile/_DatePickerMixin</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Reorders the slots.</p>
+        <div class="jsdoc-full-summary"><p>Reorders the slots.         </p>
 </div>
       </div>
       <div class="jsdoc-field">

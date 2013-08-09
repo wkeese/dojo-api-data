@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/fx/text</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/fx/text<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/fx.html" target="_blank">dojox/fx/text reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -61,11 +60,13 @@ when the animation begins.  To work around this bug, enclose the node&#39;s text
 <li>args.text: String - Text to place inside the node (otherwise node.innerHTML is used)</li>
 <li>args.words: Boolean - If true, the text will be split into words rather than characters</li>
 <li>args.pieceAnimation: Function(piece, pieceCoords, nodeCoords, number, numPieces)
-Returns either the dojo.Animation or an array of dojo.Animation objects for the piece.
-The arguments:</li>
+  Returns either the dojo.Animation or an array of dojo.Animation objects for the piece.
+  The arguments:<ul>
 <li>pieceCoords is the result of dojo.coords(piece, true);</li>
 <li>nodeCoords is the result of dojo.coords(args.node, true);</li>
 <li>number is the piece&#39;s position in the array of pieces, and numPieces is the array.length</li>
+</ul>
+</li>
 </ul>
  
             </td>
@@ -149,8 +150,8 @@ or characters that fade in or out.</p>
             <td class="jsdoc-param-description"><ul>
 <li>args.words: Boolean - If true, text will be split into words rather than characters</li>
 <li>args.interval: Float - The number of milliseconds between each piece&#39;s animation (default is 0)</li>
-<li>args.random: Float - If true, pieces have a random delay. The value defines how much
-randomness is introduced</li>
+<li>args.random: Float - If true, pieces have a random delay. The value defines how much<pre><code>                 randomness is introduced</code></pre>
+</li>
 <li>args.reverseOrder: Boolean - If true, pieces animate in reversed order</li>
 <li>args.unhide: Boolean - If true, the animation is reversed</li>
 </ul>
@@ -224,8 +225,8 @@ or characters that drop.</p>
 <li>args.interval: Float - The number of milliseconds between each piece&#39;s animation</li>
 <li>args.distance: Float - The number of the node&#39;s heights to drop (default is 1.5)</li>
 <li>args.fade: Boolean - If true, pieces fade out while in motion (default is true)</li>
-<li>args.random: Float - If set, pieces fall in random order. The value defines how much
-randomness is introduced</li>
+<li>args.random: Float - If set, pieces fall in random order. The value defines how much<pre><code>                 randomness is introduced</code></pre>
+</li>
 <li>args.reverseOrder: Boolean - If true, pieces animate in reversed order</li>
 <li>args.unhide: Boolean - If true, the peices fall from above and land in place</li>
 </ul>
@@ -256,15 +257,15 @@ of words or characters that fly away from the center.</p>
             <td class="jsdoc-param-description"><ul>
 <li>args.crop: Boolean - If true, pieces will be positioned relatively rather than absolutely</li>
 <li>args.words: Boolean - If true, text will be split into words rather than characters</li>
-<li>args.random: Float - If set, pieces fly to random distances, for random durations,
-and in slightly random directions. The value defines how much
-randomness is introduced.</li>
+<li>args.random: Float - If set, pieces fly to random distances, for random durations,<pre><code>                 and in slightly random directions. The value defines how much
+                 randomness is introduced.</code></pre>
+</li>
 <li>args.distance: Float - Multiplier for the distance the pieces fly (even when random)</li>
 <li>args.fade: Boolean - If true, pieces fade out while in motion (default is true)</li>
 <li>args.fadeEasing: Function - If args.fade is true, the fade animations use this easing function</li>
 <li>args.unhide: Boolean - If true, the animation is reversed</li>
-<li>args.sync: Boolean - If args.unhide is true, all the pieces converge at the same time
-(default is true)</li>
+<li>args.sync: Boolean - If args.unhide is true, all the pieces converge at the same time<pre><code>                 (default is true)</code></pre>
+</li>
 </ul>
  
             </td>

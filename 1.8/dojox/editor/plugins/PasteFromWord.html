@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/editor/plugins/PasteFromWord</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/editor/plugins/PasteFromWord<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>This plugin provides PasteFromWord capability to the editor.  When
 clicked, a dialog opens with a spartan RichText instance to paste
@@ -12,7 +12,7 @@ that tends to cause issues.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/editor/plugins/PasteFromWord<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new PasteFromWord<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/_editor/_Plugin">dijit/_editor/_Plugin</a></div>
 <div class="jsdoc-summary"><p>Create the plugin.</p>
@@ -32,7 +32,6 @@ that tends to cause issues.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/editor/plugins/PasteFromWord.html" target="_blank">dojox/editor/plugins/PasteFromWord reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -406,14 +405,25 @@ Similar to <code>dijit/_Widget.connect()</code>.</p>
 potentially be retrieved via a getter method. If no getter is defined, this
 just retrieves the object&#39;s property.
 For example, if the plugin has a properties &quot;foo&quot;
-and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:</p>
-<pre><code>  plugin.get(&quot;foo&quot;);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin._getFooAttr();</pre></code>
-<p>and:</p>
-<pre><code>  plugin.get(&quot;bar&quot;);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin.bar;</pre></code>
+and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:
+
+</p>
+<pre><code>plugin.get(&quot;foo&quot;);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin._getFooAttr();</pre></code>
+<p>and:
+
+
+</p>
+<pre><code>plugin.get(&quot;bar&quot;);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin.bar;</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -463,21 +473,34 @@ and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:</p>
         <div class="jsdoc-full-summary"><p>Sets named properties on a plugin which may potentially be handled by a
 setter in the plugin.
 For example, if the plugin has a properties &quot;foo&quot;
-and &quot;bar&quot; and a method named &quot;_setFooAttr&quot;, calling:</p>
-<pre><code>  plugin.set(&quot;foo&quot;, &quot;Howdy!&quot;);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin._setFooAttr(&quot;Howdy!&quot;);</pre></code>
-<p>and:</p>
-<pre><code>  plugin.set(&quot;bar&quot;, 3);</pre></code>
-<p>would be equivalent to writing:</p>
-<pre><code>  plugin.bar = 3;</pre></code>
-<p></p>
-<p>set() may also be called with a hash of name/value pairs, ex:</p>
-<pre><code>  plugin.set({
+and &quot;bar&quot; and a method named &quot;_setFooAttr&quot;, calling:
+
+</p>
+<pre><code>plugin.set(&quot;foo&quot;, &quot;Howdy!&quot;);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin._setFooAttr(&quot;Howdy!&quot;);</pre></code>
+<p>and:
+
+
+</p>
+<pre><code>plugin.set(&quot;bar&quot;, 3);</pre></code>
+<p>would be equivalent to writing:
+
+
+</p>
+<pre><code>plugin.bar = 3;</pre></code>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+</p>
+<pre><code>plugin.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  })</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+})</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

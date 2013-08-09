@@ -7,20 +7,19 @@
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/date/islamic/Date<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Date<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/date/islamic/Date">dojox/date/islamic/Date</a></div>
 <div class="jsdoc-summary"><p>This function initialize the date object values</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/date/islamic.html" target="_blank">dojox/date/islamic/Date reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var date = new dojox.date.islamic.Date();
-  document.writeln(date.getFullYear()+&#39;\&#39;+date.getMonth()+&#39;\&#39;+date.getDate());</code></pre>
+    <h3>Example 1</h3><pre><code>var date = new dojox.date.islamic.Date();
+document.writeln(date.getFullYear()+&#39;\&#39;+date.getMonth()+&#39;\&#39;+date.getDate());</code></pre>
 
   </div>
 </div>
@@ -354,10 +353,10 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  var date2 = new dojox.date.islamic.Date(&quot;12\2\1429&quot;);
-  var date3 = new dojox.date.islamic.Date(date2);
-  var date4 = new dojox.date.islamic.Date(1429,2,12);</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+var date2 = new dojox.date.islamic.Date(&quot;12\2\1429&quot;);
+var date3 = new dojox.date.islamic.Date(date2);
+var date4 = new dojox.date.islamic.Date(1429,2,12);</code></pre>
 
           </div>
         </div>
@@ -388,9 +387,9 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var dateIslamic = new dojox.date.islamic.Date();
-  var dateGregorian = new Date(2008,10,12);
-  dateIslamic.fromGregorian(dateGregorian);</code></pre>
+            <h3>Example 1</h3><pre><code>var dateIslamic = new dojox.date.islamic.Date();
+var dateGregorian = new Date(2008,10,12);
+dateIslamic.fromGregorian(dateGregorian);</code></pre>
 
           </div>
         </div>
@@ -406,8 +405,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  document.writeln(date1.getDate);</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+document.writeln(date1.getDate);</code></pre>
 
           </div>
         </div>
@@ -423,8 +422,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  document.writeln(date1.getDay());</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+document.writeln(date1.getDay());</code></pre>
 
           </div>
         </div>
@@ -488,8 +487,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  document.writeln(date1.getFullYear());</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+document.writeln(date1.getFullYear());</code></pre>
 
           </div>
         </div>
@@ -532,8 +531,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  document.writeln(date1.getMonth()+1);</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+document.writeln(date1.getMonth()+1);</code></pre>
 
           </div>
         </div>
@@ -573,8 +572,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  date1.setDate(2);</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+date1.setDate(2);</code></pre>
 
           </div>
         </div>
@@ -602,8 +601,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  date1.setYear(1429);</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+date1.setYear(1429);</code></pre>
 
           </div>
         </div>
@@ -684,8 +683,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  date1.setMonth(2);</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+date1.setMonth(2);</code></pre>
 
           </div>
         </div>
@@ -725,8 +724,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var dateIslamic = new dojox.date.islamic.Date(1429,11,20);
-  var dateGregorian = dateIslamic.toGregorian();</code></pre>
+            <h3>Example 1</h3><pre><code>var dateIslamic = new dojox.date.islamic.Date(1429,11,20);
+var dateGregorian = dateIslamic.toGregorian();</code></pre>
 
           </div>
         </div>
@@ -742,8 +741,8 @@ since midnight, January 1, 1970 UTC</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.islamic.Date();
-  document.writeln(date1.toString());</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.islamic.Date();
+document.writeln(date1.toString());</code></pre>
 
           </div>
         </div>

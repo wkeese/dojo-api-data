@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Filter</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Filter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provide filter functionality for grid.
 
@@ -12,61 +12,61 @@
 </p>
 <ol>
 <li>itemsName: string:
-the name shown on the filter bar.</li>
+ the name shown on the filter bar.</li>
 <li>statusTipTimeout: number:
-when does the status tip show.</li>
+ when does the status tip show.</li>
 <li>ruleCount: number:
-default to 3, should not change to more. The Claro theme limits it.</li>
+ default to 3, should not change to more. The Claro theme limits it.</li>
 <li>disabledConditions: object:
-If you don&#39;t need all of the conditions provided for a data type,
-you can explicitly declare them here:
-e.g.: disabledConditions: {string: [&quot;contains&quot;, &quot;is&quot;], number: [&quot;equalto&quot;], ...}</li>
+ If you don&#39;t need all of the conditions provided for a data type,
+ you can explicitly declare them here:
+ e.g.: disabledConditions: {string: [&quot;contains&quot;, &quot;is&quot;], number: [&quot;equalto&quot;], ...}</li>
 <li>isServerSide: boolean:
-Whether to use server side filtering. Default to false.</li>
+ Whether to use server side filtering. Default to false.</li>
 <li>isStateful: boolean:
-If isServerSide is true, set the server side filter to be stateful or not. default to false.</li>
+ If isServerSide is true, set the server side filter to be stateful or not. default to false.</li>
 <li>url: string:
-If using stateful, this is the url to send commands. default to store.url.</li>
+ If using stateful, this is the url to send commands. default to store.url.</li>
 <li>ruleCountToConfirmClearFilter: Integer | null |Infinity:
-If the filter rule count is larger than or equal to this value, then a confirm dialog will show when clearing filter.
-If set to less than 1 or null, then always show the confirm dialog.
-If set to Infinity, then never show the confirm dialog.
-Default value is 2.</li>
+ If the filter rule count is larger than or equal to this value, then a confirm dialog will show when clearing filter.
+ If set to less than 1 or null, then always show the confirm dialog.
+ If set to Infinity, then never show the confirm dialog.
+ Default value is 2.</li>
 </ol>
 <p>Acceptable cell parameters defined in layout:
 
 </p>
 <ol>
 <li>filterable: boolean:
-The column is not filterable only when this is set to false explicitly.</li>
+ The column is not filterable only when this is set to false explicitly.</li>
 <li>datatype: string:
-The data type of this column. Can be &quot;string&quot;, &quot;number&quot;, &quot;date&quot;, &quot;time&quot;, &quot;boolean&quot;.
-Default to &quot;string&quot;.</li>
+ The data type of this column. Can be &quot;string&quot;, &quot;number&quot;, &quot;date&quot;, &quot;time&quot;, &quot;boolean&quot;.
+ Default to &quot;string&quot;.</li>
 <li>autoComplete: boolean:
-If need auto-complete in the ComboBox for String type, set this to true.</li>
+ If need auto-complete in the ComboBox for String type, set this to true.</li>
 <li><p>dataTypeArgs: object:
-Some arguments helping convert store data to something the filter UI understands.
-Different data type arguments can be provided to different data types.
-For date/time, this is a dojo.date.locale.__FormatOptions, so the DataTimeBox can understand the store data.
-For boolean, this object contains:</p>
-</li>
-<li><p>trueLabel: string:
-A label to display in the filter definition dialog for true value. Default to &quot;True&quot;.</p>
-</li>
-<li><p>falseLabel: string:
-A label to display in the filter definition dialog for false value. Default to &quot;False&quot;.</p>
+ Some arguments helping convert store data to something the filter UI understands.
+ Different data type arguments can be provided to different data types.
+ For date/time, this is a dojo.date.locale.__FormatOptions, so the DataTimeBox can understand the store data.
+ For boolean, this object contains:</p>
+<ul>
+<li>trueLabel: string:
+  A label to display in the filter definition dialog for true value. Default to &quot;True&quot;.</li>
+<li>falseLabel: string:
+  A label to display in the filter definition dialog for false value. Default to &quot;False&quot;.</li>
+</ul>
 </li>
 <li><p>disabledConditions: object:
-If you don&#39;t need all of the conditions provided by the filter UI on this column, you can explicitly say it out here.
-e.g.: disabledConditions: [&quot;contains&quot;, &quot;is&quot;]
-This will disable the &quot;contains&quot; condition for this column, if this column is of string type.
-For full set of conditions, please refer to dojox.grid.enhanced.plugins.filter.FilterDefDialog._setupData.</p>
+ If you don&#39;t need all of the conditions provided by the filter UI on this column, you can explicitly say it out here.
+ e.g.: disabledConditions: [&quot;contains&quot;, &quot;is&quot;]
+ This will disable the &quot;contains&quot; condition for this column, if this column is of string type.
+ For full set of conditions, please refer to dojox.grid.enhanced.plugins.filter.FilterDefDialog._setupData.</p>
 </li>
 </ol>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/Filter<span class="parameters">(grid,args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Filter<span class="parameters">(grid,args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/Filter">dojox/grid/enhanced/plugins/Filter</a></div>
 <div class="jsdoc-summary"><p>See constructor of dojox.grid.enhanced._Plugin.</p>
@@ -96,11 +96,11 @@ For full set of conditions, please refer to dojox.grid.enhanced.plugins.filter.F
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  &lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot; plugins=&quot;{GridFilter: true}&quot; ...&gt;&lt;/div&gt;
-  or provide some parameters:
-  &lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot; plugins=&quot;{GridFilter: {itemsName: &#39;songs&#39;}}&quot; ...&gt;&lt;/div&gt;
-  Customize columns for filter:
-  var layout = [
+    <h3>Example 1</h3><pre><code>&lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot; plugins=&quot;{GridFilter: true}&quot; ...&gt;&lt;/div&gt;
+or provide some parameters:
+&lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot; plugins=&quot;{GridFilter: {itemsName: &#39;songs&#39;}}&quot; ...&gt;&lt;/div&gt;
+Customize columns for filter:
+var layout = [
     ...
     //define a column to be un-filterable in layout/structure
     {field: &quot;Genre&quot;, filterable: false, ...}
@@ -111,7 +111,7 @@ For full set of conditions, please refer to dojox.grid.enhanced.plugins.filter.F
     //disable some conditions for a column
     {field: &quot;Track&quot;, disabledConditions: [&quot;equalto&quot;,&quot;notequalto&quot;], ...}
     ...
-  ];</code></pre>
+];</code></pre>
 
   </div>
 </div>
@@ -307,11 +307,11 @@ but we don&#39;t need it here.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when foo.bar() is called, call the listener in the scope of plugin
-  plugin.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.xxx());//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -409,12 +409,12 @@ of this object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when /my/topic is published, call the subscriber in the scope of plugin
-  // with passed parameter - &quot;v&quot;
-  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
     console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

@@ -4,7 +4,6 @@
 <div class="jsdoc-full-summary"><p>Experimental and extended Animations beyond Dojo Core / Base functionality.
 Provides advanced Lines, Animations, and convenience aliases.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/fx.html" target="_blank">dojox/fx/split reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -102,11 +101,11 @@ as you see fit.</p>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // this is 10 .. 100 and 50 .. 500
-  var curve = new dojox.fx._Line([10,50],[100,500]);
-  // dojo.Animation.onAnimate is called at every step of the animation
-  // to define current values. this _Line returns an array
-   // at each step. arguments[0] and [1] in this example.</code></pre>
+            <h3>Example 2</h3><pre><code>// this is 10 .. 100 and 50 .. 500
+var curve = new dojox.fx._Line([10,50],[100,500]);
+// dojo.Animation.onAnimate is called at every step of the animation
+// to define current values. this _Line returns an array
+// at each step. arguments[0] and [1] in this example.</code></pre>
 
           </div>
         </div>
@@ -179,15 +178,14 @@ duration, easing and so on.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  .bar { line-height: 12px; }
-  .foo { line-height: 40px; }
-  &lt;div class=&quot;bar&quot; id=&quot;test&quot;&gt;
-  Multi&lt;br&gt;line&lt;br&gt;text
-  &lt;/div&gt;
+            <h3>Example 1</h3><pre><code>   .bar { line-height: 12px; }
+   .foo { line-height: 40px; }
+   &lt;div class=&quot;bar&quot; id=&quot;test&quot;&gt;
+   Multi&lt;br&gt;line&lt;br&gt;text
+   &lt;/div&gt;
 
-  // animate to line-height:40px
-  dojo.fx.addClass(&quot;test&quot;, &quot;foo&quot;).play();</code></pre>
-<p></p>
+   // animate to line-height:40px
+   dojo.fx.addClass(&quot;test&quot;, &quot;foo&quot;).play();</code></pre>
 
           </div>
         </div>
@@ -214,10 +212,12 @@ Each keyframe can accept the following custom properties:
 <ul>
 <li>step: String:
 The start, finish or percentage that this keyframe represents.
-Allowed parameters are:</li>
+Allowed parameters are:<ul>
 <li>0%-100%</li>
 <li>from (same as 0%, used to conform with the Webkit animation spec)</li>
 <li>to (same as 100%, used to conform with the Webkit animation spec)</li>
+</ul>
+</li>
 <li>ease: String:
 The string name of a dojo.fx.easing ease. Defaults to &quot;linear&quot;. Use
 the suffix name of the ease, like: &quot;quadIn&quot;, not: &quot;dojo.fx.quadIn&quot;.</li>
@@ -253,22 +253,22 @@ the suffix name of the ease, like: &quot;quadIn&quot;, not: &quot;dojo.fx.quadIn
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var keys = [
-  {
+            <h3>Example 1</h3><pre><code>var keys = [
+{
     step:&quot;0px&quot;,
     ease:&quot;quadInOut&quot;,
     width:&quot;50px&quot;,
     height:&quot;50px&quot;,
-  },{
+},{
     step:&quot;25%&quot;,
     width:&quot;190px&quot;
-  },{
+},{
     step:&quot;100%&quot;,
     width:&quot;10px&quot;,
     height:&quot;200px&quot;,
-  }
-  ];
-  ani = dojox.fx.animateTimeline({keys:keys, duration:2000}, &quot;myDiv&quot;).play();</code></pre>
+}
+];
+ani = dojox.fx.animateTimeline({keys:keys, duration:2000}, &quot;myDiv&quot;).play();</code></pre>
 
           </div>
         </div>
@@ -305,25 +305,31 @@ node around a central axis:
 
 </p>
 <ul>
-<li>depth: Float</li>
-<li>0 &lt;= depth &lt;= 1 overrides the computed &quot;depth&quot;</li>
-<li><p>(0: min distortion, 1: max distortion)</p>
+<li><p>depth: Float</p>
+<ul>
+<li>0 &lt;= depth &lt;= 1 overrides the computed &quot;depth&quot;<ul>
+<li>(0: min distortion, 1: max distortion)</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>whichAnim: String</p>
-</li>
-<li>&quot;first&quot;       : the first half animation</li>
-<li>&quot;last&quot;       : the second one</li>
-<li><p>&quot;both&quot; (default) : both</p>
+<ul>
+<li>&quot;first&quot;            : the first half animation</li>
+<li>&quot;last&quot;             : the second one</li>
+<li>&quot;both&quot; (default) : both</li>
+</ul>
 </li>
 <li><p>axis: String</p>
-</li>
-<li>&quot;center&quot; (default)    : the node is flipped around his center</li>
-<li>&quot;shortside&quot;        : the node is flipped around his &quot;short&quot; (in perspective) side</li>
-<li>&quot;longside&quot;        : the node is flipped around his &quot;long&quot; (in perspective) side</li>
-<li><p>&quot;cube&quot;          : the node flips around the central axis of the cube</p>
+<ul>
+<li>&quot;center&quot; (default)      : the node is flipped around his center</li>
+<li>&quot;shortside&quot;             : the node is flipped around his &quot;short&quot; (in perspective) side</li>
+<li>&quot;longside&quot;              : the node is flipped around his &quot;long&quot; (in perspective) side</li>
+<li>&quot;cube&quot;                  : the node flips around the central axis of the cube</li>
+</ul>
 </li>
 <li><p>shift: Integer:
-node translation, perpendicular to the rotation axis</p>
+  node translation, perpendicular to the rotation axis</p>
 </li>
 </ul>
 </div>
@@ -343,7 +349,7 @@ node translation, perpendicular to the rotation axis</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var anim = dojox.fx.flip({
+            <h3>Example 1</h3><pre><code>var anim = dojox.fx.flip({
     node: dojo.byId(&quot;nodeId&quot;),
     dir: &quot;top&quot;,
     darkColor: &quot;#555555&quot;,
@@ -352,7 +358,7 @@ node translation, perpendicular to the rotation axis</p>
     depth: .5,
     shift: 50,
     duration:300
-    });</code></pre>
+  });</code></pre>
 
           </div>
         </div>
@@ -506,8 +512,8 @@ a standard CSS className from a that node.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // animate the removal of &quot;foo&quot; from a node with id=&quot;bar&quot;
-  dojox.fx.removeClass(&quot;bar&quot;, &quot;foo&quot;).play()</code></pre>
+            <h3>Example 1</h3><pre><code>// animate the removal of &quot;foo&quot; from a node with id=&quot;bar&quot;
+dojox.fx.removeClass(&quot;bar&quot;, &quot;foo&quot;).play()</code></pre>
 
           </div>
         </div>
@@ -540,7 +546,6 @@ both. In addition, element in iframe can be scrolled to correctly.</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_fx_split_toggleClass"></a><span class="functionIcon">toggleClass</span><span class="parameters">(node, cssClass, condition, args)</span> 
@@ -595,13 +600,13 @@ Pass a boolean condition if you want to explicitly add or remove.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // add the class &quot;sampleClass&quot; to a node id=&quot;theNode&quot;
-  dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;,true).play();</code></pre>
+            <h3>Example 1</h3><pre><code>// add the class &quot;sampleClass&quot; to a node id=&quot;theNode&quot;
+dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;,true).play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // toggle the class &quot;sampleClass&quot; on the node id=&quot;theNode&quot;
-  dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;).play();</code></pre>
+            <h3>Example 2</h3><pre><code>// toggle the class &quot;sampleClass&quot; on the node id=&quot;theNode&quot;
+dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;).play();</code></pre>
 
           </div>
         </div>

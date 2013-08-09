@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/GfxLayer</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/geo/openlayers/GfxLayer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
 </div>
 <div class="jsdoc-full-summary"><p>A layer dedicated to render dojox.geo.openlayers.GeometryFeature</p>
 </div>
@@ -12,7 +12,7 @@ All objects should be added to this group.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/geo/openlayers/GfxLayer<span class="parameters">(name,options);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new GfxLayer<span class="parameters">(name,options);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/openlayers/GfxLayer">dojox/geo/openlayers/GfxLayer</a></div>
 <div class="jsdoc-summary"><p>Constructs a new GFX layer.</p>
@@ -36,7 +36,6 @@ All objects should be added to this group.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/GfxLayer reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -222,7 +221,8 @@ All objects should be added to this group.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The i-th feature of this layer.</div>
+        <div class="jsdoc-return-description"><p>The i-th feature of this layer.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GfxLayer_getFeatureCount"></a><span class="functionIcon">getFeatureCount</span><span class="parameters">()</span> 
@@ -232,7 +232,8 @@ All objects should be added to this group.</p>
         <div class="jsdoc-full-summary"><p>Returns the number of the features contained by this layer.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | number | undefined</span></div>
-        <div class="jsdoc-return-description">The number of the features contained by this layer.</div>
+        <div class="jsdoc-return-description"><p>The number of the features contained by this layer.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GfxLayer_getFeatures"></a><span class="functionIcon">getFeatures</span><span class="parameters">()</span> 
@@ -242,7 +243,8 @@ All objects should be added to this group.</p>
         <div class="jsdoc-full-summary"><p>Returns the feature hold by this layer.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The untouched array of features hold by this layer.</div>
+        <div class="jsdoc-return-description"><p>The untouched array of features hold by this layer.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GfxLayer_getSurface"></a><span class="functionIcon">getSurface</span><span class="parameters">()</span> 
@@ -252,7 +254,8 @@ All objects should be added to this group.</p>
         <div class="jsdoc-full-summary"><p>Get the underlying dojox.gfx.Surface</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The dojox.gfx.Surface this layer uses to draw its GFX rendering.</div>
+        <div class="jsdoc-return-description"><p>The dojox.gfx.Surface this layer uses to draw its GFX rendering.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GfxLayer_getViewport"></a><span class="functionIcon">getViewport</span><span class="parameters">()</span> 
@@ -396,149 +399,88 @@ All objects should be added to this group.</p>
           <tr>
             <td class="jsdoc-param-name">g</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>destroy: <p>Releases all internal resources owned by this shape. Once this method has been called,
-the instance is considered destroyed and should not be used anymore.</p></p>
-</li>
-<li><p>getNode: <p>Different graphics rendering subsystems implement shapes in different ways.  This
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>destroy: <p>Releases all internal resources owned by this shape. Once this method has been called,
+the instance is considered destroyed and should not be used anymore.</p>
+</li><li>getNode: <p>Different graphics rendering subsystems implement shapes in different ways.  This
 method provides access to the underlying graphics subsystem object.  Clients calling this
 method and using the return value must be careful not to try sharing or using the underlying node
 in a general way across renderer implementation.
-Returns the underlying graphics Node, or null if no underlying graphics node is used by this shape.</p></p>
-</li>
-<li><p>getShape: <p>returns the current Shape object or null
+Returns the underlying graphics Node, or null if no underlying graphics node is used by this shape.</p>
+</li><li>getShape: <p>returns the current Shape object or null
 (see dojox/gfx.defaultPath,
 dojox/gfx.defaultPolyline,
 dojox/gfx.defaultRect,
 dojox/gfx.defaultEllipse,
 dojox/gfx.defaultCircle,
 dojox/gfx.defaultLine,
-or dojox/gfx.defaultImage)</p></p>
-</li>
-<li><p>getTransform: <p>Returns the current transformation matrix applied to this Shape or null</p></p>
-</li>
-<li><p>getFill: <p>Returns the current fill object or null
+or dojox/gfx.defaultImage)</p>
+</li><li>getTransform: <p>Returns the current transformation matrix applied to this Shape or null</p>
+</li><li>getFill: <p>Returns the current fill object or null
 (see dojox/gfx.defaultLinearGradient,
 dojox/gfx.defaultRadialGradient,
 dojox/gfx.defaultPattern,
-or dojo/Color)</p></p>
-</li>
-<li><p>getStroke: <p>Returns the current stroke object or null
-(see dojox/gfx.defaultStroke)</p></p>
-</li>
-<li><p>getParent: <p>Returns the parent Shape, Group or null if this Shape is unparented.
+or dojo/Color)</p>
+</li><li>getStroke: <p>Returns the current stroke object or null
+(see dojox/gfx.defaultStroke)</p>
+</li><li>getParent: <p>Returns the parent Shape, Group or null if this Shape is unparented.
 (see dojox/gfx/shape.Surface,
-or dojox/gfx.Group)</p></p>
-</li>
-<li><p>getBoundingBox: <p>Returns the bounding box Rectangle for this shape.</p></p>
-</li>
-<li><p>getTransformedBoundingBox: <p>returns an array of four points or null
-four points represent four corners of the untransformed bounding box</p></p>
-</li>
-<li><p>getEventSource: <p>returns a Node, which is used as
-a source of events for this shape</p></p>
-</li>
-<li><p>setClip: <p>sets the clipping area of this shape.</p></p>
-</li>
-<li><p>getClip</p>
-</li>
-<li><p>setShape: <p>sets a shape object
-(the default implementation simply ignores it)</p></p>
-</li>
-<li><p>setFill: <p>sets a fill object
-(the default implementation simply ignores it)</p></p>
-</li>
-<li><p>setStroke: <p>sets a stroke object
-(the default implementation simply ignores it)</p></p>
-</li>
-<li><p>setTransform: <p>sets a transformation matrix</p></p>
-</li>
-<li><p>_applyTransform: <p>physically sets a matrix</p></p>
-</li>
-<li><p>moveToFront: <p>moves a shape to front of its parent&#39;s list of shapes</p></p>
-</li>
-<li><p>moveToBack: <p>moves a shape to back of its parent&#39;s list of shapes</p></p>
-</li>
-<li><p>_moveToFront: <p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p></p>
-</li>
-<li><p>_moveToBack: <p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p></p>
-</li>
-<li><p>applyRightTransform: <p>multiplies the existing matrix with an argument on right side
-(this.matrix * matrix)</p></p>
-</li>
-<li><p>applyLeftTransform: <p>multiplies the existing matrix with an argument on left side
-(matrix * this.matrix)</p></p>
-</li>
-<li><p>applyTransform: <p>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</p></p>
-</li>
-<li><p>removeShape: <p>removes the shape from its parent&#39;s list of shapes</p></p>
-</li>
-<li><p>_setParent: <p>sets a parent</p></p>
-</li>
-<li><p>_updateParentMatrix: <p>updates the parent matrix with new matrix</p></p>
-</li>
-<li><p>_getRealMatrix: <p>returns the cumulative (&#39;real&#39;) transformation matrix
-by combining the shape&#39;s matrix with its parent&#39;s matrix</p></p>
-</li>
-<li><p>connect: <p>connects a handler to an event on this shape</p></p>
-</li>
-<li><p>disconnect: <p>connects a handler by token from an event on this shape</p></p>
-</li>
-<li><p>_init</p>
-</li>
-<li><p>openBatch: <p>starts a new batch, subsequent new child shapes will be held in
-the batch instead of appending to the container directly</p></p>
-</li>
-<li><p>closeBatch: <p>submits the current batch, append all pending child shapes to DOM</p></p>
-</li>
-<li><p>add: <p>adds a shape to the list</p></p>
-</li>
-<li><p>remove: <p>removes a shape from the list</p></p>
-</li>
-<li><p>clear: <p>removes all shapes from a group/surface.</p></p>
-</li>
-<li><p>_moveChildToFront: <p>moves a shape to front of the list of shapes</p></p>
-</li>
-<li><p>_moveChildToBack: <p>moves a shape to back of the list of shapes</p></p>
-</li>
-<li><p>createShape: <p>creates a shape object based on its type; it is meant to be used
-by group-like objects</p></p>
-</li>
-<li><p>createGroup: <p>creates a group shape</p></p>
-</li>
-<li><p>createRect: <p>creates a rectangle shape</p></p>
-</li>
-<li><p>createEllipse: <p>creates an ellipse shape</p></p>
-</li>
-<li><p>createCircle: <p>creates a circle shape</p></p>
-</li>
-<li><p>createLine: <p>creates a line shape</p></p>
-</li>
-<li><p>createPolyline: <p>creates a polyline/polygon shape</p></p>
-</li>
-<li><p>createImage: <p>creates a image shape</p></p>
-</li>
-<li><p>createText: <p>creates a text shape</p></p>
-</li>
-<li><p>createPath: <p>creates a path shape</p></p>
-</li>
-<li><p>createTextPath: <p>creates a text shape</p></p>
-</li>
-<li><p>createObject: <p>creates an instance of the passed shapeType class</p></p>
-</li>
-<li><p>textDir (String): <p>Will be used for inheritance, or as default for text objects
-that textDir wasn&#39;t directly specified for them but the bidi support was required.</p></p>
-</li>
-<li><p>setTextDir: <p>Used for propagation and change of textDir.
-newTextDir will be forced as textDir for all of it&#39;s children (Group/Text/TextPath).</p></p>
-</li>
-<li><p>getTextDir</p>
-</li>
-</ul>
-
+or dojox/gfx.Group)</p>
+</li><li>getBoundingBox: <p>Returns the bounding box Rectangle for this shape.</p>
+</li><li>getTransformedBoundingBox: <p>returns an array of four points or null
+four points represent four corners of the untransformed bounding box</p>
+</li><li>getEventSource: <p>returns a Node, which is used as
+a source of events for this shape</p>
+</li><li>setClip: <p>sets the clipping area of this shape.</p>
+</li><li>getClip</li><li>setShape: <p>sets a shape object
+(the default implementation simply ignores it)</p>
+</li><li>setFill: <p>sets a fill object
+(the default implementation simply ignores it)</p>
+</li><li>setStroke: <p>sets a stroke object
+(the default implementation simply ignores it)</p>
+</li><li>setTransform: <p>sets a transformation matrix</p>
+</li><li>_applyTransform: <p>physically sets a matrix</p>
+</li><li>moveToFront: <p>moves a shape to front of its parent&#39;s list of shapes</p>
+</li><li>moveToBack: <p>moves a shape to back of its parent&#39;s list of shapes</p>
+</li><li>_moveToFront: <p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p>
+</li><li>_moveToBack: <p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p>
+</li><li>applyRightTransform: <p>multiplies the existing matrix with an argument on right side
+(this.matrix * matrix)</p>
+</li><li>applyLeftTransform: <p>multiplies the existing matrix with an argument on left side
+(matrix * this.matrix)</p>
+</li><li>applyTransform: <p>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</p>
+</li><li>removeShape: <p>removes the shape from its parent&#39;s list of shapes</p>
+</li><li>_setParent: <p>sets a parent</p>
+</li><li>_updateParentMatrix: <p>updates the parent matrix with new matrix</p>
+</li><li>_getRealMatrix: <p>returns the cumulative (&#39;real&#39;) transformation matrix
+by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
+</li><li>connect: <p>connects a handler to an event on this shape</p>
+</li><li>disconnect: <p>connects a handler by token from an event on this shape</p>
+</li><li>_init</li><li>openBatch: <p>starts a new batch, subsequent new child shapes will be held in
+the batch instead of appending to the container directly</p>
+</li><li>closeBatch: <p>submits the current batch, append all pending child shapes to DOM</p>
+</li><li>add: <p>adds a shape to the list</p>
+</li><li>remove: <p>removes a shape from the list</p>
+</li><li>clear: <p>removes all shapes from a group/surface.</p>
+</li><li>_moveChildToFront: <p>moves a shape to front of the list of shapes</p>
+</li><li>_moveChildToBack: <p>moves a shape to back of the list of shapes</p>
+</li><li>createShape: <p>creates a shape object based on its type; it is meant to be used
+by group-like objects</p>
+</li><li>createGroup: <p>creates a group shape</p>
+</li><li>createRect: <p>creates a rectangle shape</p>
+</li><li>createEllipse: <p>creates an ellipse shape</p>
+</li><li>createCircle: <p>creates a circle shape</p>
+</li><li>createLine: <p>creates a line shape</p>
+</li><li>createPolyline: <p>creates a polyline/polygon shape</p>
+</li><li>createImage: <p>creates a image shape</p>
+</li><li>createText: <p>creates a text shape</p>
+</li><li>createPath: <p>creates a path shape</p>
+</li><li>createTextPath: <p>creates a text shape</p>
+</li><li>createObject: <p>creates an instance of the passed shapeType class</p>
+</li><li>textDir (String): <p>Will be used for inheritance, or as default for text objects
+that textDir wasn&#39;t directly specified for them but the bidi support was required.</p>
+</li><li>setTextDir: <p>Used for propagation and change of textDir.
+newTextDir will be forced as textDir for all of it&#39;s children (Group/Text/TextPath).</p>
+</li><li>getTextDir</li></ul>
             </td>
           </tr>
         </table>

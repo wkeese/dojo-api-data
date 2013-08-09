@@ -21,43 +21,43 @@ declare. See dojox.drawing.util.oo
 </p>
 <ul>
 <li>Drawing: The master class. More than one instance of a Drawing can be placed
-on a page at one time (although this has not yet been tested). Plugins
-can be added in markup.</li>
+  on a page at one time (although this has not yet been tested). Plugins
+  can be added in markup.</li>
 <li>Toolbar: Like Drawing, Toolbar is a psudeo Dijit that does not need Dijit. It is
-optional. It can be oriented horizontal or vertical by placing one of
-those params in the class (at least one is required).  Plugins
-can be added in markup. A drawingId is required to point toolbar to
-the drawing.</li>
+  optional. It can be oriented horizontal or vertical by placing one of
+  those params in the class (at least one is required).  Plugins
+  can be added in markup. A drawingId is required to point toolbar to
+  the drawing.</li>
 <li>defaults: Contains the default styles and dimensions for Stencils. An individual
-Stencil can be changed by calling stencil.att({color obj}); To change
-all styles, a custom defaults file should be used.</li>
+  Stencil can be changed by calling stencil.att({color obj}); To change
+  all styles, a custom defaults file should be used.</li>
 <li>Stencils: Drawing uses a concept of &#39;Stencils&#39; to avoid confusion between a
-Dojox Shape and a Drawing Shape. The classes in the &#39;stencils&#39; package
-are display only, they are not used for actually drawing (see &#39;tools&#39;).
-This package contains _Base from which stencils inherit most of their
-methods. (Path and Image are display only and not found in Tools)</li>
+  Dojox Shape and a Drawing Shape. The classes in the &#39;stencils&#39; package
+  are display only, they are not used for actually drawing (see &#39;tools&#39;).
+  This package contains _Base from which stencils inherit most of their
+  methods. (Path and Image are display only and not found in Tools)</li>
 <li>Tools: The Tools package contains Stencils that are attached to mouse events
-and can be used for drawing. Items in this package can also be selected
-and modified.</li>
+  and can be used for drawing. Items in this package can also be selected
+  and modified.</li>
 <li>Tools / Custom: Holds tools that do not directly extend Stencil base classes and often
-have very custom code.</li>
+  have very custom code.</li>
 <li>Library (not implemented): The Library package, which is not yet implemented, will be the place to
-hold stencils that have very specific data points that result in a picture.
-Flag-like-banners, fancy borders, or other complex shapes would go here.</li>
+  hold stencils that have very specific data points that result in a picture.
+  Flag-like-banners, fancy borders, or other complex shapes would go here.</li>
 <li>Annotations: Annotations &#39;decorate&#39; and attach to other Stencils, such as a &#39;Label&#39;
-that can show text on a stencil, or an &#39;Angle&#39; that shows while dragging
-or modifying a Vector, or an Arrow head that is attached to the beginning
-or end of a line.</li>
+  that can show text on a stencil, or an &#39;Angle&#39; that shows while dragging
+  or modifying a Vector, or an Arrow head that is attached to the beginning
+  or end of a line.</li>
 <li>Manager: Contains classes that control functionality of a Drawing.</li>
 <li>Plugins: Contains optional classes that are &#39;plugged into&#39; a Drawing. There are two
-types: &#39;drawing&#39; plugins that modify the canvas, and &#39;tools&#39; which would
-show in the toolbar.</li>
+  types: &#39;drawing&#39; plugins that modify the canvas, and &#39;tools&#39; which would
+  show in the toolbar.</li>
 <li>Util: A collection of common tasks.</li>
 </ul>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/drawing/Drawing<span class="parameters">(props,node);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Drawing<span class="parameters">(props,node);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/drawing/Drawing">dojox/drawing/Drawing</a></div>
 <div class="jsdoc-summary"><p>Drawing is not a Dijit. This is the master method.
@@ -86,21 +86,19 @@ Will change when Drawing can be created programmatically.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/drawing.html" target="_blank">dojox/drawing/Drawing reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  &lt;div dojoType=&quot;dojox.drawing.Drawing&quot; id=&quot;drawing&quot; defaults=&quot;myCustom.defaults&quot;
+    <h3>Example 1</h3><pre><code>&lt;div dojoType=&quot;dojox.drawing.Drawing&quot; id=&quot;drawing&quot; defaults=&quot;myCustom.defaults&quot;
     plugins=&quot;[{&#39;name&#39;:&#39;dojox.drawing.plugins.drawing.Grid&#39;, &#39;options&#39;:{gap:100}}]&quot;&gt;
-   &lt;/div&gt;</code></pre>
-<p></p>
+&lt;/div&gt;</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  &lt;div dojoType=&quot;dojox.drawing.Toolbar&quot; drawingId=&quot;drawing&quot; class=&quot;drawingToolbar vertical&quot;&gt;
+    <h3>Example 2</h3><pre><code>&lt;div dojoType=&quot;dojox.drawing.Toolbar&quot; drawingId=&quot;drawing&quot; class=&quot;drawingToolbar vertical&quot;&gt;
     &lt;div tool=&quot;dojox.drawing.tools.Line&quot; selected=&quot;false&quot;&gt;Line&lt;/div&gt;
     &lt;div tool=&quot;dojox.drawing.tools.Rect&quot; selected=&quot;false&quot;&gt;Rect&lt;/div&gt;
     &lt;div tool=&quot;dojox.drawing.tools.Ellipse&quot; selected=&quot;false&quot;&gt;Ellipse&lt;/div&gt;
@@ -108,7 +106,7 @@ Will change when Drawing can be created programmatically.</p>
     &lt;div tool=&quot;dojox.drawing.tools.custom.Equation&quot; selected=&quot;false&quot;&gt;Equation&lt;/div&gt;
     &lt;div plugin=&quot;dojox.drawing.plugins.tools.Pan&quot; options=&quot;{}&quot;&gt;Pan&lt;/div&gt;
     &lt;div plugin=&quot;dojox.drawing.plugins.tools.Zoom&quot; options=&quot;{zoomInc:.1,minZoom:.5,maxZoom:2}&quot;&gt;Zoom&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
   </div>
 </div>
@@ -384,13 +382,13 @@ to be true.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  myDrawing.changeDefaults({
+            <h3>Example 1</h3><pre><code>myDrawing.changeDefaults({
     norm:{
-      fill:&quot;#0000ff&quot;,
-      width:5,
-      color:&quot;#ffff00&quot;
+        fill:&quot;#0000ff&quot;,
+        width:5,
+        color:&quot;#ffff00&quot;
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -705,7 +703,7 @@ like attr()</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  myDrawing.toSelected(&#39;attr&#39;, {x:10})</code></pre>
+            <h3>Example 1</h3><pre><code>myDrawing.toSelected(&#39;attr&#39;, {x:10})</code></pre>
 
           </div>
         </div>

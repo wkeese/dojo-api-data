@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/validate/us</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/validate/us<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/validate.html" target="_blank">dojox/validate/us reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -173,12 +172,13 @@ required:Array, dependencies:Object, constraints:Object, confirm:Object}</p>
         <div class="jsdoc-full-summary"><p>Evaluates dojo.validate.check() constraints that are specified as array
 arguments</p>
 </div>
-        <div class="jsdoc-full-summary"><p>The arrays are expected to be in the format of:</p>
-<pre><code>    constraints:{
-            fieldName: [functionToCall, param1, param2, etc.],
-            fieldName: [[functionToCallFirst, param1],[functionToCallSecond,param2]]
-    }</pre></code>
-<p></p>
+        <div class="jsdoc-full-summary"><p>The arrays are expected to be in the format of:
+
+</p>
+<pre><code>constraints:{
+        fieldName: [functionToCall, param1, param2, etc.],
+        fieldName: [[functionToCallFirst, param1],[functionToCallSecond,param2]]
+}</pre></code>
 <p>This function evaluates a single array function in the format of:
 [functionName, argument1, argument2, etc]
 
@@ -414,10 +414,13 @@ social security numbers, zip-codes, etc. The value can be validated
 against one format or one of multiple formats.
 
 </p>
-<p>Format Definition</p>
-<pre><code>   #        Stands for a digit, 0-9.
-   ?        Stands for an optional digit, 0-9 or nothing.</pre></code>
-<p>All other characters must appear literally in the expression.</p>
+<p>Format Definition
+
+</p>
+<pre><code>#        Stands for a digit, 0-9.
+?        Stands for an optional digit, 0-9 or nothing.</pre></code>
+<p>All other characters must appear literally in the expression.
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -446,26 +449,27 @@ against one format or one of multiple formats.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  &quot;(###) ###-####&quot;       -&gt;   (510) 542-9742
-  &quot;(###) ###-#### x#???&quot; -&gt;   (510) 542-9742 x153
-  &quot;###-##-####&quot;          -&gt;   506-82-1089       i.e. social security number
-  &quot;#####-####&quot;           -&gt;   98225-1649        i.e. zip code</code></pre>
+            <h3>Example 1</h3><pre><code>&quot;(###) ###-####&quot;       -&gt;   (510) 542-9742
+&quot;(###) ###-#### x#???&quot; -&gt;   (510) 542-9742 x153
+&quot;###-##-####&quot;          -&gt;   506-82-1089       i.e. social security number
+&quot;#####-####&quot;           -&gt;   98225-1649        i.e. zip code</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  require([&quot;dojox/validate/_base&quot;], function(validate){
+            <h3>Example 2</h3><pre><code>require([&quot;dojox/validate/_base&quot;], function(validate){
     // returns true:
     validate.isNumberFormat(&quot;123-45&quot;, { format:&quot;###-##&quot; });
-  });</code></pre>
+});     </code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Check Multiple formats:</p>
-<pre><code>  require([&quot;dojox/validate/_base&quot;], function(validate){
+            <h3>Example 3</h3><p>Check Multiple formats:
+
+</p>
+<pre><code>require([&quot;dojox/validate/_base&quot;], function(validate){
     validate.isNumberFormat(&quot;123-45&quot;, {
-      format:[&quot;### ##&quot;,&quot;###-##&quot;,&quot;## ###&quot;]
-  });</code></pre>
-<p></p>
+        format:[&quot;### ##&quot;,&quot;###-##&quot;,&quot;## ###&quot;]
+});</code></pre>
 
           </div>
         </div>
@@ -491,7 +495,7 @@ against one format or one of multiple formats.
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_validate_us_isSocialSecurityNumber"></a><span class="functionIcon">isSocialSecurityNumber</span><span class="parameters">(value)</span> 
@@ -701,9 +705,9 @@ the checkSum is skipped), returning a Boolean to check against.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  if(dojox.validate.isValidCreditCard(&quot;12345&quot;, &quot;mc&quot;)){
+            <h3>Example 1</h3><pre><code>if(dojox.validate.isValidCreditCard(&quot;12345&quot;, &quot;mc&quot;)){
     console.log(&#39;inconceivable&#39;);
-  }</code></pre>
+}</code></pre>
 
           </div>
         </div>

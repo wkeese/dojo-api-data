@@ -3,7 +3,7 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/app/Controller<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/app/Controller<span class="parameters">(app,events);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Controller<span class="parameters">(app,events);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/app/Controller">dojox/app/Controller</a></div>
 <div class="jsdoc-summary"><p>bind events on application dojo/Evented instance.
@@ -31,7 +31,6 @@ bind css selector events on document.
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/app/Controller.html" target="_blank">dojox/app/Controller reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -57,7 +56,8 @@ bind css selector events on document.</span>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/Controller" class="jsdoc-link">dojox/app/Controller</a>
         </div>
         <div class="jsdoc-full-summary"><p>Bind event on dojo/Evented instance, document, domNode or window.
-Save event signal in controller instance.
+Save event signal in controller instance. If no parameter is provided
+automatically bind all events registered in controller events property.
 </p>
 </div>
         <table class="jsdoc-parameters">
@@ -88,6 +88,12 @@ Save event signal in controller instance.
             </td>
           </tr>
         </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>Bind event on dojo/Evented instance, document, domNode or window.
+Save event signal in controller instance. If no parameter is provided
+automatically bind all events registered in controller events property.
+</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_app_Controller_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(app, events)</span> 
@@ -149,6 +155,10 @@ bind css selector events on document.
             </td>
           </tr>
         </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>remove a binded event signal.
+</p>
+</div>
       </div>
     </div>
   </div>

@@ -2,18 +2,17 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/dgauges/LinearScaler</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/dgauges/LinearScaler<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a>
 </div>
-<div class="jsdoc-full-summary"><p>The linear scaler. This scaler creates major and minor ticks regularly between
+<div class="jsdoc-full-summary"><p>The linear scaler. This scaler creates major and minor ticks regularly between 
 a minimum and a maximum.
-Scalers are responsible for tick generation and various data-transform operations.</p>
+Scalers are responsible for tick generation and various data-transform operations.      </p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/dgauges/LinearScaler<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new LinearScaler<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/dgauges/LinearScaler">dojox/dgauges/LinearScaler</a></div>
-<p>See the <a href="/reference-guide/1.8/dojox/dgauges.html" target="_blank">dojox/dgauges/LinearScaler reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -23,11 +22,11 @@ Scalers are responsible for tick generation and various data-transform operation
     <li class="objectIcon private inherited"><a href="#1_8dojox_dgauges_LinearScaler__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
     </li>
-    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_LinearScaler__computedMajorTickInterval" class="inline-link"> _computedMajorTickInterval </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
+    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_LinearScaler__computedMajorTickInterval" class="inline-link"> _computedMajorTickInterval </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
-    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_LinearScaler__computedMinorTickInterval" class="inline-link"> _computedMinorTickInterval </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
+    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_LinearScaler__computedMinorTickInterval" class="inline-link"> _computedMinorTickInterval </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_majorTickInterval" class="inline-link"> majorTickInterval </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_majorTickInterval" class="inline-link"> majorTickInterval </a><span>The interval between two major ticks.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_majorTicks" class="inline-link"> majorTicks </a><span>The array of generated major ticks.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
@@ -35,7 +34,7 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
     </li>
     <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_minimum" class="inline-link"> minimum </a><span>The minimum value of the scaler.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_minorTickInterval" class="inline-link"> minorTickInterval </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_minorTickInterval" class="inline-link"> minorTickInterval </a><span>The interval between two minor ticks.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_LinearScaler_minorTicks" class="inline-link"> minorTicks </a><span>The array of generated minor ticks.</span><span title="inherited from dojox/dgauges/LinearScaler" class="jsdoc-inherited"></span>
     </li>
@@ -99,29 +98,19 @@ and setter names.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/LinearScaler" class="jsdoc-link">dojox/dgauges/LinearScaler</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
-in the data (i.e. after drill down the depth of an item might change).
-Default is NaN.</p>
-</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler__computedMinorTickInterval"></a><span class="numberIcon">_computedMinorTickInterval</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/LinearScaler" class="jsdoc-link">dojox/dgauges/LinearScaler</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
-in the data (i.e. after drill down the depth of an item might change).
-Default is NaN.</p>
-</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_majorTickInterval"></a><span class="numberIcon">majorTickInterval</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/LinearScaler" class="jsdoc-link">dojox/dgauges/LinearScaler</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
-in the data (i.e. after drill down the depth of an item might change).
-Default is NaN.</p>
+        <div class="jsdoc-summary"><p>The interval between two major ticks.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -154,9 +143,7 @@ property when using the scaler.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/LinearScaler" class="jsdoc-link">dojox/dgauges/LinearScaler</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
-in the data (i.e. after drill down the depth of an item might change).
-Default is NaN.</p>
+        <div class="jsdoc-summary"><p>The interval between two minor ticks.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -215,9 +202,9 @@ Default is 1.</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -307,7 +294,8 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-full-summary"><p>Creates or re-creates the ticks for this scaler.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array | undefined</span></div>
-        <div class="jsdoc-return-description">An array containing all ticks (major then minor ticks).</div>
+        <div class="jsdoc-return-description"><p>An array containing all ticks (major then minor ticks).</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
@@ -326,10 +314,12 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
 this just retrieves the object&#39;s property.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful({foo: 3});
-  stateful.get(&quot;foo&quot;) // returns 3
-  stateful.foo // returns 3</pre></code>
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful({foo: 3});
+stateful.get(&quot;foo&quot;) // returns 3
+stateful.foo // returns 3</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -346,7 +336,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_getComputedMajorTickInterval"></a><span class="functionIcon">getComputedMajorTickInterval</span><span class="parameters">()</span> 
@@ -356,7 +347,8 @@ For example:</p>
         <div class="jsdoc-full-summary"><p>The computed or user defined major tick interval.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | undefined | number</span></div>
-        <div class="jsdoc-return-description">The major tick interval used for ticks generation.</div>
+        <div class="jsdoc-return-description"><p>The major tick interval used for ticks generation.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_getComputedMinorTickInterval"></a><span class="functionIcon">getComputedMinorTickInterval</span><span class="parameters">()</span> 
@@ -366,7 +358,8 @@ For example:</p>
         <div class="jsdoc-full-summary"><p>The computed or user defined minor tick interval.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | undefined | number</span></div>
-        <div class="jsdoc-return-description">The minor tick interval used for ticks generation.</div>
+        <div class="jsdoc-return-description"><p>The minor tick interval used for ticks generation.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_positionForValue"></a><span class="functionIcon">positionForValue</span><span class="parameters">(value)</span> 
@@ -390,7 +383,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | number</span></div>
-        <div class="jsdoc-return-description">The position between 0 and 1.</div>
+        <div class="jsdoc-return-description"><p>The position between 0 and 1.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params)</span> 
@@ -422,19 +416,23 @@ For example:</p>
 </div>
         <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
 the property. A programmatic setter may be defined in subclasses.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful();
-  stateful.watch(function(name, oldValue, value){
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful();
+stateful.watch(function(name, oldValue, value){
     // this will be called on the set below
-  }
-  stateful.set(foo, 5);</pre></code>
-<p></p>
-<p>set() may also be called with a hash of name/value pairs, ex:</p>
-<pre><code>  myObj.set({
+}
+stateful.set(foo, 5);</pre></code>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+</p>
+<pre><code>myObj.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  })</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+})</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -458,7 +456,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">The function returns this dojo.Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The function returns this dojo.Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_valueForPosition"></a><span class="functionIcon">valueForPosition</span><span class="parameters">(position)</span> 
@@ -482,7 +481,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | number</span></div>
-        <div class="jsdoc-return-description">The transformed value between minimum and maximum.</div>
+        <div class="jsdoc-return-description"><p>The transformed value between minimum and maximum.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_LinearScaler_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
@@ -518,10 +518,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
     </div>
   </div>

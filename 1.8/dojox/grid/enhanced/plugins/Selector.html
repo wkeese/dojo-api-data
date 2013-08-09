@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Selector</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Selector<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provides standard extended selection for grid.
 Supports mouse/keyboard selection, multi-selection, and de-selection.
@@ -21,7 +21,7 @@ The whole plugin parameter object is a config object passed to the setupConfig f
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/Selector<span class="parameters">(grid,args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Selector<span class="parameters">(grid,args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/Selector">dojox/grid/enhanced/plugins/Selector</a></div>
 <table class="jsdoc-parameters">
@@ -1111,11 +1111,11 @@ and fill some of the &quot;holes&quot; in the selected cols/rows.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when foo.bar() is called, call the listener in the scope of plugin
-  plugin.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.xxx());//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -1227,8 +1227,9 @@ and fill some of the &quot;holes&quot; in the selected cols/rows.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | null</span></div>
-        <div class="jsdoc-return-description">{start: __SelectItem, end: __SelectItem}
-return null if nothing is selected.</div>
+        <div class="jsdoc-return-description"><p>{start: <strong>SelectItem, end: </strong>SelectItem}
+return null if nothing is selected.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_getSelected"></a><span class="functionIcon">getSelected</span><span class="parameters">(type, includeExceptions)</span> 
@@ -1289,7 +1290,8 @@ return null if nothing is selected.</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Integer | undefined | number</span></div>
-        <div class="jsdoc-return-description">The number of selected items.</div>
+        <div class="jsdoc-return-description"><p>The number of selected items.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_getSelectedType"></a><span class="functionIcon">getSelectedType</span><span class="parameters">()</span> 
@@ -1299,7 +1301,8 @@ return null if nothing is selected.</div>
         <div class="jsdoc-full-summary"><p>Get the type of selected items.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
-        <div class="jsdoc-return-description">"row" or "col" or "cell", or any mix of these (separator is | ).</div>
+        <div class="jsdoc-return-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;, or any mix of these (separator is | ).</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
@@ -1346,7 +1349,8 @@ If type if &quot;col&quot;, this is the column index.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | undefined</span></div>
-        <div class="jsdoc-return-description">true if selected, false if not. If cell is covered by a selected column, it's selected.</div>
+        <div class="jsdoc-return-description"><p>true if selected, false if not. If cell is covered by a selected column, it&#39;s selected.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_isSelecting"></a><span class="functionIcon">isSelecting</span><span class="parameters">(type)</span> 
@@ -1370,7 +1374,8 @@ If type if &quot;col&quot;, this is the column index.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | undefined</span></div>
-        <div class="jsdoc-return-description">true if is selection, false otherwise.</div>
+        <div class="jsdoc-return-description"><p>true if is selection, false otherwise.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_select"></a><span class="functionIcon">select</span><span class="parameters">(type, rowIndex, colIndex)</span> 
@@ -1434,7 +1439,8 @@ Check whether this selection functionality is enabled if nothing is passed in.</
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean|undefined | boolean</span></div>
-        <div class="jsdoc-return-description">Enabled or not.</div>
+        <div class="jsdoc-return-description"><p>Enabled or not.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_selectRange"></a><span class="functionIcon">selectRange</span><span class="parameters">(type, start, end, toSelect)</span> 
@@ -1496,13 +1502,15 @@ If type if &quot;cell&quot;, this is the right-bottom cell of the range.</p>
           <tr>
             <td class="jsdoc-param-name">config</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following structure (all properties are optional):</p>
-<pre><code>  {
+            <td class="jsdoc-param-description"><p>An object with the following structure (all properties are optional):
+
+</p>
+<pre><code>{
     //Default is &quot;multi&quot;, all other values are same as &quot;multi&quot;.
     row: false|&quot;disabled&quot;|&quot;single&quot;,
     col: false|&quot;disabled&quot;|&quot;single&quot;,
     cell: false|&quot;disabled&quot;|&quot;single&quot;
-  }</code></pre>
+}</code></pre>
  
             </td>
           </tr>
@@ -1539,12 +1547,12 @@ of this object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when /my/topic is published, call the subscriber in the scope of plugin
-  // with passed parameter - &quot;v&quot;
-  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
     console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

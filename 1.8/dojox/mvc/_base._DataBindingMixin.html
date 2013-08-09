@@ -22,23 +22,23 @@ property in the &quot;data-dojo-props&quot; attribute value.
 </p>
 <p>Consider the following simple example:
 
+
 </p>
-<pre><code>  &lt;script&gt;
+<pre><code>&lt;script&gt;
     var model;
     require([&quot;dijit/StatefulModel&quot;, &quot;dojo/parser&quot;], function(StatefulModel, parser){
-      model = new StatefulModel({ data : {
-        hello : &quot;Hello World&quot;
-      }});
-      parser.parse();
+        model = new StatefulModel({ data : {
+            hello : &quot;Hello World&quot;
+        }});
+        parser.parse();
     });
-  &lt;/script&gt;
+&lt;/script&gt;
 
-  &lt;input id=&quot;hello1&quot; data-dojo-type=&quot;dijit/form/TextBox&quot;
+&lt;input id=&quot;hello1&quot; data-dojo-type=&quot;dijit/form/TextBox&quot;
     data-dojo-props=&quot;ref: model.hello&quot;&gt;&lt;/input&gt;
 
-  &lt;input id=&quot;hello2&quot; data-dojo-type=&quot;dijit/form/TextBox&quot;
+&lt;input id=&quot;hello2&quot; data-dojo-type=&quot;dijit/form/TextBox&quot;
     data-dojo-props=&quot;ref: model.hello&quot;&gt;&lt;/input&gt;</pre></code>
-<p></p>
 <p>In the above example, both <a class="jsdoc-link" href="/api/1.8/dijit/form/TextBox">dijit/form/TextBox</a> instances (with IDs
 &quot;hello1&quot; and &quot;hello2&quot; respectively) are bound to the same reference
 location in the data model i.e. &quot;hello&quot; via the &quot;ref&quot; expression
@@ -48,7 +48,6 @@ will cause an update of the value in the data model at location
 &quot;hello&quot; which will in turn cause a matching update of the value in
 the other textbox.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mvc.html" target="_blank">dojox/mvc/_base._DataBindingMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -83,7 +82,7 @@ dojo/Stateful node of a data model.</span><span title="private" class="jsdoc-pri
     </li>
     <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__DataBindingMixin__updateChildBindings" class="inline-link"> _updateChildBindings</a><span class="parameters">(</span>parentBind) <span>Update this widget&#39;s value based on the current binding and
 set up the bindings of all contained widgets so as to refresh
-any relative binding references.
+any relative binding references. 
 findWidgets does not return children of widgets so need to also
 update children of widgets which are not bound but may hold widgets which are.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_DataBindingMixin" class="jsdoc-inherited"></span>
     </li>
@@ -139,7 +138,8 @@ widget startup.</p>
 the first enclosing data-bound widget.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The parent binding, if one exists along the DOM parent axis.</div>
+        <div class="jsdoc-return-description"><p>The parent binding, if one exists along the DOM parent axis.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_mvc__base__DataBindingMixin__isEqual"></a><span class="functionIcon">_isEqual</span><span class="parameters">(one, other)</span> <span title="private" class="jsdoc-private"> </span>
@@ -308,7 +308,7 @@ required etc.)</p>
         </div>
         <div class="jsdoc-full-summary"><p>Update this widget&#39;s value based on the current binding and
 set up the bindings of all contained widgets so as to refresh
-any relative binding references.
+any relative binding references. 
 findWidgets does not return children of widgets so need to also
 update children of widgets which are not bound but may hold widgets which are.</p>
 </div>
@@ -412,8 +412,9 @@ this.inherited(arguments) hierarchy and declare any values
 failing the test as invalid.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">Boolean
-The validity associated with the data binding.</div>
+        <div class="jsdoc-return-description"><p>Boolean
+The validity associated with the data binding.</p>
+</div>
       </div>
     </div>
   </div>

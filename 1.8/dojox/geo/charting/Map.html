@@ -8,7 +8,7 @@ USStates, WorldCountries, and WorldCountriesMercator by default.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/geo/charting/Map<span class="parameters">(container,shapeData);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Map<span class="parameters">(container,shapeData);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/charting/Map">dojox/geo/charting/Map</a></div>
 <div class="jsdoc-summary"><p>Constructs a new Map instance.</p>
@@ -34,15 +34,14 @@ USStates, WorldCountries, and WorldCountriesMercator by default.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/geo/charting/Map.html" target="_blank">dojox/geo/charting/Map reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var usaMap = new dojox.geo.charting.Map(srcNode, &quot;dojotoolkit/dojox/geo/charting/resources/data/USStates.json&quot;);
-  &lt;div id=&quot;map&quot; style=&quot;width:600px;height:400px;&quot;&gt;&lt;/div&gt;</code></pre>
+    <h3>Example 1</h3><pre><code>var usaMap = new dojox.geo.charting.Map(srcNode, &quot;dojotoolkit/dojox/geo/charting/resources/data/USStates.json&quot;);
+&lt;div id=&quot;map&quot; style=&quot;width:600px;height:400px;&quot;&gt;&lt;/div&gt;</code></pre>
 
   </div>
 </div>
@@ -528,7 +527,8 @@ which identified in map shape file, e.g: &quot;NY&quot;:&quot;New York&quot;</sp
         <div class="jsdoc-full-summary"><p>returns the map coordinates of the center of this Map component.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">point | undefined</span></div>
-        <div class="jsdoc-return-description">the center in map coordinates</div>
+        <div class="jsdoc-return-description"><p>the center in map coordinates</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_charting_Map_getMapScale"></a><span class="functionIcon">getMapScale</span><span class="parameters">()</span> 
@@ -538,7 +538,8 @@ which identified in map shape file, e.g: &quot;NY&quot;:&quot;New York&quot;</sp
         <div class="jsdoc-full-summary"><p>returns the scale of this Map component.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">float | number</span></div>
-        <div class="jsdoc-return-description">the scale</div>
+        <div class="jsdoc-return-description"><p>the scale</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_charting_Map_mapCoordsToScreenCoords"></a><span class="functionIcon">mapCoordsToScreenCoords</span><span class="parameters">(mapX, mapY)</span> 
@@ -569,8 +570,9 @@ which identified in map shape file, e.g: &quot;NY&quot;:&quot;New York&quot;</sp
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">{x:,y:}
-the screen coordinates correspondig to the specified map coordinates.</div>
+        <div class="jsdoc-return-description"><p>{x:,y:}
+the screen coordinates correspondig to the specified map coordinates.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_charting_Map_resize"></a><span class="functionIcon">resize</span><span class="parameters">(adjustMapCenter, adjustMapScale, animate)</span> 
@@ -636,7 +638,8 @@ the screen coordinates correspondig to the specified map coordinates.</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the map coordinates corresponding to the specified screen coordinates.</div>
+        <div class="jsdoc-return-description"><p>the map coordinates corresponding to the specified screen coordinates.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_geo_charting_Map_setDataBindingAttribute"></a><span class="functionIcon">setDataBindingAttribute</span><span class="parameters">(prop)</span> 

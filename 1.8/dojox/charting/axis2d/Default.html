@@ -2,13 +2,13 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/axis2d/Default</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/axis2d/Default<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/charting/axis2d/Invisible" class="jsdoc-link">dojox/charting/axis2d/Invisible,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/charting/axis2d/Invisible" class="jsdoc-link">dojox/charting/axis2d/Invisible</a>
 </div>
 <div class="jsdoc-full-summary"><p>The default axis object used in dojox.charting.  See dojox.charting.Chart.addAxis for details.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/charting/axis2d/Default<span class="parameters">(chart,kwArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Default<span class="parameters">(chart,kwArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Default">dojox/charting/axis2d/Default</a></div>
 <div class="jsdoc-summary"><p>The constructor for an axis.</p>
@@ -463,7 +463,8 @@
         <div class="jsdoc-full-summary"><p>Clear out all calculated properties on this axis;</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Invisible">dojox/charting/axis2d/Invisible</a> | function</span></div>
-        <div class="jsdoc-return-description">The reference to the axis for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>The reference to the axis for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(chart, kwArgs)</span> 
@@ -625,7 +626,8 @@
 supposed to be called by the users but internally.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">The calculated offsets in the form of { l, r, t, b } (left, right, top, bottom).</div>
+        <div class="jsdoc-return-description"><p>The calculated offsets in the form of { l, r, t, b } (left, right, top, bottom).</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_getScaler"></a><span class="functionIcon">getScaler</span><span class="parameters">()</span> 
@@ -710,10 +712,11 @@ supposed to be called by the users but internally.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">|  {
-|    text: processed text, maybe truncated or not,
-|    truncated: whether text has been truncated
-|  }</div>
+        <div class="jsdoc-return-description"><pre><code>{
+    text: processed text, maybe truncated or not,
+    truncated: whether text has been truncated
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_getTextWithLimitLength"></a><span class="functionIcon">getTextWithLimitLength</span><span class="parameters">(s, font, limitWidth, truncated)</span> 
@@ -762,10 +765,11 @@ supposed to be called by the users but internally.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">|  {
-|    text: processed text, maybe truncated or not,
-|    truncated: whether text has been truncated
-|  }</div>
+        <div class="jsdoc-return-description"><pre><code>{
+    text: processed text, maybe truncated or not,
+    truncated: whether text has been truncated
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_getTicks"></a><span class="functionIcon">getTicks</span><span class="parameters">()</span> 
@@ -802,7 +806,8 @@ supposed to be called by the users but internally.</p>
         <div class="jsdoc-full-summary"><p>Finds out if this axis has been initialized or not.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | boolean</span></div>
-        <div class="jsdoc-return-description">Whether a scaler has been calculated and if the axis is not dirty.</div>
+        <div class="jsdoc-return-description"><p>Whether a scaler has been calculated and if the axis is not dirty.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_labelTooltip"></a><span class="functionIcon">labelTooltip</span><span class="parameters">(elem, chart, label, truncatedLabel, font, elemType)</span> 
@@ -862,7 +867,8 @@ supposed to be called by the users but internally.</p>
         <div class="jsdoc-full-summary"><p>Clear any elements out of our group, and destroy the group.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/Element">dojox/charting/Element</a> | function</span></div>
-        <div class="jsdoc-return-description">A reference to this object for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>A reference to this object for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_render"></a><span class="functionIcon">render</span><span class="parameters">(dim, offsets)</span> 
@@ -893,7 +899,8 @@ supposed to be called by the users but internally.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Default">dojox/charting/axis2d/Default</a> | function</span></div>
-        <div class="jsdoc-return-description">The reference to the axis for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>The reference to the axis for functional chaining.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_charting_axis2d_Default_setWindow"></a><span class="functionIcon">setWindow</span><span class="parameters">(scale, offset)</span> 
@@ -924,7 +931,8 @@ supposed to be called by the users but internally.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/charting/axis2d/Default">dojox/charting/axis2d/Default</a> | undefined</span></div>
-        <div class="jsdoc-return-description">The reference to the axis for functional chaining.</div>
+        <div class="jsdoc-return-description"><p>The reference to the axis for functional chaining.</p>
+</div>
       </div>
     </div>
   </div>

@@ -1,10 +1,297 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/drawing/plugins/drawing/Grid</div>
-<h1 class="objectIcon36 jsdoc-title">dojox/drawing/plugins/drawing/Grid<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title">dojox/drawing/plugins/drawing/Grid<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a>
+</div>
+<div class="jsdoc-full-summary"><p>Plugin that displays a grid on the Drawing canvas.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Grid<span class="parameters">(options);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/drawing/plugins/drawing/Grid">dojox/drawing/plugins/drawing/Grid</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">options</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><pre><code>&lt;div dojoType=&quot;dojox.drawing.Drawing&quot; id=&quot;drawingNode&quot;
+    plugins=&quot;[{&#39;name&#39;:&#39;dojox.drawing.plugins.drawing.Grid&#39;, &#39;options&#39;:{gap:50}}]&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_anchors" class="inline-link"> anchors </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_button" class="inline-link"> button </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_canvas" class="inline-link"> canvas </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_drawing" class="inline-link"> drawing </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_gap" class="inline-link"> gap </a><span>How far apart to set the grid lines</span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_keys" class="inline-link"> keys </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_major" class="inline-link"> major </a><span></span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_majorColor" class="inline-link"> majorColor </a><span>Major lines color</span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_minor" class="inline-link"> minor </a><span></span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_minorColor" class="inline-link"> minorColor </a><span>Minor lines color</span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_mouse" class="inline-link"> mouse </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_node" class="inline-link"> node </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_stencils" class="inline-link"> stencils </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_type" class="inline-link"> type </a><span></span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_util" class="inline-link"> util </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_zoom" class="inline-link"> zoom </a><span>The current zoom of the grid</span><span title="inherited from dojox/drawing/plugins/drawing/Grid" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon  inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_plugins_drawing_Grid_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_drawing_plugins_drawing_Grid_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handles) <span>Removes connections based on passed
+handles arguments</span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_plugins_drawing_Grid_setGrid" class="inline-link"> setGrid</a><span class="parameters">(</span>options) <span>Renders grid</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_drawing_plugins_drawing_Grid_setZoom" class="inline-link"> setZoom</a><span class="parameters">(</span>zoom) <span>Set&#39;s the zoom of the canvas</span>
+    </li>
+  </ul>
+</div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_anchors"></a><span class="objectIcon">anchors</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_button"></a><span class="objectIcon">button</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_canvas"></a><span class="objectIcon">canvas</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_drawing"></a><span class="objectIcon">drawing</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_gap"></a><span class="numberIcon">gap</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>How far apart to set the grid lines</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_keys"></a><span class="objectIcon">keys</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_major"></a><span class="numberIcon">major</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_majorColor"></a><span class="stringIcon">majorColor</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Major lines color</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_minor"></a><span class="numberIcon">minor</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_minorColor"></a><span class="stringIcon">minorColor</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Minor lines color</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_mouse"></a><span class="objectIcon">mouse</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_node"></a><span class="objectIcon">node</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_stencils"></a><span class="objectIcon">stencils</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_type"></a><span class="stringIcon">type</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_util"></a><span class="objectIcon">util</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_zoom"></a><span class="numberIcon">zoom</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The current zoom of the grid</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_connect"></a><span class="functionIcon">connect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handles)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Removes connections based on passed
+handles arguments</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handles</td>
+            <td class="jsdoc-param-type">Handle | Array</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_setGrid"></a><span class="functionIcon">setGrid</span><span class="parameters">(options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Renders grid</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_drawing_plugins_drawing_Grid_setZoom"></a><span class="functionIcon">setZoom</span><span class="parameters">(zoom)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/plugins/drawing/Grid" class="jsdoc-link">dojox/drawing/plugins/drawing/Grid</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set&#39;s the zoom of the canvas</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">zoom</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
 </div>

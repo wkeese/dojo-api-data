@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/WikipediaStore</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/WikipediaStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a>
 </div>
 <div class="jsdoc-full-summary"><p>Initializer for the Wikipedia data store interface.</p>
 </div>
@@ -13,7 +13,7 @@ articles by full name; no wildcards or other filtering are supported.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/WikipediaStore<span class="parameters">(options);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new WikipediaStore<span class="parameters">(options);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/WikipediaStore">dojox/data/WikipediaStore</a></div>
 <table class="jsdoc-parameters">
@@ -29,20 +29,19 @@ articles by full name; no wildcards or other filtering are supported.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data/WikipediaStore.html" target="_blank">dojox/data/WikipediaStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var store = new dojox.data.WikipediaStore();
-  store.fetch({
+    <h3>Example 1</h3><pre><code>var store = new dojox.data.WikipediaStore();
+store.fetch({
     query: {title:&quot;Dojo Toolkit&quot;},
     onItem: function(item){
-      dojo.byId(&quot;somediv&quot;).innerHTML = item.text[&quot;*&quot;];
+        dojo.byId(&quot;somediv&quot;).innerHTML = item.text[&quot;*&quot;];
     }
-  });</code></pre>
+});</code></pre>
 
   </div>
 </div>
@@ -140,7 +139,7 @@ does not support paging, and the response is the full set of items, where the
 total count is equal to the numer of items returned. If the server does support
 paging, an estimateCountFactor of 2 is a good value for estimating the total count
 It is also possible to override _processResults if the server can provide an exact
-total count.  </p>
+total count.    </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -346,35 +345,41 @@ in from the API, so we just ignore the <em>sort</em> parameter.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Loading a page:</p>
-<pre><code>  store.fetch({
+            <h3>Example 1</h3><p>Loading a page:
+
+</p>
+<pre><code>store.fetch({
     query: {title:&quot;Dojo Toolkit&quot;},
     // define your handlers here
-  });</code></pre>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Searching for pages containing &quot;dojo&quot;:</p>
-<pre><code>  store.fetch({
+            <h3>Example 2</h3><p>Searching for pages containing &quot;dojo&quot;:
+
+</p>
+<pre><code>store.fetch({
     query: {
-      action: &quot;query&quot;,
-      text: &quot;dojo&quot;
+        action: &quot;query&quot;,
+        text: &quot;dojo&quot;
     },
     // define your handlers here
-  });</code></pre>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Searching for the next 50 pages containing &quot;dojo&quot;:</p>
-<pre><code>  store.fetch({
+            <h3>Example 3</h3><p>Searching for the next 50 pages containing &quot;dojo&quot;:
+
+</p>
+<pre><code>store.fetch({
     query: {
-      action: &quot;query&quot;,
-      text: &quot;dojo&quot;,
-      start: 10,
-      count: 50 // max 500; will be capped if necessary
+        action: &quot;query&quot;,
+        text: &quot;dojo&quot;,
+        start: 10,
+        count: 50 // max 500; will be capped if necessary
     },
     // define your handlers here
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -460,7 +465,7 @@ it as an array.</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>returns the attributes which are used to make up the
-identity of an item.  Basically returns this.idAttribute</p>
+identity of an item.    Basically returns this.idAttribute</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -574,7 +579,7 @@ identity of an item.  Basically returns this.idAttribute</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Gets the value of an item&#39;s &#39;property&#39; and returns
-it.  If this value is an array it is just returned,
+it. If this value is an array it is just returned,
 if not, the value is added to an array and that is returned.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -699,12 +704,12 @@ a lazy value as well (doesn&#39;t need to be an item).</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  store.loadItem({
+            <h3>Example 1</h3><pre><code>store.loadItem({
     item: item, // this item may or may not be loaded
     onItem: function(item){
-      // do something with the item
+        // do something with the item
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

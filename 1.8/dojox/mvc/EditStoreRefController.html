@@ -2,14 +2,13 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/EditStoreRefController</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mvc/EditStoreRefController<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/mvc/StoreRefController" class="jsdoc-link">dojox/mvc/StoreRefController,   </a><a href="/api/1.8/dojox/mvc/EditModelRefController" class="jsdoc-link">dojox/mvc/EditModelRefController,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/mvc/StoreRefController" class="jsdoc-link">dojox/mvc/StoreRefController, </a><a href="/api/1.8/dojox/mvc/EditModelRefController" class="jsdoc-link">dojox/mvc/EditModelRefController</a>
 </div>
 <div class="jsdoc-full-summary"><p>A child class of <a class="jsdoc-link" href="/api/1.8/dojox/mvc/StoreRefController">dojox/mvc/StoreRefController</a>, managing edits.</p>
 </div>
 <div class="jsdoc-full-summary"><p>In addition to what <a class="jsdoc-link" href="/api/1.8/dojox/mvc/StoreRefController">dojox/mvc/StoreRefController</a> does, the commit() method sends the data model as well as the removed entries in array to the data store.
 NOTE - If this class is used with a widget by data-dojo-mixins, make sure putting the widget in data-dojo-type and putting this class to data-dojo-mixins.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mvc/EditStoreRefController.html" target="_blank">dojox/mvc/EditStoreRefController reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -19,36 +18,38 @@ NOTE - If this class is used with a widget by data-dojo-mixins, make sure puttin
     <h3>Example 1</h3><p>The check box refers to &quot;value&quot; property in the controller (with &quot;ctrl&quot; ID).
 The controller provides the &quot;value&quot; property, from the data coming from data store (&quot;store&quot; property in the controller), using the first one in array.
 Two seconds later, the check box changes from unchecked to checked.
-The change is committed to the data store, which is reflected to dojo/store/Observable callback.</p>
-<pre><code>    &lt;html&gt;
-      &lt;head&gt;
+The change is committed to the data store, which is reflected to dojo/store/Observable callback. 
+
+</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
         &lt;script src=&quot;/path/to/dojo-toolkit/dojo/dojo.js&quot; type=&quot;text/javascript&quot; data-dojo-config=&quot;parseOnLoad: 0&quot;&gt;&lt;/script&gt;
         &lt;script type=&quot;text/javascript&quot;&gt;
-          require([
-            &quot;dojo/dom&quot;, &quot;dojo/parser&quot;, &quot;dojo/when&quot;, &quot;dojo/store/Observable&quot;, &quot;dojo/store/Memory&quot;, &quot;dijit/registry&quot;, &quot;dojo/domReady!&quot;
-          ], function(ddom, parser, when, Observable, Memory, registry){
-            store = Observable(new Memory({data: [{id: &quot;Foo&quot;, value: false}]}));
-            when(parser.parse(), function(){
-              registry.byId(&quot;ctrl&quot;).queryStore().observe(function(object, previousIndex, newIndex){
-                alert(&quot;ID: &quot; + object.id + &quot;, value: &quot; + object.value);
-              }, true);
-              var count = 0;
-              var h = setInterval(function(){
-                ddom.byId(&quot;check&quot;).click();
-                registry.byId(&quot;ctrl&quot;).commit();
-                if(++count &gt;= 2){ clearInterval(h); }
-              }, 2000);
+            require([
+                &quot;dojo/dom&quot;, &quot;dojo/parser&quot;, &quot;dojo/when&quot;, &quot;dojo/store/Observable&quot;, &quot;dojo/store/Memory&quot;, &quot;dijit/registry&quot;, &quot;dojo/domReady!&quot;
+            ], function(ddom, parser, when, Observable, Memory, registry){
+                store = Observable(new Memory({data: [{id: &quot;Foo&quot;, value: false}]}));
+                when(parser.parse(), function(){
+                    registry.byId(&quot;ctrl&quot;).queryStore().observe(function(object, previousIndex, newIndex){
+                        alert(&quot;ID: &quot; + object.id + &quot;, value: &quot; + object.value);
+                    }, true);
+                    var count = 0;
+                    var h = setInterval(function(){
+                        ddom.byId(&quot;check&quot;).click();
+                        registry.byId(&quot;ctrl&quot;).commit();
+                        if(++count &gt;= 2){ clearInterval(h); }
+                    }, 2000);
+                });
             });
-          });
         &lt;/script&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
         &lt;script type=&quot;dojo/require&quot;&gt;at: &quot;dojox/mvc/at&quot;&lt;/script&gt;
         &lt;span id=&quot;ctrl&quot; data-dojo-type=&quot;dojox/mvc/EditStoreRefController&quot; data-dojo-mixins=&quot;dojox/mvc/ListController&quot;
          data-dojo-props=&quot;store: store, cursorIndex: 0&quot;&gt;&lt;/span&gt;
         &lt;input id=&quot;check&quot; type=&quot;checkbox&quot; data-dojo-type=&quot;dijit/form/CheckBox&quot; data-dojo-props=&quot;checked: at(&#39;widget:ctrl&#39;, &#39;value&#39;)&quot;&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;</code></pre>
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
   </div>
 </div>
@@ -308,9 +309,9 @@ Used when this controller needs data model (as input) that is different from the
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -438,7 +439,8 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-full-summary"><p>Returns list of all properties in this widget, except &quot;id&quot;.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String[] | undefined</span></div>
-        <div class="jsdoc-return-description">The list of all properties in this widget, except "id"..</div>
+        <div class="jsdoc-return-description"><p>The list of all properties in this widget, except &quot;id&quot;..</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_mvc_EditStoreRefController__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
@@ -661,7 +663,8 @@ Child classes of this controller can override it to achieve its specific needs.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
-        <div class="jsdoc-return-description">The object in the store that matches the given id.</div>
+        <div class="jsdoc-return-description"><p>The object in the store that matches the given id.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_mvc_EditStoreRefController_hasControllerProperty"></a><span class="functionIcon">hasControllerProperty</span><span class="parameters">(name)</span> 
@@ -776,7 +779,8 @@ Child classes of this controller can override it to achieve its specific needs.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.QueryResults">dojo/store/api/Store.QueryResults</a> | undefined</span></div>
-        <div class="jsdoc-return-description">The results of the query, extended with iterative methods.</div>
+        <div class="jsdoc-return-description"><p>The results of the query, extended with iterative methods.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_mvc_EditStoreRefController_removeStore"></a><span class="functionIcon">removeStore</span><span class="parameters">(id, options)</span> 
@@ -807,7 +811,8 @@ Child classes of this controller can override it to achieve its specific needs.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | undefined</span></div>
-        <div class="jsdoc-return-description">Returns true if an object was removed, falsy (undefined) if no object matched the id.</div>
+        <div class="jsdoc-return-description"><p>Returns true if an object was removed, falsy (undefined) if no object matched the id.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_mvc_EditStoreRefController_reset"></a><span class="functionIcon">reset</span><span class="parameters">()</span> 

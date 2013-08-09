@@ -3,20 +3,19 @@
 <h1 class="constructorIcon36 jsdoc-title">dojox/calendar/Keyboard<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This mixin is managing the keyboard interactions on a calendar view.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/Keyboard reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
 <div class="jsdoc-summary-list">
   <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightSteps" class="inline-link"> allDayKeyboardLeftRightSteps </a><span></span>
+    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightSteps" class="inline-link"> allDayKeyboardLeftRightSteps </a><span>Unit used during editing of an all day event using the keyboard and the left or right keys were pressed.</span>
     </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightUnit" class="inline-link"> allDayKeyboardLeftRightUnit </a><span></span>
+    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightUnit" class="inline-link"> allDayKeyboardLeftRightUnit </a><span>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
     </li>
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownSteps" class="inline-link"> allDayKeyboardUpDownSteps </a><span></span>
+    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownSteps" class="inline-link"> allDayKeyboardUpDownSteps </a><span>Unit used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
     </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownUnit" class="inline-link"> allDayKeyboardUpDownUnit </a><span></span>
+    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownUnit" class="inline-link"> allDayKeyboardUpDownUnit </a><span>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
     </li>
     <li class="objectIcon"><a href="#1_8dojox_calendar_Keyboard_focusedItem" class="inline-link"> focusedItem </a><span>The data item that currently has the focus.</span>
     </li>
@@ -41,6 +40,8 @@
 <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
 <div class="jsdoc-summary-list">
   <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__checkDir" class="inline-link"> _checkDir</a><span class="parameters">(</span>dir, value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
     <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__focusNextItem" class="inline-link"> _focusNextItem</a><span class="parameters">(</span>dir) <span>Moves the focus to the next item in the specified direction.</span><span title="private" class="jsdoc-private"> </span>
     </li>
     <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__focusNextItemImpl" class="inline-link"> _focusNextItemImpl</a><span class="parameters">(</span>dir, index, max) <span></span><span title="private" class="jsdoc-private"> </span>
@@ -71,28 +72,36 @@
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightSteps"></a><span class="numberIcon">allDayKeyboardLeftRightSteps</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightSteps"></a><span class="stringIcon">allDayKeyboardLeftRightSteps</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
         </div>
+        <div class="jsdoc-summary"><p>Unit used during editing of an all day event using the keyboard and the left or right keys were pressed. Valid values are &quot;week&quot;, &quot;day&quot;, &quot;hours&quot; &quot;minute&quot;.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightUnit"></a><span class="stringIcon">allDayKeyboardLeftRightUnit</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightUnit"></a><span class="numberIcon">allDayKeyboardLeftRightUnit</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
         </div>
+        <div class="jsdoc-summary"><p>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardUpDownSteps"></a><span class="numberIcon">allDayKeyboardUpDownSteps</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardUpDownSteps"></a><span class="stringIcon">allDayKeyboardUpDownSteps</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
         </div>
+        <div class="jsdoc-summary"><p>Unit used during editing of an all day event using the keyboard and the up or down keys were pressed. Valid values are &quot;week&quot;, &quot;day&quot;, &quot;hours&quot; &quot;minute&quot;.     </p>
+</div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardUpDownUnit"></a><span class="stringIcon">allDayKeyboardUpDownUnit</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_allDayKeyboardUpDownUnit"></a><span class="numberIcon">allDayKeyboardUpDownUnit</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
         </div>
+        <div class="jsdoc-summary"><p>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard_focusedItem"></a><span class="objectIcon">focusedItem</span>
@@ -107,7 +116,7 @@
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
         </div>
-        <div class="jsdoc-summary"><p>Unit used during editing of an event using the keyboard and the left or right keys were pressed.    </p>
+        <div class="jsdoc-summary"><p>Unit used during editing of an event using the keyboard and the left or right keys were pressed.        </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -123,7 +132,7 @@
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
         </div>
-        <div class="jsdoc-summary"><p>Steps used during editing of an event using the keyboard and the up or down keys were pressed.    </p>
+        <div class="jsdoc-summary"><p>Steps used during editing of an event using the keyboard and the up or down keys were pressed.      </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -168,6 +177,33 @@ The scroll speed is constant when scrolling to show an item renderer. </p>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard__checkDir"></a><span class="functionIcon">_checkDir</span><span class="parameters">(dir, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/Keyboard" class="jsdoc-link">dojox/calendar/Keyboard</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dir</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_calendar_Keyboard__focusNextItem"></a><span class="functionIcon">_focusNextItem</span><span class="parameters">(dir)</span> <span title="private" class="jsdoc-private"> </span>
         </div>

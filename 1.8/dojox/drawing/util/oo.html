@@ -62,22 +62,22 @@ using extend() (See below).</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  MyFunction = dojox.drawing.util.oo.declare(
+            <h3>Example 1</h3><pre><code>MyFunction = dojox.drawing.util.oo.declare(
     MyOtherFunction,
     YetAnotherFunction,
     function(options){
-      // This is my constructor. It will fire last.
-      // The other constructors will fire before this.
+        // This is my constructor. It will fire last.
+        // The other constructors will fire before this.
     },
     {
-      customType:&quot;equation&quot;, // mixed in property
-      doThing: function(){   // mixed in method
+        customType:&quot;equation&quot;, // mixed in property
+        doThing: function(){   // mixed in method
 
-      }
+        }
     }
-  );
+);
 
-  var f = new MyFunction();</code></pre>
+var f = new MyFunction();</code></pre>
 
           </div>
         </div>
@@ -105,11 +105,11 @@ constructor will fire first.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var A = function(){};
-  var B = function(){};
-  var C = function(){};
-  var D = dojox.drawing.util.oo.extend(A, B, C);
-  var e = new D();</code></pre>
+            <h3>Example 1</h3><pre><code>var A = function(){};
+var B = function(){};
+var C = function(){};
+var D = dojox.drawing.util.oo.extend(A, B, C);
+var e = new D();</code></pre>
 
           </div>
         </div>

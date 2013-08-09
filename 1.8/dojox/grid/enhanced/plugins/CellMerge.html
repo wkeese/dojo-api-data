@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/CellMerge</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/CellMerge<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>This plugin provides functions to merge(un-merge) adjacent cells within one row.
 Acceptable plugin parameters:
@@ -11,23 +11,23 @@ Acceptable plugin parameters:
 <ul>
 <li>mergedCells: Array: An array of objects with structure:</li>
 </ul>
-<pre><code>    {
-      row: function(Integer)|Integer
+<pre><code>{
+    row: function(Integer)|Integer
         If it&#39;s a function, it&#39;s a predicate to decide which rows are to be merged.
         It takes an integer (the row index), and should return true or false;
-      start: Integer
+    start: Integer
         The column index of the left most cell that shall be merged.
-      end: Integer
+    end: Integer
         The column index of the right most cell that shall be merged.
-      major: Integer
+    major: Integer
         The column index of the cell whose content should be used as the content of the merged cell.
         It must be larger than or equal to the startColumnIndex, and less than or equal to the endColumnIndex.
         If it is omitted, the content of the leading edge (left-most for ltr, right most for rtl) cell will be used.
-    }</pre></code>
+}</pre></code>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/CellMerge<span class="parameters">(grid,args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new CellMerge<span class="parameters">(grid,args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/CellMerge">dojox/grid/enhanced/plugins/CellMerge</a></div>
 <table class="jsdoc-parameters">
@@ -337,11 +337,11 @@ e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.pl
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when foo.bar() is called, call the listener in the scope of plugin
-  plugin.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.xxx());//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -409,15 +409,18 @@ e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.pl
         <div class="jsdoc-full-summary"><p>Get all records of currently merged cells.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array | undefined</span></div>
-        <div class="jsdoc-return-description">An array of records for merged-cells.
+        <div class="jsdoc-return-description"><p>An array of records for merged-cells.
 The record has the following structure:
-|  {
-|    "row": 1, //the row index
-|    "start": 2, //the start column index
-|    "end": 4, //the end column index
-|    "major": 3, //the major column index
-|    "handle": someHandle, //The handler that covers this merge cell record.
-|  }</div>
+
+</p>
+<pre><code>{
+    &quot;row&quot;: 1, //the row index
+    &quot;start&quot;: 2, //the start column index
+    &quot;end&quot;: 4, //the end column index
+    &quot;major&quot;: 3, //the major column index
+    &quot;handle&quot;: someHandle, //The handler that covers this merge cell record.
+}</code></pre>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_CellMerge_getMergedCellsByRow"></a><span class="functionIcon">getMergedCellsByRow</span><span class="parameters">(rowIndex)</span> 
@@ -440,7 +443,8 @@ The record has the following structure:
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array | object</span></div>
-        <div class="jsdoc-return-description">An array of records for merged-cells. See docs of getMergedCells.</div>
+        <div class="jsdoc-return-description"><p>An array of records for merged-cells. See docs of getMergedCells.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_CellMerge_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
@@ -497,9 +501,10 @@ If it is omitted, the content of the leading edge (left-most for ltr, right most
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object|null | undefined</span></div>
-        <div class="jsdoc-return-description">A handler for the merged cells created by a call of this function.
+        <div class="jsdoc-return-description"><p>A handler for the merged cells created by a call of this function.
 This handler can be used later to unmerge cells using the function unmergeCells
-If the merge is not valid, returns null;</div>
+If the merge is not valid, returns null;</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_CellMerge_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(topic, method)</span> 
@@ -532,12 +537,12 @@ of this object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when /my/topic is published, call the subscriber in the scope of plugin
-  // with passed parameter - &quot;v&quot;
-  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
     console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

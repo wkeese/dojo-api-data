@@ -30,25 +30,28 @@ work with WebSockets (it can still be host relative, like //other-site.org/endpo
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code> dojo.require(&quot;dojox.socket&quot;);
- var socket = dojox.socket({&quot;url://comet-server/comet&quot;);
- // we could also add auto-reconnect support
- // now we can connect to standard HTML5 WebSocket-style events
- dojo.connect(socket, &quot;onmessage&quot;, function(event){
-    var message = event.data;
-    // do something with the message
- });
- // send something
- socket.send(&quot;hi there&quot;);
- whenDone(function(){
-   socket.close();
- });</code></pre>
-<p>You can also use the Reconnect module:</p>
-<pre><code> dojo.require(&quot;dojox.socket&quot;);
- dojo.require(&quot;dojox.socket.Reconnect&quot;);
- var socket = dojox.socket({url:&quot;/comet&quot;});
- // add auto-reconnect support
- socket = dojox.socket.Reconnect(socket);</code></pre>
+    <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.socket&quot;);
+var socket = dojox.socket({&quot;url://comet-server/comet&quot;);
+// we could also add auto-reconnect support
+// now we can connect to standard HTML5 WebSocket-style events
+dojo.connect(socket, &quot;onmessage&quot;, function(event){
+   var message = event.data;
+   // do something with the message
+});
+// send something
+socket.send(&quot;hi there&quot;);
+whenDone(function(){
+  socket.close();
+});</code></pre>
+<p>You can also use the Reconnect module:
+
+
+</p>
+<pre><code>dojo.require(&quot;dojox.socket&quot;);
+dojo.require(&quot;dojox.socket.Reconnect&quot;);
+var socket = dojox.socket({url:&quot;/comet&quot;});
+// add auto-reconnect support
+socket = dojox.socket.Reconnect(socket);</code></pre>
 
   </div>
 </div>
@@ -101,29 +104,33 @@ work with WebSockets (it can still be host relative, like //other-site.org/endpo
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">An object that implements the WebSocket API</div>
+        <div class="jsdoc-return-description"><p>An object that implements the WebSocket API</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> dojo.require(&quot;dojox.socket&quot;);
- var socket = dojox.socket({&quot;url://comet-server/comet&quot;);
- // we could also add auto-reconnect support
- // now we can connect to standard HTML5 WebSocket-style events
- dojo.connect(socket, &quot;onmessage&quot;, function(event){
-    var message = event.data;
-    // do something with the message
- });
- // send something
- socket.send(&quot;hi there&quot;);
- whenDone(function(){
-   socket.close();
- });</code></pre>
-<p>You can also use the Reconnect module:</p>
-<pre><code> dojo.require(&quot;dojox.socket&quot;);
- dojo.require(&quot;dojox.socket.Reconnect&quot;);
- var socket = dojox.socket({url:&quot;/comet&quot;});
- // add auto-reconnect support
- socket = dojox.socket.Reconnect(socket);</code></pre>
+            <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.socket&quot;);
+var socket = dojox.socket({&quot;url://comet-server/comet&quot;);
+// we could also add auto-reconnect support
+// now we can connect to standard HTML5 WebSocket-style events
+dojo.connect(socket, &quot;onmessage&quot;, function(event){
+   var message = event.data;
+   // do something with the message
+});
+// send something
+socket.send(&quot;hi there&quot;);
+whenDone(function(){
+  socket.close();
+});</code></pre>
+<p>You can also use the Reconnect module:
+
+
+</p>
+<pre><code>dojo.require(&quot;dojox.socket&quot;);
+dojo.require(&quot;dojox.socket.Reconnect&quot;);
+var socket = dojox.socket({url:&quot;/comet&quot;});
+// add auto-reconnect support
+socket = dojox.socket.Reconnect(socket);</code></pre>
 
           </div>
         </div>
@@ -160,16 +167,20 @@ Provide an alternate transport like dojo.io.script.get</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">An object that implements the WebSocket API</div>
+        <div class="jsdoc-return-description"><p>An object that implements the WebSocket API</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> dojo.require(&quot;dojox.socket.LongPoll&quot;);
- var socket = dojox.socket.LongPoll({url:&quot;/comet&quot;});</code></pre>
-<p>or:</p>
-<pre><code> dojo.require(&quot;dojox.socket.LongPoll&quot;);
- dojox.socket.LongPoll.add();
- var socket = dojox.socket({url:&quot;/comet&quot;});</code></pre>
+            <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.socket.LongPoll&quot;);
+var socket = dojox.socket.LongPoll({url:&quot;/comet&quot;});</code></pre>
+<p>or:
+
+
+</p>
+<pre><code>dojo.require(&quot;dojox.socket.LongPoll&quot;);
+dojox.socket.LongPoll.add();
+var socket = dojox.socket({url:&quot;/comet&quot;});</code></pre>
 
           </div>
         </div>

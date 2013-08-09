@@ -5,7 +5,7 @@
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/geo/openlayers/_base.TouchInteractionSupport<span class="parameters">(map);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _base.TouchInteractionSupport<span class="parameters">(map);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/openlayers/TouchInteractionSupport">dojox/geo/openlayers/TouchInteractionSupport</a></div>
 <div class="jsdoc-summary"><p>Constructs a new TouchInteractionSupport instance</p>
@@ -24,7 +24,6 @@
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/_base.TouchInteractionSupport reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -60,7 +59,7 @@
     </li>
     <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_TouchInteractionSupport__getTouchBarycenter" class="inline-link"> _getTouchBarycenter</a><span class="parameters">(</span>touchEvent) <span>returns the midpoint of the two first fingers (or the first finger location if only one)</span><span title="private" class="jsdoc-private"> </span>
     </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_TouchInteractionSupport__isDoubleTap" class="inline-link"> _isDoubleTap</a><span class="parameters">(</span>touchEvent) <span>checks whether the specified touchStart event is a double tap
+    <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_TouchInteractionSupport__isDoubleTap" class="inline-link"> _isDoubleTap</a><span class="parameters">(</span>touchEvent) <span>checks whether the specified touchStart event is a double tap 
 (i.e. follows closely a previous touchStart at approximately the same location)</span><span title="private" class="jsdoc-private"> </span>
     </li>
     <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_TouchInteractionSupport__touchEndHandler" class="inline-link"> _touchEndHandler</a><span class="parameters">(</span>touchEvent) <span>action performed on the map when a touch end was triggered</span><span title="private" class="jsdoc-private"> </span>
@@ -139,7 +138,7 @@
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/TouchInteractionSupport" class="jsdoc-link">dojox/geo/openlayers/TouchInteractionSupport</a>
         </div>
-        <div class="jsdoc-full-summary"><p>action performed on the map when a double tap was triggered</p>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a double tap was triggered </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -178,7 +177,8 @@
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">float | undefined</span></div>
-        <div class="jsdoc-return-description">a distance. -1 if less that 2 fingers</div>
+        <div class="jsdoc-return-description"><p>a distance. -1 if less that 2 fingers</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_TouchInteractionSupport__getTouchBarycenter"></a><span class="functionIcon">_getTouchBarycenter</span><span class="parameters">(touchEvent)</span> <span title="private" class="jsdoc-private"> </span>
@@ -202,14 +202,15 @@
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">the midpoint as an {x,y} object.</div>
+        <div class="jsdoc-return-description"><p>the midpoint as an {x,y} object.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_TouchInteractionSupport__isDoubleTap"></a><span class="functionIcon">_isDoubleTap</span><span class="parameters">(touchEvent)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/TouchInteractionSupport" class="jsdoc-link">dojox/geo/openlayers/TouchInteractionSupport</a>
         </div>
-        <div class="jsdoc-full-summary"><p>checks whether the specified touchStart event is a double tap
+        <div class="jsdoc-full-summary"><p>checks whether the specified touchStart event is a double tap 
 (i.e. follows closely a previous touchStart at approximately the same location)</p>
 </div>
         <table class="jsdoc-parameters">
@@ -227,14 +228,15 @@
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
-        <div class="jsdoc-return-description">true if this event is considered a double tap</div>
+        <div class="jsdoc-return-description"><p>true if this event is considered a double tap</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_TouchInteractionSupport__touchEndHandler"></a><span class="functionIcon">_touchEndHandler</span><span class="parameters">(touchEvent)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/TouchInteractionSupport" class="jsdoc-link">dojox/geo/openlayers/TouchInteractionSupport</a>
         </div>
-        <div class="jsdoc-full-summary"><p>action performed on the map when a touch end was triggered</p>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a touch end was triggered </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -256,7 +258,7 @@
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/TouchInteractionSupport" class="jsdoc-link">dojox/geo/openlayers/TouchInteractionSupport</a>
         </div>
-        <div class="jsdoc-full-summary"><p>action performed on the map when a touch move was triggered</p>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a touch move was triggered </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -278,7 +280,7 @@
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/TouchInteractionSupport" class="jsdoc-link">dojox/geo/openlayers/TouchInteractionSupport</a>
         </div>
-        <div class="jsdoc-full-summary"><p>action performed on the map when a touch start was triggered</p>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a touch start was triggered </p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/NestedSorting</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/NestedSorting<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provides nested sorting feature
 </p>
@@ -18,7 +18,7 @@
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/NestedSorting<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new NestedSorting<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/NestedSorting">dojox/grid/enhanced/plugins/NestedSorting</a></div>
 <div class="jsdoc-children">
@@ -27,15 +27,15 @@
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  &lt;script type=&quot;text/javascript&quot;&gt;
+    <h3>Example 1</h3><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
     var grid = new dojox.grid.EnhancedGrid({plugins : {nestedSorting: true}},
-                 sortFields: [{attribute: &#39;col4&#39;, descending: false},...],//set default sorting order
-             canSort: function(index, field){ return true},//disable sorting for a column
-           ... }, dojo.byId(&#39;gridDiv&#39;));
+               sortFields: [{attribute: &#39;col4&#39;, descending: false},...],//set default sorting order
+               canSort: function(index, field){ return true},//disable sorting for a column
+               ... }, dojo.byId(&#39;gridDiv&#39;));
     grid.startup();
     //set new sorting order
     grid.setSortIndex([{attribute: &#39;col3&#39;, descending: true},...])
-  &lt;/script&gt;</code></pre>
+&lt;/script&gt;</code></pre>
 
   </div>
 </div>
@@ -667,11 +667,11 @@ Show indicator of the sorting order of the column, no order no indicator</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when foo.bar() is called, call the listener in the scope of plugin
-  plugin.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.xxx());//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -860,12 +860,12 @@ of this object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when /my/topic is published, call the subscriber in the scope of plugin
-  // with passed parameter - &quot;v&quot;
-  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
     console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -898,7 +898,7 @@ of this object.</p>
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_NestedSorting__onColumnDnD"></a><span class="functionIcon">_onColumnDnD</span><span class="parameters">(type, mapping)</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-link">dojox/grid/enhanced/plugins/NestedSorting</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Update nested sorting after column moved</p>
+        <div class="jsdoc-summary"><p>Update nested sorting after column moved        </p>
 </div>
       </div>
       <div class="jsdoc-field private">

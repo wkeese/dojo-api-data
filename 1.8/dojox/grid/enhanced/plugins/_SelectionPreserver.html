@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/_SelectionPreserver</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/_SelectionPreserver<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/_SelectionPreserver" class="jsdoc-link">dojox/grid/_SelectionPreserver,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/_SelectionPreserver" class="jsdoc-link">dojox/grid/_SelectionPreserver</a>
 </div>
 <div class="jsdoc-full-summary"><p>Preserve selections across various user actions.
 </p>
@@ -17,7 +17,7 @@ Known issue - The preserved selections might be inaccurate if some unloaded rows
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/_SelectionPreserver<span class="parameters">(selection);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _SelectionPreserver<span class="parameters">(selection);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/_SelectionPreserver">dojox/grid/enhanced/plugins/_SelectionPreserver</a></div>
 <table class="jsdoc-parameters">
@@ -39,8 +39,8 @@ Known issue - The preserved selections might be inaccurate if some unloaded rows
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  //To turn on this - set &#39;keepSelection&#39; attribute to true
-  &lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot; keepSelection = true .../&gt;</code></pre>
+    <h3>Example 1</h3><pre><code>//To turn on this - set &#39;keepSelection&#39; attribute to true
+&lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot; keepSelection = true .../&gt;</code></pre>
 
   </div>
 </div>
@@ -137,7 +137,7 @@ Known issue - The preserved selections might be inaccurate if some unloaded rows
 <ol>
 <li>Calculate how many unloaded rows are there;</li>
 <li>update _selectedById data if grid.selection._selected can be trusted, so loaded but unselected rows can
-be properly recorded.</li>
+ be properly recorded.</li>
 </ol>
 </div>
         <table class="jsdoc-parameters">

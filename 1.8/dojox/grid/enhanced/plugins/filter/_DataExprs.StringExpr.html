@@ -5,7 +5,7 @@
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/filter/_DataExprs.StringExpr<span class="parameters">(dataValue,isColumn,convertArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _DataExprs.StringExpr<span class="parameters">(dataValue,isColumn,convertArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/filter/_ConditionExpr">dojox/grid/enhanced/plugins/filter/_ConditionExpr</a></div>
 <div class="jsdoc-summary"><p>If a _DataExpr is constructed with only one argument, this argument is regarded as a pure value.
@@ -131,6 +131,11 @@ If this is a pure value, simply return self.
 Otherwise, extract the cell data from datarow using the given getter function,
 and then convert this cell data to a _DataExpr and return the expression.</p>
 </div>
+        <div class="jsdoc-full-summary"><p>An object with the following properties:</p><ul><li>_name</li><li>applyRow: <p><em>Unimplemented Interface</em>
+Apply this condition expression on the given datarow, return a result expression.</p>
+</li><li>toObject: <p>Convert this data expression to a simple object. Mainly used for serialization.</p>
+</li><li>getName: <p>Get the name of this kind of expression.</p>
+</li></ul></div>
         <table class="jsdoc-parameters">
           <tr>
             <th>Parameter</th>
@@ -150,7 +155,7 @@ and then convert this cell data to a _DataExpr and return the expression.</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">_ConditionExpr</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Object</span></div>
         <div class="jsdoc-return-description"><p>Implement _ConditionExpr.applyRow.
 If this is a pure value, simply return self.
 Otherwise, extract the cell data from datarow using the given getter function,
@@ -206,7 +211,8 @@ return it.</p>
         <div class="jsdoc-full-summary"><p>Get the name of this kind of expression.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the name of this kind of expression</div>
+        <div class="jsdoc-return-description"><p>the name of this kind of expression</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_filter__DataExprs_StringExpr_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">()</span> 
@@ -217,7 +223,8 @@ return it.</p>
 Otherwise (it&#39;s a column), return is undefined.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">the value of this data expression.</div>
+        <div class="jsdoc-return-description"><p>the value of this data expression.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_filter__DataExprs_StringExpr_toObject"></a><span class="functionIcon">toObject</span><span class="parameters">()</span> 

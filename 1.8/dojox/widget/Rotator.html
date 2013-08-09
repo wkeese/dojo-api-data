@@ -26,14 +26,11 @@ element or element with display:block is recommended.
 <p>subscribed topics:
 
 </p>
-<p>[id]/rotator/control - Controls the Rotator
+<pre><code>[id]/rotator/control - Controls the Rotator
 Parameters:
 
-</p>
-<ul>
-<li>/<em>string</em>/ action        - The name of a method of the Rotator to run</li>
-<li>/<em>anything?</em>/ args       - One or more arguments to pass to the action</li>
-</ul>
+- /*string*/ action        - The name of a method of the Rotator to run
+- /*anything?*/ args       - One or more arguments to pass to the action</pre></code>
 <p>published topics:
 
 </p>
@@ -44,7 +41,7 @@ Parameters:
 <ul>
 <li>/<em>string</em>/ type          - the type of notification</li>
 <li>/<em>dojox.widget.Rotator</em>/ rotator - the rotator instance</li>
-<li>/<em>object?</em>/ params     - params</li>
+<li>/<em>object?</em>/ params         - params</li>
 </ul>
 <p>declarative dojo/method events (per pane):
 
@@ -58,7 +55,7 @@ Parameters:
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/widget/Rotator<span class="parameters">(params,node);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Rotator<span class="parameters">(params,node);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/widget/Rotator">dojox/widget/Rotator</a></div>
 <div class="jsdoc-summary"><p>Initializes the panes and events.</p>
@@ -82,29 +79,27 @@ Parameters:
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/widget/Rotator.html" target="_blank">dojox/widget/Rotator reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  &lt;div dojoType=&quot;dojox.widget.Rotator&quot;&gt;
+    <h3>Example 1</h3><pre><code>&lt;div dojoType=&quot;dojox.widget.Rotator&quot;&gt;
     &lt;div&gt;Pane 1!&lt;/div&gt;
     &lt;div&gt;Pane 2!&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-<p></p>
+&lt;/div&gt;</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  &lt;script type=&quot;text/javascript&quot;&gt;
+    <h3>Example 2</h3><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
     require(&quot;dojo/parser&quot;, &quot;dojo/domReady!&quot;, &quot;dojox/widget/Rotator&quot;, &quot;dojox/widget/rotator/Fade&quot;],
-           function(parser) { parser.parse(); });
-  &lt;/script&gt;
-  &lt;div dojoType=&quot;dojox/widget/Rotator&quot; transition=&quot;dojox/widget/rotator/crossFade&quot;&gt;
+        function(parser) { parser.parse(); });
+&lt;/script&gt;
+&lt;div dojoType=&quot;dojox/widget/Rotator&quot; transition=&quot;dojox/widget/rotator/crossFade&quot;&gt;
     &lt;div&gt;Pane 1!&lt;/div&gt;
     &lt;div&gt;Pane 2!&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 
   </div>
 </div>

@@ -2,18 +2,17 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/dgauges/RectangularRangeIndicator</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/dgauges/RectangularRangeIndicator<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a>
 </div>
 <div class="jsdoc-full-summary"><p>A RectangularRangeIndicator is used to represent a range of values on a scale.
-For adding this kind of indicator instance to the gauge, use the addIndicator
+For adding this kind of indicator instance to the gauge, use the addIndicator 
 method of RectangularScale.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/dgauges/RectangularRangeIndicator<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new RectangularRangeIndicator<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/dgauges/RectangularRangeIndicator">dojox/dgauges/RectangularRangeIndicator</a></div>
-<p>See the <a href="/reference-guide/1.8/dojox/dgauges.html" target="_blank">dojox/dgauges/RectangularRangeIndicator reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -37,7 +36,7 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
     </li>
     <li class="booleanIcon private inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator__preventAnimation" class="inline-link"> _preventAnimation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator__transitionValue" class="inline-link"> _transitionValue </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator__transitionValue" class="inline-link"> _transitionValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
     </li>
     <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator_animationDuration" class="inline-link"> animationDuration </a><span>The duration of the value change animation in milliseconds.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
     </li>
@@ -49,7 +48,7 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator_interactionArea" class="inline-link"> interactionArea </a><span>How to interact with the indicator using mouse or touch interactions.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
     </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator_interactionMode" class="inline-link"> interactionMode </a><span>Can be &quot;mouse&quot; or &quot;touch&quot;.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    <li class="stringIcon inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator_interactionMode" class="inline-link"> interactionMode </a><span>Deprecated.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_RectangularRangeIndicator_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
     </li>
@@ -207,10 +206,6 @@ and setter names.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
-in the data (i.e. after drill down the depth of an item might change).
-Default is NaN.</p>
-</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularRangeIndicator_animationDuration"></a><span class="numberIcon">animationDuration</span>
@@ -265,7 +260,7 @@ If &quot;none&quot;, interactions are disabled.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Can be &quot;mouse&quot; or &quot;touch&quot;.</p>
+        <div class="jsdoc-summary"><p>Deprecated. Can be &quot;mouse&quot; or &quot;touch&quot;.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -360,9 +355,9 @@ Default is 10.</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -860,10 +855,12 @@ to watch for.</p>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
 this just retrieves the object&#39;s property.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful({foo: 3});
-  stateful.get(&quot;foo&quot;) // returns 3
-  stateful.foo // returns 3</pre></code>
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful({foo: 3});
+stateful.get(&quot;foo&quot;) // returns 3
+stateful.foo // returns 3</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -880,7 +877,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularRangeIndicator_invalidateRendering"></a><span class="functionIcon">invalidateRendering</span><span class="parameters">()</span> 
@@ -926,19 +924,23 @@ For example:</p>
 </div>
         <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
 the property. A programmatic setter may be defined in subclasses.
-For example:</p>
-<pre><code>  stateful = new dojo.Stateful();
-  stateful.watch(function(name, oldValue, value){
+For example:
+
+</p>
+<pre><code>stateful = new dojo.Stateful();
+stateful.watch(function(name, oldValue, value){
     // this will be called on the set below
-  }
-  stateful.set(foo, 5);</pre></code>
-<p></p>
-<p>set() may also be called with a hash of name/value pairs, ex:</p>
-<pre><code>  myObj.set({
+}
+stateful.set(foo, 5);</pre></code>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+</p>
+<pre><code>myObj.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  })</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+})</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -962,7 +964,8 @@ For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">The function returns this dojo.Stateful instance.</div>
+        <div class="jsdoc-return-description"><p>The function returns this dojo.Stateful instance.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_dgauges_RectangularRangeIndicator_validateRendering"></a><span class="functionIcon">validateRendering</span><span class="parameters">()</span> 
@@ -978,10 +981,12 @@ For example:</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Invoked when the value of the indicator changes.
-User can connect an listener on this function:</p>
-<pre><code>  connect.connect(theIndicator, &quot;valueChanged&quot;, lang.hitch(this, function(){
+User can connect an listener on this function: 
+
+</p>
+<pre><code>theIndicator.on(&quot;valueChanged&quot;, lang.hitch(this, function(){
     //do something
-  }));</code></pre>
+}));</code></pre>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1031,10 +1036,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
     </div>
     <h2>Events</h2>

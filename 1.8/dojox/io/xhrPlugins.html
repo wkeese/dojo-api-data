@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/io/xhrPlugins</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/io/xhrPlugins<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/io/xhrPlugins.html" target="_blank">dojox/io/xhrPlugins reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -49,9 +48,12 @@ xhr handlers</span>
 </div>
         <div class="jsdoc-full-summary"><p>This can be used for servers that support W3C cross-site XHR. In order for
 a server to allow a client to make cross-site XHR requests,
-it should respond with the header like:</p>
-<pre><code>  Access-Control: allow &lt;*&gt;</pre></code>
-<p>see: <a href="http://www.w3.org/TR/access-control/">http://www.w3.org/TR/access-control/</a></p>
+it should respond with the header like:
+
+</p>
+<pre><code>Access-Control: allow &lt;*&gt;</pre></code>
+<p>see: <a href="http://www.w3.org/TR/access-control/">http://www.w3.org/TR/access-control/</a>
+</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -102,12 +104,20 @@ cross-site XHR.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Define a proxy:</p>
-<pre><code>  dojox.io.xhrPlugins.addProxy(&quot;/proxy?url=&quot;);</code></pre>
-<p>And then when you call:</p>
-<pre><code>  dojo.xhr(&quot;GET&quot;,{url:&quot;http://othersite.com/file&quot;});</code></pre>
-<p>It would result in the request (to your origin server):</p>
-<pre><code>  GET /proxy?url=http%3A%2F%2Fothersite.com%2Ffile HTTP/1.1</code></pre>
+            <h3>Example 1</h3><p>Define a proxy:
+
+</p>
+<pre><code>dojox.io.xhrPlugins.addProxy(&quot;/proxy?url=&quot;);</code></pre>
+<p>And then when you call:
+
+
+</p>
+<pre><code>dojo.xhr(&quot;GET&quot;,{url:&quot;http://othersite.com/file&quot;});</code></pre>
+<p>It would result in the request (to your origin server):
+
+
+</p>
+<pre><code>GET /proxy?url=http%3A%2F%2Fothersite.com%2Ffile HTTP/1.1</code></pre>
 
           </div>
         </div>

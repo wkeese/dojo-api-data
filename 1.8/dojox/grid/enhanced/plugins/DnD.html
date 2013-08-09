@@ -2,7 +2,7 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/DnD</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/DnD<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provide drag and drop for grid columns/rows/cells within grid and out of grid.
 The store of grid must implement dojo.data.api.Write.
@@ -21,7 +21,7 @@ Support moving/copying within grid, moving/copying out of grid to any DnD target
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/DnD<span class="parameters">(grid,args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new DnD<span class="parameters">(grid,args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/DnD">dojox/grid/enhanced/plugins/DnD</a></div>
 <table class="jsdoc-parameters">
@@ -679,11 +679,11 @@ e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.pl
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when foo.bar() is called, call the listener in the scope of plugin
-  plugin.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.xxx());//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -811,35 +811,40 @@ See the examples below.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>The following code disables row DnD within grid,
-but still can drag rows out of grid or drag rows from other gird.</p>
-<pre><code>  setUpConfig({
+but still can drag rows out of grid or drag rows from other gird.
+
+</p>
+<pre><code>setUpConfig({
     &quot;row&quot;: {
-      &quot;within&quot;: false
+        &quot;within&quot;: false
     }
-  });</code></pre>
-<p></p>
-<p>The opposite way is also okay:</p>
-<pre><code>  setUpConfig({
+});</code></pre>
+<p>The opposite way is also okay:
+
+</p>
+<pre><code>setUpConfig({
     &quot;within&quot;: {
-      &quot;row&quot;: false
+        &quot;row&quot;: false
     }
-  });</code></pre>
-<p></p>
-<p>And if you&#39;d like to disable/enable a whole set, here&#39;s a shortcut:</p>
-<pre><code>  setUpConfig({
+});</code></pre>
+<p>And if you&#39;d like to disable/enable a whole set, here&#39;s a shortcut:
+
+</p>
+<pre><code>setUpConfig({
     &quot;cell&quot;, true,
     &quot;out&quot;: false
-  });</code></pre>
-<p></p>
-<p>Because mode has higher priority than type, the following will disable row dnd within grid:</p>
-<pre><code>  setUpConfig({
+});</code></pre>
+<p>Because mode has higher priority than type, the following will disable row dnd within grid:
+
+</p>
+<pre><code>setUpConfig({
     &quot;within&quot;, {
-      &quot;row&quot;: false;
+        &quot;row&quot;: false;
     },
     &quot;row&quot;, {
-      &quot;within&quot;: true
+        &quot;within&quot;: true
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -875,12 +880,12 @@ of this object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-  // when /my/topic is published, call the subscriber in the scope of plugin
-  // with passed parameter - &quot;v&quot;
-  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
     console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

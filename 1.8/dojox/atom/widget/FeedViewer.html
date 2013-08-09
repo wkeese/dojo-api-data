@@ -2,13 +2,13 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/atom/widget/FeedViewer</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/atom/widget/FeedViewer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_Widget" class="jsdoc-link">dijit/_Widget,   </a><a href="/api/1.8/dijit/_Templated" class="jsdoc-link">dijit/_Templated,   </a><a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container,   </a>
+  <label>Extends </label><a href="/api/1.8/dijit/_Widget" class="jsdoc-link">dijit/_Widget, </a><a href="/api/1.8/dijit/_Templated" class="jsdoc-link">dijit/_Templated, </a><a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a>
 </div>
 <div class="jsdoc-full-summary"><p>An ATOM feed viewer that allows for viewing a feed, deleting entries, and editing entries.</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/atom/widget/FeedViewer<span class="parameters">(params,srcNodeRef);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new FeedViewer<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/_Widget">dijit/_Widget</a></div>
 <div class="jsdoc-summary"><p>Create the widget.</p>
@@ -44,7 +44,6 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/atom/widget/FeedViewer.html" target="_blank">dojox/atom/widget/FeedViewer reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -128,7 +127,7 @@ system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inheri
     </li>
     <li class="objectIcon inherited"><a href="#1_8dojox_atom_widget_FeedViewer_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dojox/atom/widget/FeedViewer" class="jsdoc-inherited"></span>
     </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_atom_widget_FeedViewer_textDir" class="inline-link"> textDir </a><span>Bi-directional support,  the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+    <li class="stringIcon inherited"><a href="#1_8dojox_atom_widget_FeedViewer_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="stringIcon inherited"><a href="#1_8dojox_atom_widget_FeedViewer_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
@@ -246,7 +245,9 @@ descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-i
     <li class="functionIcon  inherited"><a href="#1_8dojox_atom_widget_FeedViewer_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon  inherited"><a href="#1_8dojox_atom_widget_FeedViewer_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
-  myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+
+
+myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
     </li>
     <li class="functionIcon "><a href="#1_8dojox_atom_widget_FeedViewer_FeedViewerEntry" class="inline-link"> FeedViewerEntry</a><span class="parameters">(</span>) <span></span>
     </li>
@@ -498,7 +499,7 @@ have their .startup() called immediately before a parent widget
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Deprecated.  Instead of attributeMap, widget should have a _setXXXAttr attribute
+        <div class="jsdoc-summary"><p>Deprecated. Instead of attributeMap, widget should have a _setXXXAttr attribute
 for each XXX attribute to be mapped to the DOM.
 
 </p>
@@ -518,20 +519,26 @@ and the value reflects a binding to a:
 
 </p>
 <ul>
-<li><p>DOM node attribute
-|    focus: {node: &quot;focusNode&quot;, type: &quot;attribute&quot;}
+<li><p>DOM node attribute</p>
+<p>  focus: {node: &quot;focusNode&quot;, type: &quot;attribute&quot;}
 Maps this.focus to this.focusNode.focus</p>
 </li>
-<li><p>DOM node innerHTML
-|    title: { node: &quot;titleNode&quot;, type: &quot;innerHTML&quot; }
+</ul>
+<ul>
+<li><p>DOM node innerHTML</p>
+<p>  title: { node: &quot;titleNode&quot;, type: &quot;innerHTML&quot; }
 Maps this.title to this.titleNode.innerHTML</p>
 </li>
-<li><p>DOM node innerText
-|    title: { node: &quot;titleNode&quot;, type: &quot;innerText&quot; }
+</ul>
+<ul>
+<li><p>DOM node innerText</p>
+<p>  title: { node: &quot;titleNode&quot;, type: &quot;innerText&quot; }
 Maps this.title to this.titleNode.innerText</p>
 </li>
-<li><p>DOM node CSS class
-|    myClass: { node: &quot;domNode&quot;, type: &quot;class&quot; }
+</ul>
+<ul>
+<li><p>DOM node CSS class</p>
+<p>  myClass: { node: &quot;domNode&quot;, type: &quot;class&quot; }
 Maps this.myClass to this.domNode.className</p>
 </li>
 </ul>
@@ -545,8 +552,7 @@ formats of the above list.
 <ul>
 <li>string --&gt; { node: string, type: &quot;attribute&quot; }, for example:</li>
 </ul>
-<pre><code>  &quot;focusNode&quot; ---&gt; { node: &quot;focusNode&quot;, type: &quot;attribute&quot; }</pre></code>
-<p></p>
+<pre><code>&quot;focusNode&quot; ---&gt; { node: &quot;focusNode&quot;, type: &quot;attribute&quot; }</pre></code>
 <ul>
 <li>&quot;&quot; --&gt; { node: &quot;domNode&quot;, type: &quot;attribute&quot; }</li>
 </ul>
@@ -576,20 +582,20 @@ widget state.</p>
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.
 For example, for myWidget:
 
+
 </p>
-<pre><code>  &lt;div data-dojo-type=myWidget&gt;
+<pre><code>&lt;div data-dojo-type=myWidget&gt;
     &lt;b&gt; here&#39;s a plain DOM node
     &lt;span data-dojo-type=subWidget&gt;and a widget&lt;/span&gt;
     &lt;i&gt; and another plain DOM node &lt;/i&gt;
-  &lt;/div&gt;</pre></code>
-<p></p>
+&lt;/div&gt;</pre></code>
 <p>containerNode would point to:
 
+
 </p>
-<pre><code>    &lt;b&gt; here&#39;s a plain DOM node
-    &lt;span data-dojo-type=subWidget&gt;and a widget&lt;/span&gt;
-    &lt;i&gt; and another plain DOM node &lt;/i&gt;</pre></code>
-<p></p>
+<pre><code>&lt;b&gt; here&#39;s a plain DOM node
+&lt;span data-dojo-type=subWidget&gt;and a widget&lt;/span&gt;
+&lt;i&gt; and another plain DOM node &lt;/i&gt;</pre></code>
 <p>In templated widgets, &quot;containerNode&quot; is set via a
 data-dojo-attach-point assignment.
 
@@ -720,7 +726,7 @@ Deprecated: use templateString with require([... &quot;<a class="jsdoc-link" hre
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Bi-directional support,  the main variable which is responsible for the direction of the text.
+        <div class="jsdoc-summary"><p>Bi-directional support, the main variable which is responsible for the direction of the text.
 The text direction can be different than the GUI direction by using this parameter in creation
 of a widget.
 
@@ -930,7 +936,8 @@ to DOMNode inside the widget, or alternately pointing to a subwidget</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | number</span></div>
-        <div class="jsdoc-return-description">String of the baseline URL</div>
+        <div class="jsdoc-return-description"><p>String of the baseline URL</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
@@ -940,9 +947,9 @@ to DOMNode inside the widget, or alternately pointing to a subwidget</p>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
 </div>
-        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
-accessor setter.  Also handles the calling of watch and emitting events.
-It is designed to be used by descendent class when there are two values
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any 
+accessor setter.  Also handles the calling of watch and emitting events. 
+It is designed to be used by descendent class when there are two values 
 of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -980,7 +987,8 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
         <div class="jsdoc-full-summary"><p>Internal function for unselecting the current selection.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__displayDateForEntry"></a><span class="functionIcon">_displayDateForEntry</span><span class="parameters">(entry)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1004,7 +1012,8 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined | instance</span></div>
-        <div class="jsdoc-return-description">An appropriate date for the feed viewer display.</div>
+        <div class="jsdoc-return-description"><p>An appropriate date for the feed viewer display.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__fillContent"></a><span class="functionIcon">_fillContent</span><span class="parameters">(source)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1132,7 +1141,8 @@ if -1, get the previous sibling</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__isEditable"></a><span class="functionIcon">_isEditable</span><span class="parameters">(entry)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1159,7 +1169,8 @@ This is used for determining if the delete action should be displayed or not.</p
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">Boolean denoting if the entry seems editable or not..</div>
+        <div class="jsdoc-return-description"><p>Boolean denoting if the entry seems editable or not..</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__isFilterAccepted"></a><span class="functionIcon">_isFilterAccepted</span><span class="parameters">(entry)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1182,7 +1193,8 @@ This is used for determining if the delete action should be displayed or not.</p
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">boolean denoting if this entry matched one of the accept filters.</div>
+        <div class="jsdoc-return-description"><p>boolean denoting if this entry matched one of the accept filters.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__isRelativeURL"></a><span class="functionIcon">_isRelativeURL</span><span class="parameters">(url)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1209,7 +1221,8 @@ with http:// or file://, it&#39;s relative to the current document.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">boolean indicating whether it's a relative url or not.</div>
+        <div class="jsdoc-return-description"><p>boolean indicating whether it&#39;s a relative url or not.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__removeEntry"></a><span class="functionIcon">_removeEntry</span><span class="parameters">(entry, success)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1260,7 +1273,8 @@ with http:// or file://, it&#39;s relative to the current document.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
@@ -1401,7 +1415,8 @@ Should be of format: {scheme: <code>some text or null</code>, term: <code>some t
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_addChild"></a><span class="functionIcon">addChild</span><span class="parameters">(widget, insertIndex)</span> 
@@ -1460,7 +1475,8 @@ a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_appendGrouping"></a><span class="functionIcon">appendGrouping</span><span class="parameters">(titleText)</span> 
@@ -1483,7 +1499,8 @@ a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_applyTextDir"></a><span class="functionIcon">applyTextDir</span><span class="parameters">(element, text)</span> 
@@ -1581,7 +1598,8 @@ Most widgets will mixin <code>dijit._TemplatedMixin</code>, which implements thi
         <div class="jsdoc-full-summary"><p>Function clearing all current entries in the feed view.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
@@ -1626,17 +1644,18 @@ destruction.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">A handle that can be passed to `disconnect` in order to disconnect before
-the widget is destroyed.</div>
+        <div class="jsdoc-return-description"><p>A handle that can be passed to <code>disconnect</code> in order to disconnect before
+the widget is destroyed.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var btn = new Button();
-  // when foo.bar() is called, call the listener we&#39;re going to
-  // provide in the scope of btn
-  btn.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var btn = new Button();
+// when foo.bar() is called, call the listener we&#39;re going to
+// provide in the scope of btn
+btn.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.toString());
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -1895,9 +1914,10 @@ widgets yet.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Used by widgets to signal that a synthetic event occurred, ex:</p>
-<pre><code>  myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</code></pre>
-<p></p>
+        <div class="jsdoc-full-summary"><p>Used by widgets to signal that a synthetic event occurred, ex:
+
+</p>
+<pre><code>myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</code></pre>
 <p>Emits an event on this.domNode named type.toLowerCase(), based on eventObj.
 Also calls onType() method, if present, and returns value from that method.
 By default passes eventObj to callback, but will pass callbackArgs instead, if specified.
@@ -2129,8 +2149,11 @@ and false if not</p>
 already removed/destroyed manually.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The array of specified handles, so you can do for example:
-|    var handle = this.own(on(...))[0];</div>
+        <div class="jsdoc-return-description"><p>The array of specified handles, so you can do for example:
+
+</p>
+<pre><code>var handle = this.own(on(...))[0];</code></pre>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
@@ -2174,32 +2197,33 @@ the position argument can be a numeric index or a string
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dijit/_WidgetBase">dijit/_WidgetBase</a> | function</span></div>
-        <div class="jsdoc-return-description">Provides a useful return of the newly created dijit._Widget instance so you
-can "chain" this function by instantiating, placing, then saving the return value
-to a variable.</div>
+        <div class="jsdoc-return-description"><p>Provides a useful return of the newly created dijit._Widget instance so you
+can &quot;chain&quot; this function by instantiating, placing, then saving the return value
+to a variable.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // create a Button with no srcNodeRef, and place it in the body:
-  var button = new Button({ label:&quot;click&quot; }).placeAt(win.body());
-  // now, &#39;button&#39; is still the widget reference to the newly created button
-  button.on(&quot;click&quot;, function(e){ console.log(&#39;click&#39;); }));</code></pre>
+            <h3>Example 1</h3><pre><code>// create a Button with no srcNodeRef, and place it in the body:
+var button = new Button({ label:&quot;click&quot; }).placeAt(win.body());
+// now, &#39;button&#39; is still the widget reference to the newly created button
+button.on(&quot;click&quot;, function(e){ console.log(&#39;click&#39;); }));</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // create a button out of a node with id=&quot;src&quot; and append it to id=&quot;wrapper&quot;:
-  var button = new Button({},&quot;src&quot;).placeAt(&quot;wrapper&quot;);</code></pre>
+            <h3>Example 2</h3><pre><code>// create a button out of a node with id=&quot;src&quot; and append it to id=&quot;wrapper&quot;:
+var button = new Button({},&quot;src&quot;).placeAt(&quot;wrapper&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code>  // place a new button as the first element of some div
-  var button = new Button({ label:&quot;click&quot; }).placeAt(&quot;wrapper&quot;,&quot;first&quot;);</code></pre>
+            <h3>Example 3</h3><pre><code>// place a new button as the first element of some div
+var button = new Button({ label:&quot;click&quot; }).placeAt(&quot;wrapper&quot;,&quot;first&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  // create a contentpane and add it to a TabContainer
-  var tc = dijit.byId(&quot;myTabs&quot;);
-  new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(tc)</code></pre>
+            <h3>Example 4</h3><pre><code>// create a contentpane and add it to a TabContainer
+var tc = dijit.byId(&quot;myTabs&quot;);
+new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(tc)</code></pre>
 
           </div>
         </div>
@@ -2277,7 +2301,8 @@ Should be of format: {scheme: <code>some text or null</code>, term: <code>some t
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_removeChild"></a><span class="functionIcon">removeChild</span><span class="parameters">(widget)</span> 
@@ -2322,12 +2347,12 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
 </p>
 <p>set() may also be called with a hash of name/value pairs, ex:
 
+
 </p>
-<pre><code>  myWidget.set({
+<pre><code>myWidget.set({
     foo: &quot;Howdy&quot;,
     bar: 3
-  });</pre></code>
-<p></p>
+});</pre></code>
 <p>This is equivalent to calling <code>set(foo, &quot;Howdy&quot;)</code> and <code>set(bar, 3)</code></p>
 </div>
         <table class="jsdoc-parameters">
@@ -2403,7 +2428,8 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_setFeedFromUrl"></a><span class="functionIcon">setFeedFromUrl</span><span class="parameters">(url)</span> 
@@ -2427,7 +2453,8 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Nothing.</div>
+        <div class="jsdoc-return-description"><p>Nothing.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_atom_widget_FeedViewer_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
@@ -2479,12 +2506,12 @@ implicit use of this widget as the target object.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var btn = new Button();
-  // when /my/topic is published, this button changes its label to
-  // be the parameter of the topic.
-  btn.subscribe(&quot;/my/topic&quot;, function(v){
+            <h3>Example 1</h3><pre><code>var btn = new Button();
+// when /my/topic is published, this button changes its label to
+// be the parameter of the topic.
+btn.subscribe(&quot;/my/topic&quot;, function(v){
     this.set(&quot;label&quot;, v);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -2571,10 +2598,13 @@ second argument as the old value and the third argument as the new value.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+        <div class="jsdoc-return-description"><p>An object handle for the watch. The unwatch method of this object
 can be used to discontinue watching this property:
-|  var watchHandle = obj.watch("foo", callback);
-|  watchHandle.unwatch(); // callback won't be called now</div>
+
+</p>
+<pre><code>var watchHandle = obj.watch(&quot;foo&quot;, callback);
+watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
+</div>
       </div>
     </div>
     <h2>Events</h2>

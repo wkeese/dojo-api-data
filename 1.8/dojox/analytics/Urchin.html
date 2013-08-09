@@ -24,7 +24,7 @@ analytics system, you MUST include dojox.analytics._base BEFORE dojox.analytics.
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/analytics/Urchin<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Urchin<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/analytics/Urchin">dojox/analytics/Urchin</a></div>
 <div class="jsdoc-summary"><p>Initialize this Urchin instance. Immediately starts the load
@@ -44,32 +44,29 @@ potentially widget parsing.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/analytics/Urchin.html" target="_blank">dojox/analytics/Urchin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  // create the tracker programatically:
-  var tracker = new dojox.analytics.Urchin({ acct:&quot;UA-123456-7&quot; });</code></pre>
-<p></p>
+    <h3>Example 1</h3><pre><code>// create the tracker programatically:
+var tracker = new dojox.analytics.Urchin({ acct:&quot;UA-123456-7&quot; });</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  // define the urchin djConfig option:
-  var djConfig = { urchin: &quot;UA-123456-7&quot; };
+    <h3>Example 2</h3><pre><code>// define the urchin djConfig option:
+var djConfig = { urchin: &quot;UA-123456-7&quot; };
 
-  // and in markup:
-  &lt;div dojoType=&quot;dojox.analytics.Urchin&quot;&gt;&lt;/div&gt;
-  // or code:
-  new dojox.analytics.Urchin();</code></pre>
-<p></p>
+// and in markup:
+&lt;div dojoType=&quot;dojox.analytics.Urchin&quot;&gt;&lt;/div&gt;
+// or code:
+new dojox.analytics.Urchin();</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>  // create and define all analytics with one tag.
-  &lt;div dojoType=&quot;dojox.analytics.Urchin&quot; acct=&quot;UA-12345-67&quot;&gt;&lt;/div&gt;</code></pre>
+    <h3>Example 3</h3><pre><code>// create and define all analytics with one tag.
+&lt;div dojoType=&quot;dojox.analytics.Urchin&quot; acct=&quot;UA-12345-67&quot;&gt;&lt;/div&gt;</code></pre>
 
   </div>
 </div>
@@ -157,15 +154,17 @@ manually if overloading this method.
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>Create an Urchin tracker that will track a specific page on init
-after page load (or parsing, if parseOnLoad is true)</p>
-<pre><code>  dojo.addOnLoad(function(){
+after page load (or parsing, if parseOnLoad is true)
+
+</p>
+<pre><code>dojo.addOnLoad(function(){
     new dojox.ananlytics.Urchin({
-      acct:&quot;UA-12345-67&quot;,
-      GAonLoad: function(){
-        this.trackPageView(&quot;/custom-page&quot;);
-      }
+        acct:&quot;UA-12345-67&quot;,
+        GAonLoad: function(){
+            this.trackPageView(&quot;/custom-page&quot;);
+        }
     });
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -195,13 +194,15 @@ Ajax-like notification of updates.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Track clicks from a container of anchors and populate a <code>ContentPane</code></p>
-<pre><code>  // &#39;tracker&#39; is our `Urchin` instance, pane is the `ContentPane` ref.
-  dojo.connect(container, &quot;onclick&quot;, function(e){
+            <h3>Example 1</h3><p>Track clicks from a container of anchors and populate a <code>ContentPane</code>
+
+</p>
+<pre><code>// &#39;tracker&#39; is our `Urchin` instance, pane is the `ContentPane` ref.
+dojo.connect(container, &quot;onclick&quot;, function(e){
     var ref = dojo.attr(e.target, &quot;href&quot;);
     tracker.trackPageView(ref);
     pane.attr(&quot;href&quot;, ref);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>

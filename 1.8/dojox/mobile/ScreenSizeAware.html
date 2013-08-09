@@ -14,7 +14,7 @@ single view layout when the screen size is detected as phone size.
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/mobile/ScreenSizeAware<span class="parameters">(options);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ScreenSizeAware<span class="parameters">(options);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mobile/ScreenSizeAware">dojox/mobile/ScreenSizeAware</a></div>
 <div class="jsdoc-summary"><p>Creates a new instance of the class.</p>
@@ -34,31 +34,30 @@ single view layout when the screen size is detected as phone size.
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/mobile/ScreenSizeAware.html" target="_blank">dojox/mobile/ScreenSizeAware reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  &lt;span data-dojo-type=&quot;dojox.mobile.ScreenSizeAware&quot;&gt;&lt;/span&gt;
-  &lt;div data-dojo-type=&quot;dojox.mobile.FixedSplitter&quot; data-dojo-props=&#39;orientation:&quot;H&quot;&#39;&gt;
-    &lt;div data-dojo-type=&quot;dojox.mobile.Container&quot; style=&quot;width:300px;&quot;&gt;
-      &lt;div id=&quot;leftView&quot; data-dojo-type=&quot;dojox.mobile.ScrollableView&quot;&gt;
-        &lt;h1 data-dojo-type=&quot;dojox.mobile.Heading&quot; data-dojo-props=&#39;fixed:&quot;top&quot;&#39;&gt;Left Pane&lt;/h1&gt;
-        &lt;ul data-dojo-type=&quot;dojox.mobile.EdgeToEdgeList&quot; data-dojo-props=&#39;stateful:true&#39;&gt;
-          &lt;li data-dojo-type=&quot;dojox.mobile.ListItem&quot; data-dojo-props=&#39;label:&quot;View1&quot;, moveTo:&quot;view1&quot;&#39;&gt;&lt;/li&gt;
-          ....
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div data-dojo-type=&quot;dojox.mobile.Container&quot;&gt;
-      &lt;div id=&quot;view1&quot; data-dojo-type=&quot;dojox.mobile.ScrollableView&quot;&gt;
-        &lt;h1 data-dojo-type=&quot;dojox.mobile.Heading&quot; data-dojo-props=&#39;fixed:&quot;top&quot;, back:&quot;Home&quot;, moveTo:&quot;leftView&quot;&#39;&gt;Right Pane&lt;/h1&gt;
+    <h3>Example 1</h3><pre><code>&lt;span data-dojo-type=&quot;dojox.mobile.ScreenSizeAware&quot;&gt;&lt;/span&gt;
+&lt;div data-dojo-type=&quot;dojox.mobile.FixedSplitter&quot; data-dojo-props=&#39;orientation:&quot;H&quot;&#39;&gt;
+  &lt;div data-dojo-type=&quot;dojox.mobile.Container&quot; style=&quot;width:300px;&quot;&gt;
+    &lt;div id=&quot;leftView&quot; data-dojo-type=&quot;dojox.mobile.ScrollableView&quot;&gt;
+      &lt;h1 data-dojo-type=&quot;dojox.mobile.Heading&quot; data-dojo-props=&#39;fixed:&quot;top&quot;&#39;&gt;Left Pane&lt;/h1&gt;
+      &lt;ul data-dojo-type=&quot;dojox.mobile.EdgeToEdgeList&quot; data-dojo-props=&#39;stateful:true&#39;&gt;
+        &lt;li data-dojo-type=&quot;dojox.mobile.ListItem&quot; data-dojo-props=&#39;label:&quot;View1&quot;, moveTo:&quot;view1&quot;&#39;&gt;&lt;/li&gt;
         ....
-      &lt;/div&gt;
+      &lt;/ul&gt;
     &lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+  &lt;/div&gt;
+  &lt;div data-dojo-type=&quot;dojox.mobile.Container&quot;&gt;
+    &lt;div id=&quot;view1&quot; data-dojo-type=&quot;dojox.mobile.ScrollableView&quot;&gt;
+      &lt;h1 data-dojo-type=&quot;dojox.mobile.Heading&quot; data-dojo-props=&#39;fixed:&quot;top&quot;, back:&quot;Home&quot;, moveTo:&quot;leftView&quot;&#39;&gt;Right Pane&lt;/h1&gt;
+      ....
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
   </div>
 </div>
@@ -271,8 +270,8 @@ single view layout when the screen size is detected as phone size.
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/ScreenSizeAware" class="jsdoc-link">dojox/mobile/ScreenSizeAware</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Places the list widget. If the current mode is &quot;phone&quot;, it
-places the list widget in the right pane, otherwise in the left pane.</p>
+        <div class="jsdoc-full-summary"><p>Places the list widget. If the current mode is &quot;phone&quot;, it 
+places the list widget in the right pane, otherwise in the left pane. </p>
 </div>
       </div>
       <div class="jsdoc-field">
@@ -308,7 +307,7 @@ places the list widget in the right pane, otherwise in the left pane.</p>
             <td class="jsdoc-param-name">mode</td>
             <td class="jsdoc-param-type">String</td>
             <td class="jsdoc-param-description"><p>If this argument is &quot;phone&quot;, sets the UI in phone mode, otherwise 
-in tablet mode.     </p>
+in tablet mode.      </p>
  
             </td>
           </tr>
@@ -343,7 +342,7 @@ in tablet mode.     </p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/ScreenSizeAware" class="jsdoc-link">dojox/mobile/ScreenSizeAware</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Updates the transition property of the items in the left-side widget.</p>
+        <div class="jsdoc-full-summary"><p>Updates the transition property of the items in the left-side widget. </p>
 </div>
       </div>
     </div>

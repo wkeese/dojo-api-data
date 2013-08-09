@@ -1,7 +1,6 @@
 
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/date/hebrew.numerals</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/date/hebrew.numerals<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<p>See the <a href="/reference-guide/1.8/dojox/date.html" target="_blank">dojox/date/hebrew.numerals reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -58,8 +57,8 @@ Can be formatted with or without geresh &#x05f3;</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.hebrew.Date();
-  document.writeln(dojox.date.hebrew.numerals.getDayHebrewLetters(date1.getDay());</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.hebrew.Date();
+document.writeln(dojox.date.hebrew.numerals.getDayHebrewLetters(date1.getDay());</code></pre>
 
           </div>
         </div>
@@ -87,8 +86,8 @@ Can be formatted with or without geresh &#x05f3;</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.hebrew.Date();
-  document.writeln(dojox.date.hebrew.numerals.getMonthHebrewLetters(date1.getMonth());</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.hebrew.Date();
+document.writeln(dojox.date.hebrew.numerals.getMonthHebrewLetters(date1.getMonth());</code></pre>
 
           </div>
         </div>
@@ -116,8 +115,8 @@ Can be formatted with or without geresh &#x05f3;</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.hebrew.Date();
-  document.writeln(dojox.date.hebrew.numerals.getYearHebrewLetters(date1.getFullYear());</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.hebrew.Date();
+document.writeln(dojox.date.hebrew.numerals.getYearHebrewLetters(date1.getFullYear());</code></pre>
 
           </div>
         </div>
@@ -145,8 +144,8 @@ Can be formatted with or without geresh &#x05f3;</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date1 = new dojox.date.hebrew.Date();
-  date1.setDate(dojox.date.hebrew.numerals.parseDayHebrewLetters(&#39;\u05d0&#39;)); // ALEPH</code></pre>
+            <h3>Example 1</h3><pre><code>var date1 = new dojox.date.hebrew.Date();
+date1.setDate(dojox.date.hebrew.numerals.parseDayHebrewLetters(&#39;\u05d0&#39;)); // ALEPH</code></pre>
 
           </div>
         </div>
@@ -177,9 +176,9 @@ setMonth, do correction for leap year</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date = new dojox.date.hebrew.Date();
-              var number = dojox.date.hebrew.numerals.parseMonthHebrewLetters(&quot;\u05ea\u05de\u05d5\u05d6&quot;); // Tammuz
-  date.setMonth(number);</code></pre>
+            <h3>Example 1</h3><pre><code>var date = new dojox.date.hebrew.Date();
+            var number = dojox.date.hebrew.numerals.parseMonthHebrewLetters(&quot;\u05ea\u05de\u05d5\u05d6&quot;); // Tammuz
+date.setMonth(number);</code></pre>
 
           </div>
         </div>
@@ -207,7 +206,7 @@ setMonth, do correction for leap year</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var date = new dojox.date.hebrew.Date();
+            <h3>Example 1</h3><pre><code>var date = new dojox.date.hebrew.Date();
             date.setFullYear(dojox.date.hebrew.numerals.parseYearHebrewLetters(&#39;\u05ea\u05e9\u05e1\u05f4\u05d7&#39;));</code></pre>
 
           </div>

@@ -2,14 +2,14 @@
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/S3Store</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/S3Store<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/data/JsonRestStore" class="jsdoc-link">dojox/data/JsonRestStore,   </a>
+  <label>Extends </label><a href="/api/1.8/dojox/data/JsonRestStore" class="jsdoc-link">dojox/data/JsonRestStore</a>
 </div>
 <div class="jsdoc-full-summary"><p>S3JsonRestStore is an extension of JsonRestStore to handle
 Amazon&#39;s S3 service using JSON data</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/S3Store<span class="parameters">(options);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new S3Store<span class="parameters">(options);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/JsonRestStore">dojox/data/JsonRestStore</a></div>
 <div class="jsdoc-summary"><p>The JsonRestStore will cause all saved modifications to be sent to the server using Rest commands (PUT, POST, or DELETE).
@@ -22,16 +22,16 @@ control access to resources.
 </p>
 <ul>
 <li>GET - Retrieve an object or array/result set, this can be by id (like /table/1) or with a
-query (like /table/?name=foo).</li>
+  query (like /table/?name=foo).</li>
 <li>PUT - This should modify a object, the URL will correspond to the id (like /table/1), and the body will
-provide the modified object</li>
+  provide the modified object</li>
 <li>POST - This should create a new object. The URL will correspond to the target store (like /table/)
-and the body should be the properties of the new object. The server&#39;s response should include a
-Location header that indicates the id of the newly created object. This id will be used for subsequent
-PUT and DELETE requests. JsonRestStore also includes a Content-Location header that indicates
-the temporary randomly generated id used by client, and this location is used for subsequent
-PUT/DELETEs if no Location header is provided by the server or if a modification is sent prior
-to receiving a response from the server.</li>
+  and the body should be the properties of the new object. The server&#39;s response should include a
+  Location header that indicates the id of the newly created object. This id will be used for subsequent
+  PUT and DELETE requests. JsonRestStore also includes a Content-Location header that indicates
+  the temporary randomly generated id used by client, and this location is used for subsequent
+  PUT/DELETEs if no Location header is provided by the server or if a modification is sent prior
+  to receiving a response from the server.</li>
 <li>DELETE - This should delete an object by id.</li>
 </ul>
 <p>These articles include more detailed information on using the JsonRestStore:
@@ -98,7 +98,6 @@ callbacks are unnecessary</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data/S3Store.html" target="_blank">dojox/data/S3Store reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
@@ -254,7 +253,7 @@ does not support paging, and the response is the full set of items, where the
 total count is equal to the numer of items returned. If the server does support
 paging, an estimateCountFactor of 2 is a good value for estimating the total count
 It is also possible to override _processResults if the server can provide an exact
-total count.  </p>
+total count.    </p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -409,7 +408,7 @@ This will prevent that object from being saved to the server on the next save</p
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/JsonRestStore" class="jsdoc-link">dojox/data/JsonRestStore</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>adds an item to the list of dirty items.  This item
+        <div class="jsdoc-full-summary"><p>adds an item to the list of dirty items.    This item
 contains a reference to the item itself as well as a
 cloned and trimmed version of old item for use with
 revert.</p>
@@ -473,16 +472,16 @@ control access to resources.
 </p>
 <ul>
 <li>GET - Retrieve an object or array/result set, this can be by id (like /table/1) or with a
-query (like /table/?name=foo).</li>
+  query (like /table/?name=foo).</li>
 <li>PUT - This should modify a object, the URL will correspond to the id (like /table/1), and the body will
-provide the modified object</li>
+  provide the modified object</li>
 <li>POST - This should create a new object. The URL will correspond to the target store (like /table/)
-and the body should be the properties of the new object. The server&#39;s response should include a
-Location header that indicates the id of the newly created object. This id will be used for subsequent
-PUT and DELETE requests. JsonRestStore also includes a Content-Location header that indicates
-the temporary randomly generated id used by client, and this location is used for subsequent
-PUT/DELETEs if no Location header is provided by the server or if a modification is sent prior
-to receiving a response from the server.</li>
+  and the body should be the properties of the new object. The server&#39;s response should include a
+  Location header that indicates the id of the newly created object. This id will be used for subsequent
+  PUT and DELETE requests. JsonRestStore also includes a Content-Location header that indicates
+  the temporary randomly generated id used by client, and this location is used for subsequent
+  PUT/DELETEs if no Location header is provided by the server or if a modification is sent prior
+  to receiving a response from the server.</li>
 <li>DELETE - This should delete an object by id.</li>
 </ul>
 <p>These articles include more detailed information on using the JsonRestStore:
@@ -553,38 +552,51 @@ callbacks are unnecessary</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>A JsonRestStore takes a REST service or a URL and uses it the remote communication for a
-read/write dojo.data implementation. A JsonRestStore can be created with a simple URL like:</p>
-<pre><code>  new JsonRestStore({target:&quot;/MyData/&quot;});</code></pre>
+read/write dojo.data implementation. A JsonRestStore can be created with a simple URL like:
+
+</p>
+<pre><code>new JsonRestStore({target:&quot;/MyData/&quot;});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>To use a JsonRestStore with a service, you should create a
-service with a REST transport. This can be configured with an SMD:</p>
-<pre><code>  {
+service with a REST transport. This can be configured with an SMD:
+
+</p>
+<pre><code>{
     services: {
-      jsonRestStore: {
-        transport: &quot;REST&quot;,
-        envelope: &quot;URL&quot;,
-        target: &quot;store.php&quot;,
-        contentType:&quot;application/json&quot;,
-        parameters: [
-          {name: &quot;location&quot;, type: &quot;string&quot;, optional: true}
-        ]
-      }
+        jsonRestStore: {
+            transport: &quot;REST&quot;,
+            envelope: &quot;URL&quot;,
+            target: &quot;store.php&quot;,
+            contentType:&quot;application/json&quot;,
+            parameters: [
+                {name: &quot;location&quot;, type: &quot;string&quot;, optional: true}
+            ]
+        }
     }
-  }</code></pre>
-<p>The SMD can then be used to create service, and the service can be passed to a JsonRestStore. For example:</p>
-<pre><code>  var myServices = new dojox.rpc.Service(dojo.moduleUrl(&quot;dojox.rpc.tests.resources&quot;, &quot;test.smd&quot;));
-  var jsonStore = new dojox.data.JsonRestStore({service:myServices.jsonRestStore});</code></pre>
+}</code></pre>
+<p>The SMD can then be used to create service, and the service can be passed to a JsonRestStore. For example:
+
+
+</p>
+<pre><code>var myServices = new dojox.rpc.Service(dojo.moduleUrl(&quot;dojox.rpc.tests.resources&quot;, &quot;test.smd&quot;));
+var jsonStore = new dojox.data.JsonRestStore({service:myServices.jsonRestStore});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>The JsonRestStore also supports lazy loading. References can be made to objects that have not been loaded.
-For example if a service returned:</p>
-<pre><code>  {&quot;name&quot;:&quot;Example&quot;,&quot;lazyLoadedObject&quot;:{&quot;$ref&quot;:&quot;obj2&quot;}}</code></pre>
-<p>And this object has accessed using the dojo.data API:</p>
-<pre><code>  var obj = jsonStore.getValue(myObject,&quot;lazyLoadedObject&quot;);</code></pre>
-<p>The object would automatically be requested from the server (with an object id of &quot;obj2&quot;).</p>
+For example if a service returned:
+
+</p>
+<pre><code>{&quot;name&quot;:&quot;Example&quot;,&quot;lazyLoadedObject&quot;:{&quot;$ref&quot;:&quot;obj2&quot;}}</code></pre>
+<p>And this object has accessed using the dojo.data API:
+
+
+</p>
+<pre><code>var obj = jsonStore.getValue(myObject,&quot;lazyLoadedObject&quot;);</code></pre>
+<p>The object would automatically be requested from the server (with an object id of &quot;obj2&quot;).
+</p>
 
           </div>
         </div>
@@ -767,7 +779,7 @@ it as an array.</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>returns the attributes which are used to make up the
-identity of an item.  Basically returns this.idAttribute</p>
+identity of an item.    Basically returns this.idAttribute</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -904,7 +916,7 @@ identity of an item.  Basically returns this.idAttribute</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Gets the value of an item&#39;s &#39;property&#39; and returns
-it.  If this value is an array it is just returned,
+it. If this value is an array it is just returned,
 if not, the value is added to an array and that is returned.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -1061,12 +1073,12 @@ a lazy value as well (doesn&#39;t need to be an item).</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  store.loadItem({
+            <h3>Example 1</h3><pre><code>store.loadItem({
     item: item, // this item may or may not be loaded
     onItem: function(item){
-      // do something with the item
+        // do something with the item
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -1119,8 +1131,8 @@ Takes two parameters, data, and options.</p>
             <td class="jsdoc-param-type">undefined</td>
             <td class="jsdoc-param-description"><ul>
 <li>global:
-This will cause the revert to undo all the changes for all
-JsonRestStores in a single operation.</li>
+  This will cause the revert to undo all the changes for all
+  JsonRestStores in a single operation.</li>
 </ul>
  
             </td>
@@ -1145,27 +1157,27 @@ JsonRestStores in a single operation.</li>
             <td class="jsdoc-param-type">undefined</td>
             <td class="jsdoc-param-description"><ul>
 <li>global:
-This will cause the save to commit the dirty data for all
-JsonRestStores as a single transaction.</li>
+  This will cause the save to commit the dirty data for all
+  JsonRestStores as a single transaction.</li>
 <li>revertOnError:
-This will cause the changes to be reverted if there is an
-error on the save. By default a revert is executed unless
-a value of false is provide for this parameter.</li>
+  This will cause the changes to be reverted if there is an
+  error on the save. By default a revert is executed unless
+  a value of false is provide for this parameter.</li>
 <li>incrementalUpdates:
-For items that have been updated, if this is enabled, the server will be sent a POST request
-with a JSON object containing the changed properties. By default this is
-not enabled, and a PUT is used to deliver an update, and will include a full
-serialization of all the properties of the item/object.
-If this is true, the POST request body will consist of a JSON object with
-only the changed properties. The incrementalUpdates parameter may also
-be a function, in which case it will be called with the updated and previous objects
-and an object update representation can be returned.</li>
+  For items that have been updated, if this is enabled, the server will be sent a POST request
+  with a JSON object containing the changed properties. By default this is
+  not enabled, and a PUT is used to deliver an update, and will include a full
+  serialization of all the properties of the item/object.
+  If this is true, the POST request body will consist of a JSON object with
+  only the changed properties. The incrementalUpdates parameter may also
+  be a function, in which case it will be called with the updated and previous objects
+  and an object update representation can be returned.</li>
 <li>alwaysPostNewItems:
-If this is true, new items will always be sent with a POST request. By default
-this is not enabled, and the JsonRestStore will send a POST request if
-the item does not include its identifier (expecting server assigned location/
-identifier), and will send a PUT request if the item does include its identifier
-(the PUT will be sent to the URI corresponding to the provided identifier).</li>
+  If this is true, new items will always be sent with a POST request. By default
+  this is not enabled, and the JsonRestStore will send a POST request if
+  the item does not include its identifier (expecting server assigned location/
+  identifier), and will send a PUT request if the item does include its identifier
+  (the PUT will be sent to the URI corresponding to the provided identifier).</li>
 </ul>
  
             </td>

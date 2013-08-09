@@ -24,86 +24,84 @@ causes conflict. The v1.8 format has no such limitation.
 <div class="jsdoc-examples">
   <h2>Examples</h2>
   <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  // v1.7 format
-  {
-    &quot;dojox.mobile.View&quot;: {
-      &quot;@id&quot;: &quot;view1&quot;,
-      &quot;dojox.mobile.Heading&quot;: {
-        &quot;@back&quot;: &quot;Home&quot;,
-        &quot;@moveTo&quot;: &quot;home&quot;,
-        &quot;@label&quot;: &quot;view1.json&quot;
-      },
-      &quot;dojox.mobile.EdgeToEdgeList&quot;: {
-        &quot;dojox.mobile.ListItem&quot;: [{
-          &quot;@label&quot;: &quot;Jack Coleman&quot;
-        }, {
-          &quot;@label&quot;: &quot;James Evans&quot;
-        }, {
-          &quot;@label&quot;: &quot;Jason Griffin&quot;
-        }]
-      }
+    <h3>Example 1</h3><pre><code>// v1.7 format
+{
+  &quot;dojox.mobile.View&quot;: {
+    &quot;@id&quot;: &quot;view1&quot;,
+    &quot;dojox.mobile.Heading&quot;: {
+      &quot;@back&quot;: &quot;Home&quot;,
+      &quot;@moveTo&quot;: &quot;home&quot;,
+      &quot;@label&quot;: &quot;view1.json&quot;
+    },
+    &quot;dojox.mobile.EdgeToEdgeList&quot;: {
+      &quot;dojox.mobile.ListItem&quot;: [{
+        &quot;@label&quot;: &quot;Jack Coleman&quot;
+      }, {
+        &quot;@label&quot;: &quot;James Evans&quot;
+      }, {
+        &quot;@label&quot;: &quot;Jason Griffin&quot;
+      }]
     }
   }
-</code></pre>
+}</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  // v1.8 format
-  {
-    &quot;class&quot;: &quot;dojox.mobile.View&quot;,
-    &quot;@id&quot;: &quot;view1&quot;,
-    &quot;children&quot;: [
+    <h3>Example 2</h3><pre><code>// v1.8 format
+{
+  &quot;class&quot;: &quot;dojox.mobile.View&quot;,
+  &quot;@id&quot;: &quot;view1&quot;,
+  &quot;children&quot;: [
 
-      {
-        &quot;class&quot;: &quot;dojox.mobile.Heading&quot;,
-        &quot;@back&quot;: &quot;Home&quot;,
-        &quot;@moveTo&quot;: &quot;home&quot;,
-        &quot;@label&quot;: &quot;view1.json&quot;
-      },
+    {
+      &quot;class&quot;: &quot;dojox.mobile.Heading&quot;,
+      &quot;@back&quot;: &quot;Home&quot;,
+      &quot;@moveTo&quot;: &quot;home&quot;,
+      &quot;@label&quot;: &quot;view1.json&quot;
+    },
 
-      {
-        &quot;class&quot;: &quot;dojox.mobile.EdgeToEdgeList&quot;,
-        &quot;children&quot;: [
-          {
-            &quot;class&quot;: &quot;dojox.mobile.ListItem&quot;,
-            &quot;@label&quot;: &quot;Jack Coleman&quot;
-          },
-          {
-            &quot;class&quot;: &quot;dojox.mobile.ListItem&quot;,
-            &quot;@label&quot;: &quot;James Evans&quot;
-          },
-          {
-            &quot;class&quot;: &quot;dojox.mobile.ListItem&quot;,
-            &quot;@label&quot;: &quot;Jason Griffin&quot;
-          }
-        ]
-      }
+    {
+      &quot;class&quot;: &quot;dojox.mobile.EdgeToEdgeList&quot;,
+      &quot;children&quot;: [
+        {
+          &quot;class&quot;: &quot;dojox.mobile.ListItem&quot;,
+          &quot;@label&quot;: &quot;Jack Coleman&quot;
+        },
+        {
+          &quot;class&quot;: &quot;dojox.mobile.ListItem&quot;,
+          &quot;@label&quot;: &quot;James Evans&quot;
+        },
+        {
+          &quot;class&quot;: &quot;dojox.mobile.ListItem&quot;,
+          &quot;@label&quot;: &quot;Jason Griffin&quot;
+        }
+      ]
+    }
 
-    ]
-  }
-</code></pre>
+  ]
+}</code></pre>
 
   </div>
   <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>  // SpinWheel in v1.8 format
-  {
-    &quot;class&quot;: &quot;dojox.mobile.View&quot;,
-    &quot;@id&quot;: &quot;view1&quot;,
-    &quot;children&quot;: [
-      {
-        &quot;class&quot;: &quot;dojox.mobile.SpinWheel&quot;,
-        &quot;@id&quot;: &quot;spin1&quot;,
-        &quot;@style&quot;: {&quot;margin&quot;:&quot;10px auto&quot;,&quot;width&quot;:&quot;304px&quot;},
-        &quot;children&quot;: [
-          {
-            &quot;class&quot;: &quot;dojox.mobile.SpinWheelSlot&quot;,
-            &quot;@labels&quot;: &quot;A,B,C,D,E&quot;,
-            &quot;@style&quot;: {&quot;textAlign&quot;:&quot;center&quot;,&quot;width&quot;:&quot;300px&quot;}
-          }
-        ]
-      }
-    ]
-  }</code></pre>
+    <h3>Example 3</h3><pre><code>// SpinWheel in v1.8 format
+{
+  &quot;class&quot;: &quot;dojox.mobile.View&quot;,
+  &quot;@id&quot;: &quot;view1&quot;,
+  &quot;children&quot;: [
+    {
+      &quot;class&quot;: &quot;dojox.mobile.SpinWheel&quot;,
+      &quot;@id&quot;: &quot;spin1&quot;,
+      &quot;@style&quot;: {&quot;margin&quot;:&quot;10px auto&quot;,&quot;width&quot;:&quot;304px&quot;},
+      &quot;children&quot;: [
+        {
+          &quot;class&quot;: &quot;dojox.mobile.SpinWheelSlot&quot;,
+          &quot;@labels&quot;: &quot;A,B,C,D,E&quot;,
+          &quot;@style&quot;: {&quot;textAlign&quot;:&quot;center&quot;,&quot;width&quot;:&quot;300px&quot;}
+        }
+      ]
+    }
+  ]
+}</code></pre>
 
   </div>
 </div>

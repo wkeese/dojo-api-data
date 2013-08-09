@@ -8,19 +8,19 @@ The following attributes are supported on each item:
 
 </p>
 <ul>
-<li>title - The feed entry title.</li>
-<li>link - The URL for the HTML version of the feed entry.</li>
-<li>content - The full content of the blog post, in HTML format</li>
-<li>summary - A snippet of information about the feed entry, in plain text</li>
-<li>published - The string date on which the entry was published.
-You can parse the date with new Date(store.getValue(item, &quot;published&quot;)</li>
-<li>categories - An array of string tags for the entry</li>
+<li>title - The feed entry title. </li>
+<li>link - The URL for the HTML version of the feed entry. </li>
+<li>content - The full content of the blog post, in HTML format </li>
+<li>summary - A snippet of information about the feed entry, in plain text </li>
+<li>published - The string date on which the entry was published.<pre><code>      You can parse the date with new Date(store.getValue(item, &quot;published&quot;) </pre></code>
+</li>
+<li>categories - An array of string tags for the entry </li>
 </ul>
 <p>The query accepts one parameter: url - The URL of the feed to retrieve</p>
 </div>
 <div class="jsdoc-function-information"> 
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/data/GoogleFeedStore<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new GoogleFeedStore<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/GoogleSearchStore">dojox/data/GoogleSearchStore</a></div>
 <div class="jsdoc-summary"><p>The GoogleSearchStore is a Datastore interface to
@@ -46,7 +46,6 @@ the Google search service. The constructor accepts the following arguments:
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data/GoogleFeedStore.html" target="_blank">dojox/data/GoogleFeedStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-fieldlist"></div>
 </div>
