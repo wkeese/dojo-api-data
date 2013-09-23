@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/json/query</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/json/query" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/json/query.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojox/json/query<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Performs a JSONQuery on the provided object and returns the results.
 If no object is provided (just a query), it returns a &quot;compiled&quot; function that evaluates objects
@@ -96,20 +103,20 @@ in JavaScript.</li>
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/json/query.html" target="_blank">dojox/json/query reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>dojox.json.query(&quot;foo&quot;,{foo:&quot;bar&quot;})</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>dojox.json.query(&quot;foo&quot;,{foo:&quot;bar&quot;})</code></pre>
 <p>This will return &quot;bar&quot;.
 
 </p>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>evaluator = dojox.json.query(&quot;?foo=&#39;bar&#39;&amp;rating&gt;3&quot;);</code></pre>
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>evaluator = dojox.json.query(&quot;?foo=&#39;bar&#39;&amp;rating&gt;3&quot;);</code></pre>
 <p>This creates a function that finds all the objects in an array with a property
 
 </p>
@@ -124,23 +131,25 @@ than 3.
 </p>
 <pre><code>{foo:&quot;bar&quot;,rating:4}</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>evaluator = dojox.json.query(&quot;$[?price&lt;15.00][\rating][0:10]&quot;);</code></pre>
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><pre><code>evaluator = dojox.json.query(&quot;$[?price&lt;15.00][\rating][0:10]&quot;);</code></pre>
 <p>This finds objects in array with a price less than 15.00 and sorts then
 
 </p>
 <p>by rating, highest rated first, and returns the first ten items in from this
 filtered and sorted list.</p>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_json_query_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, obj) <span>Performs a JSONQuery on the provided object and returns the results.</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_json_query_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, obj) <span>Performs a JSONQuery on the provided object and returns the results.</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -285,4 +294,4 @@ filtered and sorted list.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/json/query" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

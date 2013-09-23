@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/Deferred</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/Deferred" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/Deferred.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/Deferred<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Creates a new deferred. This API is preferred over
 <a class="jsdoc-link" href="/api/1.9/dojo/_base/Deferred">dojo/_base/Deferred</a>.</p>
@@ -29,41 +36,42 @@ The deferred is rejected with its return value, or a new
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/Deferred.html" target="_blank">dojo/Deferred reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_9dojo_Deferred_promise" class="inline-link"> promise </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceler) <span>Creates a new deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been canceled.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been resolved or rejected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the deferred has been rejected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the deferred has been resolved.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_progress" class="inline-link"> progress</a><span class="parameters">(</span>update, strict) <span>Emit a progress update on the deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_reject" class="inline-link"> reject</a><span class="parameters">(</span>error, strict) <span>Reject the deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>value, strict) <span>Resolve the deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_Deferred_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_9dojo_Deferred_promise" class="inline-link"> promise </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceler) <span>Creates a new deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been canceled.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been resolved or rejected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the deferred has been rejected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the deferred has been resolved.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_progress" class="inline-link"> progress</a><span class="parameters">(</span>update, strict) <span>Emit a progress update on the deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_reject" class="inline-link"> reject</a><span class="parameters">(</span>error, strict) <span>Reject the deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>value, strict) <span>Resolve the deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_Deferred_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -358,4 +366,4 @@ This can be used for chaining many asynchronous operations.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/Deferred" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

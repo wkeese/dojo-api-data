@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/_RowMapLayer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/_RowMapLayer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/_RowMapLayer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/_RowMapLayer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _RowMapLayer<span class="parameters">(grid);</span></div>
 </div>
@@ -20,62 +27,63 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer___enabled" class="inline-link"> __enabled </a><span>To control whether this layer is valid.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__originFetch" class="inline-link"> _originFetch </a><span>The original fetch function of the store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__store" class="inline-link"> _store </a><span>The wrapped store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_layerFuncName" class="inline-link"> layerFuncName </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_tags" class="inline-link"> tags </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_RowMapLayer" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>userRequest) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__getRowArrays" class="inline-link"> _getRowArrays</a><span class="parameters">(</span>rows) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__subFetch" class="inline-link"> _subFetch</a><span class="parameters">(</span>userRequest, rowArrays, index, result, map, oldOnComplete, start, count) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__unwrap" class="inline-link"> _unwrap</a><span class="parameters">(</span>nextLayer) <span>Do the actual unwrapping to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>store, funcName, layerFuncName, nextLayer) <span>Do the actual wrapping (or &#39;hacking&#39; if you like) to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_clearMapping" class="inline-link"> clearMapping</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_enabled" class="inline-link"> enabled</a><span class="parameters">(</span>toEnable) <span>The get/set function of the enabled status of this layer</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_name" class="inline-link"> name</a><span class="parameters">(</span>) <span>Get the name of this store layer.</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_originFetch" class="inline-link"> originFetch</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_setMapping" class="inline-link"> setMapping</a><span class="parameters">(</span>mapping) <span>Remember the row mapping.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__onDelete" class="inline-link"> _onDelete</a><span class="parameters">(</span>item) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer___enabled" class="inline-link"> __enabled </a><span>To control whether this layer is valid.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__originFetch" class="inline-link"> _originFetch </a><span>The original fetch function of the store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__store" class="inline-link"> _store </a><span>The wrapped store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_layerFuncName" class="inline-link"> layerFuncName </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_tags" class="inline-link"> tags </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_RowMapLayer" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>userRequest) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__getRowArrays" class="inline-link"> _getRowArrays</a><span class="parameters">(</span>rows) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__subFetch" class="inline-link"> _subFetch</a><span class="parameters">(</span>userRequest, rowArrays, index, result, map, oldOnComplete, start, count) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__unwrap" class="inline-link"> _unwrap</a><span class="parameters">(</span>nextLayer) <span>Do the actual unwrapping to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>store, funcName, layerFuncName, nextLayer) <span>Do the actual wrapping (or &#39;hacking&#39; if you like) to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_clearMapping" class="inline-link"> clearMapping</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_enabled" class="inline-link"> enabled</a><span class="parameters">(</span>toEnable) <span>The get/set function of the enabled status of this layer</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_name" class="inline-link"> name</a><span class="parameters">(</span>) <span>Get the name of this store layer.</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_originFetch" class="inline-link"> originFetch</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_setMapping" class="inline-link"> setMapping</a><span class="parameters">(</span>mapping) <span>Remember the row mapping.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins__RowMapLayer__onDelete" class="inline-link"> _onDelete</a><span class="parameters">(</span>item) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -424,4 +432,4 @@ It&#39;s better to override this method if your class name is too complicated.</
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/_RowMapLayer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/selector/acme</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/selector/acme" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/selector/acme.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/selector/acme<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Returns nodes which match the given CSS3 selector, searching the
 entire document by default but optionally taking a node to scope
@@ -25,13 +32,15 @@ to a particular sub-tree of a document.
 <li><code>*</code> universal selector</li>
 <li><code>~</code>, the preceded-by sibling selector</li>
 <li><code>+</code>, the immediately preceded-by sibling selector</li>
-<li>attribute queries:</li>
+<li>attribute queries:<ul>
 <li><code>[foo]</code> attribute presence selector</li>
 <li><code>[foo=&#39;bar&#39;]</code> attribute value exact match</li>
 <li><code>[foo~=&#39;bar&#39;]</code> attribute value list item match</li>
 <li><code>[foo^=&#39;bar&#39;]</code> attribute start match</li>
 <li><code>[foo$=&#39;bar&#39;]</code> attribute end match</li>
 <li><code>[foo*=&#39;bar&#39;]</code> attribute substring match</li>
+</ul>
+</li>
 <li><code>:first-child</code>, <code>:last-child</code>, and <code>:only-child</code> positional selectors</li>
 <li><code>:empty</code> content emtpy selector</li>
 <li><code>:checked</code> pseudo selector</li>
@@ -56,12 +65,16 @@ handle. Currently unsupported selectors include:
 <ul>
 <li>namespace-differentiated selectors of any form</li>
 <li>all <code>::</code> pseduo-element selectors</li>
-<li>certain pseudo-selectors which don&#39;t get a lot of day-to-day use:</li>
+<li>certain pseudo-selectors which don&#39;t get a lot of day-to-day use:<ul>
 <li><code>:root</code>, <code>:lang()</code>, <code>:target</code>, <code>:focus</code></li>
-<li>all visual and state selectors:</li>
-<li><code>:root</code>, <code>:active</code>, <code>:hover</code>, <code>:visited</code>, <code>:link</code>,
-<code>:enabled</code>, <code>:disabled</code></li>
+</ul>
+</li>
+<li>all visual and state selectors:<ul>
+<li><code>:root</code>, <code>:active</code>, <code>:hover</code>, <code>:visited</code>, <code>:link</code>,<pre><code>`:enabled`, `:disabled`</pre></code>
+</li>
 <li><code>:*-of-type</code> pseudo selectors</li>
+</ul>
+</li>
 </ul>
 <h2>dojo.query and XML Documents:</h2>
 <p><code>dojo.query</code> (as of dojo 1.2) supports searching XML documents
@@ -110,84 +123,109 @@ CSS3 selectors, see <a href="http://www.w3.org/TR/css3-selectors/#selectors">htt
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/selector/acme.html" target="_blank">dojo/selector/acme reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>search the entire document for elements with the class &quot;foo&quot;:</p>
-<pre><code>  dojo.query(&quot;.foo&quot;);</code></pre>
-<p>these elements will match:</p>
-<pre><code>  &lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;
-  &lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>search the entire document for elements with the class &quot;foo&quot;:
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><p>search the entire document for elements with the classes &quot;foo&quot; <em>and</em> &quot;bar&quot;:</p>
-<pre><code>  dojo.query(&quot;.foo.bar&quot;);</code></pre>
-<p>these elements will match:</p>
-<pre><code>  &lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;</code></pre>
-<p>while these will not:</p>
-<pre><code>  &lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
-  &lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
+</p>
+<pre><code>dojo.query(&quot;.foo&quot;);</code></pre>
+<p>these elements will match:
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><p>find <code>&lt;span&gt;</code> elements which are descendants of paragraphs and
-which have a &quot;highlighted&quot; class:</p>
-<pre><code>  dojo.query(&quot;p span.highlighted&quot;);</code></pre>
-<p>the innermost span in this fragment matches:</p>
-<pre><code>  &lt;p class=&quot;foo&quot;&gt;
+
+</p>
+<pre><code>&lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;
+&lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
+
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><p>search the entire document for elements with the classes &quot;foo&quot; <em>and</em> &quot;bar&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;.foo.bar&quot;);</code></pre>
+<p>these elements will match:
+
+
+</p>
+<pre><code>&lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;</code></pre>
+<p>while these will not:
+
+
+</p>
+<pre><code>&lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
+&lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
+
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><p>find <code>&lt;span&gt;</code> elements which are descendants of paragraphs and
+which have a &quot;highlighted&quot; class:
+
+</p>
+<pre><code>dojo.query(&quot;p span.highlighted&quot;);</code></pre>
+<p>the innermost span in this fragment matches:
+
+
+</p>
+<pre><code>&lt;p class=&quot;foo&quot;&gt;
     &lt;span&gt;...
-      &lt;span class=&quot;highlighted foo bar&quot;&gt;...&lt;/span&gt;
+        &lt;span class=&quot;highlighted foo bar&quot;&gt;...&lt;/span&gt;
     &lt;/span&gt;
-  &lt;/p&gt;</code></pre>
+&lt;/p&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><p>set an &quot;odd&quot; class on all odd table rows inside of the table
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 4</h3><p>set an &quot;odd&quot; class on all odd table rows inside of the table
 <code>#tabular_data</code>, using the <code>&gt;</code> (direct child) selector to avoid
-affecting any nested tables:</p>
-<pre><code>  dojo.query(&quot;#tabular_data &gt; tbody &gt; tr:nth-child(odd)&quot;).addClass(&quot;odd&quot;);</code></pre>
+affecting any nested tables:
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 5</h3><p>remove all elements with the class &quot;error&quot; from the document
-and store them in a list:</p>
-<pre><code>  var errors = dojo.query(&quot;.error&quot;).orphan();</code></pre>
+</p>
+<pre><code>dojo.query(&quot;#tabular_data &gt; tbody &gt; tr:nth-child(odd)&quot;).addClass(&quot;odd&quot;);</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 6</h3><p>add an onclick handler to every submit button in the document
-which causes the form to be sent via Ajax instead:</p>
-<pre><code>  dojo.query(&quot;input[type=&#39;submit&#39;]&quot;).onclick(function(e){
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 5</h3><p>remove all elements with the class &quot;error&quot; from the document
+and store them in a list:
+
+</p>
+<pre><code>var errors = dojo.query(&quot;.error&quot;).orphan();</code></pre>
+
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 6</h3><p>add an onclick handler to every submit button in the document
+which causes the form to be sent via Ajax instead:
+
+</p>
+<pre><code>dojo.query(&quot;input[type=&#39;submit&#39;]&quot;).onclick(function(e){
     dojo.stopEvent(e); // prevent sending the form
     var btn = e.target;
     dojo.xhrPost({
-      form: btn.form,
-      load: function(data){
-        // replace the form with the response
-        var div = dojo.doc.createElement(&quot;div&quot;);
-        dojo.place(div, btn.form, &quot;after&quot;);
-        div.innerHTML = data;
-        dojo.style(btn.form, &quot;display&quot;, &quot;none&quot;);
-      }
+        form: btn.form,
+        load: function(data){
+            // replace the form with the response
+            var div = dojo.doc.createElement(&quot;div&quot;);
+            dojo.place(div, btn.form, &quot;after&quot;);
+            div.innerHTML = data;
+            dojo.style(btn.form, &quot;display&quot;, &quot;none&quot;);
+        }
     });
-  });</code></pre>
+});</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_selector_acme_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, root) <span>Returns nodes which match the given CSS3 selector, searching the
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_selector_acme_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, root) <span>Returns nodes which match the given CSS3 selector, searching the
 entire document by default but optionally taking a node to scope
 the search by.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_selector_acme_filter" class="inline-link"> filter</a><span class="parameters">(</span>nodeList, filter, root) <span>function for filtering a NodeList based on a selector, optimized for simple selectors</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_selector_acme_filter" class="inline-link"> filter</a><span class="parameters">(</span>nodeList, filter, root) <span>function for filtering a NodeList based on a selector, optimized for simple selectors</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -222,13 +260,15 @@ to a particular sub-tree of a document.
 <li><code>*</code> universal selector</li>
 <li><code>~</code>, the preceded-by sibling selector</li>
 <li><code>+</code>, the immediately preceded-by sibling selector</li>
-<li>attribute queries:</li>
+<li>attribute queries:<ul>
 <li><code>[foo]</code> attribute presence selector</li>
 <li><code>[foo=&#39;bar&#39;]</code> attribute value exact match</li>
 <li><code>[foo~=&#39;bar&#39;]</code> attribute value list item match</li>
 <li><code>[foo^=&#39;bar&#39;]</code> attribute start match</li>
 <li><code>[foo$=&#39;bar&#39;]</code> attribute end match</li>
 <li><code>[foo*=&#39;bar&#39;]</code> attribute substring match</li>
+</ul>
+</li>
 <li><code>:first-child</code>, <code>:last-child</code>, and <code>:only-child</code> positional selectors</li>
 <li><code>:empty</code> content emtpy selector</li>
 <li><code>:checked</code> pseudo selector</li>
@@ -253,12 +293,16 @@ handle. Currently unsupported selectors include:
 <ul>
 <li>namespace-differentiated selectors of any form</li>
 <li>all <code>::</code> pseduo-element selectors</li>
-<li>certain pseudo-selectors which don&#39;t get a lot of day-to-day use:</li>
+<li>certain pseudo-selectors which don&#39;t get a lot of day-to-day use:<ul>
 <li><code>:root</code>, <code>:lang()</code>, <code>:target</code>, <code>:focus</code></li>
-<li>all visual and state selectors:</li>
-<li><code>:root</code>, <code>:active</code>, <code>:hover</code>, <code>:visited</code>, <code>:link</code>,
-<code>:enabled</code>, <code>:disabled</code></li>
+</ul>
+</li>
+<li>all visual and state selectors:<ul>
+<li><code>:root</code>, <code>:active</code>, <code>:hover</code>, <code>:visited</code>, <code>:link</code>,<pre><code>`:enabled`, `:disabled`</pre></code>
+</li>
 <li><code>:*-of-type</code> pseudo selectors</li>
+</ul>
+</li>
 </ul>
 <h2>dojo.query and XML Documents:</h2>
 <p><code>dojo.query</code> (as of dojo 1.2) supports searching XML documents
@@ -309,66 +353,90 @@ CSS3 selectors, see <a href="http://www.w3.org/TR/css3-selectors/#selectors">htt
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>search the entire document for elements with the class &quot;foo&quot;:</p>
-<pre><code>  dojo.query(&quot;.foo&quot;);</code></pre>
-<p>these elements will match:</p>
-<pre><code>  &lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;
-  &lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
+            <h3>Example 1</h3><p>search the entire document for elements with the class &quot;foo&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;.foo&quot;);</code></pre>
+<p>these elements will match:
+
+
+</p>
+<pre><code>&lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;
+&lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>search the entire document for elements with the classes &quot;foo&quot; <em>and</em> &quot;bar&quot;:</p>
-<pre><code>  dojo.query(&quot;.foo.bar&quot;);</code></pre>
-<p>these elements will match:</p>
-<pre><code>  &lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;</code></pre>
-<p>while these will not:</p>
-<pre><code>  &lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
-  &lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
+            <h3>Example 2</h3><p>search the entire document for elements with the classes &quot;foo&quot; <em>and</em> &quot;bar&quot;:
+
+</p>
+<pre><code>dojo.query(&quot;.foo.bar&quot;);</code></pre>
+<p>these elements will match:
+
+
+</p>
+<pre><code>&lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;</code></pre>
+<p>while these will not:
+
+
+</p>
+<pre><code>&lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
+&lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>find <code>&lt;span&gt;</code> elements which are descendants of paragraphs and
-which have a &quot;highlighted&quot; class:</p>
-<pre><code>  dojo.query(&quot;p span.highlighted&quot;);</code></pre>
-<p>the innermost span in this fragment matches:</p>
-<pre><code>  &lt;p class=&quot;foo&quot;&gt;
+which have a &quot;highlighted&quot; class:
+
+</p>
+<pre><code>dojo.query(&quot;p span.highlighted&quot;);</code></pre>
+<p>the innermost span in this fragment matches:
+
+
+</p>
+<pre><code>&lt;p class=&quot;foo&quot;&gt;
     &lt;span&gt;...
-      &lt;span class=&quot;highlighted foo bar&quot;&gt;...&lt;/span&gt;
+        &lt;span class=&quot;highlighted foo bar&quot;&gt;...&lt;/span&gt;
     &lt;/span&gt;
-  &lt;/p&gt;</code></pre>
+&lt;/p&gt;</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>set an &quot;odd&quot; class on all odd table rows inside of the table
 <code>#tabular_data</code>, using the <code>&gt;</code> (direct child) selector to avoid
-affecting any nested tables:</p>
-<pre><code>  dojo.query(&quot;#tabular_data &gt; tbody &gt; tr:nth-child(odd)&quot;).addClass(&quot;odd&quot;);</code></pre>
+affecting any nested tables:
+
+</p>
+<pre><code>dojo.query(&quot;#tabular_data &gt; tbody &gt; tr:nth-child(odd)&quot;).addClass(&quot;odd&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 5</h3><p>remove all elements with the class &quot;error&quot; from the document
-and store them in a list:</p>
-<pre><code>  var errors = dojo.query(&quot;.error&quot;).orphan();</code></pre>
+and store them in a list:
+
+</p>
+<pre><code>var errors = dojo.query(&quot;.error&quot;).orphan();</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 6</h3><p>add an onclick handler to every submit button in the document
-which causes the form to be sent via Ajax instead:</p>
-<pre><code>  dojo.query(&quot;input[type=&#39;submit&#39;]&quot;).onclick(function(e){
+which causes the form to be sent via Ajax instead:
+
+</p>
+<pre><code>dojo.query(&quot;input[type=&#39;submit&#39;]&quot;).onclick(function(e){
     dojo.stopEvent(e); // prevent sending the form
     var btn = e.target;
     dojo.xhrPost({
-      form: btn.form,
-      load: function(data){
-        // replace the form with the response
-        var div = dojo.doc.createElement(&quot;div&quot;);
-        dojo.place(div, btn.form, &quot;after&quot;);
-        div.innerHTML = data;
-        dojo.style(btn.form, &quot;display&quot;, &quot;none&quot;);
-      }
+        form: btn.form,
+        load: function(data){
+            // replace the form with the response
+            var div = dojo.doc.createElement(&quot;div&quot;);
+            dojo.place(div, btn.form, &quot;after&quot;);
+            div.innerHTML = data;
+            dojo.style(btn.form, &quot;display&quot;, &quot;none&quot;);
+        }
     });
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -409,4 +477,4 @@ which causes the form to be sent via Ajax instead:</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/selector/acme" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

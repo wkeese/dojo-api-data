@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/main.config</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/main.config" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/main.config.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/main.config<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines the user configuration during bootstrap.</p>
 </div>
@@ -10,12 +17,11 @@ at an unique absolute module identifier as given by the package configuration. I
 as a module allows for specifying unique, per-instance configurations.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>Create a second instance of dojo with a different, instance-unique configuration (assume the loader and
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>Create a second instance of dojo with a different, instance-unique configuration (assume the loader and
 dojo.js are already loaded).
 
 </p>
@@ -39,69 +45,71 @@ require([&quot;myDojo&quot;], function(dojo){
     // use as required
 });</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon inherited"><a href="#1_9dojo_main_config_addOnLoad" class="inline-link"> addOnLoad </a><span>Adds a callback via dojo/ready.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_afterOnLoad" class="inline-link"> afterOnLoad </a><span></span><span title="inherited from dojo/ready" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojo_main_config_baseUrl" class="inline-link"> baseUrl </a><span></span><span title="inherited from dojo/_base/kernel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_9dojo_main_config_callback" class="inline-link"> callback </a><span>Defines a callback to be used when dependencies are defined before 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon inherited"><a href="#1_9dojo_main_config_addOnLoad" class="inline-link"> addOnLoad </a><span>Adds a callback via dojo/ready.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_afterOnLoad" class="inline-link"> afterOnLoad </a><span></span><span title="inherited from dojo/ready" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojo_main_config_baseUrl" class="inline-link"> baseUrl </a><span></span><span title="inherited from dojo/_base/kernel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon inherited"><a href="#1_9dojo_main_config_callback" class="inline-link"> callback </a><span>Defines a callback to be used when dependencies are defined before 
 the loader has been loaded.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojo_main_config_debugContainerId" class="inline-link"> debugContainerId </a><span></span><span title="inherited from dojo/_firebug/firebug" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojo_main_config_debugHeight" class="inline-link"> debugHeight </a><span></span><span title="inherited from dojo/robotx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojo_main_config_defaultDuration" class="inline-link"> defaultDuration </a><span>Default duration, in milliseconds, for wipe and fade animations within dijits.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_deferredInstrumentation" class="inline-link"> deferredInstrumentation </a><span>Whether deferred instrumentation should be loaded or included
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojo_main_config_debugContainerId" class="inline-link"> debugContainerId </a><span></span><span title="Must manually require () dojo/_firebug/firebug to access" class="jsdoc-extension"></span><span title="inherited from dojo/_firebug/firebug" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojo_main_config_debugHeight" class="inline-link"> debugHeight </a><span></span><span title="Must manually require () dojo/robotx to access" class="jsdoc-extension"></span><span title="inherited from dojo/robotx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojo_main_config_defaultDuration" class="inline-link"> defaultDuration </a><span>Default duration, in milliseconds, for wipe and fade animations within dijits.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_deferredInstrumentation" class="inline-link"> deferredInstrumentation </a><span>Whether deferred instrumentation should be loaded or included
 in builds.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_9dojo_main_config_deps" class="inline-link"> deps </a><span>Defines dependencies to be used before the loader has been loaded.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojo_main_config_dojoBlankHtmlUrl" class="inline-link"> dojoBlankHtmlUrl </a><span>Used by some modules to configure an empty iframe.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojo_main_config_extraLocale" class="inline-link"> extraLocale </a><span>No default value.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojo_main_config_ioPublish" class="inline-link"> ioPublish </a><span>Set this to true to enable publishing of topics for the different phases of
+        </li>
+        <li class="functionIcon inherited"><a href="#1_9dojo_main_config_deps" class="inline-link"> deps </a><span>Defines dependencies to be used before the loader has been loaded.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojo_main_config_dojoBlankHtmlUrl" class="inline-link"> dojoBlankHtmlUrl </a><span>Used by some modules to configure an empty iframe.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojo_main_config_extraLocale" class="inline-link"> extraLocale </a><span>No default value.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojo_main_config_ioPublish" class="inline-link"> ioPublish </a><span>Set this to true to enable publishing of topics for the different phases of
 IO operations.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_isDebug" class="inline-link"> isDebug </a><span>Defaults to false.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojo_main_config_locale" class="inline-link"> locale </a><span>The locale to assume for loading localized resources in this page,
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_isDebug" class="inline-link"> isDebug </a><span>Defaults to false.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojo_main_config_locale" class="inline-link"> locale </a><span>The locale to assume for loading localized resources in this page,
 specified according to RFC 3066.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojo_main_config_modulePaths" class="inline-link"> modulePaths </a><span>A map of module names to paths relative to dojo.baseUrl.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_parseOnLoad" class="inline-link"> parseOnLoad </a><span>Run the parser after the page is loaded</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojo_main_config_require" class="inline-link"> require </a><span>An array of module names to be loaded immediately after dojo.js has been included
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojo_main_config_modulePaths" class="inline-link"> modulePaths </a><span>A map of module names to paths relative to dojo.baseUrl.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_parseOnLoad" class="inline-link"> parseOnLoad </a><span>Run the parser after the page is loaded</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojo_main_config_require" class="inline-link"> require </a><span>An array of module names to be loaded immediately after dojo.js has been included
 in a page.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojo_main_config_transparentColor" class="inline-link"> transparentColor </a><span>Array containing the r, g, b components used as transparent color in dojo.Color;
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojo_main_config_transparentColor" class="inline-link"> transparentColor </a><span>Array containing the r, g, b components used as transparent color in dojo.Color;
 if undefined, [255,255,255] (white) will be used.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojo_main_config_urchin" class="inline-link"> urchin </a><span>Used by dojox.analytics.Urchin as the default UA-123456-7 account
-number used when being created.</span><span title="inherited from dojox/analytics/Urchin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojo_main_config_useCustomLogger" class="inline-link"> useCustomLogger </a><span>If set to a value that evaluates to true such as a string or array and
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojo_main_config_urchin" class="inline-link"> urchin </a><span>Used by dojox.analytics.Urchin as the default UA-123456-7 account
+number used when being created.</span><span title="Must manually require () dojox/analytics/Urchin to access" class="jsdoc-extension"></span><span title="inherited from dojox/analytics/Urchin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojo_main_config_useCustomLogger" class="inline-link"> useCustomLogger </a><span>If set to a value that evaluates to true such as a string or array and
 isDebug is true and Firebug is not available or running, then it bypasses
 the creation of Firebug Lite allowing you to define your own console object.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_useDeferredInstrumentation" class="inline-link"> useDeferredInstrumentation </a><span>Whether the deferred instrumentation should be used.
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojo_main_config_useDeferredInstrumentation" class="inline-link"> useDeferredInstrumentation </a><span>Whether the deferred instrumentation should be used.
 
 
 
 &quot;report-rejections&quot;: report each rejection as it occurs.
 true or 1 or &quot;report-unhandled-rejections&quot;: wait 1 second
   in an attempt to detect unhandled rejections.</span><span title="inherited from dojo/_base/config" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -323,4 +331,4 @@ the creation of Firebug Lite allowing you to define your own console object.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/main.config" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

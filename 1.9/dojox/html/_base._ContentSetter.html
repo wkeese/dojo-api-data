@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/html/_base._ContentSetter</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/html/_base._ContentSetter" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/html/_base._ContentSetter.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/html/_base._ContentSetter<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base._ContentSetter<span class="parameters">(params,node);</span></div>
 </div>
@@ -30,89 +37,90 @@ call the set() method to actually set the content..</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/html.html" target="_blank">dojox/html/_base._ContentSetter reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_adjustPaths" class="inline-link"> adjustPaths </a><span>Adjust relative paths in html string content to point to this page
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_adjustPaths" class="inline-link"> adjustPaths </a><span>Adjust relative paths in html string content to point to this page
 Only useful if you grab content from a another folder than the current one</span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_cleanContent" class="inline-link"> cleanContent </a><span>Should the content be treated as a full html document,
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_cleanContent" class="inline-link"> cleanContent </a><span>Should the content be treated as a full html document,
 and the real content stripped of ,  wrapper before injection</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_content" class="inline-link"> content </a><span>The content to be placed in the node.</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_executeScripts" class="inline-link"> executeScripts </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_extractContent" class="inline-link"> extractContent </a><span>Should the content be treated as a full html document,
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_content" class="inline-link"> content </a><span>The content to be placed in the node.</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_executeScripts" class="inline-link"> executeScripts </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_extractContent" class="inline-link"> extractContent </a><span>Should the content be treated as a full html document,
 and the real content stripped of &lt;html&gt; &lt;body&gt; wrapper before injection</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_id" class="inline-link"> id </a><span>Usually only used internally, and auto-generated with each instance</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_node" class="inline-link"> node </a><span>An node which will be the parent element that we set content into</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_parseContent" class="inline-link"> parseContent </a><span>Should the node by passed to the parser after the new content is set</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_parserScope" class="inline-link"> parserScope </a><span>Flag passed to parser.</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_referencePath" class="inline-link"> referencePath </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_renderStyles" class="inline-link"> renderStyles </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_scriptHasHooks" class="inline-link"> scriptHasHooks </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_scriptHookReplacement" class="inline-link"> scriptHookReplacement </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_startup" class="inline-link"> startup </a><span>Start the child widgets after parsing them.</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>params) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__parse" class="inline-link"> _parse</a><span class="parameters">(</span>) <span>runs the dojo parser over the node contents, storing any results in this.parseResults
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_id" class="inline-link"> id </a><span>Usually only used internally, and auto-generated with each instance</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_node" class="inline-link"> node </a><span>An node which will be the parent element that we set content into</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_parseContent" class="inline-link"> parseContent </a><span>Should the node by passed to the parser after the new content is set</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_parserScope" class="inline-link"> parserScope </a><span>Flag passed to parser.</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_referencePath" class="inline-link"> referencePath </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_renderStyles" class="inline-link"> renderStyles </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_scriptHasHooks" class="inline-link"> scriptHasHooks </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_scriptHookReplacement" class="inline-link"> scriptHookReplacement </a><span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_html__base__ContentSetter_startup" class="inline-link"> startup </a><span>Start the child widgets after parsing them.</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>params) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__parse" class="inline-link"> _parse</a><span class="parameters">(</span>) <span>runs the dojo parser over the node contents, storing any results in this.parseResults
 and the parse promise in this.parseDeferred
 Any errors resulting from parsing are passed to _onError for handling</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__renderStyles" class="inline-link"> _renderStyles</a><span class="parameters">(</span>styles) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, node) <span>Provides a configurable, extensible object to wrap the setting on content on a node
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__renderStyles" class="inline-link"> _renderStyles</a><span class="parameters">(</span>styles) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, node) <span>Provides a configurable, extensible object to wrap the setting on content on a node
 call the set() method to actually set the content..</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_empty" class="inline-link"> empty</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_set" class="inline-link"> set</a><span class="parameters">(</span>cont, params) <span>front-end to the set-content sequence</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_setContent" class="inline-link"> setContent</a><span class="parameters">(</span>) <span>sets the content on the node</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_tearDown" class="inline-link"> tearDown</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__onError" class="inline-link"> _onError</a><span class="parameters">(</span>type, err, consoleText) <span>shows user the string that is returned by on[type]Error
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_empty" class="inline-link"> empty</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_set" class="inline-link"> set</a><span class="parameters">(</span>cont, params) <span>front-end to the set-content sequence</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_setContent" class="inline-link"> setContent</a><span class="parameters">(</span>) <span>sets the content on the node</span><span title="inherited from dojo/html" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_tearDown" class="inline-link"> tearDown</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/html/_base" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_html__base__ContentSetter__onError" class="inline-link"> _onError</a><span class="parameters">(</span>type, err, consoleText) <span>shows user the string that is returned by on[type]Error
 override/implement on[type]Error and return your own string to customize</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onBegin" class="inline-link"> onBegin</a><span class="parameters">(</span>) <span>Called after instantiation, but before set();
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onBegin" class="inline-link"> onBegin</a><span class="parameters">(</span>) <span>Called after instantiation, but before set();
 It allows modification of any of the object properties - including the node and content
 provided - before the set operation actually takes place
 This implementation extends that of dojo.html._ContentSetter
 to add handling for adjustPaths, renderStyles on the html string content before it is set</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onContentError" class="inline-link"> onContentError</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onEnd" class="inline-link"> onEnd</a><span class="parameters">(</span>) <span>Called after set(), when the new content has been pushed into the node
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onContentError" class="inline-link"> onContentError</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onEnd" class="inline-link"> onEnd</a><span class="parameters">(</span>) <span>Called after set(), when the new content has been pushed into the node
 It provides an opportunity for post-processing before handing back the node to the caller
 This implementation extends that of dojo.html._ContentSetter</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onExecError" class="inline-link"> onExecError</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_html__base__ContentSetter_onExecError" class="inline-link"> onExecError</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -404,4 +412,4 @@ This implementation extends that of dojo.html._ContentSetter</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/html/_base._ContentSetter" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,47 +1,56 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/fx/flip</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/fx/flip" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/fx/flip.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/fx/flip<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Experimental and extended Animations beyond Dojo Core / Base functionality.
 Provides advanced Lines, Animations, and convenience aliases.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/fx.html" target="_blank">dojox/fx/flip reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon private"><a href="#1_8dojox_fx_flip__allowedProperties" class="inline-link"> _allowedProperties </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_fx_flip__Line" class="inline-link"> _Line</a><span class="parameters">(</span>start, end) <span>a custom _Line to accommodate multi-dimensional values</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_fx_flip__Timeline" class="inline-link"> _Timeline</a><span class="parameters">(</span>keys) <span>The dojox.fx._Timeline object from which an instance
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon private"><a href="#1_8dojox_fx_flip__allowedProperties" class="inline-link"> _allowedProperties </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/fx/style to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_fx_flip__Line" class="inline-link"> _Line</a><span class="parameters">(</span>start, end) <span>a custom _Line to accommodate multi-dimensional values</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_fx_flip__Timeline" class="inline-link"> _Timeline</a><span class="parameters">(</span>keys) <span>The dojox.fx._Timeline object from which an instance
 is created</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_addClass" class="inline-link"> addClass</a><span class="parameters">(</span>node, cssClass, args) <span>Animate the effects of adding a class to a node</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_animateTimeline" class="inline-link"> animateTimeline</a><span class="parameters">(</span>options, node) <span>An add-on to dojo.fx that provides the ability to create
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_addClass" class="inline-link"> addClass</a><span class="parameters">(</span>node, cssClass, args) <span>Animate the effects of adding a class to a node</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_animateTimeline" class="inline-link"> animateTimeline</a><span class="parameters">(</span>options, node) <span>An add-on to dojo.fx that provides the ability to create
 a complex property animation based on an array of &quot;keyframes&quot;.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_flip" class="inline-link"> flip</a><span class="parameters">(</span>args) <span>Animate a node flipping following a specific direction</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_flipCube" class="inline-link"> flipCube</a><span class="parameters">(</span>args) <span>An extension to dojox.fx.flip providing a more 3d-like rotation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_flipGrid" class="inline-link"> flipGrid</a><span class="parameters">(</span>args) <span>An extension to dojox.fx.flip providing a decomposition in rows * cols flipping elements</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_flipPage" class="inline-link"> flipPage</a><span class="parameters">(</span>args) <span>An extension to dojox.fx.flip providing a page flip like animation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_removeClass" class="inline-link"> removeClass</a><span class="parameters">(</span>node, cssClass, args) <span>Animate the effects of removing a class from a node</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_smoothScroll" class="inline-link"> smoothScroll</a><span class="parameters">(</span>args) <span>Returns an animation that will smooth-scroll to a node</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_fx_flip_toggleClass" class="inline-link"> toggleClass</a><span class="parameters">(</span>node, cssClass, condition, args) <span>Animate the effects of Toggling a class on a Node</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_flip" class="inline-link"> flip</a><span class="parameters">(</span>args) <span>Animate a node flipping following a specific direction</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_flipCube" class="inline-link"> flipCube</a><span class="parameters">(</span>args) <span>An extension to dojox.fx.flip providing a more 3d-like rotation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_flipGrid" class="inline-link"> flipGrid</a><span class="parameters">(</span>args) <span>An extension to dojox.fx.flip providing a decomposition in rows * cols flipping elements</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_flipPage" class="inline-link"> flipPage</a><span class="parameters">(</span>args) <span>An extension to dojox.fx.flip providing a page flip like animation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_removeClass" class="inline-link"> removeClass</a><span class="parameters">(</span>node, cssClass, args) <span>Animate the effects of removing a class from a node</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_smoothScroll" class="inline-link"> smoothScroll</a><span class="parameters">(</span>args) <span>Returns an animation that will smooth-scroll to a node</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_fx_flip_toggleClass" class="inline-link"> toggleClass</a><span class="parameters">(</span>node, cssClass, condition, args) <span>Animate the effects of Toggling a class on a Node</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -613,4 +622,4 @@ dojox.fx.toggleClass(&quot;theNode&quot;,&quot;sampleClass&quot;).play();</code>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/fx/flip" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

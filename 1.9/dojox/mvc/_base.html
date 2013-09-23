@@ -1,76 +1,84 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mvc/_base</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mvc/_base" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mvc/_base.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/mvc/_base<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <p>See the <a href="/reference-guide/1.9/dojox/mvc.html" target="_blank">dojox/mvc/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_mvc__base__Container" class="inline-link"> _Container</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mvc__base__Controller" class="inline-link"> _Controller</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base__DataBindingMixin" class="inline-link"> _DataBindingMixin</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_DataBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mvc__base__InlineTemplateMixin" class="inline-link"> _InlineTemplateMixin</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_at" class="inline-link"> at</a><span class="parameters">(</span>target, targetProp) <span>Returns a pointer to data binding target (a dojo/Stateful property), called at handle, which is used for start synchronization with data binding source (another dojo/Stateful property).</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_bind" class="inline-link"> bind</a><span class="parameters">(</span>source, sourceProp, target, targetProp, func, bindOnlyIfUnequal) <span>Bind the specified property of the target to the specified
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_mvc__base__Container" class="inline-link"> _Container</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mvc__base__Controller" class="inline-link"> _Controller</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base__DataBindingMixin" class="inline-link"> _DataBindingMixin</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_DataBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mvc__base__InlineTemplateMixin" class="inline-link"> _InlineTemplateMixin</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_at" class="inline-link"> at</a><span class="parameters">(</span>target, targetProp) <span>Returns a pointer to data binding target (a dojo/Stateful property), called at handle, which is used for start synchronization with data binding source (another dojo/Stateful property).</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_bind" class="inline-link"> bind</a><span class="parameters">(</span>source, sourceProp, target, targetProp, func, bindOnlyIfUnequal) <span>Bind the specified property of the target to the specified
 property of the source with the supplied transformation.</span><span title="inherited from dojox/mvc/Bind" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_bindInputs" class="inline-link"> bindInputs</a><span class="parameters">(</span>sourceBindArray, func) <span>Bind the values at the sources specified in the first argument
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_bindInputs" class="inline-link"> bindInputs</a><span class="parameters">(</span>sourceBindArray, func) <span>Bind the values at the sources specified in the first argument
 array such that a composing function in the second argument is
 called when any of the values changes.</span><span title="inherited from dojox/mvc/Bind" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_EditModelRefController" class="inline-link"> EditModelRefController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_EditStoreRefController" class="inline-link"> EditStoreRefController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_EditStoreRefListController" class="inline-link"> EditStoreRefListController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_Element" class="inline-link"> Element</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_equals" class="inline-link"> equals</a><span class="parameters">(</span>dst, src, options) <span>Compares two dojo/Stateful objects, by diving into the leaves.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_Generate" class="inline-link"> Generate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_getPlainValue" class="inline-link"> getPlainValue</a><span class="parameters">(</span>value, options) <span>Create a raw value from a dojo/Stateful object.</span><span title="inherited from dojox/mvc/getPlainValue" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_getStateful" class="inline-link"> getStateful</a><span class="parameters">(</span>value, options) <span>Create a dojo/Stateful object from a raw value.</span><span title="inherited from dojox/mvc/getStateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_Group" class="inline-link"> Group</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_ListController" class="inline-link"> ListController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_ModelRefController" class="inline-link"> ModelRefController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_newStatefulModel" class="inline-link"> newStatefulModel</a><span class="parameters">(</span>args) <span>Factory method that instantiates a new data model that view
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_EditModelRefController" class="inline-link"> EditModelRefController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_EditStoreRefController" class="inline-link"> EditStoreRefController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_EditStoreRefListController" class="inline-link"> EditStoreRefListController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_Element" class="inline-link"> Element</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_equals" class="inline-link"> equals</a><span class="parameters">(</span>dst, src, options) <span>Compares two dojo/Stateful objects, by diving into the leaves.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_Generate" class="inline-link"> Generate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_getPlainValue" class="inline-link"> getPlainValue</a><span class="parameters">(</span>value, options) <span>Create a raw value from a dojo/Stateful object.</span><span title="inherited from dojox/mvc/getPlainValue" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_getStateful" class="inline-link"> getStateful</a><span class="parameters">(</span>value, options) <span>Create a dojo/Stateful object from a raw value.</span><span title="inherited from dojox/mvc/getStateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_Group" class="inline-link"> Group</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_ListController" class="inline-link"> ListController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_ModelRefController" class="inline-link"> ModelRefController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_newStatefulModel" class="inline-link"> newStatefulModel</a><span class="parameters">(</span>args) <span>Factory method that instantiates a new data model that view
 components may bind to.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_Output" class="inline-link"> Output</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_Repeat" class="inline-link"> Repeat</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>target, parent) <span>Find a dojo/Stateful for the target.</span><span title="inherited from dojox/mvc/resolve" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulArray" class="inline-link"> StatefulArray</a><span class="parameters">(</span>a) <span>An inheritance of native JavaScript array, that adds dojo/Stateful capability.</span><span title="inherited from dojox/mvc/StatefulArray" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel" class="inline-link"> StatefulModel</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_StatefulSeries" class="inline-link"> StatefulSeries</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_StoreRefController" class="inline-link"> StoreRefController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_sync" class="inline-link"> sync</a><span class="parameters">(</span>source, sourceProp, target, targetProp, options) <span>Synchronize two dojo/Stateful properties.</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_Templated" class="inline-link"> Templated</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mvc__base_WidgetList" class="inline-link"> WidgetList</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_Output" class="inline-link"> Output</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_Repeat" class="inline-link"> Repeat</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>target, parent) <span>Find a dojo/Stateful for the target.</span><span title="inherited from dojox/mvc/resolve" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulArray" class="inline-link"> StatefulArray</a><span class="parameters">(</span>a) <span>An inheritance of native JavaScript array, that adds dojo/Stateful capability.</span><span title="inherited from dojox/mvc/StatefulArray" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel" class="inline-link"> StatefulModel</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_StatefulSeries" class="inline-link"> StatefulSeries</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_StoreRefController" class="inline-link"> StoreRefController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_sync" class="inline-link"> sync</a><span class="parameters">(</span>source, sourceProp, target, targetProp, options) <span>Synchronize two dojo/Stateful properties.</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_Templated" class="inline-link"> Templated</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mvc__base_WidgetList" class="inline-link"> WidgetList</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -678,4 +686,4 @@ If target is &quot;rel:object.path&quot;, or target is other string, returns an 
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mvc/_base" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

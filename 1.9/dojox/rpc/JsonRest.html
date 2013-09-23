@@ -1,59 +1,67 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/rpc/JsonRest</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/rpc/JsonRest" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/rpc/JsonRest.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/rpc/JsonRest<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <p>See the <a href="/reference-guide/1.9/dojox/rpc.html" target="_blank">dojox/rpc/JsonRest reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_9dojox_rpc_JsonRest__saveNotNeeded" class="inline-link"> _saveNotNeeded </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_rpc_JsonRest_conflictDateHeader" class="inline-link"> conflictDateHeader </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_rpc_JsonRest_schemas" class="inline-link"> schemas </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_rpc_JsonRest_services" class="inline-link"> services </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_rpc_JsonRest__loader" class="inline-link"> _loader</a><span class="parameters">(</span>callback) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_byId" class="inline-link"> byId</a><span class="parameters">(</span>service, id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_changing" class="inline-link"> changing</a><span class="parameters">(</span>object, _deleting) <span>adds an object to the list of dirty objects.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_commit" class="inline-link"> commit</a><span class="parameters">(</span>kwArgs) <span>Saves the dirty data using REST Ajax methods</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_deleteObject" class="inline-link"> deleteObject</a><span class="parameters">(</span>object) <span>deletes an object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>absoluteId) <span>Fetches a resource by an absolute path/id and returns a dojo.Deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getConstructor" class="inline-link"> getConstructor</a><span class="parameters">(</span>service, schema) <span>Creates or gets a constructor for objects from this service</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getDirtyObjects" class="inline-link"> getDirtyObjects</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getIdAttribute" class="inline-link"> getIdAttribute</a><span class="parameters">(</span>service) <span>Return the ids attribute used by this service (based on it&#39;s schema).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getServiceAndId" class="inline-link"> getServiceAndId</a><span class="parameters">(</span>absoluteId) <span>Returns the REST service and the local id for the given absolute id.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item, store) <span>returns true if the item is marked as dirty or true if there are any dirty items</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_query" class="inline-link"> query</a><span class="parameters">(</span>service, id, args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_registerService" class="inline-link"> registerService</a><span class="parameters">(</span>service, servicePath, schema) <span>Registers a service for as a JsonRest service, mapping it to a path and schema</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_revert" class="inline-link"> revert</a><span class="parameters">(</span>service) <span>Reverts all the changes made to JSON/REST data</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_sendToServer" class="inline-link"> sendToServer</a><span class="parameters">(</span>actions, kwArgs) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_serviceClass" class="inline-link"> serviceClass</a><span class="parameters">(</span>path, isJson, schema, getRequest) <span>This provides a HTTP REST service with full range REST verbs include PUT,POST, and DELETE.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_9dojox_rpc_JsonRest__saveNotNeeded" class="inline-link"> _saveNotNeeded </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/data/JsonRestStore to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_rpc_JsonRest_conflictDateHeader" class="inline-link"> conflictDateHeader </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_rpc_JsonRest_schemas" class="inline-link"> schemas </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_rpc_JsonRest_services" class="inline-link"> services </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_rpc_JsonRest__loader" class="inline-link"> _loader</a><span class="parameters">(</span>callback) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_byId" class="inline-link"> byId</a><span class="parameters">(</span>service, id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_changing" class="inline-link"> changing</a><span class="parameters">(</span>object, _deleting) <span>adds an object to the list of dirty objects.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_commit" class="inline-link"> commit</a><span class="parameters">(</span>kwArgs) <span>Saves the dirty data using REST Ajax methods</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_deleteObject" class="inline-link"> deleteObject</a><span class="parameters">(</span>object) <span>deletes an object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>absoluteId) <span>Fetches a resource by an absolute path/id and returns a dojo.Deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getConstructor" class="inline-link"> getConstructor</a><span class="parameters">(</span>service, schema) <span>Creates or gets a constructor for objects from this service</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getDirtyObjects" class="inline-link"> getDirtyObjects</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getIdAttribute" class="inline-link"> getIdAttribute</a><span class="parameters">(</span>service) <span>Return the ids attribute used by this service (based on it&#39;s schema).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_getServiceAndId" class="inline-link"> getServiceAndId</a><span class="parameters">(</span>absoluteId) <span>Returns the REST service and the local id for the given absolute id.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item, store) <span>returns true if the item is marked as dirty or true if there are any dirty items</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_query" class="inline-link"> query</a><span class="parameters">(</span>service, id, args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_registerService" class="inline-link"> registerService</a><span class="parameters">(</span>service, servicePath, schema) <span>Registers a service for as a JsonRest service, mapping it to a path and schema</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_revert" class="inline-link"> revert</a><span class="parameters">(</span>service) <span>Reverts all the changes made to JSON/REST data</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_sendToServer" class="inline-link"> sendToServer</a><span class="parameters">(</span>actions, kwArgs) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_rpc_JsonRest_serviceClass" class="inline-link"> serviceClass</a><span class="parameters">(</span>path, isJson, schema, getRequest) <span>This provides a HTTP REST service with full range REST verbs include PUT,POST, and DELETE.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -527,4 +535,4 @@ services.myRestService[&#39;delete&#39;](&quot;parameters&quot;);</pre></code>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/rpc/JsonRest" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

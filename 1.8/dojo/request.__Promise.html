@@ -1,57 +1,70 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request.__Promise</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/request.__Promise" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request.__Promise.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/request.__Promise<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
 </div>
-<div class="jsdoc-function-information"> 
+<p>
+  <strong>Note:</strong> This is not a real constructor, but just a description of the type of object that should be passed as
+  a parameter to some method(s), and/or the return value from some method(s).
+  In other words, the type exists only for documentation purposes, and you <strong>cannot</strong> call <code>new request.__Promise()</code>
+</p>
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/request.__Promise<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new request.__Promise<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a></div>
 <div class="jsdoc-summary"><p>The public interface to a deferred. All promises in Dojo are
 instances of this class.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_8dojo_request___Promise_response" class="inline-link"> response </a><span>A promise resolving to an object representing
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_8dojo_request___Promise_response" class="inline-link"> response </a><span>A promise resolving to an object representing
 the response from the server.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_always" class="inline-link"> always</a><span class="parameters">(</span>callbackOrErrback) <span>Add a callback to be invoked when the promise is resolved
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_always" class="inline-link"> always</a><span class="parameters">(</span>callbackOrErrback) <span>Add a callback to be invoked when the promise is resolved
 or rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved or rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the promise has been rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_otherwise" class="inline-link"> otherwise</a><span class="parameters">(</span>errback) <span>Add new errbacks to the promise.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the promise.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved or rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the promise has been rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_otherwise" class="inline-link"> otherwise</a><span class="parameters">(</span>errback) <span>Add new errbacks to the promise.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the promise.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -93,7 +106,8 @@ or rejected.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
-        <div class="jsdoc-return-description">Returns a new promise for the result of the callback/errback.</div>
+        <div class="jsdoc-return-description"><p>Returns a new promise for the result of the callback/errback.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_request___Promise_cancel"></a><span class="functionIcon">cancel</span><span class="parameters">(reason, strict)</span> 
@@ -132,8 +146,9 @@ been fulfilled and consequently cannot be canceled.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Returns the rejection reason if the deferred was canceled
-normally.</div>
+        <div class="jsdoc-return-description"><p>Returns the rejection reason if the deferred was canceled
+normally.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_request___Promise_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
@@ -205,7 +220,8 @@ instances of this class.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
-        <div class="jsdoc-return-description">Returns a new promise for the result of the errback.</div>
+        <div class="jsdoc-return-description"><p>Returns a new promise for the result of the errback.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_request___Promise_then"></a><span class="functionIcon">then</span><span class="parameters">(callback, errback, progback)</span> 
@@ -252,8 +268,9 @@ update. Receives the progress update.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a></span></div>
-        <div class="jsdoc-return-description">Returns a new promise for the result of the callback(s).
-This can be used for chaining many asynchronous operations.</div>
+        <div class="jsdoc-return-description"><p>Returns a new promise for the result of the callback(s).
+This can be used for chaining many asynchronous operations.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_request___Promise_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
@@ -262,7 +279,8 @@ This can be used for chaining many asynchronous operations.</div>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
-        <div class="jsdoc-return-description">Returns `[object Promise]`.</div>
+        <div class="jsdoc-return-description"><p>Returns <code>[object Promise]</code>.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_request___Promise_trace"></a><span class="functionIcon">trace</span><span class="parameters">()</span> 
@@ -282,4 +300,4 @@ This can be used for chaining many asynchronous operations.</div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/request.__Promise" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

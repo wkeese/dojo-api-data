@@ -1,168 +1,176 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/doh/runner</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/doh/runner" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/doh/runner.html</div>
 <h1 class="objectIcon36 jsdoc-title">doh/runner<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Functions for registering and running automated tests.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9doh_runner__currentGroup" class="inline-link"> _currentGroup </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9doh_runner__currentTest" class="inline-link"> _currentTest </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9doh_runner__errorCount" class="inline-link"> _errorCount </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9doh_runner__failureCount" class="inline-link"> _failureCount </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9doh_runner__groupCount" class="inline-link"> _groupCount </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9doh_runner__groups" class="inline-link"> _groups </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9doh_runner__init" class="inline-link"> _init </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_9doh_runner__initRobotCalled" class="inline-link"> _initRobotCalled </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9doh_runner__line" class="inline-link"> _line </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_9doh_runner__paused" class="inline-link"> _paused </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9doh_runner__registerUrl" class="inline-link"> _registerUrl </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9doh_runner__setupGroupForRun" class="inline-link"> _setupGroupForRun </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9doh_runner__testCount" class="inline-link"> _testCount </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9doh_runner__testTypes" class="inline-link"> _testTypes </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9doh_runner_debug" class="inline-link"> debug </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9doh_runner_error" class="inline-link"> error </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9doh_runner_isBrowser" class="inline-link"> isBrowser </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9doh_runner_registerUrl" class="inline-link"> registerUrl </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9doh_runner_robot" class="inline-link"> robot </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9doh_runner__arrayEq" class="inline-link"> _arrayEq</a><span class="parameters">(</span>expected, actual) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__AssertFailure" class="inline-link"> _AssertFailure</a><span class="parameters">(</span>msg, hint) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__calcTrialIterations" class="inline-link"> _calcTrialIterations</a><span class="parameters">(</span>groupName, fixture) <span>This function determines the rough number of iterations to
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9doh_runner__currentGroup" class="inline-link"> _currentGroup </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9doh_runner__currentTest" class="inline-link"> _currentTest </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9doh_runner__errorCount" class="inline-link"> _errorCount </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9doh_runner__failureCount" class="inline-link"> _failureCount </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9doh_runner__groupCount" class="inline-link"> _groupCount </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9doh_runner__groups" class="inline-link"> _groups </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9doh_runner__init" class="inline-link"> _init </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_9doh_runner__initRobotCalled" class="inline-link"> _initRobotCalled </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9doh_runner__line" class="inline-link"> _line </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_9doh_runner__paused" class="inline-link"> _paused </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9doh_runner__registerUrl" class="inline-link"> _registerUrl </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/plugins/remoteRobot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9doh_runner__setupGroupForRun" class="inline-link"> _setupGroupForRun </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9doh_runner__testCount" class="inline-link"> _testCount </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9doh_runner__testTypes" class="inline-link"> _testTypes </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9doh_runner_debug" class="inline-link"> debug </a><span></span><span title="Must manually require () doh/_rhinoRunner to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9doh_runner_error" class="inline-link"> error </a><span></span><span title="Must manually require () doh/_rhinoRunner to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9doh_runner_isBrowser" class="inline-link"> isBrowser </a><span></span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9doh_runner_registerUrl" class="inline-link"> registerUrl </a><span></span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9doh_runner_robot" class="inline-link"> robot </a><span></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9doh_runner__arrayEq" class="inline-link"> _arrayEq</a><span class="parameters">(</span>expected, actual) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__AssertFailure" class="inline-link"> _AssertFailure</a><span class="parameters">(</span>msg, hint) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__calcTrialIterations" class="inline-link"> _calcTrialIterations</a><span class="parameters">(</span>groupName, fixture) <span>This function determines the rough number of iterations to
 use to reach a particular MS threshold.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__fixHeight" class="inline-link"> _fixHeight</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__groupFinished" class="inline-link"> _groupFinished</a><span class="parameters">(</span>group, success) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__groupStarted" class="inline-link"> _groupStarted</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__handleFailure" class="inline-link"> _handleFailure</a><span class="parameters">(</span>groupName, fixture, e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__jumpToLog" class="inline-link"> _jumpToLog</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__jumpToSuite" class="inline-link"> _jumpToSuite</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__objPropEq" class="inline-link"> _objPropEq</a><span class="parameters">(</span>expected, actual) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__registerTest" class="inline-link"> _registerTest</a><span class="parameters">(</span>group, test, type) <span>add the provided test function or fixture object to the specified
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__fixHeight" class="inline-link"> _fixHeight</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__groupFinished" class="inline-link"> _groupFinished</a><span class="parameters">(</span>group, success) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__groupStarted" class="inline-link"> _groupStarted</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__handleFailure" class="inline-link"> _handleFailure</a><span class="parameters">(</span>groupName, fixture, e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__jumpToLog" class="inline-link"> _jumpToLog</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__jumpToSuite" class="inline-link"> _jumpToSuite</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__objPropEq" class="inline-link"> _objPropEq</a><span class="parameters">(</span>expected, actual) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__registerTest" class="inline-link"> _registerTest</a><span class="parameters">(</span>group, test, type) <span>add the provided test function or fixture object to the specified
 test group.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__registerTestAndCheck" class="inline-link"> _registerTestAndCheck</a><span class="parameters">(</span>groupId, test, type, testArgPosition, args, setUp, tearDown) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__report" class="inline-link"> _report</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__runFixture" class="inline-link"> _runFixture</a><span class="parameters">(</span>groupName, fixture) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__runPerfFixture" class="inline-link"> _runPerfFixture</a><span class="parameters">(</span>groupName, fixture) <span>This function handles how to execute a &#39;performance&#39; test
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__registerTestAndCheck" class="inline-link"> _registerTestAndCheck</a><span class="parameters">(</span>groupId, test, type, testArgPosition, args, setUp, tearDown) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__report" class="inline-link"> _report</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__runFixture" class="inline-link"> _runFixture</a><span class="parameters">(</span>groupName, fixture) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__runPerfFixture" class="inline-link"> _runPerfFixture</a><span class="parameters">(</span>groupName, fixture) <span>This function handles how to execute a &#39;performance&#39; test
 which is different from a straight UT style test.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__runRegFixture" class="inline-link"> _runRegFixture</a><span class="parameters">(</span>groupName, fixture) <span>Function to help run a generic doh test.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__testFinished" class="inline-link"> _testFinished</a><span class="parameters">(</span>g, f, s) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__testRegistered" class="inline-link"> _testRegistered</a><span class="parameters">(</span>group, fixture) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__testStarted" class="inline-link"> _testStarted</a><span class="parameters">(</span>group, fixture) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__updateGlobalProgressBar" class="inline-link"> _updateGlobalProgressBar</a><span class="parameters">(</span>p, success, group) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9doh_runner__updateTestList" class="inline-link"> _updateTestList</a><span class="parameters">(</span>group, fixture, unwindingBacklog) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_assertEqual" class="inline-link"> assertEqual</a><span class="parameters">(</span>expected, actual, hint, doNotThrow) <span>are the passed expected and actual objects/values deeply
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__runRegFixture" class="inline-link"> _runRegFixture</a><span class="parameters">(</span>groupName, fixture) <span>Function to help run a generic doh test.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__testFinished" class="inline-link"> _testFinished</a><span class="parameters">(</span>g, f, s) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__testRegistered" class="inline-link"> _testRegistered</a><span class="parameters">(</span>group, fixture) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__testStarted" class="inline-link"> _testStarted</a><span class="parameters">(</span>group, fixture) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__updateGlobalProgressBar" class="inline-link"> _updateGlobalProgressBar</a><span class="parameters">(</span>p, success, group) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9doh_runner__updateTestList" class="inline-link"> _updateTestList</a><span class="parameters">(</span>group, fixture, unwindingBacklog) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_assertEqual" class="inline-link"> assertEqual</a><span class="parameters">(</span>expected, actual, hint, doNotThrow) <span>are the passed expected and actual objects/values deeply
 equivalent?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_assertError" class="inline-link"> assertError</a><span class="parameters">(</span>expectedError, scope, functionName, args, hint) <span>Test for a certain error to be thrown by the given function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_assertFalse" class="inline-link"> assertFalse</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;falsey&quot;?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_assertNotEqual" class="inline-link"> assertNotEqual</a><span class="parameters">(</span>notExpected, actual, hint) <span>are the passed notexpected and actual objects/values deeply
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_assertError" class="inline-link"> assertError</a><span class="parameters">(</span>expectedError, scope, functionName, args, hint) <span>Test for a certain error to be thrown by the given function.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_assertFalse" class="inline-link"> assertFalse</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;falsey&quot;?</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_assertNotEqual" class="inline-link"> assertNotEqual</a><span class="parameters">(</span>notExpected, actual, hint) <span>are the passed notexpected and actual objects/values deeply
 not equivalent?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_assertTrue" class="inline-link"> assertTrue</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;truthy&quot;?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_Deferred" class="inline-link"> Deferred</a><span class="parameters">(</span>canceller) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_e" class="inline-link"> e</a><span class="parameters">(</span>expectedError, scope, functionName, args, hint) <span>Test for a certain error to be thrown by the given function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_f" class="inline-link"> f</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;falsey&quot;?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_is" class="inline-link"> is</a><span class="parameters">(</span>expected, actual, hint, doNotThrow) <span>are the passed expected and actual objects/values deeply
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_assertTrue" class="inline-link"> assertTrue</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;truthy&quot;?</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_Deferred" class="inline-link"> Deferred</a><span class="parameters">(</span>canceller) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_e" class="inline-link"> e</a><span class="parameters">(</span>expectedError, scope, functionName, args, hint) <span>Test for a certain error to be thrown by the given function.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_f" class="inline-link"> f</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;falsey&quot;?</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_is" class="inline-link"> is</a><span class="parameters">(</span>expected, actual, hint, doNotThrow) <span>are the passed expected and actual objects/values deeply
 equivalent?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_isNot" class="inline-link"> isNot</a><span class="parameters">(</span>notExpected, actual, hint) <span>are the passed notexpected and actual objects/values deeply
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_isNot" class="inline-link"> isNot</a><span class="parameters">(</span>notExpected, actual, hint) <span>are the passed notexpected and actual objects/values deeply
 not equivalent?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_pause" class="inline-link"> pause</a><span class="parameters">(</span>) <span>halt test run.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_register" class="inline-link"> register</a><span class="parameters">(</span>a1, a2, a3, a4, a5) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_registerDocTests" class="inline-link"> registerDocTests</a><span class="parameters">(</span>module) <span>Deprecated.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_registerGroup" class="inline-link"> registerGroup</a><span class="parameters">(</span>group, tests, setUp, tearDown, type) <span>Deprecated.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_registerTest" class="inline-link"> registerTest</a><span class="parameters">(</span>group, test, type) <span>Deprecated.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_registerTestNs" class="inline-link"> registerTestNs</a><span class="parameters">(</span>group, ns) <span>Deprecated.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_registerTests" class="inline-link"> registerTests</a><span class="parameters">(</span>group, testArr, type) <span>Deprecated.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_registerTestType" class="inline-link"> registerTestType</a><span class="parameters">(</span>name, initProc) <span>Adds a test type and associates a function used to initialize each test of the given type</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_run" class="inline-link"> run</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_runGroup" class="inline-link"> runGroup</a><span class="parameters">(</span>groupName, idx) <span>runs the specified test group</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_runOnLoad" class="inline-link"> runOnLoad</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_showLogPage" class="inline-link"> showLogPage</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_showPerfTestsPage" class="inline-link"> showPerfTestsPage</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_showTestPage" class="inline-link"> showTestPage</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_t" class="inline-link"> t</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;truthy&quot;?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_togglePaused" class="inline-link"> togglePaused</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9doh_runner_toggleRunAll" class="inline-link"> toggleRunAll</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9doh_runner__onEnd" class="inline-link"> _onEnd</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_pause" class="inline-link"> pause</a><span class="parameters">(</span>) <span>halt test run.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_register" class="inline-link"> register</a><span class="parameters">(</span>a1, a2, a3, a4, a5) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_registerDocTests" class="inline-link"> registerDocTests</a><span class="parameters">(</span>module) <span>Deprecated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_registerGroup" class="inline-link"> registerGroup</a><span class="parameters">(</span>group, tests, setUp, tearDown, type) <span>Deprecated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_registerTest" class="inline-link"> registerTest</a><span class="parameters">(</span>group, test, type) <span>Deprecated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_registerTestNs" class="inline-link"> registerTestNs</a><span class="parameters">(</span>group, ns) <span>Deprecated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_registerTests" class="inline-link"> registerTests</a><span class="parameters">(</span>group, testArr, type) <span>Deprecated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_registerTestType" class="inline-link"> registerTestType</a><span class="parameters">(</span>name, initProc) <span>Adds a test type and associates a function used to initialize each test of the given type</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_run" class="inline-link"> run</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_runGroup" class="inline-link"> runGroup</a><span class="parameters">(</span>groupName, idx) <span>runs the specified test group</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_runOnLoad" class="inline-link"> runOnLoad</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_showLogPage" class="inline-link"> showLogPage</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_showPerfTestsPage" class="inline-link"> showPerfTestsPage</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_showTestPage" class="inline-link"> showTestPage</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_t" class="inline-link"> t</a><span class="parameters">(</span>condition, hint) <span>is the passed item &quot;truthy&quot;?</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_togglePaused" class="inline-link"> togglePaused</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9doh_runner_toggleRunAll" class="inline-link"> toggleRunAll</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9doh_runner__onEnd" class="inline-link"> _onEnd</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1569,4 +1577,4 @@ Gets all the doctests from the given module and register each of them as a singl
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/doh/runner" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

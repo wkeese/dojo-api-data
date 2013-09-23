@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/calendar/StoreMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/calendar/StoreMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/calendar/StoreMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/calendar/StoreMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a>
@@ -8,86 +15,87 @@
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/calendar.html" target="_blank">dojox/calendar/StoreMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_allDayAttr" class="inline-link"> allDayAttr </a><span>The attribute of the store item that contains the all day state of 
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_allDayAttr" class="inline-link"> allDayAttr </a><span>The attribute of the store item that contains the all day state of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_cssClassFunc" class="inline-link"> cssClassFunc </a><span>Optional function that returns a css class name to apply to item renderers that are displaying the specified item in parameter.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_decodeDate" class="inline-link"> decodeDate </a><span>An optional function to transform store date into Date objects.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_displayedItemsInvalidated" class="inline-link"> displayedItemsInvalidated </a><span>Whether the data items displayed must be recomputed, usually after the displayed 
+        </li>
+        <li class="functionIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_cssClassFunc" class="inline-link"> cssClassFunc </a><span>Optional function that returns a css class name to apply to item renderers that are displaying the specified item in parameter.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_decodeDate" class="inline-link"> decodeDate </a><span>An optional function to transform store date into Date objects.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_displayedItemsInvalidated" class="inline-link"> displayedItemsInvalidated </a><span>Whether the data items displayed must be recomputed, usually after the displayed 
 time range has changed.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_encodeDate" class="inline-link"> encodeDate </a><span>An optional function to transform Date objects into store date.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_endTimeAttr" class="inline-link"> endTimeAttr </a><span>The attribute of the store item that contains the end time of 
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_encodeDate" class="inline-link"> encodeDate </a><span>An optional function to transform Date objects into store date.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_endTimeAttr" class="inline-link"> endTimeAttr </a><span>The attribute of the store item that contains the end time of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_query" class="inline-link"> query </a><span>A query that can be passed to when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_queryOptions" class="inline-link"> queryOptions </a><span>Options to be applied when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_startTimeAttr" class="inline-link"> startTimeAttr </a><span>The attribute of the store item that contains the start time of 
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_query" class="inline-link"> query </a><span>A query that can be passed to when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_queryOptions" class="inline-link"> queryOptions </a><span>Options to be applied when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_startTimeAttr" class="inline-link"> startTimeAttr </a><span>The attribute of the store item that contains the start time of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_store" class="inline-link"> store </a><span>The store that contains the events to display.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_subColumnAttr" class="inline-link"> subColumnAttr </a><span>The attribute of the store item that contains the sub column name of 
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_store" class="inline-link"> store </a><span>The store that contains the events to display.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_subColumnAttr" class="inline-link"> subColumnAttr </a><span>The attribute of the store item that contains the sub column name of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_summaryAttr" class="inline-link"> summaryAttr </a><span>The attribute of the store item that contains the summary of 
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_calendar_StoreMixin_summaryAttr" class="inline-link"> summaryAttr </a><span>The attribute of the store item that contains the summary of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__cleanItemStoreState" class="inline-link"> _cleanItemStoreState</a><span class="parameters">(</span>id) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__computeVisibleItems" class="inline-link"> _computeVisibleItems</a><span class="parameters">(</span>renderData) <span>Computes the data items that are in the displayed interval.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__getItemStoreStateObj" class="inline-link"> _getItemStoreStateObj</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__initItems" class="inline-link"> _initItems</a><span class="parameters">(</span>items) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__refreshItemsRendering" class="inline-link"> _refreshItemsRendering</a><span class="parameters">(</span>renderData) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__setItemStoreState" class="inline-link"> _setItemStoreState</a><span class="parameters">(</span>item, state) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__setStoreAttr" class="inline-link"> _setStoreAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__updateItems" class="inline-link"> _updateItems</a><span class="parameters">(</span>object, previousIndex, newIndex) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_calendar_StoreMixin_getItemStoreState" class="inline-link"> getItemStoreState</a><span class="parameters">(</span>item) <span>Returns the creation state of an item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_calendar_StoreMixin_itemToRenderItem" class="inline-link"> itemToRenderItem</a><span class="parameters">(</span>item, store) <span>Creates the render item based on the dojo.store item.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_calendar_StoreMixin_renderItemToItem" class="inline-link"> renderItemToItem</a><span class="parameters">(</span>renderItem, store) <span>Create a store item based on the render item.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__cleanItemStoreState" class="inline-link"> _cleanItemStoreState</a><span class="parameters">(</span>id) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__computeVisibleItems" class="inline-link"> _computeVisibleItems</a><span class="parameters">(</span>renderData) <span>Computes the data items that are in the displayed interval.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_StoreMixin__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__getItemStoreStateObj" class="inline-link"> _getItemStoreStateObj</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__initItems" class="inline-link"> _initItems</a><span class="parameters">(</span>items) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__refreshItemsRendering" class="inline-link"> _refreshItemsRendering</a><span class="parameters">(</span>renderData) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__setItemStoreState" class="inline-link"> _setItemStoreState</a><span class="parameters">(</span>item, state) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__setStoreAttr" class="inline-link"> _setStoreAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_StoreMixin__updateItems" class="inline-link"> _updateItems</a><span class="parameters">(</span>object, previousIndex, newIndex) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_calendar_StoreMixin_getItemStoreState" class="inline-link"> getItemStoreState</a><span class="parameters">(</span>item) <span>Returns the creation state of an item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_calendar_StoreMixin_itemToRenderItem" class="inline-link"> itemToRenderItem</a><span class="parameters">(</span>item, store) <span>Creates the render item based on the dojo.store item.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_calendar_StoreMixin_renderItemToItem" class="inline-link"> renderItemToItem</a><span class="parameters">(</span>renderItem, store) <span>Create a store item based on the render item.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_StoreMixin_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -761,4 +769,4 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/calendar/StoreMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

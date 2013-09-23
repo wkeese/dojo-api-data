@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/Deferred</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/Deferred" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/Deferred.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/_base/Deferred<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Deprecated.   This module defines the legacy <a class="jsdoc-link" href="/api/1.8/dojo/_base/Deferred">dojo/_base/Deferred</a> API.
 New code should use <a class="jsdoc-link" href="/api/1.8/dojo/Deferred">dojo/Deferred</a> instead.</p>
@@ -24,14 +31,14 @@ promise with a successful result or an error. The most important method for
 working with Dojo&#39;s promises is the then() method, which follows the
 CommonJS proposed promise API. An example of using a Dojo promise:
 
+
 </p>
-<pre><code>  var resultingPromise = someAsyncOperation.then(function(result){
+<pre><code>var resultingPromise = someAsyncOperation.then(function(result){
     ... handle result ...
-  },
-  function(error){
+},
+function(error){
     ... handle error ...
-  });</pre></code>
-<p></p>
+});</pre></code>
 <p>The .then() call returns a new promise that represents the result of the
 execution of the callback. The callbacks will never affect the original promises value.
 
@@ -73,153 +80,159 @@ handle that error for cancellable Deferreds.</p>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/_base/Deferred.html" target="_blank">dojo/_base/Deferred reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var deferred = new Deferred();
-  setTimeout(function(){ deferred.callback({success: true}); }, 1000);
-  return deferred;</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var deferred = new Deferred();
+setTimeout(function(){ deferred.callback({success: true}); }, 1000);
+return deferred;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><p>Deferred objects are often used when making code asynchronous. It
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><p>Deferred objects are often used when making code asynchronous. It
 may be easiest to write functions in a synchronous manner and then
 split code using a deferred to trigger a response to a long-lived
 operation. For example, instead of register a callback function to
 denote when a rendering operation completes, the function can
 simply return a deferred:
 
+
 </p>
-<pre><code>  // callback style:
-  function renderLotsOfData(data, callback){
+<pre><code>// callback style:
+function renderLotsOfData(data, callback){
     var success = false
     try{
-      for(var x in data){
-        renderDataitem(data[x]);
-      }
-      success = true;
+        for(var x in data){
+            renderDataitem(data[x]);
+        }
+        success = true;
     }catch(e){ }
     if(callback){
-      callback(success);
+        callback(success);
     }
-  }</code></pre>
-<p></p>
-<pre><code>  // using callback style
-  renderLotsOfData(someDataObj, function(success){
+}
+
+
+// using callback style
+renderLotsOfData(someDataObj, function(success){
     // handles success or failure
     if(!success){
-      promptUserToRecover();
+        promptUserToRecover();
     }
-  });
-  // NOTE: no way to add another callback here!!</code></pre>
+});
+// NOTE: no way to add another callback here!!</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><p>Using a Deferred doesn&#39;t simplify the sending code any, but it
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><p>Using a Deferred doesn&#39;t simplify the sending code any, but it
 provides a standard interface for callers and senders alike,
 providing both with a simple way to service multiple callbacks for
 an operation and freeing both sides from worrying about details
 such as &quot;did this get called already?&quot;. With Deferreds, new
 callbacks can be added at any time.
 
+
 </p>
-<pre><code>  // Deferred style:
-  function renderLotsOfData(data){
+<pre><code>// Deferred style:
+function renderLotsOfData(data){
     var d = new Deferred();
     try{
-      for(var x in data){
-        renderDataitem(data[x]);
-      }
-      d.callback(true);
+        for(var x in data){
+            renderDataitem(data[x]);
+        }
+        d.callback(true);
     }catch(e){
-      d.errback(new Error(&quot;rendering failed&quot;));
+        d.errback(new Error(&quot;rendering failed&quot;));
     }
     return d;
-  }</code></pre>
-<p></p>
-<pre><code>  // using Deferred style
-  renderLotsOfData(someDataObj).then(null, function(){
-    promptUserToRecover();
-  });
-  // NOTE: addErrback and addCallback both return the Deferred
-  // again, so we could chain adding callbacks or save the
-  // deferred for later should we need to be notified again.</code></pre>
+}
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><p>In this example, renderLotsOfData is synchronous and so both
+
+// using Deferred style
+renderLotsOfData(someDataObj).then(null, function(){
+    promptUserToRecover();
+});
+// NOTE: addErrback and addCallback both return the Deferred
+// again, so we could chain adding callbacks or save the
+// deferred for later should we need to be notified again.</code></pre>
+
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 4</h3><p>In this example, renderLotsOfData is synchronous and so both
 versions are pretty artificial. Putting the data display on a
 timeout helps show why Deferreds rock:
 
+
 </p>
-<pre><code>  // Deferred style and async func
-  function renderLotsOfData(data){
+<pre><code>// Deferred style and async func
+function renderLotsOfData(data){
     var d = new Deferred();
     setTimeout(function(){
-      try{
-        for(var x in data){
-          renderDataitem(data[x]);
+        try{
+            for(var x in data){
+                renderDataitem(data[x]);
+            }
+            d.callback(true);
+        }catch(e){
+            d.errback(new Error(&quot;rendering failed&quot;));
         }
-        d.callback(true);
-      }catch(e){
-        d.errback(new Error(&quot;rendering failed&quot;));
-      }
     }, 100);
     return d;
-  }</code></pre>
-<p></p>
-<pre><code>  // using Deferred style
-  renderLotsOfData(someDataObj).then(null, function(){
+}
+
+
+// using Deferred style
+renderLotsOfData(someDataObj).then(null, function(){
     promptUserToRecover();
-  });</code></pre>
-<p></p>
+});</code></pre>
 <p>Note that the caller doesn&#39;t have to change his code at all to
 handle the asynchronous case.</p>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_8dojo__base_Deferred_fired" class="inline-link"> fired </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojo__base_Deferred_promise" class="inline-link"> promise </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addBoth" class="inline-link"> addBoth</a><span class="parameters">(</span>callback) <span>Add handler as both successful callback and error callback for this deferred instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addCallback" class="inline-link"> addCallback</a><span class="parameters">(</span>callback) <span>Adds successful callback for this deferred instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addCallbacks" class="inline-link"> addCallbacks</a><span class="parameters">(</span>callback, errback) <span>Adds callback and error callback for this deferred instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addErrback" class="inline-link"> addErrback</a><span class="parameters">(</span>errback) <span>Adds error callback for this deferred instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_callback" class="inline-link"> callback</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>) <span>Cancels the asynchronous operation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceller) <span>Deprecated.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_errback" class="inline-link"> errback</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_progress" class="inline-link"> progress</a><span class="parameters">(</span>update) <span>Send progress events to all listeners</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_reject" class="inline-link"> reject</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_Deferred_then" class="inline-link"> then</a><span class="parameters">(</span>resolvedCallback, errorCallback, progressCallback) <span>Adds a fulfilledHandler, errorHandler, and progressHandler to be called for
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_8dojo__base_Deferred_fired" class="inline-link"> fired </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojo__base_Deferred_promise" class="inline-link"> promise </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addBoth" class="inline-link"> addBoth</a><span class="parameters">(</span>callback) <span>Add handler as both successful callback and error callback for this deferred instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addCallback" class="inline-link"> addCallback</a><span class="parameters">(</span>callback) <span>Adds successful callback for this deferred instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addCallbacks" class="inline-link"> addCallbacks</a><span class="parameters">(</span>callback, errback) <span>Adds callback and error callback for this deferred instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addErrback" class="inline-link"> addErrback</a><span class="parameters">(</span>errback) <span>Adds error callback for this deferred instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_callback" class="inline-link"> callback</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>) <span>Cancels the asynchronous operation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceller) <span>Deprecated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_errback" class="inline-link"> errback</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_progress" class="inline-link"> progress</a><span class="parameters">(</span>update) <span>Send progress events to all listeners</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_reject" class="inline-link"> reject</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_then" class="inline-link"> then</a><span class="parameters">(</span>resolvedCallback, errorCallback, progressCallback) <span>Adds a fulfilledHandler, errorHandler, and progressHandler to be called for
 completion of a promise.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo__base_Deferred_when" class="inline-link"> when</a><span class="parameters">(</span>valueOrPromise, callback, errback, progback) <span>Transparently applies callbacks to values and/or promises.</span><span title="inherited from dojo/when" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo__base_Deferred_when" class="inline-link"> when</a><span class="parameters">(</span>valueOrPromise, callback, errback, progback) <span>Transparently applies callbacks to values and/or promises.</span><span title="inherited from dojo/when" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -261,7 +274,8 @@ completion of a promise.</span>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Returns this deferred object.</div>
+        <div class="jsdoc-return-description"><p>Returns this deferred object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addCallback"></a><span class="functionIcon">addCallback</span><span class="parameters">(callback)</span> 
@@ -284,7 +298,8 @@ completion of a promise.</span>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Returns this deferred object.</div>
+        <div class="jsdoc-return-description"><p>Returns this deferred object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addCallbacks"></a><span class="functionIcon">addCallbacks</span><span class="parameters">(callback, errback)</span> 
@@ -317,7 +332,8 @@ completion of a promise.</span>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Returns this deferred object.</div>
+        <div class="jsdoc-return-description"><p>Returns this deferred object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addErrback"></a><span class="functionIcon">addErrback</span><span class="parameters">(errback)</span> 
@@ -340,7 +356,8 @@ completion of a promise.</span>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Returns this deferred object.</div>
+        <div class="jsdoc-return-description"><p>Returns this deferred object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_callback"></a><span class="functionIcon">callback</span><span class="parameters">(value)</span> 
@@ -399,14 +416,14 @@ promise with a successful result or an error. The most important method for
 working with Dojo&#39;s promises is the then() method, which follows the
 CommonJS proposed promise API. An example of using a Dojo promise:
 
+
 </p>
-<pre><code>  var resultingPromise = someAsyncOperation.then(function(result){
+<pre><code>var resultingPromise = someAsyncOperation.then(function(result){
     ... handle result ...
-  },
-  function(error){
+},
+function(error){
     ... handle error ...
-  });</pre></code>
-<p></p>
+});</pre></code>
 <p>The .then() call returns a new promise that represents the result of the
 execution of the callback. The callbacks will never affect the original promises value.
 
@@ -449,9 +466,9 @@ handle that error for cancellable Deferreds.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var deferred = new Deferred();
-  setTimeout(function(){ deferred.callback({success: true}); }, 1000);
-  return deferred;</code></pre>
+            <h3>Example 1</h3><pre><code>var deferred = new Deferred();
+setTimeout(function(){ deferred.callback({success: true}); }, 1000);
+return deferred;</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -462,29 +479,31 @@ operation. For example, instead of register a callback function to
 denote when a rendering operation completes, the function can
 simply return a deferred:
 
+
 </p>
-<pre><code>  // callback style:
-  function renderLotsOfData(data, callback){
+<pre><code>// callback style:
+function renderLotsOfData(data, callback){
     var success = false
     try{
-      for(var x in data){
-        renderDataitem(data[x]);
-      }
-      success = true;
+        for(var x in data){
+            renderDataitem(data[x]);
+        }
+        success = true;
     }catch(e){ }
     if(callback){
-      callback(success);
+        callback(success);
     }
-  }</code></pre>
-<p></p>
-<pre><code>  // using callback style
-  renderLotsOfData(someDataObj, function(success){
+}
+
+
+// using callback style
+renderLotsOfData(someDataObj, function(success){
     // handles success or failure
     if(!success){
-      promptUserToRecover();
+        promptUserToRecover();
     }
-  });
-  // NOTE: no way to add another callback here!!</code></pre>
+});
+// NOTE: no way to add another callback here!!</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -495,28 +514,30 @@ an operation and freeing both sides from worrying about details
 such as &quot;did this get called already?&quot;. With Deferreds, new
 callbacks can be added at any time.
 
+
 </p>
-<pre><code>  // Deferred style:
-  function renderLotsOfData(data){
+<pre><code>// Deferred style:
+function renderLotsOfData(data){
     var d = new Deferred();
     try{
-      for(var x in data){
-        renderDataitem(data[x]);
-      }
-      d.callback(true);
+        for(var x in data){
+            renderDataitem(data[x]);
+        }
+        d.callback(true);
     }catch(e){
-      d.errback(new Error(&quot;rendering failed&quot;));
+        d.errback(new Error(&quot;rendering failed&quot;));
     }
     return d;
-  }</code></pre>
-<p></p>
-<pre><code>  // using Deferred style
-  renderLotsOfData(someDataObj).then(null, function(){
+}
+
+
+// using Deferred style
+renderLotsOfData(someDataObj).then(null, function(){
     promptUserToRecover();
-  });
-  // NOTE: addErrback and addCallback both return the Deferred
-  // again, so we could chain adding callbacks or save the
-  // deferred for later should we need to be notified again.</code></pre>
+});
+// NOTE: addErrback and addCallback both return the Deferred
+// again, so we could chain adding callbacks or save the
+// deferred for later should we need to be notified again.</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -524,28 +545,29 @@ callbacks can be added at any time.
 versions are pretty artificial. Putting the data display on a
 timeout helps show why Deferreds rock:
 
+
 </p>
-<pre><code>  // Deferred style and async func
-  function renderLotsOfData(data){
+<pre><code>// Deferred style and async func
+function renderLotsOfData(data){
     var d = new Deferred();
     setTimeout(function(){
-      try{
-        for(var x in data){
-          renderDataitem(data[x]);
+        try{
+            for(var x in data){
+                renderDataitem(data[x]);
+            }
+            d.callback(true);
+        }catch(e){
+            d.errback(new Error(&quot;rendering failed&quot;));
         }
-        d.callback(true);
-      }catch(e){
-        d.errback(new Error(&quot;rendering failed&quot;));
-      }
     }, 100);
     return d;
-  }</code></pre>
-<p></p>
-<pre><code>  // using Deferred style
-  renderLotsOfData(someDataObj).then(null, function(){
+}
+
+
+// using Deferred style
+renderLotsOfData(someDataObj).then(null, function(){
     promptUserToRecover();
-  });</code></pre>
-<p></p>
+});</code></pre>
 <p>Note that the caller doesn&#39;t have to change his code at all to
 handle the asynchronous case.</p>
 
@@ -686,17 +708,19 @@ throws an error, the returned promise will be moved to failed state.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">Returns a new promise that represents the result of the
-execution of the callback. The callbacks will never affect the original promises value.</div>
+        <div class="jsdoc-return-description"><p>Returns a new promise that represents the result of the
+execution of the callback. The callbacks will never affect the original promises value.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>An example of using a CommonJS compliant promise:</p>
-<pre><code>  asyncComputeTheAnswerToEverything().
+            <h3>Example 1</h3><p>An example of using a CommonJS compliant promise:
+
+</p>
+<pre><code>asyncComputeTheAnswerToEverything().
     then(addTwo).
     then(printResult, onError);
-  &gt;44</code></pre>
-<p></p>
+&gt;44</code></pre>
 
           </div>
         </div>
@@ -758,9 +782,10 @@ is received.</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
-        <div class="jsdoc-return-description">Promise, or if a callback is provided, the result of the callback.</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | The property to get. | undefined</span></div>
+        <div class="jsdoc-return-description"><p>Promise, or if a callback is provided, the result of the callback.</p>
+</div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/Deferred" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

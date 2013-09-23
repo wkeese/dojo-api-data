@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gantt/contextMenuTab</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/gantt/contextMenuTab" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gantt/contextMenuTab.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/gantt/contextMenuTab<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new contextMenuTab<span class="parameters">(id,description,type,showOInfo,tabMenu,withDefaultValue);</span></div>
 </div>
@@ -51,56 +58,57 @@
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/gantt.html" target="_blank">dojox/gantt/contextMenuTab reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addAction" class="inline-link"> addAction</a><span class="parameters">(</span>handler) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addChildTaskAction" class="inline-link"> addChildTaskAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addItem" class="inline-link"> addItem</a><span class="parameters">(</span>id, name, key, required) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addProjectAction" class="inline-link"> addProjectAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addSuccessorTaskAction" class="inline-link"> addSuccessorTaskAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addTaskAction" class="inline-link"> addTaskAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>id, description, type, showOInfo, tabMenu, withDefaultValue) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_cpProjectAction" class="inline-link"> cpProjectAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_cpUpdateAction" class="inline-link"> cpUpdateAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_decodeDate" class="inline-link"> decodeDate</a><span class="parameters">(</span>dateStr) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_deleteAction" class="inline-link"> deleteAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_deleteProjectAction" class="inline-link"> deleteProjectAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_durationUpdateAction" class="inline-link"> durationUpdateAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_encodeDate" class="inline-link"> encodeDate</a><span class="parameters">(</span>date) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_insertData" class="inline-link"> insertData</a><span class="parameters">(</span>content, name, value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_ownerUpdateAction" class="inline-link"> ownerUpdateAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_preValueValidation" class="inline-link"> preValueValidation</a><span class="parameters">(</span>items) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_ptUpdateAction" class="inline-link"> ptUpdateAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_renameProjectAction" class="inline-link"> renameProjectAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_renameTaskAction" class="inline-link"> renameTaskAction</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_show" class="inline-link"> show</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addAction" class="inline-link"> addAction</a><span class="parameters">(</span>handler) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addChildTaskAction" class="inline-link"> addChildTaskAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addItem" class="inline-link"> addItem</a><span class="parameters">(</span>id, name, key, required) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addProjectAction" class="inline-link"> addProjectAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addSuccessorTaskAction" class="inline-link"> addSuccessorTaskAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_addTaskAction" class="inline-link"> addTaskAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>id, description, type, showOInfo, tabMenu, withDefaultValue) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_cpProjectAction" class="inline-link"> cpProjectAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_cpUpdateAction" class="inline-link"> cpUpdateAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_decodeDate" class="inline-link"> decodeDate</a><span class="parameters">(</span>dateStr) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_deleteAction" class="inline-link"> deleteAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_deleteProjectAction" class="inline-link"> deleteProjectAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_durationUpdateAction" class="inline-link"> durationUpdateAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_encodeDate" class="inline-link"> encodeDate</a><span class="parameters">(</span>date) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_insertData" class="inline-link"> insertData</a><span class="parameters">(</span>content, name, value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_ownerUpdateAction" class="inline-link"> ownerUpdateAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_preValueValidation" class="inline-link"> preValueValidation</a><span class="parameters">(</span>items) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_ptUpdateAction" class="inline-link"> ptUpdateAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_renameProjectAction" class="inline-link"> renameProjectAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_renameTaskAction" class="inline-link"> renameTaskAction</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_contextMenuTab_show" class="inline-link"> show</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -416,4 +424,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gantt/contextMenuTab" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

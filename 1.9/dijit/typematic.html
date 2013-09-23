@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/typematic</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/typematic" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/typematic.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/typematic<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>These functions are used to repetitively call a user specified callback
 method when a specific key or mouse click over a specific DOM node is
@@ -8,24 +15,25 @@ Only 1 such event is allowed to occur on the browser page at 1 time.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dijit/typematic.html" target="_blank">dijit/typematic reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_typematic__fireEventAndReload" class="inline-link"> _fireEventAndReload</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_typematic_addKeyListener" class="inline-link"> addKeyListener</a><span class="parameters">(</span>node, keyObject, _this, callback, subsequentDelay, initialDelay, minDelay) <span>Start listening for a specific typematic key.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_typematic_addListener" class="inline-link"> addListener</a><span class="parameters">(</span>mouseNode, keyNode, keyObject, _this, callback, subsequentDelay, initialDelay, minDelay) <span>Start listening for a specific typematic key and mouseclick.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_typematic_addMouseListener" class="inline-link"> addMouseListener</a><span class="parameters">(</span>node, _this, callback, subsequentDelay, initialDelay, minDelay) <span>Start listening for a typematic mouse click.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_typematic_stop" class="inline-link"> stop</a><span class="parameters">(</span>) <span>Stop an ongoing timed, repeating callback sequence.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_typematic_trigger" class="inline-link"> trigger</a><span class="parameters">(</span>evt, _this, node, callback, obj, subsequentDelay, initialDelay, minDelay) <span>Start a timed, repeating callback sequence.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_typematic__fireEventAndReload" class="inline-link"> _fireEventAndReload</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_typematic_addKeyListener" class="inline-link"> addKeyListener</a><span class="parameters">(</span>node, keyObject, _this, callback, subsequentDelay, initialDelay, minDelay) <span>Start listening for a specific typematic key.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_typematic_addListener" class="inline-link"> addListener</a><span class="parameters">(</span>mouseNode, keyNode, keyObject, _this, callback, subsequentDelay, initialDelay, minDelay) <span>Start listening for a specific typematic key and mouseclick.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_typematic_addMouseListener" class="inline-link"> addMouseListener</a><span class="parameters">(</span>node, _this, callback, subsequentDelay, initialDelay, minDelay) <span>Start listening for a typematic mouse click.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_typematic_stop" class="inline-link"> stop</a><span class="parameters">(</span>) <span>Stop an ongoing timed, repeating callback sequence.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_typematic_trigger" class="inline-link"> trigger</a><span class="parameters">(</span>evt, _this, node, callback, obj, subsequentDelay, initialDelay, minDelay) <span>Start a timed, repeating callback sequence.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -331,4 +339,4 @@ or else the fractional time multiplier for the next event&#39;s delay, default=0
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/typematic" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

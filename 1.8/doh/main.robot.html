@@ -1,101 +1,121 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/doh/main.robot</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/doh/main.robot" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/doh/main.robot.html</div>
 <h1 class="objectIcon36 jsdoc-title">doh/main.robot<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_8doh_main_robot__appletDead" class="inline-link"> _appletDead </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8doh_main_robot__primePump" class="inline-link"> _primePump </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8doh_main_robot__robotInitialized" class="inline-link"> _robotInitialized </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8doh_main_robot__robotLoaded" class="inline-link"> _robotLoaded </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8doh_main_robot__runsemaphore" class="inline-link"> _runsemaphore </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8doh_main_robot__spaceReceived" class="inline-link"> _spaceReceived </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8doh_main_robot_doc" class="inline-link"> doc </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8doh_main_robot_mouseWheelSize" class="inline-link"> mouseWheelSize </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8doh_main_robot_window" class="inline-link"> window </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__assertRobot" class="inline-link"> _assertRobot</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__getWindowChain" class="inline-link"> _getWindowChain</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__initKeyboard" class="inline-link"> _initKeyboard</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__initRobot" class="inline-link"> _initRobot</a><span class="parameters">(</span>r) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__initWheel" class="inline-link"> _initWheel</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__killApplet" class="inline-link"> _killApplet</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__mouseMove" class="inline-link"> _mouseMove</a><span class="parameters">(</span>x, y, absolute, duration) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__notified" class="inline-link"> _notified</a><span class="parameters">(</span>keystring) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__position" class="inline-link"> _position</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__resolveNode" class="inline-link"> _resolveNode</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__run" class="inline-link"> _run</a><span class="parameters">(</span>frame) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__scrollIntoView" class="inline-link"> _scrollIntoView</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__setDocumentBounds" class="inline-link"> _setDocumentBounds</a><span class="parameters">(</span>docScreenX, docScreenY) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8doh_main_robot__updateDocument" class="inline-link"> _updateDocument</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_initRobot" class="inline-link"> initRobot</a><span class="parameters">(</span>url) <span>Opens the application at the specified URL for testing, redirecting dojo to point to the application environment instead of the test environment.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_keyDown" class="inline-link"> keyDown</a><span class="parameters">(</span>charOrCode, delay) <span>Holds down a single key, like SHIFT or &#39;a&#39;.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_keyPress" class="inline-link"> keyPress</a><span class="parameters">(</span>charOrCode, delay, modifiers, asynchronous) <span>Types a key combination, like SHIFT-TAB.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_keyUp" class="inline-link"> keyUp</a><span class="parameters">(</span>charOrCode, delay) <span>Releases a single key, like SHIFT or &#39;a&#39;.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_killRobot" class="inline-link"> killRobot</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mouseClick" class="inline-link"> mouseClick</a><span class="parameters">(</span>buttons, delay) <span>Convenience function to do a press/release.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mouseMove" class="inline-link"> mouseMove</a><span class="parameters">(</span>x, y, delay, duration, absolute) <span>Moves the mouse to the specified x,y offset relative to the viewport.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mouseMoveAt" class="inline-link"> mouseMoveAt</a><span class="parameters">(</span>node, delay, duration, offsetX, offsetY) <span>Moves the mouse over the specified node at the specified relative x,y offset.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mouseMoveTo" class="inline-link"> mouseMoveTo</a><span class="parameters">(</span>point, delay, duration, absolute) <span>Move the mouse from the current position to the specified point.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mousePress" class="inline-link"> mousePress</a><span class="parameters">(</span>buttons, delay) <span>Presses mouse buttons.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mouseRelease" class="inline-link"> mouseRelease</a><span class="parameters">(</span>buttons, delay) <span>Releases mouse buttons.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_mouseWheel" class="inline-link"> mouseWheel</a><span class="parameters">(</span>wheelAmt, delay, duration) <span>Spins the mouse wheel.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>node, delay) <span>Scroll the passed node into view, if it is not.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_sequence" class="inline-link"> sequence</a><span class="parameters">(</span>f, delay, duration) <span>Defer an action by adding it to the robot&#39;s incrementally delayed queue of actions to execute.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_setClipboard" class="inline-link"> setClipboard</a><span class="parameters">(</span>data, format) <span>Set clipboard content.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_startRobot" class="inline-link"> startRobot</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_typeKeys" class="inline-link"> typeKeys</a><span class="parameters">(</span>chars, delay, duration) <span>Types a string of characters in order, or types a dojo.keys.* constant.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8doh_main_robot_waitForPageToLoad" class="inline-link"> waitForPageToLoad</a><span class="parameters">(</span>submitActions) <span>Notifies DOH that the doh.robot is about to make a page change in the application it is driving,
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_8doh_main_robot__appletDead" class="inline-link"> _appletDead </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8doh_main_robot__loaded" class="inline-link"> _loaded </a><span>Deferred that resolves when the _initRobot() has been called.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8doh_main_robot__primePump" class="inline-link"> _primePump </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8doh_main_robot__robotInitialized" class="inline-link"> _robotInitialized </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8doh_main_robot__robotLoaded" class="inline-link"> _robotLoaded </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8doh_main_robot__runsemaphore" class="inline-link"> _runsemaphore </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8doh_main_robot__spaceReceived" class="inline-link"> _spaceReceived </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8doh_main_robot__started" class="inline-link"> _started </a><span>Deferred that resolves when startRobot() has signaled completing by typing on the keyboard,
+which in turn calls _run().</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8doh_main_robot_doc" class="inline-link"> doc </a><span></span><span title="Must manually require () dojo/robotx to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8doh_main_robot_mouseWheelSize" class="inline-link"> mouseWheelSize </a><span></span><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8doh_main_robot_window" class="inline-link"> window </a><span></span><span title="Must manually require () dojo/robotx to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__assertRobot" class="inline-link"> _assertRobot</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__getWindowChain" class="inline-link"> _getWindowChain</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__initKeyboard" class="inline-link"> _initKeyboard</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__initRobot" class="inline-link"> _initRobot</a><span class="parameters">(</span>r) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__initWheel" class="inline-link"> _initWheel</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__killApplet" class="inline-link"> _killApplet</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__mouseMove" class="inline-link"> _mouseMove</a><span class="parameters">(</span>x, y, absolute, duration) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__notified" class="inline-link"> _notified</a><span class="parameters">(</span>keystring) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__position" class="inline-link"> _position</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__resolveNode" class="inline-link"> _resolveNode</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__run" class="inline-link"> _run</a><span class="parameters">(</span>frame) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__scrollIntoView" class="inline-link"> _scrollIntoView</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__setDocumentBounds" class="inline-link"> _setDocumentBounds</a><span class="parameters">(</span>docScreenX, docScreenY) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__updateDocument" class="inline-link"> _updateDocument</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_initRobot" class="inline-link"> initRobot</a><span class="parameters">(</span>url) <span>Opens the application at the specified URL for testing, redirecting dojo to point to the application environment instead of the test environment.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_keyDown" class="inline-link"> keyDown</a><span class="parameters">(</span>charOrCode, delay) <span>Holds down a single key, like SHIFT or &#39;a&#39;.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_keyPress" class="inline-link"> keyPress</a><span class="parameters">(</span>charOrCode, delay, modifiers, asynchronous) <span>Types a key combination, like SHIFT-TAB.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_keyUp" class="inline-link"> keyUp</a><span class="parameters">(</span>charOrCode, delay) <span>Releases a single key, like SHIFT or &#39;a&#39;.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_killRobot" class="inline-link"> killRobot</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mouseClick" class="inline-link"> mouseClick</a><span class="parameters">(</span>buttons, delay) <span>Convenience function to do a press/release.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mouseMove" class="inline-link"> mouseMove</a><span class="parameters">(</span>x, y, delay, duration, absolute) <span>Moves the mouse to the specified x,y offset relative to the viewport.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mouseMoveAt" class="inline-link"> mouseMoveAt</a><span class="parameters">(</span>node, delay, duration, offsetX, offsetY) <span>Moves the mouse over the specified node at the specified relative x,y offset.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mouseMoveTo" class="inline-link"> mouseMoveTo</a><span class="parameters">(</span>point, delay, duration, absolute) <span>Move the mouse from the current position to the specified point.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mousePress" class="inline-link"> mousePress</a><span class="parameters">(</span>buttons, delay) <span>Presses mouse buttons.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mouseRelease" class="inline-link"> mouseRelease</a><span class="parameters">(</span>buttons, delay) <span>Releases mouse buttons.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_mouseWheel" class="inline-link"> mouseWheel</a><span class="parameters">(</span>wheelAmt, delay, duration) <span>Spins the mouse wheel.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>node, delay) <span>Scroll the passed node into view, if it is not.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_sequence" class="inline-link"> sequence</a><span class="parameters">(</span>f, delay, duration) <span>Defer an action by adding it to the robot&#39;s incrementally delayed queue of actions to execute.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_setClipboard" class="inline-link"> setClipboard</a><span class="parameters">(</span>data, format) <span>Set clipboard content.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_startRobot" class="inline-link"> startRobot</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_typeKeys" class="inline-link"> typeKeys</a><span class="parameters">(</span>chars, delay, duration) <span>Types a string of characters in order, or types a dojo.keys.* constant.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8doh_main_robot_waitForPageToLoad" class="inline-link"> waitForPageToLoad</a><span class="parameters">(</span>submitActions) <span>Notifies DOH that the doh.robot is about to make a page change in the application it is driving,
 returning a doh.Deferred object the user should return in their runTest function as part of a DOH test.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8doh_main_robot__onKeyboard" class="inline-link"> _onKeyboard</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -106,6 +126,15 @@ returning a doh.Deferred object the user should return in their runTest function
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/doh/robot" class="jsdoc-link">doh/robot</a><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
         </div>
+      </div>
+      <div class="jsdoc-field private extension-module">
+        <div class="jsdoc-title"><a name="1_8doh_main_robot__loaded"></a><span class="objectIcon">_loaded</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/doh/robot" class="jsdoc-link">doh/robot</a><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Deferred that resolves when the _initRobot() has been called.
+Note to be confused with <a class="jsdoc-link" href="/api/1.8/dojo/robotx#js">dojo/robotx.js</a>, which defines initRobot() without an underscore</p>
+</div>
       </div>
       <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8doh_main_robot__primePump"></a><span class="booleanIcon">_primePump</span><span title="private" class="jsdoc-private"> </span>
@@ -136,6 +165,15 @@ returning a doh.Deferred object the user should return in their runTest function
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/doh/robot" class="jsdoc-link">doh/robot</a><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
         </div>
+      </div>
+      <div class="jsdoc-field private extension-module">
+        <div class="jsdoc-title"><a name="1_8doh_main_robot__started"></a><span class="objectIcon">_started</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/doh/robot" class="jsdoc-link">doh/robot</a><span title="Must manually require () doh/robot to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Deferred that resolves when startRobot() has signaled completing by typing on the keyboard,
+which in turn calls _run().</p>
+</div>
       </div>
       <div class="jsdoc-field public extension-module">
         <div class="jsdoc-title"><a name="1_8doh_main_robot_doc"></a><span class="objectIcon">doc</span>
@@ -452,9 +490,11 @@ Warning: holding down a shifted key, like &#39;A&#39;, can have unpredictable re
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -495,9 +535,11 @@ For example, the following code ends after 600ms:</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -563,9 +605,11 @@ Warning: releasing a shifted key, like &#39;A&#39;, can have unpredictable resul
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -650,9 +694,11 @@ See robot.mousePress for more info.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -708,9 +754,11 @@ This is useful if you need to move the mouse to an node that is not yet present.
             <td class="jsdoc-param-type">Integer, optional</td>
             <td class="jsdoc-param-description"><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>  robot.mouseClick({left:true}, 100) // first call; wait 100ms
-  robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left:true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -820,9 +868,11 @@ It takes the following Boolean attributes:
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -897,8 +947,8 @@ Positive wheelAmt scrolls down/toward the user.</p>
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
 For example, the following code ends after 600ms:
-robot.mouseClick({left: true}, 100) // first call; wait 100ms
-robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</p>
+    robot.mouseClick({left: true}, 100) // first call; wait 100ms
+    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</p>
  
             </td>
           </tr>
@@ -972,9 +1022,11 @@ to delay further actions.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -1029,6 +1081,7 @@ is used.</p>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/doh/robot" class="jsdoc-link">doh/robot</a>
         </div>
         <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8doh_main_robot_typeKeys"></a><span class="functionIcon">typeKeys</span><span class="parameters">(chars, delay, duration)</span> 
@@ -1058,9 +1111,11 @@ is used.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Delay, in milliseconds, to wait before firing.
 The delay is a delta with respect to the previous automation call.
-For example, the following code ends after 600ms:</p>
-<pre><code>    robot.mouseClick({left: true}, 100) // first call; wait 100ms
-    robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
+For example, the following code ends after 600ms:
+
+</p>
+<pre><code>robot.mouseClick({left: true}, 100) // first call; wait 100ms
+robot.typeKeys(&quot;dij&quot;, 500) // 500ms AFTER previous call; 600ms in all</code></pre>
  
             </td>
           </tr>
@@ -1077,7 +1132,7 @@ The default is (string length)*50 ms.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  robot.typeKeys(&quot;dijit.ed&quot;, 500);</code></pre>
+            <h3>Example 1</h3><pre><code>robot.typeKeys(&quot;dijit.ed&quot;, 500);</code></pre>
 
           </div>
         </div>
@@ -1113,13 +1168,21 @@ After these actions execute and the resulting page loads, the next test will sta
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  runTest: function(){
+            <h3>Example 1</h3><pre><code>runTest: function(){
     return waitForPageLoad(function(){ doh.robot.keyPress(keys.ENTER, 500); });
-  }</code></pre>
+}</code></pre>
 
           </div>
         </div>
       </div>
     </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8doh_main_robot__onKeyboard"></a><span class="functionIcon">_onKeyboard</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/doh/robot" class="jsdoc-link">doh/robot</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/doh/main.robot" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_CssStateMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/_CssStateMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_CssStateMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/_CssStateMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Mixin for widgets to set CSS classes on the widget DOM nodes depending on hover/mouse press/focus
 state changes, and also higher-level state changes such becoming disabled or selected.
@@ -19,37 +26,38 @@ within the widget).</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dijit/_CssStateMixin.html" target="_blank">dijit/_CssStateMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon"><a href="#1_9dijit__CssStateMixin_active" class="inline-link"> active </a><span>True if mouse was pressed while over this widget, and hasn&#39;t been released yet</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dijit__CssStateMixin_cssStateNodes" class="inline-link"> cssStateNodes </a><span>Subclasses may define a cssStateNodes property that lists sub-nodes within the widget that
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon"><a href="#1_9dijit__CssStateMixin_active" class="inline-link"> active </a><span>True if mouse was pressed while over this widget, and hasn&#39;t been released yet</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dijit__CssStateMixin_cssStateNodes" class="inline-link"> cssStateNodes </a><span>Subclasses may define a cssStateNodes property that lists sub-nodes within the widget that
 need CSS classes applied on mouse hover/press and focus.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dijit__CssStateMixin_hovering" class="inline-link"> hovering </a><span>True if cursor is over this widget</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__cssMouseEvent" class="inline-link"> _cssMouseEvent</a><span class="parameters">(</span>event) <span>Handler for CSS event on this.domNode.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__setStateClass" class="inline-link"> _setStateClass</a><span class="parameters">(</span>) <span>Update the visual state of the widget by setting the css classes on this.domNode
+        </li>
+        <li class="booleanIcon"><a href="#1_9dijit__CssStateMixin_hovering" class="inline-link"> hovering </a><span>True if cursor is over this widget</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__cssMouseEvent" class="inline-link"> _cssMouseEvent</a><span class="parameters">(</span>event) <span>Handler for CSS event on this.domNode.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__setStateClass" class="inline-link"> _setStateClass</a><span class="parameters">(</span>) <span>Update the visual state of the widget by setting the css classes on this.domNode
 (or this.stateNode if defined) by combining this.baseClass with
 various suffixes that represent the current widget state(s).</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__subnodeCssMouseEvent" class="inline-link"> _subnodeCssMouseEvent</a><span class="parameters">(</span>node, clazz, evt) <span>Handler for hover/active mouse event on widget&#39;s subnode</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__trackMouseState" class="inline-link"> _trackMouseState</a><span class="parameters">(</span>node, clazz) <span>Track mouse/focus events on specified node and set CSS class on that node to indicate
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__subnodeCssMouseEvent" class="inline-link"> _subnodeCssMouseEvent</a><span class="parameters">(</span>node, clazz, evt) <span>Handler for hover/active mouse event on widget&#39;s subnode</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__CssStateMixin__trackMouseState" class="inline-link"> _trackMouseState</a><span class="parameters">(</span>node, clazz) <span>Track mouse/focus events on specified node and set CSS class on that node to indicate
 current state.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -240,4 +248,4 @@ is handled specially and automatically just by mixing in this class.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/_CssStateMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

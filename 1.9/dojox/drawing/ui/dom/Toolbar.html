@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/ui/dom/Toolbar</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/ui/dom/Toolbar" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/ui/dom/Toolbar.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/ui/dom/Toolbar<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Toolbar<span class="parameters">(props,node);</span></div>
 </div>
@@ -26,42 +33,43 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_dom_Toolbar_baseClass" class="inline-link"> baseClass </a><span>The CSS style to apply to the toolbar node</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_dom_Toolbar_buttonClass" class="inline-link"> buttonClass </a><span>The CSS style to apply to each button node</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_dom_Toolbar_iconClass" class="inline-link"> iconClass </a><span>The CSS style to apply to each button icon node</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_createIcon" class="inline-link"> createIcon</a><span class="parameters">(</span>node, constr) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_createTool" class="inline-link"> createTool</a><span class="parameters">(</span>node) <span>Creates a button on the Toolbar that is
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_dom_Toolbar_baseClass" class="inline-link"> baseClass </a><span>The CSS style to apply to the toolbar node</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_dom_Toolbar_buttonClass" class="inline-link"> buttonClass </a><span>The CSS style to apply to each button node</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_dom_Toolbar_iconClass" class="inline-link"> iconClass </a><span>The CSS style to apply to each button icon node</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_createIcon" class="inline-link"> createIcon</a><span class="parameters">(</span>node, constr) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_createTool" class="inline-link"> createTool</a><span class="parameters">(</span>node) <span>Creates a button on the Toolbar that is
 a Tool, not a Plugin.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_parse" class="inline-link"> parse</a><span class="parameters">(</span>) <span>Initializing method that reads the dom node and its
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_parse" class="inline-link"> parse</a><span class="parameters">(</span>) <span>Initializing method that reads the dom node and its
 children for tools and plugins.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>type) <span>Event fired from clicking a Tool, not a PLugin.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onSetTool" class="inline-link"> onSetTool</a><span class="parameters">(</span>type) <span>handles buttons clicks and selects or deselects</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>type) <span>Event fired from clicking a Tool, not a PLugin.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onSetTool" class="inline-link"> onSetTool</a><span class="parameters">(</span>type) <span>handles buttons clicks and selects or deselects</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -206,4 +214,4 @@ Plugin clicks are handled within the plugin&#39;s class.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/ui/dom/Toolbar" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

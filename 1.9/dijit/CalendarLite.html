@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/CalendarLite</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/CalendarLite" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/CalendarLite.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/CalendarLite<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase, </a><a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a>
@@ -19,7 +26,7 @@ so that they are serializable and locale-independent.
 </p>
 <p>Also note that this widget isn&#39;t keyboard accessible; use dijit.Calendar for that</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new CalendarLite<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
@@ -52,272 +59,273 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
 </table>
 <p>See the <a href="/reference-guide/1.9/dijit/CalendarLite.html" target="_blank">dijit/CalendarLite reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>var calendar = new dijit.CalendarLite({}, dojo.byId(&quot;calendarNode&quot;));</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var calendar = new dijit.CalendarLite({}, dojo.byId(&quot;calendarNode&quot;));</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>&lt;div data-dojo-type=&quot;dijit/CalendarLite&quot;&gt;&lt;/div&gt;</code></pre>
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>&lt;div data-dojo-type=&quot;dijit/CalendarLite&quot;&gt;&lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
 template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dijit_CalendarLite__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dijit_CalendarLite__rendered" class="inline-link"> _rendered </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dijit_CalendarLite__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit_CalendarLite__rendered" class="inline-link"> _rendered </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
 i.e. already inlining the template for the widget into the main page.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dijit_CalendarLite__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dijit_CalendarLite__setSummaryAttr" class="inline-link"> _setSummaryAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dijit_CalendarLite__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dijit_CalendarLite__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dijit_CalendarLite_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dijit_CalendarLite__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit_CalendarLite__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dijit_CalendarLite__setSummaryAttr" class="inline-link"> _setSummaryAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit_CalendarLite__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit_CalendarLite__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dijit_CalendarLite_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_9dijit_CalendarLite_currentFocus" class="inline-link"> currentFocus </a><span>Date object containing the currently focused date, or the date which would be focused
+        </li>
+        <li class="dateIcon inherited"><a href="#1_9dijit_CalendarLite_currentFocus" class="inline-link"> currentFocus </a><span>Date object containing the currently focused date, or the date which would be focused
 if the calendar itself was focused.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_datePackage" class="inline-link"> datePackage </a><span>JavaScript namespace to find calendar routines.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dateTemplateString" class="inline-link"> dateTemplateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dayWidth" class="inline-link"> dayWidth </a><span>How to represent the days of the week in the calendar header.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_datePackage" class="inline-link"> datePackage </a><span>JavaScript namespace to find calendar routines.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dateTemplateString" class="inline-link"> dateTemplateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dayWidth" class="inline-link"> dayWidth </a><span>How to represent the days of the week in the calendar header.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dijit_CalendarLite_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dowTemplateString" class="inline-link"> dowTemplateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dijit_CalendarLite_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_dowTemplateString" class="inline-link"> dowTemplateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_CalendarLite_searchContainerNode" class="inline-link"> searchContainerNode </a><span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dijit_CalendarLite_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_CalendarLite_searchContainerNode" class="inline-link"> searchContainerNode </a><span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dijit_CalendarLite_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_CalendarLite_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_9dijit_CalendarLite_value" class="inline-link"> value </a><span>The currently selected Date, initially set to invalid date to indicate no selection.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_weekTemplateString" class="inline-link"> weekTemplateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        </li>
+        <li class="dateIcon inherited"><a href="#1_9dijit_CalendarLite_value" class="inline-link"> value </a><span>The currently selected Date, initially set to invalid date to indicate no selection.</span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_CalendarLite_weekTemplateString" class="inline-link"> weekTemplateString </a><span></span><span title="inherited from dijit/CalendarLite" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__attach" class="inline-link"> _attach</a><span class="parameters">(</span>node, type, func) <span>Roughly corresponding to dojo/on, this is the default function for processing a
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__attach" class="inline-link"> _attach</a><span class="parameters">(</span>node, type, func) <span>Roughly corresponding to dojo/on, this is the default function for processing a
 data-dojo-attach-event.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode) <span>Iterate through the dom nodes and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode) <span>Iterate through the dom nodes and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__connectControls" class="inline-link"> _connectControls</a><span class="parameters">(</span>) <span>Set up connects for increment/decrement of months/years</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__createMonthWidget" class="inline-link"> _createMonthWidget</a><span class="parameters">(</span>) <span>Creates the drop down button that displays the current month and lets user pick a new one</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__detachTemplateNodes" class="inline-link"> _detachTemplateNodes</a><span class="parameters">(</span>) <span>Detach and clean up the attachments made in _attachtempalteNodes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__connectControls" class="inline-link"> _connectControls</a><span class="parameters">(</span>) <span>Set up connects for increment/decrement of months/years</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__createMonthWidget" class="inline-link"> _createMonthWidget</a><span class="parameters">(</span>) <span>Creates the drop down button that displays the current month and lets user pick a new one</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__detachTemplateNodes" class="inline-link"> _detachTemplateNodes</a><span class="parameters">(</span>) <span>Detach and clean up the attachments made in _attachtempalteNodes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
 i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__getNodeByDate" class="inline-link"> _getNodeByDate</a><span class="parameters">(</span>value) <span>Returns the cell corresponding to the date, or null if the date is not within the currently
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__getNodeByDate" class="inline-link"> _getNodeByDate</a><span class="parameters">(</span>value) <span>Returns the cell corresponding to the date, or null if the date is not within the currently
 displayed month.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Support get(&#39;value&#39;)</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Support get(&#39;value&#39;)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
 
 
 - list of attributes with custom setters, storing in this.constructor._setterAttrs
 - generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__isValidDate" class="inline-link"> _isValidDate</a><span class="parameters">(</span>value) <span>Runs various tests on the value, checking that it&#39;s a valid date, rather
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__isValidDate" class="inline-link"> _isValidDate</a><span class="parameters">(</span>value) <span>Runs various tests on the value, checking that it&#39;s a valid date, rather
 than blank or NaN.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__markSelectedDates" class="inline-link"> _markSelectedDates</a><span class="parameters">(</span>dates) <span>Marks the specified cells as selected, and clears cells previously marked as selected.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__MonthWidget" class="inline-link"> _MonthWidget</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__patchDate" class="inline-link"> _patchDate</a><span class="parameters">(</span>value) <span>Convert Number into Date, or copy Date object.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__populateControls" class="inline-link"> _populateControls</a><span class="parameters">(</span>) <span>Fill in localized month, and prev/current/next years</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__populateGrid" class="inline-link"> _populateGrid</a><span class="parameters">(</span>) <span>Fills in the calendar grid with each day (1-31).</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__markSelectedDates" class="inline-link"> _markSelectedDates</a><span class="parameters">(</span>dates) <span>Marks the specified cells as selected, and clears cells previously marked as selected.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__MonthWidget" class="inline-link"> _MonthWidget</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__patchDate" class="inline-link"> _patchDate</a><span class="parameters">(</span>value) <span>Convert Number into Date, or copy Date object.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__populateControls" class="inline-link"> _populateControls</a><span class="parameters">(</span>) <span>Fill in localized month, and prev/current/next years</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__populateGrid" class="inline-link"> _populateGrid</a><span class="parameters">(</span>) <span>Fills in the calendar grid with each day (1-31).</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__setCurrentFocusAttr" class="inline-link"> _setCurrentFocusAttr</a><span class="parameters">(</span>date, forceFocus) <span>If the calendar currently has focus, then focuses specified date,
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__setCurrentFocusAttr" class="inline-link"> _setCurrentFocusAttr</a><span class="parameters">(</span>date, forceFocus) <span>If the calendar currently has focus, then focuses specified date,
 changing the currently displayed month/year if necessary.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__setText" class="inline-link"> _setText</a><span class="parameters">(</span>node, text) <span>This just sets the content of node to the specified text.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange) <span>Support set(&quot;value&quot;, ...)</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__setText" class="inline-link"> _setText</a><span class="parameters">(</span>node, text) <span>This just sets the content of node to the specified text.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange) <span>Support set(&quot;value&quot;, ...)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Focus the calendar by focusing one of the calendar cells</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Focus the calendar by focusing one of the calendar cells</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
 is this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_getClassForDate" class="inline-link"> getClassForDate</a><span class="parameters">(</span>dateObject, locale) <span>May be overridden to return CSS classes to associate with the date entry for the given dateObject,
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_getClassForDate" class="inline-link"> getClassForDate</a><span class="parameters">(</span>dateObject, locale) <span>May be overridden to return CSS classes to associate with the date entry for the given dateObject,
 for example to indicate a holiday in specified locale.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_goToToday" class="inline-link"> goToToday</a><span class="parameters">(</span>) <span>Sets calendar&#39;s value to today&#39;s date</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_isDisabledDate" class="inline-link"> isDisabledDate</a><span class="parameters">(</span>dateObject, locale) <span>May be overridden to disable certain dates in the calendar e.g. isDisabledDate=dojo.date.locale.isWeekend</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_goToToday" class="inline-link"> goToToday</a><span class="parameters">(</span>) <span>Sets calendar&#39;s value to today&#39;s date</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_isDisabledDate" class="inline-link"> isDisabledDate</a><span class="parameters">(</span>dateObject, locale) <span>May be overridden to disable certain dates in the calendar e.g. isDisabledDate=dojo.date.locale.isWeekend</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__onDayClick" class="inline-link"> _onDayClick</a><span class="parameters">(</span>evt) <span>Handler for day clicks, selects the date if appropriate</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_CalendarLite_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>date) <span>Called only when the selected date has changed</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_CalendarLite_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_CalendarLite__onDayClick" class="inline-link"> _onDayClick</a><span class="parameters">(</span>evt) <span>Handler for day clicks, selects the date if appropriate</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_CalendarLite__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_CalendarLite_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>date) <span>Called only when the selected date has changed</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -2256,4 +2264,4 @@ If type is a synthetic event like touch.press then returns undefined.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/CalendarLite" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

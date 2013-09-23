@@ -1,11 +1,18 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dnd/BoundingBoxController</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/dnd/BoundingBoxController" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dnd/BoundingBoxController.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/dnd/BoundingBoxController<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Allows the user draw bounding boxes around nodes on the page.
 Publishes to the &quot;/dojox/dnd/bounding&quot; topic to tell the selector to check
 to see whether any dnd items fall within the coordinates of the bounding box</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new BoundingBoxController<span class="parameters">(sources,domNode);</span></div>
 </div>
@@ -36,51 +43,52 @@ the positioning of the bounding box.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__endX" class="inline-link"> _endX </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__endY" class="inline-link"> _endY </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__startX" class="inline-link"> _startX </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__startY" class="inline-link"> _startY </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__drawBoundingBox" class="inline-link"> _drawBoundingBox</a><span class="parameters">(</span>) <span>draws the bounding box over the document.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__finishSelecting" class="inline-link"> _finishSelecting</a><span class="parameters">(</span>) <span>hide the bounding box and reset for the next time around</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_boundingBoxIsViable" class="inline-link"> boundingBoxIsViable</a><span class="parameters">(</span>evt) <span>Override-able by the client as an extra check to ensure that a bounding
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__endX" class="inline-link"> _endX </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__endY" class="inline-link"> _endY </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__startX" class="inline-link"> _startX </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__startY" class="inline-link"> _startY </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__drawBoundingBox" class="inline-link"> _drawBoundingBox</a><span class="parameters">(</span>) <span>draws the bounding box over the document.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__finishSelecting" class="inline-link"> _finishSelecting</a><span class="parameters">(</span>) <span>hide the bounding box and reset for the next time around</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_boundingBoxIsViable" class="inline-link"> boundingBoxIsViable</a><span class="parameters">(</span>evt) <span>Override-able by the client as an extra check to ensure that a bounding
 box is viable.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>sources, domNode) <span>Sets mouse handlers for the document to capture when a user
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>sources, domNode) <span>Sets mouse handlers for the document to capture when a user
 is trying to draw a bounding box.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>prepares this object to be garbage-collected</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_shouldStartDrawingBox" class="inline-link"> shouldStartDrawingBox</a><span class="parameters">(</span>evt) <span>Override-able by the client as an extra check to ensure that a bounding
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>prepares this object to be garbage-collected</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dnd_BoundingBoxController_shouldStartDrawingBox" class="inline-link"> shouldStartDrawingBox</a><span class="parameters">(</span>evt) <span>Override-able by the client as an extra check to ensure that a bounding
 box should begin to be drawn.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__onMouseDown" class="inline-link"> _onMouseDown</a><span class="parameters">(</span>evt) <span>Executed when the user mouses down on the document.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__onMouseMove" class="inline-link"> _onMouseMove</a><span class="parameters">(</span>evt) <span>Executed when the user moves the mouse over the document.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__onMouseUp" class="inline-link"> _onMouseUp</a><span class="parameters">(</span>evt) <span>Executed when the users mouses up on the document.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__onMouseDown" class="inline-link"> _onMouseDown</a><span class="parameters">(</span>evt) <span>Executed when the user mouses down on the document.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__onMouseMove" class="inline-link"> _onMouseMove</a><span class="parameters">(</span>evt) <span>Executed when the user moves the mouse over the document.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dnd_BoundingBoxController__onMouseUp" class="inline-link"> _onMouseUp</a><span class="parameters">(</span>evt) <span>Executed when the users mouses up on the document.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -253,4 +261,4 @@ whether the user was drawing a bounding box and publishes to the
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/dnd/BoundingBoxController" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

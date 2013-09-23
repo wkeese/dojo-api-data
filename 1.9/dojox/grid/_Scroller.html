@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/_Scroller</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/_Scroller" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/_Scroller.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/_Scroller<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _Scroller<span class="parameters">(inContentNodes);</span></div>
 </div>
@@ -20,157 +27,158 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_averageRowHeight" class="inline-link"> averageRowHeight </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_grid__Scroller_contentNode" class="inline-link"> contentNode </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_defaultPageHeight" class="inline-link"> defaultPageHeight </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_defaultRowHeight" class="inline-link"> defaultRowHeight </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_dummy" class="inline-link"> dummy </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_firstVisibleRow" class="inline-link"> firstVisibleRow </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_keepPages" class="inline-link"> keepPages </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_keepRows" class="inline-link"> keepRows </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_lastVisibleRow" class="inline-link"> lastVisibleRow </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_grid__Scroller_pacifying" class="inline-link"> pacifying </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_pacifyTicks" class="inline-link"> pacifyTicks </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_page" class="inline-link"> page </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_pageCount" class="inline-link"> pageCount </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_pageTop" class="inline-link"> pageTop </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_rowCount" class="inline-link"> rowCount </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_grid__Scroller_scrollboxNode" class="inline-link"> scrollboxNode </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_windowHeight" class="inline-link"> windowHeight </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid__Scroller__getPageCount" class="inline-link"> _getPageCount</a><span class="parameters">(</span>rowCount, rowsPerPage) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_buildPage" class="inline-link"> buildPage</a><span class="parameters">(</span>inPageIndex, inReuseNode, inPos) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_calcLastPageHeight" class="inline-link"> calcLastPageHeight</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inContentNodes) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_createPageNode" class="inline-link"> createPageNode</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_destroyPage" class="inline-link"> destroyPage</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_doPacify" class="inline-link"> doPacify</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_endPacify" class="inline-link"> endPacify</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_findPage" class="inline-link"> findPage</a><span class="parameters">(</span>inTop) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_findScrollTop" class="inline-link"> findScrollTop</a><span class="parameters">(</span>inRow) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_findTopRow" class="inline-link"> findTopRow</a><span class="parameters">(</span>inScrollTop) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getDefaultNodes" class="inline-link"> getDefaultNodes</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getDefaultPageNode" class="inline-link"> getDefaultPageNode</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getFirstVisibleRow" class="inline-link"> getFirstVisibleRow</a><span class="parameters">(</span>inPage, inPageTop, inScrollTop) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getLastPageRow" class="inline-link"> getLastPageRow</a><span class="parameters">(</span>inPage) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getLastVisibleRow" class="inline-link"> getLastVisibleRow</a><span class="parameters">(</span>inPage, inBottom, inScrollBottom) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getPageHeight" class="inline-link"> getPageHeight</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getPageNodePosition" class="inline-link"> getPageNodePosition</a><span class="parameters">(</span>inNode) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getPageRow" class="inline-link"> getPageRow</a><span class="parameters">(</span>inPage) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getScrollBottom" class="inline-link"> getScrollBottom</a><span class="parameters">(</span>inTop) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_init" class="inline-link"> init</a><span class="parameters">(</span>inRowCount, inKeepRows, inRowsPerPage) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_installPage" class="inline-link"> installPage</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_invalidateNodes" class="inline-link"> invalidateNodes</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_invalidatePageNode" class="inline-link"> invalidatePageNode</a><span class="parameters">(</span>inPageIndex, inNodes) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_measurePage" class="inline-link"> measurePage</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_needPage" class="inline-link"> needPage</a><span class="parameters">(</span>inPageIndex, inPos) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_onscroll" class="inline-link"> onscroll</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_pacify" class="inline-link"> pacify</a><span class="parameters">(</span>inShouldPacify) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_pageExists" class="inline-link"> pageExists</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_popPage" class="inline-link"> popPage</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_positionPage" class="inline-link"> positionPage</a><span class="parameters">(</span>inPageIndex, inPos) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_positionPageNode" class="inline-link"> positionPageNode</a><span class="parameters">(</span>inNode, inPos) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_preparePage" class="inline-link"> preparePage</a><span class="parameters">(</span>inPageIndex, inReuseNode) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_processEvent" class="inline-link"> processEvent</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_processNodeEvent" class="inline-link"> processNodeEvent</a><span class="parameters">(</span>e, inNode) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_pushPage" class="inline-link"> pushPage</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_removePage" class="inline-link"> removePage</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_removeRow" class="inline-link"> removeRow</a><span class="parameters">(</span>inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_renderPage" class="inline-link"> renderPage</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_renderRow" class="inline-link"> renderRow</a><span class="parameters">(</span>inRowIndex, inPageNode) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_repositionPages" class="inline-link"> repositionPages</a><span class="parameters">(</span>inPageIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_rowHeightChanged" class="inline-link"> rowHeightChanged</a><span class="parameters">(</span>inRowIndex, fromAsynRendering) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_scroll" class="inline-link"> scroll</a><span class="parameters">(</span>inTop) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_setContentNodes" class="inline-link"> setContentNodes</a><span class="parameters">(</span>inNodes) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_setKeepInfo" class="inline-link"> setKeepInfo</a><span class="parameters">(</span>inKeepRows) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_setPacifying" class="inline-link"> setPacifying</a><span class="parameters">(</span>inPacifying) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_startPacify" class="inline-link"> startPacify</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_updateContentHeight" class="inline-link"> updateContentHeight</a><span class="parameters">(</span>inDh) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_updatePageHeight" class="inline-link"> updatePageHeight</a><span class="parameters">(</span>inPageIndex, fromBuild, fromAsynRendering) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_updateRowCount" class="inline-link"> updateRowCount</a><span class="parameters">(</span>inRowCount) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_averageRowHeight" class="inline-link"> averageRowHeight </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_grid__Scroller_contentNode" class="inline-link"> contentNode </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_defaultPageHeight" class="inline-link"> defaultPageHeight </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_defaultRowHeight" class="inline-link"> defaultRowHeight </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_dummy" class="inline-link"> dummy </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_firstVisibleRow" class="inline-link"> firstVisibleRow </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_keepPages" class="inline-link"> keepPages </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_keepRows" class="inline-link"> keepRows </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_lastVisibleRow" class="inline-link"> lastVisibleRow </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_grid__Scroller_pacifying" class="inline-link"> pacifying </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_pacifyTicks" class="inline-link"> pacifyTicks </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_page" class="inline-link"> page </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_pageCount" class="inline-link"> pageCount </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_pageTop" class="inline-link"> pageTop </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_rowCount" class="inline-link"> rowCount </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_grid__Scroller_scrollboxNode" class="inline-link"> scrollboxNode </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid__Scroller_windowHeight" class="inline-link"> windowHeight </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid__Scroller__getPageCount" class="inline-link"> _getPageCount</a><span class="parameters">(</span>rowCount, rowsPerPage) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_buildPage" class="inline-link"> buildPage</a><span class="parameters">(</span>inPageIndex, inReuseNode, inPos) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_calcLastPageHeight" class="inline-link"> calcLastPageHeight</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inContentNodes) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_createPageNode" class="inline-link"> createPageNode</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_destroyPage" class="inline-link"> destroyPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_doPacify" class="inline-link"> doPacify</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_endPacify" class="inline-link"> endPacify</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_findPage" class="inline-link"> findPage</a><span class="parameters">(</span>inTop) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_findScrollTop" class="inline-link"> findScrollTop</a><span class="parameters">(</span>inRow) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_findTopRow" class="inline-link"> findTopRow</a><span class="parameters">(</span>inScrollTop) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getDefaultNodes" class="inline-link"> getDefaultNodes</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getDefaultPageNode" class="inline-link"> getDefaultPageNode</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getFirstVisibleRow" class="inline-link"> getFirstVisibleRow</a><span class="parameters">(</span>inPage, inPageTop, inScrollTop) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getLastPageRow" class="inline-link"> getLastPageRow</a><span class="parameters">(</span>inPage) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getLastVisibleRow" class="inline-link"> getLastVisibleRow</a><span class="parameters">(</span>inPage, inBottom, inScrollBottom) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getPageHeight" class="inline-link"> getPageHeight</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getPageNodePosition" class="inline-link"> getPageNodePosition</a><span class="parameters">(</span>inNode) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getPageRow" class="inline-link"> getPageRow</a><span class="parameters">(</span>inPage) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_getScrollBottom" class="inline-link"> getScrollBottom</a><span class="parameters">(</span>inTop) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_init" class="inline-link"> init</a><span class="parameters">(</span>inRowCount, inKeepRows, inRowsPerPage) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_installPage" class="inline-link"> installPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_invalidateNodes" class="inline-link"> invalidateNodes</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_invalidatePageNode" class="inline-link"> invalidatePageNode</a><span class="parameters">(</span>inPageIndex, inNodes) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_measurePage" class="inline-link"> measurePage</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_needPage" class="inline-link"> needPage</a><span class="parameters">(</span>inPageIndex, inPos) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_onscroll" class="inline-link"> onscroll</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_pacify" class="inline-link"> pacify</a><span class="parameters">(</span>inShouldPacify) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_pageExists" class="inline-link"> pageExists</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_popPage" class="inline-link"> popPage</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_positionPage" class="inline-link"> positionPage</a><span class="parameters">(</span>inPageIndex, inPos) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_positionPageNode" class="inline-link"> positionPageNode</a><span class="parameters">(</span>inNode, inPos) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_preparePage" class="inline-link"> preparePage</a><span class="parameters">(</span>inPageIndex, inReuseNode) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_processEvent" class="inline-link"> processEvent</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_processNodeEvent" class="inline-link"> processNodeEvent</a><span class="parameters">(</span>e, inNode) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_pushPage" class="inline-link"> pushPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_removePage" class="inline-link"> removePage</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_removeRow" class="inline-link"> removeRow</a><span class="parameters">(</span>inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_renderPage" class="inline-link"> renderPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_renderRow" class="inline-link"> renderRow</a><span class="parameters">(</span>inRowIndex, inPageNode) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_repositionPages" class="inline-link"> repositionPages</a><span class="parameters">(</span>inPageIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_rowHeightChanged" class="inline-link"> rowHeightChanged</a><span class="parameters">(</span>inRowIndex, fromAsynRendering) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_scroll" class="inline-link"> scroll</a><span class="parameters">(</span>inTop) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_setContentNodes" class="inline-link"> setContentNodes</a><span class="parameters">(</span>inNodes) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_setKeepInfo" class="inline-link"> setKeepInfo</a><span class="parameters">(</span>inKeepRows) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_setPacifying" class="inline-link"> setPacifying</a><span class="parameters">(</span>inPacifying) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_startPacify" class="inline-link"> startPacify</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_updateContentHeight" class="inline-link"> updateContentHeight</a><span class="parameters">(</span>inDh) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_updatePageHeight" class="inline-link"> updatePageHeight</a><span class="parameters">(</span>inPageIndex, fromBuild, fromAsynRendering) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Scroller_updateRowCount" class="inline-link"> updateRowCount</a><span class="parameters">(</span>inRowCount) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1325,4 +1333,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/_Scroller" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

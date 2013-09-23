@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/at</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mvc/at" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/at.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojox/mvc/at<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Returns a pointer to data binding target (a <a class="jsdoc-link" href="/api/1.8/dojo/Stateful">dojo/Stateful</a> property), called at handle, which is used for start synchronization with data binding source (another <a class="jsdoc-link" href="/api/1.8/dojo/Stateful">dojo/Stateful</a> property).</p>
 </div>
@@ -26,13 +33,13 @@
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/mvc/at.html" target="_blank">dojox/mvc/at reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>Two seconds later, the text box changes from &quot;Foo&quot; to &quot;Bar&quot; as the &quot;value&quot; property in model changes.
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>Two seconds later, the text box changes from &quot;Foo&quot; to &quot;Bar&quot; as the &quot;value&quot; property in model changes.
 
 </p>
 <pre><code>&lt;html&gt;
@@ -54,9 +61,9 @@
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><p>Edit in text box is reflected to the text next to it.
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><p>Edit in text box is reflected to the text next to it.
 
 </p>
 <pre><code>&lt;html&gt;
@@ -78,27 +85,29 @@
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon inherited"><a href="#1_8dojox_mvc_at_both" class="inline-link"> both </a><span>Data binding goes in both directions (dojox/mvc/Bind.from | dojox/mvc/Bind.to)</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_mvc_at_from" class="inline-link"> from </a><span>Data binding goes from the source to the target</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_mvc_at_handle" class="inline-link"> handle </a><span>A handle of data binding target (a dojo/Stateful property), which is used for start synchronization with data binding source (another dojo/Stateful property).</span><span title="inherited from dojox/mvc/at" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_mvc_at_to" class="inline-link"> to </a><span>Data binding goes from the target to the source</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_mvc_at_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>target, targetProp) <span>Returns a pointer to data binding target (a dojo/Stateful property), called at handle, which is used for start synchronization with data binding source (another dojo/Stateful property).</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon inherited"><a href="#1_8dojox_mvc_at_both" class="inline-link"> both </a><span>Data binding goes in both directions (dojox/mvc/Bind.from | dojox/mvc/Bind.to)</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_mvc_at_from" class="inline-link"> from </a><span>Data binding goes from the source to the target</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_mvc_at_handle" class="inline-link"> handle </a><span>A handle of data binding target (a dojo/Stateful property), which is used for start synchronization with data binding source (another dojo/Stateful property).</span><span title="inherited from dojox/mvc/at" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_mvc_at_to" class="inline-link"> to </a><span>Data binding goes from the target to the source</span><span title="inherited from dojox/mvc/sync" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_mvc_at_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>target, targetProp) <span>Returns a pointer to data binding target (a dojo/Stateful property), called at handle, which is used for start synchronization with data binding source (another dojo/Stateful property).</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -226,4 +235,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mvc/at" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

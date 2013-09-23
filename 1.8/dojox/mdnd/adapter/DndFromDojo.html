@@ -1,71 +1,79 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/adapter/DndFromDojo</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mdnd/adapter/DndFromDojo" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/adapter/DndFromDojo.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/adapter/DndFromDojo<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Allow communication between Dojo dnd items and DojoX D&amp;D areas</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new DndFromDojo<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mdnd/adapter/DndFromDojo">dojox/mdnd/adapter/DndFromDojo</a></div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__areaManager" class="inline-link"> _areaManager </a><span>Reference to the current DojoX Dnd Manager</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__currentArea" class="inline-link"> _currentArea </a><span>The current Area on mouse over</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__dojoManager" class="inline-link"> _dojoManager </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__moveHandler" class="inline-link"> _moveHandler </a><span>The handler of mouse connection</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__oldArea" class="inline-link"> _oldArea </a><span>The old area the mouse has passed over</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="arrayIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__subscribeHandler" class="inline-link"> _subscribeHandler </a><span>The list of dojo dnd topics</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_mdnd_adapter_DndFromDojo_dropIndicatorSize" class="inline-link"> dropIndicatorSize </a><span>size by default of dropIndicator (display only into a D&amp;D Area)</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__getHoverArea" class="inline-link"> _getHoverArea</a><span class="parameters">(</span>coords) <span>Get a D&amp;D dojoX area as a DOM node positioned under a specific point.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__resetAvatar" class="inline-link"> _resetAvatar</a><span class="parameters">(</span>) <span>Function executed in onDndSource function to set the avatar
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__areaManager" class="inline-link"> _areaManager </a><span>Reference to the current DojoX Dnd Manager</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__currentArea" class="inline-link"> _currentArea </a><span>The current Area on mouse over</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__dojoManager" class="inline-link"> _dojoManager </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__moveHandler" class="inline-link"> _moveHandler </a><span>The handler of mouse connection</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__oldArea" class="inline-link"> _oldArea </a><span>The old area the mouse has passed over</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="arrayIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__subscribeHandler" class="inline-link"> _subscribeHandler </a><span>The list of dojo dnd topics</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_mdnd_adapter_DndFromDojo_dropIndicatorSize" class="inline-link"> dropIndicatorSize </a><span>size by default of dropIndicator (display only into a D&amp;D Area)</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__getHoverArea" class="inline-link"> _getHoverArea</a><span class="parameters">(</span>coords) <span>Get a D&amp;D dojoX area as a DOM node positioned under a specific point.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_adapter_DndFromDojo__resetAvatar" class="inline-link"> _resetAvatar</a><span class="parameters">(</span>) <span>Function executed in onDndSource function to set the avatar
 acceptance according to the dojox DnD AreaManager Acceptance.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_isAccepted" class="inline-link"> isAccepted</a><span class="parameters">(</span>node, accept) <span>Check if a dragNode is accepted into a dojo target.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_subscribeDnd" class="inline-link"> subscribeDnd</a><span class="parameters">(</span>) <span>Subscribe to somes topics of dojo drag and drop.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_unsubscribeDnd" class="inline-link"> unsubscribeDnd</a><span class="parameters">(</span>) <span>Unsubscribe to some topics of dojo drag and drop.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDndSource" class="inline-link"> onDndSource</a><span class="parameters">(</span>source) <span>Called when the mouse enters or exits of a source dojo.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDragEnter" class="inline-link"> onDragEnter</a><span class="parameters">(</span>) <span>Occurs when the user drages an DOJO dnd item inside a D&amp;D dojoX area.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDragExit" class="inline-link"> onDragExit</a><span class="parameters">(</span>) <span>Occurs when the user leaves a D&amp;D dojoX area after dragging an DOJO dnd item over it.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDragStart" class="inline-link"> onDragStart</a><span class="parameters">(</span>source, nodes, copy) <span>Occurs when the &quot;/dnd/start&quot; topic is published.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDrop" class="inline-link"> onDrop</a><span class="parameters">(</span>source, nodes, copy) <span>Occurs when the user leaves a D&amp;D dojox area after dragging an DOJO dnd item over it.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDropCancel" class="inline-link"> onDropCancel</a><span class="parameters">(</span>) <span>Occurs when the &quot;/dnd/cancel&quot; topic is published.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>Occurs when the user moves the mouse.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_isAccepted" class="inline-link"> isAccepted</a><span class="parameters">(</span>node, accept) <span>Check if a dragNode is accepted into a dojo target.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_subscribeDnd" class="inline-link"> subscribeDnd</a><span class="parameters">(</span>) <span>Subscribe to somes topics of dojo drag and drop.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_unsubscribeDnd" class="inline-link"> unsubscribeDnd</a><span class="parameters">(</span>) <span>Unsubscribe to some topics of dojo drag and drop.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDndSource" class="inline-link"> onDndSource</a><span class="parameters">(</span>source) <span>Called when the mouse enters or exits of a source dojo.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDragEnter" class="inline-link"> onDragEnter</a><span class="parameters">(</span>) <span>Occurs when the user drages an DOJO dnd item inside a D&amp;D dojoX area.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDragExit" class="inline-link"> onDragExit</a><span class="parameters">(</span>) <span>Occurs when the user leaves a D&amp;D dojoX area after dragging an DOJO dnd item over it.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDragStart" class="inline-link"> onDragStart</a><span class="parameters">(</span>source, nodes, copy) <span>Occurs when the &quot;/dnd/start&quot; topic is published.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDrop" class="inline-link"> onDrop</a><span class="parameters">(</span>source, nodes, copy) <span>Occurs when the user leaves a D&amp;D dojox area after dragging an DOJO dnd item over it.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onDropCancel" class="inline-link"> onDropCancel</a><span class="parameters">(</span>) <span>Occurs when the &quot;/dnd/cancel&quot; topic is published.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_adapter_DndFromDojo_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>Occurs when the user moves the mouse.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -270,4 +278,4 @@ dragged node is not accepted in dojo source / target.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mdnd/adapter/DndFromDojo" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

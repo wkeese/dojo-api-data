@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/ClientFilter</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/data/ClientFilter" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/ClientFilter.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/ClientFilter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new ClientFilter<span class="parameters">();</span></div>
 </div>
@@ -31,50 +38,52 @@ cause all queries to be cached by default unless the cache queryOption is explic
 This can be defined in the constructor options for ServiceStore/JsonRestStore and subtypes.
 </p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/data/ClientFilter.html" target="_blank">dojox/data/ClientFilter reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon"><a href="#1_8dojox_data_ClientFilter_cacheByDefault" class="inline-link"> cacheByDefault </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_data_ClientFilter_serverVersion" class="inline-link"> serverVersion </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_cachingFetch" class="inline-link"> cachingFetch</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_clearCache" class="inline-link"> clearCache</a><span class="parameters">(</span>) <span>Clears the cache of client side queries</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_clientSideFetch" class="inline-link"> clientSideFetch</a><span class="parameters">(</span>request, baseResults) <span>Performs a query on the client side and returns the results as an array</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_clientSidePaging" class="inline-link"> clientSidePaging</a><span class="parameters">(</span>request, baseResults) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>This is an abstract class that data stores can extend to add updateable result set functionality
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon"><a href="#1_8dojox_data_ClientFilter_cacheByDefault" class="inline-link"> cacheByDefault </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_data_ClientFilter_serverVersion" class="inline-link"> serverVersion </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_cachingFetch" class="inline-link"> cachingFetch</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_clearCache" class="inline-link"> clearCache</a><span class="parameters">(</span>) <span>Clears the cache of client side queries</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_clientSideFetch" class="inline-link"> clientSideFetch</a><span class="parameters">(</span>request, baseResults) <span>Performs a query on the client side and returns the results as an array</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_clientSidePaging" class="inline-link"> clientSidePaging</a><span class="parameters">(</span>request, baseResults) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>This is an abstract class that data stores can extend to add updateable result set functionality
 as well as client side querying capabilities.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_isUpdateable" class="inline-link"> isUpdateable</a><span class="parameters">(</span>request) <span>Returns whether the provide fetch arguments can be used to update an existing list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_makeComparator" class="inline-link"> makeComparator</a><span class="parameters">(</span>sort) <span>returns a comparator function for the given sort order array</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_matchesQuery" class="inline-link"> matchesQuery</a><span class="parameters">(</span>item, request) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_querySuperSet" class="inline-link"> querySuperSet</a><span class="parameters">(</span>argsSuper, argsSub) <span>Determines whether the provided arguments are super/sub sets of each other</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_updateResultSet" class="inline-link"> updateResultSet</a><span class="parameters">(</span>resultSet, request) <span>Attempts to update the given result set based on previous notifications</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_onUpdate" class="inline-link"> onUpdate</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_isUpdateable" class="inline-link"> isUpdateable</a><span class="parameters">(</span>request) <span>Returns whether the provide fetch arguments can be used to update an existing list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_makeComparator" class="inline-link"> makeComparator</a><span class="parameters">(</span>sort) <span>returns a comparator function for the given sort order array</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_matchesQuery" class="inline-link"> matchesQuery</a><span class="parameters">(</span>item, request) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_querySuperSet" class="inline-link"> querySuperSet</a><span class="parameters">(</span>argsSuper, argsSub) <span>Determines whether the provided arguments are super/sub sets of each other</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_updateResultSet" class="inline-link"> updateResultSet</a><span class="parameters">(</span>resultSet, request) <span>Attempts to update the given result set based on previous notifications</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_data_ClientFilter_onUpdate" class="inline-link"> onUpdate</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -382,4 +391,4 @@ and adding items as required by the query and sort parameters.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/data/ClientFilter" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

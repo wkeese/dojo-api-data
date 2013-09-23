@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gfx3d/_base.Scene</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/gfx3d/_base.Scene" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gfx3d/_base.Scene.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/gfx3d/_base.Scene<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>the Scene is just a container.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base.Scene<span class="parameters">();</span></div>
 </div>
@@ -12,74 +19,75 @@
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/gfx3d.html" target="_blank">dojox/gfx3d/_base.Scene reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_abandon" class="inline-link"> abandon</a><span class="parameters">(</span>obj, silently) <span>removes a shape from the list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_addTodo" class="inline-link"> addTodo</a><span class="parameters">(</span>newObject) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_adopt" class="inline-link"> adopt</a><span class="parameters">(</span>obj) <span>adds a shape to the list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_abandon" class="inline-link"> abandon</a><span class="parameters">(</span>obj, silently) <span>removes a shape from the list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_addTodo" class="inline-link"> addTodo</a><span class="parameters">(</span>newObject) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_adopt" class="inline-link"> adopt</a><span class="parameters">(</span>obj) <span>adds a shape to the list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
 (matrix * this.matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
 (this.matrix * matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox.gfx.Shape.applyRightTransform</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>a container of other 3D objects</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_create3DObject" class="inline-link"> create3DObject</a><span class="parameters">(</span>objectType, rawObject, style) <span>creates an instance of the passed objectType class</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createCube" class="inline-link"> createCube</a><span class="parameters">(</span>cube) <span>creates an cube object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createCylinder" class="inline-link"> createCylinder</a><span class="parameters">(</span>cylinder) <span>creates an cylinder object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createEdges" class="inline-link"> createEdges</a><span class="parameters">(</span>edges, style) <span>creates an edge object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createOrbit" class="inline-link"> createOrbit</a><span class="parameters">(</span>orbit) <span>creates an Orbit object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createPath3d" class="inline-link"> createPath3d</a><span class="parameters">(</span>path) <span>creates an 3d path object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createPolygon" class="inline-link"> createPolygon</a><span class="parameters">(</span>points) <span>creates an polygon object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createQuads" class="inline-link"> createQuads</a><span class="parameters">(</span>quads, style) <span>creates an quads object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createScene" class="inline-link"> createScene</a><span class="parameters">(</span>) <span>creates a scene object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createTriangles" class="inline-link"> createTriangles</a><span class="parameters">(</span>tris, style) <span>creates an triangle object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_draw" class="inline-link"> draw</a><span class="parameters">(</span>lighting) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_getOutline" class="inline-link"> getOutline</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_getZOrder" class="inline-link"> getZOrder</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_render" class="inline-link"> render</a><span class="parameters">(</span>camera, deep) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setDrawer" class="inline-link"> setDrawer</a><span class="parameters">(</span>drawer) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>newObject) <span>sets a Object object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setScheduler" class="inline-link"> setScheduler</a><span class="parameters">(</span>scheduler) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_toStdFill" class="inline-link"> toStdFill</a><span class="parameters">(</span>lighting, normal) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox.gfx.Shape.applyRightTransform</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>a container of other 3D objects</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_create3DObject" class="inline-link"> create3DObject</a><span class="parameters">(</span>objectType, rawObject, style) <span>creates an instance of the passed objectType class</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createCube" class="inline-link"> createCube</a><span class="parameters">(</span>cube) <span>creates an cube object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createCylinder" class="inline-link"> createCylinder</a><span class="parameters">(</span>cylinder) <span>creates an cylinder object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createEdges" class="inline-link"> createEdges</a><span class="parameters">(</span>edges, style) <span>creates an edge object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createOrbit" class="inline-link"> createOrbit</a><span class="parameters">(</span>orbit) <span>creates an Orbit object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createPath3d" class="inline-link"> createPath3d</a><span class="parameters">(</span>path) <span>creates an 3d path object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createPolygon" class="inline-link"> createPolygon</a><span class="parameters">(</span>points) <span>creates an polygon object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createQuads" class="inline-link"> createQuads</a><span class="parameters">(</span>quads, style) <span>creates an quads object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createScene" class="inline-link"> createScene</a><span class="parameters">(</span>) <span>creates a scene object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_createTriangles" class="inline-link"> createTriangles</a><span class="parameters">(</span>tris, style) <span>creates an triangle object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_draw" class="inline-link"> draw</a><span class="parameters">(</span>lighting) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_getOutline" class="inline-link"> getOutline</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_getZOrder" class="inline-link"> getZOrder</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_render" class="inline-link"> render</a><span class="parameters">(</span>camera, deep) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setDrawer" class="inline-link"> setDrawer</a><span class="parameters">(</span>drawer) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>newObject) <span>sets a Object object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setScheduler" class="inline-link"> setScheduler</a><span class="parameters">(</span>scheduler) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx3d__base_Scene_toStdFill" class="inline-link"> toStdFill</a><span class="parameters">(</span>lighting, normal) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -728,4 +736,4 @@ constructor for a list of acceptable arguments)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gfx3d/_base.Scene" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

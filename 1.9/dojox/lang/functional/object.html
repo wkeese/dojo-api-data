@@ -1,111 +1,119 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/lang/functional/object</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/lang/functional/object" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/lang/functional/object.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/lang/functional/object<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <p>See the <a href="/reference-guide/1.9/dojox/lang/functional/object.html" target="_blank">dojox/lang/functional/object reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_buildLambda" class="inline-link"> buildLambda</a><span class="parameters">(</span>s) <span>builds a function from a snippet, returns a string, which
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_buildLambda" class="inline-link"> buildLambda</a><span class="parameters">(</span>s) <span>builds a function from a snippet, returns a string, which
 represents the function.</span><span title="inherited from dojox/lang/functional/lambda" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_clearLambdaCache" class="inline-link"> clearLambdaCache</a><span class="parameters">(</span>) <span>clears internal cache of lambdas</span><span title="inherited from dojox/lang/functional/lambda" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_every" class="inline-link"> every</a><span class="parameters">(</span>a, f, o) <span>tests whether all elements in the array pass the test
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_clearLambdaCache" class="inline-link"> clearLambdaCache</a><span class="parameters">(</span>) <span>clears internal cache of lambdas</span><span title="inherited from dojox/lang/functional/lambda" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_every" class="inline-link"> every</a><span class="parameters">(</span>a, f, o) <span>tests whether all elements in the array pass the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_everyRev" class="inline-link"> everyRev</a><span class="parameters">(</span>a, f, o) <span>tests whether all elements in the array pass the test
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_everyRev" class="inline-link"> everyRev</a><span class="parameters">(</span>a, f, o) <span>tests whether all elements in the array pass the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_filter" class="inline-link"> filter</a><span class="parameters">(</span>a, f, o) <span>creates a new array with all elements that pass the test
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_filter" class="inline-link"> filter</a><span class="parameters">(</span>a, f, o) <span>creates a new array with all elements that pass the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_filterIn" class="inline-link"> filterIn</a><span class="parameters">(</span>obj, f, o) <span>creates new object with all attributes that pass the test
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_filterIn" class="inline-link"> filterIn</a><span class="parameters">(</span>obj, f, o) <span>creates new object with all attributes that pass the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_filterRev" class="inline-link"> filterRev</a><span class="parameters">(</span>a, f, o) <span>creates a new array with all elements that pass the test
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_filterRev" class="inline-link"> filterRev</a><span class="parameters">(</span>a, f, o) <span>creates a new array with all elements that pass the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldl" class="inline-link"> foldl</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from left
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldl" class="inline-link"> foldl</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from left
 to right using a seed value as a starting point; returns the final
 value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldl1" class="inline-link"> foldl1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from left
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldl1" class="inline-link"> foldl1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from left
 to right; returns the final value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldr" class="inline-link"> foldr</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from right
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldr" class="inline-link"> foldr</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from right
 to left using a seed value as a starting point; returns the final
 value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldr1" class="inline-link"> foldr1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from right
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_foldr1" class="inline-link"> foldr1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from right
 to left; returns the final value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>a, f, o) <span>executes a provided function once per array element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_forEachRev" class="inline-link"> forEachRev</a><span class="parameters">(</span>a, f, o) <span>executes a provided function once per array element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_forIn" class="inline-link"> forIn</a><span class="parameters">(</span>obj, f, o) <span>iterates over all object attributes.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_keys" class="inline-link"> keys</a><span class="parameters">(</span>obj) <span>returns an array of all keys in the object</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_lambda" class="inline-link"> lambda</a><span class="parameters">(</span>s) <span>builds a function from a snippet, or array (composing),
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>a, f, o) <span>executes a provided function once per array element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_forEachRev" class="inline-link"> forEachRev</a><span class="parameters">(</span>a, f, o) <span>executes a provided function once per array element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_forIn" class="inline-link"> forIn</a><span class="parameters">(</span>obj, f, o) <span>iterates over all object attributes.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_keys" class="inline-link"> keys</a><span class="parameters">(</span>obj) <span>returns an array of all keys in the object</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_lambda" class="inline-link"> lambda</a><span class="parameters">(</span>s) <span>builds a function from a snippet, or array (composing),
 returns a function object; functions are passed through
 unmodified.</span><span title="inherited from dojox/lang/functional/lambda" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_map" class="inline-link"> map</a><span class="parameters">(</span>a, f, o) <span>creates a new array with the results of calling
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_map" class="inline-link"> map</a><span class="parameters">(</span>a, f, o) <span>creates a new array with the results of calling
 a provided function on every element in this array.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_mapIn" class="inline-link"> mapIn</a><span class="parameters">(</span>obj, f, o) <span>creates new object with the results of calling
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_mapIn" class="inline-link"> mapIn</a><span class="parameters">(</span>obj, f, o) <span>creates new object with the results of calling
 a provided function on every attribute in this object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_mapRev" class="inline-link"> mapRev</a><span class="parameters">(</span>a, f, o) <span>creates a new array with the results of calling
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_mapRev" class="inline-link"> mapRev</a><span class="parameters">(</span>a, f, o) <span>creates a new array with the results of calling
 a provided function on every element in this array.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_rawLambda" class="inline-link"> rawLambda</a><span class="parameters">(</span>s) <span>builds a function from a snippet, or array (composing),
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_lang_functional_object_rawLambda" class="inline-link"> rawLambda</a><span class="parameters">(</span>s) <span>builds a function from a snippet, or array (composing),
 returns an object describing the function; functions are
 passed through unmodified.</span><span title="inherited from dojox/lang/functional/lambda" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_reduce" class="inline-link"> reduce</a><span class="parameters">(</span>a, f, z) <span>apply a function simultaneously against two values of the array
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_reduce" class="inline-link"> reduce</a><span class="parameters">(</span>a, f, z) <span>apply a function simultaneously against two values of the array
 (from left-to-right) as to reduce it to a single value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_reduceRight" class="inline-link"> reduceRight</a><span class="parameters">(</span>a, f, z) <span>apply a function simultaneously against two values of the array
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_reduceRight" class="inline-link"> reduceRight</a><span class="parameters">(</span>a, f, z) <span>apply a function simultaneously against two values of the array
 (from right-to-left) as to reduce it to a single value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_repeat" class="inline-link"> repeat</a><span class="parameters">(</span>n, f, z, o) <span>builds an array by repeatedly applying a unary function N times
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_repeat" class="inline-link"> repeat</a><span class="parameters">(</span>n, f, z, o) <span>builds an array by repeatedly applying a unary function N times
 with a seed value Z.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanl" class="inline-link"> scanl</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from left
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanl" class="inline-link"> scanl</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from left
 to right using a seed value as a starting point; returns an array
 of values produced by foldl() at that point.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanl1" class="inline-link"> scanl1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from left
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanl1" class="inline-link"> scanl1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from left
 to right; returns an array of values produced by foldl1() at that
 point.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanr" class="inline-link"> scanr</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from right
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanr" class="inline-link"> scanr</a><span class="parameters">(</span>a, f, z, o) <span>repeatedly applies a binary function to an array from right
 to left using a seed value as a starting point; returns an array
 of values produced by foldr() at that point.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanr1" class="inline-link"> scanr1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from right
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_scanr1" class="inline-link"> scanr1</a><span class="parameters">(</span>a, f, o) <span>repeatedly applies a binary function to an array from right
 to left; returns an array of values produced by foldr1() at that
 point.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_some" class="inline-link"> some</a><span class="parameters">(</span>a, f, o) <span>tests whether some element in the array passes the test
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_some" class="inline-link"> some</a><span class="parameters">(</span>a, f, o) <span>tests whether some element in the array passes the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_someRev" class="inline-link"> someRev</a><span class="parameters">(</span>a, f, o) <span>tests whether some element in the array passes the test
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_someRev" class="inline-link"> someRev</a><span class="parameters">(</span>a, f, o) <span>tests whether some element in the array passes the test
 implemented by the provided function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_unfold" class="inline-link"> unfold</a><span class="parameters">(</span>pr, f, g, z, o) <span>builds an array by unfolding a value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_until" class="inline-link"> until</a><span class="parameters">(</span>pr, f, z, o) <span>builds an array by repeatedly applying a unary function with
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_unfold" class="inline-link"> unfold</a><span class="parameters">(</span>pr, f, g, z, o) <span>builds an array by unfolding a value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_until" class="inline-link"> until</a><span class="parameters">(</span>pr, f, z, o) <span>builds an array by repeatedly applying a unary function with
 a seed value Z until the predicate is satisfied.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_values" class="inline-link"> values</a><span class="parameters">(</span>obj) <span>returns an array of all values in the object</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_lang_functional_object_values" class="inline-link"> values</a><span class="parameters">(</span>obj) <span>returns an array of all values in the object</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1235,4 +1243,4 @@ a seed value Z until the predicate is satisfied.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/lang/functional/object" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/data/api/Read</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/data/api/Read" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/data/api/Read.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/data/api/Read<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This is an abstract API that data provider implementations conform to.
 This file defines methods signatures and intentionally leaves all the
@@ -8,46 +15,47 @@ please visit: <a href="http://www.dojotoolkit.org/node/98">http://www.dojotoolki
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/data/api/Read.html" target="_blank">dojo/data/api/Read reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>The close() method is intended for instructing the store to &#39;close&#39; out
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>The close() method is intended for instructing the store to &#39;close&#39; out
 any information associated with a particular request.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Returns true if the given value is one of the values that getValues()
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Returns true if the given value is one of the values that getValues()
 would return.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>keywordArgs) <span>Given a query and set of defined options, such as a start and count of items to return,
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>keywordArgs) <span>Given a query and set of defined options, such as a start and count of items to return,
 this method executes the query and makes the results available as data items.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Returns an array with all the attributes that this item has.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>The getFeatures() method returns an simple keyword values object
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Returns an array with all the attributes that this item has.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>The getFeatures() method returns an simple keyword values object
 that specifies what interface features the datastore implements.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>Method to inspect the item and return a user-readable &#39;label&#39; for the item
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>Method to inspect the item and return a user-readable &#39;label&#39; for the item
 that provides a general/adequate description of what the item is.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>Method to inspect the item and return an array of what attributes of the item were used
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>Method to inspect the item and return an array of what attributes of the item were used
 to generate its label, if any.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>Returns a single attribute value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>This getValues() method works just like the getValue() method, but getValues()
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>Returns a single attribute value.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>This getValues() method works just like the getValue() method, but getValues()
 always returns an array rather than a single attribute value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Returns true if the given item has a value for the given attribute.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Returns true if something is an item and came from the store instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>Returns false if isItem(something) is false.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Read_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>Given an item, this method loads the item so that a subsequent call
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Returns true if the given item has a value for the given attribute.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Returns true if something is an item and came from the store instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>Returns false if isItem(something) is false.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Read_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>Given an item, this method loads the item so that a subsequent call
 to store.isItemLoaded(item) will return true.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -812,4 +820,4 @@ onItem.call(dojo.global(), item, request)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/data/api/Read" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

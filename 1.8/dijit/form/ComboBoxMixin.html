@@ -1,198 +1,206 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/ComboBoxMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/form/ComboBoxMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/ComboBoxMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/ComboBoxMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_HasDropDown" class="jsdoc-link">dijit/_HasDropDown,   </a><a href="/api/1.8/dijit/form/_AutoCompleterMixin" class="jsdoc-link">dijit/form/_AutoCompleterMixin,   </a>
+  <label>Extends </label><a href="/api/1.8/dijit/_HasDropDown" class="jsdoc-link">dijit/_HasDropDown, </a><a href="/api/1.8/dijit/form/_AutoCompleterMixin" class="jsdoc-link">dijit/form/_AutoCompleterMixin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provides main functionality of ComboBox widget</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dijit/form/ComboBoxMixin<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ComboBoxMixin<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/form/_SearchMixin">dijit/form/_SearchMixin</a></div>
 <p>See the <a href="/reference-guide/1.8/dijit/form.html" target="_blank">dijit/form/ComboBoxMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__aroundNode" class="inline-link"> _aroundNode </a><span>The node to display the popup around.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__arrowWrapperNode" class="inline-link"> _arrowWrapperNode </a><span>Will set CSS class dijitUpArrow, dijitDownArrow, dijitRightArrow etc. on this node depending
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__aroundNode" class="inline-link"> _aroundNode </a><span>The node to display the popup around.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__arrowWrapperNode" class="inline-link"> _arrowWrapperNode </a><span>Will set CSS class dijitUpArrow, dijitDownArrow, dijitRightArrow etc. on this node depending
 on where the drop down is set to be positioned.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__buttonNode" class="inline-link"> _buttonNode </a><span>The button/icon/node to click to display the drop down.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__focusManager" class="inline-link"> _focusManager </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__popupStateNode" class="inline-link"> _popupStateNode </a><span>The node to set the aria-expanded class on.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__stopClickEvents" class="inline-link"> _stopClickEvents </a><span>When set to false, the click events will not be stopped, in
+        </li>
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__buttonNode" class="inline-link"> _buttonNode </a><span>The button/icon/node to click to display the drop down.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__focusManager" class="inline-link"> _focusManager </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__popupStateNode" class="inline-link"> _popupStateNode </a><span>The node to set the aria-expanded class on.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__stopClickEvents" class="inline-link"> _stopClickEvents </a><span>When set to false, the click events will not be stopped, in
 case you want to use them in your subclass</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_autoComplete" class="inline-link"> autoComplete </a><span>If user types in a partial string, and then tab out of the &lt;input&gt; box,
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_autoComplete" class="inline-link"> autoComplete </a><span>If user types in a partial string, and then tab out of the &lt;input&gt; box,
 automatically copy the first entry displayed in the drop down list to
 the &lt;input&gt; field</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_autoWidth" class="inline-link"> autoWidth </a><span>Set to true to make the drop down at least as wide as this
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_autoWidth" class="inline-link"> autoWidth </a><span>Set to true to make the drop down at least as wide as this
 widget.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_cssStateNodes" class="inline-link"> cssStateNodes </a><span></span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_dropDown" class="inline-link"> dropDown </a><span>The widget to display as a popup.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_dropDownPosition" class="inline-link"> dropDownPosition </a><span>This variable controls the position of the drop down.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_fetchProperties" class="inline-link"> fetchProperties </a><span>Mixin to the store&#39;s fetch.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_forceWidth" class="inline-link"> forceWidth </a><span>Set to true to make the drop down exactly as wide as this
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_cssStateNodes" class="inline-link"> cssStateNodes </a><span></span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_dropDown" class="inline-link"> dropDown </a><span>The widget to display as a popup.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_dropDownPosition" class="inline-link"> dropDownPosition </a><span>This variable controls the position of the drop down.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_fetchProperties" class="inline-link"> fetchProperties </a><span>Mixin to the store&#39;s fetch.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_forceWidth" class="inline-link"> forceWidth </a><span>Set to true to make the drop down exactly as wide as this
 widget.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_hasDownArrow" class="inline-link"> hasDownArrow </a><span>Set this textbox to have a down arrow button, to display the drop down list.</span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_highlightMatch" class="inline-link"> highlightMatch </a><span>One of: &quot;first&quot;, &quot;all&quot; or &quot;none&quot;.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_ignoreCase" class="inline-link"> ignoreCase </a><span>Set true if the query should ignore case when matching possible items</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_item" class="inline-link"> item </a><span>This is the item returned by the dojo/store/api/Store implementation that
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_hasDownArrow" class="inline-link"> hasDownArrow </a><span>Set this textbox to have a down arrow button, to display the drop down list.</span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_highlightMatch" class="inline-link"> highlightMatch </a><span>One of: &quot;first&quot;, &quot;all&quot; or &quot;none&quot;.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_ignoreCase" class="inline-link"> ignoreCase </a><span>Set true if the query should ignore case when matching possible items</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_item" class="inline-link"> item </a><span>This is the item returned by the dojo/store/api/Store implementation that
 provides the data for this ComboBox, it&#39;s the currently selected item.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_labelAttr" class="inline-link"> labelAttr </a><span>The entries in the drop down list come from this attribute in the
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_labelAttr" class="inline-link"> labelAttr </a><span>The entries in the drop down list come from this attribute in the
 dojo.data items.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_labelType" class="inline-link"> labelType </a><span>Specifies how to interpret the labelAttr in the data store items.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_maxHeight" class="inline-link"> maxHeight </a><span>The max height for our dropdown.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_pageSize" class="inline-link"> pageSize </a><span>Specifies a maximum size (in pixels) for this widget when resized by a splitter.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_query" class="inline-link"> query </a><span>A query that can be passed to store to initially filter the items.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_queryExpr" class="inline-link"> queryExpr </a><span>This specifies what query is sent to the data store,
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_labelType" class="inline-link"> labelType </a><span>Specifies how to interpret the labelAttr in the data store items.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_maxHeight" class="inline-link"> maxHeight </a><span>The max height for our dropdown.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_pageSize" class="inline-link"> pageSize </a><span>Argument to data provider.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_query" class="inline-link"> query </a><span>A query that can be passed to store to initially filter the items.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_queryExpr" class="inline-link"> queryExpr </a><span>This specifies what query is sent to the data store,
 based on what the user has typed.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_searchAttr" class="inline-link"> searchAttr </a><span>Search for items in the data store where this attribute (in the item)
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_searchAttr" class="inline-link"> searchAttr </a><span>Search for items in the data store where this attribute (in the item)
 matches what the user typed</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_searchDelay" class="inline-link"> searchDelay </a><span>Delay in milliseconds between when user types something and we start
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_searchDelay" class="inline-link"> searchDelay </a><span>Delay in milliseconds between when user types something and we start
 searching based on that value</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_store" class="inline-link"> store </a><span>Reference to data provider object used by this ComboBox.</span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__abortQuery" class="inline-link"> _abortQuery</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__announceOption" class="inline-link"> _announceOption</a><span class="parameters">(</span>node) <span>a11y code that puts the highlighted option in the textbox.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__autoCompleteText" class="inline-link"> _autoCompleteText</a><span class="parameters">(</span>text) <span>Fill in the textbox with the first item from the drop down
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_store" class="inline-link"> store </a><span>Reference to data provider object used by this ComboBox.</span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_form_ComboBoxMixin_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dijit/form/ComboBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__abortQuery" class="inline-link"> _abortQuery</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__announceOption" class="inline-link"> _announceOption</a><span class="parameters">(</span>node) <span>a11y code that puts the highlighted option in the textbox.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__autoCompleteText" class="inline-link"> _autoCompleteText</a><span class="parameters">(</span>text) <span>Fill in the textbox with the first item from the drop down
 list, and highlight the characters that were
 auto-completed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__escapeHtml" class="inline-link"> _escapeHtml</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__getCaretPos" class="inline-link"> _getCaretPos</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__getMenuLabelFromItem" class="inline-link"> _getMenuLabelFromItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__getValueField" class="inline-link"> _getValueField</a><span class="parameters">(</span>) <span>Helper for postMixInProperties() to set this.value based on data inlined into the markup.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__openResultList" class="inline-link"> _openResultList</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Handles input (keyboard/paste) events</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__selectOption" class="inline-link"> _selectOption</a><span class="parameters">(</span>target) <span>Menu callback function, called when an item in the menu is selected.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setCaretPos" class="inline-link"> _setCaretPos</a><span class="parameters">(</span>element, location) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form_ComboBoxMixin__setHasDownArrowAttr" class="inline-link"> _setHasDownArrowAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setItemAttr" class="inline-link"> _setItemAttr</a><span class="parameters">(</span>item, priorityChange, displayedValue) <span>Set the displayed valued in the input box, and the hidden value
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__escapeHtml" class="inline-link"> _escapeHtml</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__getCaretPos" class="inline-link"> _getCaretPos</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__getMenuLabelFromItem" class="inline-link"> _getMenuLabelFromItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__getValueField" class="inline-link"> _getValueField</a><span class="parameters">(</span>) <span>Helper for postMixInProperties() to set this.value based on data inlined into the markup.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__openResultList" class="inline-link"> _openResultList</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Handles input (keyboard/paste) events</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__selectOption" class="inline-link"> _selectOption</a><span class="parameters">(</span>target) <span>Menu callback function, called when an item in the menu is selected.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setCaretPos" class="inline-link"> _setCaretPos</a><span class="parameters">(</span>element, location) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form_ComboBoxMixin__setHasDownArrowAttr" class="inline-link"> _setHasDownArrowAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setItemAttr" class="inline-link"> _setItemAttr</a><span class="parameters">(</span>item, priorityChange, displayedValue) <span>Set the displayed valued in the input box, and the hidden value
 that gets submitted, based on a dojo.data store item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form_ComboBoxMixin__setStoreAttr" class="inline-link"> _setStoreAttr</a><span class="parameters">(</span>store) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>textDir) <span>Setter for textDir, needed for the dropDown&#39;s textDir update.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange, displayedValue, item) <span>Hook so set(&#39;value&#39;, value) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form_ComboBoxMixin__showResultList" class="inline-link"> _showResultList</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__startSearch" class="inline-link"> _startSearch</a><span class="parameters">(</span>key) <span>Starts a search for elements matching key (key==&quot;&quot; means to return all items),
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form_ComboBoxMixin__setStoreAttr" class="inline-link"> _setStoreAttr</a><span class="parameters">(</span>store) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>textDir) <span>Setter for textDir, needed for the dropDown&#39;s textDir update.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange, displayedValue, item) <span>Hook so set(&#39;value&#39;, value) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form_ComboBoxMixin__showResultList" class="inline-link"> _showResultList</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__startSearch" class="inline-link"> _startSearch</a><span class="parameters">(</span>key) <span>Starts a search for elements matching key (key==&quot;&quot; means to return all items),
 and calls _openResultList() when the search completes, to display the results.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__startSearchAll" class="inline-link"> _startSearchAll</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__startSearchFromInput" class="inline-link"> _startSearchFromInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_closeDropDown" class="inline-link"> closeDropDown</a><span class="parameters">(</span>focus) <span>Closes the drop down on this widget</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_doHighlight" class="inline-link"> doHighlight</a><span class="parameters">(</span>label, find) <span>Highlights the string entered by the user in the menu.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form_ComboBoxMixin_dropDownClass" class="inline-link"> dropDownClass</a><span class="parameters">(</span>) <span>Dropdown widget class used to select a date/time.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_isLoaded" class="inline-link"> isLoaded</a><span class="parameters">(</span>) <span>Returns true if the dropdown exists and it&#39;s data is loaded.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin_labelFunc" class="inline-link"> labelFunc</a><span class="parameters">(</span>item, store) <span>Computes the label to display based on the dojo.data store item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_loadAndOpenDropDown" class="inline-link"> loadAndOpenDropDown</a><span class="parameters">(</span>) <span>Creates the drop down if it doesn&#39;t exist, loads the data
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__startSearchAll" class="inline-link"> _startSearchAll</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__startSearchFromInput" class="inline-link"> _startSearchFromInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_closeDropDown" class="inline-link"> closeDropDown</a><span class="parameters">(</span>focus) <span>Closes the drop down on this widget</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_doHighlight" class="inline-link"> doHighlight</a><span class="parameters">(</span>label, find) <span>Highlights the string entered by the user in the menu.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form_ComboBoxMixin_dropDownClass" class="inline-link"> dropDownClass</a><span class="parameters">(</span>) <span>Dropdown widget class used to select a date/time.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_isLoaded" class="inline-link"> isLoaded</a><span class="parameters">(</span>) <span>Returns true if the dropdown exists and it&#39;s data is loaded.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin_labelFunc" class="inline-link"> labelFunc</a><span class="parameters">(</span>item, store) <span>Computes the label to display based on the dojo.data store item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_loadAndOpenDropDown" class="inline-link"> loadAndOpenDropDown</a><span class="parameters">(</span>) <span>Creates the drop down if it doesn&#39;t exist, loads the data
 if there&#39;s an href and it hasn&#39;t been loaded yet, and
 then opens the drop down.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_loadDropDown" class="inline-link"> loadDropDown</a><span class="parameters">(</span>loadCallback) <span>Creates the drop down if it doesn&#39;t exist, loads the data
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_loadDropDown" class="inline-link"> loadDropDown</a><span class="parameters">(</span>loadCallback) <span>Creates the drop down if it doesn&#39;t exist, loads the data
 if there&#39;s an href and it hasn&#39;t been loaded yet, and then calls
 the given callback.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_openDropDown" class="inline-link"> openDropDown</a><span class="parameters">(</span>) <span>Opens the dropdown for this widget.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>set up nodes and connect our mouse and keyboard events</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form_ComboBoxMixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_toggleDropDown" class="inline-link"> toggleDropDown</a><span class="parameters">(</span>) <span>Callback when the user presses the down arrow button or presses
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_openDropDown" class="inline-link"> openDropDown</a><span class="parameters">(</span>) <span>Opens the dropdown for this widget.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>set up nodes and connect our mouse and keyboard events</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form_ComboBoxMixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_toggleDropDown" class="inline-link"> toggleDropDown</a><span class="parameters">(</span>) <span>Callback when the user presses the down arrow button or presses
 the down arrow key to open/close the drop down.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>Called magically when focus has shifted away from this widget and it&#39;s dropdown</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onDropDownClick" class="inline-link"> _onDropDownClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onDropDownMouseDown" class="inline-link"> _onDropDownMouseDown</a><span class="parameters">(</span>e) <span>Callback when the user mousedown&#39;s on the arrow icon</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onDropDownMouseUp" class="inline-link"> _onDropDownMouseUp</a><span class="parameters">(</span>e) <span>Callback when the user lifts their mouse after mouse down on the arrow icon.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>e) <span>Callback when the user presses a key while focused on the button node</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onKeyUp" class="inline-link"> _onKeyUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_onSearch" class="inline-link"> onSearch</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>Called magically when focus has shifted away from this widget and it&#39;s dropdown</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onDropDownClick" class="inline-link"> _onDropDownClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onDropDownMouseDown" class="inline-link"> _onDropDownMouseDown</a><span class="parameters">(</span>e) <span>Callback when the user mousedown&#39;s on the arrow icon</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onDropDownMouseUp" class="inline-link"> _onDropDownMouseUp</a><span class="parameters">(</span>e) <span>Callback when the user lifts their mouse after mouse down on the arrow icon.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>e) <span>Callback when the user presses a key while focused on the button node</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ComboBoxMixin__onKeyUp" class="inline-link"> _onKeyUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_form_ComboBoxMixin_onSearch" class="inline-link"> onSearch</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -324,10 +332,15 @@ within the viewport.
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_SearchMixin" class="jsdoc-link">dijit/form/_SearchMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Mixin to the store&#39;s fetch.
-For example, to set the sort order of the ComboBox menu, pass:</p>
-<pre><code>  { sort: [{attribute:&quot;name&quot;,descending: true}] }</pre></code>
-<p>To override the default queryOptions so that deep=false, do:</p>
-<pre><code>  { queryOptions: {ignoreCase: true, deep: false} }</pre></code>
+For example, to set the sort order of the ComboBox menu, pass:
+
+</p>
+<pre><code>{ sort: [{attribute:&quot;name&quot;,descending: true}] }</pre></code>
+<p>To override the default queryOptions so that deep=false, do:
+
+
+</p>
+<pre><code>{ queryOptions: {ignoreCase: true, deep: false} }</pre></code>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -383,7 +396,7 @@ provides the data for this ComboBox, it&#39;s the currently selected item.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dijit_form_ComboBoxMixin_labelAttr"></a><span class="stringIcon">labelAttr</span>
+        <div class="jsdoc-title"><a name="1_8dijit_form_ComboBoxMixin_labelAttr"></a><span class="objectIcon">labelAttr</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_AutoCompleterMixin" class="jsdoc-link">dijit/form/_AutoCompleterMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -416,7 +429,8 @@ Set to 0 for no max height, or -1 to limit height to available space in viewport
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_SearchMixin" class="jsdoc-link">dijit/form/_SearchMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Specifies a maximum size (in pixels) for this widget when resized by a splitter.</p>
+        <div class="jsdoc-summary"><p>Argument to data provider.
+Specifies maximum number of search results to return per query</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -620,7 +634,7 @@ Returns the attribute name in the item (in dijit/form/_ComboBoxDataStore) to use
         <div class="jsdoc-full-summary"><ol>
 <li>generates drop-down list and calls _showResultList() to display it</li>
 <li>if this result list is from user pressing &quot;more choices&quot;/&quot;previous choices&quot;
-then tell screen reader to announce new option</li>
+ then tell screen reader to announce new option</li>
 </ol>
 </div>
         <table class="jsdoc-parameters">
@@ -1055,7 +1069,8 @@ be overridden in order to force a call to loadDropDown().</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The label that the ComboBox should display</div>
+        <div class="jsdoc-return-description"><p>The label that the ComboBox should display</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dijit_form_ComboBoxMixin_loadAndOpenDropDown"></a><span class="functionIcon">loadAndOpenDropDown</span><span class="parameters">()</span> 
@@ -1068,8 +1083,9 @@ then opens the drop down.  This is basically a callback when the
 user presses the down arrow button to open the drop down.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Deferred | instance</span></div>
-        <div class="jsdoc-return-description">Deferred for the drop down widget that
-fires when drop down is created and loaded</div>
+        <div class="jsdoc-return-description"><p>Deferred for the drop down widget that
+fires when drop down is created and loaded</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dijit_form_ComboBoxMixin_loadDropDown"></a><span class="functionIcon">loadDropDown</span><span class="parameters">(loadCallback)</span> 
@@ -1103,7 +1119,8 @@ the given callback.</p>
 has been created and is ready to display (ie, it&#39;s data is loaded).</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">return value of dijit/popup.open()</div>
+        <div class="jsdoc-return-description"><p>return value of dijit/popup.open()</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dijit_form_ComboBoxMixin_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
@@ -1202,4 +1219,4 @@ with native browser <code>&lt;select&gt;</code> nodes:
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/form/ComboBoxMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

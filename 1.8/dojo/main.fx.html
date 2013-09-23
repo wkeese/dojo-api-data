@@ -1,35 +1,43 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/main.fx</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/main.fx" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/main.fx.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/main.fx<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Effects library on top of Base animations</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojo_main_fx_easing" class="inline-link"> easing </a><span>Collection of easing functions to use beyond the default
-dojo._defaultEasing function.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_main_fx_chain" class="inline-link"> chain</a><span class="parameters">(</span>animations) <span>Alias of dojo.fx.chain - Run an array of animations in sequence</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_fx_combine" class="inline-link"> combine</a><span class="parameters">(</span>animations) <span>Alias of dojo.fx.combine - Run an array of animations in parallel</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_fx_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>Alias of dojo.fx.slideTo - Slide a node to a defined top/left coordinate</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_fx_Toggler" class="inline-link"> Toggler</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_fx_wipeIn" class="inline-link"> wipeIn</a><span class="parameters">(</span>args) <span>Alias of dojo.fx.wipeIn - Wipe a node to visible</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_fx_wipeOut" class="inline-link"> wipeOut</a><span class="parameters">(</span>args) <span>Alias of dojo.fx.wipeOut - Wipe a node to non-visible</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojo_main_fx_easing" class="inline-link"> easing </a><span>Collection of easing functions to use beyond the default
+dojo._defaultEasing function.</span><span title="Must manually require () dojo/fx/easing to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_main_fx_chain" class="inline-link"> chain</a><span class="parameters">(</span>animations) <span>Chain a list of dojo.Animations to run in sequence</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_fx_combine" class="inline-link"> combine</a><span class="parameters">(</span>animations) <span>Combine a list of dojo.Animations to run in parallel</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_fx_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>Slide a node to a new top/left position</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_fx_Toggler" class="inline-link"> Toggler</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_fx_wipeIn" class="inline-link"> wipeIn</a><span class="parameters">(</span>args) <span>Expand a node to it&#39;s natural height.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_fx_wipeOut" class="inline-link"> wipeOut</a><span class="parameters">(</span>args) <span>Shrink a node to nothing and hide it.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -52,7 +60,8 @@ dojo._defaultEasing function.</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fx.chain</code> - Run an array of animations in sequence</p>
+        <div class="jsdoc-full-summary"><p>Chain a list of <code>dojo.Animation</code>s to run in sequence
+</p>
 </div>
         <div class="jsdoc-full-summary"><p>Return a <code>dojo.Animation</code> which will play all passed
 <code>dojo.Animation</code> instances in sequence, firing its own
@@ -78,12 +87,13 @@ not the individual animations within)
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Once <code>node</code> is faded out, fade in <code>otherNode</code></p>
-<pre><code>  fx.chain([
+            <h3>Example 1</h3><p>Once <code>node</code> is faded out, fade in <code>otherNode</code>
+
+</p>
+<pre><code>fx.chain([
     dojo.fadeIn({ node:node }),
     dojo.fadeOut({ node:otherNode })
-  ]).play();</code></pre>
-<p></p>
+]).play();</code></pre>
 
           </div>
         </div>
@@ -93,7 +103,8 @@ not the individual animations within)
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fx.combine</code> - Run an array of animations in parallel</p>
+        <div class="jsdoc-full-summary"><p>Combine a list of <code>dojo.Animation</code>s to run in parallel
+</p>
 </div>
         <div class="jsdoc-full-summary"><p>Combine an array of <code>dojo.Animation</code>s to run in parallel,
 providing a new <code>dojo.Animation</code> instance encompasing each
@@ -117,25 +128,27 @@ animation, firing standard animation events.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Fade out <code>node</code> while fading in <code>otherNode</code> simultaneously</p>
-<pre><code>  fx.combine([
+            <h3>Example 1</h3><p>Fade out <code>node</code> while fading in <code>otherNode</code> simultaneously
+
+</p>
+<pre><code>fx.combine([
     dojo.fadeIn({ node:node }),
     dojo.fadeOut({ node:otherNode })
-  ]).play();</code></pre>
-<p></p>
+]).play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>When the longest animation ends, execute a function:</p>
-<pre><code>  var anim = fx.combine([
+            <h3>Example 2</h3><p>When the longest animation ends, execute a function:
+
+</p>
+<pre><code>var anim = fx.combine([
     dojo.fadeIn({ node: n, duration:700 }),
     dojo.fadeOut({ node: otherNode, duration: 300 })
-  ]);
-  dojo.connect(anim, &quot;onEnd&quot;, function(){
+]);
+dojo.connect(anim, &quot;onEnd&quot;, function(){
     // overall animation is done.
-  });
-  anim.play(); // play the animation</code></pre>
-<p></p>
+});
+anim.play(); // play the animation</code></pre>
 
           </div>
         </div>
@@ -145,7 +158,8 @@ animation, firing standard animation events.
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fx.slideTo</code> - Slide a node to a defined top/left coordinate</p>
+        <div class="jsdoc-full-summary"><p>Slide a node to a new top/left position
+</p>
 </div>
         <div class="jsdoc-full-summary"><p>Returns an animation that will slide &quot;node&quot;
 defined in args Object from its current position to
@@ -173,7 +187,7 @@ are <code>top</code> and <code>left</code>, which indicate the new position to s
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  .slideTo({ node: node, left:&quot;40&quot;, top:&quot;50&quot;, units:&quot;px&quot; }).play()</code></pre>
+            <h3>Example 1</h3><pre><code>.slideTo({ node: node, left:&quot;40&quot;, top:&quot;50&quot;, units:&quot;px&quot; }).play()</code></pre>
 
           </div>
         </div>
@@ -190,7 +204,8 @@ are <code>top</code> and <code>left</code>, which indicate the new position to s
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fx.wipeIn</code> - Wipe a node to visible</p>
+        <div class="jsdoc-full-summary"><p>Expand a node to it&#39;s natural height.
+</p>
 </div>
         <div class="jsdoc-full-summary"><p>Returns an animation that will expand the
 node defined in &#39;args&#39; object from it&#39;s current height to
@@ -218,9 +233,9 @@ Node must have no margin/border/padding.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  fx.wipeIn({
+            <h3>Example 1</h3><pre><code>fx.wipeIn({
     node:&quot;someId&quot;
-  }).play()</code></pre>
+}).play()</code></pre>
 
           </div>
         </div>
@@ -230,7 +245,8 @@ Node must have no margin/border/padding.
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fx.wipeOut</code> - Wipe a node to non-visible</p>
+        <div class="jsdoc-full-summary"><p>Shrink a node to nothing and hide it.
+</p>
 </div>
         <div class="jsdoc-full-summary"><p>Returns an animation that will shrink node defined in &quot;args&quot;
 from it&#39;s current height to 1px, and then hide it.
@@ -256,11 +272,11 @@ from it&#39;s current height to 1px, and then hide it.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  fx.wipeOut({ node:&quot;someId&quot; }).play()</code></pre>
+            <h3>Example 1</h3><pre><code>fx.wipeOut({ node:&quot;someId&quot; }).play()</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/main.fx" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

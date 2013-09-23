@@ -1,54 +1,63 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/analytics/_base</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/analytics/_base" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/analytics/_base.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/analytics/_base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>where we store data until we&#39;re ready to send it off.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/analytics.html" target="_blank">dojox/analytics/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon private"><a href="#1_8dojox_analytics__base__data" class="inline-link"> _data </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_8dojox_analytics__base__id" class="inline-link"> _id </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_analytics__base_dataUrl" class="inline-link"> dataUrl </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_analytics__base_inTransitRetry" class="inline-link"> inTransitRetry </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_analytics__base_maxRequestSize" class="inline-link"> maxRequestSize </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_analytics__base_sendInterval" class="inline-link"> sendInterval </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_analytics__base_sendMethod" class="inline-link"> sendMethod </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_addData" class="inline-link"> addData</a><span class="parameters">(</span>dataType, data) <span>add data to the queue.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_checkData" class="inline-link"> checkData</a><span class="parameters">(</span>) <span>TODOC?</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>where we store data until we&#39;re ready to send it off.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_getQueryPacket" class="inline-link"> getQueryPacket</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_pushData" class="inline-link"> pushData</a><span class="parameters">(</span>) <span>pushes data to the server if any exists.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_schedulePusher" class="inline-link"> schedulePusher</a><span class="parameters">(</span>interval) <span>Schedule the data pushing routines to happen in interval ms</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_analytics__base_onPushComplete" class="inline-link"> onPushComplete</a><span class="parameters">(</span>results) <span>If our data push was successfully, remove the _inTransit data and schedule the next
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon private"><a href="#1_8dojox_analytics__base__data" class="inline-link"> _data </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_8dojox_analytics__base__id" class="inline-link"> _id </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_analytics__base_dataUrl" class="inline-link"> dataUrl </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_analytics__base_inTransitRetry" class="inline-link"> inTransitRetry </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_analytics__base_maxRequestSize" class="inline-link"> maxRequestSize </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_analytics__base_sendInterval" class="inline-link"> sendInterval </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_analytics__base_sendMethod" class="inline-link"> sendMethod </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_addData" class="inline-link"> addData</a><span class="parameters">(</span>dataType, data) <span>add data to the queue.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_checkData" class="inline-link"> checkData</a><span class="parameters">(</span>) <span>TODOC?</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>where we store data until we&#39;re ready to send it off.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_getQueryPacket" class="inline-link"> getQueryPacket</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_pushData" class="inline-link"> pushData</a><span class="parameters">(</span>) <span>pushes data to the server if any exists.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_schedulePusher" class="inline-link"> schedulePusher</a><span class="parameters">(</span>interval) <span>Schedule the data pushing routines to happen in interval ms</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_analytics__base_onPushComplete" class="inline-link"> onPushComplete</a><span class="parameters">(</span>results) <span>If our data push was successfully, remove the _inTransit data and schedule the next
 parser run.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -196,4 +205,4 @@ parser run.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/analytics/_base" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

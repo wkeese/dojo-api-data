@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/ForestStoreModel</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/tree/ForestStoreModel" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/ForestStoreModel.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/tree/ForestStoreModel<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/tree/TreeStoreModel" class="jsdoc-link">dijit/tree/TreeStoreModel</a>
@@ -26,7 +33,7 @@ data, including:
 <li>onSetItem</li>
 </ul>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new ForestStoreModel<span class="parameters">(params);</span></div>
 </div>
@@ -48,88 +55,89 @@ data, including:
 </table>
 <p>See the <a href="/reference-guide/1.9/dijit/tree/ForestStoreModel.html" target="_blank">dijit/tree/ForestStoreModel reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_childrenAttrs" class="inline-link"> childrenAttrs </a><span>One or more attribute names (attributes in the dojo.data item) that specify that item&#39;s children</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_deferItemLoadingUntilExpand" class="inline-link"> deferItemLoadingUntilExpand </a><span>Setting this to true will cause the TreeStoreModel to defer calling loadItem on nodes
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_childrenAttrs" class="inline-link"> childrenAttrs </a><span>One or more attribute names (attributes in the dojo.data item) that specify that item&#39;s children</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_deferItemLoadingUntilExpand" class="inline-link"> deferItemLoadingUntilExpand </a><span>Setting this to true will cause the TreeStoreModel to defer calling loadItem on nodes
 until they are expanded.</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_labelAttr" class="inline-link"> labelAttr </a><span>If specified, get label for tree node from this attribute, rather
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_labelAttr" class="inline-link"> labelAttr </a><span>If specified, get label for tree node from this attribute, rather
 than by calling store.getLabel()</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_newItemIdAttr" class="inline-link"> newItemIdAttr </a><span>Name of attribute in the Object passed to newItem() that specifies the id.</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_query" class="inline-link"> query </a><span>Specifies the set of children of the root item.</span><span title="inherited from dijit/tree/ForestStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_root" class="inline-link"> root </a><span>Pointer to the root item (read only, not a parameter)</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_rootId" class="inline-link"> rootId </a><span>ID of fabricated root item</span><span title="inherited from dijit/tree/ForestStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_rootLabel" class="inline-link"> rootLabel </a><span>Label of fabricated root item</span><span title="inherited from dijit/tree/ForestStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_store" class="inline-link"> store </a><span>Underlying store</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_tree_ForestStoreModel__requeryTop" class="inline-link"> _requeryTop</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_ForestStoreModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Sets up variables, etc.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parentItem, callback, onError) <span>Calls onComplete() with array of child items of given parent item, all loaded.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_getRoot" class="inline-link"> getRoot</a><span class="parameters">(</span>onItem, onError) <span>Calls onItem with the root item for the tree, possibly a fabricated item.</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_mayHaveChildren" class="inline-link"> mayHaveChildren</a><span class="parameters">(</span>item) <span>Tells if an item has or may have children.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>args, parent, insertIndex) <span>Creates a new item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_pasteItem" class="inline-link"> pasteItem</a><span class="parameters">(</span>childItem, oldParentItem, newParentItem, bCopy, insertIndex) <span>Move or copy an item from one parent item to another.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onAddToRoot" class="inline-link"> onAddToRoot</a><span class="parameters">(</span>item) <span>Called when item added to root of tree; user must override this method
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_newItemIdAttr" class="inline-link"> newItemIdAttr </a><span>Name of attribute in the Object passed to newItem() that specifies the id.</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_query" class="inline-link"> query </a><span>Specifies the set of children of the root item.</span><span title="inherited from dijit/tree/ForestStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_root" class="inline-link"> root </a><span>Pointer to the root item (read only, not a parameter)</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_rootId" class="inline-link"> rootId </a><span>ID of fabricated root item</span><span title="inherited from dijit/tree/ForestStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_rootLabel" class="inline-link"> rootLabel </a><span>Label of fabricated root item</span><span title="inherited from dijit/tree/ForestStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_tree_ForestStoreModel_store" class="inline-link"> store </a><span>Underlying store</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_tree_ForestStoreModel__requeryTop" class="inline-link"> _requeryTop</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_ForestStoreModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Sets up variables, etc.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parentItem, callback, onError) <span>Calls onComplete() with array of child items of given parent item, all loaded.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_getRoot" class="inline-link"> getRoot</a><span class="parameters">(</span>onItem, onError) <span>Calls onItem with the root item for the tree, possibly a fabricated item.</span><span title="inherited from dijit/tree/TreeStoreModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_mayHaveChildren" class="inline-link"> mayHaveChildren</a><span class="parameters">(</span>item) <span>Tells if an item has or may have children.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>args, parent, insertIndex) <span>Creates a new item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_pasteItem" class="inline-link"> pasteItem</a><span class="parameters">(</span>childItem, oldParentItem, newParentItem, bCopy, insertIndex) <span>Move or copy an item from one parent item to another.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onAddToRoot" class="inline-link"> onAddToRoot</a><span class="parameters">(</span>item) <span>Called when item added to root of tree; user must override this method
 to modify the item so that it matches the query for top level items</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>item) <span>Callback whenever an item has changed, so that Tree
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>item) <span>Callback whenever an item has changed, so that Tree
 can update the label, icon, etc.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_onChildrenChange" class="inline-link"> onChildrenChange</a><span class="parameters">(</span>parent, newChildrenList) <span>Callback to do notifications about new, updated, or deleted items.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>item) <span>Callback when an item has been deleted.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onDeleteItem" class="inline-link"> onDeleteItem</a><span class="parameters">(</span>item) <span>Handler for delete notifications from underlying store</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onLeaveRoot" class="inline-link"> onLeaveRoot</a><span class="parameters">(</span>item) <span>Called when item removed from root of tree; user must override this method
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_onChildrenChange" class="inline-link"> onChildrenChange</a><span class="parameters">(</span>parent, newChildrenList) <span>Callback to do notifications about new, updated, or deleted items.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_ForestStoreModel_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>item) <span>Callback when an item has been deleted.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onDeleteItem" class="inline-link"> onDeleteItem</a><span class="parameters">(</span>item) <span>Handler for delete notifications from underlying store</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onLeaveRoot" class="inline-link"> onLeaveRoot</a><span class="parameters">(</span>item) <span>Called when item removed from root of tree; user must override this method
 to modify the item so it doesn&#39;t match the query for top level items</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onNewItem" class="inline-link"> onNewItem</a><span class="parameters">(</span>item, parentInfo) <span>Handler for when new items appear in the store.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onNewRootItem" class="inline-link"> onNewRootItem</a><span class="parameters">(</span>args) <span>User can override this method to modify a new element that&#39;s being
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onNewItem" class="inline-link"> onNewItem</a><span class="parameters">(</span>item, parentInfo) <span>Handler for when new items appear in the store.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onNewRootItem" class="inline-link"> onNewRootItem</a><span class="parameters">(</span>args) <span>User can override this method to modify a new element that&#39;s being
 added to the root of the tree, for example to add a flag like root=true</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onSetItem" class="inline-link"> onSetItem</a><span class="parameters">(</span>item, attribute, oldValue, newValue) <span>Updates the tree view according to changes to an item in the data store.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_ForestStoreModel_onSetItem" class="inline-link"> onSetItem</a><span class="parameters">(</span>item, attribute, oldValue, newValue) <span>Updates the tree view according to changes to an item in the data store.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -587,4 +595,4 @@ Developers should override this method to be more efficient based on their app/d
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/tree/ForestStoreModel" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

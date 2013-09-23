@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_ButtonMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/form/_ButtonMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_ButtonMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/_ButtonMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A mixin to add a thin standard API wrapper to a normal HTML button</p>
 </div>
@@ -17,46 +24,47 @@
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/form/_ButtonMixin.html" target="_blank">dijit/form/_ButtonMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  &lt;button data-dojo-type=&quot;dijit/form/Button&quot; onClick=&quot;...&quot;&gt;Hello world&lt;/button&gt;</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;button data-dojo-type=&quot;dijit/form/Button&quot; onClick=&quot;...&quot;&gt;Hello world&lt;/button&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  var button1 = new Button({label: &quot;hello world&quot;, onClick: foo});
-  dojo.body().appendChild(button1.domNode);</code></pre>
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>var button1 = new Button({label: &quot;hello world&quot;, onClick: foo});
+dojo.body().appendChild(button1.domNode);</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dijit_form__ButtonMixin_label" class="inline-link"> label </a><span>Content to display in button.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dijit_form__ButtonMixin_type" class="inline-link"> type </a><span>Type of button (submit, reset, button, checkbox, radio)</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_form__ButtonMixin__setLabelAttr" class="inline-link"> _setLabelAttr</a><span class="parameters">(</span>content) <span>Hook for set(&#39;label&#39;, ...) to work.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__ButtonMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_form__ButtonMixin__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>e) <span>Internal function to handle click actions</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__ButtonMixin_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>e) <span>Callback for when button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dijit_form__ButtonMixin_label" class="inline-link"> label </a><span>Content to display in button.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dijit_form__ButtonMixin_type" class="inline-link"> type </a><span>Type of button (submit, reset, button, checkbox, radio)</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_form__ButtonMixin__setLabelAttr" class="inline-link"> _setLabelAttr</a><span class="parameters">(</span>content) <span>Hook for set(&#39;label&#39;, ...) to work.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__ButtonMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_form__ButtonMixin__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>e) <span>Internal function to handle click actions</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__ButtonMixin_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>e) <span>Callback for when button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -131,4 +139,4 @@ If type=&quot;submit&quot;, return true to perform submit, or false to cancel it
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/form/_ButtonMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

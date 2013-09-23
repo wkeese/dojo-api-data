@@ -1,13 +1,20 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/router/RouterBase</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/router/RouterBase" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/router/RouterBase.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/router/RouterBase<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A module that allows one to easily map hash-based structures into
 callbacks. The router module is a singleton, offering one central
 point for all registrations of this type.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/router/RouterBase<span class="parameters">(kwArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new RouterBase<span class="parameters">(kwArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/router/RouterBase">dojo/router/RouterBase</a></div>
 <table class="jsdoc-parameters">
@@ -25,72 +32,73 @@ point for all registrations of this type.</p>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/router.html" target="_blank">dojo/router/RouterBase reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var router = new RouterBase({});
-  router.register(&quot;/widgets/:id&quot;, function(evt){
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var router = new RouterBase({});
+router.register(&quot;/widgets/:id&quot;, function(evt){
     // If &quot;/widgets/3&quot; was matched,
     // evt.params.id === &quot;3&quot;
     xhr.get({
-      url: &quot;/some/path/&quot; + evt.params.id,
-      load: function(data){
-        // ...
-      }
+        url: &quot;/some/path/&quot; + evt.params.id,
+        load: function(data){
+            // ...
+        }
     });
-  });</code></pre>
+});</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_8dojo_router_RouterBase__currentPath" class="inline-link"> _currentPath </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojo_router_RouterBase__routeIndex" class="inline-link"> _routeIndex </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojo_router_RouterBase__routes" class="inline-link"> _routes </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8dojo_router_RouterBase__started" class="inline-link"> _started </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="regexpIcon"><a href="#1_8dojo_router_RouterBase_globMatch" class="inline-link"> globMatch </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojo_router_RouterBase_globReplacement" class="inline-link"> globReplacement </a><span></span>
-    </li>
-    <li class="regexpIcon"><a href="#1_8dojo_router_RouterBase_idMatch" class="inline-link"> idMatch </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojo_router_RouterBase_idReplacement" class="inline-link"> idReplacement </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__convertRouteToRegExp" class="inline-link"> _convertRouteToRegExp</a><span class="parameters">(</span>route) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__getParameterNames" class="inline-link"> _getParameterNames</a><span class="parameters">(</span>route) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__handlePathChange" class="inline-link"> _handlePathChange</a><span class="parameters">(</span>newPath) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__indexRoutes" class="inline-link"> _indexRoutes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__registerRoute" class="inline-link"> _registerRoute</a><span class="parameters">(</span>route, callback, isBefore) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>kwArgs) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_go" class="inline-link"> go</a><span class="parameters">(</span>path, replace) <span>A simple pass-through to make changing the hash easy,
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_8dojo_router_RouterBase__currentPath" class="inline-link"> _currentPath </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojo_router_RouterBase__routeIndex" class="inline-link"> _routeIndex </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojo_router_RouterBase__routes" class="inline-link"> _routes </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8dojo_router_RouterBase__started" class="inline-link"> _started </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="regexpIcon"><a href="#1_8dojo_router_RouterBase_globMatch" class="inline-link"> globMatch </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojo_router_RouterBase_globReplacement" class="inline-link"> globReplacement </a><span></span>
+        </li>
+        <li class="regexpIcon"><a href="#1_8dojo_router_RouterBase_idMatch" class="inline-link"> idMatch </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojo_router_RouterBase_idReplacement" class="inline-link"> idReplacement </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__convertRouteToRegExp" class="inline-link"> _convertRouteToRegExp</a><span class="parameters">(</span>route) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__getParameterNames" class="inline-link"> _getParameterNames</a><span class="parameters">(</span>route) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__handlePathChange" class="inline-link"> _handlePathChange</a><span class="parameters">(</span>newPath) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__indexRoutes" class="inline-link"> _indexRoutes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_router_RouterBase__registerRoute" class="inline-link"> _registerRoute</a><span class="parameters">(</span>route, callback, isBefore) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>kwArgs) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_go" class="inline-link"> go</a><span class="parameters">(</span>path, replace) <span>A simple pass-through to make changing the hash easy,
 without having to require dojo/hash directly.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_register" class="inline-link"> register</a><span class="parameters">(</span>route, callback) <span>Registers a route to a handling callback</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_registerBefore" class="inline-link"> registerBefore</a><span class="parameters">(</span>route, callback) <span>Registers a route to a handling callback, except before
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_register" class="inline-link"> register</a><span class="parameters">(</span>route, callback) <span>Registers a route to a handling callback</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_registerBefore" class="inline-link"> registerBefore</a><span class="parameters">(</span>route, callback) <span>Registers a route to a handling callback, except before
 any previously registered callbacks</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>This method must be called to activate the router.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_router_RouterBase_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>This method must be called to activate the router.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -303,7 +311,7 @@ synchronously fires off any routes that match.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  router.go(&quot;/foo/bar&quot;);</code></pre>
+            <h3>Example 1</h3><pre><code>router.go(&quot;/foo/bar&quot;);</code></pre>
 
           </div>
         </div>
@@ -388,18 +396,19 @@ notice of the change.</li>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
-        <div class="jsdoc-return-description">A plain JavaScript object to be used as a handle for
-either removing this specific callback's registration, as
+        <div class="jsdoc-return-description"><p>A plain JavaScript object to be used as a handle for
+either removing this specific callback&#39;s registration, as
 well as to add new callbacks with the same route initially
-used.</div>
+used.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  router.register(&quot;/foo/:bar/*baz&quot;, function(object){
+            <h3>Example 1</h3><pre><code>router.register(&quot;/foo/:bar/*baz&quot;, function(object){
     // If the hash was &quot;/foo/abc/def/ghi&quot;,
     // object.bar === &quot;abc&quot;
     // object.baz === &quot;def/ghi&quot;
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -450,4 +459,4 @@ callbacks.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/router/RouterBase" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/store/JsonRest</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/store/JsonRest" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/store/JsonRest.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/store/JsonRest<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/store/api/Store" class="jsdoc-link">dojo/store/api/Store</a>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>This is a basic store for RESTful communicating with a server through JSON
 formatted data. It implements <a class="jsdoc-link" href="/api/1.9/dojo/store/api/Store">dojo/store/api/Store</a>.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new JsonRest<span class="parameters">(options);</span></div>
 </div>
@@ -31,53 +38,54 @@ formatted data.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/store/JsonRest.html" target="_blank">dojo/store/JsonRest reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_accepts" class="inline-link"> accepts </a><span>Defines the Accept header to use on HTTP requests</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_ascendingPrefix" class="inline-link"> ascendingPrefix </a><span>The prefix to apply to sort attribute names that are ascending</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_descendingPrefix" class="inline-link"> descendingPrefix </a><span>The prefix to apply to sort attribute names that are ascending</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojo_store_JsonRest_headers" class="inline-link"> headers </a><span>Additional headers to pass in all requests to the server.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_idProperty" class="inline-link"> idProperty </a><span>Indicates the property to use as the identity property.</span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_9dojo_store_JsonRest_queryEngine" class="inline-link"> queryEngine </a><span>If the store can be queried locally (on the client side in JS), this defines
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_accepts" class="inline-link"> accepts </a><span>Defines the Accept header to use on HTTP requests</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_ascendingPrefix" class="inline-link"> ascendingPrefix </a><span>The prefix to apply to sort attribute names that are ascending</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_descendingPrefix" class="inline-link"> descendingPrefix </a><span>The prefix to apply to sort attribute names that are ascending</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojo_store_JsonRest_headers" class="inline-link"> headers </a><span>Additional headers to pass in all requests to the server.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojo_store_JsonRest_idProperty" class="inline-link"> idProperty </a><span>Indicates the property to use as the identity property.</span>
+        </li>
+        <li class="functionIcon inherited"><a href="#1_9dojo_store_JsonRest_queryEngine" class="inline-link"> queryEngine </a><span>If the store can be queried locally (on the client side in JS), this defines
 the query engine to use for querying the data store.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojo_store_JsonRest_target" class="inline-link"> target </a><span>The target base URL to use for all requests to the server.</span><span title="inherited from dojo/store/JsonRest" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_add" class="inline-link"> add</a><span class="parameters">(</span>object, options) <span>Adds an object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span>This is a basic store for RESTful communicating with a server through JSON
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojo_store_JsonRest_target" class="inline-link"> target </a><span>The target base URL to use for all requests to the server.</span><span title="inherited from dojo/store/JsonRest" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_add" class="inline-link"> add</a><span class="parameters">(</span>object, options) <span>Adds an object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span>This is a basic store for RESTful communicating with a server through JSON
 formatted data.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_get" class="inline-link"> get</a><span class="parameters">(</span>id, options) <span>Retrieves an object by its identity.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_JsonRest_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_JsonRest_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_put" class="inline-link"> put</a><span class="parameters">(</span>object, options) <span>Stores an object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_remove" class="inline-link"> remove</a><span class="parameters">(</span>id, options) <span>Deletes an object by its identity.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_JsonRest_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_get" class="inline-link"> get</a><span class="parameters">(</span>id, options) <span>Retrieves an object by its identity.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_JsonRest_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_JsonRest_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_put" class="inline-link"> put</a><span class="parameters">(</span>object, options) <span>Stores an object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_JsonRest_remove" class="inline-link"> remove</a><span class="parameters">(</span>id, options) <span>Deletes an object by its identity.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_JsonRest_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -449,4 +457,4 @@ as &quot;auto-commit&quot; style actions.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/store/JsonRest" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

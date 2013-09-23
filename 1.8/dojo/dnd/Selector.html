@@ -1,14 +1,21 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/Selector</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dnd/Selector" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/Selector.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/dnd/Selector<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/dnd/Container" class="jsdoc-link">dojo/dnd/Container,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/dnd/Container" class="jsdoc-link">dojo/dnd/Container</a>
 </div>
 <div class="jsdoc-full-summary"><p>a Selector object, which knows how to select its children</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/dnd/Selector<span class="parameters">(node,params);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Selector<span class="parameters">(node,params);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Selector">dojo/dnd/Selector</a></div>
 <div class="jsdoc-summary"><p>constructor of the Selector</p>
@@ -37,108 +44,109 @@
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/dnd.html" target="_blank">dojo/dnd/Selector reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_Selector_allowNested" class="inline-link"> allowNested </a><span>Indicates whether to allow dnd item nodes to be nested within other elements.</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojo_dnd_Selector_current" class="inline-link"> current </a><span>The DOM node the mouse is currently hovered over</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojo_dnd_Selector_map" class="inline-link"> map </a><span>Map from an item&#39;s id (which is also the DOMNode&#39;s id) to
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_Selector_allowNested" class="inline-link"> allowNested </a><span>Indicates whether to allow dnd item nodes to be nested within other elements.</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojo_dnd_Selector_current" class="inline-link"> current </a><span>The DOM node the mouse is currently hovered over</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojo_dnd_Selector_map" class="inline-link"> map </a><span>Map from an item&#39;s id (which is also the DOMNode&#39;s id) to
 the dojo/dnd/Container.Item itself.</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojo_dnd_Selector_selection" class="inline-link"> selection </a><span>The set of id&#39;s that are currently selected, such that this.selection[id] == 1
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojo_dnd_Selector_selection" class="inline-link"> selection </a><span>The set of id&#39;s that are currently selected, such that this.selection[id] == 1
 if the node w/that id is selected.</span><span title="inherited from dojo/dnd/Selector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_Selector_singular" class="inline-link"> singular </a><span></span><span title="inherited from dojo/dnd/Selector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_Selector_skipForm" class="inline-link"> skipForm </a><span></span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__getChildByEvent" class="inline-link"> _getChildByEvent</a><span class="parameters">(</span>e) <span>gets a child, which is under the mouse at the moment, or null</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__normalizedCreator" class="inline-link"> _normalizedCreator</a><span class="parameters">(</span>item, hint) <span>adds all necessary data to the output of the user-supplied creator function</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Selector__removeAnchor" class="inline-link"> _removeAnchor</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Selector__removeSelection" class="inline-link"> _removeSelection</a><span class="parameters">(</span>) <span>unselects all items</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_clearItems" class="inline-link"> clearItems</a><span class="parameters">(</span>) <span>removes all data items from the map</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>constructor of the Selector</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_creator" class="inline-link"> creator</a><span class="parameters">(</span>) <span>creator function, dummy at the moment</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_deleteSelectedNodes" class="inline-link"> deleteSelectedNodes</a><span class="parameters">(</span>) <span>deletes all selected items</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_delItem" class="inline-link"> delItem</a><span class="parameters">(</span>key) <span>removes a data item from the map by its key (id)</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>prepares the object to be garbage-collected</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_forInItems" class="inline-link"> forInItems</a><span class="parameters">(</span>f, o) <span>iterates over a data map skipping members that
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_Selector_singular" class="inline-link"> singular </a><span></span><span title="inherited from dojo/dnd/Selector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_Selector_skipForm" class="inline-link"> skipForm </a><span></span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__getChildByEvent" class="inline-link"> _getChildByEvent</a><span class="parameters">(</span>e) <span>gets a child, which is under the mouse at the moment, or null</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__normalizedCreator" class="inline-link"> _normalizedCreator</a><span class="parameters">(</span>item, hint) <span>adds all necessary data to the output of the user-supplied creator function</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Selector__removeAnchor" class="inline-link"> _removeAnchor</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojo_dnd_Selector__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Selector__removeSelection" class="inline-link"> _removeSelection</a><span class="parameters">(</span>) <span>unselects all items</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_clearItems" class="inline-link"> clearItems</a><span class="parameters">(</span>) <span>removes all data items from the map</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>constructor of the Selector</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_creator" class="inline-link"> creator</a><span class="parameters">(</span>) <span>creator function, dummy at the moment</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_deleteSelectedNodes" class="inline-link"> deleteSelectedNodes</a><span class="parameters">(</span>) <span>deletes all selected items</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_delItem" class="inline-link"> delItem</a><span class="parameters">(</span>key) <span>removes a data item from the map by its key (id)</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>prepares the object to be garbage-collected</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_forInItems" class="inline-link"> forInItems</a><span class="parameters">(</span>f, o) <span>iterates over a data map skipping members that
 are present in the empty object (IE and/or 3rd-party libraries).</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_forInSelectedItems" class="inline-link"> forInSelectedItems</a><span class="parameters">(</span>f, o) <span>iterates over selected items;
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_forInSelectedItems" class="inline-link"> forInSelectedItems</a><span class="parameters">(</span>f, o) <span>iterates over selected items;
 see dojo/dnd/Container.forInItems() for details</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_getAllNodes" class="inline-link"> getAllNodes</a><span class="parameters">(</span>) <span>returns a list (an array) of all valid child nodes</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_getItem" class="inline-link"> getItem</a><span class="parameters">(</span>key) <span>returns a data item by its key (id)</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_getSelectedNodes" class="inline-link"> getSelectedNodes</a><span class="parameters">(</span>) <span>returns a list (an array) of selected nodes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_insertNodes" class="inline-link"> insertNodes</a><span class="parameters">(</span>addSelected, data, before, anchor) <span>inserts new data items (see dojo/dnd/Container.insertNodes() method for details)</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_selectAll" class="inline-link"> selectAll</a><span class="parameters">(</span>) <span>selects all items</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_selectNone" class="inline-link"> selectNone</a><span class="parameters">(</span>) <span>unselects all items</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_setItem" class="inline-link"> setItem</a><span class="parameters">(</span>key, data) <span>associates a data item with its key (id)</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>collects valid child items and populate the map</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_sync" class="inline-link"> sync</a><span class="parameters">(</span>) <span>sync up the node list with the data map</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>event processor for onmousedown</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>e) <span>event processor for onmouseout</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>e) <span>event processor for onmouseover or touch, to mark that element as the current element</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is out of our container</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is over our container</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_getAllNodes" class="inline-link"> getAllNodes</a><span class="parameters">(</span>) <span>returns a list (an array) of all valid child nodes</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_getItem" class="inline-link"> getItem</a><span class="parameters">(</span>key) <span>returns a data item by its key (id)</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_getSelectedNodes" class="inline-link"> getSelectedNodes</a><span class="parameters">(</span>) <span>returns a list (an array) of selected nodes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_insertNodes" class="inline-link"> insertNodes</a><span class="parameters">(</span>addSelected, data, before, anchor) <span>inserts new data items (see dojo/dnd/Container.insertNodes() method for details)</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_selectAll" class="inline-link"> selectAll</a><span class="parameters">(</span>) <span>selects all items</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_selectNone" class="inline-link"> selectNone</a><span class="parameters">(</span>) <span>unselects all items</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_setItem" class="inline-link"> setItem</a><span class="parameters">(</span>key, data) <span>associates a data item with its key (id)</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>collects valid child items and populate the map</span><span title="inherited from dojo/dnd/Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_sync" class="inline-link"> sync</a><span class="parameters">(</span>) <span>sync up the node list with the data map</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>event processor for onmousedown</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>e) <span>event processor for onmouseout</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>e) <span>event processor for onmouseover or touch, to mark that element as the current element</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is out of our container</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Selector_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is over our container</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Selector_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -177,8 +185,10 @@ the <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Container#Item">dojo/dnd/Conta
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/dnd/Selector" class="jsdoc-link">dojo/dnd/Selector</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The set of id&#39;s that are currently selected, such that this.selection[id] == 1
-if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;s like:</p>
-<pre><code>    for(var id in this.selection)</pre></code>
+if the node w/that id is selected.  Can iterate over selected node&#39;s id&#39;s like:
+
+</p>
+<pre><code>for(var id in this.selection)</pre></code>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -796,4 +806,4 @@ see <code>dojo/dnd/Container.forInItems()</code> for details</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dnd/Selector" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/_base</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/_base" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/_base.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/_base<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Drawing is a project that sits on top of DojoX GFX and uses SVG and
 VML vector graphics to draw and display.</p>
@@ -56,7 +63,7 @@ declare. See dojox.drawing.util.oo
 <li>Util: A collection of common tasks.</li>
 </ul>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base<span class="parameters">(props,node);</span></div>
 </div>
@@ -89,18 +96,17 @@ Will change when Drawing can be created programmatically.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/drawing.html" target="_blank">dojox/drawing/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;div data-dojo-type=&quot;dojox.drawing.Drawing&quot; id=&quot;drawing&quot; defaults=&quot;myCustom.defaults&quot;
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;div data-dojo-type=&quot;dojox.drawing.Drawing&quot; id=&quot;drawing&quot; defaults=&quot;myCustom.defaults&quot;
     plugins=&quot;[{&#39;name&#39;:&#39;dojox.drawing.plugins.drawing.Grid&#39;, &#39;options&#39;:{gap:100}}]&quot;&gt;
 &lt;/div&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>&lt;div dojoType=&quot;dojox.drawing.Toolbar&quot; drawingId=&quot;drawing&quot; class=&quot;drawingToolbar vertical&quot;&gt;
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>&lt;div dojoType=&quot;dojox.drawing.Toolbar&quot; drawingId=&quot;drawing&quot; class=&quot;drawingToolbar vertical&quot;&gt;
     &lt;div tool=&quot;dojox.drawing.tools.Line&quot; selected=&quot;false&quot;&gt;Line&lt;/div&gt;
     &lt;div tool=&quot;dojox.drawing.tools.Rect&quot; selected=&quot;false&quot;&gt;Rect&lt;/div&gt;
     &lt;div tool=&quot;dojox.drawing.tools.Ellipse&quot; selected=&quot;false&quot;&gt;Ellipse&lt;/div&gt;
@@ -110,94 +116,96 @@ Will change when Drawing can be created programmatically.</p>
     &lt;div plugin=&quot;dojox.drawing.plugins.tools.Zoom&quot; options=&quot;{zoomInc:.1,minZoom:.5,maxZoom:2}&quot;&gt;Zoom&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon inherited"><a href="#1_9dojox_drawing__base_height" class="inline-link"> height </a><span>Height of the canvas</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_drawing__base_mode" class="inline-link"> mode </a><span>Changes the functionality of the drawing</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_drawing__base_ready" class="inline-link"> ready </a><span>Whether or not the canvas has been created and Stencils can be added</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_drawing__base_width" class="inline-link"> width </a><span>Width of the canvas</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_drawing__base__createCanvas" class="inline-link"> _createCanvas</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_addPlugin" class="inline-link"> addPlugin</a><span class="parameters">(</span>plugin) <span>Add a toolbar plugin object to plugins array
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon inherited"><a href="#1_9dojox_drawing__base_height" class="inline-link"> height </a><span>Height of the canvas</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_drawing__base_mode" class="inline-link"> mode </a><span>Changes the functionality of the drawing</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_drawing__base_ready" class="inline-link"> ready </a><span>Whether or not the canvas has been created and Stencils can be added</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_drawing__base_width" class="inline-link"> width </a><span>Width of the canvas</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_drawing__base__createCanvas" class="inline-link"> _createCanvas</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_addPlugin" class="inline-link"> addPlugin</a><span class="parameters">(</span>plugin) <span>Add a toolbar plugin object to plugins array
 to be parsed</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_addStencil" class="inline-link"> addStencil</a><span class="parameters">(</span>type, options) <span>Use this method to programmatically add Stencils that display on
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_addStencil" class="inline-link"> addStencil</a><span class="parameters">(</span>type, options) <span>Use this method to programmatically add Stencils that display on
 the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_addUI" class="inline-link"> addUI</a><span class="parameters">(</span>type, options) <span>Use this method to programmatically add Stencils that display on
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_addUI" class="inline-link"> addUI</a><span class="parameters">(</span>type, options) <span>Use this method to programmatically add Stencils that display on
 the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_changeDefaults" class="inline-link"> changeDefaults</a><span class="parameters">(</span>newStyle, value) <span>Change the defaults so that all Stencils from this
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_changeDefaults" class="inline-link"> changeDefaults</a><span class="parameters">(</span>newStyle, value) <span>Change the defaults so that all Stencils from this
 point on will use the newly changed style.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span>Drawing is not a Dijit.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_exporter" class="inline-link"> exporter</a><span class="parameters">(</span>) <span>Collects all Stencil data and returns an
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span>Drawing is not a Dijit.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_exporter" class="inline-link"> exporter</a><span class="parameters">(</span>) <span>Collects all Stencil data and returns an
 Array of objects.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span></span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_getConstructor" class="inline-link"> getConstructor</a><span class="parameters">(</span>abbr) <span>Returns a Stencil constructor base on
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span></span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_getConstructor" class="inline-link"> getConstructor</a><span class="parameters">(</span>abbr) <span>Returns a Stencil constructor base on
 abbreviation</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_getShapeProps" class="inline-link"> getShapeProps</a><span class="parameters">(</span>data, mode) <span>The common objects that are mixed into
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_getShapeProps" class="inline-link"> getShapeProps</a><span class="parameters">(</span>data, mode) <span>The common objects that are mixed into
 a new Stencil.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_importer" class="inline-link"> importer</a><span class="parameters">(</span>objects) <span>Handles an Array of stencil data and imports the objects
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_importer" class="inline-link"> importer</a><span class="parameters">(</span>objects) <span>Handles an Array of stencil data and imports the objects
 to the drawing.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_initPlugins" class="inline-link"> initPlugins</a><span class="parameters">(</span>) <span>Called from Toolbar after a plugin has been loaded
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_initPlugins" class="inline-link"> initPlugins</a><span class="parameters">(</span>) <span>Called from Toolbar after a plugin has been loaded
 The call to this coming from toolbar is a bit funky as the timing
 of IE for canvas load is different than other browsers</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_registerTool" class="inline-link"> registerTool</a><span class="parameters">(</span>type) <span>Registers a tool that can be accessed.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_removeAll" class="inline-link"> removeAll</a><span class="parameters">(</span>) <span>Deletes all Stencils on the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_removeStencil" class="inline-link"> removeStencil</a><span class="parameters">(</span>stencil) <span>Use this method to programmatically remove Stencils from the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_resize" class="inline-link"> resize</a><span class="parameters">(</span>box) <span>Resizes the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_selectAll" class="inline-link"> selectAll</a><span class="parameters">(</span>) <span>Selects all stencils</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Drawing registers as a widget and needs to support
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_registerTool" class="inline-link"> registerTool</a><span class="parameters">(</span>type) <span>Registers a tool that can be accessed.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_removeAll" class="inline-link"> removeAll</a><span class="parameters">(</span>) <span>Deletes all Stencils on the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_removeStencil" class="inline-link"> removeStencil</a><span class="parameters">(</span>stencil) <span>Use this method to programmatically remove Stencils from the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_resize" class="inline-link"> resize</a><span class="parameters">(</span>box) <span>Resizes the canvas.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_selectAll" class="inline-link"> selectAll</a><span class="parameters">(</span>) <span>Selects all stencils</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Drawing registers as a widget and needs to support
 widget&#39;s api.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_setTool" class="inline-link"> setTool</a><span class="parameters">(</span>type) <span>Sets up a new class to be used to draw.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_toSelected" class="inline-link"> toSelected</a><span class="parameters">(</span>func) <span>Call a function within all selected Stencils
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_setTool" class="inline-link"> setTool</a><span class="parameters">(</span>type) <span>Sets up a new class to be used to draw.</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_toSelected" class="inline-link"> toSelected</a><span class="parameters">(</span>func) <span>Call a function within all selected Stencils
 like attr()</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_unSetTool" class="inline-link"> unSetTool</a><span class="parameters">(</span>) <span>Destroys current tool</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_onDeleteStencil" class="inline-link"> onDeleteStencil</a><span class="parameters">(</span>stencil) <span>Event fired from a stencil that has destroyed itself
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_unSetTool" class="inline-link"> unSetTool</a><span class="parameters">(</span>) <span>Destroys current tool</span><span title="inherited from dojox/drawing/Drawing" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_onDeleteStencil" class="inline-link"> onDeleteStencil</a><span class="parameters">(</span>stencil) <span>Event fired from a stencil that has destroyed itself
 will also be called when it is removed by &quot;removeStencil&quot;
 or stencils.onDelete.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_onRenderStencil" class="inline-link"> onRenderStencil</a><span class="parameters">(</span>stencil) <span>Event that fires when a stencil is drawn.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_onSurfaceReady" class="inline-link"> onSurfaceReady</a><span class="parameters">(</span>) <span>Event that to which can be connected.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_onRenderStencil" class="inline-link"> onRenderStencil</a><span class="parameters">(</span>stencil) <span>Event that fires when a stencil is drawn.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_drawing__base_onSurfaceReady" class="inline-link"> onSurfaceReady</a><span class="parameters">(</span>) <span>Event that to which can be connected.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -748,4 +756,4 @@ Fired when the canvas is ready and can be drawn to.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/_base" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

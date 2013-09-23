@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/editor/plugins/FindReplace</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/editor/plugins/FindReplace" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/editor/plugins/FindReplace.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/editor/plugins/FindReplace<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a>
@@ -8,7 +15,7 @@
 Note that this plugin is NOT supported on Opera currently, as opera
 does not implement a window.find or equiv function.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new FindReplace<span class="parameters">(args);</span></div>
 </div>
@@ -32,126 +39,127 @@ does not implement a window.find or equiv function.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/editor/plugins/FindReplace.html" target="_blank">dojox/editor/plugins/FindReplace reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__backwards" class="inline-link"> _backwards </a><span>The backwards checkbox</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__caseSensitive" class="inline-link"> _caseSensitive </a><span>The case sensitive checkbox</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__closeBox" class="inline-link"> _closeBox </a><span>The close button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__findButton" class="inline-link"> _findButton </a><span>The Find button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__findField" class="inline-link"> _findField </a><span>The Find field of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__frToolbar" class="inline-link"> _frToolbar </a><span>The toolbar that contain all the entries and buttons</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__promDialog" class="inline-link"> _promDialog </a><span>The prompt message box that shows the user some messages
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__backwards" class="inline-link"> _backwards </a><span>The backwards checkbox</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__caseSensitive" class="inline-link"> _caseSensitive </a><span>The case sensitive checkbox</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__closeBox" class="inline-link"> _closeBox </a><span>The close button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__findButton" class="inline-link"> _findButton </a><span>The Find button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__findField" class="inline-link"> _findField </a><span>The Find field of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__frToolbar" class="inline-link"> _frToolbar </a><span>The toolbar that contain all the entries and buttons</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__promDialog" class="inline-link"> _promDialog </a><span>The prompt message box that shows the user some messages
 such as the end of a search, the end of a replacement, etc.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__promDialogTimeout" class="inline-link"> _promDialogTimeout </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceAllButton" class="inline-link"> _replaceAllButton </a><span>The ReplaceAll button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceButton" class="inline-link"> _replaceButton </a><span>The Replace button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceField" class="inline-link"> _replaceField </a><span>The Replace field of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__strings" class="inline-link"> _strings </a><span>The array that contains globalized strings</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_editor_plugins_FindReplace_button" class="inline-link"> button </a><span>The toggle button</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_editor_plugins_FindReplace_buttonClass" class="inline-link"> buttonClass </a><span>Define the class of button the editor uses.</span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__promDialogTimeout" class="inline-link"> _promDialogTimeout </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceAllButton" class="inline-link"> _replaceAllButton </a><span>The ReplaceAll button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceButton" class="inline-link"> _replaceButton </a><span>The Replace button of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceField" class="inline-link"> _replaceField </a><span>The Replace field of the F/R toolbar</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__strings" class="inline-link"> _strings </a><span>The array that contains globalized strings</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_editor_plugins_FindReplace_button" class="inline-link"> button </a><span>The toggle button</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_editor_plugins_FindReplace_buttonClass" class="inline-link"> buttonClass </a><span>Define the class of button the editor uses.</span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
 helps control button state, among other things.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_editor" class="inline-link"> editor </a><span>The editor this plugin belongs to</span><span title="inherited from dojox/editor/plugins/FindReplace" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span>The CSS class name for the button node is formed from iconClassPrefix and command</span><span title="inherited from dojox/editor/plugins/FindReplace" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span>If true, this plugin executes by calling Editor.execCommand() with the argument specified in command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__checkButtons" class="inline-link"> _checkButtons</a><span class="parameters">(</span>) <span>Ensure that all the buttons are in a correct status
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_editor" class="inline-link"> editor </a><span>The editor this plugin belongs to</span><span title="inherited from dojox/editor/plugins/FindReplace" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span>The CSS class name for the button node is formed from iconClassPrefix and command</span><span title="inherited from dojox/editor/plugins/FindReplace" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_FindReplace_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span>If true, this plugin executes by calling Editor.execCommand() with the argument specified in command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__checkButtons" class="inline-link"> _checkButtons</a><span class="parameters">(</span>) <span>Ensure that all the buttons are in a correct status
 when certain events are fired.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__filterRegexp" class="inline-link"> _filterRegexp</a><span class="parameters">(</span>pattern, ignoreCase) <span>Helper function to convert a simple pattern to a regular expression for matching.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__find" class="inline-link"> _find</a><span class="parameters">(</span>showMessage) <span>This function invokes a find on the editor document with the noted options for
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__filterRegexp" class="inline-link"> _filterRegexp</a><span class="parameters">(</span>pattern, ignoreCase) <span>Helper function to convert a simple pattern to a regular expression for matching.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__find" class="inline-link"> _find</a><span class="parameters">(</span>showMessage) <span>This function invokes a find on the editor document with the noted options for
 find.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceCheckBox" class="inline-link"> _FindReplaceCheckBox</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceCloseBox" class="inline-link"> _FindReplaceCloseBox</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceTextBox" class="inline-link"> _FindReplaceTextBox</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceToolbar" class="inline-link"> _FindReplaceToolbar</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__findText" class="inline-link"> _findText</a><span class="parameters">(</span>txt, caseSensitive, backwards) <span>This function invokes a find with specific options</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span>Over-ride for creation of the resize button.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__populateFindField" class="inline-link"> _populateFindField</a><span class="parameters">(</span>) <span>Populate the Find field with selected text when dialog initially displayed.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replace" class="inline-link"> _replace</a><span class="parameters">(</span>showMessage) <span>This function invokes a replace on the editor document with the noted options for replace</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceAll" class="inline-link"> _replaceAll</a><span class="parameters">(</span>showMessage) <span>This function replaces all the matched content on the editor document
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceCheckBox" class="inline-link"> _FindReplaceCheckBox</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceCloseBox" class="inline-link"> _FindReplaceCloseBox</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceTextBox" class="inline-link"> _FindReplaceTextBox</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__FindReplaceToolbar" class="inline-link"> _FindReplaceToolbar</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__findText" class="inline-link"> _findText</a><span class="parameters">(</span>txt, caseSensitive, backwards) <span>This function invokes a find with specific options</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span>Over-ride for creation of the resize button.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__populateFindField" class="inline-link"> _populateFindField</a><span class="parameters">(</span>) <span>Populate the Find field with selected text when dialog initially displayed.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replace" class="inline-link"> _replace</a><span class="parameters">(</span>showMessage) <span>This function invokes a replace on the editor document with the noted options for replace</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__replaceAll" class="inline-link"> _replaceAll</a><span class="parameters">(</span>showMessage) <span>This function replaces all the matched content on the editor document
 with the noted options for replace</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
 button is updated appropriately.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__toggleFindReplace" class="inline-link"> _toggleFindReplace</a><span class="parameters">(</span>show, ignoreState, buttonDisabled) <span>Function to toggle whether or not find/replace is displayed.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Deprecated.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Create the plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Cleanup of our custom toolbar.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__toggleFindReplace" class="inline-link"> _toggleFindReplace</a><span class="parameters">(</span>show, ignoreState, buttonDisabled) <span>Function to toggle whether or not find/replace is displayed.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Deprecated.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Create the plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Cleanup of our custom toolbar.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_FindReplace_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span>This is a callback handler that set a reference to the editor this plugin
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_FindReplace_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span>This is a callback handler that set a reference to the editor this plugin
 hosts in</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Over-ride so that find/replace toolbar is appended after the current toolbar.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_toggle" class="inline-link"> toggle</a><span class="parameters">(</span>) <span>Function to allow programmatic toggling of the find toolbar.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Over-ride for button state control for disabled to work.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__onFindKeyDown" class="inline-link"> _onFindKeyDown</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__onReplaceKeyDown" class="inline-link"> _onReplaceKeyDown</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Over-ride so that find/replace toolbar is appended after the current toolbar.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_toggle" class="inline-link"> toggle</a><span class="parameters">(</span>) <span>Function to allow programmatic toggling of the find toolbar.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_FindReplace_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Over-ride for button state control for disabled to work.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__onFindKeyDown" class="inline-link"> _onFindKeyDown</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_FindReplace__onReplaceKeyDown" class="inline-link"> _onReplaceKeyDown</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -940,4 +948,4 @@ hosts in</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/editor/plugins/FindReplace" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

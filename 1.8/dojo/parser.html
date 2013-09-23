@@ -1,50 +1,58 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/parser</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/parser" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/parser.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/parser<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>The Dom/Widget parsing package</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/parser.html" target="_blank">dojo/parser reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojo_parser__attrName" class="inline-link"> _attrName </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojo_parser__query" class="inline-link"> _query </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo_parser__clearCache" class="inline-link"> _clearCache</a><span class="parameters">(</span>) <span>Clear cached data.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_parser__functionFromScript" class="inline-link"> _functionFromScript</a><span class="parameters">(</span>script, attrData) <span>Convert a &lt;script type=&quot;dojo/method&quot; args=&quot;a, b, c&quot;&gt; ... &lt;/script&gt;
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojo_parser__attrName" class="inline-link"> _attrName </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/dtl/_Templated to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojo_parser__query" class="inline-link"> _query </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/dtl/_Templated to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_parser__clearCache" class="inline-link"> _clearCache</a><span class="parameters">(</span>) <span>Clear cached data.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_parser__functionFromScript" class="inline-link"> _functionFromScript</a><span class="parameters">(</span>script, attrData) <span>Convert a &lt;script type=&quot;dojo/method&quot; args=&quot;a, b, c&quot;&gt; ... &lt;/script&gt;
 into a function</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_parser__instantiate" class="inline-link"> _instantiate</a><span class="parameters">(</span>nodes, mixin, options) <span>Takes array of objects representing nodes, and turns them into class instances and
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_parser__instantiate" class="inline-link"> _instantiate</a><span class="parameters">(</span>nodes, mixin, options) <span>Takes array of objects representing nodes, and turns them into class instances and
 potentially calls a startup method to allow them to connect with
 any children.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_parser__require" class="inline-link"> _require</a><span class="parameters">(</span>script) <span>Helper for _scanAMD().</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_parser__scanAmd" class="inline-link"> _scanAmd</a><span class="parameters">(</span>root) <span>Scans the DOM for any declarative requires and returns their values.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_parser_construct" class="inline-link"> construct</a><span class="parameters">(</span>ctor, node, mixin, options, scripts, inherited) <span>Calls new ctor(params, node), where params is the hash of parameters specified on the node,
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_parser__require" class="inline-link"> _require</a><span class="parameters">(</span>script) <span>Helper for _scanAMD().</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_parser__scanAmd" class="inline-link"> _scanAmd</a><span class="parameters">(</span>root) <span>Scans the DOM for any declarative requires and returns their values.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_parser_construct" class="inline-link"> construct</a><span class="parameters">(</span>ctor, node, mixin, options, scripts, inherited) <span>Calls new ctor(params, node), where params is the hash of parameters specified on the node,
 excluding data-dojo-type and data-dojo-mixins.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_parser_instantiate" class="inline-link"> instantiate</a><span class="parameters">(</span>nodes, mixin, options) <span>Takes array of nodes, and turns them into class instances and
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_parser_instantiate" class="inline-link"> instantiate</a><span class="parameters">(</span>nodes, mixin, options) <span>Takes array of nodes, and turns them into class instances and
 potentially calls a startup method to allow them to connect with
 any children.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_parser_parse" class="inline-link"> parse</a><span class="parameters">(</span>rootNode, options) <span>Scan the DOM for class instances, and instantiate them.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_parser_scan" class="inline-link"> scan</a><span class="parameters">(</span>root, options) <span>Scan a DOM tree and return an array of objects representing the DOMNodes
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_parser_parse" class="inline-link"> parse</a><span class="parameters">(</span>rootNode, options) <span>Scan the DOM for class instances, and instantiate them.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_parser_scan" class="inline-link"> scan</a><span class="parameters">(</span>root, options) <span>Scan a DOM tree and return an array of objects representing the DOMNodes
 that need to be turned into widgets.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -123,14 +131,16 @@ any children.</p>
           <tr>
             <td class="jsdoc-param-name">nodes</td>
             <td class="jsdoc-param-type">Array</td>
-            <td class="jsdoc-param-description"><p>Array of objects like</p>
-<pre><code>    {
-      ctor: Function (may be null)
-      types: [&quot;dijit/form/Button&quot;, &quot;acme/MyMixin&quot;] (used if ctor not specified)
-      node: DOMNode,
-      scripts: [ ... ],  // array of &lt;script type=&quot;dojo/...&quot;&gt; children of node
-      inherited: { ... }  // settings inherited from ancestors like dir, theme, etc.
-    }</code></pre>
+            <td class="jsdoc-param-description"><p>Array of objects like
+
+</p>
+<pre><code>{
+    ctor: Function (may be null)
+    types: [&quot;dijit/form/Button&quot;, &quot;acme/MyMixin&quot;] (used if ctor not specified)
+    node: DOMNode,
+    scripts: [ ... ],   // array of &lt;script type=&quot;dojo/...&quot;&gt; children of node
+    inherited: { ... }  // settings inherited from ancestors like dir, theme, etc.
+}</code></pre>
  
             </td>
           </tr>
@@ -190,7 +200,7 @@ variables, and returns a Promise for when that operation completes.
 </div>
         <div class="jsdoc-full-summary"><p>Looks for <code>&lt;script type=<a class="jsdoc-link" href="/api/1.8/dojo/require">dojo/require</a>&gt;bar: &quot;acme/bar&quot;, ...&lt;/script&gt;</code> node, calls require() to load the
 specified modules and (asynchronously) assign them to the specified global variables,
-and returns a Promise for when those operations complete.</p>
+ and returns a Promise for when those operations complete.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -367,59 +377,68 @@ object can be passed in this place. If the <code>options</code> object has a
 </p>
 <ul>
 <li>noStart: Boolean?:
-when set will prevent the parser from calling .startup()
-when locating the nodes.</li>
+  when set will prevent the parser from calling .startup()
+  when locating the nodes.</li>
 <li>rootNode: DomNode?:
-identical to the function&#39;s <code>rootNode</code> argument, though
-allowed to be passed in via this `options object.</li>
+  identical to the function&#39;s <code>rootNode</code> argument, though
+  allowed to be passed in via this `options object.</li>
 <li>template: Boolean:
-If true, ignores ContentPane&#39;s stopParser flag and parses contents inside of
-a ContentPane inside of a template.   This allows dojoAttachPoint on widgets/nodes
-nested inside the ContentPane to work.</li>
+  If true, ignores ContentPane&#39;s stopParser flag and parses contents inside of
+  a ContentPane inside of a template.   This allows dojoAttachPoint on widgets/nodes
+  nested inside the ContentPane to work.</li>
 <li>inherited: Object:
-Hash possibly containing dir and lang settings to be applied to
-parsed widgets, unless there&#39;s another setting on a sub-node that overrides</li>
+  Hash possibly containing dir and lang settings to be applied to
+  parsed widgets, unless there&#39;s another setting on a sub-node that overrides</li>
 <li>scope: String:
-Root for attribute names to search for.   If scopeName is dojo,
-will search for data-dojo-type (or dojoType).   For backwards compatibility
-reasons defaults to dojo._scopeName (which is &quot;dojo&quot; except when
-multi-version support is used, when it will be something like dojo16, dojo20, etc.)</li>
+  Root for attribute names to search for.   If scopeName is dojo,
+  will search for data-dojo-type (or dojoType).   For backwards compatibility
+  reasons defaults to dojo._scopeName (which is &quot;dojo&quot; except when
+  multi-version support is used, when it will be something like dojo16, dojo20, etc.)</li>
 <li>propsThis: Object:
-If specified, &quot;this&quot; referenced from data-dojo-props will refer to propsThis.
-Intended for use from the widgets-in-template feature of <code>dijit._WidgetsInTemplateMixin</code></li>
+  If specified, &quot;this&quot; referenced from data-dojo-props will refer to propsThis.
+  Intended for use from the widgets-in-template feature of <code>dijit._WidgetsInTemplateMixin</code></li>
 </ul>
  
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Mixed | Array</span></div>
-        <div class="jsdoc-return-description">Returns a blended object that is an array of the instantiated objects, but also can include
+        <div class="jsdoc-return-description"><p>Returns a blended object that is an array of the instantiated objects, but also can include
 a promise that is resolved with the instantiated objects.  This is done for backwards
 compatibility.  If the parser auto-requires modules, it will always behave in a promise
-fashion and `parser.parse().then(function(instances){...})` should be used.</div>
+fashion and <code>parser.parse().then(function(instances){...})</code> should be used.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Parse all widgets on a page:</p>
-<pre><code>    parser.parse();</code></pre>
+            <h3>Example 1</h3><p>Parse all widgets on a page:
+
+</p>
+<pre><code>parser.parse();</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Parse all classes within the node with id=&quot;foo&quot;</p>
-<pre><code>    parser.parse(dojo.byId(&#39;foo&#39;));</code></pre>
+            <h3>Example 2</h3><p>Parse all classes within the node with id=&quot;foo&quot;
+
+</p>
+<pre><code>parser.parse(dojo.byId(&#39;foo&#39;));</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Parse all classes in a page, but do not call .startup() on any
-child</p>
-<pre><code>    parser.parse({ noStart: true })</code></pre>
+child
+
+</p>
+<pre><code>parser.parse({ noStart: true })</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><p>Parse all classes in a node, but do not call .startup()</p>
-<pre><code>    parser.parse(someNode, { noStart:true });
-    // or
-    parser.parse({ noStart:true, rootNode: someNode });</code></pre>
+            <h3>Example 4</h3><p>Parse all classes in a node, but do not call .startup()
+
+</p>
+<pre><code>parser.parse(someNode, { noStart:true });
+// or
+parser.parse({ noStart:true, rootNode: someNode });</code></pre>
 
           </div>
         </div>
@@ -469,8 +488,9 @@ object can be passed in this place. If the <code>options</code> object has a
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Promise | undefined</span></div>
-        <div class="jsdoc-return-description">A promise that is resolved with the nodes that have been parsed.</div>
+        <div class="jsdoc-return-description"><p>A promise that is resolved with the nodes that have been parsed.</p>
+</div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/parser" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

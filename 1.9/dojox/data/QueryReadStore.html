@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/QueryReadStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/data/QueryReadStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/QueryReadStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/QueryReadStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This class provides a store that is mainly intended to be used
 for loading data dynamically from the server, used i.e. for
@@ -20,7 +27,7 @@ has no way of knowing which field the server will declare as
 identifier.
 </p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new QueryReadStore<span class="parameters">(params);</span></div>
 </div>
@@ -40,12 +47,11 @@ identifier.
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/data/QueryReadStore.html" target="_blank">dojox/data/QueryReadStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>// The parameter &quot;query&quot; contains the data that are sent to the server.
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>// The parameter &quot;query&quot; contains the data that are sent to the server.
 var store = new dojox.data.QueryReadStore({url:&#39;/search.php&#39;});
 store.fetch({query:{name:&#39;a&#39;}, queryOptions:{ignoreCase:false}});
 
@@ -70,92 +76,94 @@ store.fetch({serverQuery:{name:&#39;a&#39;}, queryOptions:{ignoreCase:false}});
     structure=&quot;gridLayout&quot;
     style=&quot;height:300px; width:800px;&quot;&gt;&lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_9dojox_data_QueryReadStore__className" class="inline-link"> _className </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__features" class="inline-link"> _features </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__identifier" class="inline-link"> _identifier </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="arrayIcon private"><a href="#1_9dojox_data_QueryReadStore__items" class="inline-link"> _items </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__itemsByIdentity" class="inline-link"> _itemsByIdentity </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dojox_data_QueryReadStore__labelAttr" class="inline-link"> _labelAttr </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__lastServerQuery" class="inline-link"> _lastServerQuery </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_data_QueryReadStore__numRows" class="inline-link"> _numRows </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_data_QueryReadStore_doClientPaging" class="inline-link"> doClientPaging </a><span>By default every request for paging is sent to the server.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_data_QueryReadStore_doClientSorting" class="inline-link"> doClientSorting </a><span>By default all the sorting is done serverside before the data is returned
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_9dojox_data_QueryReadStore__className" class="inline-link"> _className </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__features" class="inline-link"> _features </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__identifier" class="inline-link"> _identifier </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="arrayIcon private"><a href="#1_9dojox_data_QueryReadStore__items" class="inline-link"> _items </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__itemsByIdentity" class="inline-link"> _itemsByIdentity </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dojox_data_QueryReadStore__labelAttr" class="inline-link"> _labelAttr </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_data_QueryReadStore__lastServerQuery" class="inline-link"> _lastServerQuery </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_data_QueryReadStore__numRows" class="inline-link"> _numRows </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_data_QueryReadStore_doClientPaging" class="inline-link"> doClientPaging </a><span>By default every request for paging is sent to the server.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_data_QueryReadStore_doClientSorting" class="inline-link"> doClientSorting </a><span>By default all the sorting is done serverside before the data is returned
 which is the proper place to be doing it for really large datasets.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_data_QueryReadStore_lastRequestHash" class="inline-link"> lastRequestHash </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_QueryReadStore_requestMethod" class="inline-link"> requestMethod </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_QueryReadStore_url" class="inline-link"> url </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>It throws an error if item is not valid, so you can call it in every method that needs to
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_data_QueryReadStore_lastRequestHash" class="inline-link"> lastRequestHash </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_QueryReadStore_requestMethod" class="inline-link"> requestMethod </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_QueryReadStore_url" class="inline-link"> url </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>It throws an error if item is not valid, so you can call it in every method that needs to
 throw an error when item is invalid.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>The request contains the data as defined in the Read-API.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__filterResponse" class="inline-link"> _filterResponse</a><span class="parameters">(</span>data) <span>If the data from servers needs to be processed before it can be processed by this
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>The request contains the data as defined in the Read-API.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__filterResponse" class="inline-link"> _filterResponse</a><span class="parameters">(</span>data) <span>If the data from servers needs to be processed before it can be processed by this
 store, then this function should be re-implemented in subclass.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__xhrFetchHandler" class="inline-link"> _xhrFetchHandler</a><span class="parameters">(</span>data, request, fetchHandler, errorHandler) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>See dojo.data.util.simpleFetch.fetch() this is just a copy and I adjusted
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_QueryReadStore__xhrFetchHandler" class="inline-link"> _xhrFetchHandler</a><span class="parameters">(</span>data, request, fetchHandler, errorHandler) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>See dojo.data.util.simpleFetch.fetch() this is just a copy and I adjusted
 only the paging, since it happens on the server if doClientPaging is
 false, thx to http://trac.dojotoolkit.org/ticket/4761 reporting this.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>args) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_QueryReadStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>args) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -818,4 +826,4 @@ but i dont know how yet. Ideas please!</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/data/QueryReadStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

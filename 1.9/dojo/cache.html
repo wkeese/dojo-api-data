@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/cache</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/cache" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/cache.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/cache<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A getter and setter for storing the string content associated with the
 module and url arguments.</p>
@@ -54,12 +61,11 @@ as it inlines cache content.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/cache.html" target="_blank">dojo/cache reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>To ask dojo.cache to fetch content and store it in the cache (the dojo[&quot;cache&quot;] style
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>To ask dojo.cache to fetch content and store it in the cache (the dojo[&quot;cache&quot;] style
 of call is used to avoid an issue with the build system erroneously trying to intern
 this example. To get the build system to intern your dojo.cache calls, use the
 &quot;dojo.cache&quot; style of call):
@@ -69,9 +75,9 @@ this example. To get the build system to intern your dojo.cache calls, use the
 //the value for the text variable.
 var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;);</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><p>To ask dojo.cache to fetch content and store it in the cache, and sanitize the input
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><p>To ask dojo.cache to fetch content and store it in the cache, and sanitize the input
  (the dojo[&quot;cache&quot;] style of call is used to avoid an issue with the build system
 erroneously trying to intern this example. To get the build system to intern your
 dojo.cache calls, use the &quot;dojo.cache&quot; style of call):
@@ -81,9 +87,9 @@ dojo.cache calls, use the &quot;dojo.cache&quot; style of call):
 //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
 var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;, {sanitize: true});</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><p>Same example as previous, but demonstrates how an object can be passed in as
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><p>Same example as previous, but demonstrates how an object can be passed in as
 the first argument, then the value argument can then be the second argument.
 
 </p>
@@ -91,15 +97,17 @@ the first argument, then the value argument can then be the second argument.
 //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
 var text = dojo[&quot;cache&quot;](new dojo._Url(&quot;my/module/template.html&quot;), {sanitize: true});</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojo_cache_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>module, url, value) <span>A getter and setter for storing the string content associated with the
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojo_cache_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>module, url, value) <span>A getter and setter for storing the string content associated with the
 module and url arguments.</span><span title="inherited from dojo/text" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -202,4 +210,4 @@ var text = dojo[&quot;cache&quot;](new dojo._Url(&quot;my/module/template.html&q
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/cache" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

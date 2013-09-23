@@ -1,84 +1,93 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx/matrix</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/gfx/matrix" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx/matrix.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/gfx/matrix<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx.html" target="_blank">dojox/gfx/matrix reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_flipX" class="inline-link"> flipX </a><span>a matrix, which reflects points at x = 0 line: flipX * (x, y) == (-x, y)</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_flipXY" class="inline-link"> flipXY </a><span>a matrix, which reflects points at the origin of coordinates: flipXY * (x, y) == (-x, -y)</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_flipY" class="inline-link"> flipY </a><span>a matrix, which reflects points at y = 0 line: flipY * (x, y) == (x, -y)</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_identity" class="inline-link"> identity </a><span>an identity matrix constant: identity * (x, y) == (x, y)</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__degToRad" class="inline-link"> _degToRad</a><span class="parameters">(</span>degree) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__multiplyPoint" class="inline-link"> _multiplyPoint</a><span class="parameters">(</span>matrix, x, y) <span>applies a matrix to a point</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__radToDeg" class="inline-link"> _radToDeg</a><span class="parameters">(</span>radian) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__sandwich" class="inline-link"> _sandwich</a><span class="parameters">(</span>matrix, x, y) <span>applies a matrix at a central point</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_clone" class="inline-link"> clone</a><span class="parameters">(</span>matrix) <span>creates a copy of a 2D matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_invert" class="inline-link"> invert</a><span class="parameters">(</span>matrix) <span>inverts a 2D matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_isIdentity" class="inline-link"> isIdentity</a><span class="parameters">(</span>matrix) <span>returns whether the specified matrix is the identity.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_Matrix2D" class="inline-link"> Matrix2D</a><span class="parameters">(</span>arg) <span>a 2D matrix object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_multiply" class="inline-link"> multiply</a><span class="parameters">(</span>matrix) <span>combines matrices by multiplying them sequentially in the given order</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_multiplyPoint" class="inline-link"> multiplyPoint</a><span class="parameters">(</span>matrix, a, b) <span>applies a matrix to a point</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_multiplyRectangle" class="inline-link"> multiplyRectangle</a><span class="parameters">(</span>matrix, rect) <span>Applies a matrix to a rectangle.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>matrix) <span>converts an object to a matrix, if necessary</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_project" class="inline-link"> project</a><span class="parameters">(</span>a, b) <span>forms an orthogonal projection matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_reflect" class="inline-link"> reflect</a><span class="parameters">(</span>a, b) <span>forms a reflection matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotate" class="inline-link"> rotate</a><span class="parameters">(</span>angle) <span>forms a rotating matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotateAt" class="inline-link"> rotateAt</a><span class="parameters">(</span>angle, a, b) <span>rotates a picture using a specified point as a center of rotation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotateg" class="inline-link"> rotateg</a><span class="parameters">(</span>degree) <span>forms a rotating matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotategAt" class="inline-link"> rotategAt</a><span class="parameters">(</span>degree, a, b) <span>rotates a picture using a specified point as a center of rotation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_scale" class="inline-link"> scale</a><span class="parameters">(</span>a, b) <span>forms a scaling matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_scaleAt" class="inline-link"> scaleAt</a><span class="parameters">(</span>a, b, c, d) <span>scales a picture using a specified point as a center of scaling</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewX" class="inline-link"> skewX</a><span class="parameters">(</span>angle) <span>forms an x skewing matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewXAt" class="inline-link"> skewXAt</a><span class="parameters">(</span>angle, a, b) <span>skews a picture along the x axis using a specified point as a center of skewing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewXg" class="inline-link"> skewXg</a><span class="parameters">(</span>degree) <span>forms an x skewing matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewXgAt" class="inline-link"> skewXgAt</a><span class="parameters">(</span>degree, a, b) <span>skews a picture along the x axis using a specified point as a center of skewing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewY" class="inline-link"> skewY</a><span class="parameters">(</span>angle) <span>forms a y skewing matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewYAt" class="inline-link"> skewYAt</a><span class="parameters">(</span>angle, a, b) <span>skews a picture along the y axis using a specified point as a center of skewing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewYg" class="inline-link"> skewYg</a><span class="parameters">(</span>degree) <span>forms a y skewing matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewYgAt" class="inline-link"> skewYgAt</a><span class="parameters">(</span>degree, a, b) <span>skews a picture along the y axis using a specified point as a center of skewing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_translate" class="inline-link"> translate</a><span class="parameters">(</span>a, b) <span>forms a translation matrix</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_flipX" class="inline-link"> flipX </a><span>a matrix, which reflects points at x = 0 line: flipX * (x, y) == (-x, y)</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_flipXY" class="inline-link"> flipXY </a><span>a matrix, which reflects points at the origin of coordinates: flipXY * (x, y) == (-x, -y)</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_flipY" class="inline-link"> flipY </a><span>a matrix, which reflects points at y = 0 line: flipY * (x, y) == (x, -y)</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_gfx_matrix_identity" class="inline-link"> identity </a><span>an identity matrix constant: identity * (x, y) == (x, y)</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__degToRad" class="inline-link"> _degToRad</a><span class="parameters">(</span>degree) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__multiplyPoint" class="inline-link"> _multiplyPoint</a><span class="parameters">(</span>matrix, x, y) <span>applies a matrix to a point</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__radToDeg" class="inline-link"> _radToDeg</a><span class="parameters">(</span>radian) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx_matrix__sandwich" class="inline-link"> _sandwich</a><span class="parameters">(</span>matrix, x, y) <span>applies a matrix at a central point</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_clone" class="inline-link"> clone</a><span class="parameters">(</span>matrix) <span>creates a copy of a 2D matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_invert" class="inline-link"> invert</a><span class="parameters">(</span>matrix) <span>inverts a 2D matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_isIdentity" class="inline-link"> isIdentity</a><span class="parameters">(</span>matrix) <span>returns whether the specified matrix is the identity.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_Matrix2D" class="inline-link"> Matrix2D</a><span class="parameters">(</span>arg) <span>a 2D matrix object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_multiply" class="inline-link"> multiply</a><span class="parameters">(</span>matrix) <span>combines matrices by multiplying them sequentially in the given order</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_multiplyPoint" class="inline-link"> multiplyPoint</a><span class="parameters">(</span>matrix, a, b) <span>applies a matrix to a point</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_multiplyRectangle" class="inline-link"> multiplyRectangle</a><span class="parameters">(</span>matrix, rect) <span>Applies a matrix to a rectangle.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>matrix) <span>converts an object to a matrix, if necessary</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_project" class="inline-link"> project</a><span class="parameters">(</span>a, b) <span>forms an orthogonal projection matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_reflect" class="inline-link"> reflect</a><span class="parameters">(</span>a, b) <span>forms a reflection matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotate" class="inline-link"> rotate</a><span class="parameters">(</span>angle) <span>forms a rotating matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotateAt" class="inline-link"> rotateAt</a><span class="parameters">(</span>angle, a, b) <span>rotates a picture using a specified point as a center of rotation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotateg" class="inline-link"> rotateg</a><span class="parameters">(</span>degree) <span>forms a rotating matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_rotategAt" class="inline-link"> rotategAt</a><span class="parameters">(</span>degree, a, b) <span>rotates a picture using a specified point as a center of rotation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_scale" class="inline-link"> scale</a><span class="parameters">(</span>a, b) <span>forms a scaling matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_scaleAt" class="inline-link"> scaleAt</a><span class="parameters">(</span>a, b, c, d) <span>scales a picture using a specified point as a center of scaling</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewX" class="inline-link"> skewX</a><span class="parameters">(</span>angle) <span>forms an x skewing matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewXAt" class="inline-link"> skewXAt</a><span class="parameters">(</span>angle, a, b) <span>skews a picture along the x axis using a specified point as a center of skewing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewXg" class="inline-link"> skewXg</a><span class="parameters">(</span>degree) <span>forms an x skewing matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewXgAt" class="inline-link"> skewXgAt</a><span class="parameters">(</span>degree, a, b) <span>skews a picture along the x axis using a specified point as a center of skewing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewY" class="inline-link"> skewY</a><span class="parameters">(</span>angle) <span>forms a y skewing matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewYAt" class="inline-link"> skewYAt</a><span class="parameters">(</span>angle, a, b) <span>skews a picture along the y axis using a specified point as a center of skewing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewYg" class="inline-link"> skewYg</a><span class="parameters">(</span>degree) <span>forms a y skewing matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_skewYgAt" class="inline-link"> skewYgAt</a><span class="parameters">(</span>degree, a, b) <span>skews a picture along the y axis using a specified point as a center of skewing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx_matrix_translate" class="inline-link"> translate</a><span class="parameters">(</span>a, b) <span>forms a translation matrix</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1036,4 +1045,4 @@ See <a class="jsdoc-link" href="/api/1.8/dojox/gfx/matrix#skewY">dojox/gfx/matri
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/gfx/matrix" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

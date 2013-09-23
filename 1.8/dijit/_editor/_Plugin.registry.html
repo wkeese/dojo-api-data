@@ -1,95 +1,103 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_editor/_Plugin.registry</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/_editor/_Plugin.registry" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_editor/_Plugin.registry.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/_editor/_Plugin.registry<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_bold" class="inline-link"> bold</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_copy" class="inline-link"> copy</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_createLink" class="inline-link"> createLink</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_cut" class="inline-link"> cut</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_delete" class="inline-link"> delete</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_foreColor" class="inline-link"> foreColor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_fullScreen" class="inline-link"> fullScreen</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_fullscreen" class="inline-link"> fullscreen</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_hiliteColor" class="inline-link"> hiliteColor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_indent" class="inline-link"> indent</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertHorizontalRule" class="inline-link"> insertHorizontalRule</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertImage" class="inline-link"> insertImage</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertOrderedList" class="inline-link"> insertOrderedList</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertUnorderedList" class="inline-link"> insertUnorderedList</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_italic" class="inline-link"> italic</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyCenter" class="inline-link"> justifyCenter</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyFull" class="inline-link"> justifyFull</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyLeft" class="inline-link"> justifyLeft</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyRight" class="inline-link"> justifyRight</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_localImage" class="inline-link"> localImage</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_localimage" class="inline-link"> localimage</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_LocalImage" class="inline-link"> LocalImage</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_newpage" class="inline-link"> newpage</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_newPage" class="inline-link"> newPage</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_outdent" class="inline-link"> outdent</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_paste" class="inline-link"> paste</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_print" class="inline-link"> print</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_redo" class="inline-link"> redo</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_removeFormat" class="inline-link"> removeFormat</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_selectAll" class="inline-link"> selectAll</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_strikethrough" class="inline-link"> strikethrough</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_subscript" class="inline-link"> subscript</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_superscript" class="inline-link"> superscript</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_tabIndent" class="inline-link"> tabIndent</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_toggleDir" class="inline-link"> toggleDir</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_underline" class="inline-link"> underline</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_undo" class="inline-link"> undo</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_unlink" class="inline-link"> unlink</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_viewsource" class="inline-link"> viewsource</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_viewSource" class="inline-link"> viewSource</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_|" class="inline-link"> |</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_bold" class="inline-link"> bold</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_copy" class="inline-link"> copy</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_createLink" class="inline-link"> createLink</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_cut" class="inline-link"> cut</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_delete" class="inline-link"> delete</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_foreColor" class="inline-link"> foreColor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_fullScreen" class="inline-link"> fullScreen</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_fullscreen" class="inline-link"> fullscreen</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_hiliteColor" class="inline-link"> hiliteColor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_indent" class="inline-link"> indent</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertHorizontalRule" class="inline-link"> insertHorizontalRule</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertImage" class="inline-link"> insertImage</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertOrderedList" class="inline-link"> insertOrderedList</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_insertUnorderedList" class="inline-link"> insertUnorderedList</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_italic" class="inline-link"> italic</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyCenter" class="inline-link"> justifyCenter</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyFull" class="inline-link"> justifyFull</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyLeft" class="inline-link"> justifyLeft</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_justifyRight" class="inline-link"> justifyRight</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_localImage" class="inline-link"> localImage</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_localimage" class="inline-link"> localimage</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_LocalImage" class="inline-link"> LocalImage</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_newpage" class="inline-link"> newpage</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_newPage" class="inline-link"> newPage</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_outdent" class="inline-link"> outdent</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_paste" class="inline-link"> paste</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_print" class="inline-link"> print</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_redo" class="inline-link"> redo</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_removeFormat" class="inline-link"> removeFormat</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_selectAll" class="inline-link"> selectAll</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_strikethrough" class="inline-link"> strikethrough</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_subscript" class="inline-link"> subscript</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_superscript" class="inline-link"> superscript</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_tabIndent" class="inline-link"> tabIndent</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_toggleDir" class="inline-link"> toggleDir</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_underline" class="inline-link"> underline</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_undo" class="inline-link"> undo</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_unlink" class="inline-link"> unlink</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_viewsource" class="inline-link"> viewsource</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_viewSource" class="inline-link"> viewSource</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__editor__Plugin_registry_|" class="inline-link"> |</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -841,4 +849,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/_editor/_Plugin.registry" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

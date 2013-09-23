@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/analytics/Urchin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/analytics/Urchin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/analytics/Urchin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/analytics/Urchin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A Google-analytics helper, for post-onLoad inclusion of the tracker, and
 dynamic tracking during long-lived page cycles.</p>
@@ -22,7 +29,7 @@ This module will not work simultaneously with the core dojox.analytics
 package. If you need the ability to run Google Analytics AND your own local
 analytics system, you MUST include dojox.analytics._base BEFORE dojox.analytics.Urchin</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Urchin<span class="parameters">(args);</span></div>
 </div>
@@ -46,17 +53,16 @@ potentially widget parsing.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/analytics/Urchin.html" target="_blank">dojox/analytics/Urchin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>// create the tracker programatically:
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>// create the tracker programatically:
 var tracker = new dojox.analytics.Urchin({ acct:&quot;UA-123456-7&quot; });</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>// define the urchin djConfig option:
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>// define the urchin djConfig option:
 var djConfig = { urchin: &quot;UA-123456-7&quot; };
 
 // and in markup:
@@ -64,33 +70,35 @@ var djConfig = { urchin: &quot;UA-123456-7&quot; };
 // or code:
 new dojox.analytics.Urchin();</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>// create and define all analytics with one tag.
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><pre><code>// create and define all analytics with one tag.
 &lt;div dojoType=&quot;dojox.analytics.Urchin&quot; acct=&quot;UA-12345-67&quot;&gt;&lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_analytics_Urchin_acct" class="inline-link"> acct </a><span>your GA urchin tracker account number.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_analytics_Urchin__gotGA" class="inline-link"> _gotGA</a><span class="parameters">(</span>) <span>initialize the tracker</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_analytics_Urchin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initialize this Urchin instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_analytics_Urchin_GAonLoad" class="inline-link"> GAonLoad</a><span class="parameters">(</span>) <span>Stub function to fire when urchin is complete</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_analytics_Urchin_trackPageView" class="inline-link"> trackPageView</a><span class="parameters">(</span>url) <span>A public API attached to this widget instance, allowing you
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_analytics_Urchin_acct" class="inline-link"> acct </a><span>your GA urchin tracker account number.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_analytics_Urchin__gotGA" class="inline-link"> _gotGA</a><span class="parameters">(</span>) <span>initialize the tracker</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_analytics_Urchin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initialize this Urchin instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_analytics_Urchin_GAonLoad" class="inline-link"> GAonLoad</a><span class="parameters">(</span>) <span>Stub function to fire when urchin is complete</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_analytics_Urchin_trackPageView" class="inline-link"> trackPageView</a><span class="parameters">(</span>url) <span>A public API attached to this widget instance, allowing you
 Ajax-like notification of updates.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -210,4 +218,4 @@ dojo.connect(container, &quot;onclick&quot;, function(e){
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/analytics/Urchin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

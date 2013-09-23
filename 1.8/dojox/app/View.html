@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/app/View</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/app/View" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/app/View.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/app/View<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin, </a><a href="/api/1.8/dijit/_WidgetsInTemplateMixin" class="jsdoc-link">dijit/_WidgetsInTemplateMixin, </a><a href="/api/1.8/dijit/Destroyable" class="jsdoc-link">dijit/Destroyable, </a><a href="/api/1.8/dojox/app/ViewBase" class="jsdoc-link">dojox/app/ViewBase</a>
 </div>
 <div class="jsdoc-full-summary"><p>View class inheriting from ViewBase adding templating &amp; globalization capabilities.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new View<span class="parameters">(params);</span></div>
 </div>
@@ -41,88 +48,90 @@
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/app.html" target="_blank">dojox/app/View reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_8dojox_app_View__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_8dojox_app_View__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
 template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_app_View__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_app_View__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_app_View__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_app_View__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
 templates having their startup called before the parent widget
 fires postCreate.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_app_View__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_app_View_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_app_View_templateString" class="inline-link"> templateString </a><span>A string that represents the widget template.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_app_View_widgetsInTemplate" class="inline-link"> widgetsInTemplate </a><span>Should we parse the template to find widgets that might be
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_app_View__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_app_View_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_app_View_templateString" class="inline-link"> templateString </a><span>A string that represents the widget template.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_app_View_widgetsInTemplate" class="inline-link"> widgetsInTemplate </a><span>Should we parse the template to find widgets that might be
 declared in markup inside it?  (Remove for 2.0 and assume true)</span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__createDataStore" class="inline-link"> _createDataStore</a><span class="parameters">(</span>) <span>Create data store instance for View specific stores</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__createDataStore" class="inline-link"> _createDataStore</a><span class="parameters">(</span>) <span>Create data store instance for View specific stores</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_app_View__loadTemplate" class="inline-link"> _loadTemplate</a><span class="parameters">(</span>) <span>load view HTML template and dependencies.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__loadViewController" class="inline-link"> _loadViewController</a><span class="parameters">(</span>) <span>Load view controller by configuration or by default.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__setupModel" class="inline-link"> _setupModel</a><span class="parameters">(</span>) <span>Load views model if it is not already loaded then call _startup.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__startLayout" class="inline-link"> _startLayout</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_app_View__startup" class="inline-link"> _startup</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_afterActivate" class="inline-link"> afterActivate</a><span class="parameters">(</span>) <span>view life cycle afterActivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_afterDeactivate" class="inline-link"> afterDeactivate</a><span class="parameters">(</span>) <span>view life cycle afterDeactivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_beforeActivate" class="inline-link"> beforeActivate</a><span class="parameters">(</span>) <span>view life cycle beforeActivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_beforeDeactivate" class="inline-link"> beforeDeactivate</a><span class="parameters">(</span>) <span>view life cycle beforeDeactivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget from a template, setting this.domNode.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_View_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_View_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Constructs a View instance either from a configuration or programmatically.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this class, releasing any resources registered via own().</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>view life cycle init()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_View_load" class="inline-link"> load</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_app_View__loadTemplate" class="inline-link"> _loadTemplate</a><span class="parameters">(</span>) <span>load view HTML template and dependencies.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__loadViewController" class="inline-link"> _loadViewController</a><span class="parameters">(</span>) <span>Load view controller by configuration or by default.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__setupModel" class="inline-link"> _setupModel</a><span class="parameters">(</span>) <span>Load views model if it is not already loaded then call _startup.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__startLayout" class="inline-link"> _startLayout</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_app_View__startup" class="inline-link"> _startup</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_app_View__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_afterActivate" class="inline-link"> afterActivate</a><span class="parameters">(</span>) <span>view life cycle afterActivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_afterDeactivate" class="inline-link"> afterDeactivate</a><span class="parameters">(</span>) <span>view life cycle afterDeactivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_beforeActivate" class="inline-link"> beforeActivate</a><span class="parameters">(</span>) <span>view life cycle beforeActivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_beforeDeactivate" class="inline-link"> beforeDeactivate</a><span class="parameters">(</span>) <span>view life cycle beforeDeactivate()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget from a template, setting this.domNode.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_View_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_View_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Constructs a View instance either from a configuration or programmatically.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this class, releasing any resources registered via own().</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>view life cycle init()</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_View_load" class="inline-link"> load</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>start view object.
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>start view object.
 load view template, view controller implement and startup all widgets in view template.</span><span title="inherited from dojox/app/ViewBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_app_View_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -566,4 +575,4 @@ load view template, view controller implement and startup all widgets in view te
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/app/View" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

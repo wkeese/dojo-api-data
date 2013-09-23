@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/sketch/Annotation</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/sketch/Annotation" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/sketch/Annotation.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojox/sketch/Annotation<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <table class="jsdoc-parameters">
   <tr>
@@ -21,74 +28,75 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojox_sketch_Annotation_calculate" class="inline-link"> calculate </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_sketch_Annotation_Modes" class="inline-link"> Modes </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_apply" class="inline-link"> apply</a><span class="parameters">(</span>obj) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_beginEdit" class="inline-link"> beginEdit</a><span class="parameters">(</span>type) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>figure, id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_draw" class="inline-link"> draw</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_drawBBox" class="inline-link"> drawBBox</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_endEdit" class="inline-link"> endEdit</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_getBBox" class="inline-link"> getBBox</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_getTextBox" class="inline-link"> getTextBox</a><span class="parameters">(</span>zoomfactor) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_getType" class="inline-link"> getType</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_property" class="inline-link"> property</a><span class="parameters">(</span>name, value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_readCommonAttrs" class="inline-link"> readCommonAttrs</a><span class="parameters">(</span>obj) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_register" class="inline-link"> register</a><span class="parameters">(</span>name, toolclass) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_serialize" class="inline-link"> serialize</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_setBinding" class="inline-link"> setBinding</a><span class="parameters">(</span>pt) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_setMode" class="inline-link"> setMode</a><span class="parameters">(</span>m) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_type" class="inline-link"> type</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_writeCommonAttrs" class="inline-link"> writeCommonAttrs</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_zoom" class="inline-link"> zoom</a><span class="parameters">(</span>pct) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onCreate" class="inline-link"> onCreate</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onDblClick" class="inline-link"> onDblClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onPropertyChange" class="inline-link"> onPropertyChange</a><span class="parameters">(</span>name, oldvalue) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onRemove" class="inline-link"> onRemove</a><span class="parameters">(</span>noundo) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_sketch_Annotation_calculate" class="inline-link"> calculate </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_sketch_Annotation_Modes" class="inline-link"> Modes </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_apply" class="inline-link"> apply</a><span class="parameters">(</span>obj) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_beginEdit" class="inline-link"> beginEdit</a><span class="parameters">(</span>type) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>figure, id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_draw" class="inline-link"> draw</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_drawBBox" class="inline-link"> drawBBox</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_endEdit" class="inline-link"> endEdit</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_getBBox" class="inline-link"> getBBox</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_getTextBox" class="inline-link"> getTextBox</a><span class="parameters">(</span>zoomfactor) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_getType" class="inline-link"> getType</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_property" class="inline-link"> property</a><span class="parameters">(</span>name, value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_readCommonAttrs" class="inline-link"> readCommonAttrs</a><span class="parameters">(</span>obj) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_register" class="inline-link"> register</a><span class="parameters">(</span>name, toolclass) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_serialize" class="inline-link"> serialize</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_setBinding" class="inline-link"> setBinding</a><span class="parameters">(</span>pt) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_setMode" class="inline-link"> setMode</a><span class="parameters">(</span>m) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_type" class="inline-link"> type</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_writeCommonAttrs" class="inline-link"> writeCommonAttrs</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_zoom" class="inline-link"> zoom</a><span class="parameters">(</span>pct) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onCreate" class="inline-link"> onCreate</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onDblClick" class="inline-link"> onDblClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onPropertyChange" class="inline-link"> onPropertyChange</a><span class="parameters">(</span>name, oldvalue) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_sketch_Annotation_onRemove" class="inline-link"> onRemove</a><span class="parameters">(</span>noundo) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -423,4 +431,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/sketch/Annotation" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

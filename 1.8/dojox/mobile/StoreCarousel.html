@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/StoreCarousel</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mobile/StoreCarousel" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/StoreCarousel.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/StoreCarousel<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/mobile/Carousel" class="jsdoc-link">dojox/mobile/Carousel, </a><a href="/api/1.8/dojox/mobile/_StoreMixin" class="jsdoc-link">dojox/mobile/_StoreMixin</a>
@@ -9,7 +16,7 @@
 <div class="jsdoc-full-summary"><p>StoreCarousel is an enhanced version of <a class="jsdoc-link" href="/api/1.8/dojox/mobile/Carousel">dojox/mobile/Carousel</a>. It
 can generate contents according to the given dojo/store store.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new StoreCarousel<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
@@ -47,278 +54,280 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/mobile/StoreCarousel.html" target="_blank">dojox/mobile/StoreCarousel reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_baseClass" class="inline-link"> baseClass </a><span>The name of the CSS class of this widget.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_childrenProperty" class="inline-link"> childrenProperty </a><span>A property name (a property in the dojo/store item) that specifies that item&#39;s children.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_baseClass" class="inline-link"> baseClass </a><span>The name of the CSS class of this widget.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_childrenProperty" class="inline-link"> childrenProperty </a><span>A property name (a property in the dojo/store item) that specifies that item&#39;s children.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
-it was recently clicked.</span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_height" class="inline-link"> height </a><span>Explicitly specified height of the widget (ex. &quot;300px&quot;).</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+it was recently clicked.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_height" class="inline-link"> height </a><span>Explicitly specified height of the widget (ex. &quot;300px&quot;).</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_itemWidth" class="inline-link"> itemWidth </a><span>The number of visible items (=numVisible) is determined by
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_itemWidth" class="inline-link"> itemWidth </a><span>The number of visible items (=numVisible) is determined by
 (carousel_width / itemWidth).</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_labelProperty" class="inline-link"> labelProperty </a><span>A property name (a property in the dojo/store item) that specifies that item&#39;s label.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_navButton" class="inline-link"> navButton </a><span>If true, navigation buttons are displyed on the title bar.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_numVisible" class="inline-link"> numVisible </a><span>The number of visible items.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_pageIndicator" class="inline-link"> pageIndicator </a><span>If true, a page indicator, a series of small dots that indicate
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_labelProperty" class="inline-link"> labelProperty </a><span>A property name (a property in the dojo/store item) that specifies that item&#39;s label.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_navButton" class="inline-link"> navButton </a><span>If true, navigation buttons are displyed on the title bar.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_numVisible" class="inline-link"> numVisible </a><span>The number of visible items.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_pageIndicator" class="inline-link"> pageIndicator </a><span>If true, a page indicator, a series of small dots that indicate
 the current page, is displayed on the title bar.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_query" class="inline-link"> query </a><span>A query that can be passed to &#39;store&#39; to initially filter the items.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_queryOptions" class="inline-link"> queryOptions </a><span>An optional parameter for the query.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_selectable" class="inline-link"> selectable </a><span>If true, an item can be selected by clicking it.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_store" class="inline-link"> store </a><span>Reference to data provider object used by this widget.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_title" class="inline-link"> title </a><span>A title of the carousel to be displayed on the title bar.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_query" class="inline-link"> query </a><span>A query that can be passed to &#39;store&#39; to initially filter the items.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_queryOptions" class="inline-link"> queryOptions </a><span>An optional parameter for the query.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_selectable" class="inline-link"> selectable </a><span>If true, an item can be selected by clicking it.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_store" class="inline-link"> store </a><span>Reference to data provider object used by this widget.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_title" class="inline-link"> title </a><span>A title of the carousel to be displayed on the title bar.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_StoreCarousel_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__getSibling" class="inline-link"> _getSibling</a><span class="parameters">(</span>which) <span>Returns next or previous sibling</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span>Get the next or previous widget sibling of child</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__getSibling" class="inline-link"> _getSibling</a><span class="parameters">(</span>which) <span>Returns next or previous sibling</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span>Get the next or previous widget sibling of child</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setQuery" class="inline-link"> _setQuery</a><span class="parameters">(</span>query, queryOptions) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setQuery" class="inline-link"> _setQuery</a><span class="parameters">(</span>query, queryOptions) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setTitleAttr" class="inline-link"> _setTitleAttr</a><span class="parameters">(</span>title) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span>Makes the given widget a child of this widget.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__setTitleAttr" class="inline-link"> _setTitleAttr</a><span class="parameters">(</span>title) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span>Makes the given widget a child of this widget.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
 originally used for setting element.dir according to this.textDir.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_fillPages" class="inline-link"> fillPages</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getIndexByItemWidget" class="inline-link"> getIndexByItemWidget</a><span class="parameters">(</span>w) <span>Returns the index of a given item widget.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getIndexInParent" class="inline-link"> getIndexInParent</a><span class="parameters">(</span>) <span>Returns the index of this widget within its container parent.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getIndexOfChild" class="inline-link"> getIndexOfChild</a><span class="parameters">(</span>child) <span>Gets the index of the child in this container or -1 if not found</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getItemWidgetByIndex" class="inline-link"> getItemWidgetByIndex</a><span class="parameters">(</span>index) <span>Returns the index of an item widget at a given index.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getNextSibling" class="inline-link"> getNextSibling</a><span class="parameters">(</span>) <span>Returns null if this is the last child of the parent,
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_fillPages" class="inline-link"> fillPages</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getIndexByItemWidget" class="inline-link"> getIndexByItemWidget</a><span class="parameters">(</span>w) <span>Returns the index of a given item widget.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getIndexInParent" class="inline-link"> getIndexInParent</a><span class="parameters">(</span>) <span>Returns the index of this widget within its container parent.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getIndexOfChild" class="inline-link"> getIndexOfChild</a><span class="parameters">(</span>child) <span>Gets the index of the child in this container or -1 if not found</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getItemWidgetByIndex" class="inline-link"> getItemWidgetByIndex</a><span class="parameters">(</span>index) <span>Returns the index of an item widget at a given index.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getNextSibling" class="inline-link"> getNextSibling</a><span class="parameters">(</span>) <span>Returns null if this is the last child of the parent,
 otherwise returns the next element sibling to the &quot;right&quot;.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getParentView" class="inline-link"> getParentView</a><span class="parameters">(</span>node) <span>Returns the parent view of the given DOM node.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getPreviousSibling" class="inline-link"> getPreviousSibling</a><span class="parameters">(</span>) <span>Returns null if this is the first child of the parent,
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getParentView" class="inline-link"> getParentView</a><span class="parameters">(</span>node) <span>Returns the parent view of the given DOM node.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getPreviousSibling" class="inline-link"> getPreviousSibling</a><span class="parameters">(</span>) <span>Returns null if this is the first child of the parent,
 otherwise returns the next element sibling to the &quot;left&quot;.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_handleViewChanged" class="inline-link"> handleViewChanged</a><span class="parameters">(</span>view) <span>Listens to &quot;/dojox/mobile/viewChanged&quot; events.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_hasChildren" class="inline-link"> hasChildren</a><span class="parameters">(</span>) <span>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_instantiateView" class="inline-link"> instantiateView</a><span class="parameters">(</span>view) <span>Instantiates the given view.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_handleViewChanged" class="inline-link"> handleViewChanged</a><span class="parameters">(</span>view) <span>Listens to &quot;/dojox/mobile/viewChanged&quot; events.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_hasChildren" class="inline-link"> hasChildren</a><span class="parameters">(</span>) <span>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_instantiateView" class="inline-link"> instantiateView</a><span class="parameters">(</span>view) <span>Instantiates the given view.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is created</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is created</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span>Fetches the data and generates the list items.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span>Removes the passed widget instance from this widget but does
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span>Fetches the data and generates the list items.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span>Removes the passed widget instance from this widget but does
 not destroy it.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_resizeItems" class="inline-link"> resizeItems</a><span class="parameters">(</span>) <span>Resizes the child items of the carousel.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_select" class="inline-link"> select</a><span class="parameters">(</span>itemWidget) <span>Selects the given widget.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_setQuery" class="inline-link"> setQuery</a><span class="parameters">(</span>query, queryOptions) <span></span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_setStore" class="inline-link"> setStore</a><span class="parameters">(</span>store, query, queryOptions) <span>Sets the store to use with this widget.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mobile_StoreCarousel__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_resizeItems" class="inline-link"> resizeItems</a><span class="parameters">(</span>) <span>Resizes the child items of the carousel.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_select" class="inline-link"> select</a><span class="parameters">(</span>itemWidget) <span>Selects the given widget.</span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_setQuery" class="inline-link"> setQuery</a><span class="parameters">(</span>query, queryOptions) <span></span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_setStore" class="inline-link"> setStore</a><span class="parameters">(</span>store, query, queryOptions) <span>Sets the store to use with this widget.</span><span title="inherited from dojox/mobile/_StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/Carousel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mobile_StoreCarousel__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>e) <span>Internal handler for click events.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile_StoreCarousel__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>e) <span>Internal handler for click events.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile_StoreCarousel__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile_StoreCarousel_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_StoreCarousel__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile_StoreCarousel_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>e) <span>User-defined function to handle clicks.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onComplete" class="inline-link"> onComplete</a><span class="parameters">(</span>items) <span>A handler that is called after the fetch completes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>item, removedFrom) <span>Deletes an existing item.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onError" class="inline-link"> onError</a><span class="parameters">(</span>errText) <span>An error handler.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile_StoreCarousel_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>e) <span>User-defined function to handle clicks.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onComplete" class="inline-link"> onComplete</a><span class="parameters">(</span>items) <span>A handler that is called after the fetch completes.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>item, removedFrom) <span>Deletes an existing item.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onError" class="inline-link"> onError</a><span class="parameters">(</span>errText) <span>An error handler.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile_StoreCarousel_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onNew" class="inline-link"> onNew</a><span class="parameters">(</span>newItem, parentInfo) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onNextBtnClick" class="inline-link"> onNextBtnClick</a><span class="parameters">(</span>e) <span>Called when the &quot;next&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onPrevBtnClick" class="inline-link"> onPrevBtnClick</a><span class="parameters">(</span>e) <span>Called when the &quot;previous&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onSet" class="inline-link"> onSet</a><span class="parameters">(</span>item, attribute, oldValue, newValue) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onStoreClose" class="inline-link"> onStoreClose</a><span class="parameters">(</span>request) <span>Called when the store is closed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onUpdate" class="inline-link"> onUpdate</a><span class="parameters">(</span>item, insertedInto) <span>Adds a new item or updates an existing item.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onNew" class="inline-link"> onNew</a><span class="parameters">(</span>newItem, parentInfo) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onNextBtnClick" class="inline-link"> onNextBtnClick</a><span class="parameters">(</span>e) <span>Called when the &quot;next&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onPrevBtnClick" class="inline-link"> onPrevBtnClick</a><span class="parameters">(</span>e) <span>Called when the &quot;previous&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onSet" class="inline-link"> onSet</a><span class="parameters">(</span>item, attribute, oldValue, newValue) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onStoreClose" class="inline-link"> onStoreClose</a><span class="parameters">(</span>request) <span>Called when the store is closed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_StoreCarousel_onUpdate" class="inline-link"> onUpdate</a><span class="parameters">(</span>item, insertedInto) <span>Adds a new item or updates an existing item.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -2338,4 +2347,4 @@ been clicked.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mobile/StoreCarousel" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

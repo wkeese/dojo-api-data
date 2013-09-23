@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/plugins/_Plugin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/plugins/_Plugin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/plugins/_Plugin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/plugins/_Plugin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Base class for plugins.</p>
 </div>
 <div class="jsdoc-full-summary"><p>When creating a plugin, use this class as the
 base to ensure full functionality.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _Plugin<span class="parameters">(options);</span></div>
 </div>
@@ -25,44 +32,45 @@ base to ensure full functionality.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_anchors" class="inline-link"> anchors </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_button" class="inline-link"> button </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_canvas" class="inline-link"> canvas </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_drawing" class="inline-link"> drawing </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_keys" class="inline-link"> keys </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_mouse" class="inline-link"> mouse </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_node" class="inline-link"> node </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_stencils" class="inline-link"> stencils </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_plugins__Plugin_type" class="inline-link"> type </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_util" class="inline-link"> util </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_plugins__Plugin_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_plugins__Plugin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_plugins__Plugin_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handles) <span>Removes connections based on passed
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_anchors" class="inline-link"> anchors </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_button" class="inline-link"> button </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_canvas" class="inline-link"> canvas </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_drawing" class="inline-link"> drawing </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_keys" class="inline-link"> keys </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_mouse" class="inline-link"> mouse </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_node" class="inline-link"> node </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_stencils" class="inline-link"> stencils </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_plugins__Plugin_type" class="inline-link"> type </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_plugins__Plugin_util" class="inline-link"> util </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_plugins__Plugin_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_plugins__Plugin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_plugins__Plugin_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handles) <span>Removes connections based on passed
 handles arguments</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -182,4 +190,4 @@ handles arguments</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/plugins/_Plugin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

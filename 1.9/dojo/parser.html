@@ -1,50 +1,58 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/parser</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/parser" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/parser.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/parser<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>The Dom/Widget parsing package</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/parser.html" target="_blank">dojo/parser reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojo_parser__attrName" class="inline-link"> _attrName </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojo_parser__query" class="inline-link"> _query </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojo_parser__clearCache" class="inline-link"> _clearCache</a><span class="parameters">(</span>) <span>Clear cached data.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojo_parser__functionFromScript" class="inline-link"> _functionFromScript</a><span class="parameters">(</span>script, attrData) <span>Convert a &lt;script type=&quot;dojo/method&quot; args=&quot;a, b, c&quot;&gt; ... &lt;/script&gt;
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojo_parser__attrName" class="inline-link"> _attrName </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/dtl/_Templated to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojo_parser__query" class="inline-link"> _query </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/dtl/_Templated to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojo_parser__clearCache" class="inline-link"> _clearCache</a><span class="parameters">(</span>) <span>Clear cached data.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojo_parser__functionFromScript" class="inline-link"> _functionFromScript</a><span class="parameters">(</span>script, attrData) <span>Convert a &lt;script type=&quot;dojo/method&quot; args=&quot;a, b, c&quot;&gt; ... &lt;/script&gt;
 into a function</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojo_parser__instantiate" class="inline-link"> _instantiate</a><span class="parameters">(</span>nodes, mixin, options, returnPromise) <span>Takes array of objects representing nodes, and turns them into class instances and
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojo_parser__instantiate" class="inline-link"> _instantiate</a><span class="parameters">(</span>nodes, mixin, options, returnPromise) <span>Takes array of objects representing nodes, and turns them into class instances and
 potentially calls a startup method to allow them to connect with
 any children.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojo_parser__require" class="inline-link"> _require</a><span class="parameters">(</span>script, options) <span>Helper for _scanAMD().</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojo_parser__scanAmd" class="inline-link"> _scanAmd</a><span class="parameters">(</span>root, options) <span>Scans the DOM for any declarative requires and returns their values.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_parser_construct" class="inline-link"> construct</a><span class="parameters">(</span>ctor, node, mixin, options, scripts, inherited) <span>Calls new ctor(params, node), where params is the hash of parameters specified on the node,
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojo_parser__require" class="inline-link"> _require</a><span class="parameters">(</span>script, options) <span>Helper for _scanAMD().</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojo_parser__scanAmd" class="inline-link"> _scanAmd</a><span class="parameters">(</span>root, options) <span>Scans the DOM for any declarative requires and returns their values.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_parser_construct" class="inline-link"> construct</a><span class="parameters">(</span>ctor, node, mixin, options, scripts, inherited) <span>Calls new ctor(params, node), where params is the hash of parameters specified on the node,
 excluding data-dojo-type and data-dojo-mixins.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_parser_instantiate" class="inline-link"> instantiate</a><span class="parameters">(</span>nodes, mixin, options) <span>Takes array of nodes, and turns them into class instances and
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_parser_instantiate" class="inline-link"> instantiate</a><span class="parameters">(</span>nodes, mixin, options) <span>Takes array of nodes, and turns them into class instances and
 potentially calls a startup method to allow them to connect with
 any children.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_parser_parse" class="inline-link"> parse</a><span class="parameters">(</span>rootNode, options) <span>Scan the DOM for class instances, and instantiate them.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_parser_scan" class="inline-link"> scan</a><span class="parameters">(</span>root, options) <span>Scan a DOM tree and return an array of objects representing the DOMNodes
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_parser_parse" class="inline-link"> parse</a><span class="parameters">(</span>rootNode, options) <span>Scan the DOM for class instances, and instantiate them.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_parser_scan" class="inline-link"> scan</a><span class="parameters">(</span>root, options) <span>Scan a DOM tree and return an array of objects representing the DOMNodes
 that need to be turned into widgets.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -518,4 +526,4 @@ object can be passed in this place. If the <code>options</code> object has a
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/parser" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

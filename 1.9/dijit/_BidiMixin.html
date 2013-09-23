@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_BidiMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/_BidiMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_BidiMixin.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/_BidiMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>When has(&quot;dojo-bidi&quot;) is true, _WidgetBase will mixin this class.   It enables support for the textdir
 property to control text direction independently from the GUI direction.</p>
@@ -10,32 +17,33 @@ In creation of widget, if it&#39;s want to activate this class,
 the widget should define the &quot;textDir&quot;.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dijit__BidiMixin_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit__BidiMixin__checkContextual" class="inline-link"> _checkContextual</a><span class="parameters">(</span>text) <span>Finds the first strong (directional) character, return ltr if isLatin
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dijit__BidiMixin_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit__BidiMixin__checkContextual" class="inline-link"> _checkContextual</a><span class="parameters">(</span>text) <span>Finds the first strong (directional) character, return ltr if isLatin
 or rtl if isBidiChar.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__BidiMixin__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>textDir) <span>Setter for textDir.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__BidiMixin_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>Set element.dir according to this.textDir, assuming this.textDir has a value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__BidiMixin_enforceTextDirWithUcc" class="inline-link"> enforceTextDirWithUcc</a><span class="parameters">(</span>option, text) <span>Wraps by UCC (Unicode control characters) option&#39;s text according to this.textDir</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__BidiMixin_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text) <span>Gets the right direction of text.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__BidiMixin_restoreOriginalText" class="inline-link"> restoreOriginalText</a><span class="parameters">(</span>origObj) <span>Restores the text of origObj, if needed, after enforceTextDirWithUcc, e.g. set(&quot;textDir&quot;, textDir).</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__BidiMixin__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>textDir) <span>Setter for textDir.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__BidiMixin_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>Set element.dir according to this.textDir, assuming this.textDir has a value.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__BidiMixin_enforceTextDirWithUcc" class="inline-link"> enforceTextDirWithUcc</a><span class="parameters">(</span>option, text) <span>Wraps by UCC (Unicode control characters) option&#39;s text according to this.textDir</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__BidiMixin_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text) <span>Gets the right direction of text.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__BidiMixin_restoreOriginalText" class="inline-link"> restoreOriginalText</a><span class="parameters">(</span>origObj) <span>Restores the text of origObj, if needed, after enforceTextDirWithUcc, e.g. set(&quot;textDir&quot;, textDir).</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -242,4 +250,4 @@ The function than removes the originalText from origObj!</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/_BidiMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

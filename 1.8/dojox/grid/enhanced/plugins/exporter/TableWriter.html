@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/exporter/TableWriter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a>
 </div>
 <div class="jsdoc-full-summary"><p>Export grid to HTML table format. Primarily used by Printer plugin.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new TableWriter<span class="parameters">(writerArgs);</span></div>
 </div>
@@ -32,55 +39,56 @@ Users can define these attributes in the writerArgs object, like:
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_argObj" class="inline-link"> argObj </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getColumnClass" class="inline-link"> _getColumnClass</a><span class="parameters">(</span>arg_obj) <span>Get CSS class string for a column</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getExportDataForCell" class="inline-link"> _getExportDataForCell</a><span class="parameters">(</span>rowIndex, rowItem, cell, grid) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getRowClass" class="inline-link"> _getRowClass</a><span class="parameters">(</span>arg_obj) <span>Get CSS class string for a row</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getTableAttrs" class="inline-link"> _getTableAttrs</a><span class="parameters">(</span>tagName) <span>Get html attribute string for the given kind of tag.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContent" class="inline-link"> afterContent</a><span class="parameters">(</span>) <span>Overrided from _ExportWriter</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContentRow" class="inline-link"> afterContentRow</a><span class="parameters">(</span>argObj) <span>After handling a line of data (not header).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterHeader" class="inline-link"> afterHeader</a><span class="parameters">(</span>) <span>The header line has been handled.</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterSubrow" class="inline-link"> afterSubrow</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterView" class="inline-link"> afterView</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContent" class="inline-link"> beforeContent</a><span class="parameters">(</span>items) <span>We are ready to go through all the contents(items).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContentRow" class="inline-link"> beforeContentRow</a><span class="parameters">(</span>argObj) <span>Before handling a line of data (not header).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeHeader" class="inline-link"> beforeHeader</a><span class="parameters">(</span>grid) <span>We are going to start the travel in the grid.</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeSubrow" class="inline-link"> beforeSubrow</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeView" class="inline-link"> beforeView</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>writerArgs) <span>The generated table only defines the col/rowspan, height and width of
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_argObj" class="inline-link"> argObj </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getColumnClass" class="inline-link"> _getColumnClass</a><span class="parameters">(</span>arg_obj) <span>Get CSS class string for a column</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getExportDataForCell" class="inline-link"> _getExportDataForCell</a><span class="parameters">(</span>rowIndex, rowItem, cell, grid) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getRowClass" class="inline-link"> _getRowClass</a><span class="parameters">(</span>arg_obj) <span>Get CSS class string for a row</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getTableAttrs" class="inline-link"> _getTableAttrs</a><span class="parameters">(</span>tagName) <span>Get html attribute string for the given kind of tag.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContent" class="inline-link"> afterContent</a><span class="parameters">(</span>) <span>Overrided from _ExportWriter</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContentRow" class="inline-link"> afterContentRow</a><span class="parameters">(</span>argObj) <span>After handling a line of data (not header).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterHeader" class="inline-link"> afterHeader</a><span class="parameters">(</span>) <span>The header line has been handled.</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterSubrow" class="inline-link"> afterSubrow</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterView" class="inline-link"> afterView</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContent" class="inline-link"> beforeContent</a><span class="parameters">(</span>items) <span>We are ready to go through all the contents(items).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContentRow" class="inline-link"> beforeContentRow</a><span class="parameters">(</span>argObj) <span>Before handling a line of data (not header).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeHeader" class="inline-link"> beforeHeader</a><span class="parameters">(</span>grid) <span>We are going to start the travel in the grid.</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeSubrow" class="inline-link"> beforeSubrow</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeView" class="inline-link"> beforeView</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>writerArgs) <span>The generated table only defines the col/rowspan, height and width of
 all the cells in the style attribute, no other attributes
 (like border, cellspacing, etc.) are used.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_handleCell" class="inline-link"> handleCell</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Overrided from _ExportWriter</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_handleCell" class="inline-link"> handleCell</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Overrided from _ExportWriter</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -489,4 +497,4 @@ Users can define these attributes in the writerArgs object, like:
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

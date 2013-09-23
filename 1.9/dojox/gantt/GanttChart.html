@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gantt/GanttChart</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/gantt/GanttChart" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gantt/GanttChart.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/gantt/GanttChart<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new GanttChart<span class="parameters">(configuration,node);</span></div>
 </div>
@@ -27,134 +34,135 @@
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/gantt.html" target="_blank">dojox/gantt/GanttChart reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addDayInPanelTime" class="inline-link"> addDayInPanelTime</a><span class="parameters">(</span>row) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addHourInPanelTime" class="inline-link"> addHourInPanelTime</a><span class="parameters">(</span>row) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addMonthInPanelTime" class="inline-link"> addMonthInPanelTime</a><span class="parameters">(</span>row, count, month, year) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addProject" class="inline-link"> addProject</a><span class="parameters">(</span>projectItem) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addWeekInPanelTime" class="inline-link"> addWeekInPanelTime</a><span class="parameters">(</span>row, count, week) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addYearInPanelTime" class="inline-link"> addYearInPanelTime</a><span class="parameters">(</span>row, count, year) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_adjustPanelTime" class="inline-link"> adjustPanelTime</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_buildChildTasksData" class="inline-link"> buildChildTasksData</a><span class="parameters">(</span>parentTask, childTaskItems) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_buildUIContent" class="inline-link"> buildUIContent</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkHeighPanelTasks" class="inline-link"> checkHeighPanelTasks</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosition" class="inline-link"> checkPosition</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosParentTask" class="inline-link"> checkPosParentTask</a><span class="parameters">(</span>parentTask, task) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosParentTaskInTree" class="inline-link"> checkPosParentTaskInTree</a><span class="parameters">(</span>parentTask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosPreviousTask" class="inline-link"> checkPosPreviousTask</a><span class="parameters">(</span>predTask, task) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearAll" class="inline-link"> clearAll</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearData" class="inline-link"> clearData</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearEvents" class="inline-link"> clearEvents</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearItems" class="inline-link"> clearItems</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>configuration, node) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_correctPosParentTask" class="inline-link"> correctPosParentTask</a><span class="parameters">(</span>parentTask, ctask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_correctPosPreviousTask" class="inline-link"> correctPosPreviousTask</a><span class="parameters">(</span>predTask, ctask, ctaskObj) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createChildItemControls" class="inline-link"> createChildItemControls</a><span class="parameters">(</span>arrChildTasks, project) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelNamesTasks" class="inline-link"> createPanelNamesTasks</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelNamesTasksHeader" class="inline-link"> createPanelNamesTasksHeader</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelTasks" class="inline-link"> createPanelTasks</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelTime" class="inline-link"> createPanelTime</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createTasks" class="inline-link"> createTasks</a><span class="parameters">(</span>project) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_deleteProject" class="inline-link"> deleteProject</a><span class="parameters">(</span>id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getChildTasksData" class="inline-link"> getChildTasksData</a><span class="parameters">(</span>childTasks) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getCountDays" class="inline-link"> getCountDays</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getJSONData" class="inline-link"> getJSONData</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getLastChildTask" class="inline-link"> getLastChildTask</a><span class="parameters">(</span>task) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getLastCloseParent" class="inline-link"> getLastCloseParent</a><span class="parameters">(</span>task) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getPosOnDate" class="inline-link"> getPosOnDate</a><span class="parameters">(</span>startTime) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getProject" class="inline-link"> getProject</a><span class="parameters">(</span>id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getProjectItemById" class="inline-link"> getProjectItemById</a><span class="parameters">(</span>id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getStartDate" class="inline-link"> getStartDate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getWidthOnDuration" class="inline-link"> getWidthOnDuration</a><span class="parameters">(</span>duration) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_incHeightPanelNames" class="inline-link"> incHeightPanelNames</a><span class="parameters">(</span>height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_incHeightPanelTasks" class="inline-link"> incHeightPanelTasks</a><span class="parameters">(</span>height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_insertProject" class="inline-link"> insertProject</a><span class="parameters">(</span>id, name, startDate) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_loadJSONData" class="inline-link"> loadJSONData</a><span class="parameters">(</span>filename) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_loadJSONString" class="inline-link"> loadJSONString</a><span class="parameters">(</span>content) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_openNode" class="inline-link"> openNode</a><span class="parameters">(</span>parentTask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_openTree" class="inline-link"> openTree</a><span class="parameters">(</span>parentTask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_postBindEvents" class="inline-link"> postBindEvents</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_postLoadData" class="inline-link"> postLoadData</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>count, current, multi) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_refreshController" class="inline-link"> refreshController</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_refreshParams" class="inline-link"> refreshParams</a><span class="parameters">(</span>pixelsPerDay) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_removeCell" class="inline-link"> removeCell</a><span class="parameters">(</span>row) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_saveJSONData" class="inline-link"> saveJSONData</a><span class="parameters">(</span>fileName) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_setPreviousTask" class="inline-link"> setPreviousTask</a><span class="parameters">(</span>project) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_setPreviousTaskInTree" class="inline-link"> setPreviousTaskInTree</a><span class="parameters">(</span>parentTask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_setStartTimeChild" class="inline-link"> setStartTimeChild</a><span class="parameters">(</span>parentTask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortChildTasks" class="inline-link"> sortChildTasks</a><span class="parameters">(</span>parenttask) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortProjStartDate" class="inline-link"> sortProjStartDate</a><span class="parameters">(</span>a, b) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortTasksByStartTime" class="inline-link"> sortTasksByStartTime</a><span class="parameters">(</span>project) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortTaskStartTime" class="inline-link"> sortTaskStartTime</a><span class="parameters">(</span>a, b) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_switchTeleMicroView" class="inline-link"> switchTeleMicroView</a><span class="parameters">(</span>dip) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addDayInPanelTime" class="inline-link"> addDayInPanelTime</a><span class="parameters">(</span>row) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addHourInPanelTime" class="inline-link"> addHourInPanelTime</a><span class="parameters">(</span>row) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addMonthInPanelTime" class="inline-link"> addMonthInPanelTime</a><span class="parameters">(</span>row, count, month, year) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addProject" class="inline-link"> addProject</a><span class="parameters">(</span>projectItem) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addWeekInPanelTime" class="inline-link"> addWeekInPanelTime</a><span class="parameters">(</span>row, count, week) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_addYearInPanelTime" class="inline-link"> addYearInPanelTime</a><span class="parameters">(</span>row, count, year) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_adjustPanelTime" class="inline-link"> adjustPanelTime</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_buildChildTasksData" class="inline-link"> buildChildTasksData</a><span class="parameters">(</span>parentTask, childTaskItems) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_buildUIContent" class="inline-link"> buildUIContent</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkHeighPanelTasks" class="inline-link"> checkHeighPanelTasks</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosition" class="inline-link"> checkPosition</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosParentTask" class="inline-link"> checkPosParentTask</a><span class="parameters">(</span>parentTask, task) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosParentTaskInTree" class="inline-link"> checkPosParentTaskInTree</a><span class="parameters">(</span>parentTask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_checkPosPreviousTask" class="inline-link"> checkPosPreviousTask</a><span class="parameters">(</span>predTask, task) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearAll" class="inline-link"> clearAll</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearData" class="inline-link"> clearData</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearEvents" class="inline-link"> clearEvents</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_clearItems" class="inline-link"> clearItems</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>configuration, node) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_correctPosParentTask" class="inline-link"> correctPosParentTask</a><span class="parameters">(</span>parentTask, ctask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_correctPosPreviousTask" class="inline-link"> correctPosPreviousTask</a><span class="parameters">(</span>predTask, ctask, ctaskObj) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createChildItemControls" class="inline-link"> createChildItemControls</a><span class="parameters">(</span>arrChildTasks, project) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelNamesTasks" class="inline-link"> createPanelNamesTasks</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelNamesTasksHeader" class="inline-link"> createPanelNamesTasksHeader</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelTasks" class="inline-link"> createPanelTasks</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createPanelTime" class="inline-link"> createPanelTime</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_createTasks" class="inline-link"> createTasks</a><span class="parameters">(</span>project) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_deleteProject" class="inline-link"> deleteProject</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getChildTasksData" class="inline-link"> getChildTasksData</a><span class="parameters">(</span>childTasks) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getCountDays" class="inline-link"> getCountDays</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getJSONData" class="inline-link"> getJSONData</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getLastChildTask" class="inline-link"> getLastChildTask</a><span class="parameters">(</span>task) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getLastCloseParent" class="inline-link"> getLastCloseParent</a><span class="parameters">(</span>task) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getPosOnDate" class="inline-link"> getPosOnDate</a><span class="parameters">(</span>startTime) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getProject" class="inline-link"> getProject</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getProjectItemById" class="inline-link"> getProjectItemById</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getStartDate" class="inline-link"> getStartDate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_getWidthOnDuration" class="inline-link"> getWidthOnDuration</a><span class="parameters">(</span>duration) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_incHeightPanelNames" class="inline-link"> incHeightPanelNames</a><span class="parameters">(</span>height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_incHeightPanelTasks" class="inline-link"> incHeightPanelTasks</a><span class="parameters">(</span>height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_insertProject" class="inline-link"> insertProject</a><span class="parameters">(</span>id, name, startDate) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_loadJSONData" class="inline-link"> loadJSONData</a><span class="parameters">(</span>filename) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_loadJSONString" class="inline-link"> loadJSONString</a><span class="parameters">(</span>content) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_openNode" class="inline-link"> openNode</a><span class="parameters">(</span>parentTask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_openTree" class="inline-link"> openTree</a><span class="parameters">(</span>parentTask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_postBindEvents" class="inline-link"> postBindEvents</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_postLoadData" class="inline-link"> postLoadData</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>count, current, multi) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_refreshController" class="inline-link"> refreshController</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_refreshParams" class="inline-link"> refreshParams</a><span class="parameters">(</span>pixelsPerDay) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_removeCell" class="inline-link"> removeCell</a><span class="parameters">(</span>row) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_saveJSONData" class="inline-link"> saveJSONData</a><span class="parameters">(</span>fileName) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_setPreviousTask" class="inline-link"> setPreviousTask</a><span class="parameters">(</span>project) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_setPreviousTaskInTree" class="inline-link"> setPreviousTaskInTree</a><span class="parameters">(</span>parentTask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_setStartTimeChild" class="inline-link"> setStartTimeChild</a><span class="parameters">(</span>parentTask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortChildTasks" class="inline-link"> sortChildTasks</a><span class="parameters">(</span>parenttask) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortProjStartDate" class="inline-link"> sortProjStartDate</a><span class="parameters">(</span>a, b) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortTasksByStartTime" class="inline-link"> sortTasksByStartTime</a><span class="parameters">(</span>project) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_sortTaskStartTime" class="inline-link"> sortTaskStartTime</a><span class="parameters">(</span>a, b) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttChart_switchTeleMicroView" class="inline-link"> switchTeleMicroView</a><span class="parameters">(</span>dip) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1285,4 +1293,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gantt/GanttChart" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

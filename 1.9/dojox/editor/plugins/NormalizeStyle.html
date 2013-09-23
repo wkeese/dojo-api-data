@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/editor/plugins/NormalizeStyle</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/editor/plugins/NormalizeStyle" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/editor/plugins/NormalizeStyle.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/editor/plugins/NormalizeStyle<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a>
@@ -10,7 +17,7 @@ it comes out of th editor (&#39;b&#39; or css).   It also auto-converts
 incoming content to the proper one expected by the browser as well so
 that the native styling buttons work.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new NormalizeStyle<span class="parameters">(args);</span></div>
 </div>
@@ -34,90 +41,91 @@ that the native styling buttons work.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/editor/plugins/NormalizeStyle.html" target="_blank">dojox/editor/plugins/NormalizeStyle reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_button" class="inline-link"> button </a><span>Pointer to dijit/form/Button or other widget (ex: dijit/form/FilteringSelect)
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_button" class="inline-link"> button </a><span>Pointer to dijit/form/Button or other widget (ex: dijit/form/FilteringSelect)
 that is added to the toolbar to control this plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_condenseSpans" class="inline-link"> condenseSpans </a><span>A boolean variable indicating if it should try to condense
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_condenseSpans" class="inline-link"> condenseSpans </a><span>A boolean variable indicating if it should try to condense
 &#39;span&#39;&#39;span&#39;&#39;span&#39; styles  when in css mode
 The default is true, it will try to combine where it can.</span><span title="inherited from dojox/editor/plugins/NormalizeStyle" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
 helps control button state, among other things.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_editor" class="inline-link"> editor </a><span>Points to the parent editor</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span>The CSS class name for the button node is formed from iconClassPrefix and command</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_mode" class="inline-link"> mode </a><span>A String variable indicating if it should use semantic tags &#39;b&#39;, &#39;i&#39;, etc, or
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_editor" class="inline-link"> editor </a><span>Points to the parent editor</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span>The CSS class name for the button node is formed from iconClassPrefix and command</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_mode" class="inline-link"> mode </a><span>A String variable indicating if it should use semantic tags &#39;b&#39;, &#39;i&#39;, etc, or
 CSS styling.</span><span title="inherited from dojox/editor/plugins/NormalizeStyle" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span>If true, this plugin executes by calling Editor.execCommand() with the argument specified in command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__condenseSpans" class="inline-link"> _condenseSpans</a><span class="parameters">(</span>node) <span>Method to condense spans if you end up with multi-wrapping from
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span>If true, this plugin executes by calling Editor.execCommand() with the argument specified in command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__condenseSpans" class="inline-link"> _condenseSpans</a><span class="parameters">(</span>node) <span>Method to condense spans if you end up with multi-wrapping from
 from converting b, i, u, to span nodes.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__convertToCss" class="inline-link"> _convertToCss</a><span class="parameters">(</span>node) <span>A function to convert the HTML structure of &#39;node&#39; into
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__convertToCss" class="inline-link"> _convertToCss</a><span class="parameters">(</span>node) <span>A function to convert the HTML structure of &#39;node&#39; into
 css span styles around text instead of semantic tags.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__convertToSemantic" class="inline-link"> _convertToSemantic</a><span class="parameters">(</span>node) <span>A function to convert the HTML structure of &#39;node&#39; into
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__convertToSemantic" class="inline-link"> _convertToSemantic</a><span class="parameters">(</span>node) <span>A function to convert the HTML structure of &#39;node&#39; into
 semantic tags where possible.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span>Initialize the button or other widget that will control this plugin.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__inserthtmlImpl" class="inline-link"> _inserthtmlImpl</a><span class="parameters">(</span>html) <span>Function to trap and over-ride the editor inserthtml implementation
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span>Initialize the button or other widget that will control this plugin.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__inserthtmlImpl" class="inline-link"> _inserthtmlImpl</a><span class="parameters">(</span>html) <span>Function to trap and over-ride the editor inserthtml implementation
 to try and filter it to match the editor&#39;s internal styling mode.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__isInline" class="inline-link"> _isInline</a><span class="parameters">(</span>tag) <span>Function to determine if the current tag is an inline
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__isInline" class="inline-link"> _isInline</a><span class="parameters">(</span>tag) <span>Function to determine if the current tag is an inline
 element that does formatting, as we don&#39;t want to
 try to combine inlines with divs on styles.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__normalizeTags" class="inline-link"> _normalizeTags</a><span class="parameters">(</span>node) <span>A function to handle normalizing certain tag types contained under &#39;node&#39;</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_NormalizeStyle__normalizeTags" class="inline-link"> _normalizeTags</a><span class="parameters">(</span>node) <span>A function to handle normalizing certain tag types contained under &#39;node&#39;</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
 button is updated appropriately.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
 that is added to the toolbar to control this plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Deprecated.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Create the plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Deprecated.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Create the plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_NormalizeStyle_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span>Over-ride for the setting of the editor.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Tell the plugin to add it&#39;s controller widget (often a button)
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_NormalizeStyle_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span>Over-ride for the setting of the editor.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Tell the plugin to add it&#39;s controller widget (often a button)
 to the toolbar.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Change state of the plugin to respond to events in the editor.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_NormalizeStyle_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Change state of the plugin to respond to events in the editor.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -718,4 +726,4 @@ characters next to the caret are bold or not.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/editor/plugins/NormalizeStyle" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

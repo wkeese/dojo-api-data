@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/DataSelection</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/DataSelection" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/DataSelection.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/DataSelection<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/grid/Selection" class="jsdoc-link">dojox/grid/Selection</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new DataSelection<span class="parameters">(grid);</span></div>
 </div>
@@ -23,92 +30,93 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon inherited"><a href="#1_8dojox_grid_DataSelection_mode" class="inline-link"> mode </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_grid_DataSelection_rangeStartIndex" class="inline-link"> rangeStartIndex </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_grid_DataSelection_selected" class="inline-link"> selected </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_grid_DataSelection_selectedIndex" class="inline-link"> selectedIndex </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_grid_DataSelection_updating" class="inline-link"> updating </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_DataSelection__beginUpdate" class="inline-link"> _beginUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_DataSelection__endUpdate" class="inline-link"> _endUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_DataSelection__range" class="inline-link"> _range</a><span class="parameters">(</span>inFrom, inTo, func) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_addToSelection" class="inline-link"> addToSelection</a><span class="parameters">(</span>inItemOrIndex) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_clickSelect" class="inline-link"> clickSelect</a><span class="parameters">(</span>inIndex, inCtrlKey, inShiftKey) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_clickSelectEvent" class="inline-link"> clickSelectEvent</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>inItemOrIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_deselectAll" class="inline-link"> deselectAll</a><span class="parameters">(</span>inItemOrIndex) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_deselectRange" class="inline-link"> deselectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_getFirstSelected" class="inline-link"> getFirstSelected</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_getNextSelected" class="inline-link"> getNextSelected</a><span class="parameters">(</span>inPrev) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_insert" class="inline-link"> insert</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_remove" class="inline-link"> remove</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_select" class="inline-link"> select</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_setMode" class="inline-link"> setMode</a><span class="parameters">(</span>mode) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_setSelected" class="inline-link"> setSelected</a><span class="parameters">(</span>inIndex, inSelect) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onCanDeselect" class="inline-link"> onCanDeselect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onCanSelect" class="inline-link"> onCanSelect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onChanged" class="inline-link"> onChanged</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onChanging" class="inline-link"> onChanging</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onDeselected" class="inline-link"> onDeselected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onSelected" class="inline-link"> onSelected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon inherited"><a href="#1_8dojox_grid_DataSelection_mode" class="inline-link"> mode </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_grid_DataSelection_rangeStartIndex" class="inline-link"> rangeStartIndex </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_DataSelection_selected" class="inline-link"> selected </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_grid_DataSelection_selectedIndex" class="inline-link"> selectedIndex </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_grid_DataSelection_updating" class="inline-link"> updating </a><span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_DataSelection__beginUpdate" class="inline-link"> _beginUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_DataSelection__endUpdate" class="inline-link"> _endUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_DataSelection__range" class="inline-link"> _range</a><span class="parameters">(</span>inFrom, inTo, func) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_addToSelection" class="inline-link"> addToSelection</a><span class="parameters">(</span>inItemOrIndex) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_clickSelect" class="inline-link"> clickSelect</a><span class="parameters">(</span>inIndex, inCtrlKey, inShiftKey) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_clickSelectEvent" class="inline-link"> clickSelectEvent</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>inItemOrIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_deselectAll" class="inline-link"> deselectAll</a><span class="parameters">(</span>inItemOrIndex) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_deselectRange" class="inline-link"> deselectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_getFirstSelected" class="inline-link"> getFirstSelected</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_getNextSelected" class="inline-link"> getNextSelected</a><span class="parameters">(</span>inPrev) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_DataSelection_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_insert" class="inline-link"> insert</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_remove" class="inline-link"> remove</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_select" class="inline-link"> select</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_setMode" class="inline-link"> setMode</a><span class="parameters">(</span>mode) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_setSelected" class="inline-link"> setSelected</a><span class="parameters">(</span>inIndex, inSelect) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>inIndex) <span></span><span title="inherited from dojox/grid/Selection" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onCanDeselect" class="inline-link"> onCanDeselect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onCanSelect" class="inline-link"> onCanSelect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onChanged" class="inline-link"> onChanged</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onChanging" class="inline-link"> onChanging</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onDeselected" class="inline-link"> onDeselected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_DataSelection_onSelected" class="inline-link"> onSelected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -618,4 +626,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/DataSelection" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

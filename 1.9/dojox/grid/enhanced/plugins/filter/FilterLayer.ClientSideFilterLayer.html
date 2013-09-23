@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/filter/FilterLayer.ClientSideFilterLayer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/plugins/filter/FilterLayer.ClientSideFilterLayer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/filter/FilterLayer.ClientSideFilterLayer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/filter/FilterLayer.ClientSideFilterLayer<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Add a client side filter layer on top of the data store,
 so any filter expression can be applied to the store.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new FilterLayer.ClientSideFilterLayer<span class="parameters">(args);</span></div>
 </div>
@@ -23,97 +30,98 @@ so any filter expression can be applied to the store.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer___enabled" class="inline-link"> __enabled </a><span>To control whether this layer is valid.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__fetchAll" class="inline-link"> _fetchAll </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__filter" class="inline-link"> _filter </a><span>The filter definition</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__getter" class="inline-link"> _getter </a><span>A user defined way to get data from store</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__indexMap" class="inline-link"> _indexMap </a><span>A map from the row index of this._items to the row index of the original store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__items" class="inline-link"> _items </a><span>Cached items (may contain holes)</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__nextUnfetchedIdx" class="inline-link"> _nextUnfetchedIdx </a><span>The index of the next item in the store that is never fetched.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__originFetch" class="inline-link"> _originFetch </a><span>The original fetch function of the store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__result" class="inline-link"> _result </a><span>Current fetch result</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__resultStartIdx" class="inline-link"> _resultStartIdx </a><span>The index in cache of the first result item</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__store" class="inline-link"> _store </a><span>The wrapped store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__storeSize" class="inline-link"> _storeSize </a><span>The actual size of the original store</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_layerFuncName" class="inline-link"> layerFuncName </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_tags" class="inline-link"> tags </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__addCachedItems" class="inline-link"> _addCachedItems</a><span class="parameters">(</span>items, filterStartIdx) <span>Add data items to the cache.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__applyFilter" class="inline-link"> _applyFilter</a><span class="parameters">(</span>datarow, rowIndex) <span>Apply the filter to a row of data</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__completeQuery" class="inline-link"> _completeQuery</a><span class="parameters">(</span>userRequest) <span>Logically, the user&#39;s query is completed here, i.e., all the filtered results are ready.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer___enabled" class="inline-link"> __enabled </a><span>To control whether this layer is valid.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__fetchAll" class="inline-link"> _fetchAll </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__filter" class="inline-link"> _filter </a><span>The filter definition</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__getter" class="inline-link"> _getter </a><span>A user defined way to get data from store</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__indexMap" class="inline-link"> _indexMap </a><span>A map from the row index of this._items to the row index of the original store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__items" class="inline-link"> _items </a><span>Cached items (may contain holes)</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__nextUnfetchedIdx" class="inline-link"> _nextUnfetchedIdx </a><span>The index of the next item in the store that is never fetched.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__originFetch" class="inline-link"> _originFetch </a><span>The original fetch function of the store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__result" class="inline-link"> _result </a><span>Current fetch result</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__resultStartIdx" class="inline-link"> _resultStartIdx </a><span>The index in cache of the first result item</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__store" class="inline-link"> _store </a><span>The wrapped store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__storeSize" class="inline-link"> _storeSize </a><span>The actual size of the original store</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_layerFuncName" class="inline-link"> layerFuncName </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_tags" class="inline-link"> tags </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__addCachedItems" class="inline-link"> _addCachedItems</a><span class="parameters">(</span>items, filterStartIdx) <span>Add data items to the cache.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__applyFilter" class="inline-link"> _applyFilter</a><span class="parameters">(</span>datarow, rowIndex) <span>Apply the filter to a row of data</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__completeQuery" class="inline-link"> _completeQuery</a><span class="parameters">(</span>userRequest) <span>Logically, the user&#39;s query is completed here, i.e., all the filtered results are ready.
 (or their index mappings are ready)</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__defaultGetter" class="inline-link"> _defaultGetter</a><span class="parameters">(</span>datarow, colName, rowIndex, store) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__doFilter" class="inline-link"> _doFilter</a><span class="parameters">(</span>items, startIdx, userRequest) <span>Use the filter expression to filter items.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>userRequest, filterRequest) <span>Implement _StoreLayer._fetch</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__hasReachedStoreEnd" class="inline-link"> _hasReachedStoreEnd</a><span class="parameters">(</span>) <span>Check whether all the items in the original store have been fetched.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__unwrap" class="inline-link"> _unwrap</a><span class="parameters">(</span>nextLayer) <span>Do the actual unwrapping to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>store, funcName, layerFuncName, nextLayer) <span>Do the actual wrapping (or &#39;hacking&#39; if you like) to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_enabled" class="inline-link"> enabled</a><span class="parameters">(</span>toEnable) <span>The get/set function of the enabled status of this layer</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_fetchAllOnFirstFilter" class="inline-link"> fetchAllOnFirstFilter</a><span class="parameters">(</span>toFetchAll) <span>The get/set function for fetchAll.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_filterDef" class="inline-link"> filterDef</a><span class="parameters">(</span>filter) <span>See _FilterLayerMixin.filterDef</span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span>Clear all the status information of this layer</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_name" class="inline-link"> name</a><span class="parameters">(</span>) <span>Get the name of this store layer.</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_originFetch" class="inline-link"> originFetch</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_setGetter" class="inline-link"> setGetter</a><span class="parameters">(</span>getter) <span>Set the user defined way to retrieve data from store.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__onFetchBegin" class="inline-link"> _onFetchBegin</a><span class="parameters">(</span>size, req) <span>This function is used to replace the user&#39;s onFetchBegin in store.fetch</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_onFilterDefined" class="inline-link"> onFilterDefined</a><span class="parameters">(</span>filter) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_onFiltered" class="inline-link"> onFiltered</a><span class="parameters">(</span>filteredSize, totalSize) <span>Called when store data is filtered.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_onRowMappingChange" class="inline-link"> onRowMappingChange</a><span class="parameters">(</span>mapping) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__defaultGetter" class="inline-link"> _defaultGetter</a><span class="parameters">(</span>datarow, colName, rowIndex, store) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__doFilter" class="inline-link"> _doFilter</a><span class="parameters">(</span>items, startIdx, userRequest) <span>Use the filter expression to filter items.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>userRequest, filterRequest) <span>Implement _StoreLayer._fetch</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__hasReachedStoreEnd" class="inline-link"> _hasReachedStoreEnd</a><span class="parameters">(</span>) <span>Check whether all the items in the original store have been fetched.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__unwrap" class="inline-link"> _unwrap</a><span class="parameters">(</span>nextLayer) <span>Do the actual unwrapping to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>store, funcName, layerFuncName, nextLayer) <span>Do the actual wrapping (or &#39;hacking&#39; if you like) to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_enabled" class="inline-link"> enabled</a><span class="parameters">(</span>toEnable) <span>The get/set function of the enabled status of this layer</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_fetchAllOnFirstFilter" class="inline-link"> fetchAllOnFirstFilter</a><span class="parameters">(</span>toFetchAll) <span>The get/set function for fetchAll.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_filterDef" class="inline-link"> filterDef</a><span class="parameters">(</span>filter) <span>See _FilterLayerMixin.filterDef</span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span>Clear all the status information of this layer</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_name" class="inline-link"> name</a><span class="parameters">(</span>) <span>Get the name of this store layer.</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_originFetch" class="inline-link"> originFetch</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_setGetter" class="inline-link"> setGetter</a><span class="parameters">(</span>getter) <span>Set the user defined way to retrieve data from store.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/FilterLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer__onFetchBegin" class="inline-link"> _onFetchBegin</a><span class="parameters">(</span>size, req) <span>This function is used to replace the user&#39;s onFetchBegin in store.fetch</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_onFilterDefined" class="inline-link"> onFilterDefined</a><span class="parameters">(</span>filter) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_onFiltered" class="inline-link"> onFiltered</a><span class="parameters">(</span>filteredSize, totalSize) <span>Called when store data is filtered.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_filter_FilterLayer_ClientSideFilterLayer_onRowMappingChange" class="inline-link"> onRowMappingChange</a><span class="parameters">(</span>mapping) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -698,4 +706,4 @@ It&#39;s better to override this method if your class name is too complicated.</
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/plugins/filter/FilterLayer.ClientSideFilterLayer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

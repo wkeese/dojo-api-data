@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/data/ObjectStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/data/ObjectStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/data/ObjectStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/data/ObjectStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>A Dojo Data implementation that wraps Dojo object stores for backwards
 compatibility.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new ObjectStore<span class="parameters">(options);</span></div>
 </div>
@@ -34,97 +41,98 @@ compatibility.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/data/ObjectStore.html" target="_blank">dojo/data/ObjectStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojo_data_ObjectStore_labelProperty" class="inline-link"> labelProperty </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojo_data_ObjectStore_objectStore" class="inline-link"> objectStore </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_changing" class="inline-link"> changing</a><span class="parameters">(</span>object, _deleting) <span>adds an object to the list of dirty objects.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Checks to see if &#39;item&#39; has &#39;value&#39; at &#39;attribute&#39;</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>deletes item and any references to that item from the store.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_ObjectStore_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>args) <span>See dojo/data/api/Read.fetch()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>args) <span>fetch an item by its identity, by looking in our index of what we have loaded</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Gets the available attributes of an item&#39;s &#39;property&#39; and returns
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojo_data_ObjectStore_labelProperty" class="inline-link"> labelProperty </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojo_data_ObjectStore_objectStore" class="inline-link"> objectStore </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_changing" class="inline-link"> changing</a><span class="parameters">(</span>object, _deleting) <span>adds an object to the list of dirty objects.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Checks to see if &#39;item&#39; has &#39;value&#39; at &#39;attribute&#39;</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>deletes item and any references to that item from the store.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_ObjectStore_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>args) <span>See dojo/data/api/Read.fetch()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>args) <span>fetch an item by its identity, by looking in our index of what we have loaded</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Gets the available attributes of an item&#39;s &#39;property&#39; and returns
 it as an array.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>return the store feature set</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>returns the identity of the given item
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>return the store feature set</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>returns the identity of the given item
 See dojo/data/api/Read.getIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>returns the attributes which are used to make up the
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>returns the attributes which are used to make up the
 identity of an item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, property, defaultValue) <span>Gets the value of an item&#39;s &#39;property&#39;</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, property) <span>Gets the value of an item&#39;s &#39;property&#39; and returns
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, property, defaultValue) <span>Gets the value of an item&#39;s &#39;property&#39;</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, property) <span>Gets the value of an item&#39;s &#39;property&#39; and returns
 it.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Checks to see if item has attribute</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item) <span>returns true if the item is marked as dirty or true if there are any dirty items</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>Checks to see if the argument is an item</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>Checks to see if the item is loaded.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>args) <span>Loads an item and calls the callback handler.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>data, parentInfo) <span>adds a new item to the store at the specified point.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_ObjectStore_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_revert" class="inline-link"> revert</a><span class="parameters">(</span>) <span>returns any modified data to its original state prior to a save();</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_save" class="inline-link"> save</a><span class="parameters">(</span>kwArgs) <span>Saves the dirty data using object store provider.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>item, attribute, value) <span>sets &#39;attribute&#39; on &#39;item&#39; to &#39;value&#39;
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Checks to see if item has attribute</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item) <span>returns true if the item is marked as dirty or true if there are any dirty items</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>Checks to see if the argument is an item</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>Checks to see if the item is loaded.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>args) <span>Loads an item and calls the callback handler.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>data, parentInfo) <span>adds a new item to the store at the specified point.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_ObjectStore_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_revert" class="inline-link"> revert</a><span class="parameters">(</span>) <span>returns any modified data to its original state prior to a save();</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_save" class="inline-link"> save</a><span class="parameters">(</span>kwArgs) <span>Saves the dirty data using object store provider.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>item, attribute, value) <span>sets &#39;attribute&#39; on &#39;item&#39; to &#39;value&#39;
 See dojo/data/api/Write.setValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>item, attribute, values) <span>sets &#39;attribute&#39; on &#39;item&#39; to &#39;value&#39; value
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>item, attribute, values) <span>sets &#39;attribute&#39; on &#39;item&#39; to &#39;value&#39; value
 must be an array.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_unsetAttribute" class="inline-link"> unsetAttribute</a><span class="parameters">(</span>item, attribute) <span>unsets &#39;attribute&#39; on &#39;item&#39;
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_unsetAttribute" class="inline-link"> unsetAttribute</a><span class="parameters">(</span>item, attribute) <span>unsets &#39;attribute&#39; on &#39;item&#39;
 See dojo/data/api/Write.unsetAttribute()</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>) <span>See dojo/data/api/Notification.onDelete()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onFetch" class="inline-link"> onFetch</a><span class="parameters">(</span>results) <span>Called when a fetch occurs</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onNew" class="inline-link"> onNew</a><span class="parameters">(</span>) <span>See dojo/data/api/Notification.onNew()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onSet" class="inline-link"> onSet</a><span class="parameters">(</span>) <span>See dojo/data/api/Notification.onSet()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>) <span>See dojo/data/api/Notification.onDelete()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onFetch" class="inline-link"> onFetch</a><span class="parameters">(</span>results) <span>Called when a fetch occurs</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onNew" class="inline-link"> onNew</a><span class="parameters">(</span>) <span>See dojo/data/api/Notification.onNew()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_ObjectStore_onSet" class="inline-link"> onSet</a><span class="parameters">(</span>) <span>See dojo/data/api/Notification.onSet()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -923,4 +931,4 @@ See dojo/data/api/Write.unsetAttribute()</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/data/ObjectStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

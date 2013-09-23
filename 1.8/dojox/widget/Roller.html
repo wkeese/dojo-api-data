@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/Roller</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/widget/Roller" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/Roller.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/widget/Roller<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A simple widget to take an unordered-list of Text and roll through them</p>
 </div>
@@ -18,70 +25,72 @@ standard array manipulation techniques.
 </p>
 <p>The class &quot;dojoxRoller&quot; is added to the UL element for styling purposes.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/widget/Roller.html" target="_blank">dojox/widget/Roller reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>// create a scroller from a unordered list with id=&quot;lister&quot;
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>// create a scroller from a unordered list with id=&quot;lister&quot;
 var thinger = new dojox.widget.Roller.Roller({},&quot;lister&quot;);</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>// create a scroller from a fixed array, and place in the DOM:
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>// create a scroller from a fixed array, and place in the DOM:
 new dojox.widget.Roller({ items:[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;] }).placeAt(dojo.body());</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>// add an item:
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><pre><code>// add an item:
 dijit.byId(&quot;roller&quot;).items.push(&quot;I am a new Label&quot;);</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><pre><code>// stop a roller from rolling:
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 4</h3><pre><code>// stop a roller from rolling:
 dijit.byId(&quot;roller&quot;).stop();</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_8dojox_widget_Roller__idx" class="inline-link"> _idx </a><span>Index of the the currently visible item in the list of items[]</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_widget_Roller_autoStart" class="inline-link"> autoStart </a><span>Toggle to control starup behavior.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_widget_Roller_delay" class="inline-link"> delay </a><span>Interval between rolls</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_widget_Roller_durationIn" class="inline-link"> durationIn </a><span>Speed (in ms) to apply to the &quot;in&quot; animation (show the node)</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_widget_Roller_durationOut" class="inline-link"> durationOut </a><span>Speed (in ms) to apply to the &quot;out&quot; animation (hide the showing node)</span>
-    </li>
-    <li class="arrayIcon"><a href="#1_8dojox_widget_Roller_items" class="inline-link"> items </a><span>If populated prior to instantiation, is used as the Items over the children</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_widget_Roller_itemSelector" class="inline-link"> itemSelector </a><span>A CSS selector to be used by dojo.query to find the children
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_8dojox_widget_Roller__idx" class="inline-link"> _idx </a><span>Index of the the currently visible item in the list of items[]</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_widget_Roller_autoStart" class="inline-link"> autoStart </a><span>Toggle to control starup behavior.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_widget_Roller_delay" class="inline-link"> delay </a><span>Interval between rolls</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_widget_Roller_durationIn" class="inline-link"> durationIn </a><span>Speed (in ms) to apply to the &quot;in&quot; animation (show the node)</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_widget_Roller_durationOut" class="inline-link"> durationOut </a><span>Speed (in ms) to apply to the &quot;out&quot; animation (hide the showing node)</span>
+        </li>
+        <li class="arrayIcon"><a href="#1_8dojox_widget_Roller_items" class="inline-link"> items </a><span>If populated prior to instantiation, is used as the Items over the children</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_widget_Roller_itemSelector" class="inline-link"> itemSelector </a><span>A CSS selector to be used by dojo.query to find the children
 items in this widget.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_widget_Roller__run" class="inline-link"> _run</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_widget_Roller__setIndex" class="inline-link"> _setIndex</a><span class="parameters">(</span>i) <span>Set the Roller to some passed index.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_widget_Roller__setupConnects" class="inline-link"> _setupConnects</a><span class="parameters">(</span>) <span>setup the loop connection logic</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_Roller_makeAnims" class="inline-link"> makeAnims</a><span class="parameters">(</span>) <span>Animation creator function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_Roller_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_Roller_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>Starts to Roller looping</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_Roller_stop" class="inline-link"> stop</a><span class="parameters">(</span>) <span>Stops the Roller from looping anymore.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_widget_Roller__run" class="inline-link"> _run</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_widget_Roller__setIndex" class="inline-link"> _setIndex</a><span class="parameters">(</span>i) <span>Set the Roller to some passed index.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_widget_Roller__setupConnects" class="inline-link"> _setupConnects</a><span class="parameters">(</span>) <span>setup the loop connection logic</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_Roller_makeAnims" class="inline-link"> makeAnims</a><span class="parameters">(</span>) <span>Animation creator function.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_Roller_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_Roller_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>Starts to Roller looping</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_Roller_stop" class="inline-link"> stop</a><span class="parameters">(</span>) <span>Stops the Roller from looping anymore.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -220,4 +229,4 @@ will reuse.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/widget/Roller" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

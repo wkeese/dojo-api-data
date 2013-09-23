@@ -1,71 +1,79 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/validate/us</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/validate/us" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/validate/us.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/validate/us<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <p>See the <a href="/reference-guide/1.9/dojox/validate.html" target="_blank">dojox/validate/us reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_validate_us__cardInfo" class="inline-link"> _cardInfo </a><span>A dictionary list of credit card abbreviations</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_validate_us__isInRangeCache" class="inline-link"> _isInRangeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_check" class="inline-link"> check</a><span class="parameters">(</span>form, profile) <span>validates user input of an HTML form based on input profile</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_computeCnpjDv" class="inline-link"> computeCnpjDv</a><span class="parameters">(</span>value) <span>Generate the DV code (checksum part) for a Cnpj number</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_computeCpfDv" class="inline-link"> computeCpfDv</a><span class="parameters">(</span>value) <span>Generate the DV code (checksum part) for a CPF number</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_evaluateConstraint" class="inline-link"> evaluateConstraint</a><span class="parameters">(</span>profile, constraint, fieldName, elem) <span>Evaluates dojo.validate.check() constraints that are specified as array
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_validate_us__cardInfo" class="inline-link"> _cardInfo </a><span>A dictionary list of credit card abbreviations</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/validate/creditCard to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_validate_us__isInRangeCache" class="inline-link"> _isInRangeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_check" class="inline-link"> check</a><span class="parameters">(</span>form, profile) <span>validates user input of an HTML form based on input profile</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_computeCnpjDv" class="inline-link"> computeCnpjDv</a><span class="parameters">(</span>value) <span>Generate the DV code (checksum part) for a Cnpj number</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_computeCpfDv" class="inline-link"> computeCpfDv</a><span class="parameters">(</span>value) <span>Generate the DV code (checksum part) for a CPF number</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_evaluateConstraint" class="inline-link"> evaluateConstraint</a><span class="parameters">(</span>profile, constraint, fieldName, elem) <span>Evaluates dojo.validate.check() constraints that are specified as array
 arguments</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_getEmailAddressList" class="inline-link"> getEmailAddressList</a><span class="parameters">(</span>value, flags) <span>Check if value is an email address list.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isEmailAddress" class="inline-link"> isEmailAddress</a><span class="parameters">(</span>value, flags) <span>Checks if a string could be a valid email address</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isEmailAddressList" class="inline-link"> isEmailAddressList</a><span class="parameters">(</span>value, flags) <span>Checks if a string could be a valid email address list.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isInRange" class="inline-link"> isInRange</a><span class="parameters">(</span>value, flags) <span>Validates whether a string denoting a number
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_getEmailAddressList" class="inline-link"> getEmailAddressList</a><span class="parameters">(</span>value, flags) <span>Check if value is an email address list.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isEmailAddress" class="inline-link"> isEmailAddress</a><span class="parameters">(</span>value, flags) <span>Checks if a string could be a valid email address</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isEmailAddressList" class="inline-link"> isEmailAddressList</a><span class="parameters">(</span>value, flags) <span>Checks if a string could be a valid email address list.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isInRange" class="inline-link"> isInRange</a><span class="parameters">(</span>value, flags) <span>Validates whether a string denoting a number
 is between a max and min.</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isIpAddress" class="inline-link"> isIpAddress</a><span class="parameters">(</span>value, flags) <span>Validates an IP address</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isNumberFormat" class="inline-link"> isNumberFormat</a><span class="parameters">(</span>value, flags) <span>Validates any sort of number based format</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isPhoneNumber" class="inline-link"> isPhoneNumber</a><span class="parameters">(</span>value) <span>Validates 10 US digit phone number for several common formats</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isSocialSecurityNumber" class="inline-link"> isSocialSecurityNumber</a><span class="parameters">(</span>value) <span>Validates social security number</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isState" class="inline-link"> isState</a><span class="parameters">(</span>value, flags) <span>Validates US state and territory abbreviations.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isText" class="inline-link"> isText</a><span class="parameters">(</span>value, flags) <span>Checks if a string has non whitespace characters.</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isUrl" class="inline-link"> isUrl</a><span class="parameters">(</span>value, flags) <span>Checks if a string could be a valid URL</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCnpj" class="inline-link"> isValidCnpj</a><span class="parameters">(</span>value) <span>Validates a CNPJ/CGC number</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCpf" class="inline-link"> isValidCpf</a><span class="parameters">(</span>value) <span>Validates a CPF number</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCreditCard" class="inline-link"> isValidCreditCard</a><span class="parameters">(</span>value, ccType) <span>Validate a credit card number by type with Luhn checking.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCreditCardNumber" class="inline-link"> isValidCreditCardNumber</a><span class="parameters">(</span>value, ccType) <span>Checks if value matches the pattern for that card or any card types if none is specified</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCvv" class="inline-link"> isValidCvv</a><span class="parameters">(</span>value, ccType) <span>Validate the security code (CCV) for a passed credit-card type.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidIsbn" class="inline-link"> isValidIsbn</a><span class="parameters">(</span>value) <span>Validate ISBN-10 or ISBN-13 based on the length of value</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isValidLuhn" class="inline-link"> isValidLuhn</a><span class="parameters">(</span>value) <span>Validate a String value against the Luhn algorithm.</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_validate_us_isZipCode" class="inline-link"> isZipCode</a><span class="parameters">(</span>value) <span>Validates U.S. zip-code</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isIpAddress" class="inline-link"> isIpAddress</a><span class="parameters">(</span>value, flags) <span>Validates an IP address</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isNumberFormat" class="inline-link"> isNumberFormat</a><span class="parameters">(</span>value, flags) <span>Validates any sort of number based format</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isPhoneNumber" class="inline-link"> isPhoneNumber</a><span class="parameters">(</span>value) <span>Validates 10 US digit phone number for several common formats</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isSocialSecurityNumber" class="inline-link"> isSocialSecurityNumber</a><span class="parameters">(</span>value) <span>Validates social security number</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isState" class="inline-link"> isState</a><span class="parameters">(</span>value, flags) <span>Validates US state and territory abbreviations.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isText" class="inline-link"> isText</a><span class="parameters">(</span>value, flags) <span>Checks if a string has non whitespace characters.</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isUrl" class="inline-link"> isUrl</a><span class="parameters">(</span>value, flags) <span>Checks if a string could be a valid URL</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCnpj" class="inline-link"> isValidCnpj</a><span class="parameters">(</span>value) <span>Validates a CNPJ/CGC number</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCpf" class="inline-link"> isValidCpf</a><span class="parameters">(</span>value) <span>Validates a CPF number</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCreditCard" class="inline-link"> isValidCreditCard</a><span class="parameters">(</span>value, ccType) <span>Validate a credit card number by type with Luhn checking.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCreditCardNumber" class="inline-link"> isValidCreditCardNumber</a><span class="parameters">(</span>value, ccType) <span>Checks if value matches the pattern for that card or any card types if none is specified</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidCvv" class="inline-link"> isValidCvv</a><span class="parameters">(</span>value, ccType) <span>Validate the security code (CCV) for a passed credit-card type.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isValidIsbn" class="inline-link"> isValidIsbn</a><span class="parameters">(</span>value) <span>Validate ISBN-10 or ISBN-13 based on the length of value</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_validate_us_isValidLuhn" class="inline-link"> isValidLuhn</a><span class="parameters">(</span>value) <span>Validate a String value against the Luhn algorithm.</span><span title="inherited from dojox/validate/_base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_validate_us_isZipCode" class="inline-link"> isZipCode</a><span class="parameters">(</span>value) <span>Validates U.S. zip-code</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -842,4 +850,4 @@ its integrity.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/validate/us" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

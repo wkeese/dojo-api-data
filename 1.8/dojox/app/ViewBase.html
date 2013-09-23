@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/app/ViewBase</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/app/ViewBase" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/app/ViewBase.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/app/ViewBase<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>View base class with model &amp; controller capabilities. Subclass must implement rendering capabilities.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new ViewBase<span class="parameters">(params);</span></div>
 </div>
@@ -34,42 +41,44 @@
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/app.html" target="_blank">dojox/app/ViewBase reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__createDataStore" class="inline-link"> _createDataStore</a><span class="parameters">(</span>) <span>Create data store instance for View specific stores</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__loadViewController" class="inline-link"> _loadViewController</a><span class="parameters">(</span>) <span>Load view controller by configuration or by default.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__setupModel" class="inline-link"> _setupModel</a><span class="parameters">(</span>) <span>Load views model if it is not already loaded then call _startup.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__startLayout" class="inline-link"> _startLayout</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__startup" class="inline-link"> _startup</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_afterActivate" class="inline-link"> afterActivate</a><span class="parameters">(</span>) <span>view life cycle afterActivate()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_afterDeactivate" class="inline-link"> afterDeactivate</a><span class="parameters">(</span>) <span>view life cycle afterDeactivate()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_beforeActivate" class="inline-link"> beforeActivate</a><span class="parameters">(</span>) <span>view life cycle beforeActivate()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_beforeDeactivate" class="inline-link"> beforeDeactivate</a><span class="parameters">(</span>) <span>view life cycle beforeDeactivate()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Constructs a ViewBase instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>view life cycle destroy()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>view life cycle init()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_load" class="inline-link"> load</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>start view object.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__createDataStore" class="inline-link"> _createDataStore</a><span class="parameters">(</span>) <span>Create data store instance for View specific stores</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__loadViewController" class="inline-link"> _loadViewController</a><span class="parameters">(</span>) <span>Load view controller by configuration or by default.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__setupModel" class="inline-link"> _setupModel</a><span class="parameters">(</span>) <span>Load views model if it is not already loaded then call _startup.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__startLayout" class="inline-link"> _startLayout</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_app_ViewBase__startup" class="inline-link"> _startup</a><span class="parameters">(</span>) <span>startup widgets in view template.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_afterActivate" class="inline-link"> afterActivate</a><span class="parameters">(</span>) <span>view life cycle afterActivate()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_afterDeactivate" class="inline-link"> afterDeactivate</a><span class="parameters">(</span>) <span>view life cycle afterDeactivate()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_beforeActivate" class="inline-link"> beforeActivate</a><span class="parameters">(</span>) <span>view life cycle beforeActivate()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_beforeDeactivate" class="inline-link"> beforeDeactivate</a><span class="parameters">(</span>) <span>view life cycle beforeDeactivate()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params) <span>Constructs a ViewBase instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>view life cycle destroy()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>view life cycle init()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_load" class="inline-link"> load</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_app_ViewBase_start" class="inline-link"> start</a><span class="parameters">(</span>) <span>start view object.
 load view template, view controller implement and startup all widgets in view template.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -220,4 +229,4 @@ load view template, view controller implement and startup all widgets in view te
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/app/ViewBase" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

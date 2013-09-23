@@ -1,71 +1,79 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/lang</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/lang" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/lang.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/_base/lang<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines Javascript language extensions.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/_base/lang.html" target="_blank">dojo/_base/lang reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojo__base_lang__extraNames" class="inline-link"> _extraNames </a><span>Lists property names that must be explicitly processed during for-in iteration
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojo__base_lang__extraNames" class="inline-link"> _extraNames </a><span>Lists property names that must be explicitly processed during for-in iteration
 in environments that have has(&quot;bug-for-in-skips-shadowed&quot;) true.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo__base_lang__hitchArgs" class="inline-link"> _hitchArgs</a><span class="parameters">(</span>scope, method) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo__base_lang__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>dest, source, copyFunc) <span>Copies/adds all properties of source to dest; returns dest.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo__base_lang__toArray" class="inline-link"> _toArray</a><span class="parameters">(</span>obj, offset, startWith) <span>Converts an array-like object (i.e. arguments, DOMCollection) to an
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo__base_lang__hitchArgs" class="inline-link"> _hitchArgs</a><span class="parameters">(</span>scope, method) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo__base_lang__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>dest, source, copyFunc) <span>Copies/adds all properties of source to dest; returns dest.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo__base_lang__toArray" class="inline-link"> _toArray</a><span class="parameters">(</span>obj, offset, startWith) <span>Converts an array-like object (i.e. arguments, DOMCollection) to an
 array.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_clone" class="inline-link"> clone</a><span class="parameters">(</span>src) <span>Clones objects (including DOM nodes) and all children.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_delegate" class="inline-link"> delegate</a><span class="parameters">(</span>obj, props) <span>Returns a new object which &quot;looks&quot; to obj for properties which it
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_clone" class="inline-link"> clone</a><span class="parameters">(</span>src) <span>Clones objects (including DOM nodes) and all children.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_delegate" class="inline-link"> delegate</a><span class="parameters">(</span>obj, props) <span>Returns a new object which &quot;looks&quot; to obj for properties which it
 does not have a value for.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_exists" class="inline-link"> exists</a><span class="parameters">(</span>name, obj) <span>determine if an object supports a given method</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_extend" class="inline-link"> extend</a><span class="parameters">(</span>ctor, props) <span>Adds all properties and methods of props to constructor&#39;s
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_exists" class="inline-link"> exists</a><span class="parameters">(</span>name, obj) <span>determine if an object supports a given method</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_extend" class="inline-link"> extend</a><span class="parameters">(</span>ctor, props) <span>Adds all properties and methods of props to constructor&#39;s
 prototype, making them available to all instances created with
 constructor.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_getObject" class="inline-link"> getObject</a><span class="parameters">(</span>name, create, context) <span>Get a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_hitch" class="inline-link"> hitch</a><span class="parameters">(</span>scope, method) <span>Returns a function that will only ever execute in the a given scope.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_isAlien" class="inline-link"> isAlien</a><span class="parameters">(</span>it) <span>Returns true if it is a built-in function or some other kind of
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_getObject" class="inline-link"> getObject</a><span class="parameters">(</span>name, create, context) <span>Get a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_hitch" class="inline-link"> hitch</a><span class="parameters">(</span>scope, method) <span>Returns a function that will only ever execute in the a given scope.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_isAlien" class="inline-link"> isAlien</a><span class="parameters">(</span>it) <span>Returns true if it is a built-in function or some other kind of
 oddball that should report as a function but doesn&#39;t</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_isArray" class="inline-link"> isArray</a><span class="parameters">(</span>it) <span>Return true if it is an Array.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_isArrayLike" class="inline-link"> isArrayLike</a><span class="parameters">(</span>it) <span>similar to isArray() but more permissive</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_isFunction" class="inline-link"> isFunction</a><span class="parameters">(</span>it) <span>Return true if it is a Function</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_isObject" class="inline-link"> isObject</a><span class="parameters">(</span>it) <span>Returns true if it is a JavaScript object (or an Array, a Function
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_isArray" class="inline-link"> isArray</a><span class="parameters">(</span>it) <span>Return true if it is an Array.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_isArrayLike" class="inline-link"> isArrayLike</a><span class="parameters">(</span>it) <span>similar to isArray() but more permissive</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_isFunction" class="inline-link"> isFunction</a><span class="parameters">(</span>it) <span>Return true if it is a Function</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_isObject" class="inline-link"> isObject</a><span class="parameters">(</span>it) <span>Returns true if it is a JavaScript object (or an Array, a Function
 or null)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_isString" class="inline-link"> isString</a><span class="parameters">(</span>it) <span>Return true if it is a String</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_mixin" class="inline-link"> mixin</a><span class="parameters">(</span>dest, sources) <span>Copies/adds all properties of one or more sources to dest; returns dest.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_partial" class="inline-link"> partial</a><span class="parameters">(</span>method) <span>similar to hitch() except that the scope object is left to be
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_isString" class="inline-link"> isString</a><span class="parameters">(</span>it) <span>Return true if it is a String</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_mixin" class="inline-link"> mixin</a><span class="parameters">(</span>dest, sources) <span>Copies/adds all properties of one or more sources to dest; returns dest.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_partial" class="inline-link"> partial</a><span class="parameters">(</span>method) <span>similar to hitch() except that the scope object is left to be
 whatever the execution context eventually becomes.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_replace" class="inline-link"> replace</a><span class="parameters">(</span>tmpl, map, pattern) <span>Performs parameterized substitutions on a string.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>name, value, context) <span>Set a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_lang_trim" class="inline-link"> trim</a><span class="parameters">(</span>str) <span>Trims whitespace from both sides of the string</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_replace" class="inline-link"> replace</a><span class="parameters">(</span>tmpl, map, pattern) <span>Performs parameterized substitutions on a string.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>name, value, context) <span>Set a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_lang_trim" class="inline-link"> trim</a><span class="parameters">(</span>str) <span>Trims whitespace from both sides of the string</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -152,7 +160,8 @@ Notice that by default, _mixin executes a so-called &quot;shallow copy&quot; and
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Object</span></div>
-        <div class="jsdoc-return-description">dest, as modified</div>
+        <div class="jsdoc-return-description"><p>dest, as modified</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojo__base_lang__toArray"></a><span class="functionIcon">_toArray</span><span class="parameters">(obj, offset, startWith)</span> <span title="private" class="jsdoc-private"> </span>
@@ -263,17 +272,18 @@ return object or in props.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
-        <div class="jsdoc-return-description">an Object of anonymous type</div>
+        <div class="jsdoc-return-description"><p>an Object of anonymous type</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var foo = { bar: &quot;baz&quot; };
-  var thinger = lang.delegate(foo, { thud: &quot;xyzzy&quot;});
-  thinger.bar == &quot;baz&quot;; // delegated to foo
-  foo.thud == undefined; // by definition
-  thinger.thud == &quot;xyzzy&quot;; // mixed in from props
-  foo.bar = &quot;thonk&quot;;
-  thinger.bar == &quot;thonk&quot;; // still delegated to foo&#39;s bar</code></pre>
+            <h3>Example 1</h3><pre><code>var foo = { bar: &quot;baz&quot; };
+var thinger = lang.delegate(foo, { thud: &quot;xyzzy&quot;});
+thinger.bar == &quot;baz&quot;; // delegated to foo
+foo.thud == undefined; // by definition
+thinger.thud == &quot;xyzzy&quot;; // mixed in from props
+foo.bar = &quot;thonk&quot;;
+thinger.bar == &quot;thonk&quot;; // still delegated to foo&#39;s bar</code></pre>
 
           </div>
         </div>
@@ -315,18 +325,18 @@ the chain. Useful for object and method detection.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> // define an object
- var foo = {
-    bar: { }
- };
+            <h3>Example 1</h3><pre><code>// define an object
+var foo = {
+      bar: { }
+};
 
- // search the global scope
- lang.exists(&quot;foo.bar&quot;); // true
- lang.exists(&quot;foo.bar.baz&quot;); // false
+// search the global scope
+lang.exists(&quot;foo.bar&quot;); // true
+lang.exists(&quot;foo.bar.baz&quot;); // false
 
- // search from a particular scope
- lang.exists(&quot;bar&quot;, foo); // true
- lang.exists(&quot;bar.baz&quot;, foo); // false</code></pre>
+// search from a particular scope
+lang.exists(&quot;bar&quot;, foo); // true
+lang.exists(&quot;bar.baz&quot;, foo); // false</code></pre>
 
           </div>
         </div>
@@ -450,27 +460,32 @@ scope to be hitched.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  lang.hitch(foo, &quot;bar&quot;)();</code></pre>
-<p>runs foo.bar() in the scope of foo</p>
+            <h3>Example 1</h3><pre><code>lang.hitch(foo, &quot;bar&quot;)();</code></pre>
+<p>runs foo.bar() in the scope of foo
+</p>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  lang.hitch(foo, myFunction);</code></pre>
-<p>returns a function that runs myFunction in the scope of foo</p>
+            <h3>Example 2</h3><pre><code>lang.hitch(foo, myFunction);</code></pre>
+<p>returns a function that runs myFunction in the scope of foo
+</p>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Expansion on the default positional arguments passed along from
-hitch. Passed args are mixed first, additional args after.</p>
-<pre><code>  var foo = { bar: function(a, b, c){ console.log(a, b, c); } };
-  var fn = lang.hitch(foo, &quot;bar&quot;, 1, 2);
-  fn(3); // logs &quot;1, 2, 3&quot;</code></pre>
+hitch. Passed args are mixed first, additional args after.
+
+</p>
+<pre><code>var foo = { bar: function(a, b, c){ console.log(a, b, c); } };
+var fn = lang.hitch(foo, &quot;bar&quot;, 1, 2);
+fn(3); // logs &quot;1, 2, 3&quot;</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  var foo = { bar: 2 };
-  lang.hitch(foo, function(){ this.bar = 10; })();</code></pre>
-<p>execute an anonymous function in scope of foo</p>
+            <h3>Example 4</h3><pre><code>var foo = { bar: 2 };
+lang.hitch(foo, function(){ this.bar = 10; })();</code></pre>
+<p>execute an anonymous function in scope of foo
+</p>
 
           </div>
         </div>
@@ -550,7 +565,8 @@ isArray().</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Boolean</span></div>
-        <div class="jsdoc-return-description">If it walks like a duck and quacks like a duck, return `true`</div>
+        <div class="jsdoc-return-description"><p>If it walks like a duck and quacks like a duck, return <code>true</code></p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo__base_lang_isFunction"></a><span class="functionIcon">isFunction</span><span class="parameters">(it)</span> 
@@ -659,50 +675,57 @@ value &quot;wins&quot;.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | object</span></div>
-        <div class="jsdoc-return-description">dest, as modified</div>
+        <div class="jsdoc-return-description"><p>dest, as modified</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>make a shallow copy of an object</p>
-<pre><code>  var copy = lang.mixin({}, source);</code></pre>
+            <h3>Example 1</h3><p>make a shallow copy of an object
+
+</p>
+<pre><code>var copy = lang.mixin({}, source);</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>many class constructors often take an object which specifies
 values to be configured on the object. In this case, it is
-often simplest to call <code>lang.mixin</code> on the <code>this</code> object:</p>
-<pre><code>  declare(&quot;acme.Base&quot;, null, {
-    constructor: function(properties){
-      // property configuration:
-      lang.mixin(this, properties);
+often simplest to call <code>lang.mixin</code> on the <code>this</code> object:
 
-      console.log(this.quip);
-      //  ...
+</p>
+<pre><code>declare(&quot;acme.Base&quot;, null, {
+    constructor: function(properties){
+        // property configuration:
+        lang.mixin(this, properties);
+
+        console.log(this.quip);
+        //  ...
     },
     quip: &quot;I wasn&#39;t born yesterday, you know - I&#39;ve seen movies.&quot;,
     // ...
-  });
+});
 
-  // create an instance of the class and configure it
-  var b = new acme.Base({quip: &quot;That&#39;s what it does!&quot; });</code></pre>
+// create an instance of the class and configure it
+var b = new acme.Base({quip: &quot;That&#39;s what it does!&quot; });</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>copy in properties from multiple objects</p>
-<pre><code>  var flattened = lang.mixin(
+            <h3>Example 3</h3><p>copy in properties from multiple objects
+
+</p>
+<pre><code>var flattened = lang.mixin(
     {
-      name: &quot;Frylock&quot;,
-      braces: true
+        name: &quot;Frylock&quot;,
+        braces: true
     },
     {
-      name: &quot;Carl Brutanananadilewski&quot;
+        name: &quot;Carl Brutanananadilewski&quot;
     }
-  );
+);
 
-  // will print &quot;Carl Brutanananadilewski&quot;
-  console.log(flattened.name);
-  // will print &quot;true&quot;
-  console.log(flattened.braces);</code></pre>
+// will print &quot;Carl Brutanananadilewski&quot;
+console.log(flattened.name);
+// will print &quot;true&quot;
+console.log(flattened.braces);</code></pre>
 
           </div>
         </div>
@@ -715,8 +738,10 @@ often simplest to call <code>lang.mixin</code> on the <code>this</code> object:<
         <div class="jsdoc-full-summary"><p>similar to hitch() except that the scope object is left to be
 whatever the execution context eventually becomes.</p>
 </div>
-        <div class="jsdoc-full-summary"><p>Calling lang.partial is the functional equivalent of calling:</p>
-<pre><code>  lang.hitch(null, funcName, ...);</pre></code>
+        <div class="jsdoc-full-summary"><p>Calling lang.partial is the functional equivalent of calling:
+
+</p>
+<pre><code>lang.hitch(null, funcName, ...);</pre></code>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -779,60 +804,61 @@ of characters, which doesn&#39;t include &quot;}&quot;.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
-        <div class="jsdoc-return-description">Returns the substituted string.</div>
+        <div class="jsdoc-return-description"><p>Returns the substituted string.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // uses a dictionary for substitutions:
-  lang.replace(&quot;Hello, {name.first} {name.last} AKA {nick}!&quot;,
+            <h3>Example 1</h3><pre><code>// uses a dictionary for substitutions:
+lang.replace(&quot;Hello, {name.first} {name.last} AKA {nick}!&quot;,
     {
-      nick: &quot;Bob&quot;,
-      name: {
-        first:  &quot;Robert&quot;,
-        middle: &quot;X&quot;,
-        last:    &quot;Cringely&quot;
-      }
+        nick: &quot;Bob&quot;,
+        name: {
+            first:  &quot;Robert&quot;,
+            middle: &quot;X&quot;,
+            last:       &quot;Cringely&quot;
+        }
     });
-  // returns: Hello, Robert Cringely AKA Bob!</code></pre>
+// returns: Hello, Robert Cringely AKA Bob!</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // uses an array for substitutions:
-  lang.replace(&quot;Hello, {0} {2}!&quot;,
+            <h3>Example 2</h3><pre><code>// uses an array for substitutions:
+lang.replace(&quot;Hello, {0} {2}!&quot;,
     [&quot;Robert&quot;, &quot;X&quot;, &quot;Cringely&quot;]);
-  // returns: Hello, Robert Cringely!</code></pre>
+// returns: Hello, Robert Cringely!</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code>  // uses a function for substitutions:
-  function sum(a){
+            <h3>Example 3</h3><pre><code>// uses a function for substitutions:
+function sum(a){
     var t = 0;
     arrayforEach(a, function(x){ t += x; });
     return t;
-  }
-  lang.replace(
+}
+lang.replace(
     &quot;{count} payments averaging {avg} USD per payment.&quot;,
     lang.hitch(
-      { payments: [11, 16, 12] },
-      function(_, key){
-        switch(key){
-          case &quot;count&quot;: return this.payments.length;
-          case &quot;min&quot;:    return Math.min.apply(Math, this.payments);
-          case &quot;max&quot;:    return Math.max.apply(Math, this.payments);
-          case &quot;sum&quot;:    return sum(this.payments);
-          case &quot;avg&quot;:    return sum(this.payments) / this.payments.length;
+        { payments: [11, 16, 12] },
+        function(_, key){
+            switch(key){
+                case &quot;count&quot;: return this.payments.length;
+                case &quot;min&quot;:     return Math.min.apply(Math, this.payments);
+                case &quot;max&quot;:     return Math.max.apply(Math, this.payments);
+                case &quot;sum&quot;:     return sum(this.payments);
+                case &quot;avg&quot;:     return sum(this.payments) / this.payments.length;
+            }
         }
-      }
     )
-  );
-  // prints: 3 payments averaging 13 USD per payment.</code></pre>
+);
+// prints: 3 payments averaging 13 USD per payment.</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  // uses an alternative PHP-like pattern for substitutions:
-  lang.replace(&quot;Hello, ${0} ${2}!&quot;,
+            <h3>Example 4</h3><pre><code>// uses an alternative PHP-like pattern for substitutions:
+lang.replace(&quot;Hello, ${0} ${2}!&quot;,
     [&quot;Robert&quot;, &quot;X&quot;, &quot;Cringely&quot;], /\$\{([^\}]+)\}/g);
-  // returns: Hello, Robert Cringely!</code></pre>
+// returns: Hello, Robert Cringely!</code></pre>
 
           </div>
         </div>
@@ -884,19 +910,26 @@ value if setting is successful or <code>undefined</code> if not.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>set the value of <code>foo.bar.baz</code>, regardless of whether
-intermediate objects already exist:</p>
-<pre><code> lang.setObject(&quot;foo.bar.baz&quot;, value);</code></pre>
+intermediate objects already exist:
+
+</p>
+<pre><code>lang.setObject(&quot;foo.bar.baz&quot;, value);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>without <code>lang.setObject</code>, we often see code like this:</p>
-<pre><code> // ensure that intermediate objects are available
- if(!obj[&quot;parent&quot;]){ obj.parent = {}; }
- if(!obj.parent[&quot;child&quot;]){ obj.parent.child = {}; }
- // now we can safely set the property
- obj.parent.child.prop = &quot;some value&quot;;</code></pre>
-<p>whereas with <code>lang.setObject</code>, we can shorten that to:</p>
-<pre><code> lang.setObject(&quot;parent.child.prop&quot;, &quot;some value&quot;, obj);</code></pre>
+            <h3>Example 2</h3><p>without <code>lang.setObject</code>, we often see code like this:
+
+</p>
+<pre><code>// ensure that intermediate objects are available
+if(!obj[&quot;parent&quot;]){ obj.parent = {}; }
+if(!obj.parent[&quot;child&quot;]){ obj.parent.child = {}; }
+// now we can safely set the property
+obj.parent.child.prop = &quot;some value&quot;;</code></pre>
+<p>whereas with <code>lang.setObject</code>, we can shorten that to:
+
+
+</p>
+<pre><code>lang.setObject(&quot;parent.child.prop&quot;, &quot;some value&quot;, obj);</code></pre>
 
           </div>
         </div>
@@ -930,8 +963,9 @@ lang.string.trim()</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
-        <div class="jsdoc-return-description">Returns the trimmed string</div>
+        <div class="jsdoc-return-description"><p>Returns the trimmed string</p>
+</div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/lang" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

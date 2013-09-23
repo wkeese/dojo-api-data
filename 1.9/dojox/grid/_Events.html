@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/_Events</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/_Events" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/_Events.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/_Events<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>_Grid mixin that provides default implementations for grid events.</p>
 </div>
@@ -7,107 +14,108 @@
 retain default implementation or override them for custom handling.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_grid__Events_cellOverClass" class="inline-link"> cellOverClass </a><span>css class to apply to grid cells over which the cursor is placed.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onApplyCellEdit" class="inline-link"> onApplyCellEdit</a><span class="parameters">(</span>inValue, inRowIndex, inFieldIndex) <span>Event fired when editing is applied for a given grid cell</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onApplyEdit" class="inline-link"> onApplyEdit</a><span class="parameters">(</span>inRowIndex) <span>Event fired when editing is applied for a given grid row</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCancelEdit" class="inline-link"> onCancelEdit</a><span class="parameters">(</span>inRowIndex) <span>Event fired when editing is cancelled for a given grid cell</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCanDeselect" class="inline-link"> onCanDeselect</a><span class="parameters">(</span>inRowIndex) <span>Event to determine if a grid row may be deselected</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCanSelect" class="inline-link"> onCanSelect</a><span class="parameters">(</span>inRowIndex) <span>Event to determine if a grid row may be selected</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellClick" class="inline-link"> onCellClick</a><span class="parameters">(</span>e) <span>Event fired when a cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellContextMenu" class="inline-link"> onCellContextMenu</a><span class="parameters">(</span>e) <span>Event fired when a cell context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellDblClick" class="inline-link"> onCellDblClick</a><span class="parameters">(</span>e) <span>Event fired when a cell is double-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellFocus" class="inline-link"> onCellFocus</a><span class="parameters">(</span>inCell, inRowIndex) <span>Event fired when a cell receives focus.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellMouseDown" class="inline-link"> onCellMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down in a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellMouseOut" class="inline-link"> onCellMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of a cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellMouseOver" class="inline-link"> onCellMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse is over a cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onContentEvent" class="inline-link"> onContentEvent</a><span class="parameters">(</span>e) <span>Top level handler for Content events</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onDeselected" class="inline-link"> onDeselected</a><span class="parameters">(</span>inRowIndex) <span>Event fired when a grid row is deselected</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellClick" class="inline-link"> onHeaderCellClick</a><span class="parameters">(</span>e) <span>Event fired when a header cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellContextMenu" class="inline-link"> onHeaderCellContextMenu</a><span class="parameters">(</span>e) <span>Event fired when a header cell context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellDblClick" class="inline-link"> onHeaderCellDblClick</a><span class="parameters">(</span>e) <span>Event fired when a header cell is double clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellMouseDown" class="inline-link"> onHeaderCellMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down in a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellMouseOut" class="inline-link"> onHeaderCellMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellMouseOver" class="inline-link"> onHeaderCellMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse moves over a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderClick" class="inline-link"> onHeaderClick</a><span class="parameters">(</span>e) <span>Event fired when the grid header is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderContextMenu" class="inline-link"> onHeaderContextMenu</a><span class="parameters">(</span>e) <span>Event fired when the grid header context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderDblClick" class="inline-link"> onHeaderDblClick</a><span class="parameters">(</span>e) <span>Event fired when the grid header is double clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderEvent" class="inline-link"> onHeaderEvent</a><span class="parameters">(</span>e) <span>Top level handler for header events</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderMouseOut" class="inline-link"> onHeaderMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of the grid header.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderMouseOver" class="inline-link"> onHeaderMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse moves over the grid header.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>e) <span>Grid key event handler.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onKeyEvent" class="inline-link"> onKeyEvent</a><span class="parameters">(</span>e) <span>top level handler for Key Events</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down inside grid.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseDownRow" class="inline-link"> onMouseDownRow</a><span class="parameters">(</span>e) <span>Event fired when mouse is down inside grid row</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of the grid.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOutRow" class="inline-link"> onMouseOutRow</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of any row (data or header).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse is over the grid.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOverRow" class="inline-link"> onMouseOverRow</a><span class="parameters">(</span>e) <span>Event fired when mouse is over any row (data or header).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowClick" class="inline-link"> onRowClick</a><span class="parameters">(</span>e) <span>Event fired when a row is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowContextMenu" class="inline-link"> onRowContextMenu</a><span class="parameters">(</span>e) <span>Event fired when a row context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowDblClick" class="inline-link"> onRowDblClick</a><span class="parameters">(</span>e) <span>Event fired when a row is double clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowMouseDown" class="inline-link"> onRowMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down in a row.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowMouseOut" class="inline-link"> onRowMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of a data row.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowMouseOver" class="inline-link"> onRowMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse moves over a data row.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onSelected" class="inline-link"> onSelected</a><span class="parameters">(</span>inRowIndex) <span>Event fired when a grid row is selected</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onSelectionChanged" class="inline-link"> onSelectionChanged</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onStartEdit" class="inline-link"> onStartEdit</a><span class="parameters">(</span>inCell, inRowIndex) <span>Event fired when editing is started for a given grid cell</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__Events_onStyleRow" class="inline-link"> onStyleRow</a><span class="parameters">(</span>inRow) <span>Perform row styling on a given row.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_grid__Events_cellOverClass" class="inline-link"> cellOverClass </a><span>css class to apply to grid cells over which the cursor is placed.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onApplyCellEdit" class="inline-link"> onApplyCellEdit</a><span class="parameters">(</span>inValue, inRowIndex, inFieldIndex) <span>Event fired when editing is applied for a given grid cell</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onApplyEdit" class="inline-link"> onApplyEdit</a><span class="parameters">(</span>inRowIndex) <span>Event fired when editing is applied for a given grid row</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCancelEdit" class="inline-link"> onCancelEdit</a><span class="parameters">(</span>inRowIndex) <span>Event fired when editing is cancelled for a given grid cell</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCanDeselect" class="inline-link"> onCanDeselect</a><span class="parameters">(</span>inRowIndex) <span>Event to determine if a grid row may be deselected</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCanSelect" class="inline-link"> onCanSelect</a><span class="parameters">(</span>inRowIndex) <span>Event to determine if a grid row may be selected</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellClick" class="inline-link"> onCellClick</a><span class="parameters">(</span>e) <span>Event fired when a cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellContextMenu" class="inline-link"> onCellContextMenu</a><span class="parameters">(</span>e) <span>Event fired when a cell context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellDblClick" class="inline-link"> onCellDblClick</a><span class="parameters">(</span>e) <span>Event fired when a cell is double-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellFocus" class="inline-link"> onCellFocus</a><span class="parameters">(</span>inCell, inRowIndex) <span>Event fired when a cell receives focus.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellMouseDown" class="inline-link"> onCellMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down in a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellMouseOut" class="inline-link"> onCellMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of a cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onCellMouseOver" class="inline-link"> onCellMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse is over a cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onContentEvent" class="inline-link"> onContentEvent</a><span class="parameters">(</span>e) <span>Top level handler for Content events</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onDeselected" class="inline-link"> onDeselected</a><span class="parameters">(</span>inRowIndex) <span>Event fired when a grid row is deselected</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellClick" class="inline-link"> onHeaderCellClick</a><span class="parameters">(</span>e) <span>Event fired when a header cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellContextMenu" class="inline-link"> onHeaderCellContextMenu</a><span class="parameters">(</span>e) <span>Event fired when a header cell context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellDblClick" class="inline-link"> onHeaderCellDblClick</a><span class="parameters">(</span>e) <span>Event fired when a header cell is double clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellMouseDown" class="inline-link"> onHeaderCellMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down in a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellMouseOut" class="inline-link"> onHeaderCellMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderCellMouseOver" class="inline-link"> onHeaderCellMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse moves over a header cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderClick" class="inline-link"> onHeaderClick</a><span class="parameters">(</span>e) <span>Event fired when the grid header is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderContextMenu" class="inline-link"> onHeaderContextMenu</a><span class="parameters">(</span>e) <span>Event fired when the grid header context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderDblClick" class="inline-link"> onHeaderDblClick</a><span class="parameters">(</span>e) <span>Event fired when the grid header is double clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderEvent" class="inline-link"> onHeaderEvent</a><span class="parameters">(</span>e) <span>Top level handler for header events</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderMouseOut" class="inline-link"> onHeaderMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of the grid header.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onHeaderMouseOver" class="inline-link"> onHeaderMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse moves over the grid header.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>e) <span>Grid key event handler.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onKeyEvent" class="inline-link"> onKeyEvent</a><span class="parameters">(</span>e) <span>top level handler for Key Events</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down inside grid.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseDownRow" class="inline-link"> onMouseDownRow</a><span class="parameters">(</span>e) <span>Event fired when mouse is down inside grid row</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of the grid.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOutRow" class="inline-link"> onMouseOutRow</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of any row (data or header).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse is over the grid.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onMouseOverRow" class="inline-link"> onMouseOverRow</a><span class="parameters">(</span>e) <span>Event fired when mouse is over any row (data or header).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowClick" class="inline-link"> onRowClick</a><span class="parameters">(</span>e) <span>Event fired when a row is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowContextMenu" class="inline-link"> onRowContextMenu</a><span class="parameters">(</span>e) <span>Event fired when a row context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowDblClick" class="inline-link"> onRowDblClick</a><span class="parameters">(</span>e) <span>Event fired when a row is double clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowMouseDown" class="inline-link"> onRowMouseDown</a><span class="parameters">(</span>e) <span>Event fired when mouse is down in a row.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowMouseOut" class="inline-link"> onRowMouseOut</a><span class="parameters">(</span>e) <span>Event fired when mouse moves out of a data row.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onRowMouseOver" class="inline-link"> onRowMouseOver</a><span class="parameters">(</span>e) <span>Event fired when mouse moves over a data row.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onSelected" class="inline-link"> onSelected</a><span class="parameters">(</span>inRowIndex) <span>Event fired when a grid row is selected</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onSelectionChanged" class="inline-link"> onSelectionChanged</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onStartEdit" class="inline-link"> onStartEdit</a><span class="parameters">(</span>inCell, inRowIndex) <span>Event fired when editing is started for a given grid cell</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__Events_onStyleRow" class="inline-link"> onStyleRow</a><span class="parameters">(</span>inRow) <span>Perform row styling on a given row.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -433,4 +441,4 @@ tab, shift-tab, and arrow keys move grid cell focus.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/_Events" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

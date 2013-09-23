@@ -1,61 +1,71 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/WidgetSet</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/WidgetSet" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/WidgetSet.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/WidgetSet<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A set of widgets indexed by id.
 Deprecated, will be removed in 2.0.
 </p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dijit/WidgetSet<span class="parameters">();</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new WidgetSet<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/WidgetSet">dijit/WidgetSet</a></div>
 <p>See the <a href="/reference-guide/1.8/dijit/WidgetSet.html" target="_blank">dijit/WidgetSet reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>Create a small list of widgets:</p>
-<pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>Create a small list of widgets:
+
+</p>
+<pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     var ws = new WidgetSet();
     ws.add(registry.byId(&quot;one&quot;));
     ws.add(registry.byId(&quot;two&quot;));
     // destroy both:
     ws.forEach(function(w){ w.destroy(); });
-  });</code></pre>
+});</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_add" class="inline-link"> add</a><span class="parameters">(</span>widget) <span>Add a widget to this list.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_byClass" class="inline-link"> byClass</a><span class="parameters">(</span>cls) <span>Reduce this widgetset to a new WidgetSet of a particular declaredClass</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_byId" class="inline-link"> byId</a><span class="parameters">(</span>id) <span>Find a widget in this list by it&#39;s id.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_every" class="inline-link"> every</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.every acting explicitly on this WidgetSet</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter, thisObj) <span>Filter down this WidgetSet to a smaller new WidgetSet
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_add" class="inline-link"> add</a><span class="parameters">(</span>widget) <span>Add a widget to this list.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_byClass" class="inline-link"> byClass</a><span class="parameters">(</span>cls) <span>Reduce this widgetset to a new WidgetSet of a particular declaredClass</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_byId" class="inline-link"> byId</a><span class="parameters">(</span>id) <span>Find a widget in this list by it&#39;s id.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_every" class="inline-link"> every</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.every acting explicitly on this WidgetSet</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter, thisObj) <span>Filter down this WidgetSet to a smaller new WidgetSet
 Works the same as array.filter and NodeList.filter</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>func, thisObj) <span>Call specified function for each widget in this set.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_map" class="inline-link"> map</a><span class="parameters">(</span>func, thisObj) <span>Create a new Array from this WidgetSet, following the same rules as array.map</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Remove a widget from this WidgetSet.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_some" class="inline-link"> some</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.some acting explicitly on this WidgetSet</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_WidgetSet_toArray" class="inline-link"> toArray</a><span class="parameters">(</span>) <span>Convert this WidgetSet into a true Array</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>func, thisObj) <span>Call specified function for each widget in this set.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_map" class="inline-link"> map</a><span class="parameters">(</span>func, thisObj) <span>Create a new Array from this WidgetSet, following the same rules as array.map</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Remove a widget from this WidgetSet.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_some" class="inline-link"> some</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.some acting explicitly on this WidgetSet</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_WidgetSet_toArray" class="inline-link"> toArray</a><span class="parameters">(</span>) <span>Convert this WidgetSet into a true Array</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -111,11 +121,13 @@ Works the same as array.filter and NodeList.filter</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Find all <code>dijit.TitlePane</code>s in a page:</p>
-<pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+            <h3>Example 1</h3><p>Find all <code>dijit.TitlePane</code>s in a page:
+
+</p>
+<pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     registry.byClass(&quot;dijit.TitlePane&quot;).forEach(function(tp){ tp.close(); });
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -144,14 +156,16 @@ Works the same as array.filter and NodeList.filter</span>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Test if an id is in a particular WidgetSet</p>
-<pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+            <h3>Example 1</h3><p>Test if an id is in a particular WidgetSet
+
+</p>
+<pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     var ws = new WidgetSet();
     ws.add(registry.byId(&quot;bar&quot;));
     var t = ws.byId(&quot;bar&quot;) // returns a widget
     var x = ws.byId(&quot;foo&quot;); // returns undefined
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -235,13 +249,18 @@ reference and the pseudo-index in the object.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Arbitrary: select the odd widgets in this list</p>
-<pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+            <h3>Example 1</h3><p>Arbitrary: select the odd widgets in this list
+
+
+
+
+</p>
+<pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     registry.filter(function(w, i){
-      return i % 2 == 0;
+        return i % 2 == 0;
     }).forEach(function(w){ /* odd ones */ });
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -280,18 +299,20 @@ in the iteration, and the full hash, similar to <code>array.forEach</code>.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
-        <div class="jsdoc-return-description">Returns self, in order to allow for further chaining.</div>
+        <div class="jsdoc-return-description"><p>Returns self, in order to allow for further chaining.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Using the default <code>dijit.registry</code> instance:</p>
-<pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+            <h3>Example 1</h3><p>Using the default <code>dijit.registry</code> instance:
+
+</p>
+<pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     registry.forEach(function(widget){
-      console.log(widget.declaredClass);
+        console.log(widget.declaredClass);
     });
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
         </div>
@@ -324,15 +345,15 @@ in the iteration, and the full hash, similar to <code>array.forEach</code>.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">A new array of the returned values.</div>
+        <div class="jsdoc-return-description"><p>A new array of the returned values.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+            <h3>Example 1</h3><pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     var nodes = registry.map(function(w){ return w.domNode; });
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
         </div>
@@ -405,15 +426,17 @@ when the first true return is encountered.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Work with the widget .domNodes in a real Array</p>
-<pre><code>  require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
+            <h3>Example 1</h3><p>Work with the widget .domNodes in a real Array
+
+</p>
+<pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
     function(WidgetSet, registry){
     array.map(registry.toArray(), function(w){ return w.domNode; });
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/WidgetSet" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/declare</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/declare" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/declare.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/_base/declare<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Create a feature-rich constructor from compact notation.</p>
 </div>
@@ -118,171 +125,167 @@ named &quot;constructor&quot;.</p>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/_base/declare.html" target="_blank">dojo/_base/declare reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  declare(&quot;my.classes.bar&quot;, my.classes.foo, {
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>declare(&quot;my.classes.bar&quot;, my.classes.foo, {
     // properties to be added to the class prototype
     someValue: 2,
     // initialization function
     constructor: function(){
-      this.myComplicatedObject = new ReallyComplicatedObject();
+        this.myComplicatedObject = new ReallyComplicatedObject();
     },
     // other functions
     someMethod: function(){
-      doStuff();
+        doStuff();
     }
-  });</code></pre>
-<p></p>
+});</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>  var MyBase = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>var MyBase = declare(null, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var MyClass1 = declare(MyBase, {
+});
+var MyClass1 = declare(MyBase, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var MyClass2 = declare(MyBase, {
+});
+var MyClass2 = declare(MyBase, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var MyDiamond = declare([MyClass1, MyClass2], {
+});
+var MyDiamond = declare([MyClass1, MyClass2], {
     // constructor, properties, and methods go here
     // ...
-  });</code></pre>
-<p></p>
+});</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>  var F = function(){ console.log(&quot;raw constructor&quot;); };
-  F.prototype.method = function(){
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><pre><code>var F = function(){ console.log(&quot;raw constructor&quot;); };
+F.prototype.method = function(){
     console.log(&quot;raw method&quot;);
-  };
-  var A = declare(F, {
+};
+var A = declare(F, {
     constructor: function(){
-      console.log(&quot;A.constructor&quot;);
+        console.log(&quot;A.constructor&quot;);
     },
     method: function(){
-      console.log(&quot;before calling F.method...&quot;);
-      this.inherited(arguments);
-      console.log(&quot;...back in A&quot;);
+        console.log(&quot;before calling F.method...&quot;);
+        this.inherited(arguments);
+        console.log(&quot;...back in A&quot;);
     }
-  });
-  new A().method();
-  // will print:
-  // raw constructor
-  // A.constructor
-  // before calling F.method...
-  // raw method
-  // ...back in A</code></pre>
-<p></p>
+});
+new A().method();
+// will print:
+// raw constructor
+// A.constructor
+// before calling F.method...
+// raw method
+// ...back in A</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><pre><code>  var A = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 4</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
-      destroy: &quot;before&quot;
+        destroy: &quot;before&quot;
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     constructor: function(){
-      console.log(&quot;B.constructor&quot;);
+        console.log(&quot;B.constructor&quot;);
     },
     destroy: function(){
-      console.log(&quot;B.destroy&quot;);
+        console.log(&quot;B.destroy&quot;);
     }
-  });
-  var C = declare(B, {
+});
+var C = declare(B, {
     constructor: function(){
-      console.log(&quot;C.constructor&quot;);
+        console.log(&quot;C.constructor&quot;);
     },
     destroy: function(){
-      console.log(&quot;C.destroy&quot;);
+        console.log(&quot;C.destroy&quot;);
     }
-  });
-  new C().destroy();
-  // prints:
-  // B.constructor
-  // C.constructor
-  // C.destroy
-  // B.destroy</code></pre>
-<p></p>
+});
+new C().destroy();
+// prints:
+// B.constructor
+// C.constructor
+// C.destroy
+// B.destroy</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 5</h3><pre><code>  var A = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 5</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
-      constructor: &quot;manual&quot;
+        constructor: &quot;manual&quot;
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     constructor: function(){
-      // ...
-      // call the base constructor with new parameters
-      this.inherited(arguments, [1, 2, 3]);
-      // ...
+        // ...
+        // call the base constructor with new parameters
+        this.inherited(arguments, [1, 2, 3]);
+        // ...
     }
-  });</code></pre>
-<p></p>
+});</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 6</h3><pre><code>  var A = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 6</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
-      m1: &quot;before&quot;
+        m1: &quot;before&quot;
     },
     m1: function(){
-      console.log(&quot;A.m1&quot;);
+        console.log(&quot;A.m1&quot;);
     },
     m2: function(){
-      console.log(&quot;A.m2&quot;);
+        console.log(&quot;A.m2&quot;);
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     &quot;-chains-&quot;: {
-      m2: &quot;after&quot;
+        m2: &quot;after&quot;
     },
     m1: function(){
-      console.log(&quot;B.m1&quot;);
+        console.log(&quot;B.m1&quot;);
     },
     m2: function(){
-      console.log(&quot;B.m2&quot;);
+        console.log(&quot;B.m2&quot;);
     }
-  });
-  var x = new B();
-  x.m1();
-  // prints:
-  // B.m1
-  // A.m1
-  x.m2();
-  // prints:
-  // A.m2
-  // B.m2</code></pre>
+});
+var x = new B();
+x.m1();
+// prints:
+// B.m1
+// A.m1
+x.m2();
+// prints:
+// A.m2
+// B.m2</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojo__base_declare___DeclareCreatedObject" class="inline-link"> __DeclareCreatedObject </a><span>dojo/_base/declare() returns a constructor C.   new C() returns an Object with the following
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojo__base_declare___DeclareCreatedObject" class="inline-link"> __DeclareCreatedObject </a><span>dojo/_base/declare() returns a constructor C.   new C() returns an Object with the following
 methods, in addition to the methods and properties specified via the arguments passed to declare().</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo__base_declare_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>className, superclass, props) <span>Create a feature-rich constructor from compact notation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_declare_safeMixin" class="inline-link"> safeMixin</a><span class="parameters">(</span>target, source) <span>Mix in properties skipping a constructor and decorating functions
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo__base_declare_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>className, superclass, props) <span>Create a feature-rich constructor from compact notation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_declare_safeMixin" class="inline-link"> safeMixin</a><span class="parameters">(</span>target, source) <span>Mix in properties skipping a constructor and decorating functions
 like it is done by declare().</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -421,150 +424,146 @@ named &quot;constructor&quot;.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/declare.__DeclareCreatedObject">dojo/_base/declare.__DeclareCreatedObject</a> | undefined</span></div>
-        <div class="jsdoc-return-description">New constructor function.</div>
+        <div class="jsdoc-return-description"><p>New constructor function.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  declare(&quot;my.classes.bar&quot;, my.classes.foo, {
+            <h3>Example 1</h3><pre><code>declare(&quot;my.classes.bar&quot;, my.classes.foo, {
     // properties to be added to the class prototype
     someValue: 2,
     // initialization function
     constructor: function(){
-      this.myComplicatedObject = new ReallyComplicatedObject();
+        this.myComplicatedObject = new ReallyComplicatedObject();
     },
     // other functions
     someMethod: function(){
-      doStuff();
+        doStuff();
     }
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  var MyBase = declare(null, {
+            <h3>Example 2</h3><pre><code>var MyBase = declare(null, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var MyClass1 = declare(MyBase, {
+});
+var MyClass1 = declare(MyBase, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var MyClass2 = declare(MyBase, {
+});
+var MyClass2 = declare(MyBase, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var MyDiamond = declare([MyClass1, MyClass2], {
+});
+var MyDiamond = declare([MyClass1, MyClass2], {
     // constructor, properties, and methods go here
     // ...
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code>  var F = function(){ console.log(&quot;raw constructor&quot;); };
-  F.prototype.method = function(){
+            <h3>Example 3</h3><pre><code>var F = function(){ console.log(&quot;raw constructor&quot;); };
+F.prototype.method = function(){
     console.log(&quot;raw method&quot;);
-  };
-  var A = declare(F, {
+};
+var A = declare(F, {
     constructor: function(){
-      console.log(&quot;A.constructor&quot;);
+        console.log(&quot;A.constructor&quot;);
     },
     method: function(){
-      console.log(&quot;before calling F.method...&quot;);
-      this.inherited(arguments);
-      console.log(&quot;...back in A&quot;);
+        console.log(&quot;before calling F.method...&quot;);
+        this.inherited(arguments);
+        console.log(&quot;...back in A&quot;);
     }
-  });
-  new A().method();
-  // will print:
-  // raw constructor
-  // A.constructor
-  // before calling F.method...
-  // raw method
-  // ...back in A</code></pre>
-<p></p>
+});
+new A().method();
+// will print:
+// raw constructor
+// A.constructor
+// before calling F.method...
+// raw method
+// ...back in A</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><pre><code>  var A = declare(null, {
+            <h3>Example 4</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
-      destroy: &quot;before&quot;
+        destroy: &quot;before&quot;
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     constructor: function(){
-      console.log(&quot;B.constructor&quot;);
+        console.log(&quot;B.constructor&quot;);
     },
     destroy: function(){
-      console.log(&quot;B.destroy&quot;);
+        console.log(&quot;B.destroy&quot;);
     }
-  });
-  var C = declare(B, {
+});
+var C = declare(B, {
     constructor: function(){
-      console.log(&quot;C.constructor&quot;);
+        console.log(&quot;C.constructor&quot;);
     },
     destroy: function(){
-      console.log(&quot;C.destroy&quot;);
+        console.log(&quot;C.destroy&quot;);
     }
-  });
-  new C().destroy();
-  // prints:
-  // B.constructor
-  // C.constructor
-  // C.destroy
-  // B.destroy</code></pre>
-<p></p>
+});
+new C().destroy();
+// prints:
+// B.constructor
+// C.constructor
+// C.destroy
+// B.destroy</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><pre><code>  var A = declare(null, {
+            <h3>Example 5</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
-      constructor: &quot;manual&quot;
+        constructor: &quot;manual&quot;
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     constructor: function(){
-      // ...
-      // call the base constructor with new parameters
-      this.inherited(arguments, [1, 2, 3]);
-      // ...
+        // ...
+        // call the base constructor with new parameters
+        this.inherited(arguments, [1, 2, 3]);
+        // ...
     }
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 6</h3><pre><code>  var A = declare(null, {
+            <h3>Example 6</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
-      m1: &quot;before&quot;
+        m1: &quot;before&quot;
     },
     m1: function(){
-      console.log(&quot;A.m1&quot;);
+        console.log(&quot;A.m1&quot;);
     },
     m2: function(){
-      console.log(&quot;A.m2&quot;);
+        console.log(&quot;A.m2&quot;);
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     &quot;-chains-&quot;: {
-      m2: &quot;after&quot;
+        m2: &quot;after&quot;
     },
     m1: function(){
-      console.log(&quot;B.m1&quot;);
+        console.log(&quot;B.m1&quot;);
     },
     m2: function(){
-      console.log(&quot;B.m2&quot;);
+        console.log(&quot;B.m2&quot;);
     }
-  });
-  var x = new B();
-  x.m1();
-  // prints:
-  // B.m1
-  // A.m1
-  x.m2();
-  // prints:
-  // A.m2
-  // B.m2</code></pre>
+});
+var x = new B();
+x.m1();
+// prints:
+// B.m1
+// A.m1
+x.m2();
+// prints:
+// A.m2
+// B.m2</code></pre>
 
           </div>
         </div>
@@ -618,46 +617,46 @@ produced with declare().
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var A = declare(null, {
+            <h3>Example 1</h3><pre><code>var A = declare(null, {
     m1: function(){
-      console.log(&quot;A.m1&quot;);
+        console.log(&quot;A.m1&quot;);
     },
     m2: function(){
-      console.log(&quot;A.m2&quot;);
+        console.log(&quot;A.m2&quot;);
     }
-  });
-  var B = declare(A, {
+});
+var B = declare(A, {
     m1: function(){
-      this.inherited(arguments);
-      console.log(&quot;B.m1&quot;);
+        this.inherited(arguments);
+        console.log(&quot;B.m1&quot;);
     }
-  });
-  B.extend({
+});
+B.extend({
     m2: function(){
-      this.inherited(arguments);
-      console.log(&quot;B.m2&quot;);
+        this.inherited(arguments);
+        console.log(&quot;B.m2&quot;);
     }
-  });
-  var x = new B();
-  dojo.safeMixin(x, {
+});
+var x = new B();
+dojo.safeMixin(x, {
     m1: function(){
-      this.inherited(arguments);
-      console.log(&quot;X.m1&quot;);
+        this.inherited(arguments);
+        console.log(&quot;X.m1&quot;);
     },
     m2: function(){
-      this.inherited(arguments);
-      console.log(&quot;X.m2&quot;);
+        this.inherited(arguments);
+        console.log(&quot;X.m2&quot;);
     }
-  });
-  x.m2();
-  // prints:
-  // A.m1
-  // B.m1
-  // X.m1</code></pre>
+});
+x.m2();
+// prints:
+// A.m1
+// B.m1
+// X.m1</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/declare" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

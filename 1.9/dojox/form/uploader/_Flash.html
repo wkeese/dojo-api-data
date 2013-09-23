@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/form/uploader/_Flash</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/form/uploader/_Flash" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/form/uploader/_Flash.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/form/uploader/_Flash<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A mixin for <a class="jsdoc-link" href="/api/1.9/dojox/form/Uploader">dojox/form/Uploader</a> that utilizes a Flash SWF for handling to upload in IE.
 All other browsers will use the HTML5 plugin, unless force=&quot;flash&quot; is used, then Flash
@@ -13,72 +20,73 @@ that Firefox and Webkit have with the Flash plugin.
 </p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_9dojox_form_uploader__Flash_deferredUploading" class="inline-link"> deferredUploading </a><span>(Flash only) throttles the upload to a certain amount of files at a time.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_form_uploader__Flash_devMode" class="inline-link"> devMode </a><span>Re-implemented. devMode increases the logging, adding style tracing from the SWF.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_form_uploader__Flash_isDebug" class="inline-link"> isDebug </a><span>If true, outputs traces from the SWF to console.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_form_uploader__Flash_preventCache" class="inline-link"> preventCache </a><span>If true, then flash request is sent with a value that changes with each request (timestamp)</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_form_uploader__Flash_serverTimeout" class="inline-link"> serverTimeout </a><span>The amount of time given to the uploaded file
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_9dojox_form_uploader__Flash_deferredUploading" class="inline-link"> deferredUploading </a><span>(Flash only) throttles the upload to a certain amount of files at a time.</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_form_uploader__Flash_devMode" class="inline-link"> devMode </a><span>Re-implemented. devMode increases the logging, adding style tracing from the SWF.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_form_uploader__Flash_isDebug" class="inline-link"> isDebug </a><span>If true, outputs traces from the SWF to console.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_form_uploader__Flash_preventCache" class="inline-link"> preventCache </a><span>If true, then flash request is sent with a value that changes with each request (timestamp)</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_form_uploader__Flash_serverTimeout" class="inline-link"> serverTimeout </a><span>The amount of time given to the uploaded file
 to wait for a server response.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_form_uploader__Flash_skipServerCheck" class="inline-link"> skipServerCheck </a><span>If true, will not verify that the server was sent the correct format.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_form_uploader__Flash_swfPath" class="inline-link"> swfPath </a><span>Path to SWF.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__change" class="inline-link"> _change</a><span class="parameters">(</span>fileArray) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__complete" class="inline-link"> _complete</a><span class="parameters">(</span>fileArray) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__connectFlash" class="inline-link"> _connectFlash</a><span class="parameters">(</span>) <span>Subscribing to published topics coming from the
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_form_uploader__Flash_skipServerCheck" class="inline-link"> skipServerCheck </a><span>If true, will not verify that the server was sent the correct format.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_form_uploader__Flash_swfPath" class="inline-link"> swfPath </a><span>Path to SWF.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__change" class="inline-link"> _change</a><span class="parameters">(</span>fileArray) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__complete" class="inline-link"> _complete</a><span class="parameters">(</span>fileArray) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__connectFlash" class="inline-link"> _connectFlash</a><span class="parameters">(</span>) <span>Subscribing to published topics coming from the
 Flash uploader.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__createFlashUploader" class="inline-link"> _createFlashUploader</a><span class="parameters">(</span>) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__error" class="inline-link"> _error</a><span class="parameters">(</span>err) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__getCustomEvent" class="inline-link"> _getCustomEvent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__progress" class="inline-link"> _progress</a><span class="parameters">(</span>f) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_flashReset" class="inline-link"> flashReset</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_getFlashFileList" class="inline-link"> getFlashFileList</a><span class="parameters">(</span>) <span>Returns list of currently selected files</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash_uploadFlash" class="inline-link"> uploadFlash</a><span class="parameters">(</span>formData) <span>Uploads selected files.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__onFlashBlur" class="inline-link"> _onFlashBlur</a><span class="parameters">(</span>fileArray) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onFileChange" class="inline-link"> onFileChange</a><span class="parameters">(</span>fileArray) <span>Stub - Flash-specific event.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onFileProgress" class="inline-link"> onFileProgress</a><span class="parameters">(</span>fileArray) <span>Stub - Flash-specific event.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>uploader) <span>Stub - SWF has been downloaded 100%.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onReady" class="inline-link"> onReady</a><span class="parameters">(</span>uploader) <span>Stub - Fired when embedFlash has created the
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__createFlashUploader" class="inline-link"> _createFlashUploader</a><span class="parameters">(</span>) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__error" class="inline-link"> _error</a><span class="parameters">(</span>err) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__getCustomEvent" class="inline-link"> _getCustomEvent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__progress" class="inline-link"> _progress</a><span class="parameters">(</span>f) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_flashReset" class="inline-link"> flashReset</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_getFlashFileList" class="inline-link"> getFlashFileList</a><span class="parameters">(</span>) <span>Returns list of currently selected files</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash_uploadFlash" class="inline-link"> uploadFlash</a><span class="parameters">(</span>formData) <span>Uploads selected files.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_form_uploader__Flash__onFlashBlur" class="inline-link"> _onFlashBlur</a><span class="parameters">(</span>fileArray) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onFileChange" class="inline-link"> onFileChange</a><span class="parameters">(</span>fileArray) <span>Stub - Flash-specific event.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onFileProgress" class="inline-link"> onFileProgress</a><span class="parameters">(</span>fileArray) <span>Stub - Flash-specific event.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>uploader) <span>Stub - SWF has been downloaded 100%.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form_uploader__Flash_onReady" class="inline-link"> onReady</a><span class="parameters">(</span>uploader) <span>Stub - Fired when embedFlash has created the
 Flash object, but it has not necessarilly finished
 downloading, and is ready to be communicated with.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -349,4 +357,4 @@ downloading, and is ready to be communicated with.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/form/uploader/_Flash" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

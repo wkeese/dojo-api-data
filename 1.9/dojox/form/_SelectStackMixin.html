@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/form/_SelectStackMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/form/_SelectStackMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/form/_SelectStackMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/form/_SelectStackMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Mix this class in to a dijit.form._FormSelectWidget in order to
 provide support for &quot;selectable&quot; multiforms.  The widget is pointed
@@ -16,55 +23,56 @@ is provided.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/form.html" target="_blank">dojox/form/_SelectStackMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_form__SelectStackMixin_stackId" class="inline-link"> stackId </a><span>The id of the stack that this widget is supposed to control</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_form__SelectStackMixin_stackPrefix" class="inline-link"> stackPrefix </a><span>A prefix to remove from our stack pane ids when setting our options.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__connectTitle" class="inline-link"> _connectTitle</a><span class="parameters">(</span>pane, value) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__handleSelfOnChange" class="inline-link"> _handleSelfOnChange</a><span class="parameters">(</span>val) <span>Called when form select widget&#39;s value has changed</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__optionValFromPane" class="inline-link"> _optionValFromPane</a><span class="parameters">(</span>id) <span>Gets the option value given a pane ID</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__paneIdFromOption" class="inline-link"> _paneIdFromOption</a><span class="parameters">(</span>oVal) <span>Gets the pane ID given an option value</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>v) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__togglePane" class="inline-link"> _togglePane</a><span class="parameters">(</span>pane, shown) <span>called when a pane is either shown or hidden (so that
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_form__SelectStackMixin_stackId" class="inline-link"> stackId </a><span>The id of the stack that this widget is supposed to control</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_form__SelectStackMixin_stackPrefix" class="inline-link"> stackPrefix </a><span>A prefix to remove from our stack pane ids when setting our options.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__connectTitle" class="inline-link"> _connectTitle</a><span class="parameters">(</span>pane, value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__handleSelfOnChange" class="inline-link"> _handleSelfOnChange</a><span class="parameters">(</span>val) <span>Called when form select widget&#39;s value has changed</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__optionValFromPane" class="inline-link"> _optionValFromPane</a><span class="parameters">(</span>id) <span>Gets the option value given a pane ID</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__paneIdFromOption" class="inline-link"> _paneIdFromOption</a><span class="parameters">(</span>oVal) <span>Gets the pane ID given an option value</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>v) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_form__SelectStackMixin__togglePane" class="inline-link"> _togglePane</a><span class="parameters">(</span>pane, shown) <span>called when a pane is either shown or hidden (so that
 we can toggle the widgets on it)</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_attr" class="inline-link"> attr</a><span class="parameters">(</span>name, value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onAddChild" class="inline-link"> onAddChild</a><span class="parameters">(</span>pane, insertIndex) <span>Called when the stack container adds a new pane</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onRemoveChild" class="inline-link"> onRemoveChild</a><span class="parameters">(</span>pane) <span>Called when the stack container removes a pane</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onSelectChild" class="inline-link"> onSelectChild</a><span class="parameters">(</span>pane) <span>Called when the stack container selects a new pane</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onStartup" class="inline-link"> onStartup</a><span class="parameters">(</span>info) <span>Called when the stack container is started up</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_attr" class="inline-link"> attr</a><span class="parameters">(</span>name, value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onAddChild" class="inline-link"> onAddChild</a><span class="parameters">(</span>pane, insertIndex) <span>Called when the stack container adds a new pane</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onRemoveChild" class="inline-link"> onRemoveChild</a><span class="parameters">(</span>pane) <span>Called when the stack container removes a pane</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onSelectChild" class="inline-link"> onSelectChild</a><span class="parameters">(</span>pane) <span>Called when the stack container selects a new pane</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_form__SelectStackMixin_onStartup" class="inline-link"> onStartup</a><span class="parameters">(</span>info) <span>Called when the stack container is started up</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -317,4 +325,4 @@ we can toggle the widgets on it)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/form/_SelectStackMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

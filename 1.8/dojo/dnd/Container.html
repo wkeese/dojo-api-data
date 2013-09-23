@@ -1,15 +1,22 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/Container</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dnd/Container" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/Container.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/dnd/Container<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
 </div>
 <div class="jsdoc-full-summary"><p>a Container object, which knows when mouse hovers over it,
 and over which element it hovers</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/dnd/Container<span class="parameters">(node,params);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Container<span class="parameters">(node,params);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Container">dojo/dnd/Container</a></div>
 <div class="jsdoc-summary"><p>a constructor of the Container</p>
@@ -37,86 +44,87 @@ and over which element it hovers</p>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/dnd.html" target="_blank">dojo/dnd/Container reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon"><a href="#1_8dojo_dnd_Container_allowNested" class="inline-link"> allowNested </a><span>Indicates whether to allow dnd item nodes to be nested within other elements.</span>
-    </li>
-    <li class="domnodeIcon"><a href="#1_8dojo_dnd_Container_current" class="inline-link"> current </a><span>The DOM node the mouse is currently hovered over</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojo_dnd_Container_map" class="inline-link"> map </a><span>Map from an item&#39;s id (which is also the DOMNode&#39;s id) to
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon"><a href="#1_8dojo_dnd_Container_allowNested" class="inline-link"> allowNested </a><span>Indicates whether to allow dnd item nodes to be nested within other elements.</span>
+        </li>
+        <li class="domnodeIcon"><a href="#1_8dojo_dnd_Container_current" class="inline-link"> current </a><span>The DOM node the mouse is currently hovered over</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojo_dnd_Container_map" class="inline-link"> map </a><span>Map from an item&#39;s id (which is also the DOMNode&#39;s id) to
 the dojo/dnd/Container.Item itself.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojo_dnd_Container_skipForm" class="inline-link"> skipForm </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Container___ContainerArgs" class="inline-link"> __ContainerArgs</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__getChildByEvent" class="inline-link"> _getChildByEvent</a><span class="parameters">(</span>e) <span>gets a child, which is under the mouse at the moment, or null</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__normalizedCreator" class="inline-link"> _normalizedCreator</a><span class="parameters">(</span>item, hint) <span>adds all necessary data to the output of the user-supplied creator function</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_clearItems" class="inline-link"> clearItems</a><span class="parameters">(</span>) <span>removes all data items from the map</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>a constructor of the Container</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_creator" class="inline-link"> creator</a><span class="parameters">(</span>) <span>creator function, dummy at the moment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_delItem" class="inline-link"> delItem</a><span class="parameters">(</span>key) <span>removes a data item from the map by its key (id)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>prepares this object to be garbage-collected</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Container_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_forInItems" class="inline-link"> forInItems</a><span class="parameters">(</span>f, o) <span>iterates over a data map skipping members that
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojo_dnd_Container_skipForm" class="inline-link"> skipForm </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Container___ContainerArgs" class="inline-link"> __ContainerArgs</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__getChildByEvent" class="inline-link"> _getChildByEvent</a><span class="parameters">(</span>e) <span>gets a child, which is under the mouse at the moment, or null</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__normalizedCreator" class="inline-link"> _normalizedCreator</a><span class="parameters">(</span>item, hint) <span>adds all necessary data to the output of the user-supplied creator function</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Container__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_clearItems" class="inline-link"> clearItems</a><span class="parameters">(</span>) <span>removes all data items from the map</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>a constructor of the Container</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_creator" class="inline-link"> creator</a><span class="parameters">(</span>) <span>creator function, dummy at the moment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_delItem" class="inline-link"> delItem</a><span class="parameters">(</span>key) <span>removes a data item from the map by its key (id)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>prepares this object to be garbage-collected</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Container_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_forInItems" class="inline-link"> forInItems</a><span class="parameters">(</span>f, o) <span>iterates over a data map skipping members that
 are present in the empty object (IE and/or 3rd-party libraries).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_getAllNodes" class="inline-link"> getAllNodes</a><span class="parameters">(</span>) <span>returns a list (an array) of all valid child nodes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_getItem" class="inline-link"> getItem</a><span class="parameters">(</span>key) <span>returns a data item by its key (id)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_insertNodes" class="inline-link"> insertNodes</a><span class="parameters">(</span>data, before, anchor) <span>inserts an array of new nodes before/after an anchor node</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_Item" class="inline-link"> Item</a><span class="parameters">(</span>) <span>Represents (one of) the source node(s) being dragged.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Container_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_setItem" class="inline-link"> setItem</a><span class="parameters">(</span>key, data) <span>associates a data item with its key (id)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>collects valid child items and populate the map</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_sync" class="inline-link"> sync</a><span class="parameters">(</span>) <span>sync up the node list with the data map</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>e) <span>event processor for onmouseout</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>e) <span>event processor for onmouseover or touch, to mark that element as the current element</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is out of our container</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is over our container</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_getAllNodes" class="inline-link"> getAllNodes</a><span class="parameters">(</span>) <span>returns a list (an array) of all valid child nodes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_getItem" class="inline-link"> getItem</a><span class="parameters">(</span>key) <span>returns a data item by its key (id)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_insertNodes" class="inline-link"> insertNodes</a><span class="parameters">(</span>data, before, anchor) <span>inserts an array of new nodes before/after an anchor node</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_Item" class="inline-link"> Item</a><span class="parameters">(</span>) <span>Represents (one of) the source node(s) being dragged.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Container_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_setItem" class="inline-link"> setItem</a><span class="parameters">(</span>key, data) <span>associates a data item with its key (id)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>collects valid child items and populate the map</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_sync" class="inline-link"> sync</a><span class="parameters">(</span>) <span>sync up the node list with the data map</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>e) <span>event processor for onmouseout</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>e) <span>event processor for onmouseover or touch, to mark that element as the current element</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is out of our container</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>this function is called once, when mouse is over our container</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Container_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -662,4 +670,4 @@ Contains (at least) the &quot;type&quot; and &quot;data&quot; attributes.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dnd/Container" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

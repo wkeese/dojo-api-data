@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/declare</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/_base/declare" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/declare.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/_base/declare<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Create a feature-rich constructor from compact notation.</p>
 </div>
@@ -118,12 +125,11 @@ named &quot;constructor&quot;.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/_base/declare.html" target="_blank">dojo/_base/declare reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>declare(&quot;my.classes.bar&quot;, my.classes.foo, {
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>declare(&quot;my.classes.bar&quot;, my.classes.foo, {
     // properties to be added to the class prototype
     someValue: 2,
     // initialization function
@@ -136,9 +142,9 @@ named &quot;constructor&quot;.</p>
     }
 });</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>var MyBase = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>var MyBase = declare(null, {
     // constructor, properties, and methods go here
     // ...
 });
@@ -155,9 +161,9 @@ var MyDiamond = declare([MyClass1, MyClass2], {
     // ...
 });</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>var F = function(){ console.log(&quot;raw constructor&quot;); };
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><pre><code>var F = function(){ console.log(&quot;raw constructor&quot;); };
 F.prototype.method = function(){
     console.log(&quot;raw method&quot;);
 };
@@ -179,9 +185,9 @@ new A().method();
 // raw method
 // ...back in A</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><pre><code>var A = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 4</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
         destroy: &quot;before&quot;
     }
@@ -209,9 +215,9 @@ new C().destroy();
 // C.destroy
 // B.destroy</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 5</h3><pre><code>var A = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 5</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
         constructor: &quot;manual&quot;
     }
@@ -225,9 +231,9 @@ var B = declare(A, {
     }
 });</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 6</h3><pre><code>var A = declare(null, {
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 6</h3><pre><code>var A = declare(null, {
     &quot;-chains-&quot;: {
         m1: &quot;before&quot;
     },
@@ -259,25 +265,27 @@ x.m2();
 // A.m2
 // B.m2</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojo__base_declare___DeclareCreatedObject" class="inline-link"> __DeclareCreatedObject </a><span>dojo/_base/declare() returns a constructor C.   new C() returns an Object with the following
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojo__base_declare___DeclareCreatedObject" class="inline-link"> __DeclareCreatedObject </a><span>dojo/_base/declare() returns a constructor C.   new C() returns an Object with the following
 methods, in addition to the methods and properties specified via the arguments passed to declare().</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo__base_declare_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>className, superclass, props) <span>Create a feature-rich constructor from compact notation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo__base_declare_safeMixin" class="inline-link"> safeMixin</a><span class="parameters">(</span>target, source) <span>Mix in properties skipping a constructor and decorating functions
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo__base_declare_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>className, superclass, props) <span>Create a feature-rich constructor from compact notation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_declare_safeMixin" class="inline-link"> safeMixin</a><span class="parameters">(</span>target, source) <span>Mix in properties skipping a constructor and decorating functions
 like it is done by declare().</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -651,4 +659,4 @@ x.m2();
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/declare" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

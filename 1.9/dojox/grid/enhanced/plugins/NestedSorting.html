@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/NestedSorting</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/plugins/NestedSorting" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/NestedSorting.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/NestedSorting<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
@@ -16,18 +23,17 @@
 <li>Set sorting order dynamically with JS API</li>
 </ol>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new NestedSorting<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/grid/enhanced/plugins/NestedSorting">dojox/grid/enhanced/plugins/NestedSorting</a></div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
     var grid = new dojox.grid.EnhancedGrid({plugins : {nestedSorting: true}},
                sortFields: [{attribute: &#39;col4&#39;, descending: false},...],//set default sorting order
                canSort: function(index, field){ return true},//disable sorting for a column
@@ -37,136 +43,138 @@
     grid.setSortIndex([{attribute: &#39;col3&#39;, descending: true},...])
 &lt;/script&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__a11yText" class="inline-link"> _a11yText </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__currMainSort" class="inline-link"> _currMainSort </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__currRegionIdx" class="inline-link"> _currRegionIdx </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_name" class="inline-link"> name </a><span>Plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__a11yText" class="inline-link"> _a11yText </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__currMainSort" class="inline-link"> _currMainSort </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__currRegionIdx" class="inline-link"> _currRegionIdx </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_name" class="inline-link"> name </a><span>Plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/NestedSorting" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
 e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__blurHeader" class="inline-link"> _blurHeader</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__blurRegion" class="inline-link"> _blurRegion</a><span class="parameters">(</span>region) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__doSort" class="inline-link"> _doSort</a><span class="parameters">(</span>cellIdx) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__focusHeader" class="inline-link"> _focusHeader</a><span class="parameters">(</span>e) <span>Overwritten, see _FocusManager.focusHeader()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__focusRegion" class="inline-link"> _focusRegion</a><span class="parameters">(</span>region) <span>Focus the given region</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getCellByNode" class="inline-link"> _getCellByNode</a><span class="parameters">(</span>node) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getCurrentRegion" class="inline-link"> _getCurrentRegion</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getRegionHeader" class="inline-link"> _getRegionHeader</a><span class="parameters">(</span>region) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getRegions" class="inline-link"> _getRegions</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getRegionView" class="inline-link"> _getRegionView</a><span class="parameters">(</span>region) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__initFocus" class="inline-link"> _initFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__initHeaderNode" class="inline-link"> _initHeaderNode</a><span class="parameters">(</span>node) <span>Initiate sort for each header cell node</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__initSort" class="inline-link"> _initSort</a><span class="parameters">(</span>postSort) <span>Initiate sorting</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__loadNestedSortingProps" class="inline-link"> _loadNestedSortingProps</a><span class="parameters">(</span>sortInfo, grid) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__prepareNestedSort" class="inline-link"> _prepareNestedSort</a><span class="parameters">(</span>cellIdx) <span>Prepare the nested sorting, this will order the column on existing sorting result.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__prepareSingleSort" class="inline-link"> _prepareSingleSort</a><span class="parameters">(</span>cellIdx) <span>Prepare the single sort, also called main sort, this will clear any existing sorting and just sort the grid by current column.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__saveNestedSortingProps" class="inline-link"> _saveNestedSortingProps</a><span class="parameters">(</span>grid) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__setGridSortIndex" class="inline-link"> _setGridSortIndex</a><span class="parameters">(</span>inIndex, inAsc, noRefresh) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__updateHeaderNodeUI" class="inline-link"> _updateHeaderNodeUI</a><span class="parameters">(</span>node) <span>Update the column header UI based on current sorting state.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__updateSortDef" class="inline-link"> _updateSortDef</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_clearSort" class="inline-link"> clearSort</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_getSortProps" class="inline-link"> getSortProps</a><span class="parameters">(</span>) <span>Overwritten, see DataGrid.getSortProps()</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_initCookieHandler" class="inline-link"> initCookieHandler</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_isAsc" class="inline-link"> isAsc</a><span class="parameters">(</span>cellIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_isDesc" class="inline-link"> isDesc</a><span class="parameters">(</span>cellIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_removeSortData" class="inline-link"> removeSortData</a><span class="parameters">(</span>cellIdx) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_setSortData" class="inline-link"> setSortData</a><span class="parameters">(</span>cellIdx, attr, value) <span>Set sorting data for a column.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__blurHeader" class="inline-link"> _blurHeader</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__blurRegion" class="inline-link"> _blurRegion</a><span class="parameters">(</span>region) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__doSort" class="inline-link"> _doSort</a><span class="parameters">(</span>cellIdx) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__focusHeader" class="inline-link"> _focusHeader</a><span class="parameters">(</span>e) <span>Overwritten, see _FocusManager.focusHeader()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__focusRegion" class="inline-link"> _focusRegion</a><span class="parameters">(</span>region) <span>Focus the given region</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getCellByNode" class="inline-link"> _getCellByNode</a><span class="parameters">(</span>node) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getCurrentRegion" class="inline-link"> _getCurrentRegion</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getRegionHeader" class="inline-link"> _getRegionHeader</a><span class="parameters">(</span>region) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getRegions" class="inline-link"> _getRegions</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__getRegionView" class="inline-link"> _getRegionView</a><span class="parameters">(</span>region) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__initFocus" class="inline-link"> _initFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__initHeaderNode" class="inline-link"> _initHeaderNode</a><span class="parameters">(</span>node) <span>Initiate sort for each header cell node</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__initSort" class="inline-link"> _initSort</a><span class="parameters">(</span>postSort) <span>Initiate sorting</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__loadNestedSortingProps" class="inline-link"> _loadNestedSortingProps</a><span class="parameters">(</span>sortInfo, grid) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__prepareNestedSort" class="inline-link"> _prepareNestedSort</a><span class="parameters">(</span>cellIdx) <span>Prepare the nested sorting, this will order the column on existing sorting result.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__prepareSingleSort" class="inline-link"> _prepareSingleSort</a><span class="parameters">(</span>cellIdx) <span>Prepare the single sort, also called main sort, this will clear any existing sorting and just sort the grid by current column.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__saveNestedSortingProps" class="inline-link"> _saveNestedSortingProps</a><span class="parameters">(</span>grid) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__setGridSortIndex" class="inline-link"> _setGridSortIndex</a><span class="parameters">(</span>inIndex, inAsc, noRefresh) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__updateHeaderNodeUI" class="inline-link"> _updateHeaderNodeUI</a><span class="parameters">(</span>node) <span>Update the column header UI based on current sorting state.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__updateSortDef" class="inline-link"> _updateSortDef</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_clearSort" class="inline-link"> clearSort</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_getSortProps" class="inline-link"> getSortProps</a><span class="parameters">(</span>) <span>Overwritten, see DataGrid.getSortProps()</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_initCookieHandler" class="inline-link"> initCookieHandler</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_isAsc" class="inline-link"> isAsc</a><span class="parameters">(</span>cellIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_isDesc" class="inline-link"> isDesc</a><span class="parameters">(</span>cellIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_removeSortData" class="inline-link"> removeSortData</a><span class="parameters">(</span>cellIdx) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_setSortData" class="inline-link"> setSortData</a><span class="parameters">(</span>cellIdx, attr, value) <span>Set sorting data for a column.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
 of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onColumnDnD" class="inline-link"> _onColumnDnD</a><span class="parameters">(</span>type, mapping) <span>Update nested sorting after column moved</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onHeaderCellClick" class="inline-link"> _onHeaderCellClick</a><span class="parameters">(</span>e) <span>See dojox.grid.enhanced._Events._onHeaderCellClick()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onHeaderCellMouseOut" class="inline-link"> _onHeaderCellMouseOut</a><span class="parameters">(</span>e) <span>See dojox.grid.enhanced._Events._onHeaderCellMouseOut()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onHeaderCellMouseOver" class="inline-link"> _onHeaderCellMouseOver</a><span class="parameters">(</span>e) <span>See dojox.grid._Events._onHeaderCellMouseOver()
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onColumnDnD" class="inline-link"> _onColumnDnD</a><span class="parameters">(</span>type, mapping) <span>Update nested sorting after column moved</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onHeaderCellClick" class="inline-link"> _onHeaderCellClick</a><span class="parameters">(</span>e) <span>See dojox.grid.enhanced._Events._onHeaderCellClick()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onHeaderCellMouseOut" class="inline-link"> _onHeaderCellMouseOut</a><span class="parameters">(</span>e) <span>See dojox.grid.enhanced._Events._onHeaderCellMouseOut()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onHeaderCellMouseOver" class="inline-link"> _onHeaderCellMouseOver</a><span class="parameters">(</span>e) <span>See dojox.grid._Events._onHeaderCellMouseOver()
 When user mouseover other columns than sorted column in a single sorted grid,
 We need to show 1 in the sorted column</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onKeyDown" class="inline-link"> _onKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onMove" class="inline-link"> _onMove</a><span class="parameters">(</span>rowStep, colStep, e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onMoveColumn" class="inline-link"> _onMoveColumn</a><span class="parameters">(</span>sourceViewIndex, destViewIndex, cellIndex, targetIndex, before) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onSortBtnClick" class="inline-link"> _onSortBtnClick</a><span class="parameters">(</span>e) <span>If the click target is single sort button, do single sort.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>store) <span>Called when store is changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onKeyDown" class="inline-link"> _onKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onMove" class="inline-link"> _onMove</a><span class="parameters">(</span>rowStep, colStep, e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onMoveColumn" class="inline-link"> _onMoveColumn</a><span class="parameters">(</span>sourceViewIndex, destViewIndex, cellIndex, targetIndex, before) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting__onSortBtnClick" class="inline-link"> _onSortBtnClick</a><span class="parameters">(</span>e) <span>If the click target is single sort button, do single sort.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>store) <span>Called when store is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_NestedSorting_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -972,4 +980,4 @@ Otherwise return.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/plugins/NestedSorting" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

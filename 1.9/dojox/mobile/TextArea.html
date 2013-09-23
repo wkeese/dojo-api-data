@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/TextArea</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mobile/TextArea" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/TextArea.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/TextArea<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/mobile/TextBox" class="jsdoc-link">dojox/mobile/TextBox</a>
@@ -9,7 +16,7 @@
 <div class="jsdoc-full-summary"><p>A textarea widget that wraps an HTML TEXTAREA element.
 Takes all the parameters (name, value, etc.) that a vanilla textarea takes.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new TextArea<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
@@ -49,283 +56,284 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/mobile/TextArea.html" target="_blank">dojox/mobile/TextArea reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;textarea dojoType=&quot;dojox.mobile.TextArea&quot;&gt;...&lt;/textarea&gt;</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;textarea dojoType=&quot;dojox.mobile.TextArea&quot;&gt;...&lt;/textarea&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_TextArea___skipInputEvent" class="inline-link"> __skipInputEvent </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__blankValue" class="inline-link"> _blankValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_TextArea__onChangeActive" class="inline-link"> _onChangeActive </a><span>Indicates that changes to the value should call onChange() callback.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setTabIndexAttr" class="inline-link"> _setTabIndexAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setTypeAttr" class="inline-link"> _setTypeAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_TextArea__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_alt" class="inline-link"> alt </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_aria-label" class="inline-link"> aria-label </a><span></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_TextArea_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/mobile/TextArea" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_TextArea_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_TextArea___skipInputEvent" class="inline-link"> __skipInputEvent </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__blankValue" class="inline-link"> _blankValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_TextArea__onChangeActive" class="inline-link"> _onChangeActive </a><span>Indicates that changes to the value should call onChange() callback.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setTabIndexAttr" class="inline-link"> _setTabIndexAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setTypeAttr" class="inline-link"> _setTypeAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_TextArea__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_alt" class="inline-link"> alt </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_aria-label" class="inline-link"> aria-label </a><span></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_TextArea_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/mobile/TextArea" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_TextArea_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_disabled" class="inline-link"> disabled </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_displayedValue" class="inline-link"> displayedValue </a><span>For subclasses like ComboBox where the displayed value
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_disabled" class="inline-link"> disabled </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_displayedValue" class="inline-link"> displayedValue </a><span>For subclasses like ComboBox where the displayed value
 (ex: Kentucky) and the serialized value (ex: KY) are different,
 this represents the displayed value.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_TextArea_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
-it was recently clicked.</span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_TextArea_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+it was recently clicked.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_intermediateChanges" class="inline-link"> intermediateChanges </a><span>Fires onChange for each value change or only on demand</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_lowercase" class="inline-link"> lowercase </a><span>Converts all characters to lowercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_maxLength" class="inline-link"> maxLength </a><span>HTML INPUT tag maxLength declaration.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_name" class="inline-link"> name </a><span>Name used when submitting form; same as &quot;name&quot; attribute or plain HTML elements</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_TextArea_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_placeHolder" class="inline-link"> placeHolder </a><span>Defines a hint to help users fill out the input field (as defined in HTML 5).</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_propercase" class="inline-link"> propercase </a><span>Converts the first character of each word to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_readOnly" class="inline-link"> readOnly </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_scrollOnFocus" class="inline-link"> scrollOnFocus </a><span>On focus, should this widget scroll into view?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_selectOnClick" class="inline-link"> selectOnClick </a><span>If true, all text will be selected when focused with mouse</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_TextArea_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_intermediateChanges" class="inline-link"> intermediateChanges </a><span>Fires onChange for each value change or only on demand</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_lowercase" class="inline-link"> lowercase </a><span>Converts all characters to lowercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_maxLength" class="inline-link"> maxLength </a><span>HTML INPUT tag maxLength declaration.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_name" class="inline-link"> name </a><span>Name used when submitting form; same as &quot;name&quot; attribute or plain HTML elements</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_TextArea_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_placeHolder" class="inline-link"> placeHolder </a><span>Defines a hint to help users fill out the input field (as defined in HTML 5).</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_propercase" class="inline-link"> propercase </a><span>Converts the first character of each word to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_readOnly" class="inline-link"> readOnly </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_scrollOnFocus" class="inline-link"> scrollOnFocus </a><span>On focus, should this widget scroll into view?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_selectOnClick" class="inline-link"> selectOnClick </a><span>If true, all text will be selected when focused with mouse</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_TextArea_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_trim" class="inline-link"> trim </a><span>Removes leading and trailing whitespace if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_type" class="inline-link"> type </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_uppercase" class="inline-link"> uppercase </a><span>Converts all characters to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_value" class="inline-link"> value </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_trim" class="inline-link"> trim </a><span>Removes leading and trailing whitespace if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_type" class="inline-link"> type </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_TextArea_uppercase" class="inline-link"> uppercase </a><span>Converts all characters to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_TextArea_value" class="inline-link"> value </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
 i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;displayedValue&#39;) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works as we like.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>newValue, priorityChange) <span>Called when the value of the widget has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;displayedValue&#39;) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works as we like.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>newValue, priorityChange) <span>Called when the value of the widget has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
 
 
 - list of attributes with custom setters, storing in this.constructor._setterAttrs
 - generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__isTextSelected" class="inline-link"> _isTextSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Default action handler for user input events</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__refreshState" class="inline-link"> _refreshState</a><span class="parameters">(</span>) <span>After the user types some characters, etc., this method is
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__isTextSelected" class="inline-link"> _isTextSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Default action handler for user input events</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__refreshState" class="inline-link"> _refreshState</a><span class="parameters">(</span>) <span>After the user types some characters, etc., this method is
 called to check the field for validity etc.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setDisplayedValueAttr" class="inline-link"> _setDisplayedValueAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setPlaceHolderAttr" class="inline-link"> _setPlaceHolderAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setReadOnlyAttr" class="inline-link"> _setReadOnlyAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setDisplayedValueAttr" class="inline-link"> _setDisplayedValueAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setPlaceHolderAttr" class="inline-link"> _setPlaceHolderAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setReadOnlyAttr" class="inline-link"> _setReadOnlyAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>newValue, priorityChange) <span>Hook so set(&#39;value&#39;, value) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_compare" class="inline-link"> compare</a><span class="parameters">(</span>val1, val2) <span>Compare 2 values (as returned by get(&#39;value&#39;) for this widget).</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>newValue, priorityChange) <span>Hook so set(&#39;value&#39;, value) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_compare" class="inline-link"> compare</a><span class="parameters">(</span>val1, val2) <span>Compare 2 values (as returned by get(&#39;value&#39;) for this widget).</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_filter" class="inline-link"> filter</a><span class="parameters">(</span>val) <span>Auto-corrections (such as trimming) that are applied to textbox
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_filter" class="inline-link"> filter</a><span class="parameters">(</span>val) <span>Auto-corrections (such as trimming) that are applied to textbox
 value on blur or form submit.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Put focus on this widget</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a value to a properly formatted string.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Put focus on this widget</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a value to a properly formatted string.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
 is this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a value</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a value</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Reset the widget&#39;s value to what it was at initialization time</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_undo" class="inline-link"> undo</a><span class="parameters">(</span>) <span>Restore the value to the last value passed to onChange</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_TextArea__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Reset the widget&#39;s value to what it was at initialization time</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_undo" class="inline-link"> undo</a><span class="parameters">(</span>) <span>Restore the value to the last value passed to onChange</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_TextArea__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_TextArea__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_TextArea__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_TextArea__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>newValue) <span>Callback when this widget&#39;s value is changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>newValue) <span>Callback when this widget&#39;s value is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_TextArea_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_onInput" class="inline-link"> onInput</a><span class="parameters">(</span>event) <span>Connect to this function to receive notifications of various user data-input events.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_TextArea_onInput" class="inline-link"> onInput</a><span class="parameters">(</span>event) <span>Connect to this function to receive notifications of various user data-input events.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -2261,4 +2269,4 @@ Return false to cancel the event and prevent it from being processed.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/TextArea" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/fx/Toggler</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/fx/Toggler" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/fx/Toggler.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/fx/Toggler<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A simple <code>dojo.Animation</code> toggler API.</p>
 </div>
@@ -9,9 +16,9 @@ direction, duration, etc. All available members are mixed into
 these animations from the constructor (for example, <code>node</code>,
 <code>showDuration</code>, <code>hideDuration</code>).</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/fx/Toggler<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Toggler<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/fx/Toggler">dojo/fx/Toggler</a></div>
 <table class="jsdoc-parameters">
@@ -29,61 +36,62 @@ these animations from the constructor (for example, <code>node</code>,
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/fx/Toggler.html" target="_blank">dojo/fx/Toggler reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var t = new dojo/fx/Toggler({
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var t = new dojo/fx/Toggler({
     node: &quot;nodeId&quot;,
     showDuration: 500,
     // hideDuration will default to &quot;200&quot;
     showFunc: dojo/fx/wipeIn,
     // hideFunc will default to &quot;fadeOut&quot;
-  });
-  t.show(100); // delay showing for 100ms
-  // ...time passes...
-  t.hide();</code></pre>
+});
+t.show(100); // delay showing for 100ms
+// ...time passes...
+t.hide();</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__hideAnim" class="inline-link"> _hideAnim </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__hideArgs" class="inline-link"> _hideArgs </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8dojo_fx_Toggler__isHiding" class="inline-link"> _isHiding </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8dojo_fx_Toggler__isShowing" class="inline-link"> _isShowing </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__showAnim" class="inline-link"> _showAnim </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__showArgs" class="inline-link"> _showArgs </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojo_fx_Toggler_hideDuration" class="inline-link"> hideDuration </a><span>Time in milliseconds to run the hide Animation</span>
+        </li>
+        <li class="domnodeIcon"><a href="#1_8dojo_fx_Toggler_node" class="inline-link"> node </a><span>the node to target for the showing and hiding animations</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojo_fx_Toggler_showDuration" class="inline-link"> showDuration </a><span>Time in milliseconds to run the show Animation</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_hide" class="inline-link"> hide</a><span class="parameters">(</span>delay) <span>Toggle the node to hidden</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_hideFunc" class="inline-link"> hideFunc</a><span class="parameters">(</span>args) <span>The function that returns the dojo.Animation to hide the node</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_show" class="inline-link"> show</a><span class="parameters">(</span>delay) <span>Toggle the node to showing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_showFunc" class="inline-link"> showFunc</a><span class="parameters">(</span>args) <span>The function that returns the dojo.Animation to show the node</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__hideAnim" class="inline-link"> _hideAnim </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__hideArgs" class="inline-link"> _hideArgs </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8dojo_fx_Toggler__isHiding" class="inline-link"> _isHiding </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8dojo_fx_Toggler__isShowing" class="inline-link"> _isShowing </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__showAnim" class="inline-link"> _showAnim </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojo_fx_Toggler__showArgs" class="inline-link"> _showArgs </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojo_fx_Toggler_hideDuration" class="inline-link"> hideDuration </a><span>Time in milliseconds to run the hide Animation</span>
-    </li>
-    <li class="domnodeIcon"><a href="#1_8dojo_fx_Toggler_node" class="inline-link"> node </a><span>the node to target for the showing and hiding animations</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojo_fx_Toggler_showDuration" class="inline-link"> showDuration </a><span>Time in milliseconds to run the show Animation</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_hide" class="inline-link"> hide</a><span class="parameters">(</span>delay) <span>Toggle the node to hidden</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_hideFunc" class="inline-link"> hideFunc</a><span class="parameters">(</span>args) <span>Alias of dojo.fadeOut - Fades a node out.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_show" class="inline-link"> show</a><span class="parameters">(</span>delay) <span>Toggle the node to showing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_fx_Toggler_showFunc" class="inline-link"> showFunc</a><span class="parameters">(</span>args) <span>Alias of dojo.fadeIn - Fade a node in.</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -201,7 +209,7 @@ these animations from the constructor (for example, <code>node</code>,
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx/Toggler" class="jsdoc-link">dojo/fx/Toggler</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fadeOut</code> - Fades a node out.</p>
+        <div class="jsdoc-full-summary"><p>The function that returns the <code>dojo.Animation</code> to hide the node</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -212,18 +220,10 @@ these animations from the constructor (for example, <code>node</code>,
           <tr>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>node (DOMNode|String): <p>The node referenced in the animation</p></p>
-</li>
-<li><p>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p></p>
-</li>
-<li><p>easing (Function, optional): <p>An easing function.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>node (DOMNode|String): <p>The node referenced in the animation</p>
+</li><li>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p>
+</li><li>easing (Function, optional): <p>An easing function.</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -258,7 +258,7 @@ these animations from the constructor (for example, <code>node</code>,
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx/Toggler" class="jsdoc-link">dojo/fx/Toggler</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fadeIn</code> - Fade a node in.</p>
+        <div class="jsdoc-full-summary"><p>The function that returns the <code>dojo.Animation</code> to show the node</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -269,18 +269,10 @@ these animations from the constructor (for example, <code>node</code>,
           <tr>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>node (DOMNode|String): <p>The node referenced in the animation</p></p>
-</li>
-<li><p>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p></p>
-</li>
-<li><p>easing (Function, optional): <p>An easing function.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>node (DOMNode|String): <p>The node referenced in the animation</p>
+</li><li>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p>
+</li><li>easing (Function, optional): <p>An easing function.</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -288,4 +280,4 @@ these animations from the constructor (for example, <code>node</code>,
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/fx/Toggler" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

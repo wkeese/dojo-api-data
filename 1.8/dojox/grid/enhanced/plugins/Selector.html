@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Selector</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/Selector" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Selector.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Selector<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
@@ -19,7 +26,7 @@ The whole plugin parameter object is a config object passed to the setupConfig f
 <li>notselectable: Boolean: Whether this column is (and all the cells in it are) selectable.</li>
 </ol>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Selector<span class="parameters">(grid,args);</span></div>
 </div>
@@ -44,152 +51,153 @@ The whole plugin parameter object is a config object passed to the setupConfig f
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_name" class="inline-link"> name </a><span>plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/Selector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_name" class="inline-link"> name </a><span>plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/Selector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
 e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__add" class="inline-link"> _add</a><span class="parameters">(</span>type, items) <span>Add to the selection record.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addCellException" class="inline-link"> _addCellException</a><span class="parameters">(</span>type, items) <span>If some cells are deselected, maybe they have created &quot;holes&quot; in selected rows/cols.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addException" class="inline-link"> _addException</a><span class="parameters">(</span>type, items) <span>If some rows/cols are deselected, maybe they have created &quot;holes&quot; in selected cols/rows.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addToSelected" class="inline-link"> _addToSelected</a><span class="parameters">(</span>type) <span>Record the selected items.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__blurPoint" class="inline-link"> _blurPoint</a><span class="parameters">(</span>type, point) <span>Blur the current point.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__calcToHighlight" class="inline-link"> _calcToHighlight</a><span class="parameters">(</span>type, target, toHighlight, toSelect) <span>Calculate what status should target have.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__clearSelection" class="inline-link"> _clearSelection</a><span class="parameters">(</span>type, reservedItem) <span>Clear selection for given type and fire events, but retain the highlight for reservedItem,
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__add" class="inline-link"> _add</a><span class="parameters">(</span>type, items) <span>Add to the selection record.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addCellException" class="inline-link"> _addCellException</a><span class="parameters">(</span>type, items) <span>If some cells are deselected, maybe they have created &quot;holes&quot; in selected rows/cols.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addException" class="inline-link"> _addException</a><span class="parameters">(</span>type, items) <span>If some rows/cols are deselected, maybe they have created &quot;holes&quot; in selected cols/rows.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addToSelected" class="inline-link"> _addToSelected</a><span class="parameters">(</span>type) <span>Record the selected items.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__blurPoint" class="inline-link"> _blurPoint</a><span class="parameters">(</span>type, point) <span>Blur the current point.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__calcToHighlight" class="inline-link"> _calcToHighlight</a><span class="parameters">(</span>type, target, toHighlight, toSelect) <span>Calculate what status should target have.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__clearSelection" class="inline-link"> _clearSelection</a><span class="parameters">(</span>type, reservedItem) <span>Clear selection for given type and fire events, but retain the highlight for reservedItem,
 thus avoid &quot;flashing&quot;.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__endSelect" class="inline-link"> _endSelect</a><span class="parameters">(</span>type) <span>End selection.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__fireEvent" class="inline-link"> _fireEvent</a><span class="parameters">(</span>evtName, type) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__focusPoint" class="inline-link"> _focusPoint</a><span class="parameters">(</span>type, point) <span>Focus the current point, so when you move mouse, the focus indicator follows you.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__forEach" class="inline-link"> _forEach</a><span class="parameters">(</span>type, start, end, func, halfClose) <span>Go through items from start point to end point.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__hacks" class="inline-link"> _hacks</a><span class="parameters">(</span>) <span>Complete the event system of grid, hack some grid functions to prevent default behavior.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlight" class="inline-link"> _highlight</a><span class="parameters">(</span>type, target, toSelect) <span>Highlight from start point to target.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightHeader" class="inline-link"> _highlightHeader</a><span class="parameters">(</span>colIdx, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightNode" class="inline-link"> _highlightNode</a><span class="parameters">(</span>node, toHighlight) <span>Do the actual highlight work.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightRowSelector" class="inline-link"> _highlightRowSelector</a><span class="parameters">(</span>rowIdx, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightSingle" class="inline-link"> _highlightSingle</a><span class="parameters">(</span>type, toHighlight, target, toSelect, isRefresh) <span>Highlight a single item.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__initAreas" class="inline-link"> _initAreas</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__initEvents" class="inline-link"> _initEvents</a><span class="parameters">(</span>) <span>Connect events, create event handlers.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isCellNotInExcept" class="inline-link"> _isCellNotInExcept</a><span class="parameters">(</span>type, item) <span>Return true only when a cell is covered by selected row/col, and its not a &quot;hole&quot;.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isInLastRange" class="inline-link"> _isInLastRange</a><span class="parameters">(</span>type, item, isSelected) <span>Return true only when the item is in the last seletion/deseletion range.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isSelected" class="inline-link"> _isSelected</a><span class="parameters">(</span>type, item) <span>Return true when the item is selected. (or logically selected, i.e, covered by a row/col).</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isValid" class="inline-link"> _isValid</a><span class="parameters">(</span>type, item, allowNotSelectable) <span>Check whether the item is a valid __SelectItem for the given type.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__makeupForCells" class="inline-link"> _makeupForCells</a><span class="parameters">(</span>type, newItems) <span>When some rows/cols are selected, maybe they can cover some of the selected cells,
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__endSelect" class="inline-link"> _endSelect</a><span class="parameters">(</span>type) <span>End selection.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__fireEvent" class="inline-link"> _fireEvent</a><span class="parameters">(</span>evtName, type) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__focusPoint" class="inline-link"> _focusPoint</a><span class="parameters">(</span>type, point) <span>Focus the current point, so when you move mouse, the focus indicator follows you.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__forEach" class="inline-link"> _forEach</a><span class="parameters">(</span>type, start, end, func, halfClose) <span>Go through items from start point to end point.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__hacks" class="inline-link"> _hacks</a><span class="parameters">(</span>) <span>Complete the event system of grid, hack some grid functions to prevent default behavior.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlight" class="inline-link"> _highlight</a><span class="parameters">(</span>type, target, toSelect) <span>Highlight from start point to target.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightHeader" class="inline-link"> _highlightHeader</a><span class="parameters">(</span>colIdx, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightNode" class="inline-link"> _highlightNode</a><span class="parameters">(</span>node, toHighlight) <span>Do the actual highlight work.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightRowSelector" class="inline-link"> _highlightRowSelector</a><span class="parameters">(</span>rowIdx, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightSingle" class="inline-link"> _highlightSingle</a><span class="parameters">(</span>type, toHighlight, target, toSelect, isRefresh) <span>Highlight a single item.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__initAreas" class="inline-link"> _initAreas</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__initEvents" class="inline-link"> _initEvents</a><span class="parameters">(</span>) <span>Connect events, create event handlers.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isCellNotInExcept" class="inline-link"> _isCellNotInExcept</a><span class="parameters">(</span>type, item) <span>Return true only when a cell is covered by selected row/col, and its not a &quot;hole&quot;.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isInLastRange" class="inline-link"> _isInLastRange</a><span class="parameters">(</span>type, item, isSelected) <span>Return true only when the item is in the last seletion/deseletion range.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isSelected" class="inline-link"> _isSelected</a><span class="parameters">(</span>type, item) <span>Return true when the item is selected. (or logically selected, i.e, covered by a row/col).</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isValid" class="inline-link"> _isValid</a><span class="parameters">(</span>type, item, allowNotSelectable) <span>Check whether the item is a valid __SelectItem for the given type.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__makeupForCells" class="inline-link"> _makeupForCells</a><span class="parameters">(</span>type, newItems) <span>When some rows/cols are selected, maybe they can cover some of the selected cells,
 and fill some of the &quot;holes&quot; in the selected cols/rows.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__makeupForExceptions" class="inline-link"> _makeupForExceptions</a><span class="parameters">(</span>type, newCellItems) <span>When new cells is selected, maybe they will fill in the &quot;holes&quot; in selected rows and columns.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__mixinGrid" class="inline-link"> _mixinGrid</a><span class="parameters">(</span>) <span>Expose events to grid.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__refresh" class="inline-link"> _refresh</a><span class="parameters">(</span>type, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__refreshSelected" class="inline-link"> _refreshSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__remove" class="inline-link"> _remove</a><span class="parameters">(</span>type, items) <span>Remove from the selection record.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__startSelect" class="inline-link"> _startSelect</a><span class="parameters">(</span>type, start, extending, isRange, mandatarySelect, toSelect) <span>Start selection, setup start point and current point, fire events.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_clear" class="inline-link"> clear</a><span class="parameters">(</span>type) <span>Clear all selections.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid, args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>type, rowIndex, colIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getLastSelectedRange" class="inline-link"> getLastSelectedRange</a><span class="parameters">(</span>type) <span>Get last selected range of the given type.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>type, includeExceptions) <span>Get an array of selected locations.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>type, includeExceptions) <span>Get the number of selected items.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelectedType" class="inline-link"> getSelectedType</a><span class="parameters">(</span>) <span>Get the type of selected items.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>type, rowIndex, colIndex) <span>Check whether a location (a cell, a column or a row) is selected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_isSelecting" class="inline-link"> isSelecting</a><span class="parameters">(</span>type) <span>Check whether the user is currently selecting something.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_select" class="inline-link"> select</a><span class="parameters">(</span>type, rowIndex, colIndex) <span>Select a location (a cell, a column or a row).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_selectEnabled" class="inline-link"> selectEnabled</a><span class="parameters">(</span>toEnable) <span>Turn on/off this selection functionality if toEnable is provided.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>type, start, end, toSelect) <span>Select a continuous range (a block of cells, a set of continuous columns or rows)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_setupConfig" class="inline-link"> setupConfig</a><span class="parameters">(</span>config) <span>Set selection mode for row/col/cell.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__makeupForExceptions" class="inline-link"> _makeupForExceptions</a><span class="parameters">(</span>type, newCellItems) <span>When new cells is selected, maybe they will fill in the &quot;holes&quot; in selected rows and columns.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__mixinGrid" class="inline-link"> _mixinGrid</a><span class="parameters">(</span>) <span>Expose events to grid.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__refresh" class="inline-link"> _refresh</a><span class="parameters">(</span>type, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__refreshSelected" class="inline-link"> _refreshSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__remove" class="inline-link"> _remove</a><span class="parameters">(</span>type, items) <span>Remove from the selection record.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__startSelect" class="inline-link"> _startSelect</a><span class="parameters">(</span>type, start, extending, isRange, mandatarySelect, toSelect) <span>Start selection, setup start point and current point, fire events.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_clear" class="inline-link"> clear</a><span class="parameters">(</span>type) <span>Clear all selections.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid, args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>type, rowIndex, colIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getLastSelectedRange" class="inline-link"> getLastSelectedRange</a><span class="parameters">(</span>type) <span>Get last selected range of the given type.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>type, includeExceptions) <span>Get an array of selected locations.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>type, includeExceptions) <span>Get the number of selected items.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelectedType" class="inline-link"> getSelectedType</a><span class="parameters">(</span>) <span>Get the type of selected items.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>type, rowIndex, colIndex) <span>Check whether a location (a cell, a column or a row) is selected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_isSelecting" class="inline-link"> isSelecting</a><span class="parameters">(</span>type) <span>Check whether the user is currently selecting something.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_select" class="inline-link"> select</a><span class="parameters">(</span>type, rowIndex, colIndex) <span>Select a location (a cell, a column or a row).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_selectEnabled" class="inline-link"> selectEnabled</a><span class="parameters">(</span>toEnable) <span>Turn on/off this selection functionality if toEnable is provided.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>type, start, end, toSelect) <span>Select a continuous range (a block of cells, a set of continuous columns or rows)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_setupConfig" class="inline-link"> setupConfig</a><span class="parameters">(</span>config) <span>Set selection mode for row/col/cell.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
 of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>type, rowIndex, colIndex) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onExternalChange" class="inline-link"> _onExternalChange</a><span class="parameters">(</span>type, target) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onInternalRearrange" class="inline-link"> _onInternalRearrange</a><span class="parameters">(</span>type, mapping) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onSelectedById" class="inline-link"> _onSelectedById</a><span class="parameters">(</span>id, newIndex, isSelected) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>type, rowIndex, colIndex) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onExternalChange" class="inline-link"> _onExternalChange</a><span class="parameters">(</span>type, target) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onInternalRearrange" class="inline-link"> _onInternalRearrange</a><span class="parameters">(</span>type, mapping) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onSelectedById" class="inline-link"> _onSelectedById</a><span class="parameters">(</span>id, newIndex, isSelected) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1650,4 +1658,4 @@ plugin.subscribe(&quot;/my/topic&quot;, function(v){
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/Selector" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

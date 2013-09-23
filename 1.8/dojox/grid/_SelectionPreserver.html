@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/_SelectionPreserver</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/_SelectionPreserver" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/_SelectionPreserver.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/_SelectionPreserver<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Preserve selections across various user actions.
 </p>
@@ -11,7 +18,7 @@
 Known issue - The preserved selections might be inaccurate if some unloaded rows are previously selected by range(e.g.SHIFT + click)
 </p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _SelectionPreserver<span class="parameters">(selection);</span></div>
 </div>
@@ -30,32 +37,33 @@ Known issue - The preserved selections might be inaccurate if some unloaded rows
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>//To turn on this - please set &#39;keepSelection&#39; attribute to true
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>//To turn on this - please set &#39;keepSelection&#39; attribute to true
 &lt;div dojoType=&quot;dojox.grid.DataGrid&quot; keepSelection = true .../&gt;
 &lt;div dojoType=&quot;dojox.grid.TreeGrid&quot; keepSelection = true .../&gt;
 &lt;div dojoType=&quot;dojox.grid.LazyTreeGrid&quot; keepSelection = true .../&gt;</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid__SelectionPreserver__reSelectById" class="inline-link"> _reSelectById</a><span class="parameters">(</span>item, index) <span>When some rows is fetched, determine whether it should be selected.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid__SelectionPreserver__selectById" class="inline-link"> _selectById</a><span class="parameters">(</span>toSelect, inItemOrIndex) <span>Record selected rows by ID.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__SelectionPreserver_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>selection) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__SelectionPreserver_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__SelectionPreserver_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid__SelectionPreserver__reSelectById" class="inline-link"> _reSelectById</a><span class="parameters">(</span>item, index) <span>When some rows is fetched, determine whether it should be selected.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid__SelectionPreserver__selectById" class="inline-link"> _selectById</a><span class="parameters">(</span>toSelect, inItemOrIndex) <span>Record selected rows by ID.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__SelectionPreserver_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>selection) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__SelectionPreserver_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__SelectionPreserver_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -152,4 +160,4 @@ Known issue - The preserved selections might be inaccurate if some unloaded rows
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/_SelectionPreserver" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

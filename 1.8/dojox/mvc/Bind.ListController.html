@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/Bind.ListController</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mvc/Bind.ListController" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/Bind.ListController.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mvc/Bind.ListController<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/mvc/ModelRefController" class="jsdoc-link">dojox/mvc/ModelRefController</a>
@@ -7,13 +14,13 @@
 <div class="jsdoc-full-summary"><p>A controller working with array model, managing its cursor.
 NOTE - If this class is used with a widget by data-dojo-mixins, make sure putting the widget in data-dojo-type and putting this class to data-dojo-mixins.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/mvc.html" target="_blank">dojox/mvc/Bind.ListController reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>The text box changes its value every two seconds.
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>The text box changes its value every two seconds.
 
 </p>
 <pre><code>&lt;html&gt;
@@ -38,86 +45,88 @@ NOTE - If this class is used with a widget by data-dojo-mixins, make sure puttin
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojox_mvc_Bind_ListController__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+and setter names.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_mvc_Bind_ListController__listModelWatchHandle" class="inline-link"> _listModelWatchHandle </a><span>The watch handle of model, watching for array elements.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_mvc_Bind_ListController__refCursorProp" class="inline-link"> _refCursorProp </a><span>The property name for the data model of the current selection.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_mvc_Bind_ListController__refInModelProp" class="inline-link"> _refInModelProp </a><span>The property name for the data model, used as the input.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/mvc/ModelRefController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_mvc_Bind_ListController__refModelProp" class="inline-link"> _refModelProp </a><span>The property name for the data model.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_mvc_Bind_ListController__tableModelWatchHandle" class="inline-link"> _tableModelWatchHandle </a><span>The watch handle of model.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_mvc_Bind_ListController_cursor" class="inline-link"> cursor </a><span>The selected element in the model array.</span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_cursorId" class="inline-link"> cursorId </a><span>The ID of the selected element in the model array.</span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_mvc_Bind_ListController_cursorIndex" class="inline-link"> cursorIndex </a><span>The index of the selected element in the model.</span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_data-mvc-bindings" class="inline-link"> data-mvc-bindings </a><span></span><span title="Must manually require () dojox/mvc/_atBindingMixin to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_dataBindAttr" class="inline-link"> dataBindAttr </a><span>The attribute name for data binding.</span><span title="Must manually require () dojox/mvc/_atBindingMixin to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_idProperty" class="inline-link"> idProperty </a><span>The property name in element in the model array, that works as its identifier.</span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_mvc_Bind_ListController_model" class="inline-link"> model </a><span>The data model working as an array.</span><span title="Must manually require () dojox/mvc/ListController to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_mvc_Bind_ListController_ownProps" class="inline-link"> ownProps </a><span>List of property names owned by this controller, instead of the data model.</span><span title="Must manually require () dojox/mvc/ModelRefController to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__dbpostscript" class="inline-link"> _dbpostscript</a><span class="parameters">(</span>params, srcNodeRef) <span>See if any parameters for this widget are dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__getExcludesAttr" class="inline-link"> _getExcludesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties that data binding is established with.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__getPropertiesAttr" class="inline-link"> _getPropertiesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties in this widget, except &quot;id&quot;.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Set the value to the data model or to this object.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setAtWatchHandle" class="inline-link"> _setAtWatchHandle</a><span class="parameters">(</span>name, value) <span>Called if the value is a dojox/mvc/at handle.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setBind" class="inline-link"> _setBind</a><span class="parameters">(</span>value) <span>Sets data binding described in data-mvc-bindings.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setCursorIdAttr" class="inline-link"> _setCursorIdAttr</a><span class="parameters">(</span>value) <span>Handler for calls to set(&quot;cursorId&quot;, val).</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setCursorIndexAttr" class="inline-link"> _setCursorIndexAttr</a><span class="parameters">(</span>value) <span>Handler for calls to set(&quot;cursorIndex&quot;, val).</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__startAtWatchHandles" class="inline-link"> _startAtWatchHandles</a><span class="parameters">(</span>) <span>Establish data bindings based on dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__stopAtWatchHandles" class="inline-link"> _stopAtWatchHandles</a><span class="parameters">(</span>) <span>Stops data binding synchronization handles as widget is destroyed.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>If getter function is there, use it.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_hasControllerProperty" class="inline-link"> hasControllerProperty</a><span class="parameters">(</span>name) <span>Returns true if this controller itself owns the given property.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Sets _relTargetProp so that the property specified by _refModelProp is used for relative data binding.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property to this.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Starts up data binding as this object starts up.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watch a property in the data model or in this object.</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojox_mvc_Bind_ListController__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
-and setter names.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_mvc_Bind_ListController__listModelWatchHandle" class="inline-link"> _listModelWatchHandle </a><span>The watch handle of model, watching for array elements.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_mvc_Bind_ListController__refCursorProp" class="inline-link"> _refCursorProp </a><span>The property name for the data model of the current selection.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_mvc_Bind_ListController__refInModelProp" class="inline-link"> _refInModelProp </a><span>The property name for the data model, used as the input.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_mvc_Bind_ListController__refModelProp" class="inline-link"> _refModelProp </a><span>The property name for the data model.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_mvc_Bind_ListController__tableModelWatchHandle" class="inline-link"> _tableModelWatchHandle </a><span>The watch handle of model.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_mvc_Bind_ListController_cursor" class="inline-link"> cursor </a><span>The selected element in the model array.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_cursorId" class="inline-link"> cursorId </a><span>The ID of the selected element in the model array.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_mvc_Bind_ListController_cursorIndex" class="inline-link"> cursorIndex </a><span>The index of the selected element in the model.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_data-mvc-bindings" class="inline-link"> data-mvc-bindings </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_dataBindAttr" class="inline-link"> dataBindAttr </a><span>The attribute name for data binding.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_mvc_Bind_ListController_idProperty" class="inline-link"> idProperty </a><span>The property name in element in the model array, that works as its identifier.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_mvc_Bind_ListController_model" class="inline-link"> model </a><span>The data model working as an array.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_mvc_Bind_ListController_ownProps" class="inline-link"> ownProps </a><span>List of property names owned by this controller, instead of the data model.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__dbpostscript" class="inline-link"> _dbpostscript</a><span class="parameters">(</span>params, srcNodeRef) <span>See if any parameters for this widget are dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__getExcludesAttr" class="inline-link"> _getExcludesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties that data binding is established with.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__getPropertiesAttr" class="inline-link"> _getPropertiesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties in this widget, except &quot;id&quot;.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Set the value to the data model or to this object.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setAtWatchHandle" class="inline-link"> _setAtWatchHandle</a><span class="parameters">(</span>name, value) <span>Called if the value is a dojox/mvc/at handle.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setBind" class="inline-link"> _setBind</a><span class="parameters">(</span>value) <span>Sets data binding described in data-mvc-bindings.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setCursorIdAttr" class="inline-link"> _setCursorIdAttr</a><span class="parameters">(</span>value) <span>Handler for calls to set(&quot;cursorId&quot;, val).</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__setCursorIndexAttr" class="inline-link"> _setCursorIndexAttr</a><span class="parameters">(</span>value) <span>Handler for calls to set(&quot;cursorIndex&quot;, val).</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__startAtWatchHandles" class="inline-link"> _startAtWatchHandles</a><span class="parameters">(</span>) <span>Establish data bindings based on dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc_Bind_ListController__stopAtWatchHandles" class="inline-link"> _stopAtWatchHandles</a><span class="parameters">(</span>) <span>Stops data binding synchronization handles as widget is destroyed.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>If getter function is there, use it.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_hasControllerProperty" class="inline-link"> hasControllerProperty</a><span class="parameters">(</span>name) <span>Returns true if this controller itself owns the given property.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Sets _relTargetProp so that the property specified by _refModelProp is used for relative data binding.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property to this.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Starts up data binding as this object starts up.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc_Bind_ListController_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watch a property in the data model or in this object.</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -675,4 +684,4 @@ Otherwise, queue it up to this._refs so that _dbstartup() can pick it up.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mvc/Bind.ListController" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

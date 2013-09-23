@@ -1,49 +1,62 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/form/_DateTimeTextBox.__Constraints</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/form/_DateTimeTextBox.__Constraints" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/form/_DateTimeTextBox.__Constraints.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/_DateTimeTextBox.__Constraints<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Specifies both the rules on valid/invalid values (first/last date/time allowed),
 and also formatting options for how the date/time is displayed.</p>
 </div>
+<p>
+  <strong>Note:</strong> This is not a real constructor, but just a description of the type of object that should be passed as
+  a parameter to some method(s), and/or the return value from some method(s).
+  In other words, the type exists only for documentation purposes, and you <strong>cannot</strong> call <code>new _DateTimeTextBox.__Constraints()</code>
+</p>
 <p>See the <a href="/reference-guide/1.9/dijit/form.html" target="_blank">dijit/form/_DateTimeTextBox.__Constraints reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>To restrict to dates within 2004, displayed in a long format like &quot;December 25, 2005&quot;:
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>To restrict to dates within 2004, displayed in a long format like &quot;December 25, 2005&quot;:
 
 </p>
 <pre><code>{min:&#39;2004-01-01&#39;,max:&#39;2004-12-31&#39;, formatLength:&#39;long&#39;}</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_am" class="inline-link"> am </a><span>override strings for am in times</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_datePattern" class="inline-link"> datePattern </a><span>override pattern with this string</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_formatLength" class="inline-link"> formatLength </a><span>choice of long, short, medium or full (plus any custom additions).</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_fullYear" class="inline-link"> fullYear </a><span>(format only) use 4 digit years whenever 2 digit years are called for</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_locale" class="inline-link"> locale </a><span>override the locale used to determine formatting rules</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_max" class="inline-link"> max </a><span>Maximum signed value.</span><span title="inherited from dijit/form/RangeBoundTextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_min" class="inline-link"> min </a><span>Minimum signed value.</span><span title="inherited from dijit/form/RangeBoundTextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_pm" class="inline-link"> pm </a><span>override strings for pm in times</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_selector" class="inline-link"> selector </a><span>choice of &#39;time&#39;,&#39;date&#39; (default: date and time)</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_strict" class="inline-link"> strict </a><span>(parse only) strict parsing, off by default</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_timePattern" class="inline-link"> timePattern </a><span>override pattern with this string</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_am" class="inline-link"> am </a><span>override strings for am in times</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_datePattern" class="inline-link"> datePattern </a><span>override pattern with this string</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_formatLength" class="inline-link"> formatLength </a><span>choice of long, short, medium or full (plus any custom additions).</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_fullYear" class="inline-link"> fullYear </a><span>(format only) use 4 digit years whenever 2 digit years are called for</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_locale" class="inline-link"> locale </a><span>override the locale used to determine formatting rules</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_max" class="inline-link"> max </a><span>Maximum signed value.</span><span title="inherited from dijit/form/RangeBoundTextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_min" class="inline-link"> min </a><span>Minimum signed value.</span><span title="inherited from dijit/form/RangeBoundTextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_pm" class="inline-link"> pm </a><span>override strings for pm in times</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_selector" class="inline-link"> selector </a><span>choice of &#39;time&#39;,&#39;date&#39; (default: date and time)</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_strict" class="inline-link"> strict </a><span>(parse only) strict parsing, off by default</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form__DateTimeTextBox___Constraints_timePattern" class="inline-link"> timePattern </a><span>override pattern with this string</span><span title="inherited from dojo/date/locale" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -139,4 +152,4 @@ and also formatting options for how the date/time is displayed.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/form/_DateTimeTextBox.__Constraints" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/json/ref</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/json/ref" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/json/ref.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/json/ref<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Adds advanced JSON {de}serialization capabilities to the base json library.
 This enhances the capabilities of dojo.toJson and dojo.fromJson,
@@ -8,32 +15,34 @@ On parsing, references are resolved. When references are made to
 ids/objects that have been loaded yet, the loader function will be set to
 _loadObject to denote a lazy loading (not loaded yet) object.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/json/ref.html" target="_blank">dojox/json/ref reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_8dojox_json_ref__useRefs" class="inline-link"> _useRefs </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_json_ref_refAttribute" class="inline-link"> refAttribute </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_json_ref_serializeFunctions" class="inline-link"> serializeFunctions </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_json_ref__addProp" class="inline-link"> _addProp</a><span class="parameters">(</span>id, prop) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_json_ref_fromJson" class="inline-link"> fromJson</a><span class="parameters">(</span>str, args) <span>evaluates the passed string-form of a JSON object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_json_ref_resolveJson" class="inline-link"> resolveJson</a><span class="parameters">(</span>root, args) <span>Indexes and resolves references in the JSON object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_json_ref_toJson" class="inline-link"> toJson</a><span class="parameters">(</span>it, prettyPrint, idPrefix, indexSubObjects) <span>Create a JSON serialization of an object.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_8dojox_json_ref__useRefs" class="inline-link"> _useRefs </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_json_ref_refAttribute" class="inline-link"> refAttribute </a><span></span><span title="Must manually require () dojox/rpc/JsonRest to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_json_ref_serializeFunctions" class="inline-link"> serializeFunctions </a><span></span><span title="Must manually require () dojox/data/PersevereStore to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_json_ref__addProp" class="inline-link"> _addProp</a><span class="parameters">(</span>id, prop) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_json_ref_fromJson" class="inline-link"> fromJson</a><span class="parameters">(</span>str, args) <span>evaluates the passed string-form of a JSON object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_json_ref_resolveJson" class="inline-link"> resolveJson</a><span class="parameters">(</span>root, args) <span>Indexes and resolves references in the JSON object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_json_ref_toJson" class="inline-link"> toJson</a><span class="parameters">(</span>it, prettyPrint, idPrefix, indexSubObjects) <span>Create a JSON serialization of an object.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -236,4 +245,4 @@ change that variable before calling dojo.toJson().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/json/ref" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,90 +1,98 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_TextBoxMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/form/_TextBoxMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_TextBoxMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/_TextBoxMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A mixin for textbox form input widgets</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/form/_TextBoxMixin.html" target="_blank">dijit/form/_TextBoxMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_8dijit_form__TextBoxMixin___skipInputEvent" class="inline-link"> __skipInputEvent </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dijit_form__TextBoxMixin__blankValue" class="inline-link"> _blankValue </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dijit_form__TextBoxMixin_displayedValue" class="inline-link"> displayedValue </a><span>For subclasses like ComboBox where the displayed value
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_8dijit_form__TextBoxMixin___skipInputEvent" class="inline-link"> __skipInputEvent </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dijit_form__TextBoxMixin__blankValue" class="inline-link"> _blankValue </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dijit_form__TextBoxMixin_displayedValue" class="inline-link"> displayedValue </a><span>For subclasses like ComboBox where the displayed value
 (ex: Kentucky) and the serialized value (ex: KY) are different,
 this represents the displayed value.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_lowercase" class="inline-link"> lowercase </a><span>Converts all characters to lowercase if true.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dijit_form__TextBoxMixin_maxLength" class="inline-link"> maxLength </a><span>HTML INPUT tag maxLength declaration.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dijit_form__TextBoxMixin_placeHolder" class="inline-link"> placeHolder </a><span>Defines a hint to help users fill out the input field (as defined in HTML 5).</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_propercase" class="inline-link"> propercase </a><span>Converts the first character of each word to uppercase if true.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_selectOnClick" class="inline-link"> selectOnClick </a><span>If true, all text will be selected when focused with mouse</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_trim" class="inline-link"> trim </a><span>Removes leading and trailing whitespace if true.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_uppercase" class="inline-link"> uppercase </a><span>Converts all characters to uppercase if true.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;displayedValue&#39;) works.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works as we like.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__isTextSelected" class="inline-link"> _isTextSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Default action handler for user input events</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__refreshState" class="inline-link"> _refreshState</a><span class="parameters">(</span>) <span>After the user types some characters, etc., this method is
+        </li>
+        <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_lowercase" class="inline-link"> lowercase </a><span>Converts all characters to lowercase if true.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dijit_form__TextBoxMixin_maxLength" class="inline-link"> maxLength </a><span>HTML INPUT tag maxLength declaration.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dijit_form__TextBoxMixin_placeHolder" class="inline-link"> placeHolder </a><span>Defines a hint to help users fill out the input field (as defined in HTML 5).</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_propercase" class="inline-link"> propercase </a><span>Converts the first character of each word to uppercase if true.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_selectOnClick" class="inline-link"> selectOnClick </a><span>If true, all text will be selected when focused with mouse</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_trim" class="inline-link"> trim </a><span>Removes leading and trailing whitespace if true.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dijit_form__TextBoxMixin_uppercase" class="inline-link"> uppercase </a><span>Converts all characters to uppercase if true.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;displayedValue&#39;) works.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works as we like.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__isTextSelected" class="inline-link"> _isTextSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Default action handler for user input events</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__refreshState" class="inline-link"> _refreshState</a><span class="parameters">(</span>) <span>After the user types some characters, etc., this method is
 called to check the field for validity etc.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setDisplayedValueAttr" class="inline-link"> _setDisplayedValueAttr</a><span class="parameters">(</span>value) <span>Hook so set(&#39;displayedValue&#39;, ...) works.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setSelectionRange" class="inline-link"> _setSelectionRange</a><span class="parameters">(</span>element, start, stop) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>textDir) <span>Setter for textDir.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange, formattedValue) <span>Hook so set(&#39;value&#39;, ...) works.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_filter" class="inline-link"> filter</a><span class="parameters">(</span>val) <span>Auto-corrections (such as trimming) that are applied to textbox
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setDisplayedValueAttr" class="inline-link"> _setDisplayedValueAttr</a><span class="parameters">(</span>value) <span>Hook so set(&#39;displayedValue&#39;, ...) works.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setSelectionRange" class="inline-link"> _setSelectionRange</a><span class="parameters">(</span>element, start, stop) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>textDir) <span>Setter for textDir.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange, formattedValue) <span>Hook so set(&#39;value&#39;, ...) works.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_filter" class="inline-link"> filter</a><span class="parameters">(</span>val) <span>Auto-corrections (such as trimming) that are applied to textbox
 value on blur or form submit.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a value to a properly formatted string.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_selectInputText" class="inline-link"> selectInputText</a><span class="parameters">(</span>element, start, stop) <span>Select text in the input element argument, from start (default 0), to stop (default end).</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>by) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>evt) <span>Called AFTER the input event has happened</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_onInput" class="inline-link"> onInput</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a value to a properly formatted string.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_selectInputText" class="inline-link"> selectInputText</a><span class="parameters">(</span>element, start, stop) <span>Select text in the input element argument, from start (default 0), to stop (default end).</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>by) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__TextBoxMixin__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>evt) <span>Called AFTER the input event has happened</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__TextBoxMixin_onInput" class="inline-link"> onInput</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -566,4 +574,4 @@ to execute standard trimming code in TextBox.filter().
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/form/_TextBoxMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

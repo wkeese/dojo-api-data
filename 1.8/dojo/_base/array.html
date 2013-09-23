@@ -1,38 +1,46 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/array</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/array" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/array.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/_base/array<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>The Javascript v1.6 array extensions.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/_base/array.html" target="_blank">dojo/_base/array reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo__base_array_clearCache" class="inline-link"> clearCache</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_every" class="inline-link"> every</a><span class="parameters">(</span>arr, callback, thisObject) <span>Determines whether or not every item in arr satisfies the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo__base_array_clearCache" class="inline-link"> clearCache</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_every" class="inline-link"> every</a><span class="parameters">(</span>arr, callback, thisObject) <span>Determines whether or not every item in arr satisfies the
 condition implemented by callback.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_filter" class="inline-link"> filter</a><span class="parameters">(</span>arr, callback, thisObject) <span>Returns a new Array with those items from arr that match the
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_filter" class="inline-link"> filter</a><span class="parameters">(</span>arr, callback, thisObject) <span>Returns a new Array with those items from arr that match the
 condition implemented by callback.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>arr, callback, thisObject) <span>for every item in arr, callback is invoked.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_indexOf" class="inline-link"> indexOf</a><span class="parameters">(</span>arr, value, fromIndex, findLast) <span>locates the first index of the provided value in the
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>arr, callback, thisObject) <span>for every item in arr, callback is invoked.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_indexOf" class="inline-link"> indexOf</a><span class="parameters">(</span>arr, value, fromIndex, findLast) <span>locates the first index of the provided value in the
 passed array.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_lastIndexOf" class="inline-link"> lastIndexOf</a><span class="parameters">(</span>arr, value, fromIndex) <span>locates the last index of the provided value in the passed
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_lastIndexOf" class="inline-link"> lastIndexOf</a><span class="parameters">(</span>arr, value, fromIndex) <span>locates the last index of the provided value in the passed
 array.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_map" class="inline-link"> map</a><span class="parameters">(</span>arr, callback, thisObject, Ctr) <span>applies callback to each element of arr and returns
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_map" class="inline-link"> map</a><span class="parameters">(</span>arr, callback, thisObject, Ctr) <span>applies callback to each element of arr and returns
 an Array with the results</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_array_some" class="inline-link"> some</a><span class="parameters">(</span>arr, callback, thisObject) <span>Determines whether or not any item in arr satisfies the
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_array_some" class="inline-link"> some</a><span class="parameters">(</span>arr, callback, thisObject) <span>Determines whether or not any item in arr satisfies the
 condition implemented by callback.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -93,13 +101,13 @@ and array and returns true if the condition is met.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  // returns false
-  array.every([1, 2, 3, 4], function(item){ return item&gt;1; });</code></pre>
+            <h3>Example 1</h3><pre><code>// returns false
+array.every([1, 2, 3, 4], function(item){ return item&gt;1; });</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  // returns true
-  array.every([1, 2, 3, 4], function(item){ return item&gt;0; });</code></pre>
+            <h3>Example 2</h3><pre><code>// returns true
+array.every([1, 2, 3, 4], function(item){ return item&gt;0; });</code></pre>
 
           </div>
         </div>
@@ -154,8 +162,8 @@ will be included in the returned array.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> // returns [2, 3, 4]
- array.filter([1, 2, 3, 4], function(item){ return item&gt;1; });</code></pre>
+            <h3>Example 1</h3><pre><code>// returns [2, 3, 4]
+array.filter([1, 2, 3, 4], function(item){ return item&gt;1; });</code></pre>
 
           </div>
         </div>
@@ -204,47 +212,47 @@ For more details, see:
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> // log out all members of the array:
- array.forEach(
-    [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
-    function(item){
-      console.log(item);
-    }
- );</code></pre>
+            <h3>Example 1</h3><pre><code>// log out all members of the array:
+array.forEach(
+      [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
+      function(item){
+          console.log(item);
+      }
+);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code> // log out the members and their indexes
- array.forEach(
-    [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
-    function(item, idx, arr){
-      console.log(item, &quot;at index:&quot;, idx);
-    }
- );</code></pre>
+            <h3>Example 2</h3><pre><code>// log out the members and their indexes
+array.forEach(
+      [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
+      function(item, idx, arr){
+          console.log(item, &quot;at index:&quot;, idx);
+      }
+);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><pre><code> // use a scoped object member as the callback
+            <h3>Example 3</h3><pre><code>// use a scoped object member as the callback
 
- var obj = {
-    prefix: &quot;logged via obj.callback:&quot;,
-    callback: function(item){
-      console.log(this.prefix, item);
-    }
- };
+var obj = {
+      prefix: &quot;logged via obj.callback:&quot;,
+      callback: function(item){
+          console.log(this.prefix, item);
+      }
+};
 
- // specifying the scope function executes the callback in that scope
- array.forEach(
-    [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
-    obj.callback,
-    obj
- );
+// specifying the scope function executes the callback in that scope
+array.forEach(
+      [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
+      obj.callback,
+      obj
+);
 
- // alternately, we can accomplish the same thing with lang.hitch()
- array.forEach(
-    [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
-    lang.hitch(obj, &quot;callback&quot;)
- );</code></pre>
+// alternately, we can accomplish the same thing with lang.hitch()
+array.forEach(
+      [ &quot;thinger&quot;, &quot;blah&quot;, &quot;howdy&quot;, 10 ],
+      lang.hitch(obj, &quot;callback&quot;)
+);</code></pre>
 
           </div>
         </div>
@@ -372,7 +380,7 @@ individual characters.</p>
             <td class="jsdoc-param-name">callback</td>
             <td class="jsdoc-param-type">Function | String</td>
             <td class="jsdoc-param-description"><p>a function is invoked with three arguments, (item, index,
-array),   and returns a value</p>
+array),  and returns a value</p>
  
             </td>
           </tr>
@@ -395,8 +403,8 @@ array),   and returns a value</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> // returns [2, 3, 4, 5]
- array.map([1, 2, 3, 4], function(item){ return item+1 });</code></pre>
+            <h3>Example 1</h3><pre><code>// returns [2, 3, 4, 5]
+array.map([1, 2, 3, 4], function(item){ return item+1 });</code></pre>
 
           </div>
         </div>
@@ -449,17 +457,17 @@ and array and returns true if the condition is met.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code> // is true
- array.some([1, 2, 3, 4], function(item){ return item&gt;1; });</code></pre>
+            <h3>Example 1</h3><pre><code>// is true
+array.some([1, 2, 3, 4], function(item){ return item&gt;1; });</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code> // is false
- array.some([1, 2, 3, 4], function(item){ return item&lt;1; });</code></pre>
+            <h3>Example 2</h3><pre><code>// is false
+array.some([1, 2, 3, 4], function(item){ return item&lt;1; });</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/array" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

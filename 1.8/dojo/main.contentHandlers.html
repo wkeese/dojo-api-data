@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/main.contentHandlers</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/main.contentHandlers" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/main.contentHandlers.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/main.contentHandlers<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A map of available XHR transport handle types. Name matches the
 <code>handleAs</code> attribute passed to XHR calls.</p>
@@ -11,45 +18,48 @@ from the contentHandler will be passed to the <code>load</code> or <code>handle<
 functions defined in the original xhr call.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>Creating a custom content-handler:</p>
-<pre><code>  xhr.contentHandlers.makeCaps = function(xhr){
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>Creating a custom content-handler:
+
+</p>
+<pre><code>xhr.contentHandlers.makeCaps = function(xhr){
     return xhr.responseText.toUpperCase();
-  }
-  // and later:
-  dojo.xhrGet({
+}
+// and later:
+dojo.xhrGet({
     url:&quot;foo.txt&quot;,
     handleAs:&quot;makeCaps&quot;,
     load: function(data){ /* data is a toUpper version of foo.txt */ }
-  });</code></pre>
+});</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_auto" class="inline-link"> auto</a><span class="parameters">(</span>xhr) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_javascript" class="inline-link"> javascript</a><span class="parameters">(</span>xhr) <span>A contentHandler which evaluates the response data, expecting it to be valid JavaScript</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_json" class="inline-link"> json</a><span class="parameters">(</span>xhr) <span>A contentHandler which returns a JavaScript object created from the response data</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_json-comment-filtered" class="inline-link"> json-comment-filtered</a><span class="parameters">(</span>xhr) <span>A contentHandler which expects comment-filtered JSON.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_json-comment-optional" class="inline-link"> json-comment-optional</a><span class="parameters">(</span>xhr) <span>A contentHandler which checks the presence of comment-filtered JSON and
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_auto" class="inline-link"> auto</a><span class="parameters">(</span>xhr) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_javascript" class="inline-link"> javascript</a><span class="parameters">(</span>xhr) <span>A contentHandler which evaluates the response data, expecting it to be valid JavaScript</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_json" class="inline-link"> json</a><span class="parameters">(</span>xhr) <span>A contentHandler which returns a JavaScript object created from the response data</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_json-comment-filtered" class="inline-link"> json-comment-filtered</a><span class="parameters">(</span>xhr) <span>A contentHandler which expects comment-filtered JSON.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_json-comment-optional" class="inline-link"> json-comment-optional</a><span class="parameters">(</span>xhr) <span>A contentHandler which checks the presence of comment-filtered JSON and
 alternates between the json and json-comment-filtered contentHandlers.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_olson-zoneinfo" class="inline-link"> olson-zoneinfo</a><span class="parameters">(</span>xhr) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_text" class="inline-link"> text</a><span class="parameters">(</span>xhr) <span>A contentHandler which simply returns the plaintext response data</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_xml" class="inline-link"> xml</a><span class="parameters">(</span>xhr) <span>A contentHandler returning an XML Document parsed from the response data</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_olson-zoneinfo" class="inline-link"> olson-zoneinfo</a><span class="parameters">(</span>xhr) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_text" class="inline-link"> text</a><span class="parameters">(</span>xhr) <span>A contentHandler which simply returns the plaintext response data</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_contentHandlers_xml" class="inline-link"> xml</a><span class="parameters">(</span>xhr) <span>A contentHandler returning an XML Document parsed from the response data</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -243,4 +253,4 @@ alternates between the <code>json</code> and <code>json-comment-filtered</code> 
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/main.contentHandlers" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

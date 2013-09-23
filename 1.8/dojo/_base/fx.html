@@ -1,33 +1,49 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/fx</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/fx" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/fx.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/_base/fx<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines the base <a class="jsdoc-link" href="/api/1.8/dojo/_base/fx">dojo/_base/fx</a> implementation.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/_base/fx.html" target="_blank">dojo/_base/fx reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo__base_fx__defaultEasing" class="inline-link"> _defaultEasing</a><span class="parameters">(</span>n) <span>indicates the easing function to be used when animating the of an indicator.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo__base_fx__fade" class="inline-link"> _fade</a><span class="parameters">(</span>args) <span>Fade an element from an opacity to an opacity.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo__base_fx__Line" class="inline-link"> _Line</a><span class="parameters">(</span>start, end) <span>Object used to generate values from a start value to an end value</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_fx_anim" class="inline-link"> anim</a><span class="parameters">(</span>node, properties, duration, easing, onEnd, delay) <span>Alias of dojo.anim - the shorthand dojo.animateProperty with auto-play</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_fx_animateProperty" class="inline-link"> animateProperty</a><span class="parameters">(</span>args) <span>Alias of dojo.animateProperty - animate any CSS property</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_fx_Animation" class="inline-link"> Animation</a><span class="parameters">(</span>args) <span>A generic animation class that fires callbacks into its handlers
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo__base_fx__defaultEasing" class="inline-link"> _defaultEasing</a><span class="parameters">(</span>n) <span>The default easing function for Animation(s)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo__base_fx__fade" class="inline-link"> _fade</a><span class="parameters">(</span>args) <span>Returns an animation that will fade the node defined by
+args.node from the start to end values passed (args.start
+args.end) (end is mandatory, start is optional)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo__base_fx__Line" class="inline-link"> _Line</a><span class="parameters">(</span>start, end) <span>Object used to generate values from a start value to an end value</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_fx_anim" class="inline-link"> anim</a><span class="parameters">(</span>node, properties, duration, easing, onEnd, delay) <span>A simpler interface to animateProperty(), also returns
+an instance of Animation but begins the animation
+immediately, unlike nearly every other Dojo animation API.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_fx_animateProperty" class="inline-link"> animateProperty</a><span class="parameters">(</span>args) <span>Returns an animation that will transition the properties of
+node defined in args depending how they are defined in
+args.properties</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_fx_Animation" class="inline-link"> Animation</a><span class="parameters">(</span>args) <span>A generic animation class that fires callbacks into its handlers
 object at various states.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_fx_fadeIn" class="inline-link"> fadeIn</a><span class="parameters">(</span>args) <span>Alias of dojo.fadeIn - Fade a node in.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_fx_fadeOut" class="inline-link"> fadeOut</a><span class="parameters">(</span>args) <span>Alias of dojo.fadeOut - Fades a node out.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_fx_fadeIn" class="inline-link"> fadeIn</a><span class="parameters">(</span>args) <span>Returns an animation that will fade node defined in &#39;args&#39; from
+its current opacity to fully opaque.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_fx_fadeOut" class="inline-link"> fadeOut</a><span class="parameters">(</span>args) <span>Returns an animation that will fade node defined in &#39;args&#39;
+from its current opacity to fully transparent.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -38,7 +54,7 @@ object at various states.</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/fx" class="jsdoc-link">dojo/_base/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>indicates the easing function to be used when animating the of an indicator.</p>
+        <div class="jsdoc-full-summary"><p>The default easing function for Animation(s)</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -61,9 +77,9 @@ object at various states.</span>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/fx" class="jsdoc-link">dojo/_base/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Fade an element from an opacity to an opacity.
-Omit <code>start:</code> property to detect. <code>end:</code> property is required.
-Ultimately an alias to <code>dojo._fade</code></p>
+        <div class="jsdoc-full-summary"><p>Returns an animation that will fade the node defined by
+args.node from the start to end values passed (args.start
+args.end) (end is mandatory, start is optional)</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -114,7 +130,9 @@ Ultimately an alias to <code>dojo._fade</code></p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/fx" class="jsdoc-link">dojo/_base/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.anim</code> - the shorthand <code>dojo.animateProperty</code> with auto-play</p>
+        <div class="jsdoc-full-summary"><p>A simpler interface to <code>animateProperty()</code>, also returns
+an instance of <code>Animation</code> but begins the animation
+immediately, unlike nearly every other Dojo animation API.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Simpler (but somewhat less powerful) version
 of <code>animateProperty</code>.  It uses defaults for many basic properties
@@ -190,13 +208,17 @@ animation by. The default is 0.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Fade out a node</p>
-<pre><code>  basefx.anim(&quot;id&quot;, { opacity: 0 });</code></pre>
+            <h3>Example 1</h3><p>Fade out a node
+
+</p>
+<pre><code>basefx.anim(&quot;id&quot;, { opacity: 0 });</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Fade out a node over a full second</p>
-<pre><code>  basefx.anim(&quot;id&quot;, { opacity: 0 }, 1000);</code></pre>
+            <h3>Example 2</h3><p>Fade out a node over a full second
+
+</p>
+<pre><code>basefx.anim(&quot;id&quot;, { opacity: 0 }, 1000);</code></pre>
 
           </div>
         </div>
@@ -206,7 +228,10 @@ animation by. The default is 0.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/fx" class="jsdoc-link">dojo/_base/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.animateProperty</code> - animate any CSS property</p>
+        <div class="jsdoc-full-summary"><p>Returns an animation that will transition the properties of
+node defined in <code>args</code> depending how they are defined in
+<code>args.properties</code>
+</p>
 </div>
         <div class="jsdoc-full-summary"><p>Foundation of most <a class="jsdoc-link" href="/api/1.8/dojo/_base/fx">dojo/_base/fx</a>
 animations. It takes an object of &quot;properties&quot; corresponding to
@@ -223,21 +248,12 @@ duration.
           <tr>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>properties (Object, optional): <p>A hash map of style properties to Objects describing the transition,
-such as the properties of _Line with an additional &#39;units&#39; property</p></p>
-</li>
-<li><p>node (DOMNode|String): <p>The node referenced in the animation</p></p>
-</li>
-<li><p>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p></p>
-</li>
-<li><p>easing (Function, optional): <p>An easing function.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>properties (Object, optional): <p>A hash map of style properties to Objects describing the transition,
+such as the properties of _Line with an additional &#39;units&#39; property</p>
+</li><li>node (DOMNode|String): <p>The node referenced in the animation</p>
+</li><li>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p>
+</li><li>easing (Function, optional): <p>An easing function.</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -245,13 +261,17 @@ such as the properties of _Line with an additional &#39;units&#39; property</p><
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>A simple animation that changes the width of the specified node.</p>
-<pre><code>  basefx.animateProperty({
+            <h3>Example 1</h3><p>A simple animation that changes the width of the specified node.
+
+</p>
+<pre><code>basefx.animateProperty({
     node: &quot;nodeId&quot;,
     properties: { width: 400 },
-  }).play();</code></pre>
+}).play();</code></pre>
 <p>Dojo figures out the start value for the width and converts the
-integer specified for the width to the more expressive but
+
+</p>
+<p>integer specified for the width to the more expressive but
 verbose form <code>{ width: { end: &#39;400&#39;, units: &#39;px&#39; } }</code> which you
 can also specify directly. Defaults to &#39;px&#39; if omitted.
 </p>
@@ -259,16 +279,20 @@ can also specify directly. Defaults to &#39;px&#39; if omitted.
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Animate width, height, and padding over 2 seconds... the
-pedantic way:</p>
-<pre><code>  basefx.animateProperty({ node: node, duration:2000,
+pedantic way:
+
+</p>
+<pre><code>basefx.animateProperty({ node: node, duration:2000,
     properties: {
-      width: { start: &#39;200&#39;, end: &#39;400&#39;, units:&quot;px&quot; },
-      height: { start:&#39;200&#39;, end: &#39;400&#39;, units:&quot;px&quot; },
-      paddingTop: { start:&#39;5&#39;, end:&#39;50&#39;, units:&quot;px&quot; }
+        width: { start: &#39;200&#39;, end: &#39;400&#39;, units:&quot;px&quot; },
+        height: { start:&#39;200&#39;, end: &#39;400&#39;, units:&quot;px&quot; },
+        paddingTop: { start:&#39;5&#39;, end:&#39;50&#39;, units:&quot;px&quot; }
     }
-  }).play();</code></pre>
+}).play();</code></pre>
 <p>Note &#39;paddingTop&#39; is used over &#39;padding-top&#39;. Multi-name CSS properties
-are written using &quot;mixed case&quot;, as the hyphen is illegal as an object key.
+
+</p>
+<p>are written using &quot;mixed case&quot;, as the hyphen is illegal as an object key.
 </p>
 
           </div>
@@ -276,58 +300,61 @@ are written using &quot;mixed case&quot;, as the hyphen is illegal as an object 
             <h3>Example 3</h3><p>Plug in a different easing function and register a callback for
 when the animation ends. Easing functions accept values between
 zero and one and return a value on that basis. In this case, an
-exponential-in curve.</p>
-<pre><code>  basefx.animateProperty({
+exponential-in curve.
+
+</p>
+<pre><code>basefx.animateProperty({
     node: &quot;nodeId&quot;,
     // dojo figures out the start value
     properties: { width: { end: 400 } },
     easing: function(n){
-      return (n==0) ? 0 : Math.pow(2, 10 * (n - 1));
+        return (n==0) ? 0 : Math.pow(2, 10 * (n - 1));
     },
     onEnd: function(node){
-      // called when the animation finishes. The animation
-      // target is passed to this function
+        // called when the animation finishes. The animation
+        // target is passed to this function
     }
-  }).play(500); // delay playing half a second</code></pre>
-<p></p>
+}).play(500); // delay playing half a second</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>Like all <code>Animation</code>s, animateProperty returns a handle to the
 Animation instance, which fires the events common to Dojo FX. Use <code>aspect.after</code>
-to access these events outside of the Animation definition:</p>
-<pre><code>  var anim = basefx.animateProperty({
+to access these events outside of the Animation definition:
+
+</p>
+<pre><code>var anim = basefx.animateProperty({
     node:&quot;someId&quot;,
     properties:{
-      width:400, height:500
+        width:400, height:500
     }
-  });
-  aspect.after(anim, &quot;onEnd&quot;, function(){
+});
+aspect.after(anim, &quot;onEnd&quot;, function(){
     console.log(&quot;animation ended&quot;);
-  }, true);
-  // play the animation now:
-  anim.play();</code></pre>
-<p></p>
+}, true);
+// play the animation now:
+anim.play();</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 5</h3><p>Each property can be a function whose return value is substituted along.
 Additionally, each measurement (eg: start, end) can be a function. The node
-reference is passed directly to callbacks.</p>
-<pre><code>  basefx.animateProperty({
+reference is passed directly to callbacks.
+
+</p>
+<pre><code>basefx.animateProperty({
     node:&quot;mine&quot;,
     properties:{
-      height:function(node){
-        // shrink this node by 50%
-        return domGeom.position(node).h / 2
-      },
-      width:{
-        start:function(node){ return 100; },
-        end:function(node){ return 200; }
-      }
+        height:function(node){
+            // shrink this node by 50%
+            return domGeom.position(node).h / 2
+        },
+        width:{
+            start:function(node){ return 100; },
+            end:function(node){ return 200; }
+        }
     }
-  }).play();</code></pre>
-<p></p>
+}).play();</code></pre>
 
           </div>
         </div>
@@ -368,7 +395,8 @@ animation instance.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/fx" class="jsdoc-link">dojo/_base/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fadeIn</code> - Fade a node in.</p>
+        <div class="jsdoc-full-summary"><p>Returns an animation that will fade node defined in &#39;args&#39; from
+its current opacity to fully opaque.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -379,18 +407,10 @@ animation instance.</p>
           <tr>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>node (DOMNode|String): <p>The node referenced in the animation</p></p>
-</li>
-<li><p>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p></p>
-</li>
-<li><p>easing (Function, optional): <p>An easing function.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>node (DOMNode|String): <p>The node referenced in the animation</p>
+</li><li>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p>
+</li><li>easing (Function, optional): <p>An easing function.</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -401,7 +421,8 @@ animation instance.</p>
         </div>
         <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/fx" class="jsdoc-link">dojo/_base/fx</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Alias of <code>dojo.fadeOut</code> - Fades a node out.</p>
+        <div class="jsdoc-full-summary"><p>Returns an animation that will fade node defined in &#39;args&#39;
+from its current opacity to fully transparent.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -412,18 +433,10 @@ animation instance.</p>
           <tr>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>node (DOMNode|String): <p>The node referenced in the animation</p></p>
-</li>
-<li><p>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p></p>
-</li>
-<li><p>easing (Function, optional): <p>An easing function.</p></p>
-</li>
-</ul>
-
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>node (DOMNode|String): <p>The node referenced in the animation</p>
+</li><li>duration (Integer, optional): <p>Duration of the animation in milliseconds.</p>
+</li><li>easing (Function, optional): <p>An easing function.</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -431,4 +444,4 @@ animation instance.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/fx" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/app/controllers/Layout</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/app/controllers/Layout" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/app/controllers/Layout.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/app/controllers/Layout<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/app/controllers/LayoutBase" class="jsdoc-link">dojox/app/controllers/LayoutBase</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Layout<span class="parameters">(app,events);</span></div>
 </div>
@@ -34,39 +41,40 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_app_controllers_Layout__doLayout" class="inline-link"> _doLayout</a><span class="parameters">(</span>view) <span>do view layout.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_app_controllers_Layout__doResize" class="inline-link"> _doResize</a><span class="parameters">(</span>view) <span>resize view.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_bind" class="inline-link"> bind</a><span class="parameters">(</span>evented, event, handler) <span>Bind event on dojo/Evented instance, document, domNode or window.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>app, events) <span>bind &quot;app-initLayout&quot; and &quot;app-layoutView&quot; events on application instance.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_hideView" class="inline-link"> hideView</a><span class="parameters">(</span>view) <span></span><span title="inherited from dojox/app/controllers/LayoutBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_initLayout" class="inline-link"> initLayout</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-initLayout&quot; event.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_layoutView" class="inline-link"> layoutView</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-layoutView&quot; event.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_resizeSelectedChildren" class="inline-link"> resizeSelectedChildren</a><span class="parameters">(</span>w) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_showView" class="inline-link"> showView</a><span class="parameters">(</span>view) <span></span><span title="inherited from dojox/app/controllers/LayoutBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_unbind" class="inline-link"> unbind</a><span class="parameters">(</span>evented, event) <span>remove a binded event signal.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_onResize" class="inline-link"> onResize</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_app_controllers_Layout__doLayout" class="inline-link"> _doLayout</a><span class="parameters">(</span>view) <span>do view layout.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_app_controllers_Layout__doResize" class="inline-link"> _doResize</a><span class="parameters">(</span>view) <span>resize view.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_bind" class="inline-link"> bind</a><span class="parameters">(</span>evented, event, handler) <span>Bind event on dojo/Evented instance, document, domNode or window.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>app, events) <span>bind &quot;app-initLayout&quot; and &quot;app-layoutView&quot; events on application instance.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_hideView" class="inline-link"> hideView</a><span class="parameters">(</span>view) <span></span><span title="inherited from dojox/app/controllers/LayoutBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_initLayout" class="inline-link"> initLayout</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-initLayout&quot; event.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_layoutView" class="inline-link"> layoutView</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-layoutView&quot; event.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_resizeSelectedChildren" class="inline-link"> resizeSelectedChildren</a><span class="parameters">(</span>w) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_showView" class="inline-link"> showView</a><span class="parameters">(</span>view) <span></span><span title="inherited from dojox/app/controllers/LayoutBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Layout_unbind" class="inline-link"> unbind</a><span class="parameters">(</span>evented, event) <span>remove a binded event signal.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Layout_onResize" class="inline-link"> onResize</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -363,4 +371,4 @@ automatically bind all events registered in controller events property.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/app/controllers/Layout" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

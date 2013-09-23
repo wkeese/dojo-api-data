@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/_Events</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/_Events" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/_Events.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/_Events<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Overwrite some default events of DataGrid
 </p>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>Methods are copied or replaced for overwriting, this might be refined once
 an overall plugin architecture is set up for DataGrid.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _Events<span class="parameters">(inGrid);</span></div>
 </div>
@@ -26,72 +33,73 @@ an overall plugin architecture is set up for DataGrid.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_grid_enhanced__Events__events" class="inline-link"> _events </a><span>Method map cached from dojox.grid._Events().</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_grid_enhanced__Events_cellActiveClass" class="inline-link"> cellActiveClass </a><span>css class to apply to grid content cells when activated(mouse down)</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_grid_enhanced__Events_headerCellActiveClass" class="inline-link"> headerCellActiveClass </a><span>css class to apply to grid header cells when activated(mouse down)</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_grid_enhanced__Events_rowActiveClass" class="inline-link"> rowActiveClass </a><span>css class to apply to grid rows when activated(mouse down)</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_dokeyup" class="inline-link"> dokeyup</a><span class="parameters">(</span>e) <span>Grid key up event handler.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_domousedown" class="inline-link"> domousedown</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_domouseup" class="inline-link"> domouseup</a><span class="parameters">(</span>e) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellClick" class="inline-link"> onCellClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onCellClick()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellDblClick" class="inline-link"> onCellDblClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onCellDblClick()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellMouseDown" class="inline-link"> onCellMouseDown</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onCellMouseDown()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellMouseUp" class="inline-link"> onCellMouseUp</a><span class="parameters">(</span>e) <span>New - Event fired when mouse is up inside content cell.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellClick" class="inline-link"> onHeaderCellClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onHeaderCellClick()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellMouseDown" class="inline-link"> onHeaderCellMouseDown</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onHeaderCellMouseDown()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellMouseOut" class="inline-link"> onHeaderCellMouseOut</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onHeaderCellMouseOut()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellMouseUp" class="inline-link"> onHeaderCellMouseUp</a><span class="parameters">(</span>e) <span>New event</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onKeyDown();</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>New - Event fired when mouse is up inside grid.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onMouseUpRow" class="inline-link"> onMouseUpRow</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowClick" class="inline-link"> onRowClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onRowClick()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowContextMenu" class="inline-link"> onRowContextMenu</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onRowContextMenu()</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowMouseUp" class="inline-link"> onRowMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowSelectorMouseDown" class="inline-link"> onRowSelectorMouseDown</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowSelectorMouseUp" class="inline-link"> onRowSelectorMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onSelectedRegionContextMenu" class="inline-link"> onSelectedRegionContextMenu</a><span class="parameters">(</span>e) <span>New - Event fired when a selected region context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_grid_enhanced__Events__events" class="inline-link"> _events </a><span>Method map cached from dojox.grid._Events().</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_grid_enhanced__Events_cellActiveClass" class="inline-link"> cellActiveClass </a><span>css class to apply to grid content cells when activated(mouse down)</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_grid_enhanced__Events_headerCellActiveClass" class="inline-link"> headerCellActiveClass </a><span>css class to apply to grid header cells when activated(mouse down)</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_grid_enhanced__Events_rowActiveClass" class="inline-link"> rowActiveClass </a><span>css class to apply to grid rows when activated(mouse down)</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_dokeyup" class="inline-link"> dokeyup</a><span class="parameters">(</span>e) <span>Grid key up event handler.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_domousedown" class="inline-link"> domousedown</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_domouseup" class="inline-link"> domouseup</a><span class="parameters">(</span>e) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellClick" class="inline-link"> onCellClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onCellClick()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellDblClick" class="inline-link"> onCellDblClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onCellDblClick()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellMouseDown" class="inline-link"> onCellMouseDown</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onCellMouseDown()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onCellMouseUp" class="inline-link"> onCellMouseUp</a><span class="parameters">(</span>e) <span>New - Event fired when mouse is up inside content cell.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellClick" class="inline-link"> onHeaderCellClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onHeaderCellClick()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellMouseDown" class="inline-link"> onHeaderCellMouseDown</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onHeaderCellMouseDown()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellMouseOut" class="inline-link"> onHeaderCellMouseOut</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onHeaderCellMouseOut()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onHeaderCellMouseUp" class="inline-link"> onHeaderCellMouseUp</a><span class="parameters">(</span>e) <span>New event</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onKeyDown();</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>New - Event fired when mouse is up inside grid.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onMouseUpRow" class="inline-link"> onMouseUpRow</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowClick" class="inline-link"> onRowClick</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onRowClick()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowContextMenu" class="inline-link"> onRowContextMenu</a><span class="parameters">(</span>e) <span>Overwritten, see dojox.grid._Events.onRowContextMenu()</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowMouseUp" class="inline-link"> onRowMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowSelectorMouseDown" class="inline-link"> onRowSelectorMouseDown</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onRowSelectorMouseUp" class="inline-link"> onRowSelectorMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__Events_onSelectedRegionContextMenu" class="inline-link"> onSelectedRegionContextMenu</a><span class="parameters">(</span>e) <span>New - Event fired when a selected region context menu is accessed via mouse right click.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -330,4 +338,4 @@ an overall plugin architecture is set up for DataGrid.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/_Events" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

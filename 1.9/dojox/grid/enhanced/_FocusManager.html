@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/_FocusManager</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/_FocusManager" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/_FocusManager.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/_FocusManager<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _FocusManager<span class="parameters">(grid);</span></div>
 </div>
@@ -23,186 +30,187 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurFromEditableCell" class="inline-link"> _blurFromEditableCell </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__colHeadFocusIdx" class="inline-link"> _colHeadFocusIdx </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__colHeadNode" class="inline-link"> _colHeadNode </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__contextMenuBindNode" class="inline-link"> _contextMenuBindNode </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__isNavigating" class="inline-link"> _isNavigating </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__navElems" class="inline-link"> _navElems </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusClass" class="inline-link"> focusClass </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusView" class="inline-link"> focusView </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_tabbingOut" class="inline-link"> tabbingOut </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__applyEditableCell" class="inline-link"> _applyEditableCell</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__bindAreaEvents" class="inline-link"> _bindAreaEvents</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurContent" class="inline-link"> _blurContent</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurEditableCell" class="inline-link"> _blurEditableCell</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurHeader" class="inline-link"> _blurHeader</a><span class="parameters">(</span>evt, step) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__changeMenuBindNode" class="inline-link"> _changeMenuBindNode</a><span class="parameters">(</span>oldBindNode, newBindNode) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__delayedCellFocus" class="inline-link"> _delayedCellFocus</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__delayedHeaderFocus" class="inline-link"> _delayedHeaderFocus</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__doBlur" class="inline-link"> _doBlur</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__findHeaderCells" class="inline-link"> _findHeaderCells</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__focusContent" class="inline-link"> _focusContent</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__focusEditableCell" class="inline-link"> _focusEditableCell</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__focusifyCellNode" class="inline-link"> _focusifyCellNode</a><span class="parameters">(</span>inBork) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__initColumnHeaders" class="inline-link"> _initColumnHeaders</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__initNavigatableElems" class="inline-link"> _initNavigatableElems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__isHeaderHidden" class="inline-link"> _isHeaderHidden</a><span class="parameters">(</span>) <span>determine if the grid headers are hidden
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurFromEditableCell" class="inline-link"> _blurFromEditableCell </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__colHeadFocusIdx" class="inline-link"> _colHeadFocusIdx </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__colHeadNode" class="inline-link"> _colHeadNode </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__contextMenuBindNode" class="inline-link"> _contextMenuBindNode </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__isNavigating" class="inline-link"> _isNavigating </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__navElems" class="inline-link"> _navElems </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusClass" class="inline-link"> focusClass </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusView" class="inline-link"> focusView </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_tabbingOut" class="inline-link"> tabbingOut </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__applyEditableCell" class="inline-link"> _applyEditableCell</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__bindAreaEvents" class="inline-link"> _bindAreaEvents</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurContent" class="inline-link"> _blurContent</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurEditableCell" class="inline-link"> _blurEditableCell</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__blurHeader" class="inline-link"> _blurHeader</a><span class="parameters">(</span>evt, step) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__changeMenuBindNode" class="inline-link"> _changeMenuBindNode</a><span class="parameters">(</span>oldBindNode, newBindNode) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__delayedCellFocus" class="inline-link"> _delayedCellFocus</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__delayedHeaderFocus" class="inline-link"> _delayedHeaderFocus</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__doBlur" class="inline-link"> _doBlur</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__findHeaderCells" class="inline-link"> _findHeaderCells</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__focusContent" class="inline-link"> _focusContent</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__focusEditableCell" class="inline-link"> _focusEditableCell</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__focusifyCellNode" class="inline-link"> _focusifyCellNode</a><span class="parameters">(</span>inBork) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__initColumnHeaders" class="inline-link"> _initColumnHeaders</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__initNavigatableElems" class="inline-link"> _initNavigatableElems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__isHeaderHidden" class="inline-link"> _isHeaderHidden</a><span class="parameters">(</span>) <span>determine if the grid headers are hidden
 relies on documented technique of setting .dojoxGridHeader { display:none; }</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__mouseDown" class="inline-link"> _mouseDown</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__mouseUp" class="inline-link"> _mouseUp</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__navContent" class="inline-link"> _navContent</a><span class="parameters">(</span>rowStep, colStep, evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__navHeader" class="inline-link"> _navHeader</a><span class="parameters">(</span>rowStep, colStep, evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__scrollHeader" class="inline-link"> _scrollHeader</a><span class="parameters">(</span>currentIdx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__scrollInfo" class="inline-link"> _scrollInfo</a><span class="parameters">(</span>cell, domNode) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__setActiveColHeader" class="inline-link"> _setActiveColHeader</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__stopEvent" class="inline-link"> _stopEvent</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_addArea" class="inline-link"> addArea</a><span class="parameters">(</span>area) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_blurHeader" class="inline-link"> blurHeader</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_colSizeAdjust" class="inline-link"> colSizeAdjust</a><span class="parameters">(</span>e, colIdx, delta) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_contentMouseEvent" class="inline-link"> contentMouseEvent</a><span class="parameters">(</span>evt) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_currentArea" class="inline-link"> currentArea</a><span class="parameters">(</span>areaName, toBlurOld) <span>Set current area to the one areaName refers.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doBlur" class="inline-link"> doBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doColHeaderBlur" class="inline-link"> doColHeaderBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doColHeaderFocus" class="inline-link"> doColHeaderFocus</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doContextMenu" class="inline-link"> doContextMenu</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_doFocus" class="inline-link"> doFocus</a><span class="parameters">(</span>e) <span>Overwritten
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__mouseDown" class="inline-link"> _mouseDown</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__mouseUp" class="inline-link"> _mouseUp</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__navContent" class="inline-link"> _navContent</a><span class="parameters">(</span>rowStep, colStep, evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__navHeader" class="inline-link"> _navHeader</a><span class="parameters">(</span>rowStep, colStep, evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__scrollHeader" class="inline-link"> _scrollHeader</a><span class="parameters">(</span>currentIdx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced__FocusManager__scrollInfo" class="inline-link"> _scrollInfo</a><span class="parameters">(</span>cell, domNode) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__setActiveColHeader" class="inline-link"> _setActiveColHeader</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__stopEvent" class="inline-link"> _stopEvent</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_addArea" class="inline-link"> addArea</a><span class="parameters">(</span>area) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_blurHeader" class="inline-link"> blurHeader</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_colSizeAdjust" class="inline-link"> colSizeAdjust</a><span class="parameters">(</span>e, colIdx, delta) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_contentMouseEvent" class="inline-link"> contentMouseEvent</a><span class="parameters">(</span>evt) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_currentArea" class="inline-link"> currentArea</a><span class="parameters">(</span>areaName, toBlurOld) <span>Set current area to the one areaName refers.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doBlur" class="inline-link"> doBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doColHeaderBlur" class="inline-link"> doColHeaderBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doColHeaderFocus" class="inline-link"> doColHeaderFocus</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doContextMenu" class="inline-link"> doContextMenu</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_doFocus" class="inline-link"> doFocus</a><span class="parameters">(</span>e) <span>Overwritten
 trap focus only for grid dom node
 do not focus for scrolling if grid is about to blur</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doLastNodeBlur" class="inline-link"> doLastNodeBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_doLastNodeFocus" class="inline-link"> doLastNodeFocus</a><span class="parameters">(</span>e) <span>Overwritten</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_findAndFocusGridCell" class="inline-link"> findAndFocusGridCell</a><span class="parameters">(</span>) <span>Overwritten</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_focusArea" class="inline-link"> focusArea</a><span class="parameters">(</span>areaId, evt) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusGrid" class="inline-link"> focusGrid</a><span class="parameters">(</span>inSkipFocusCell) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusGridView" class="inline-link"> focusGridView</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_focusHeader" class="inline-link"> focusHeader</a><span class="parameters">(</span>evt, step) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_getArea" class="inline-link"> getArea</a><span class="parameters">(</span>areaName) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_getHeaderIndex" class="inline-link"> getHeaderIndex</a><span class="parameters">(</span>) <span>if one of the column headers currently has focus, return its index.</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_headerMouseEvent" class="inline-link"> headerMouseEvent</a><span class="parameters">(</span>evt) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_ignoreArea" class="inline-link"> ignoreArea</a><span class="parameters">(</span>name) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_initFocusView" class="inline-link"> initFocusView</a><span class="parameters">(</span>) <span>Overwritten</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isFirstFocusCell" class="inline-link"> isFirstFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isFocusCell" class="inline-link"> isFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>states if the given cell is focused</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isLastFocusCell" class="inline-link"> isLastFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_isNavHeader" class="inline-link"> isNavHeader</a><span class="parameters">(</span>) <span>Overwritten
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_doLastNodeBlur" class="inline-link"> doLastNodeBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_doLastNodeFocus" class="inline-link"> doLastNodeFocus</a><span class="parameters">(</span>e) <span>Overwritten</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_findAndFocusGridCell" class="inline-link"> findAndFocusGridCell</a><span class="parameters">(</span>) <span>Overwritten</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_focusArea" class="inline-link"> focusArea</a><span class="parameters">(</span>areaId, evt) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusGrid" class="inline-link"> focusGrid</a><span class="parameters">(</span>inSkipFocusCell) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_focusGridView" class="inline-link"> focusGridView</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_focusHeader" class="inline-link"> focusHeader</a><span class="parameters">(</span>evt, step) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_getArea" class="inline-link"> getArea</a><span class="parameters">(</span>areaName) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_getHeaderIndex" class="inline-link"> getHeaderIndex</a><span class="parameters">(</span>) <span>if one of the column headers currently has focus, return its index.</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_headerMouseEvent" class="inline-link"> headerMouseEvent</a><span class="parameters">(</span>evt) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_ignoreArea" class="inline-link"> ignoreArea</a><span class="parameters">(</span>name) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_initFocusView" class="inline-link"> initFocusView</a><span class="parameters">(</span>) <span>Overwritten</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isFirstFocusCell" class="inline-link"> isFirstFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isFocusCell" class="inline-link"> isFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>states if the given cell is focused</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isLastFocusCell" class="inline-link"> isLastFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_isNavHeader" class="inline-link"> isNavHeader</a><span class="parameters">(</span>) <span>Overwritten
 Check whether currently navigating among column headers.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isNoFocusCell" class="inline-link"> isNoFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_move" class="inline-link"> move</a><span class="parameters">(</span>inRowDelta, inColDelta) <span>focus grid cell or  simulate focus to column header based on position relative to current focus</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>focus next grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_nextKey" class="inline-link"> nextKey</a><span class="parameters">(</span>e) <span>Overwritten</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_placeArea" class="inline-link"> placeArea</a><span class="parameters">(</span>name, pos, otherAreaName) <span>Place the area refered by name at some logical position relative to an existing area.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_previous" class="inline-link"> previous</a><span class="parameters">(</span>) <span>focus previous grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_previousKey" class="inline-link"> previousKey</a><span class="parameters">(</span>e) <span>Overwritten</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_removeArea" class="inline-link"> removeArea</a><span class="parameters">(</span>areaName) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_setFocusCell" class="inline-link"> setFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>Overwritten - focuses the given grid cell</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_setFocusIndex" class="inline-link"> setFocusIndex</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>focuses the given grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_tab" class="inline-link"> tab</a><span class="parameters">(</span>step, evt) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_tabOut" class="inline-link"> tabOut</a><span class="parameters">(</span>inFocusNode) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onContentKeyDown" class="inline-link"> _onContentKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onEditableCellKeyDown" class="inline-link"> _onEditableCellKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onEditableCellMouseEvent" class="inline-link"> _onEditableCellMouseEvent</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onHeaderKeyDown" class="inline-link"> _onHeaderKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onMouseEvent" class="inline-link"> _onMouseEvent</a><span class="parameters">(</span>type, evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_isNoFocusCell" class="inline-link"> isNoFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_move" class="inline-link"> move</a><span class="parameters">(</span>inRowDelta, inColDelta) <span>focus grid cell or  simulate focus to column header based on position relative to current focus</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>focus next grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_nextKey" class="inline-link"> nextKey</a><span class="parameters">(</span>e) <span>Overwritten</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_placeArea" class="inline-link"> placeArea</a><span class="parameters">(</span>name, pos, otherAreaName) <span>Place the area refered by name at some logical position relative to an existing area.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_previous" class="inline-link"> previous</a><span class="parameters">(</span>) <span>focus previous grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_previousKey" class="inline-link"> previousKey</a><span class="parameters">(</span>e) <span>Overwritten</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_removeArea" class="inline-link"> removeArea</a><span class="parameters">(</span>areaName) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_setFocusCell" class="inline-link"> setFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>Overwritten - focuses the given grid cell</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_setFocusIndex" class="inline-link"> setFocusIndex</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>focuses the given grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced__FocusManager_tab" class="inline-link"> tab</a><span class="parameters">(</span>step, evt) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced__FocusManager_tabOut" class="inline-link"> tabOut</a><span class="parameters">(</span>inFocusNode) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onContentKeyDown" class="inline-link"> _onContentKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onEditableCellKeyDown" class="inline-link"> _onEditableCellKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onEditableCellMouseEvent" class="inline-link"> _onEditableCellMouseEvent</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onHeaderKeyDown" class="inline-link"> _onHeaderKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced__FocusManager__onMouseEvent" class="inline-link"> _onMouseEvent</a><span class="parameters">(</span>type, evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1520,4 +1528,4 @@ placeArea(&quot;myarea&quot;,&quot;below&quot;|&quot;above&quot;,...)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/_FocusManager" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

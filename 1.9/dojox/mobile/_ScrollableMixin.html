@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/_ScrollableMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mobile/_ScrollableMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/_ScrollableMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/_ScrollableMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a>
 </div>
 <div class="jsdoc-full-summary"><p>Mixin for widgets to have a touch scrolling capability.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _ScrollableMixin<span class="parameters">();</span></div>
 </div>
@@ -15,157 +22,158 @@
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/mobile.html" target="_blank">dojox/mobile/_ScrollableMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_9dojox_mobile__ScrollableMixin__fixedAppFooter" class="inline-link"> _fixedAppFooter </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_mobile__ScrollableMixin__parentPadBorderExtentsBottom" class="inline-link"> _parentPadBorderExtentsBottom </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_allowNestedScrolls" class="inline-link"> allowNestedScrolls </a><span>Flag to allow scrolling in nested containers, e.g. to allow ScrollableView in a SwapView.</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_appBars" class="inline-link"> appBars </a><span>Enables the search for application-specific bars (header or footer).</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_constraint" class="inline-link"> constraint </a><span>bounce back to the content area</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_dirLock" class="inline-link"> dirLock </a><span>disable the move handler if scroll starts in the unexpected direction</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_disableFlashScrollBar" class="inline-link"> disableFlashScrollBar </a><span></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fadeScrollBar" class="inline-link"> fadeScrollBar </a><span></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedFooter" class="inline-link"> fixedFooter </a><span>Id of the fixed footer.</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedFooterHeight" class="inline-link"> fixedFooterHeight </a><span>height of a fixed footer</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedHeader" class="inline-link"> fixedHeader </a><span>Id of the fixed header.</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedHeaderHeight" class="inline-link"> fixedHeaderHeight </a><span>height of a fixed header</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_height" class="inline-link"> height </a><span>explicitly specified height of this widget (ex. &quot;300px&quot;)</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_isLocalFooter" class="inline-link"> isLocalFooter </a><span>footer is view-local (as opposed to application-wide)</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_propagatable" class="inline-link"> propagatable </a><span>let touchstart event propagate up</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollableParams" class="inline-link"> scrollableParams </a><span>Parameters for dojox/mobile/scrollable.init().</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollBar" class="inline-link"> scrollBar </a><span>show scroll bar or not</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollDir" class="inline-link"> scrollDir </a><span>v: vertical, h: horizontal, vh: both, f: flip</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollType" class="inline-link"> scrollType </a><span>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_9dojox_mobile__ScrollableMixin__fixedAppFooter" class="inline-link"> _fixedAppFooter </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_mobile__ScrollableMixin__parentPadBorderExtentsBottom" class="inline-link"> _parentPadBorderExtentsBottom </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_allowNestedScrolls" class="inline-link"> allowNestedScrolls </a><span>Flag to allow scrolling in nested containers, e.g. to allow ScrollableView in a SwapView.</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_appBars" class="inline-link"> appBars </a><span>Enables the search for application-specific bars (header or footer).</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_constraint" class="inline-link"> constraint </a><span>bounce back to the content area</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_dirLock" class="inline-link"> dirLock </a><span>disable the move handler if scroll starts in the unexpected direction</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_disableFlashScrollBar" class="inline-link"> disableFlashScrollBar </a><span></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fadeScrollBar" class="inline-link"> fadeScrollBar </a><span></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedFooter" class="inline-link"> fixedFooter </a><span>Id of the fixed footer.</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedFooterHeight" class="inline-link"> fixedFooterHeight </a><span>height of a fixed footer</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedHeader" class="inline-link"> fixedHeader </a><span>Id of the fixed header.</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_fixedHeaderHeight" class="inline-link"> fixedHeaderHeight </a><span>height of a fixed header</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_height" class="inline-link"> height </a><span>explicitly specified height of this widget (ex. &quot;300px&quot;)</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_isLocalFooter" class="inline-link"> isLocalFooter </a><span>footer is view-local (as opposed to application-wide)</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_propagatable" class="inline-link"> propagatable </a><span>let touchstart event propagate up</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollableParams" class="inline-link"> scrollableParams </a><span>Parameters for dojox/mobile/scrollable.init().</span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollBar" class="inline-link"> scrollBar </a><span>show scroll bar or not</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollDir" class="inline-link"> scrollDir </a><span>v: vertical, h: horizontal, vh: both, f: flip</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollType" class="inline-link"> scrollType </a><span>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim
 2: use top/left style,
 3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim
 0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_threshold" class="inline-link"> threshold </a><span>drag threshold value in pixels</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_touchNode" class="inline-link"> touchNode </a><span>a node that will have touch event handlers</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_weight" class="inline-link"> weight </a><span>frictional drag</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile__ScrollableMixin__forceRendering" class="inline-link"> _forceRendering</a><span class="parameters">(</span>elt) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile__ScrollableMixin__runSlideAnimation" class="inline-link"> _runSlideAnimation</a><span class="parameters">(</span>from, to, duration, easing, node, idx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_abort" class="inline-link"> abort</a><span class="parameters">(</span>) <span>Aborts scrolling.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_addCover" class="inline-link"> addCover</a><span class="parameters">(</span>) <span>Adds the transparent DIV cover.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_adjustDestination" class="inline-link"> adjustDestination</a><span class="parameters">(</span>to, pos, dim) <span>A stub function to be overridden by subclasses.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_calcScrollBarPos" class="inline-link"> calcScrollBarPos</a><span class="parameters">(</span>to) <span>Calculates the scroll bar position.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_calcSpeed" class="inline-link"> calcSpeed</a><span class="parameters">(</span>distance, time) <span>Calculate the speed given the distance and time.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_checkFixedBar" class="inline-link"> checkFixedBar</a><span class="parameters">(</span>node, local) <span>Checks if the given node is a fixed bar or not.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_cleanup" class="inline-link"> cleanup</a><span class="parameters">(</span>) <span>Uninitialize the module.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile__ScrollableMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Creates a new instance of the class.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_createMask" class="inline-link"> createMask</a><span class="parameters">(</span>) <span>Creates a mask for a scroll bar edge.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_findAppBars" class="inline-link"> findAppBars</a><span class="parameters">(</span>) <span>Search for application-specific header or footer.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_findDisp" class="inline-link"> findDisp</a><span class="parameters">(</span>node) <span>Finds the currently displayed view node from my sibling nodes.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_flashScrollBar" class="inline-link"> flashScrollBar</a><span class="parameters">(</span>) <span>Shows the scroll bar instantly.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getDim" class="inline-link"> getDim</a><span class="parameters">(</span>) <span>Returns various internal dimensional information needed for calculation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getPos" class="inline-link"> getPos</a><span class="parameters">(</span>) <span>Gets the top position in the midst of animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getScreenSize" class="inline-link"> getScreenSize</a><span class="parameters">(</span>) <span>Returns the dimensions of the browser window.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getSpeed" class="inline-link"> getSpeed</a><span class="parameters">(</span>) <span>Returns an object that indicates the scrolling speed.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_hideScrollBar" class="inline-link"> hideScrollBar</a><span class="parameters">(</span>) <span>Hides the scroll bar.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_init" class="inline-link"> init</a><span class="parameters">(</span>params) <span>Initialize according to the given params.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_isFormElement" class="inline-link"> isFormElement</a><span class="parameters">(</span>node) <span>Returns true if the given node is a form control.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_isTopLevel" class="inline-link"> isTopLevel</a><span class="parameters">(</span>) <span>Returns true if this is a top-level widget.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_makeTranslateStr" class="inline-link"> makeTranslateStr</a><span class="parameters">(</span>to) <span>Constructs a string value that is passed to the -webkit-transform property.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_removeCover" class="inline-link"> removeCover</a><span class="parameters">(</span>) <span>Removes the transparent DIV cover.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_resetScrollBar" class="inline-link"> resetScrollBar</a><span class="parameters">(</span>) <span>Resets the scroll bar length, position, etc.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_resize" class="inline-link"> resize</a><span class="parameters">(</span>e) <span>Adjusts the height of the widget.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>node, alignWithTop, duration) <span>Scrolls the pane until the searching node is in the view.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollScrollBarTo" class="inline-link"> scrollScrollBarTo</a><span class="parameters">(</span>to) <span>Moves the scroll bar(s) to the given position without animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollTo" class="inline-link"> scrollTo</a><span class="parameters">(</span>to, doNotMoveScrollBar, node) <span>Scrolls to the given position immediately without animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_setKeyframes" class="inline-link"> setKeyframes</a><span class="parameters">(</span>from, to, idx) <span>Programmatically sets key frames for the scroll animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_setSelectable" class="inline-link"> setSelectable</a><span class="parameters">(</span>node, selectable) <span>Sets the given node as selectable or unselectable.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_showScrollBar" class="inline-link"> showScrollBar</a><span class="parameters">(</span>) <span>Shows the scroll bar.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_slideScrollBarTo" class="inline-link"> slideScrollBarTo</a><span class="parameters">(</span>to, duration, easing) <span>Moves the scroll bar(s) to the given position with the slide animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>to, duration, easing) <span>Scrolls to the given position with the slide animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_stopAnimation" class="inline-link"> stopAnimation</a><span class="parameters">(</span>) <span>Stops the currently running animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onAfterScroll" class="inline-link"> onAfterScroll</a><span class="parameters">(</span>e) <span>called after a scroll has been performed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onBeforeScroll" class="inline-link"> onBeforeScroll</a><span class="parameters">(</span>e) <span>called before a scroll is initiated.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onFlickAnimationEnd" class="inline-link"> onFlickAnimationEnd</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onFlickAnimationStart" class="inline-link"> onFlickAnimationStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onTouchEnd" class="inline-link"> onTouchEnd</a><span class="parameters">(</span>e) <span>User-defined function to handle touchEnd events.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onTouchMove" class="inline-link"> onTouchMove</a><span class="parameters">(</span>e) <span>User-defined function to handle touchMove events.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onTouchStart" class="inline-link"> onTouchStart</a><span class="parameters">(</span>e) <span>User-defined function to handle touchStart events.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_threshold" class="inline-link"> threshold </a><span>drag threshold value in pixels</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_touchNode" class="inline-link"> touchNode </a><span>a node that will have touch event handlers</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile__ScrollableMixin_weight" class="inline-link"> weight </a><span>frictional drag</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile__ScrollableMixin__forceRendering" class="inline-link"> _forceRendering</a><span class="parameters">(</span>elt) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile__ScrollableMixin__runSlideAnimation" class="inline-link"> _runSlideAnimation</a><span class="parameters">(</span>from, to, duration, easing, node, idx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_abort" class="inline-link"> abort</a><span class="parameters">(</span>) <span>Aborts scrolling.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_addCover" class="inline-link"> addCover</a><span class="parameters">(</span>) <span>Adds the transparent DIV cover.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_adjustDestination" class="inline-link"> adjustDestination</a><span class="parameters">(</span>to, pos, dim) <span>A stub function to be overridden by subclasses.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_calcScrollBarPos" class="inline-link"> calcScrollBarPos</a><span class="parameters">(</span>to) <span>Calculates the scroll bar position.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_calcSpeed" class="inline-link"> calcSpeed</a><span class="parameters">(</span>distance, time) <span>Calculate the speed given the distance and time.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_checkFixedBar" class="inline-link"> checkFixedBar</a><span class="parameters">(</span>node, local) <span>Checks if the given node is a fixed bar or not.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_cleanup" class="inline-link"> cleanup</a><span class="parameters">(</span>) <span>Uninitialize the module.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile__ScrollableMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Creates a new instance of the class.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_createMask" class="inline-link"> createMask</a><span class="parameters">(</span>) <span>Creates a mask for a scroll bar edge.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_findAppBars" class="inline-link"> findAppBars</a><span class="parameters">(</span>) <span>Search for application-specific header or footer.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_findDisp" class="inline-link"> findDisp</a><span class="parameters">(</span>node) <span>Finds the currently displayed view node from my sibling nodes.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_flashScrollBar" class="inline-link"> flashScrollBar</a><span class="parameters">(</span>) <span>Shows the scroll bar instantly.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getDim" class="inline-link"> getDim</a><span class="parameters">(</span>) <span>Returns various internal dimensional information needed for calculation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getPos" class="inline-link"> getPos</a><span class="parameters">(</span>) <span>Gets the top position in the midst of animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getScreenSize" class="inline-link"> getScreenSize</a><span class="parameters">(</span>) <span>Returns the dimensions of the browser window.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_getSpeed" class="inline-link"> getSpeed</a><span class="parameters">(</span>) <span>Returns an object that indicates the scrolling speed.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_hideScrollBar" class="inline-link"> hideScrollBar</a><span class="parameters">(</span>) <span>Hides the scroll bar.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_init" class="inline-link"> init</a><span class="parameters">(</span>params) <span>Initialize according to the given params.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_isFormElement" class="inline-link"> isFormElement</a><span class="parameters">(</span>node) <span>Returns true if the given node is a form control.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_isTopLevel" class="inline-link"> isTopLevel</a><span class="parameters">(</span>) <span>Returns true if this is a top-level widget.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_makeTranslateStr" class="inline-link"> makeTranslateStr</a><span class="parameters">(</span>to) <span>Constructs a string value that is passed to the -webkit-transform property.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_removeCover" class="inline-link"> removeCover</a><span class="parameters">(</span>) <span>Removes the transparent DIV cover.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_resetScrollBar" class="inline-link"> resetScrollBar</a><span class="parameters">(</span>) <span>Resets the scroll bar length, position, etc.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_resize" class="inline-link"> resize</a><span class="parameters">(</span>e) <span>Adjusts the height of the widget.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>node, alignWithTop, duration) <span>Scrolls the pane until the searching node is in the view.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollScrollBarTo" class="inline-link"> scrollScrollBarTo</a><span class="parameters">(</span>to) <span>Moves the scroll bar(s) to the given position without animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_scrollTo" class="inline-link"> scrollTo</a><span class="parameters">(</span>to, doNotMoveScrollBar, node) <span>Scrolls to the given position immediately without animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_setKeyframes" class="inline-link"> setKeyframes</a><span class="parameters">(</span>from, to, idx) <span>Programmatically sets key frames for the scroll animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_setSelectable" class="inline-link"> setSelectable</a><span class="parameters">(</span>node, selectable) <span>Sets the given node as selectable or unselectable.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_showScrollBar" class="inline-link"> showScrollBar</a><span class="parameters">(</span>) <span>Shows the scroll bar.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_slideScrollBarTo" class="inline-link"> slideScrollBarTo</a><span class="parameters">(</span>to, duration, easing) <span>Moves the scroll bar(s) to the given position with the slide animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>to, duration, easing) <span>Scrolls to the given position with the slide animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ScrollableMixin_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_stopAnimation" class="inline-link"> stopAnimation</a><span class="parameters">(</span>) <span>Stops the currently running animation.</span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onAfterScroll" class="inline-link"> onAfterScroll</a><span class="parameters">(</span>e) <span>called after a scroll has been performed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onBeforeScroll" class="inline-link"> onBeforeScroll</a><span class="parameters">(</span>e) <span>called before a scroll is initiated.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onFlickAnimationEnd" class="inline-link"> onFlickAnimationEnd</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onFlickAnimationStart" class="inline-link"> onFlickAnimationStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onTouchEnd" class="inline-link"> onTouchEnd</a><span class="parameters">(</span>e) <span>User-defined function to handle touchEnd events.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onTouchMove" class="inline-link"> onTouchMove</a><span class="parameters">(</span>e) <span>User-defined function to handle touchMove events.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ScrollableMixin_onTouchStart" class="inline-link"> onTouchStart</a><span class="parameters">(</span>e) <span>User-defined function to handle touchStart events.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1147,4 +1155,4 @@ the scroll is canceled.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/_ScrollableMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

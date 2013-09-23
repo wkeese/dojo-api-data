@@ -1,22 +1,33 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/data/ItemFileReadStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/data/ItemFileReadStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/data/ItemFileReadStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/data/ItemFileReadStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
 </div>
 <div class="jsdoc-full-summary"><p>The ItemFileReadStore implements the <a class="jsdoc-link" href="/api/1.8/dojo/data/api/Read">dojo/data/api/Read</a> API and reads
-data from JSON files that have contents in this format --</p>
-<pre><code>  { items: [
+data from JSON files that have contents in this format --
+
+</p>
+<pre><code>{ items: [
     { name:&#39;Kermit&#39;, color:&#39;green&#39;, age:12, friends:[&#39;Gonzo&#39;, {_reference:{name:&#39;Fozzie Bear&#39;}}]},
     { name:&#39;Fozzie Bear&#39;, wears:[&#39;hat&#39;, &#39;tie&#39;]},
     { name:&#39;Miss Piggy&#39;, pets:&#39;Foo-Foo&#39;}
-  ]}</pre></code>
+]}</pre></code>
 <p>Note that it can also contain an &#39;identifier&#39; property that specified which attribute on the items
-in the array of items that acts as the unique identifier for that item.</p>
+
+</p>
+<p>in the array of items that acts as the unique identifier for that item.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/data/ItemFileReadStore<span class="parameters">(keywordParameters);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ItemFileReadStore<span class="parameters">(keywordParameters);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/data/ItemFileReadStore">dojo/data/ItemFileReadStore</a></div>
 <div class="jsdoc-summary"><p>constructor</p>
@@ -31,119 +42,126 @@ in the array of items that acts as the unique identifier for that item.</p>
     <td class="jsdoc-param-name">keywordParameters</td>
     <td class="jsdoc-param-type">Object</td>
     <td class="jsdoc-param-description"><p>{url: String} {data: jsonObject} {typeMap: object}
-The structure of the typeMap object is as follows:</p>
-<pre><code>  {
+The structure of the typeMap object is as follows:
+
+</p>
+<pre><code>{
     type0: function || object,
     type1: function || object,
     ...
     typeN: function || object
-  }</code></pre>
+}</code></pre>
 <p>Where if it is a function, it is assumed to be an object constructor that takes the
-value of _value as the initialization parameters.  If it is an object, then it is assumed
-to be an object of general form:</p>
-<pre><code>  {
+
+</p>
+<p>value of _value as the initialization parameters.  If it is an object, then it is assumed
+to be an object of general form:
+
+</p>
+<pre><code>{
     type: function, //constructor.
-    deserialize:  function(value) //The function that parses the value and constructs the object defined by type appropriately.
-  }</code></pre>
+    deserialize:    function(value) //The function that parses the value and constructs the object defined by type appropriately.
+}</code></pre>
  
     </td>
   </tr>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/data/ItemFileReadStore.html" target="_blank">dojo/data/ItemFileReadStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_8dojo_data_ItemFileReadStore__ccUrl" class="inline-link"> _ccUrl </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_clearOnClose" class="inline-link"> clearOnClose </a><span>Parameter to allow users to specify if a close call should force a reload or not.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojo_data_ItemFileReadStore_data" class="inline-link"> data </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_failOk" class="inline-link"> failOk </a><span>Parameter for specifying that it is OK for the xhrGet call to fail silently.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_hierarchical" class="inline-link"> hierarchical </a><span>Parameter to indicate to process data from the url as hierarchical
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_8dojo_data_ItemFileReadStore__ccUrl" class="inline-link"> _ccUrl </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_clearOnClose" class="inline-link"> clearOnClose </a><span>Parameter to allow users to specify if a close call should force a reload or not.</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojo_data_ItemFileReadStore_data" class="inline-link"> data </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_failOk" class="inline-link"> failOk </a><span>Parameter for specifying that it is OK for the xhrGet call to fail silently.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_hierarchical" class="inline-link"> hierarchical </a><span>Parameter to indicate to process data from the url as hierarchical
 (data items can contain other data items in js form).</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojo_data_ItemFileReadStore_typeMap" class="inline-link"> typeMap </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojo_data_ItemFileReadStore_url" class="inline-link"> url </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Parameter to allow specifying if preventCache should be passed to the xhrGet call or not when loading data from a url.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__addReferenceToMap" class="inline-link"> _addReferenceToMap</a><span class="parameters">(</span>refItem, parentItem, attribute) <span>Method to add an reference map entry for an item and attribute.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>keywordArgs, findCallback, errorCallback) <span>See dojo/data/util.simpleFetch.fetch()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__forceLoad" class="inline-link"> _forceLoad</a><span class="parameters">(</span>) <span>Internal function to force a load of the store if it hasn&#39;t occurred yet.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__getItemByIdentity" class="inline-link"> _getItemByIdentity</a><span class="parameters">(</span>identity) <span>Internal function to look an item up by its identity map.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__getItemsArray" class="inline-link"> _getItemsArray</a><span class="parameters">(</span>queryOptions) <span>Internal function to determine which list of items to search over.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__getItemsFromLoadedData" class="inline-link"> _getItemsFromLoadedData</a><span class="parameters">(</span>dataObject) <span>Function to parse the loaded data into item format and build the internal items array.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
+        </li>
+        <li class="objectIcon"><a href="#1_8dojo_data_ItemFileReadStore_typeMap" class="inline-link"> typeMap </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojo_data_ItemFileReadStore_url" class="inline-link"> url </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Parameter to allow specifying if preventCache should be passed to the xhrGet call or not when loading data from a url.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__addReferenceToMap" class="inline-link"> _addReferenceToMap</a><span class="parameters">(</span>refItem, parentItem, attribute) <span>Method to add an reference map entry for an item and attribute.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>keywordArgs, findCallback, errorCallback) <span>See dojo/data/util.simpleFetch.fetch()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__forceLoad" class="inline-link"> _forceLoad</a><span class="parameters">(</span>) <span>Internal function to force a load of the store if it hasn&#39;t occurred yet.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__getItemByIdentity" class="inline-link"> _getItemByIdentity</a><span class="parameters">(</span>identity) <span>Internal function to look an item up by its identity map.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__getItemsArray" class="inline-link"> _getItemsArray</a><span class="parameters">(</span>queryOptions) <span>Internal function to determine which list of items to search over.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__getItemsFromLoadedData" class="inline-link"> _getItemsFromLoadedData</a><span class="parameters">(</span>dataObject) <span>Function to parse the loaded data into item format and build the internal items array.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_filter" class="inline-link"> filter</a><span class="parameters">(</span>requestArgs, arrayOfItems, findCallback) <span>This method handles the basic filtering needs for ItemFile* based stores.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_filter" class="inline-link"> filter</a><span class="parameters">(</span>requestArgs, arrayOfItems, findCallback) <span>This method handles the basic filtering needs for ItemFile* based stores.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_data_ItemFileReadStore_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -460,7 +478,8 @@ for specific functions to work properly.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
-        <div class="jsdoc-return-description">Array of items in store item format.</div>
+        <div class="jsdoc-return-description"><p>Array of items in store item format.</p>
+</div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dojo_data_ItemFileReadStore__handleQueuedFetches"></a><span class="functionIcon">_handleQueuedFetches</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
@@ -509,20 +528,26 @@ for specific functions to work properly.</p>
             <td class="jsdoc-param-name">keywordParameters</td>
             <td class="jsdoc-param-type">Object</td>
             <td class="jsdoc-param-description"><p>{url: String} {data: jsonObject} {typeMap: object}
-The structure of the typeMap object is as follows:</p>
-<pre><code>  {
+The structure of the typeMap object is as follows:
+
+</p>
+<pre><code>{
     type0: function || object,
     type1: function || object,
     ...
     typeN: function || object
-  }</code></pre>
+}</code></pre>
 <p>Where if it is a function, it is assumed to be an object constructor that takes the
-value of _value as the initialization parameters.  If it is an object, then it is assumed
-to be an object of general form:</p>
-<pre><code>  {
+
+</p>
+<p>value of _value as the initialization parameters.  If it is an object, then it is assumed
+to be an object of general form:
+
+</p>
+<pre><code>{
     type: function, //constructor.
-    deserialize:  function(value) //The function that parses the value and constructs the object defined by type appropriately.
-  }</code></pre>
+    deserialize:    function(value) //The function that parses the value and constructs the object defined by type appropriately.
+}</code></pre>
  
             </td>
           </tr>
@@ -663,8 +688,10 @@ that as the request object to the handler.
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>The keywordArgs parameter may either be an instance of
 conforming to dojo/data/api/Request or may be a simple anonymous object
-that may contain any of the following:</p>
-<pre><code>  {
+that may contain any of the following:
+
+</p>
+<pre><code>{
     query: query-object or query-string,
     queryOptions: object,
     onBegin: Function,
@@ -675,9 +702,11 @@ that may contain any of the following:</p>
     start: int
     count: int
     sort: array
-  }</code></pre>
+}</code></pre>
 <p>All implementations should accept keywordArgs objects with any of
-the 9 standard properties: query, onBegin, onItem, onComplete, onError
+
+</p>
+<p>the 9 standard properties: query, onBegin, onItem, onComplete, onError
 scope, sort, start, and count.  Some implementations may accept additional
 properties in the keywordArgs object as valid parameters, such as
 {includeOutliers:true}.
@@ -710,13 +739,14 @@ an attribute named attrFoo, with a value that starts with &#39;value&#39;.
 <p>The queryOptions parameter is an optional parameter used to specify options that may modify
 the query in some fashion, such as doing a case insensitive search, or doing a deep search
 where all items in a hierarchical representation of data are scanned instead of just the root
-items.  It currently defines two options that all datastores should attempt to honor if possible:</p>
-<pre><code>  {
+items.  It currently defines two options that all datastores should attempt to honor if possible:
+
+</p>
+<pre><code>{
     ignoreCase: boolean, // Whether or not the query should match case sensitively or not.  Default behaviour is false.
-    deep: boolean  // Whether or not a fetch should do a deep search of items and all child
-            // items instead of just root-level items in a datastore.  Default is false.
-  }</code></pre>
-<p></p>
+    deep: boolean   // Whether or not a fetch should do a deep search of items and all child
+                    // items instead of just root-level items in a datastore.  Default is false.
+}</code></pre>
 <h4>The <em>onBegin</em> parameter.</h4>
 <p>function(size, request);
 If an onBegin callback function is provided, the callback function
@@ -789,13 +819,17 @@ millions of item matches to be paired down to something reasonable.
 <p>If a sort parameter is specified, this is a indication to the datastore to
 sort the items in some manner before returning the items.  The array is an array of
 javascript objects that must conform to the following format to be applied to the
-fetching of items:</p>
-<pre><code>  {
+fetching of items:
+
+</p>
+<pre><code>{
     attribute: attribute || attribute-name-string,
     descending: true|false;   // Optional.  Default is false.
-  }</code></pre>
+}</code></pre>
 <p>Note that when comparing attributes, if an item contains no value for the attribute
-(undefined), then it the default ascending sort logic should push it to the bottom
+
+</p>
+<p>(undefined), then it the default ascending sort logic should push it to the bottom
 of the list.  In the descending order case, it such items should appear at the top of the list.</p>
  
             </td>
@@ -1188,4 +1222,4 @@ and is used by simpleFetch.fetch().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/data/ItemFileReadStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

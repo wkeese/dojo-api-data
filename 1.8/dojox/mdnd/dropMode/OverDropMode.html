@@ -1,53 +1,61 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/dropMode/OverDropMode</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mdnd/dropMode/OverDropMode" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/dropMode/OverDropMode.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/dropMode/OverDropMode<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Default class to find the nearest target only if the mouse is over an area.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new OverDropMode<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mdnd/dropMode/OverDropMode">dojox/mdnd/dropMode/OverDropMode</a></div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__oldBehaviour" class="inline-link"> _oldBehaviour </a><span>see getDragpoint()</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__oldXPoint" class="inline-link"> _oldXPoint </a><span>used to save a X position</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__oldYPoint" class="inline-link"> _oldYPoint </a><span>used to save a Y position</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__checkInterval" class="inline-link"> _checkInterval</a><span class="parameters">(</span>areaList, index, x, y) <span>check if the dragNode is in the interval.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__updateArea" class="inline-link"> _updateArea</a><span class="parameters">(</span>area) <span>update the D&amp;D area object (i.e. update coordinates of its DOM node)</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_addArea" class="inline-link"> addArea</a><span class="parameters">(</span>areas, object) <span>Add a D&amp;D Area into an array sorting by the x position.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_getDragPoint" class="inline-link"> getDragPoint</a><span class="parameters">(</span>coords, size, mousePosition) <span>return coordinates of the draggable item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_getDropIndex" class="inline-link"> getDropIndex</a><span class="parameters">(</span>targetArea, coords) <span>Return the index where the drop has to be placed.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_getTargetArea" class="inline-link"> getTargetArea</a><span class="parameters">(</span>areaList, coords, currentIndexArea) <span>get the nearest D&amp;D area.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_initItems" class="inline-link"> initItems</a><span class="parameters">(</span>area) <span>initialize the horizontal line in order to determinate the drop zone.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_refreshItems" class="inline-link"> refreshItems</a><span class="parameters">(</span>area, indexItem, size, added) <span>take into account the drop indicator DOM element in order to compute horizontal lines</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_updateAreas" class="inline-link"> updateAreas</a><span class="parameters">(</span>areaList) <span>refresh areas position and size to determinate the nearest area to drop an item</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__oldBehaviour" class="inline-link"> _oldBehaviour </a><span>see getDragpoint()</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__oldXPoint" class="inline-link"> _oldXPoint </a><span>used to save a X position</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__oldYPoint" class="inline-link"> _oldYPoint </a><span>used to save a Y position</span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__checkInterval" class="inline-link"> _checkInterval</a><span class="parameters">(</span>areaList, index, x, y) <span>check if the dragNode is in the interval.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_dropMode_OverDropMode__updateArea" class="inline-link"> _updateArea</a><span class="parameters">(</span>area) <span>update the D&amp;D area object (i.e. update coordinates of its DOM node)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_addArea" class="inline-link"> addArea</a><span class="parameters">(</span>areas, object) <span>Add a D&amp;D Area into an array sorting by the x position.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_getDragPoint" class="inline-link"> getDragPoint</a><span class="parameters">(</span>coords, size, mousePosition) <span>return coordinates of the draggable item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_getDropIndex" class="inline-link"> getDropIndex</a><span class="parameters">(</span>targetArea, coords) <span>Return the index where the drop has to be placed.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_getTargetArea" class="inline-link"> getTargetArea</a><span class="parameters">(</span>areaList, coords, currentIndexArea) <span>get the nearest D&amp;D area.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_initItems" class="inline-link"> initItems</a><span class="parameters">(</span>area) <span>initialize the horizontal line in order to determinate the drop zone.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_refreshItems" class="inline-link"> refreshItems</a><span class="parameters">(</span>area, indexItem, size, added) <span>take into account the drop indicator DOM element in order to compute horizontal lines</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_dropMode_OverDropMode_updateAreas" class="inline-link"> updateAreas</a><span class="parameters">(</span>areaList) <span>refresh areas position and size to determinate the nearest area to drop an item</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -401,4 +409,4 @@ examples:{&#39;x&#39;:10,&#39;y&#39;:10}</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mdnd/dropMode/OverDropMode" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

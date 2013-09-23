@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/AndOrReadStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/data/AndOrReadStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/AndOrReadStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/AndOrReadStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/data/ItemFileReadStore" class="jsdoc-link">dojo/data/ItemFileReadStore</a>
@@ -26,7 +33,7 @@ Includes legacy/widget support via:
 </p>
 <p>in the array of items that acts as the unique identifier for that item.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new AndOrReadStore<span class="parameters">(keywordParameters);</span></div>
 </div>
@@ -69,99 +76,100 @@ to be an object of general form:
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/data/AndOrReadStore.html" target="_blank">dojox/data/AndOrReadStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__ccUrl" class="inline-link"> _ccUrl </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_clearOnClose" class="inline-link"> clearOnClose </a><span>Parameter to allow users to specify if a close call should force a reload or not.</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_data" class="inline-link"> data </a><span></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_failOk" class="inline-link"> failOk </a><span>Parameter for specifying that it is OK for the xhrGet call to fail silently.</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_hierarchical" class="inline-link"> hierarchical </a><span>Parameter to indicate to process data from the url as hierarchical
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__ccUrl" class="inline-link"> _ccUrl </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_clearOnClose" class="inline-link"> clearOnClose </a><span>Parameter to allow users to specify if a close call should force a reload or not.</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_data" class="inline-link"> data </a><span></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_failOk" class="inline-link"> failOk </a><span>Parameter for specifying that it is OK for the xhrGet call to fail silently.</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_hierarchical" class="inline-link"> hierarchical </a><span>Parameter to indicate to process data from the url as hierarchical
 (data items can contain other data items in js form).</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_typeMap" class="inline-link"> typeMap </a><span></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_url" class="inline-link"> url </a><span></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Parameter to allow specifying if preventCache should be passed to the xhrGet call or not when loading data from a url.</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__addReferenceToMap" class="inline-link"> _addReferenceToMap</a><span class="parameters">(</span>refItem, parentItem, attribute) <span>Method to add an reference map entry for an item and attribute.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_AndOrReadStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>keywordArgs, findCallback, errorCallback) <span>See dojo/data/util.simpleFetch.fetch()</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__forceLoad" class="inline-link"> _forceLoad</a><span class="parameters">(</span>) <span>Internal function to force a load of the store if it hasn&#39;t occurred yet.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__getItemByIdentity" class="inline-link"> _getItemByIdentity</a><span class="parameters">(</span>identity) <span>Internal function to look an item up by its identity map.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__getItemsArray" class="inline-link"> _getItemsArray</a><span class="parameters">(</span>queryOptions) <span>Internal function to determine which list of items to search over.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__getItemsFromLoadedData" class="inline-link"> _getItemsFromLoadedData</a><span class="parameters">(</span>dataObject) <span>Function to parse the loaded data into item format and build the internal items array.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_typeMap" class="inline-link"> typeMap </a><span></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_url" class="inline-link"> url </a><span></span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_data_AndOrReadStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Parameter to allow specifying if preventCache should be passed to the xhrGet call or not when loading data from a url.</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__addReferenceToMap" class="inline-link"> _addReferenceToMap</a><span class="parameters">(</span>refItem, parentItem, attribute) <span>Method to add an reference map entry for an item and attribute.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_AndOrReadStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>keywordArgs, findCallback, errorCallback) <span>See dojo/data/util.simpleFetch.fetch()</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__forceLoad" class="inline-link"> _forceLoad</a><span class="parameters">(</span>) <span>Internal function to force a load of the store if it hasn&#39;t occurred yet.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__getItemByIdentity" class="inline-link"> _getItemByIdentity</a><span class="parameters">(</span>identity) <span>Internal function to look an item up by its identity map.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__getItemsArray" class="inline-link"> _getItemsArray</a><span class="parameters">(</span>queryOptions) <span>Internal function to determine which list of items to search over.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__getItemsFromLoadedData" class="inline-link"> _getItemsFromLoadedData</a><span class="parameters">(</span>dataObject) <span>Function to parse the loaded data into item format and build the internal items array.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_data_AndOrReadStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_AndOrReadStore_filter" class="inline-link"> filter</a><span class="parameters">(</span>requestArgs, arrayOfItems, findCallback) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_AndOrReadStore_filter" class="inline-link"> filter</a><span class="parameters">(</span>requestArgs, arrayOfItems, findCallback) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span><span title="inherited from dojo/data/ItemFileReadStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_AndOrReadStore_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1222,4 +1230,4 @@ and is used by simpleFetch.fetch().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/data/AndOrReadStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

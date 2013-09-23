@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/behavior</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/behavior" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/behavior.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/behavior<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Deprecated.   <a class="jsdoc-link" href="/api/1.8/dojo/behavior">dojo/behavior</a>&#39;s functionality can be achieved using event delegation using <a class="jsdoc-link" href="/api/1.8/dojo/on">dojo/on</a>
 and on.selector().</p>
@@ -18,27 +25,28 @@ matching only new nodes found since .apply() was last called.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/behavior.html" target="_blank">dojo/behavior reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojo_behavior__behaviors" class="inline-link"> _behaviors </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_behavior_add" class="inline-link"> add</a><span class="parameters">(</span>behaviorObj) <span>Add the specified behavior to the list of behaviors, ignoring existing
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojo_behavior__behaviors" class="inline-link"> _behaviors </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_behavior_add" class="inline-link"> add</a><span class="parameters">(</span>behaviorObj) <span>Add the specified behavior to the list of behaviors, ignoring existing
 matches.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_behavior_apply" class="inline-link"> apply</a><span class="parameters">(</span>) <span>Applies all currently registered behaviors to the document.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_behavior_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Deprecated.   dojo/behavior&#39;s functionality can be achieved using event delegation using dojo/on
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_behavior_apply" class="inline-link"> apply</a><span class="parameters">(</span>) <span>Applies all currently registered behaviors to the document.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_behavior_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Deprecated.   dojo/behavior&#39;s functionality can be achieved using event delegation using dojo/on
 and on.selector().</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -111,64 +119,65 @@ in the list will be applied the next time apply() is called.</p>
             <h3>Example 1</h3><p>Simple list of properties. &quot;found&quot; is special. &quot;Found&quot; is assumed if
 no property object for a given selector, and property is a function.
 
+
 </p>
-<pre><code>  behavior.add({
+<pre><code>behavior.add({
     &quot;#id&quot;: {
-      &quot;found&quot;: function(element){
-        // node match found
-      },
-      &quot;onclick&quot;: function(evt){
-        // register onclick handler for found node
-      }
+        &quot;found&quot;: function(element){
+            // node match found
+        },
+        &quot;onclick&quot;: function(evt){
+            // register onclick handler for found node
+        }
     },
     &quot;#otherid&quot;: function(element){
-      // assumes &quot;found&quot; with this syntax
+        // assumes &quot;found&quot; with this syntax
     }
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>If property is a string, a dojo.publish will be issued on the channel:
 
+
 </p>
-<pre><code>  behavior.add({
+<pre><code>behavior.add({
     // topic.publish() whenever class=&quot;noclick&quot; found on anchors
     &quot;a.noclick&quot;: &quot;/got/newAnchor&quot;,
     &quot;div.wrapper&quot;: {
-      &quot;onclick&quot;: &quot;/node/wasClicked&quot;
+        &quot;onclick&quot;: &quot;/node/wasClicked&quot;
     }
-  });
-  topic.subscribe(&quot;/got/newAnchor&quot;, function(node){
+});
+topic.subscribe(&quot;/got/newAnchor&quot;, function(node){
     // handle node finding when dojo/behavior.apply() is called,
     // provided a newly matched node is found.
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Scoping can be accomplished by passing an object as a property to
 a connection handle (on*):
 
+
 </p>
-<pre><code>  behavior.add({
-       &quot;#id&quot;: {
-        // like calling dojo.hitch(foo,&quot;bar&quot;). execute foo.bar() in scope of foo
-        &quot;onmouseenter&quot;: { targetObj: foo, targetFunc: &quot;bar&quot; },
-        &quot;onmouseleave&quot;: { targetObj: foo, targetFunc: &quot;baz&quot; }
-      }
-  });</code></pre>
-<p></p>
+<pre><code>behavior.add({
+        &quot;#id&quot;: {
+            // like calling dojo.hitch(foo,&quot;bar&quot;). execute foo.bar() in scope of foo
+            &quot;onmouseenter&quot;: { targetObj: foo, targetFunc: &quot;bar&quot; },
+            &quot;onmouseleave&quot;: { targetObj: foo, targetFunc: &quot;baz&quot; }
+        }
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>Behaviors match on CSS3 Selectors, powered by dojo/query. Example selectors:
 
+
 </p>
-<pre><code>  behavior.add({
+<pre><code>behavior.add({
     // match all direct descendants
     &quot;#id4 &gt; *&quot;: function(element){
-      // ...
+        // ...
     },
 
     // match the first child node that&#39;s an element
@@ -179,22 +188,21 @@ a connection handle (on*):
 
     // all elements of type tagname
     &quot;tagname&quot;: {
-      // ...
+        // ...
     },
 
     &quot;tagname1 tagname2 tagname3&quot;: {
-      // ...
+        // ...
     },
 
     &quot;.classname&quot;: {
-      // ...
+        // ...
     },
 
     &quot;tagname.classname&quot;: {
-      // ...
+        // ...
     }
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
         </div>
@@ -253,4 +261,4 @@ matching only new nodes found since .apply() was last called.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/behavior" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

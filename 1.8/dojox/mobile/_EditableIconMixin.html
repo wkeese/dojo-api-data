@@ -1,79 +1,88 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/_EditableIconMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mobile/_EditableIconMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/_EditableIconMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/_EditableIconMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A mixin for IconContainer to make it editable.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/mobile.html" target="_blank">dojox/mobile/_EditableIconMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dojox_mobile__EditableIconMixin_deleteIconForEdit" class="inline-link"> deleteIconForEdit </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_mobile__EditableIconMixin_threshold" class="inline-link"> threshold </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__animate" class="inline-link"> _animate</a><span class="parameters">(</span>from, to) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__clearPressTimer" class="inline-link"> _clearPressTimer</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__contains" class="inline-link"> _contains</a><span class="parameters">(</span>point, pos) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__deleteIconClicked" class="inline-link"> _deleteIconClicked</a><span class="parameters">(</span>e) <span>Internal handler for click events.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__detectOverlap" class="inline-link"> _detectOverlap</a><span class="parameters">(</span>point) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__setEditableAttr" class="inline-link"> _setEditableAttr</a><span class="parameters">(</span>editable) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_deleteIconClicked" class="inline-link"> deleteIconClicked</a><span class="parameters">(</span>e) <span>User-defined function to handle clicks for the delete icon.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>Deletes the given item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys the container.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_endEdit" class="inline-link"> endEdit</a><span class="parameters">(</span>) <span>Ends the editing.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_moveChild" class="inline-link"> moveChild</a><span class="parameters">(</span>widget, insertIndex) <span>Moves a child without animation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_moveChildWithAnimation" class="inline-link"> moveChildWithAnimation</a><span class="parameters">(</span>widget, insertIndex) <span>Moves a child with animation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_removeChildWithAnimation" class="inline-link"> removeChildWithAnimation</a><span class="parameters">(</span>widget) <span>Removes the given child with animation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_scaleItem" class="inline-link"> scaleItem</a><span class="parameters">(</span>widget, ratio) <span>Scales an item according to the specified ratio.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_startEdit" class="inline-link"> startEdit</a><span class="parameters">(</span>) <span>Starts the editing.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onDragStart" class="inline-link"> _onDragStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTouchEnd" class="inline-link"> _onTouchEnd</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTouchMove" class="inline-link"> _onTouchMove</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTouchStart" class="inline-link"> _onTouchStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTransitionEnd" class="inline-link"> _onTransitionEnd</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTransitionStart" class="inline-link"> _onTransitionStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onDeleteItem" class="inline-link"> onDeleteItem</a><span class="parameters">(</span>item) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onEndEdit" class="inline-link"> onEndEdit</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onMoveItem" class="inline-link"> onMoveItem</a><span class="parameters">(</span>item, from, to) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onStartEdit" class="inline-link"> onStartEdit</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dojox_mobile__EditableIconMixin_deleteIconForEdit" class="inline-link"> deleteIconForEdit </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_mobile__EditableIconMixin_threshold" class="inline-link"> threshold </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__animate" class="inline-link"> _animate</a><span class="parameters">(</span>from, to) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__clearPressTimer" class="inline-link"> _clearPressTimer</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__contains" class="inline-link"> _contains</a><span class="parameters">(</span>point, pos) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__deleteIconClicked" class="inline-link"> _deleteIconClicked</a><span class="parameters">(</span>e) <span>Internal handler for click events.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__detectOverlap" class="inline-link"> _detectOverlap</a><span class="parameters">(</span>point) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__setEditableAttr" class="inline-link"> _setEditableAttr</a><span class="parameters">(</span>editable) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_deleteIconClicked" class="inline-link"> deleteIconClicked</a><span class="parameters">(</span>e) <span>User-defined function to handle clicks for the delete icon.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>Deletes the given item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys the container.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_endEdit" class="inline-link"> endEdit</a><span class="parameters">(</span>) <span>Ends the editing.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_moveChild" class="inline-link"> moveChild</a><span class="parameters">(</span>widget, insertIndex) <span>Moves a child without animation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_moveChildWithAnimation" class="inline-link"> moveChildWithAnimation</a><span class="parameters">(</span>widget, insertIndex) <span>Moves a child with animation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_removeChildWithAnimation" class="inline-link"> removeChildWithAnimation</a><span class="parameters">(</span>widget) <span>Removes the given child with animation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_scaleItem" class="inline-link"> scaleItem</a><span class="parameters">(</span>widget, ratio) <span>Scales an item according to the specified ratio.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_startEdit" class="inline-link"> startEdit</a><span class="parameters">(</span>) <span>Starts the editing.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onDragStart" class="inline-link"> _onDragStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTouchEnd" class="inline-link"> _onTouchEnd</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTouchMove" class="inline-link"> _onTouchMove</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTouchStart" class="inline-link"> _onTouchStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTransitionEnd" class="inline-link"> _onTransitionEnd</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mobile__EditableIconMixin__onTransitionStart" class="inline-link"> _onTransitionStart</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onDeleteItem" class="inline-link"> onDeleteItem</a><span class="parameters">(</span>item) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onEndEdit" class="inline-link"> onEndEdit</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onMoveItem" class="inline-link"> onMoveItem</a><span class="parameters">(</span>item, from, to) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mobile__EditableIconMixin_onStartEdit" class="inline-link"> onStartEdit</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -448,4 +457,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mobile/_EditableIconMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

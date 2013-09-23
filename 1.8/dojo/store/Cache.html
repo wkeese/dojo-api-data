@@ -1,17 +1,24 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/Cache</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/store/Cache" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/Cache.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/store/Cache<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/store/api/Store" class="jsdoc-link">dojo/store/api/Store,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/store/api/Store" class="jsdoc-link">dojo/store/api/Store</a>
 </div>
 <div class="jsdoc-full-summary"><p>The Cache store wrapper takes a master store and a caching store,
 caches data from the master into the caching store for faster
 lookup. Normally one would use a memory store for the caching
 store and a server store like JsonRest for the master store.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/store/Cache<span class="parameters">(masterStore,cachingStore,options);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Cache<span class="parameters">(masterStore,cachingStore,options);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/store/Cache">dojo/store/Cache</a></div>
 <table class="jsdoc-parameters">
@@ -47,55 +54,55 @@ Typically this should be a local store.</p>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/store/Cache.html" target="_blank">dojo/store/Cache reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>  var master = new Memory(data);
-  var cacher = new Memory();
-  var store = new Cache(master, cacher);</code></pre>
-<p></p>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var master = new Memory(data);
+var cacher = new Memory();
+var store = new Cache(master, cacher);</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon inherited"><a href="#1_8dojo_store_Cache_idProperty" class="inline-link"> idProperty </a><span>If the store has a single primary key, this indicates the property to use as the
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon inherited"><a href="#1_8dojo_store_Cache_idProperty" class="inline-link"> idProperty </a><span>If the store has a single primary key, this indicates the property to use as the
 identity property.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_8dojo_store_Cache_queryEngine" class="inline-link"> queryEngine </a><span>If the store can be queried locally (on the client side in JS), this defines
+        </li>
+        <li class="functionIcon inherited"><a href="#1_8dojo_store_Cache_queryEngine" class="inline-link"> queryEngine </a><span>If the store can be queried locally (on the client side in JS), this defines
 the query engine to use for querying the data store.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Add the given object to the store.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>masterStore, cachingStore, options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_evict" class="inline-link"> evict</a><span class="parameters">(</span>id) <span>Remove the object with the given id from the underlying caching store.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_get" class="inline-link"> get</a><span class="parameters">(</span>id, directives) <span>Get the object with the specific id.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_put" class="inline-link"> put</a><span class="parameters">(</span>object, directives) <span>Put the object into the store (similar to an HTTP PUT).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_query" class="inline-link"> query</a><span class="parameters">(</span>query, directives) <span>Query the underlying master store and cache any results.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_Cache_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Remove the object with the specific id.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Add the given object to the store.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>masterStore, cachingStore, options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_evict" class="inline-link"> evict</a><span class="parameters">(</span>id) <span>Remove the object with the given id from the underlying caching store.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_get" class="inline-link"> get</a><span class="parameters">(</span>id, directives) <span>Get the object with the specific id.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_put" class="inline-link"> put</a><span class="parameters">(</span>object, directives) <span>Put the object into the store (similar to an HTTP PUT).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_query" class="inline-link"> query</a><span class="parameters">(</span>query, directives) <span>Query the underlying master store and cache any results.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_Cache_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Remove the object with the specific id.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_store_Cache_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -119,13 +126,19 @@ identity property. The values of this property should be unique.</p>
 the query engine to use for querying the data store.
 This takes a query and query options and returns a function that can execute
 the provided query on a JavaScript array. The queryEngine may be replace to
-provide more sophisticated querying capabilities. For example:</p>
-<pre><code> var query = store.queryEngine({foo:&quot;bar&quot;}, {count:10});
- query(someArray) -&gt; filtered array</pre></code>
+provide more sophisticated querying capabilities. For example:
+
+</p>
+<pre><code>var query = store.queryEngine({foo:&quot;bar&quot;}, {count:10});
+query(someArray) -&gt; filtered array</pre></code>
 <p>The returned query function may have a &quot;matches&quot; property that can be
-used to determine if an object matches the query. For example:</p>
-<pre><code> query.matches({id:&quot;some-object&quot;, foo:&quot;bar&quot;}) -&gt; true
- query.matches({id:&quot;some-object&quot;, foo:&quot;something else&quot;}) -&gt; false</pre></code>
+
+</p>
+<p>used to determine if an object matches the query. For example:
+
+</p>
+<pre><code>query.matches({id:&quot;some-object&quot;, foo:&quot;bar&quot;}) -&gt; true
+query.matches({id:&quot;some-object&quot;, foo:&quot;something else&quot;}) -&gt; false</pre></code>
 </div>
       </div>
     </div>
@@ -161,7 +174,8 @@ used to determine if an object matches the query. For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number</span></div>
-        <div class="jsdoc-return-description">The new id for the object.</div>
+        <div class="jsdoc-return-description"><p>The new id for the object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_Cache_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(masterStore, cachingStore, options)</span> 
@@ -253,7 +267,8 @@ Typically this should be a local store.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.QueryResults">dojo/store/api/Store.QueryResults</a></span></div>
-        <div class="jsdoc-return-description">A QueryResults object.</div>
+        <div class="jsdoc-return-description"><p>A QueryResults object.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_store_Cache_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">(parent, options)</span> 
@@ -285,7 +300,8 @@ Typically this should be a local store.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.QueryResults">dojo/store/api/Store.QueryResults</a></span></div>
-        <div class="jsdoc-return-description">A result set of the children of the parent object.</div>
+        <div class="jsdoc-return-description"><p>A result set of the children of the parent object.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojo_store_Cache_getIdentity"></a><span class="functionIcon">getIdentity</span><span class="parameters">(object)</span> 
@@ -333,7 +349,8 @@ cache directives, history, or version information.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object</span></div>
-        <div class="jsdoc-return-description">An object containing metadata.</div>
+        <div class="jsdoc-return-description"><p>An object containing metadata.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_Cache_put"></a><span class="functionIcon">put</span><span class="parameters">(object, directives)</span> 
@@ -365,7 +382,8 @@ cache directives, history, or version information.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number</span></div>
-        <div class="jsdoc-return-description">The new id for the object.</div>
+        <div class="jsdoc-return-description"><p>The new id for the object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_Cache_query"></a><span class="functionIcon">query</span><span class="parameters">(query, directives)</span> 
@@ -397,7 +415,8 @@ cache directives, history, or version information.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.QueryResults">dojo/store/api/Store.QueryResults</a></span></div>
-        <div class="jsdoc-return-description">A QueryResults object that can be used to iterate over.</div>
+        <div class="jsdoc-return-description"><p>A QueryResults object that can be used to iterate over.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_Cache_remove"></a><span class="functionIcon">remove</span><span class="parameters">(id)</span> 
@@ -432,8 +451,9 @@ delete, etc. in which case these operations effectively could be thought of
 as &quot;auto-commit&quot; style actions.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.Transaction">dojo/store/api/Store.Transaction</a></span></div>
-        <div class="jsdoc-return-description">This represents the new current transaction.</div>
+        <div class="jsdoc-return-description"><p>This represents the new current transaction.</p>
+</div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/store/Cache" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

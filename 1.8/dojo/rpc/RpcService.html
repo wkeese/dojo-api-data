@@ -1,11 +1,18 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/rpc/RpcService</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/rpc/RpcService" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/rpc/RpcService.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/rpc/RpcService<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>TODOC</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/rpc/RpcService<span class="parameters">(args);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new RpcService<span class="parameters">(args);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/rpc/RpcService">dojo/rpc/RpcService</a></div>
 <div class="jsdoc-summary"><p>Take a string as a url to retrieve an smd or an object that is an smd or partial smd to use
@@ -37,36 +44,37 @@ smdObject is accepts an smdObject directly.
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/rpc/RpcService.html" target="_blank">dojo/rpc/RpcService reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dojo_rpc_RpcService_serviceUrl" class="inline-link"> serviceUrl </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojo_rpc_RpcService_strictArgChecks" class="inline-link"> strictArgChecks </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Take a string as a url to retrieve an smd or an object that is an smd or partial smd to use
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dojo_rpc_RpcService_serviceUrl" class="inline-link"> serviceUrl </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojo_rpc_RpcService_strictArgChecks" class="inline-link"> strictArgChecks </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Take a string as a url to retrieve an smd or an object that is an smd or partial smd to use
 as a definition for the service</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_errorCallback" class="inline-link"> errorCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred errback method</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_generateMethod" class="inline-link"> generateMethod</a><span class="parameters">(</span>method, parameters, url) <span>generate the local bind methods for the remote object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_parseResults" class="inline-link"> parseResults</a><span class="parameters">(</span>obj) <span>parse the results coming back from an rpc request.  this
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_errorCallback" class="inline-link"> errorCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred errback method</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_generateMethod" class="inline-link"> generateMethod</a><span class="parameters">(</span>method, parameters, url) <span>generate the local bind methods for the remote object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_parseResults" class="inline-link"> parseResults</a><span class="parameters">(</span>obj) <span>parse the results coming back from an rpc request.  this
 base implementation, just returns the full object
 subclasses should parse and only return the actual results</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_processSmd" class="inline-link"> processSmd</a><span class="parameters">(</span>object) <span>callback method for receipt of a smd object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_resultCallback" class="inline-link"> resultCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred&#39;s callback method</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_processSmd" class="inline-link"> processSmd</a><span class="parameters">(</span>object) <span>callback method for receipt of a smd object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_resultCallback" class="inline-link"> resultCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred&#39;s callback method</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -255,4 +263,4 @@ and generate functions based on the description</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/rpc/RpcService" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

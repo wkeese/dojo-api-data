@@ -1,127 +1,135 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dgauges/CircularValueIndicator</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/dgauges/CircularValueIndicator" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dgauges/CircularValueIndicator.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/dgauges/CircularValueIndicator<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a>
 </div>
 <div class="jsdoc-full-summary"><p>The circular value indicator, typically used for creating needles.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new CircularValueIndicator<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/dgauges/ScaleIndicatorBase">dojox/dgauges/ScaleIndicatorBase</a></div>
 <p>See the <a href="/reference-guide/1.9/dojox/dgauges.html" target="_blank">dojox/dgauges/CircularValueIndicator reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__animation" class="inline-link"> _animation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__animation" class="inline-link"> _animation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__cursorListeners" class="inline-link"> _cursorListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__downListeners" class="inline-link"> _downListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__indicatorShapeFuncFlag" class="inline-link"> _indicatorShapeFuncFlag </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__interactionAreaFlag" class="inline-link"> _interactionAreaFlag </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__moveAndUpListeners" class="inline-link"> _moveAndUpListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__preventAnimation" class="inline-link"> _preventAnimation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__transitionValue" class="inline-link"> _transitionValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_animationDuration" class="inline-link"> animationDuration </a><span>The duration of the value change animation in milliseconds.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_animationEaser" class="inline-link"> animationEaser </a><span>The easer function of the value change animation.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_interactionArea" class="inline-link"> interactionArea </a><span>How to interact with the indicator using mouse or touch interactions.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_interactionMode" class="inline-link"> interactionMode </a><span>Deprecated.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_scale" class="inline-link"> scale </a><span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_value" class="inline-link"> value </a><span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__connectCursorListeners" class="inline-link"> _connectCursorListeners</a><span class="parameters">(</span>target) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__connectDownListeners" class="inline-link"> _connectDownListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__connectMoveAndUpListeners" class="inline-link"> _connectMoveAndUpListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectCursorListeners" class="inline-link"> _disconnectCursorListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectDownListeners" class="inline-link"> _disconnectDownListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectListeners" class="inline-link"> _disconnectListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectMoveAndUpListeners" class="inline-link"> _disconnectMoveAndUpListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__endAnimation" class="inline-link"> _endAnimation</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__endEditing" class="inline-link"> _endEditing</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__startAnimation" class="inline-link"> _startAnimation</a><span class="parameters">(</span>prop, oldValue, newValue) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__startEditing" class="inline-link"> _startEditing</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__updateAnimation" class="inline-link"> _updateAnimation</a><span class="parameters">(</span>v) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dgauges_CircularValueIndicator_indicatorShapeFunc" class="inline-link"> indicatorShapeFunc</a><span class="parameters">(</span>group, indicator) <span>Draws the indicator.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>mixin) <span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dgauges_CircularValueIndicator_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_valueChanged" class="inline-link"> valueChanged</a><span class="parameters">(</span>indicator) <span>Invoked when the value of the indicator changes.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_dgauges_CircularValueIndicator__onMouseDown" class="inline-link"> _onMouseDown</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dgauges_CircularValueIndicator__onMouseMove" class="inline-link"> _onMouseMove</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__onMouseUp" class="inline-link"> _onMouseUp</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__cursorListeners" class="inline-link"> _cursorListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__downListeners" class="inline-link"> _downListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__indicatorShapeFuncFlag" class="inline-link"> _indicatorShapeFuncFlag </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__interactionAreaFlag" class="inline-link"> _interactionAreaFlag </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__moveAndUpListeners" class="inline-link"> _moveAndUpListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__preventAnimation" class="inline-link"> _preventAnimation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__transitionValue" class="inline-link"> _transitionValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_animationDuration" class="inline-link"> animationDuration </a><span>The duration of the value change animation in milliseconds.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_animationEaser" class="inline-link"> animationEaser </a><span>The easer function of the value change animation.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_interactionArea" class="inline-link"> interactionArea </a><span>How to interact with the indicator using mouse or touch interactions.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_interactionMode" class="inline-link"> interactionMode </a><span>Deprecated.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_scale" class="inline-link"> scale </a><span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_value" class="inline-link"> value </a><span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__connectCursorListeners" class="inline-link"> _connectCursorListeners</a><span class="parameters">(</span>target) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__connectDownListeners" class="inline-link"> _connectDownListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__connectMoveAndUpListeners" class="inline-link"> _connectMoveAndUpListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectCursorListeners" class="inline-link"> _disconnectCursorListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectDownListeners" class="inline-link"> _disconnectDownListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectListeners" class="inline-link"> _disconnectListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__disconnectMoveAndUpListeners" class="inline-link"> _disconnectMoveAndUpListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__endAnimation" class="inline-link"> _endAnimation</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__endEditing" class="inline-link"> _endEditing</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__startAnimation" class="inline-link"> _startAnimation</a><span class="parameters">(</span>prop, oldValue, newValue) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__startEditing" class="inline-link"> _startEditing</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__updateAnimation" class="inline-link"> _updateAnimation</a><span class="parameters">(</span>v) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dgauges_CircularValueIndicator_indicatorShapeFunc" class="inline-link"> indicatorShapeFunc</a><span class="parameters">(</span>group, indicator) <span>Draws the indicator.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>mixin) <span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dgauges_CircularValueIndicator_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_valueChanged" class="inline-link"> valueChanged</a><span class="parameters">(</span>indicator) <span>Invoked when the value of the indicator changes.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_dgauges_CircularValueIndicator__onMouseDown" class="inline-link"> _onMouseDown</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dgauges_CircularValueIndicator__onMouseMove" class="inline-link"> _onMouseMove</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_CircularValueIndicator__onMouseUp" class="inline-link"> _onMouseUp</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -778,4 +786,4 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/dgauges/CircularValueIndicator" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

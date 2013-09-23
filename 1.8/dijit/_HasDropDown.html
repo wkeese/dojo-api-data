@@ -1,90 +1,98 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_HasDropDown</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/_HasDropDown" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_HasDropDown.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/_HasDropDown<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin,   </a>
+  <label>Extends </label><a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Mixin for widgets that need drop down ability.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/_HasDropDown.html" target="_blank">dijit/_HasDropDown reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="domnodeIcon private"><a href="#1_8dijit__HasDropDown__aroundNode" class="inline-link"> _aroundNode </a><span>The node to display the popup around.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="domnodeIcon private"><a href="#1_8dijit__HasDropDown__arrowWrapperNode" class="inline-link"> _arrowWrapperNode </a><span>Will set CSS class dijitUpArrow, dijitDownArrow, dijitRightArrow etc. on this node depending
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="domnodeIcon private"><a href="#1_8dijit__HasDropDown__aroundNode" class="inline-link"> _aroundNode </a><span>The node to display the popup around.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="domnodeIcon private"><a href="#1_8dijit__HasDropDown__arrowWrapperNode" class="inline-link"> _arrowWrapperNode </a><span>Will set CSS class dijitUpArrow, dijitDownArrow, dijitRightArrow etc. on this node depending
 on where the drop down is set to be positioned.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="domnodeIcon private"><a href="#1_8dijit__HasDropDown__buttonNode" class="inline-link"> _buttonNode </a><span>The button/icon/node to click to display the drop down.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dijit__HasDropDown__focusManager" class="inline-link"> _focusManager </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit__HasDropDown__popupStateNode" class="inline-link"> _popupStateNode </a><span>The node to set the aria-expanded class on.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dijit__HasDropDown__stopClickEvents" class="inline-link"> _stopClickEvents </a><span>When set to false, the click events will not be stopped, in
+        </li>
+        <li class="domnodeIcon private"><a href="#1_8dijit__HasDropDown__buttonNode" class="inline-link"> _buttonNode </a><span>The button/icon/node to click to display the drop down.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dijit__HasDropDown__focusManager" class="inline-link"> _focusManager </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit__HasDropDown__popupStateNode" class="inline-link"> _popupStateNode </a><span>The node to set the aria-expanded class on.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dijit__HasDropDown__stopClickEvents" class="inline-link"> _stopClickEvents </a><span>When set to false, the click events will not be stopped, in
 case you want to use them in your subclass</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit__HasDropDown_autoWidth" class="inline-link"> autoWidth </a><span>Set to true to make the drop down at least as wide as this
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit__HasDropDown_autoWidth" class="inline-link"> autoWidth </a><span>Set to true to make the drop down at least as wide as this
 widget.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit__HasDropDown_dropDown" class="inline-link"> dropDown </a><span>The widget to display as a popup.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit__HasDropDown_dropDownPosition" class="inline-link"> dropDownPosition </a><span>This variable controls the position of the drop down.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit__HasDropDown_forceWidth" class="inline-link"> forceWidth </a><span>Set to true to make the drop down exactly as wide as this
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit__HasDropDown_dropDown" class="inline-link"> dropDown </a><span>The widget to display as a popup.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit__HasDropDown_dropDownPosition" class="inline-link"> dropDownPosition </a><span>This variable controls the position of the drop down.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit__HasDropDown_forceWidth" class="inline-link"> forceWidth </a><span>Set to true to make the drop down exactly as wide as this
 widget.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dijit__HasDropDown_maxHeight" class="inline-link"> maxHeight </a><span>The max height for our dropdown.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_closeDropDown" class="inline-link"> closeDropDown</a><span class="parameters">(</span>focus) <span>Closes the drop down on this widget</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_isLoaded" class="inline-link"> isLoaded</a><span class="parameters">(</span>) <span>Returns true if the dropdown exists and it&#39;s data is loaded.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_loadAndOpenDropDown" class="inline-link"> loadAndOpenDropDown</a><span class="parameters">(</span>) <span>Creates the drop down if it doesn&#39;t exist, loads the data
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dijit__HasDropDown_maxHeight" class="inline-link"> maxHeight </a><span>The max height for our dropdown.</span><span title="inherited from dijit/_HasDropDown" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_closeDropDown" class="inline-link"> closeDropDown</a><span class="parameters">(</span>focus) <span>Closes the drop down on this widget</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_isLoaded" class="inline-link"> isLoaded</a><span class="parameters">(</span>) <span>Returns true if the dropdown exists and it&#39;s data is loaded.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_loadAndOpenDropDown" class="inline-link"> loadAndOpenDropDown</a><span class="parameters">(</span>) <span>Creates the drop down if it doesn&#39;t exist, loads the data
 if there&#39;s an href and it hasn&#39;t been loaded yet, and
 then opens the drop down.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_loadDropDown" class="inline-link"> loadDropDown</a><span class="parameters">(</span>loadCallback) <span>Creates the drop down if it doesn&#39;t exist, loads the data
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_loadDropDown" class="inline-link"> loadDropDown</a><span class="parameters">(</span>loadCallback) <span>Creates the drop down if it doesn&#39;t exist, loads the data
 if there&#39;s an href and it hasn&#39;t been loaded yet, and then calls
 the given callback.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_openDropDown" class="inline-link"> openDropDown</a><span class="parameters">(</span>) <span>Opens the dropdown for this widget.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>set up nodes and connect our mouse and keyboard events</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__HasDropDown_toggleDropDown" class="inline-link"> toggleDropDown</a><span class="parameters">(</span>) <span>Callback when the user presses the down arrow button or presses
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_openDropDown" class="inline-link"> openDropDown</a><span class="parameters">(</span>) <span>Opens the dropdown for this widget.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>set up nodes and connect our mouse and keyboard events</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__HasDropDown_toggleDropDown" class="inline-link"> toggleDropDown</a><span class="parameters">(</span>) <span>Callback when the user presses the down arrow button or presses
 the down arrow key to open/close the drop down.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>Called magically when focus has shifted away from this widget and it&#39;s dropdown</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onDropDownClick" class="inline-link"> _onDropDownClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onDropDownMouseDown" class="inline-link"> _onDropDownMouseDown</a><span class="parameters">(</span>e) <span>Callback when the user mousedown&#39;s on the arrow icon</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onDropDownMouseUp" class="inline-link"> _onDropDownMouseUp</a><span class="parameters">(</span>e) <span>Callback when the user lifts their mouse after mouse down on the arrow icon.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>e) <span>Callback when the user presses a key while focused on the button node</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onKeyUp" class="inline-link"> _onKeyUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>Called magically when focus has shifted away from this widget and it&#39;s dropdown</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onDropDownClick" class="inline-link"> _onDropDownClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onDropDownMouseDown" class="inline-link"> _onDropDownMouseDown</a><span class="parameters">(</span>e) <span>Callback when the user mousedown&#39;s on the arrow icon</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onDropDownMouseUp" class="inline-link"> _onDropDownMouseUp</a><span class="parameters">(</span>e) <span>Callback when the user lifts their mouse after mouse down on the arrow icon.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>e) <span>Callback when the user presses a key while focused on the button node</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit__HasDropDown__onKeyUp" class="inline-link"> _onKeyUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -267,8 +275,9 @@ then opens the drop down.  This is basically a callback when the
 user presses the down arrow button to open the drop down.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Deferred | instance</span></div>
-        <div class="jsdoc-return-description">Deferred for the drop down widget that
-fires when drop down is created and loaded</div>
+        <div class="jsdoc-return-description"><p>Deferred for the drop down widget that
+fires when drop down is created and loaded</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__HasDropDown_loadDropDown"></a><span class="functionIcon">loadDropDown</span><span class="parameters">(loadCallback)</span> 
@@ -302,7 +311,8 @@ the given callback.</p>
 has been created and is ready to display (ie, it&#39;s data is loaded).</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">return value of dijit/popup.open()</div>
+        <div class="jsdoc-return-description"><p>return value of dijit/popup.open()</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__HasDropDown_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
@@ -379,4 +389,4 @@ with native browser <code>&lt;select&gt;</code> nodes:
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/_HasDropDown" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

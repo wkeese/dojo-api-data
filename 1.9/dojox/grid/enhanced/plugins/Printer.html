@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/Printer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/plugins/Printer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/Printer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Printer<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Provide printGrid function to the grid.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Printer<span class="parameters">(grid);</span></div>
 </div>
@@ -27,95 +34,96 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.grid.enhanced.plugins.Printer&quot;);
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.grid.enhanced.plugins.Printer&quot;);
 dijit.byId(&quot;grid1&quot;).printGrid(&quot;my grid&quot;,                    //A title for the grid,optional
                             [&quot;cssfile1.css&quot;,&quot;cssfile2.css&quot;],//An array of css files to decorate the printed gird,optional
                             {table:&quot;border=&#39;border&#39;&quot;}       //tagName:&quot;attrbuteList&quot; pairs, optional,
                                                             //control the html tags in the generated html
 );</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer___printArgs" class="inline-link"> __printArgs </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_name" class="inline-link"> name </a><span>Plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/Printer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer___printArgs" class="inline-link"> __printArgs </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_name" class="inline-link"> name </a><span>Plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/Printer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
 e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__formalizeArgs" class="inline-link"> _formalizeArgs</a><span class="parameters">(</span>args) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__loadCSSFiles" class="inline-link"> _loadCSSFiles</a><span class="parameters">(</span>cssFiles) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__mixinGrid" class="inline-link"> _mixinGrid</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__print" class="inline-link"> _print</a><span class="parameters">(</span>htmlStr) <span>Do the print job.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__wrapHTML" class="inline-link"> _wrapHTML</a><span class="parameters">(</span>title, cssFiles, body_content) <span>Put title, cssFiles, and body_content together into an HTML string.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span>only newed by _Plugin</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroy all resources.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_exportSelectedToHTML" class="inline-link"> exportSelectedToHTML</a><span class="parameters">(</span>args, onExported) <span>Export selected rows to HTML string, but do NOT print.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_exportToHTML" class="inline-link"> exportToHTML</a><span class="parameters">(</span>args, onExported) <span>Export to HTML string, but do NOT print.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_normalizeRowHeight" class="inline-link"> normalizeRowHeight</a><span class="parameters">(</span>doc) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_printGrid" class="inline-link"> printGrid</a><span class="parameters">(</span>args) <span>Print all the data in the grid, using title as a title,
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__formalizeArgs" class="inline-link"> _formalizeArgs</a><span class="parameters">(</span>args) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__loadCSSFiles" class="inline-link"> _loadCSSFiles</a><span class="parameters">(</span>cssFiles) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__mixinGrid" class="inline-link"> _mixinGrid</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__print" class="inline-link"> _print</a><span class="parameters">(</span>htmlStr) <span>Do the print job.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_Printer__wrapHTML" class="inline-link"> _wrapHTML</a><span class="parameters">(</span>title, cssFiles, body_content) <span>Put title, cssFiles, and body_content together into an HTML string.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span>only newed by _Plugin</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroy all resources.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_exportSelectedToHTML" class="inline-link"> exportSelectedToHTML</a><span class="parameters">(</span>args, onExported) <span>Export selected rows to HTML string, but do NOT print.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_exportToHTML" class="inline-link"> exportToHTML</a><span class="parameters">(</span>args, onExported) <span>Export to HTML string, but do NOT print.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_normalizeRowHeight" class="inline-link"> normalizeRowHeight</a><span class="parameters">(</span>doc) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_printGrid" class="inline-link"> printGrid</a><span class="parameters">(</span>args) <span>Print all the data in the grid, using title as a title,
 decorating generated html by cssFiles,
 using tagName:&quot;attrbuteList&quot; pairs(writerArgs) to control html tags
 in the generated html string.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_printSelected" class="inline-link"> printSelected</a><span class="parameters">(</span>args) <span>Print selected data.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_Printer_printSelected" class="inline-link"> printSelected</a><span class="parameters">(</span>args) <span>Print selected data.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
 of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>store) <span>Called when store is changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>store) <span>Called when store is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins_Printer_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -616,4 +624,4 @@ plugin.subscribe(&quot;/my/topic&quot;, function(v){
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/plugins/Printer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

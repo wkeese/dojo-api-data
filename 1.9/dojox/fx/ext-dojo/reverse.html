@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/fx/ext-dojo/reverse</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/fx/ext-dojo/reverse" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/fx/ext-dojo/reverse.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojox/fx/ext-dojo/reverse<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A generic animation class that fires callbacks into its handlers
 object at various states.</p>
@@ -28,82 +35,83 @@ animation instance.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/fx/ext-dojo/reverse.html" target="_blank">dojox/fx/ext-dojo/reverse reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__percent" class="inline-link"> _percent </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__reversed" class="inline-link"> _reversed </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/fx/ext-dojo/reverse" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__startRepeatCount" class="inline-link"> _startRepeatCount </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_beforeBegin" class="inline-link"> beforeBegin </a><span>Synthetic event fired before a Animation begins playing (synchronous)</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_curve" class="inline-link"> curve </a><span>A two element array of start and end values, or a _Line instance to be
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__percent" class="inline-link"> _percent </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__reversed" class="inline-link"> _reversed </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/fx/ext-dojo/reverse" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__startRepeatCount" class="inline-link"> _startRepeatCount </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_beforeBegin" class="inline-link"> beforeBegin </a><span>Synthetic event fired before a Animation begins playing (synchronous)</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_curve" class="inline-link"> curve </a><span>A two element array of start and end values, or a _Line instance to be
 used in the Animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_curve" class="inline-link"> curve </a><span></span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_delay" class="inline-link"> delay </a><span>The time in milliseconds to wait before starting animation after it
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_curve" class="inline-link"> curve </a><span></span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_delay" class="inline-link"> delay </a><span>The time in milliseconds to wait before starting animation after it
 has been .play()&#39;ed</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_duration" class="inline-link"> duration </a><span>The time in milliseconds the animation will take to run</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_easing" class="inline-link"> easing </a><span>A Function to adjust the acceleration (or deceleration) of the progress
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_duration" class="inline-link"> duration </a><span>The time in milliseconds the animation will take to run</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_easing" class="inline-link"> easing </a><span>A Function to adjust the acceleration (or deceleration) of the progress
 across a _Line</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onAnimate" class="inline-link"> onAnimate </a><span>Synthetic event fired at each interval of the Animation</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onBegin" class="inline-link"> onBegin </a><span>Synthetic event fired as a Animation begins playing (useful?)</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onEnd" class="inline-link"> onEnd </a><span>Synthetic event fired after the final frame of the Animation</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onPause" class="inline-link"> onPause </a><span>Synthetic event fired when the Animation is paused</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onPlay" class="inline-link"> onPlay </a><span>Synthetic event fired any time the Animation is play()&#39;ed</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onStop" class="inline-link"> onStop </a><span>Synthetic event fires when the Animation is stopped</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_rate" class="inline-link"> rate </a><span>the time in milliseconds to wait before advancing to next frame
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onAnimate" class="inline-link"> onAnimate </a><span>Synthetic event fired at each interval of the Animation</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onBegin" class="inline-link"> onBegin </a><span>Synthetic event fired as a Animation begins playing (useful?)</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onEnd" class="inline-link"> onEnd </a><span>Synthetic event fired after the final frame of the Animation</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onPause" class="inline-link"> onPause </a><span>Synthetic event fired when the Animation is paused</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onPlay" class="inline-link"> onPlay </a><span>Synthetic event fired any time the Animation is play()&#39;ed</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_onStop" class="inline-link"> onStop </a><span>Synthetic event fires when the Animation is stopped</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_rate" class="inline-link"> rate </a><span>the time in milliseconds to wait before advancing to next frame
 (used as a fps timer: 1000/rate = fps)</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_repeat" class="inline-link"> repeat </a><span>The number of times to loop the animation</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__clearTimer" class="inline-link"> _clearTimer</a><span class="parameters">(</span>) <span>Clear the play delay timer</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__cycle" class="inline-link"> _cycle</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__fire" class="inline-link"> _fire</a><span class="parameters">(</span>evt, args) <span>Convenience function.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__getStep" class="inline-link"> _getStep</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__play" class="inline-link"> _play</a><span class="parameters">(</span>gotoStart) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__startTimer" class="inline-link"> _startTimer</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__stopTimer" class="inline-link"> _stopTimer</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_gotoPercent" class="inline-link"> gotoPercent</a><span class="parameters">(</span>percent, andPlay) <span>Sets the progress of the animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_pause" class="inline-link"> pause</a><span class="parameters">(</span>) <span>Pauses a running animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_play" class="inline-link"> play</a><span class="parameters">(</span>delay, gotoStart) <span>Start the animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_fx_ext-dojo_reverse_reverse" class="inline-link"> reverse</a><span class="parameters">(</span>keepPaused, reverseEase) <span>The key method added to an animation to enable reversal.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_status" class="inline-link"> status</a><span class="parameters">(</span>) <span>Returns a string token representation of the status of
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_repeat" class="inline-link"> repeat </a><span>The number of times to loop the animation</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__clearTimer" class="inline-link"> _clearTimer</a><span class="parameters">(</span>) <span>Clear the play delay timer</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__cycle" class="inline-link"> _cycle</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__fire" class="inline-link"> _fire</a><span class="parameters">(</span>evt, args) <span>Convenience function.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__getStep" class="inline-link"> _getStep</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__play" class="inline-link"> _play</a><span class="parameters">(</span>gotoStart) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__startTimer" class="inline-link"> _startTimer</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_fx_ext-dojo_reverse__stopTimer" class="inline-link"> _stopTimer</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_gotoPercent" class="inline-link"> gotoPercent</a><span class="parameters">(</span>percent, andPlay) <span>Sets the progress of the animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_pause" class="inline-link"> pause</a><span class="parameters">(</span>) <span>Pauses a running animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_play" class="inline-link"> play</a><span class="parameters">(</span>delay, gotoStart) <span>Start the animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_fx_ext-dojo_reverse_reverse" class="inline-link"> reverse</a><span class="parameters">(</span>keepPaused, reverseEase) <span>The key method added to an animation to enable reversal.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_status" class="inline-link"> status</a><span class="parameters">(</span>) <span>Returns a string token representation of the status of
 the animation, one of: &quot;paused&quot;, &quot;playing&quot;, &quot;stopped&quot;</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_stop" class="inline-link"> stop</a><span class="parameters">(</span>gotoEnd) <span>Stops a running animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_fx_ext-dojo_reverse_stop" class="inline-link"> stop</a><span class="parameters">(</span>gotoEnd) <span>Stops a running animation.</span><span title="inherited from dojo/_base/fx" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -497,4 +505,4 @@ the animation, one of: &quot;paused&quot;, &quot;playing&quot;, &quot;stopped&qu
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/fx/ext-dojo/reverse" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

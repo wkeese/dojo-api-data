@@ -1,23 +1,31 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dom</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dom" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dom.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/dom<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines the core dojo DOM API.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/dom.html" target="_blank">dojo/dom reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_dom_byId" class="inline-link"> byId</a><span class="parameters">(</span>id, doc) <span>Returns DOM node with matching id attribute or falsy value (ex: null or undefined)
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_dom_byId" class="inline-link"> byId</a><span class="parameters">(</span>id, doc) <span>Returns DOM node with matching id attribute or falsy value (ex: null or undefined)
 if not found.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom_isDescendant" class="inline-link"> isDescendant</a><span class="parameters">(</span>node, ancestor) <span>Returns true if node is a descendant of ancestor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom_setSelectable" class="inline-link"> setSelectable</a><span class="parameters">(</span>node, selectable) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom_isDescendant" class="inline-link"> isDescendant</a><span class="parameters">(</span>node, ancestor) <span>Returns true if node is a descendant of ancestor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom_setSelectable" class="inline-link"> setSelectable</a><span class="parameters">(</span>node, selectable) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -62,24 +70,28 @@ node references from other documents.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Look up a node by ID:</p>
-<pre><code>  var n = dojo.byId(&quot;foo&quot;);</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Look up a node by ID:
+
+</p>
+<pre><code>var n = dojo.byId(&quot;foo&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Check if a node exists, and use it.</p>
-<pre><code>  var n = dojo.byId(&quot;bar&quot;);
-  if(n){ doStuff() ... }</code></pre>
-<p></p>
+            <h3>Example 2</h3><p>Check if a node exists, and use it.
+
+</p>
+<pre><code>var n = dojo.byId(&quot;bar&quot;);
+if(n){ doStuff() ... }</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Allow string or DomNode references to be passed to a custom function:</p>
-<pre><code>  var foo = function(nodeOrId){
+            <h3>Example 3</h3><p>Allow string or DomNode references to be passed to a custom function:
+
+</p>
+<pre><code>var foo = function(nodeOrId){
     nodeOrId = dojo.byId(nodeOrId);
     // ... more stuff
-  }</code></pre>
+}</code></pre>
 
           </div>
         </div>
@@ -117,8 +129,10 @@ node references from other documents.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Test is node id=&quot;bar&quot; is a descendant of node id=&quot;foo&quot;</p>
-<pre><code>  if(dojo.isDescendant(&quot;bar&quot;, &quot;foo&quot;)){ ... }</code></pre>
+            <h3>Example 1</h3><p>Test is node id=&quot;bar&quot; is a descendant of node id=&quot;foo&quot;
+
+</p>
+<pre><code>if(dojo.isDescendant(&quot;bar&quot;, &quot;foo&quot;)){ ... }</code></pre>
 
           </div>
         </div>
@@ -151,4 +165,4 @@ node references from other documents.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dom" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

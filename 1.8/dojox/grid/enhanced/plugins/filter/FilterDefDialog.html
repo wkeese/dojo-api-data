@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/filter/FilterDefDialog</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/filter/FilterDefDialog" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/filter/FilterDefDialog.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/filter/FilterDefDialog<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Create the filter definition UI.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new FilterDefDialog<span class="parameters">(args);</span></div>
 </div>
@@ -22,86 +29,87 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__relOpCls" class="inline-link"> _relOpCls </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__savedCriterias" class="inline-link"> _savedCriterias </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_curColIdx" class="inline-link"> curColIdx </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_plugin" class="inline-link"> plugin </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__closeDlgAndUpdateGrid" class="inline-link"> _closeDlgAndUpdateGrid</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__defineFilter" class="inline-link"> _defineFilter</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__prepareDialog" class="inline-link"> _prepareDialog</a><span class="parameters">(</span>colIndex) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__setupData" class="inline-link"> _setupData</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__updateCBoxTitles" class="inline-link"> _updateCBoxTitles</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__updatePane" class="inline-link"> _updatePane</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_addCriteriaBoxes" class="inline-link"> addCriteriaBoxes</a><span class="parameters">(</span>cnt) <span>Add cnt criteria boxes to the filter definition pane.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_canFilter" class="inline-link"> canFilter</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_clearFilter" class="inline-link"> clearFilter</a><span class="parameters">(</span>noRefresh) <span>Clear filter definition.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_closeDialog" class="inline-link"> closeDialog</a><span class="parameters">(</span>) <span>Close the filter definition dialog.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getColumnLabelByValue" class="inline-link"> getColumnLabelByValue</a><span class="parameters">(</span>v) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getColumnType" class="inline-link"> getColumnType</a><span class="parameters">(</span>colIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getConditionLabelByValue" class="inline-link"> getConditionLabelByValue</a><span class="parameters">(</span>type, c) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getCriteria" class="inline-link"> getCriteria</a><span class="parameters">(</span>idx) <span>Get the idx-th criteria.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getExprForColumn" class="inline-link"> getExprForColumn</a><span class="parameters">(</span>value, colIdx, type, condition) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getExprForCriteria" class="inline-link"> getExprForCriteria</a><span class="parameters">(</span>rule) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getFilter" class="inline-link"> getFilter</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_removeCriteriaBoxes" class="inline-link"> removeCriteriaBoxes</a><span class="parameters">(</span>cnt, isIdx) <span>Remove criteria boxes from the filter definition pane.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_setFilter" class="inline-link"> setFilter</a><span class="parameters">(</span>rules, ruleRelation) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_showDialog" class="inline-link"> showDialog</a><span class="parameters">(</span>colIndex) <span>Show the filter defintion dialog.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__onSetFilter" class="inline-link"> _onSetFilter</a><span class="parameters">(</span>filterDef) <span>If someone clear the filter def in the store directly, we must clear it in the UI.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>e) <span>Triggered when the &quot;Cancel&quot; buttton is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onClearFilter" class="inline-link"> onClearFilter</a><span class="parameters">(</span>e) <span>Triggered when the &quot;Clear&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onFilter" class="inline-link"> onFilter</a><span class="parameters">(</span>e) <span>Triggered when the &quot;Filter&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onMoveColumn" class="inline-link"> onMoveColumn</a><span class="parameters">(</span>sourceViewIndex, destViewIndex, cellIndex, targetIndex, before) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onRendered" class="inline-link"> onRendered</a><span class="parameters">(</span>cbox) <span>Triggered when the rendering of the filter definition dialog is completely finished.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__relOpCls" class="inline-link"> _relOpCls </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__savedCriterias" class="inline-link"> _savedCriterias </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_curColIdx" class="inline-link"> curColIdx </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_plugin" class="inline-link"> plugin </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__closeDlgAndUpdateGrid" class="inline-link"> _closeDlgAndUpdateGrid</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__defineFilter" class="inline-link"> _defineFilter</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__prepareDialog" class="inline-link"> _prepareDialog</a><span class="parameters">(</span>colIndex) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__setupData" class="inline-link"> _setupData</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__updateCBoxTitles" class="inline-link"> _updateCBoxTitles</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__updatePane" class="inline-link"> _updatePane</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_addCriteriaBoxes" class="inline-link"> addCriteriaBoxes</a><span class="parameters">(</span>cnt) <span>Add cnt criteria boxes to the filter definition pane.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_canFilter" class="inline-link"> canFilter</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_clearFilter" class="inline-link"> clearFilter</a><span class="parameters">(</span>noRefresh) <span>Clear filter definition.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_closeDialog" class="inline-link"> closeDialog</a><span class="parameters">(</span>) <span>Close the filter definition dialog.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getColumnLabelByValue" class="inline-link"> getColumnLabelByValue</a><span class="parameters">(</span>v) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getColumnType" class="inline-link"> getColumnType</a><span class="parameters">(</span>colIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getConditionLabelByValue" class="inline-link"> getConditionLabelByValue</a><span class="parameters">(</span>type, c) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getCriteria" class="inline-link"> getCriteria</a><span class="parameters">(</span>idx) <span>Get the idx-th criteria.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getExprForColumn" class="inline-link"> getExprForColumn</a><span class="parameters">(</span>value, colIdx, type, condition) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getExprForCriteria" class="inline-link"> getExprForCriteria</a><span class="parameters">(</span>rule) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_getFilter" class="inline-link"> getFilter</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_removeCriteriaBoxes" class="inline-link"> removeCriteriaBoxes</a><span class="parameters">(</span>cnt, isIdx) <span>Remove criteria boxes from the filter definition pane.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_setFilter" class="inline-link"> setFilter</a><span class="parameters">(</span>rules, ruleRelation) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_showDialog" class="inline-link"> showDialog</a><span class="parameters">(</span>colIndex) <span>Show the filter defintion dialog.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog__onSetFilter" class="inline-link"> _onSetFilter</a><span class="parameters">(</span>filterDef) <span>If someone clear the filter def in the store directly, we must clear it in the UI.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>e) <span>Triggered when the &quot;Cancel&quot; buttton is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onClearFilter" class="inline-link"> onClearFilter</a><span class="parameters">(</span>e) <span>Triggered when the &quot;Clear&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onFilter" class="inline-link"> onFilter</a><span class="parameters">(</span>e) <span>Triggered when the &quot;Filter&quot; button is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onMoveColumn" class="inline-link"> onMoveColumn</a><span class="parameters">(</span>sourceViewIndex, destViewIndex, cellIndex, targetIndex, before) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_filter_FilterDefDialog_onRendered" class="inline-link"> onRendered</a><span class="parameters">(</span>cbox) <span>Triggered when the rendering of the filter definition dialog is completely finished.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -555,4 +563,4 @@ If someone defines a filter, don&#39;t know how to handle it!</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/filter/FilterDefDialog" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

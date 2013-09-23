@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/geo/openlayers/Layer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/geo/openlayers/Layer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/geo/openlayers/Layer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/geo/openlayers/Layer<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Base layer class for dojox.geo.openlayers.Map specific layers extending OpenLayers.Layer class.
 This layer class accepts Features which encapsulates graphic objects to be added to the map.
 This layer class encapsulates an OpenLayers.Layer.
 This class provides Feature management such as add, remove and feature access.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Layer<span class="parameters">(name,options);</span></div>
 </div>
@@ -36,38 +43,39 @@ This class provides Feature management such as add, remove and feature access.</
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/Layer reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_added" class="inline-link"> added</a><span class="parameters">(</span>) <span>Called when the layer is added to the map</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_addFeature" class="inline-link"> addFeature</a><span class="parameters">(</span>f) <span>Add a feature or an array of features to the layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Removes all the features from this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>name, options) <span>Constructs a new Layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getDojoMap" class="inline-link"> getDojoMap</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getFeatureAt" class="inline-link"> getFeatureAt</a><span class="parameters">(</span>i) <span>Returns the i-th feature of this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getFeatureCount" class="inline-link"> getFeatureCount</a><span class="parameters">(</span>) <span>Returns the number of the features contained by this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Returns the feature hold by this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>event) <span>Called when the layer is panned or zoomed.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_redraw" class="inline-link"> redraw</a><span class="parameters">(</span>) <span>Redraws this layer</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_removeFeature" class="inline-link"> removeFeature</a><span class="parameters">(</span>f) <span>Removes a feature or an array of features from the layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_removeFeatureAt" class="inline-link"> removeFeatureAt</a><span class="parameters">(</span>index) <span>Remove the feature at the specified index.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_renderFeature" class="inline-link"> renderFeature</a><span class="parameters">(</span>f) <span>Called when rendering a feature is necessary.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_added" class="inline-link"> added</a><span class="parameters">(</span>) <span>Called when the layer is added to the map</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_addFeature" class="inline-link"> addFeature</a><span class="parameters">(</span>f) <span>Add a feature or an array of features to the layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Removes all the features from this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>name, options) <span>Constructs a new Layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getDojoMap" class="inline-link"> getDojoMap</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getFeatureAt" class="inline-link"> getFeatureAt</a><span class="parameters">(</span>i) <span>Returns the i-th feature of this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getFeatureCount" class="inline-link"> getFeatureCount</a><span class="parameters">(</span>) <span>Returns the number of the features contained by this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Returns the feature hold by this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>event) <span>Called when the layer is panned or zoomed.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_redraw" class="inline-link"> redraw</a><span class="parameters">(</span>) <span>Redraws this layer</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_removeFeature" class="inline-link"> removeFeature</a><span class="parameters">(</span>f) <span>Removes a feature or an array of features from the layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_removeFeatureAt" class="inline-link"> removeFeatureAt</a><span class="parameters">(</span>index) <span>Remove the feature at the specified index.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_openlayers_Layer_renderFeature" class="inline-link"> renderFeature</a><span class="parameters">(</span>f) <span>Called when rendering a feature is necessary.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -293,4 +301,4 @@ This class provides Feature management such as add, remove and feature access.</
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/geo/openlayers/Layer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

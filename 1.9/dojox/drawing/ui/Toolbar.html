@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/ui/Toolbar</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/ui/Toolbar" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/ui/Toolbar.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/ui/Toolbar<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A Toolbar used for holding buttons; typically representing the Stencils
 used for a DojoX Drawing.</p>
@@ -12,7 +19,7 @@ drawing, the toolbar will cover a portion of the drawing; hence the option.
 <p>A Toolbar can be created programmatically or in markup. Currently markup is as
 a separate DOM element and programmatic is within the drawing.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Toolbar<span class="parameters">(props,node);</span></div>
 </div>
@@ -37,12 +44,11 @@ a separate DOM element and programmatic is within the drawing.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>dojo.connect(myDrawing, &quot;onSurfaceReady&quot;, function(){
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>dojo.connect(myDrawing, &quot;onSurfaceReady&quot;, function(){
     new dojox.drawing.ui.Toolbar({
         drawing:myDrawing,
         tools:&quot;all&quot;,
@@ -55,57 +61,59 @@ a separate DOM element and programmatic is within the drawing.</p>
 &lt;div dojoType=&quot;dojox.drawing.ui.Toolbar&quot; id=&quot;gfxToolbarNode&quot; drawingId=&quot;drawingNode&quot;
       class=&quot;gfxToolbar&quot; tools=&quot;all&quot; plugs=&quot;all&quot; selected=&quot;ellipse&quot; orient=&quot;H&quot;&gt;&lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_margin" class="inline-link"> margin </a><span>The space between each button.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_padding" class="inline-link"> padding </a><span>The amount of spce between the top and left of the toolbar and the buttons.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_radius" class="inline-link"> radius </a><span>The size of the button&#39;s rounded corner</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_size" class="inline-link"> size </a><span>The width and height of the button</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Toolbar_strPlugs" class="inline-link"> strPlugs </a><span>A comma delineated list of the plugins to include in the Toolbar.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Toolbar_strSelected" class="inline-link"> strSelected </a><span>The button that should be selected at startup.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Toolbar_strTools" class="inline-link"> strTools </a><span>A comma delineated list of the Stencil-tools to include in the Toolbar.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_toolPlugGap" class="inline-link"> toolPlugGap </a><span>The distance between the tool buttons and plug buttons</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_ui_Toolbar__mixprops" class="inline-link"> _mixprops</a><span class="parameters">(</span>props, objNode) <span>Internally used for mixing in props from an object or
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_margin" class="inline-link"> margin </a><span>The space between each button.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_padding" class="inline-link"> padding </a><span>The amount of spce between the top and left of the toolbar and the buttons.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_radius" class="inline-link"> radius </a><span>The size of the button&#39;s rounded corner</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_size" class="inline-link"> size </a><span>The width and height of the button</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Toolbar_strPlugs" class="inline-link"> strPlugs </a><span>A comma delineated list of the plugins to include in the Toolbar.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Toolbar_strSelected" class="inline-link"> strSelected </a><span>The button that should be selected at startup.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Toolbar_strTools" class="inline-link"> strTools </a><span>A comma delineated list of the Stencil-tools to include in the Toolbar.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_ui_Toolbar_toolPlugGap" class="inline-link"> toolPlugGap </a><span>The distance between the tool buttons and plug buttons</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_ui_Toolbar__mixprops" class="inline-link"> _mixprops</a><span class="parameters">(</span>props, objNode) <span>Internally used for mixing in props from an object or
 from a dom node.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_addBack" class="inline-link"> addBack</a><span class="parameters">(</span>) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_addPlugin" class="inline-link"> addPlugin</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_addTool" class="inline-link"> addTool</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_makeButtons" class="inline-link"> makeButtons</a><span class="parameters">(</span>) <span>Internal. create buttons.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_onPlugClick" class="inline-link"> onPlugClick</a><span class="parameters">(</span>button) <span>Plugin click event.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_onRenderStencil" class="inline-link"> onRenderStencil</a><span class="parameters">(</span>stencil) <span>Stencil render event.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_onToolClick" class="inline-link"> onToolClick</a><span class="parameters">(</span>button) <span>Tool click event.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_addBack" class="inline-link"> addBack</a><span class="parameters">(</span>) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_addPlugin" class="inline-link"> addPlugin</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_addTool" class="inline-link"> addTool</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_makeButtons" class="inline-link"> makeButtons</a><span class="parameters">(</span>) <span>Internal. create buttons.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_onPlugClick" class="inline-link"> onPlugClick</a><span class="parameters">(</span>button) <span>Plugin click event.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_onRenderStencil" class="inline-link"> onRenderStencil</a><span class="parameters">(</span>stencil) <span>Stencil render event.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Toolbar_onToolClick" class="inline-link"> onToolClick</a><span class="parameters">(</span>button) <span>Tool click event.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -290,4 +298,4 @@ from a dom node.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/ui/Toolbar" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

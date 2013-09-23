@@ -1,31 +1,39 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/main.store</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/main.store" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/main.store.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/main.store<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojo_main_store_util" class="inline-link"> util </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_main_store_Cache" class="inline-link"> Cache</a><span class="parameters">(</span>masterStore, cachingStore, options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_store_DataStore" class="inline-link"> DataStore</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_store_JsonRest" class="inline-link"> JsonRest</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_store_Memory" class="inline-link"> Memory</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_main_store_Observable" class="inline-link"> Observable</a><span class="parameters">(</span>store) <span>The Observable store wrapper takes a store and sets an observe method on query()
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojo_main_store_util" class="inline-link"> util </a><span></span><span title="Must manually require () dojo/store/util/QueryResults to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_main_store_Cache" class="inline-link"> Cache</a><span class="parameters">(</span>masterStore, cachingStore, options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_store_DataStore" class="inline-link"> DataStore</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_store_JsonRest" class="inline-link"> JsonRest</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_store_Memory" class="inline-link"> Memory</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_main_store_Observable" class="inline-link"> Observable</a><span class="parameters">(</span>store) <span>The Observable store wrapper takes a store and sets an observe method on query()
 results that can be used to monitor results for changes.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -127,21 +135,21 @@ is performed.
             <h3>Example 1</h3><p>Create a Memory store that returns an observable query, and then log some
 information about that query.
 
+
 </p>
-<pre><code>  var store = Observable(new Memory({
+<pre><code>var store = Observable(new Memory({
     data: [
-      {id: 1, name: &quot;one&quot;, prime: false},
-      {id: 2, name: &quot;two&quot;, even: true, prime: true},
-      {id: 3, name: &quot;three&quot;, prime: true},
-      {id: 4, name: &quot;four&quot;, even: true, prime: false},
-      {id: 5, name: &quot;five&quot;, prime: true}
+        {id: 1, name: &quot;one&quot;, prime: false},
+        {id: 2, name: &quot;two&quot;, even: true, prime: true},
+        {id: 3, name: &quot;three&quot;, prime: true},
+        {id: 4, name: &quot;four&quot;, even: true, prime: false},
+        {id: 5, name: &quot;five&quot;, prime: true}
     ]
-  }));
-  var changes = [], results = store.query({ prime: true });
-  var observer = results.observe(function(object, previousIndex, newIndex){
+}));
+var changes = [], results = store.query({ prime: true });
+var observer = results.observe(function(object, previousIndex, newIndex){
     changes.push({previousIndex:previousIndex, newIndex:newIndex, object:object});
-  });</code></pre>
-<p></p>
+});</code></pre>
 <p>See the Observable tests for more information.</p>
 
           </div>
@@ -149,4 +157,4 @@ information about that query.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/main.store" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

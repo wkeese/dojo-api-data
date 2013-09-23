@@ -1,28 +1,36 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dom-class</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dom-class" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dom-class.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/dom-class<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines the core dojo DOM class API.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/dom-class.html" target="_blank">dojo/dom-class reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_dom-class_add" class="inline-link"> add</a><span class="parameters">(</span>node, classStr) <span>Adds the specified classes to the end of the class list on the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_dom-class_add" class="inline-link"> add</a><span class="parameters">(</span>node, classStr) <span>Adds the specified classes to the end of the class list on the
 passed node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-class_contains" class="inline-link"> contains</a><span class="parameters">(</span>node, classStr) <span>Returns whether or not the specified classes are a portion of the
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-class_contains" class="inline-link"> contains</a><span class="parameters">(</span>node, classStr) <span>Returns whether or not the specified classes are a portion of the
 class list currently applied to the node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-class_remove" class="inline-link"> remove</a><span class="parameters">(</span>node, classStr) <span>Removes the specified classes from node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-class_replace" class="inline-link"> replace</a><span class="parameters">(</span>node, addClassStr, removeClassStr) <span>Replaces one or more classes on a node if not present.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-class_toggle" class="inline-link"> toggle</a><span class="parameters">(</span>node, classStr, condition) <span>Adds a class to node if not present, or removes if present.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-class_remove" class="inline-link"> remove</a><span class="parameters">(</span>node, classStr) <span>Removes the specified classes from node.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-class_replace" class="inline-link"> replace</a><span class="parameters">(</span>node, addClassStr, removeClassStr) <span>Replaces one or more classes on a node if not present.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-class_toggle" class="inline-link"> toggle</a><span class="parameters">(</span>node, classStr, condition) <span>Adds a class to node if not present, or removes if present.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -64,34 +72,39 @@ or an array of class names.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Add a class to some node:</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 1</h3><p>Add a class to some node:
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.add(&quot;someNode&quot;, &quot;anewClass&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Add two classes at once:</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 2</h3><p>Add two classes at once:
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.add(&quot;someNode&quot;, &quot;firstClass secondClass&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Add two classes at once (using array):</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 3</h3><p>Add two classes at once (using array):
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.add(&quot;someNode&quot;, [&quot;firstClass&quot;, &quot;secondClass&quot;]);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><p>Available in <code>dojo/NodeList</code> for multiple additions</p>
-<pre><code>  require([&quot;dojo/query&quot;], function(query){
+            <h3>Example 4</h3><p>Available in <code>dojo/NodeList</code> for multiple additions
+
+</p>
+<pre><code>require([&quot;dojo/query&quot;], function(query){
     query(&quot;ul &gt; li&quot;).addClass(&quot;firstLevel&quot;);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -129,8 +142,10 @@ class list currently applied to the node.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Do something if a node with id=&quot;someNode&quot; has class=&quot;aSillyClassName&quot; present</p>
-<pre><code>  if(dojo.hasClass(&quot;someNode&quot;,&quot;aSillyClassName&quot;)){ ... }</code></pre>
+            <h3>Example 1</h3><p>Do something if a node with id=&quot;someNode&quot; has class=&quot;aSillyClassName&quot; present
+
+</p>
+<pre><code>if(dojo.hasClass(&quot;someNode&quot;,&quot;aSillyClassName&quot;)){ ... }</code></pre>
 
           </div>
         </div>
@@ -173,42 +188,48 @@ will be deleted.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Remove a class from some node:</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 1</h3><p>Remove a class from some node:
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.remove(&quot;someNode&quot;, &quot;firstClass&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Remove two classes from some node:</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 2</h3><p>Remove two classes from some node:
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.remove(&quot;someNode&quot;, &quot;firstClass secondClass&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Remove two classes from some node (using array):</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 3</h3><p>Remove two classes from some node (using array):
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.remove(&quot;someNode&quot;, [&quot;firstClass&quot;, &quot;secondClass&quot;]);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><p>Remove all classes from some node:</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 4</h3><p>Remove all classes from some node:
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.remove(&quot;someNode&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>Available in <code>dojo/NodeList</code> for multiple removal</p>
-<pre><code>  require([&quot;dojo/query&quot;], function(query){
+            <h3>Example 5</h3><p>Available in <code>dojo/NodeList</code> for multiple removal
+
+</p>
+<pre><code>require([&quot;dojo/query&quot;], function(query){
     query(&quot;ul &gt; li&quot;).removeClass(&quot;foo&quot;);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -259,25 +280,27 @@ or an array of class names.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.replace(&quot;someNode&quot;, &quot;add1 add2&quot;, &quot;remove1 remove2&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Replace all classes with addMe</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 2</h3><p>Replace all classes with addMe
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.replace(&quot;someNode&quot;, &quot;addMe&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Available in <code>dojo/NodeList</code> for multiple toggles</p>
-<pre><code>  require([&quot;dojo/query&quot;], function(query){
+            <h3>Example 3</h3><p>Available in <code>dojo/NodeList</code> for multiple toggles
+
+</p>
+<pre><code>require([&quot;dojo/query&quot;], function(query){
     query(&quot;.findMe&quot;).replaceClass(&quot;addMe&quot;, &quot;removeMe&quot;);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -334,29 +357,31 @@ Otherwise dojo.hasClass(node, classStr) is used to detect the class presence.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.toggle(&quot;someNode&quot;, &quot;hovered&quot;);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Forcefully add a class</p>
-<pre><code>  require([&quot;dojo/dom-class&quot;], function(domClass){
+            <h3>Example 2</h3><p>Forcefully add a class
+
+</p>
+<pre><code>require([&quot;dojo/dom-class&quot;], function(domClass){
     domClass.toggle(&quot;someNode&quot;, &quot;hovered&quot;, true);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Available in <code>dojo/NodeList</code> for multiple toggles</p>
-<pre><code>  require([&quot;dojo/query&quot;], function(query){
+            <h3>Example 3</h3><p>Available in <code>dojo/NodeList</code> for multiple toggles
+
+</p>
+<pre><code>require([&quot;dojo/query&quot;], function(query){
     query(&quot;.toggleMe&quot;).toggleClass(&quot;toggleMe&quot;);
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dom-class" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

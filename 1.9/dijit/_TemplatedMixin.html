@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_TemplatedMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/_TemplatedMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_TemplatedMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/_TemplatedMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a>
 </div>
 <div class="jsdoc-full-summary"><p>Mixin for widgets that are instantiated from a template</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _TemplatedMixin<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
@@ -39,63 +46,64 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
 </table>
 <p>See the <a href="/reference-guide/1.9/dijit/_TemplatedMixin.html" target="_blank">dijit/_TemplatedMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
 template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dijit__TemplatedMixin__rendered" class="inline-link"> _rendered </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit__TemplatedMixin__rendered" class="inline-link"> _rendered </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
 i.e. already inlining the template for the widget into the main page.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dijit__TemplatedMixin__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dijit__TemplatedMixin__templateCache" class="inline-link"> _templateCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit__TemplatedMixin_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit__TemplatedMixin_searchContainerNode" class="inline-link"> searchContainerNode </a><span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit__TemplatedMixin_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit__TemplatedMixin_templateString" class="inline-link"> templateString </a><span>A string that represents the widget template.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attach" class="inline-link"> _attach</a><span class="parameters">(</span>node, type, func) <span>Roughly corresponding to dojo/on, this is the default function for processing a
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit__TemplatedMixin__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__TemplatedMixin__templateCache" class="inline-link"> _templateCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit__TemplatedMixin_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit__TemplatedMixin_searchContainerNode" class="inline-link"> searchContainerNode </a><span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit__TemplatedMixin_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit__TemplatedMixin_templateString" class="inline-link"> templateString </a><span>A string that represents the widget template.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attach" class="inline-link"> _attach</a><span class="parameters">(</span>node, type, func) <span>Roughly corresponding to dojo/on, this is the default function for processing a
 data-dojo-attach-event.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode) <span>Iterate through the dom nodes and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__detachTemplateNodes" class="inline-link"> _detachTemplateNodes</a><span class="parameters">(</span>) <span>Detach and clean up the attachments made in _attachtempalteNodes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__TemplatedMixin__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode) <span>Iterate through the dom nodes and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__detachTemplateNodes" class="inline-link"> _detachTemplateNodes</a><span class="parameters">(</span>) <span>Detach and clean up the attachments made in _attachtempalteNodes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__TemplatedMixin__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit__TemplatedMixin__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__TemplatedMixin_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget from a template, setting this.domNode.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit__TemplatedMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit__TemplatedMixin_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__TemplatedMixin_getCachedTemplate" class="inline-link"> getCachedTemplate</a><span class="parameters">(</span>templateString, alwaysUseString, doc) <span>Static method to get a template based on the templatePath or
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__TemplatedMixin__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit__TemplatedMixin__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__TemplatedMixin_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget from a template, setting this.domNode.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit__TemplatedMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit__TemplatedMixin_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__TemplatedMixin_getCachedTemplate" class="inline-link"> getCachedTemplate</a><span class="parameters">(</span>templateString, alwaysUseString, doc) <span>Static method to get a template based on the templatePath or
 templateString key</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -434,4 +442,4 @@ a DOM tree (if the node can be cloned directly)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/_TemplatedMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

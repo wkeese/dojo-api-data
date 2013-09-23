@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/drawing/ui/dom/Zoom</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/drawing/ui/dom/Zoom" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/drawing/ui/dom/Zoom.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/ui/dom/Zoom<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/drawing/plugins/_Plugin" class="jsdoc-link">dojox/drawing/plugins/_Plugin</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Zoom<span class="parameters">(options);</span></div>
 </div>
@@ -23,73 +30,74 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_anchors" class="inline-link"> anchors </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_baseClass" class="inline-link"> baseClass </a><span>The CSS class added to the Toolbar buttons</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_botClass" class="inline-link"> botClass </a><span>The CSS class added to the bottom (or right) Toolbar button</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_button" class="inline-link"> button </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_canvas" class="inline-link"> canvas </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_drawing" class="inline-link"> drawing </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_keys" class="inline-link"> keys </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_maxZoom" class="inline-link"> maxZoom </a><span>The maximum the canvas can be zoomed in. 10 = 1000%</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_midClass" class="inline-link"> midClass </a><span>The CSS class added to the middle Toolbar button</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_minZoom" class="inline-link"> minZoom </a><span>The most the canvas can be zoomed out. .1 = 10%</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_mouse" class="inline-link"> mouse </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_node" class="inline-link"> node </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_stencils" class="inline-link"> stencils </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_topClass" class="inline-link"> topClass </a><span>The CSS class added to the top (or left) Toolbar button</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_type" class="inline-link"> type </a><span></span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_util" class="inline-link"> util </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_zoomFactor" class="inline-link"> zoomFactor </a><span>The current zoom amount</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_zoomInc" class="inline-link"> zoomInc </a><span>The amount of zoom that will occur upon each click.</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handles) <span>Removes connections based on passed
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_anchors" class="inline-link"> anchors </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_baseClass" class="inline-link"> baseClass </a><span>The CSS class added to the Toolbar buttons</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_botClass" class="inline-link"> botClass </a><span>The CSS class added to the bottom (or right) Toolbar button</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_button" class="inline-link"> button </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_canvas" class="inline-link"> canvas </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_drawing" class="inline-link"> drawing </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_keys" class="inline-link"> keys </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_maxZoom" class="inline-link"> maxZoom </a><span>The maximum the canvas can be zoomed in. 10 = 1000%</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_midClass" class="inline-link"> midClass </a><span>The CSS class added to the middle Toolbar button</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_minZoom" class="inline-link"> minZoom </a><span>The most the canvas can be zoomed out. .1 = 10%</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_mouse" class="inline-link"> mouse </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_node" class="inline-link"> node </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_stencils" class="inline-link"> stencils </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_topClass" class="inline-link"> topClass </a><span>The CSS class added to the top (or left) Toolbar button</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_type" class="inline-link"> type </a><span></span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_util" class="inline-link"> util </a><span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_zoomFactor" class="inline-link"> zoomFactor </a><span>The current zoom amount</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_zoomInc" class="inline-link"> zoomInc </a><span>The amount of zoom that will occur upon each click.</span><span title="inherited from dojox/drawing/ui/dom/Zoom" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_drawing_ui_dom_Zoom_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handles) <span>Removes connections based on passed
 handles arguments</span><span title="inherited from dojox/drawing/plugins/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_makeButton" class="inline-link"> makeButton</a><span class="parameters">(</span>name, cls) <span>Internal.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_onZoom100" class="inline-link"> onZoom100</a><span class="parameters">(</span>evt) <span>Zooms to 100%</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_onZoomIn" class="inline-link"> onZoomIn</a><span class="parameters">(</span>evt) <span>Handles zoom in.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_onZoomOut" class="inline-link"> onZoomOut</a><span class="parameters">(</span>evt) <span>Handles zoom out.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_makeButton" class="inline-link"> makeButton</a><span class="parameters">(</span>name, cls) <span>Internal.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_onZoom100" class="inline-link"> onZoom100</a><span class="parameters">(</span>evt) <span>Zooms to 100%</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_onZoomIn" class="inline-link"> onZoomIn</a><span class="parameters">(</span>evt) <span>Handles zoom in.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_drawing_ui_dom_Zoom_onZoomOut" class="inline-link"> onZoomOut</a><span class="parameters">(</span>evt) <span>Handles zoom out.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -324,4 +332,4 @@ handles arguments</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/drawing/ui/dom/Zoom" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

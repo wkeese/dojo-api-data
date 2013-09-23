@@ -1,44 +1,52 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dnd/autoscroll</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/dnd/autoscroll" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dnd/autoscroll.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/dnd/autoscroll<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Used by <a class="jsdoc-link" href="/api/1.9/dojo/dnd/Manager">dojo/dnd/Manager</a> to scroll document or internal node when the user
 drags near the edge of the viewport or a scrollable node</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/dnd.html" target="_blank">dojo/dnd/autoscroll reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojo_dnd_autoscroll__validNodes" class="inline-link"> _validNodes </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojo_dnd_autoscroll__validOverflow" class="inline-link"> _validOverflow </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_H_AUTOSCROLL_VALUE" class="inline-link"> H_AUTOSCROLL_VALUE </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_H_TRIGGER_AUTOSCROLL" class="inline-link"> H_TRIGGER_AUTOSCROLL </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_V_AUTOSCROLL_VALUE" class="inline-link"> V_AUTOSCROLL_VALUE </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_V_TRIGGER_AUTOSCROLL" class="inline-link"> V_TRIGGER_AUTOSCROLL </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_dnd_autoscroll_autoScroll" class="inline-link"> autoScroll</a><span class="parameters">(</span>e) <span>a handler for mousemove and touchmove events, which scrolls the window, if
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojo_dnd_autoscroll__validNodes" class="inline-link"> _validNodes </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojo_dnd_autoscroll__validOverflow" class="inline-link"> _validOverflow </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_H_AUTOSCROLL_VALUE" class="inline-link"> H_AUTOSCROLL_VALUE </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_H_TRIGGER_AUTOSCROLL" class="inline-link"> H_TRIGGER_AUTOSCROLL </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_V_AUTOSCROLL_VALUE" class="inline-link"> V_AUTOSCROLL_VALUE </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojo_dnd_autoscroll_V_TRIGGER_AUTOSCROLL" class="inline-link"> V_TRIGGER_AUTOSCROLL </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_dnd_autoscroll_autoScroll" class="inline-link"> autoScroll</a><span class="parameters">(</span>e) <span>a handler for mousemove and touchmove events, which scrolls the window, if
 necessary</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_autoscroll_autoScrollNodes" class="inline-link"> autoScrollNodes</a><span class="parameters">(</span>e) <span>a handler for mousemove and touchmove events, which scrolls the first available
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_autoscroll_autoScrollNodes" class="inline-link"> autoScrollNodes</a><span class="parameters">(</span>e) <span>a handler for mousemove and touchmove events, which scrolls the first available
 Dom element, it falls back to exports.autoScroll()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_autoscroll_autoScrollStart" class="inline-link"> autoScrollStart</a><span class="parameters">(</span>d) <span>Called at the start of a drag.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_autoscroll_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>doc) <span>Returns the dimensions and scroll position of the viewable area of a browser window</span><span title="inherited from dojo/window" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_autoscroll_autoScrollStart" class="inline-link"> autoScrollStart</a><span class="parameters">(</span>d) <span>Called at the start of a drag.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_autoscroll_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>doc) <span>Returns the dimensions and scroll position of the viewable area of a browser window</span><span title="inherited from dojo/window" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -176,4 +184,4 @@ Dom element, it falls back to exports.autoScroll()</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/dnd/autoscroll" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

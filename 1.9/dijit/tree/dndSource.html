@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/dndSource</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/tree/dndSource" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/dndSource.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/tree/dndSource<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/tree/_dndSelector" class="jsdoc-link">dijit/tree/_dndSelector</a>
 </div>
 <div class="jsdoc-full-summary"><p>Handles drag and drop operations (as a source or a target) for <code>dijit.Tree</code></p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new dndSource<span class="parameters">(tree,params);</span></div>
 </div>
@@ -34,125 +41,126 @@
 </table>
 <p>See the <a href="/reference-guide/1.9/dijit/tree/dndSource.html" target="_blank">dijit/tree/dndSource reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dijit_tree_dndSource___Item" class="inline-link"> __Item </a><span>New item to be added to the Tree, like:</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dijit_tree_dndSource_accept" class="inline-link"> accept </a><span>List of accepted types (text strings) for the Tree; defaults to
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dijit_tree_dndSource___Item" class="inline-link"> __Item </a><span>New item to be added to the Tree, like:</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dijit_tree_dndSource_accept" class="inline-link"> accept </a><span>List of accepted types (text strings) for the Tree; defaults to
 [&quot;text&quot;]</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dijit_tree_dndSource_betweenThreshold" class="inline-link"> betweenThreshold </a><span>Distance from upper/lower edge of node to allow drop to reorder nodes</span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_9dijit_tree_dndSource_copyOnly" class="inline-link"> copyOnly </a><span>Copy items, if true, use a state of Ctrl key otherwise</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_tree_dndSource_current" class="inline-link"> current </a><span>The currently hovered TreeNode.</span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dijit_tree_dndSource_dragThreshold" class="inline-link"> dragThreshold </a><span>The move delay in pixels before detecting a drag; 5 by default</span><span title="inherited from dijit/tree/dndSource" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_tree_dndSource_generateText" class="inline-link"> generateText </a><span></span><span title="inherited from dijit/tree/dndSource" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_tree_dndSource_isSource" class="inline-link"> isSource </a><span>Can be used as a DnD source.</span><span title="inherited from dijit/tree/dndSource" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_tree_dndSource_selection" class="inline-link"> selection </a><span>(id to DomNode) map for every TreeNode that&#39;s currently selected.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dijit_tree_dndSource_singular" class="inline-link"> singular </a><span>Allows selection of only one element, if true.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>Adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>Changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__compareNodes" class="inline-link"> _compareNodes</a><span class="parameters">(</span>n1, n2) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__isParentChildDrop" class="inline-link"> _isParentChildDrop</a><span class="parameters">(</span>source, targetRow) <span>Checks whether the dragged items are parent rows in the tree which are being
+        </li>
+        <li class="numberIcon"><a href="#1_9dijit_tree_dndSource_betweenThreshold" class="inline-link"> betweenThreshold </a><span>Distance from upper/lower edge of node to allow drop to reorder nodes</span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_9dijit_tree_dndSource_copyOnly" class="inline-link"> copyOnly </a><span>Copy items, if true, use a state of Ctrl key otherwise</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_tree_dndSource_current" class="inline-link"> current </a><span>The currently hovered TreeNode.</span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dijit_tree_dndSource_dragThreshold" class="inline-link"> dragThreshold </a><span>The move delay in pixels before detecting a drag; 5 by default</span><span title="inherited from dijit/tree/dndSource" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_tree_dndSource_generateText" class="inline-link"> generateText </a><span></span><span title="inherited from dijit/tree/dndSource" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_tree_dndSource_isSource" class="inline-link"> isSource </a><span>Can be used as a DnD source.</span><span title="inherited from dijit/tree/dndSource" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_tree_dndSource_selection" class="inline-link"> selection </a><span>(id to DomNode) map for every TreeNode that&#39;s currently selected.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dijit_tree_dndSource_singular" class="inline-link"> singular </a><span>Allows selection of only one element, if true.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>Adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>Changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__compareNodes" class="inline-link"> _compareNodes</a><span class="parameters">(</span>n1, n2) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__isParentChildDrop" class="inline-link"> _isParentChildDrop</a><span class="parameters">(</span>source, targetRow) <span>Checks whether the dragged items are parent rows in the tree which are being
 dragged into their own children.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__markDndStatus" class="inline-link"> _markDndStatus</a><span class="parameters">(</span>copy) <span>Changes source&#39;s state based on &quot;copy&quot; status</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>Removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__setDifference" class="inline-link"> _setDifference</a><span class="parameters">(</span>xs, ys) <span>Returns a copy of xs which lacks any objects
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__markDndStatus" class="inline-link"> _markDndStatus</a><span class="parameters">(</span>copy) <span>Changes source&#39;s state based on &quot;copy&quot; status</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>Removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndContainer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__setDifference" class="inline-link"> _setDifference</a><span class="parameters">(</span>xs, ys) <span>Returns a copy of xs which lacks any objects
 occurring in ys.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__unmarkTargetAnchor" class="inline-link"> _unmarkTargetAnchor</a><span class="parameters">(</span>) <span>Removes hover class of the current target anchor</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__updateSelectionProperties" class="inline-link"> _updateSelectionProperties</a><span class="parameters">(</span>) <span>Update the following tree properties from the current selection:
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__unmarkTargetAnchor" class="inline-link"> _unmarkTargetAnchor</a><span class="parameters">(</span>) <span>Removes hover class of the current target anchor</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource__updateSelectionProperties" class="inline-link"> _updateSelectionProperties</a><span class="parameters">(</span>) <span>Update the following tree properties from the current selection:
 path[s], selectedItem[s], selectedNode[s]</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_addTreeNode" class="inline-link"> addTreeNode</a><span class="parameters">(</span>node, isAnchor) <span>add node to current selection</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_checkAcceptance" class="inline-link"> checkAcceptance</a><span class="parameters">(</span>source, nodes) <span>Checks if the target can accept nodes from this source</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_checkItemAcceptance" class="inline-link"> checkItemAcceptance</a><span class="parameters">(</span>target, source, position) <span>Stub function to be overridden if one wants to check for the ability to drop at the node/item level</span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>tree, params) <span>a constructor of the Tree DnD Source</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_copyState" class="inline-link"> copyState</a><span class="parameters">(</span>keyPressed) <span>Returns true, if we need to copy items, false to move.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Prepares the object to be garbage-collected.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_forInSelectedItems" class="inline-link"> forInSelectedItems</a><span class="parameters">(</span>f, o) <span>Iterates over selected items;
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_addTreeNode" class="inline-link"> addTreeNode</a><span class="parameters">(</span>node, isAnchor) <span>add node to current selection</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_checkAcceptance" class="inline-link"> checkAcceptance</a><span class="parameters">(</span>source, nodes) <span>Checks if the target can accept nodes from this source</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_checkItemAcceptance" class="inline-link"> checkItemAcceptance</a><span class="parameters">(</span>target, source, position) <span>Stub function to be overridden if one wants to check for the ability to drop at the node/item level</span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>tree, params) <span>a constructor of the Tree DnD Source</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_copyState" class="inline-link"> copyState</a><span class="parameters">(</span>keyPressed) <span>Returns true, if we need to copy items, false to move.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Prepares the object to be garbage-collected.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_forInSelectedItems" class="inline-link"> forInSelectedItems</a><span class="parameters">(</span>f, o) <span>Iterates over selected items;
 see dojo/dnd/Container.forInItems() for details</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_getItem" class="inline-link"> getItem</a><span class="parameters">(</span>key) <span>Returns the dojo/dnd/Container._Item (representing a dragged node) by it&#39;s key (id).</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_getSelectedTreeNodes" class="inline-link"> getSelectedTreeNodes</a><span class="parameters">(</span>) <span>Returns a list of selected node(s).</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_isTreeNodeSelected" class="inline-link"> isTreeNodeSelected</a><span class="parameters">(</span>node) <span>return true if node is currently selected</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_itemCreator" class="inline-link"> itemCreator</a><span class="parameters">(</span>nodes, target, source) <span>Returns objects passed to Tree.model.newItem() based on DnD nodes
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_getItem" class="inline-link"> getItem</a><span class="parameters">(</span>key) <span>Returns the dojo/dnd/Container._Item (representing a dragged node) by it&#39;s key (id).</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_getSelectedTreeNodes" class="inline-link"> getSelectedTreeNodes</a><span class="parameters">(</span>) <span>Returns a list of selected node(s).</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_isTreeNodeSelected" class="inline-link"> isTreeNodeSelected</a><span class="parameters">(</span>node) <span>return true if node is currently selected</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_itemCreator" class="inline-link"> itemCreator</a><span class="parameters">(</span>nodes, target, source) <span>Returns objects passed to Tree.model.newItem() based on DnD nodes
 dropped onto the tree.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_removeTreeNode" class="inline-link"> removeTreeNode</a><span class="parameters">(</span>node) <span>remove node and it&#39;s descendants from current selection</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource_selectNone" class="inline-link"> selectNone</a><span class="parameters">(</span>) <span>Unselects all items</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_setSelection" class="inline-link"> setSelection</a><span class="parameters">(</span>newSelection) <span>set the list of selected nodes to be exactly newSelection.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_userSelect" class="inline-link"> userSelect</a><span class="parameters">(</span>node, multi, range) <span>Add or remove the given node from selection, responding
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_removeTreeNode" class="inline-link"> removeTreeNode</a><span class="parameters">(</span>node) <span>remove node and it&#39;s descendants from current selection</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_tree_dndSource_selectNone" class="inline-link"> selectNone</a><span class="parameters">(</span>) <span>Unselects all items</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_setSelection" class="inline-link"> setSelection</a><span class="parameters">(</span>newSelection) <span>set the list of selected nodes to be exactly newSelection.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_userSelect" class="inline-link"> userSelect</a><span class="parameters">(</span>node, multi, range) <span>Add or remove the given node from selection, responding
 to a user action such as a click or keypress.</span><span title="inherited from dijit/tree/_dndSelector" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__onDragMouse" class="inline-link"> _onDragMouse</a><span class="parameters">(</span>e, firstTime) <span>Helper method for processing onmousemove/onmouseover events while drag is in progress.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_onClickPress" class="inline-link"> onClickPress</a><span class="parameters">(</span>e) <span>Event processor for onmousedown/ontouchstart/onkeydown corresponding to a click event</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_onClickRelease" class="inline-link"> onClickRelease</a><span class="parameters">(</span>e) <span>Event processor for onmouseup/ontouchend/onkeyup corresponding to a click event</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onDndCancel" class="inline-link"> onDndCancel</a><span class="parameters">(</span>) <span>Topic event processor for /dnd/cancel, called to cancel the DnD operation</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_onDndDrop" class="inline-link"> onDndDrop</a><span class="parameters">(</span>source, nodes, copy) <span>Topic event processor for /dnd/drop, called to finish the DnD operation.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onDndSourceOver" class="inline-link"> onDndSourceOver</a><span class="parameters">(</span>source) <span>Topic event processor for /dnd/source/over, called when detected a current source.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onDndStart" class="inline-link"> onDndStart</a><span class="parameters">(</span>source, nodes, copy) <span>Topic event processor for /dnd/start, called to initiate the DnD operation</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>Event processor for onmousedown/ontouchstart</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>Called for any onmousemove/ontouchmove events over the Tree</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>) <span>Event processor for when mouse is moved away from a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>widget, evt) <span>Called when mouse is moved over a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>Event processor for onmouseup/ontouchend</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>This method is called when mouse is moved out of our container (like onmouseleave)</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>This method is called when mouse is moved over our container (like onmouseenter)</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource__onDragMouse" class="inline-link"> _onDragMouse</a><span class="parameters">(</span>e, firstTime) <span>Helper method for processing onmousemove/onmouseover events while drag is in progress.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_onClickPress" class="inline-link"> onClickPress</a><span class="parameters">(</span>e) <span>Event processor for onmousedown/ontouchstart/onkeydown corresponding to a click event</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_onClickRelease" class="inline-link"> onClickRelease</a><span class="parameters">(</span>e) <span>Event processor for onmouseup/ontouchend/onkeyup corresponding to a click event</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onDndCancel" class="inline-link"> onDndCancel</a><span class="parameters">(</span>) <span>Topic event processor for /dnd/cancel, called to cancel the DnD operation</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree_dndSource_onDndDrop" class="inline-link"> onDndDrop</a><span class="parameters">(</span>source, nodes, copy) <span>Topic event processor for /dnd/drop, called to finish the DnD operation.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onDndSourceOver" class="inline-link"> onDndSourceOver</a><span class="parameters">(</span>source) <span>Topic event processor for /dnd/source/over, called when detected a current source.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onDndStart" class="inline-link"> onDndStart</a><span class="parameters">(</span>source, nodes, copy) <span>Topic event processor for /dnd/start, called to initiate the DnD operation</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>Event processor for onmousedown/ontouchstart</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>Called for any onmousemove/ontouchmove events over the Tree</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>) <span>Event processor for when mouse is moved away from a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_tree_dndSource_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>widget, evt) <span>Called when mouse is moved over a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>Event processor for onmouseup/ontouchend</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>This method is called when mouse is moved out of our container (like onmouseleave)</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree_dndSource_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>This method is called when mouse is moved over our container (like onmouseenter)</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -952,4 +960,4 @@ Keeps track of current drop target.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/tree/dndSource" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

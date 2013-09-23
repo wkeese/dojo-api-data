@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/Dialog._DialogBase</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/Dialog._DialogBase" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/Dialog._DialogBase.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/Dialog._DialogBase<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin,   </a><a href="/api/1.8/dijit/form/_FormMixin" class="jsdoc-link">dijit/form/_FormMixin,   </a><a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin,   </a><a href="/api/1.8/dijit/_CssStateMixin" class="jsdoc-link">dijit/_CssStateMixin,   </a>
+  <label>Extends </label><a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin, </a><a href="/api/1.8/dijit/form/_FormMixin" class="jsdoc-link">dijit/form/_FormMixin, </a><a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin, </a><a href="/api/1.8/dijit/_CssStateMixin" class="jsdoc-link">dijit/_CssStateMixin</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dijit/Dialog._DialogBase<span class="parameters">(params,srcNodeRef);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Dialog._DialogBase<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/_TemplatedMixin">dijit/_TemplatedMixin</a></div>
 <div class="jsdoc-summary"><p>Create the widget.</p>
@@ -36,178 +43,179 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
 template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
 templates having their startup called before the parent widget
 fires postCreate.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__firstFocusItem" class="inline-link"> _firstFocusItem </a><span>The pointer to the first focusable node in the dialog.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__lastFocusItem" class="inline-link"> _lastFocusItem </a><span>The pointer to which node has focus prior to our dialog.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setTitleAttr" class="inline-link"> _setTitleAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_active" class="inline-link"> active </a><span>True if mouse was pressed while over this widget, and hasn&#39;t been released yet</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_aria-describedby" class="inline-link"> aria-describedby </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_autofocus" class="inline-link"> autofocus </a><span>A Toggle to modify the default focus behavior of a Dialog, which
+        </li>
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__firstFocusItem" class="inline-link"> _firstFocusItem </a><span>The pointer to the first focusable node in the dialog.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__lastFocusItem" class="inline-link"> _lastFocusItem </a><span>The pointer to which node has focus prior to our dialog.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setTitleAttr" class="inline-link"> _setTitleAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_active" class="inline-link"> active </a><span>True if mouse was pressed while over this widget, and hasn&#39;t been released yet</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_aria-describedby" class="inline-link"> aria-describedby </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_autofocus" class="inline-link"> autofocus </a><span>A Toggle to modify the default focus behavior of a Dialog, which
 is to focus on the first dialog element after opening the dialog.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_cssStateNodes" class="inline-link"> cssStateNodes </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_doLayout" class="inline-link"> doLayout </a><span>Don&#39;t change this parameter from the default value.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_draggable" class="inline-link"> draggable </a><span>Toggles the moveable aspect of the Dialog.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_duration" class="inline-link"> duration </a><span>Amount of time (in ms) it takes to slide panes</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_hovering" class="inline-link"> hovering </a><span>True if cursor is over this widget</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_maxRatio" class="inline-link"> maxRatio </a><span>Maximum size to allow the dialog to expand to, relative to viewport size</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_open" class="inline-link"> open </a><span>True if Dialog is currently displayed on screen.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_refocus" class="inline-link"> refocus </a><span>A Toggle to modify the default focus behavior of a Dialog, which
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_cssStateNodes" class="inline-link"> cssStateNodes </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_doLayout" class="inline-link"> doLayout </a><span>Don&#39;t change this parameter from the default value.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_draggable" class="inline-link"> draggable </a><span>Toggles the moveable aspect of the Dialog.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_duration" class="inline-link"> duration </a><span>The time in milliseconds it takes the dialog to fade in and out</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_hovering" class="inline-link"> hovering </a><span>True if cursor is over this widget</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_maxRatio" class="inline-link"> maxRatio </a><span>Maximum size to allow the dialog to expand to, relative to viewport size</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_open" class="inline-link"> open </a><span>True if Dialog is currently displayed on screen.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_refocus" class="inline-link"> refocus </a><span>A Toggle to modify the default focus behavior of a Dialog, which
 is to re-focus the element which had focus before being opened.</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_state" class="inline-link"> state </a><span>Will be &quot;Error&quot; if one or more of the child widgets has an invalid value,
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_state" class="inline-link"> state </a><span>Will be &quot;Error&quot; if one or more of the child widgets has an invalid value,
 &quot;Incomplete&quot; if not all of the required child widgets are filled in.</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__cssMouseEvent" class="inline-link"> _cssMouseEvent</a><span class="parameters">(</span>event) <span>Handler for CSS event on this.domNode.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__endDrag" class="inline-link"> _endDrag</a><span class="parameters">(</span>) <span>Called after dragging the Dialog.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dijit_Dialog__DialogBase_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__cssMouseEvent" class="inline-link"> _cssMouseEvent</a><span class="parameters">(</span>event) <span>Handler for CSS event on this.domNode.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__endDrag" class="inline-link"> _endDrag</a><span class="parameters">(</span>) <span>Called after dragging the Dialog.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getDescendantFormWidgets" class="inline-link"> _getDescendantFormWidgets</a><span class="parameters">(</span>children) <span>Returns all form widget descendants, searching through non-form child widgets like BorderContainer</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getFocusItems" class="inline-link"> _getFocusItems</a><span class="parameters">(</span>) <span>Finds focusable items in dialog,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getDescendantFormWidgets" class="inline-link"> _getDescendantFormWidgets</a><span class="parameters">(</span>children) <span>Returns all form widget descendants, searching through non-form child widgets like BorderContainer</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getFocusItems" class="inline-link"> _getFocusItems</a><span class="parameters">(</span>) <span>Finds focusable items in dialog,
 and sets this._firstFocusItem and this._lastFocusItem</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_DialogMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getState" class="inline-link"> _getState</a><span class="parameters">(</span>) <span>Compute what this.state should be based on state of children</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Returns Object representing form values.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__position" class="inline-link"> _position</a><span class="parameters">(</span>) <span>Position modal dialog in the viewport.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setDraggableAttr" class="inline-link"> _setDraggableAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setStateClass" class="inline-link"> _setStateClass</a><span class="parameters">(</span>) <span>Update the visual state of the widget by setting the css classes on this.domNode
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getState" class="inline-link"> _getState</a><span class="parameters">(</span>) <span>Compute what this.state should be based on state of children</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Returns Object representing form values.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__position" class="inline-link"> _position</a><span class="parameters">(</span>) <span>Position modal dialog in the viewport.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setDraggableAttr" class="inline-link"> _setDraggableAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setStateClass" class="inline-link"> _setStateClass</a><span class="parameters">(</span>) <span>Update the visual state of the widget by setting the css classes on this.domNode
 (or this.stateNode if defined) by combining this.baseClass with
 various suffixes that represent the current widget state(s).</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setup" class="inline-link"> _setup</a><span class="parameters">(</span>) <span>Stuff we need to do before showing the Dialog for the first
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setup" class="inline-link"> _setup</a><span class="parameters">(</span>) <span>Stuff we need to do before showing the Dialog for the first
 time (but we defer it until right beforehand, for
 performance reasons).</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>obj) <span>Fill in form values from according to an Object (in the format returned by get(&#39;value&#39;))</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__size" class="inline-link"> _size</a><span class="parameters">(</span>) <span>If necessary, shrink dialog contents so dialog fits in viewport</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__subnodeCssMouseEvent" class="inline-link"> _subnodeCssMouseEvent</a><span class="parameters">(</span>node, clazz, evt) <span>Handler for hover/active mouse event on widget&#39;s subnode</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__trackMouseState" class="inline-link"> _trackMouseState</a><span class="parameters">(</span>node, clazz) <span>Track mouse/focus events on specified node and set CSS class on that node to indicate
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>obj) <span>Fill in form values from according to an Object (in the format returned by get(&#39;value&#39;))</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__size" class="inline-link"> _size</a><span class="parameters">(</span>) <span>If necessary, shrink dialog contents so dialog fits in viewport</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__subnodeCssMouseEvent" class="inline-link"> _subnodeCssMouseEvent</a><span class="parameters">(</span>node, clazz, evt) <span>Handler for hover/active mouse event on widget&#39;s subnode</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__trackMouseState" class="inline-link"> _trackMouseState</a><span class="parameters">(</span>node, clazz) <span>Track mouse/focus events on specified node and set CSS class on that node to indicate
 current state.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget from a template, setting this.domNode.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_connectChildren" class="inline-link"> connectChildren</a><span class="parameters">(</span>inStartup) <span>You can call this function directly, ex. in the event that you
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget from a template, setting this.domNode.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_connectChildren" class="inline-link"> connectChildren</a><span class="parameters">(</span>inStartup) <span>You can call this function directly, ex. in the event that you
 programmatically add a widget to the form after the form has been
 initialized.</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_disconnectChildren" class="inline-link"> disconnectChildren</a><span class="parameters">(</span>) <span>Deprecated method.</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_execute" class="inline-link"> execute</a><span class="parameters">(</span>formContents) <span>Callback when the user hits the submit button.</span><span title="inherited from dijit/_DialogMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hide the dialog</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>) <span>Returns true if all of the widgets are valid.</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span>Called when viewport scrolled or size changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>val) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_show" class="inline-link"> show</a><span class="parameters">(</span>) <span>Display the dialog</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_validate" class="inline-link"> validate</a><span class="parameters">(</span>) <span>returns if the form is valid - same as isValid - but
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_disconnectChildren" class="inline-link"> disconnectChildren</a><span class="parameters">(</span>) <span>Deprecated method.</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_execute" class="inline-link"> execute</a><span class="parameters">(</span>formContents) <span>Callback when the user hits the submit button.</span><span title="inherited from dijit/_DialogMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hide the dialog</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>) <span>Returns true if all of the widgets are valid.</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span>Called when viewport scrolled or size changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>val) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_show" class="inline-link"> show</a><span class="parameters">(</span>) <span>Display the dialog</span><span title="inherited from dijit/Dialog" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_validate" class="inline-link"> validate</a><span class="parameters">(</span>) <span>returns if the form is valid - same as isValid - but
 provides a few additional (ui-specific) features:
 
 
 
 it will highlight any sub-widgets that are not valid
 it will call focus() on the first invalid sub-widget</span><span title="inherited from dijit/form/_FormMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__onChildChange" class="inline-link"> _onChildChange</a><span class="parameters">(</span>attr) <span>Called when child&#39;s value or disabled state changes</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>evt) <span>Handles the keyboard events for accessibility reasons</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__onSubmit" class="inline-link"> _onSubmit</a><span class="parameters">(</span>) <span>Callback when user hits submit button</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>) <span>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onExecute" class="inline-link"> onExecute</a><span class="parameters">(</span>) <span>Called when user has pressed the dialog&#39;s OK button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>) <span>Called when data has been loaded from an href.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onValidStateChange" class="inline-link"> onValidStateChange</a><span class="parameters">(</span>isValid) <span>Stub function to connect to if you want to do something
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__onChildChange" class="inline-link"> _onChildChange</a><span class="parameters">(</span>attr) <span>Called when child&#39;s value or disabled state changes</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>evt) <span>Handles the keyboard events for accessibility reasons</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_Dialog__DialogBase__onSubmit" class="inline-link"> _onSubmit</a><span class="parameters">(</span>) <span>Callback when user hits submit button</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>) <span>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onExecute" class="inline-link"> onExecute</a><span class="parameters">(</span>) <span>Called when user has pressed the dialog&#39;s OK button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>) <span>Called when data has been loaded from an href.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit_Dialog__DialogBase_onValidStateChange" class="inline-link"> onValidStateChange</a><span class="parameters">(</span>isValid) <span>Stub function to connect to if you want to do something
 (like disable/enable a submit button) when the valid
 state changes on the form as a whole.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -336,7 +344,7 @@ in the viewport.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/Dialog" class="jsdoc-link">dijit/Dialog</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>Amount of time (in ms) it takes to slide panes</p>
+        <div class="jsdoc-summary"><p>The time in milliseconds it takes the dialog to fade in and out</p>
 </div>
       </div>
       <div class="jsdoc-field public">
@@ -623,9 +631,9 @@ based on this.disabled and flags set in _onMouse (this.active, this.hovering) an
 </p>
 <ul>
 <li>Disabled  - if the widget is disabled</li>
-<li>Active    - if the mouse (or space/enter key?) is being pressed down</li>
-<li>Focused    - if the widget has focus</li>
-<li>Hover    - if the mouse is over the widget</li>
+<li>Active        - if the mouse (or space/enter key?) is being pressed down</li>
+<li>Focused       - if the widget has focus</li>
+<li>Hover     - if the mouse is over the widget</li>
 </ul>
 </div>
       </div>
@@ -862,7 +870,7 @@ first calls onExecute() to notify the container to hide the
 dialog and restore focus to wherever it used to be.
 
 </p>
-<p>Then* this method is called.</p>
+<p><em>Then</em> this method is called.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -894,7 +902,8 @@ dialog and restore focus to wherever it used to be.
         <div class="jsdoc-full-summary"><p>Hide the dialog</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/Deferred">dojo/_base/Deferred</a> | instance</span></div>
-        <div class="jsdoc-return-description">Deferred object that resolves when the hide animation is complete</div>
+        <div class="jsdoc-return-description"><p>Deferred object that resolves when the hide animation is complete</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dijit_Dialog__DialogBase_isValid"></a><span class="functionIcon">isValid</span><span class="parameters">()</span> 
@@ -964,7 +973,8 @@ Deprecated, will be removed in 2.0.  Use get(&quot;state&quot;) instead.</p>
         <div class="jsdoc-full-summary"><p>Display the dialog</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/_base/Deferred">dojo/_base/Deferred</a> | instance</span></div>
-        <div class="jsdoc-return-description">Deferred object that resolves when the display animation is complete</div>
+        <div class="jsdoc-return-description"><p>Deferred object that resolves when the display animation is complete</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dijit_Dialog__DialogBase_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
@@ -1050,4 +1060,4 @@ state changes on the form as a whole.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/Dialog._DialogBase" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

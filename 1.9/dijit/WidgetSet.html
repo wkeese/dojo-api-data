@@ -1,23 +1,29 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/WidgetSet</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/WidgetSet" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/WidgetSet.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/WidgetSet<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A set of widgets indexed by id.
 Deprecated, will be removed in 2.0.
 </p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new WidgetSet<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dijit/WidgetSet">dijit/WidgetSet</a></div>
 <p>See the <a href="/reference-guide/1.9/dijit/WidgetSet.html" target="_blank">dijit/WidgetSet reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>Create a small list of widgets:
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>Create a small list of widgets:
 
 </p>
 <pre><code>require([&quot;dijit/WidgetSet&quot;, &quot;dijit/registry&quot;],
@@ -29,35 +35,37 @@ Deprecated, will be removed in 2.0.
     ws.forEach(function(w){ w.destroy(); });
 });</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_add" class="inline-link"> add</a><span class="parameters">(</span>widget) <span>Add a widget to this list.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_byClass" class="inline-link"> byClass</a><span class="parameters">(</span>cls) <span>Reduce this widgetset to a new WidgetSet of a particular declaredClass</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_byId" class="inline-link"> byId</a><span class="parameters">(</span>id) <span>Find a widget in this list by it&#39;s id.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_every" class="inline-link"> every</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.every acting explicitly on this WidgetSet</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter, thisObj) <span>Filter down this WidgetSet to a smaller new WidgetSet
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_add" class="inline-link"> add</a><span class="parameters">(</span>widget) <span>Add a widget to this list.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_byClass" class="inline-link"> byClass</a><span class="parameters">(</span>cls) <span>Reduce this widgetset to a new WidgetSet of a particular declaredClass</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_byId" class="inline-link"> byId</a><span class="parameters">(</span>id) <span>Find a widget in this list by it&#39;s id.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_every" class="inline-link"> every</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.every acting explicitly on this WidgetSet</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter, thisObj) <span>Filter down this WidgetSet to a smaller new WidgetSet
 Works the same as array.filter and NodeList.filter</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>func, thisObj) <span>Call specified function for each widget in this set.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_map" class="inline-link"> map</a><span class="parameters">(</span>func, thisObj) <span>Create a new Array from this WidgetSet, following the same rules as array.map</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Remove a widget from this WidgetSet.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_some" class="inline-link"> some</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.some acting explicitly on this WidgetSet</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_WidgetSet_toArray" class="inline-link"> toArray</a><span class="parameters">(</span>) <span>Convert this WidgetSet into a true Array</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>func, thisObj) <span>Call specified function for each widget in this set.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_map" class="inline-link"> map</a><span class="parameters">(</span>func, thisObj) <span>Create a new Array from this WidgetSet, following the same rules as array.map</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Remove a widget from this WidgetSet.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_some" class="inline-link"> some</a><span class="parameters">(</span>func, thisObj) <span>A synthetic clone of array.some acting explicitly on this WidgetSet</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_WidgetSet_toArray" class="inline-link"> toArray</a><span class="parameters">(</span>) <span>Convert this WidgetSet into a true Array</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -431,4 +439,4 @@ when the first true return is encountered.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/WidgetSet" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

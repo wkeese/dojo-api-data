@@ -1,24 +1,32 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/json/schema</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/json/schema" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/json/schema.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/json/schema<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <p>See the <a href="/reference-guide/1.9/dojox/json/schema.html" target="_blank">dojox/json/schema reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_json_schema__validate" class="inline-link"> _validate</a><span class="parameters">(</span>instance, schema, _changing) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_json_schema_checkPropertyChange" class="inline-link"> checkPropertyChange</a><span class="parameters">(</span>value, schema, property) <span>The checkPropertyChange method will check to see if an value can legally be in property with the given schema
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_json_schema__validate" class="inline-link"> _validate</a><span class="parameters">(</span>instance, schema, _changing) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_json_schema_checkPropertyChange" class="inline-link"> checkPropertyChange</a><span class="parameters">(</span>value, schema, property) <span>The checkPropertyChange method will check to see if an value can legally be in property with the given schema
 This is slightly different than the validate method in that it will fail if the schema is readonly and it will
 not check for self-validation, it is assumed that the passed in value is already internally valid.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_json_schema_mustBeValid" class="inline-link"> mustBeValid</a><span class="parameters">(</span>result) <span>This checks to ensure that the result is valid and will throw an appropriate error message if it is not</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_json_schema_validate" class="inline-link"> validate</a><span class="parameters">(</span>instance, schema) <span>To use the validator call this with an instance object and an optional schema object.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_json_schema_mustBeValid" class="inline-link"> mustBeValid</a><span class="parameters">(</span>result) <span>This checks to ensure that the result is valid and will throw an appropriate error message if it is not</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_json_schema_validate" class="inline-link"> validate</a><span class="parameters">(</span>instance, schema) <span>To use the validator call this with an instance object and an optional schema object.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -164,4 +172,4 @@ empty list will be returned. A validation error will have two properties:</li>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/json/schema" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

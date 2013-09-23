@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/KeyValueStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/data/KeyValueStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/KeyValueStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/KeyValueStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This is a dojo.data store implementation.  It can take in either a Javascript
 array, JSON string, or URL as the data source.  Data is expected to be in the
@@ -16,7 +23,7 @@ following format:
 <p>is a JS object representing a key-value pair.  If an item in the above array has
 more than one key/value pair, only the first will be used/accessed.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new KeyValueStore<span class="parameters">(keywordParameters);</span></div>
 </div>
@@ -41,82 +48,84 @@ more than one key/value pair, only the first will be used/accessed.</p>
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/data/KeyValueStore.html" target="_blank">dojox/data/KeyValueStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dojox_data_KeyValueStore_data" class="inline-link"> data </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_data_KeyValueStore_url" class="inline-link"> url </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_data_KeyValueStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Controls if urlPreventCache should be used with underlying xhrGet.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>item, attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__createItem" class="inline-link"> _createItem</a><span class="parameters">(</span>something) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>keywordArgs, findCallback, errorCallback) <span>See dojo.data.util.simpleFetch.fetch()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__finishFetchItemByIdentity" class="inline-link"> _finishFetchItemByIdentity</a><span class="parameters">(</span>items, request) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__processData" class="inline-link"> _processData</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_KeyValueStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_KeyValueStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dojox_data_KeyValueStore_data" class="inline-link"> data </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_data_KeyValueStore_url" class="inline-link"> url </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_data_KeyValueStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Controls if urlPreventCache should be used with underlying xhrGet.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>item, attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__createItem" class="inline-link"> _createItem</a><span class="parameters">(</span>something) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>keywordArgs, findCallback, errorCallback) <span>See dojo.data.util.simpleFetch.fetch()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__finishFetchItemByIdentity" class="inline-link"> _finishFetchItemByIdentity</a><span class="parameters">(</span>items, request) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_KeyValueStore__processData" class="inline-link"> _processData</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_KeyValueStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_KeyValueStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_KeyValueStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentifierAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_KeyValueStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentifierAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()
 Key/Value syntax does not support multi-valued attributes, so this is just a
 wrapper function for getValue().</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()
 The KeyValueStore always loads all items, so if it&#39;s an item, then it&#39;s loaded.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_KeyValueStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -996,4 +1005,4 @@ the callback handlers.</pre></code>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/data/KeyValueStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

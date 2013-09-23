@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dgauges/RectangularSegmentedRangeIndicator</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/dgauges/RectangularSegmentedRangeIndicator" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dgauges/RectangularSegmentedRangeIndicator.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/dgauges/RectangularSegmentedRangeIndicator<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/dgauges/IndicatorBase" class="jsdoc-link">dojox/dgauges/IndicatorBase</a>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>A segmented-style range indicator for rectangular gauges.
 This class will be replaced by a cleaner implementation in a future version.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new RectangularSegmentedRangeIndicator<span class="parameters">();</span></div>
 </div>
@@ -16,82 +23,83 @@ This class will be replaced by a cleaner implementation in a future version.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/dgauges.html" target="_blank">dojox/dgauges/RectangularSegmentedRangeIndicator reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_endThickness" class="inline-link"> endThickness </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_fill" class="inline-link"> fill </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingBottom" class="inline-link"> paddingBottom </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingLeft" class="inline-link"> paddingLeft </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingRight" class="inline-link"> paddingRight </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingTop" class="inline-link"> paddingTop </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_ranges" class="inline-link"> ranges </a><span>An array containing objects to define color ranges.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_rounded" class="inline-link"> rounded </a><span>Indicates if the extremity segments are rounded.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_segments" class="inline-link"> segments </a><span>The number of segments making the indicator.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_segmentSpacing" class="inline-link"> segmentSpacing </a><span>The blank space between two segments.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_start" class="inline-link"> start </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_startThickness" class="inline-link"> startThickness </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_stroke" class="inline-link"> stroke </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_value" class="inline-link"> value </a><span>The value of this indicator.</span><span title="inherited from dojox/dgauges/IndicatorBase" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__defaultHorizontalShapeFunc" class="inline-link"> _defaultHorizontalShapeFunc</a><span class="parameters">(</span>indicator, group, scale, startX, startY, endPosition, startThickness, endThickness, fill, stroke) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__defaultVerticalShapeFunc" class="inline-link"> _defaultVerticalShapeFunc</a><span class="parameters">(</span>indicator, group, scale, startX, startY, endPosition, startThickness, endThickness, fill, stroke) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Constructor.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_indicatorShapeFunc" class="inline-link"> indicatorShapeFunc</a><span class="parameters">(</span>group, indicator, startX, startY, endPosition, startThickness, endThickness, fill, stroke) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>mixin) <span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_endThickness" class="inline-link"> endThickness </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_fill" class="inline-link"> fill </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingBottom" class="inline-link"> paddingBottom </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingLeft" class="inline-link"> paddingLeft </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingRight" class="inline-link"> paddingRight </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_paddingTop" class="inline-link"> paddingTop </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_ranges" class="inline-link"> ranges </a><span>An array containing objects to define color ranges.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_rounded" class="inline-link"> rounded </a><span>Indicates if the extremity segments are rounded.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_segments" class="inline-link"> segments </a><span>The number of segments making the indicator.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_segmentSpacing" class="inline-link"> segmentSpacing </a><span>The blank space between two segments.</span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_start" class="inline-link"> start </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_startThickness" class="inline-link"> startThickness </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_stroke" class="inline-link"> stroke </a><span></span><span title="inherited from dojox/dgauges/RectangularSegmentedRangeIndicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_value" class="inline-link"> value </a><span>The value of this indicator.</span><span title="inherited from dojox/dgauges/IndicatorBase" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__defaultHorizontalShapeFunc" class="inline-link"> _defaultHorizontalShapeFunc</a><span class="parameters">(</span>indicator, group, scale, startX, startY, endPosition, startThickness, endThickness, fill, stroke) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__defaultVerticalShapeFunc" class="inline-link"> _defaultVerticalShapeFunc</a><span class="parameters">(</span>indicator, group, scale, startX, startY, endPosition, startThickness, endThickness, fill, stroke) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Constructor.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_indicatorShapeFunc" class="inline-link"> indicatorShapeFunc</a><span class="parameters">(</span>group, indicator, startX, startY, endPosition, startThickness, endThickness, fill, stroke) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>mixin) <span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_dgauges_RectangularSegmentedRangeIndicator_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -738,4 +746,4 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/dgauges/RectangularSegmentedRangeIndicator" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/form/DataList</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/form/DataList" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/form/DataList.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/DataList<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/store/Memory" class="jsdoc-link">dojo/store/Memory</a>
@@ -15,7 +22,7 @@
     &lt;option value=&quot;AL&quot;&gt;Alabama&lt;/option&gt;
     ...</pre></code>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new DataList<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
@@ -47,51 +54,52 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
 </table>
 <p>See the <a href="/reference-guide/1.9/dijit/form/DataList.html" target="_blank">dijit/form/DataList reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon inherited"><a href="#1_9dijit_form_DataList_data" class="inline-link"> data </a><span>The array of all the objects in the memory store</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dijit_form_DataList_idProperty" class="inline-link"> idProperty </a><span>Indicates the property to use as the identity property.</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_form_DataList_index" class="inline-link"> index </a><span>An index of data indices into the data array by id</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_add" class="inline-link"> add</a><span class="parameters">(</span>object, options) <span>Creates an object, throws an error if the object already exists</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form_DataList_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form_DataList_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form_DataList_fetchSelectedItem" class="inline-link"> fetchSelectedItem</a><span class="parameters">(</span>) <span>Get the option marked as selected, like &lt;option selected&gt;.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_get" class="inline-link"> get</a><span class="parameters">(</span>id) <span>Retrieves an object by its identity</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_put" class="inline-link"> put</a><span class="parameters">(</span>object, options) <span>Stores an object</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_queryEngine" class="inline-link"> queryEngine</a><span class="parameters">(</span>query, options) <span>Defines the query engine to use for querying the data store</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Deletes an object by its identity</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_setData" class="inline-link"> setData</a><span class="parameters">(</span>data) <span>Sets the given data as the source for this store, and indexes it</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon inherited"><a href="#1_9dijit_form_DataList_data" class="inline-link"> data </a><span>The array of all the objects in the memory store</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dijit_form_DataList_idProperty" class="inline-link"> idProperty </a><span>Indicates the property to use as the identity property.</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_form_DataList_index" class="inline-link"> index </a><span>An index of data indices into the data array by id</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_add" class="inline-link"> add</a><span class="parameters">(</span>object, options) <span>Creates an object, throws an error if the object already exists</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form_DataList_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form_DataList_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form_DataList_fetchSelectedItem" class="inline-link"> fetchSelectedItem</a><span class="parameters">(</span>) <span>Get the option marked as selected, like &lt;option selected&gt;.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_get" class="inline-link"> get</a><span class="parameters">(</span>id) <span>Retrieves an object by its identity</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_put" class="inline-link"> put</a><span class="parameters">(</span>object, options) <span>Stores an object</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_queryEngine" class="inline-link"> queryEngine</a><span class="parameters">(</span>query, options) <span>Defines the query engine to use for querying the data store</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Deletes an object by its identity</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_setData" class="inline-link"> setData</a><span class="parameters">(</span>data) <span>Sets the given data as the source for this store, and indexes it</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_form_DataList_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -511,4 +519,4 @@ as &quot;auto-commit&quot; style actions.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/form/DataList" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

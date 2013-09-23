@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/form/_FormWidgetMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/form/_FormWidgetMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/form/_FormWidgetMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/_FormWidgetMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Mixin for widgets corresponding to native HTML elements such as <code>&lt;checkbox&gt;</code> or <code>&lt;button&gt;</code>,
 which can be children of a <code>&lt;form&gt;</code> node or a <a class="jsdoc-link" href="/api/1.9/dijit/form/Form">dijit/form/Form</a> widget.
@@ -14,64 +21,65 @@ You can set them during widget construction or afterwards, via <a class="jsdoc-l
 </div>
 <p>See the <a href="/reference-guide/1.9/dijit/form/_FormWidgetMixin.html" target="_blank">dijit/form/_FormWidgetMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_9dijit_form__FormWidgetMixin__onChangeActive" class="inline-link"> _onChangeActive </a><span>Indicates that changes to the value should call onChange() callback.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dijit_form__FormWidgetMixin__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dijit_form__FormWidgetMixin__setTabIndexAttr" class="inline-link"> _setTabIndexAttr </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_alt" class="inline-link"> alt </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_aria-label" class="inline-link"> aria-label </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dijit_form__FormWidgetMixin_disabled" class="inline-link"> disabled </a><span>Should this widget respond to user input?</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dijit_form__FormWidgetMixin_intermediateChanges" class="inline-link"> intermediateChanges </a><span>Fires onChange for each value change or only on demand</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_name" class="inline-link"> name </a><span>Name used when submitting form; same as &quot;name&quot; attribute or plain HTML elements</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dijit_form__FormWidgetMixin_scrollOnFocus" class="inline-link"> scrollOnFocus </a><span>On focus, should this widget scroll into view?</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_type" class="inline-link"> type </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_value" class="inline-link"> value </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_form__FormWidgetMixin__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>newValue, priorityChange) <span>Called when the value of the widget is set.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_form__FormWidgetMixin__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_compare" class="inline-link"> compare</a><span class="parameters">(</span>val1, val2) <span>Compare 2 values (as returned by get(&#39;value&#39;) for this widget).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_create" class="inline-link"> create</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Put focus on this widget</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Tells if this widget is focusable or not.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_form__FormWidgetMixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>by) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>newValue) <span>Callback when this widget&#39;s value is changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_9dijit_form__FormWidgetMixin__onChangeActive" class="inline-link"> _onChangeActive </a><span>Indicates that changes to the value should call onChange() callback.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dijit_form__FormWidgetMixin__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dijit_form__FormWidgetMixin__setTabIndexAttr" class="inline-link"> _setTabIndexAttr </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_alt" class="inline-link"> alt </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_aria-label" class="inline-link"> aria-label </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dijit_form__FormWidgetMixin_disabled" class="inline-link"> disabled </a><span>Should this widget respond to user input?</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dijit_form__FormWidgetMixin_intermediateChanges" class="inline-link"> intermediateChanges </a><span>Fires onChange for each value change or only on demand</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_name" class="inline-link"> name </a><span>Name used when submitting form; same as &quot;name&quot; attribute or plain HTML elements</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dijit_form__FormWidgetMixin_scrollOnFocus" class="inline-link"> scrollOnFocus </a><span>On focus, should this widget scroll into view?</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_type" class="inline-link"> type </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dijit_form__FormWidgetMixin_value" class="inline-link"> value </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_form__FormWidgetMixin__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>newValue, priorityChange) <span>Called when the value of the widget is set.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_form__FormWidgetMixin__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_compare" class="inline-link"> compare</a><span class="parameters">(</span>val1, val2) <span>Compare 2 values (as returned by get(&#39;value&#39;) for this widget).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_create" class="inline-link"> create</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Put focus on this widget</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Tells if this widget is focusable or not.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_form__FormWidgetMixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>by) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_form__FormWidgetMixin_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>newValue) <span>Callback when this widget&#39;s value is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -301,4 +309,4 @@ onChange is only called form priorityChange=true events.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/form/_FormWidgetMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

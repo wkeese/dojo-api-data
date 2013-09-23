@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/Calendar</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/calendar/Calendar" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/Calendar.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/calendar/Calendar<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Calendar<span class="parameters">(args);</span></div>
 </div>
@@ -22,534 +29,536 @@
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/Calendar reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__animRangeOutDir" class="inline-link"> _animRangeOutDir </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__animRangeOutDir" class="inline-link"> _animRangeOutDir </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
 template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_8dojox_calendar_Calendar__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_8dojox_calendar_Calendar__calendar" class="inline-link"> _calendar </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_8dojox_calendar_Calendar__currentViewIndex" class="inline-link"> _currentViewIndex </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar_Calendar__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_calendar_Calendar__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_calendar_Calendar__calendar" class="inline-link"> _calendar </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_8dojox_calendar_Calendar__currentViewIndex" class="inline-link"> _currentViewIndex </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar_Calendar__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
 templates having their startup called before the parent widget
 fires postCreate.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar_Calendar__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar_Calendar__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__timeInterval" class="inline-link"> _timeInterval </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_allDayAttr" class="inline-link"> allDayAttr </a><span>The attribute of the store item that contains the all day state of 
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar_Calendar__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar_Calendar__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar_Calendar__timeInterval" class="inline-link"> _timeInterval </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_allDayAttr" class="inline-link"> allDayAttr </a><span>The attribute of the store item that contains the all day state of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_animateRange" class="inline-link"> animateRange </a><span>Indicates that the previous/next range method will be animated.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_animationRangeDuration" class="inline-link"> animationRangeDuration </a><span>The duration of the next/previous range animation.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_columnView" class="inline-link"> columnView </a><span>The column view is displaying one day to seven days time intervals.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_columnViewProps" class="inline-link"> columnViewProps </a><span>Map of property/value passed to the constructor of the column view.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_animateRange" class="inline-link"> animateRange </a><span>Indicates that the previous/next range method will be animated.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_animationRangeDuration" class="inline-link"> animationRangeDuration </a><span>The duration of the next/previous range animation.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_columnView" class="inline-link"> columnView </a><span>The column view is displaying one day to seven days time intervals.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_columnViewProps" class="inline-link"> columnViewProps </a><span>Map of property/value passed to the constructor of the column view.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_8dojox_calendar_Calendar_createItemFunc" class="inline-link"> createItemFunc </a><span>A user supplied function that creates a new event.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_createOnGridClick" class="inline-link"> createOnGridClick </a><span>Indicates whether the user can create new event by clicking and dragging the grid.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon inherited"><a href="#1_8dojox_calendar_Calendar_cssClassFunc" class="inline-link"> cssClassFunc </a><span>Optional function that returns a css class name to apply to item renderers that are displaying the specified item in parameter.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_currentView" class="inline-link"> currentView </a><span>The current view displayed by the Calendar object.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_date" class="inline-link"> date </a><span>The reference date used to determine along with the dateInterval 
+        </li>
+        <li class="functionIcon inherited"><a href="#1_8dojox_calendar_Calendar_createItemFunc" class="inline-link"> createItemFunc </a><span>A user supplied function that creates a new event.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_createOnGridClick" class="inline-link"> createOnGridClick </a><span>Indicates whether the user can create new event by clicking and dragging the grid.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon inherited"><a href="#1_8dojox_calendar_Calendar_cssClassFunc" class="inline-link"> cssClassFunc </a><span>Optional function that returns a css class name to apply to item renderers that are displaying the specified item in parameter.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_currentView" class="inline-link"> currentView </a><span>The current view displayed by the Calendar object.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_date" class="inline-link"> date </a><span>The reference date used to determine along with the dateInterval 
 and dateIntervalSteps properties the time interval to display.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_dateInterval" class="inline-link"> dateInterval </a><span>The date interval used to compute along with the date and 
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_dateInterval" class="inline-link"> dateInterval </a><span>The date interval used to compute along with the date and 
 dateIntervalSteps the time interval to display.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_dateIntervalSteps" class="inline-link"> dateIntervalSteps </a><span>The number of date intervals used to compute along with the date and 
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_dateIntervalSteps" class="inline-link"> dateIntervalSteps </a><span>The number of date intervals used to compute along with the date and 
 dateInterval the time interval to display.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_datePackage" class="inline-link"> datePackage </a><span>JavaScript namespace to find Calendar routines.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_decodeDate" class="inline-link"> decodeDate </a><span>An optional function to transform store date into Date objects.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_datePackage" class="inline-link"> datePackage </a><span>JavaScript namespace to find Calendar routines.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_decodeDate" class="inline-link"> decodeDate </a><span>An optional function to transform store date into Date objects.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_displayedItemsInvalidated" class="inline-link"> displayedItemsInvalidated </a><span>Whether the data items displayed must be recomputed, usually after the displayed 
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_displayedItemsInvalidated" class="inline-link"> displayedItemsInvalidated </a><span>Whether the data items displayed must be recomputed, usually after the displayed 
 time range has changed.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_editable" class="inline-link"> editable </a><span>A flag that indicates whether or not the user can edit
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_editable" class="inline-link"> editable </a><span>A flag that indicates whether or not the user can edit
 items in the data provider.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_encodeDate" class="inline-link"> encodeDate </a><span>An optional function to transform Date objects into store date.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_endDate" class="inline-link"> endDate </a><span>The end date of the displayed time interval (included).</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_endTimeAttr" class="inline-link"> endTimeAttr </a><span>The attribute of the store item that contains the end time of 
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_encodeDate" class="inline-link"> encodeDate </a><span>An optional function to transform Date objects into store date.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_endDate" class="inline-link"> endDate </a><span>The end date of the displayed time interval (included).</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_endTimeAttr" class="inline-link"> endTimeAttr </a><span>The attribute of the store item that contains the end time of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_firstDayOfWeek" class="inline-link"> firstDayOfWeek </a><span>(Optional) The first day of week override.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_firstDayOfWeek" class="inline-link"> firstDayOfWeek </a><span>(Optional) The first day of week override.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.</span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_formatItemTimeFunc" class="inline-link"> formatItemTimeFunc </a><span>Optional function to format the time of day of the item renderers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_hoveredItem" class="inline-link"> hoveredItem </a><span>Current render item which is under the mouse cursor.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_formatItemTimeFunc" class="inline-link"> formatItemTimeFunc </a><span>Optional function to format the time of day of the item renderers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_hoveredItem" class="inline-link"> hoveredItem </a><span>Current render item which is under the mouse cursor.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_matrixView" class="inline-link"> matrixView </a><span>The column view is displaying time intervals that lasts more than seven days.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_matrixViewProps" class="inline-link"> matrixViewProps </a><span>Map of property/value passed to the constructor of the matrix view.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_maxDate" class="inline-link"> maxDate </a><span>The maximum date.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_minDate" class="inline-link"> minDate </a><span>The minimum date.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_moveEnabled" class="inline-link"> moveEnabled </a><span>A flag that indicates whether the user can move items displayed.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_query" class="inline-link"> query </a><span>A query that can be passed to when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_queryOptions" class="inline-link"> queryOptions </a><span>Options to be applied when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_resizeEnabled" class="inline-link"> resizeEnabled </a><span>A flag that indicates whether the items can be resized.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_selectedItem" class="inline-link"> selectedItem </a><span>In single selection mode, the selected item or in multiple selection mode the last selected item.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_selectedItems" class="inline-link"> selectedItems </a><span>The list of selected items.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_selectionMode" class="inline-link"> selectionMode </a><span>Valid values are:
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_matrixView" class="inline-link"> matrixView </a><span>The column view is displaying time intervals that lasts more than seven days.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_matrixViewProps" class="inline-link"> matrixViewProps </a><span>Map of property/value passed to the constructor of the matrix view.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_maxDate" class="inline-link"> maxDate </a><span>The maximum date.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_minDate" class="inline-link"> minDate </a><span>The minimum date.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_moveEnabled" class="inline-link"> moveEnabled </a><span>A flag that indicates whether the user can move items displayed.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_query" class="inline-link"> query </a><span>A query that can be passed to when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_queryOptions" class="inline-link"> queryOptions </a><span>Options to be applied when querying the store.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_resizeEnabled" class="inline-link"> resizeEnabled </a><span>A flag that indicates whether the items can be resized.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_selectedItem" class="inline-link"> selectedItem </a><span>In single selection mode, the selected item or in multiple selection mode the last selected item.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_selectedItems" class="inline-link"> selectedItems </a><span>The list of selected items.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_selectionMode" class="inline-link"> selectionMode </a><span>Valid values are:
 
 
 
 &quot;none&quot;: No selection can be done.
 &quot;single&quot;: Only one item can be selected at a time.
 &quot;multiple&quot;: Several item can be selected using the control key modifier.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_startDate" class="inline-link"> startDate </a><span>The start date of the displayed time interval.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_startTimeAttr" class="inline-link"> startTimeAttr </a><span>The attribute of the store item that contains the start time of 
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="dateIcon inherited"><a href="#1_8dojox_calendar_Calendar_startDate" class="inline-link"> startDate </a><span>The start date of the displayed time interval.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_startTimeAttr" class="inline-link"> startTimeAttr </a><span>The attribute of the store item that contains the start time of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_store" class="inline-link"> store </a><span>The store that contains the events to display.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_subColumnAttr" class="inline-link"> subColumnAttr </a><span>The attribute of the store item that contains the sub column name of 
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_store" class="inline-link"> store </a><span>The store that contains the events to display.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_subColumnAttr" class="inline-link"> subColumnAttr </a><span>The attribute of the store item that contains the sub column name of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_summaryAttr" class="inline-link"> summaryAttr </a><span>The attribute of the store item that contains the summary of 
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_summaryAttr" class="inline-link"> summaryAttr </a><span>The attribute of the store item that contains the summary of 
 the events represented by this item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dojox/calendar/Calendar" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dojox/calendar/Calendar" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_calendar_Calendar_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_viewChangeDuration" class="inline-link"> viewChangeDuration </a><span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_viewContainer" class="inline-link"> viewContainer </a><span>The DOM node that will contains the views.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_views" class="inline-link"> views </a><span>The views displayed by the widget.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_widgetsInTemplate" class="inline-link"> widgetsInTemplate </a><span>Should we parse the template to find widgets that might be
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_calendar_Calendar_viewChangeDuration" class="inline-link"> viewChangeDuration </a><span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_8dojox_calendar_Calendar_viewContainer" class="inline-link"> viewContainer </a><span>The DOM node that will contains the views.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_calendar_Calendar_views" class="inline-link"> views </a><span>The views displayed by the widget.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_calendar_Calendar_widgetsInTemplate" class="inline-link"> widgetsInTemplate </a><span>Should we parse the template to find widgets that might be
 declared in markup inside it?  (Remove for 2.0 and assume true)</span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__animateRange" class="inline-link"> _animateRange</a><span class="parameters">(</span>node, toLeft, fadeIn, xFrom, xTo, onEnd) <span>Animates the current view using a synchronous fade and horizontal translation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__applyViewChange" class="inline-link"> _applyViewChange</a><span class="parameters">(</span>view, index, timeInterval, duration) <span>Applies the changes of a view time and changes the currently visible view if needed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__animateRange" class="inline-link"> _animateRange</a><span class="parameters">(</span>node, toLeft, fadeIn, xFrom, xTo, onEnd) <span>Animates the current view using a synchronous fade and horizontal translation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__applyViewChange" class="inline-link"> _applyViewChange</a><span class="parameters">(</span>view, index, timeInterval, duration) <span>Applies the changes of a view time and changes the currently visible view if needed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__cleanItemStoreState" class="inline-link"> _cleanItemStoreState</a><span class="parameters">(</span>id) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__computeCurrentView" class="inline-link"> _computeCurrentView</a><span class="parameters">(</span>startDate, endDate, duration) <span>If the time range is lasting less than seven days returns the column view or the matrix view otherwise.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__computeTimeIntervalImpl" class="inline-link"> _computeTimeIntervalImpl</a><span class="parameters">(</span>d) <span>Computes the displayed time interval according to the date, dateInterval and 
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__cleanItemStoreState" class="inline-link"> _cleanItemStoreState</a><span class="parameters">(</span>id) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__computeCurrentView" class="inline-link"> _computeCurrentView</a><span class="parameters">(</span>startDate, endDate, duration) <span>If the time range is lasting less than seven days returns the column view or the matrix view otherwise.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__computeTimeIntervalImpl" class="inline-link"> _computeTimeIntervalImpl</a><span class="parameters">(</span>d) <span>Computes the displayed time interval according to the date, dateInterval and 
 dateIntervalSteps if date is not null or startDate and endDate properties otherwise.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__computeVisibleItems" class="inline-link"> _computeVisibleItems</a><span class="parameters">(</span>renderData) <span>Computes the data items that are in the displayed interval.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__configureView" class="inline-link"> _configureView</a><span class="parameters">(</span>view, index, timeInterval, duration) <span>Configures the view to show the specified time interval.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Calendar__createDefaultViews" class="inline-link"> _createDefaultViews</a><span class="parameters">(</span>) <span>Creates the default views:
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__computeVisibleItems" class="inline-link"> _computeVisibleItems</a><span class="parameters">(</span>renderData) <span>Computes the data items that are in the displayed interval.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__configureView" class="inline-link"> _configureView</a><span class="parameters">(</span>view, index, timeInterval, duration) <span>Configures the view to show the specified time interval.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Calendar__createDefaultViews" class="inline-link"> _createDefaultViews</a><span class="parameters">(</span>) <span>Creates the default views:
 - A dojox.calendar.ColumnView instance used to display one day to seven days time intervals,
 - A dojox.calendar.MatrixView instance used to display the other time intervals.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getCurrentViewAttr" class="inline-link"> _getCurrentViewAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getItemStoreStateObj" class="inline-link"> _getItemStoreStateObj</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getSelectedItemsAttr" class="inline-link"> _getSelectedItemsAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getViewsAttr" class="inline-link"> _getViewsAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__initItems" class="inline-link"> _initItems</a><span class="parameters">(</span>items) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__navigate" class="inline-link"> _navigate</a><span class="parameters">(</span>dir) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__refreshItemsRendering" class="inline-link"> _refreshItemsRendering</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getCurrentViewAttr" class="inline-link"> _getCurrentViewAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getItemStoreStateObj" class="inline-link"> _getItemStoreStateObj</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getSelectedItemsAttr" class="inline-link"> _getSelectedItemsAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__getViewsAttr" class="inline-link"> _getViewsAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__initItems" class="inline-link"> _initItems</a><span class="parameters">(</span>items) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__navigate" class="inline-link"> _navigate</a><span class="parameters">(</span>dir) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__refreshItemsRendering" class="inline-link"> _refreshItemsRendering</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setCurrentViewAttr" class="inline-link"> _setCurrentViewAttr</a><span class="parameters">(</span>view) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDateAttr" class="inline-link"> _setDateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDateIntervalAttr" class="inline-link"> _setDateIntervalAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDateIntervalStepsAttr" class="inline-link"> _setDateIntervalStepsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setEndDateAttr" class="inline-link"> _setEndDateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setFirstDayOfWeekAttr" class="inline-link"> _setFirstDayOfWeekAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setHoveredItem" class="inline-link"> _setHoveredItem</a><span class="parameters">(</span>item, renderer) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setItemsAttr" class="inline-link"> _setItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setItemStoreState" class="inline-link"> _setItemStoreState</a><span class="parameters">(</span>item, state) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setSelectedItemAttr" class="inline-link"> _setSelectedItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setSelectedItemsAttr" class="inline-link"> _setSelectedItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setSelectionModeAttr" class="inline-link"> _setSelectionModeAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setStartDateAttr" class="inline-link"> _setStartDateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setStoreAttr" class="inline-link"> _setStoreAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setCurrentViewAttr" class="inline-link"> _setCurrentViewAttr</a><span class="parameters">(</span>view) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDateAttr" class="inline-link"> _setDateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDateIntervalAttr" class="inline-link"> _setDateIntervalAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setDateIntervalStepsAttr" class="inline-link"> _setDateIntervalStepsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setEndDateAttr" class="inline-link"> _setEndDateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setFirstDayOfWeekAttr" class="inline-link"> _setFirstDayOfWeekAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setHoveredItem" class="inline-link"> _setHoveredItem</a><span class="parameters">(</span>item, renderer) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setItemsAttr" class="inline-link"> _setItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setItemStoreState" class="inline-link"> _setItemStoreState</a><span class="parameters">(</span>item, state) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setSelectedItemAttr" class="inline-link"> _setSelectedItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setSelectedItemsAttr" class="inline-link"> _setSelectedItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setSelectionModeAttr" class="inline-link"> _setSelectionModeAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setStartDateAttr" class="inline-link"> _setStartDateAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setStoreAttr" class="inline-link"> _setStoreAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setViewsAttr" class="inline-link"> _setViewsAttr</a><span class="parameters">(</span>views) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__showView" class="inline-link"> _showView</a><span class="parameters">(</span>oldView, newView) <span>Displays the current view.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__updateItems" class="inline-link"> _updateItems</a><span class="parameters">(</span>object, previousIndex, newIndex) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__validateProperties" class="inline-link"> _validateProperties</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_addView" class="inline-link"> addView</a><span class="parameters">(</span>view, index) <span>Add a view to the calendar&#39;s view list.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setTextDirAttr" class="inline-link"> _setTextDirAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__setViewsAttr" class="inline-link"> _setViewsAttr</a><span class="parameters">(</span>views) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__showView" class="inline-link"> _showView</a><span class="parameters">(</span>oldView, newView) <span>Displays the current view.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__updateItems" class="inline-link"> _updateItems</a><span class="parameters">(</span>object, previousIndex, newIndex) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__validateProperties" class="inline-link"> _validateProperties</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_addView" class="inline-link"> addView</a><span class="parameters">(</span>view, index) <span>Add a view to the calendar&#39;s view list.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
 originally used for setting element.dir according to this.textDir.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_columnViewColumnHeaderClick" class="inline-link"> columnViewColumnHeaderClick</a><span class="parameters">(</span>e) <span>Function called when the cell of a column header of the column view is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_computeTimeInterval" class="inline-link"> computeTimeInterval</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_configureButtons" class="inline-link"> configureButtons</a><span class="parameters">(</span>) <span>Set the localized labels of the buttons and the event handlers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_dayButtonClick" class="inline-link"> dayButtonClick</a><span class="parameters">(</span>e) <span>The action triggerred when the day button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_columnViewColumnHeaderClick" class="inline-link"> columnViewColumnHeaderClick</a><span class="parameters">(</span>e) <span>Function called when the cell of a column header of the column view is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_computeTimeInterval" class="inline-link"> computeTimeInterval</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_configureButtons" class="inline-link"> configureButtons</a><span class="parameters">(</span>) <span>Set the localized labels of the buttons and the event handlers.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_dayButtonClick" class="inline-link"> dayButtonClick</a><span class="parameters">(</span>e) <span>The action triggerred when the day button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_dispatchChange" class="inline-link"> dispatchChange</a><span class="parameters">(</span>oldSelectedItem, newSelectedItem, renderer, triggerEvent) <span>Dispatch a selection change event.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_dispatchChange" class="inline-link"> dispatchChange</a><span class="parameters">(</span>oldSelectedItem, newSelectedItem, renderer, triggerEvent) <span>Dispatch a selection change event.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_floorDate" class="inline-link"> floorDate</a><span class="parameters">(</span>date, unit, steps, reuse) <span>floors the date to the unit.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_floorToDay" class="inline-link"> floorToDay</a><span class="parameters">(</span>date, reuse) <span>Floors the specified date to the start of day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_floorToWeek" class="inline-link"> floorToWeek</a><span class="parameters">(</span>d) <span>Floors the specified date to the beginning of week.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_fourDaysButtonClick" class="inline-link"> fourDaysButtonClick</a><span class="parameters">(</span>e) <span>The action triggerred when the 4 days button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getItemStoreState" class="inline-link"> getItemStoreState</a><span class="parameters">(</span>item) <span>Returns the creation state of an item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_goToday" class="inline-link"> goToday</a><span class="parameters">(</span>) <span>Changes the displayed time interval to show the current day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_calendar_Calendar_installDefaultViewsActions" class="inline-link"> installDefaultViewsActions</a><span class="parameters">(</span>views) <span>Installs the default actions on newly created default views.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_floorDate" class="inline-link"> floorDate</a><span class="parameters">(</span>date, unit, steps, reuse) <span>floors the date to the unit.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_floorToDay" class="inline-link"> floorToDay</a><span class="parameters">(</span>date, reuse) <span>Floors the specified date to the start of day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_floorToWeek" class="inline-link"> floorToWeek</a><span class="parameters">(</span>d) <span>Floors the specified date to the beginning of week.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_fourDaysButtonClick" class="inline-link"> fourDaysButtonClick</a><span class="parameters">(</span>e) <span>The action triggerred when the 4 days button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getItemStoreState" class="inline-link"> getItemStoreState</a><span class="parameters">(</span>item) <span>Returns the creation state of an item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_goToday" class="inline-link"> goToday</a><span class="parameters">(</span>) <span>Changes the displayed time interval to show the current day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_calendar_Calendar_installDefaultViewsActions" class="inline-link"> installDefaultViewsActions</a><span class="parameters">(</span>views) <span>Installs the default actions on newly created default views.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemEditable" class="inline-link"> isItemEditable</a><span class="parameters">(</span>item, rendererKind) <span>Computes whether particular item renderer can be edited.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemHovered" class="inline-link"> isItemHovered</a><span class="parameters">(</span>item) <span>Returns whether the specified item is hovered or not.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemMoveEnabled" class="inline-link"> isItemMoveEnabled</a><span class="parameters">(</span>item, rendererKind) <span>Computes whether particular item renderer can be moved.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemResizeEnabled" class="inline-link"> isItemResizeEnabled</a><span class="parameters">(</span>item, rendererKind) <span>Computes whether particular item renderer can be resized.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemSelected" class="inline-link"> isItemSelected</a><span class="parameters">(</span>item) <span>Returns wether an item is selected or not.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isStartOfDay" class="inline-link"> isStartOfDay</a><span class="parameters">(</span>d) <span>Tests if the specified date represents the starts of day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isToday" class="inline-link"> isToday</a><span class="parameters">(</span>date) <span>Returns whether the specified date is in the current day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_itemToRenderItem" class="inline-link"> itemToRenderItem</a><span class="parameters">(</span>item, store) <span>Creates the render item based on the dojo.store item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_matrixViewRowHeaderClick" class="inline-link"> matrixViewRowHeaderClick</a><span class="parameters">(</span>e) <span>Function called when the cell of a row header of the matrix view is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_monthButtonClick" class="inline-link"> monthButtonClick</a><span class="parameters">(</span>e) <span>The action triggered when the month button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_newDate" class="inline-link"> newDate</a><span class="parameters">(</span>obj) <span>Creates a new Date object.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_nextRange" class="inline-link"> nextRange</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemEditable" class="inline-link"> isItemEditable</a><span class="parameters">(</span>item, rendererKind) <span>Computes whether particular item renderer can be edited.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemHovered" class="inline-link"> isItemHovered</a><span class="parameters">(</span>item) <span>Returns whether the specified item is hovered or not.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemMoveEnabled" class="inline-link"> isItemMoveEnabled</a><span class="parameters">(</span>item, rendererKind) <span>Computes whether particular item renderer can be moved.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemResizeEnabled" class="inline-link"> isItemResizeEnabled</a><span class="parameters">(</span>item, rendererKind) <span>Computes whether particular item renderer can be resized.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isItemSelected" class="inline-link"> isItemSelected</a><span class="parameters">(</span>item) <span>Returns wether an item is selected or not.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isStartOfDay" class="inline-link"> isStartOfDay</a><span class="parameters">(</span>d) <span>Tests if the specified date represents the starts of day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_isToday" class="inline-link"> isToday</a><span class="parameters">(</span>date) <span>Returns whether the specified date is in the current day.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_itemToRenderItem" class="inline-link"> itemToRenderItem</a><span class="parameters">(</span>item, store) <span>Creates the render item based on the dojo.store item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_matrixViewRowHeaderClick" class="inline-link"> matrixViewRowHeaderClick</a><span class="parameters">(</span>e) <span>Function called when the cell of a row header of the matrix view is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_monthButtonClick" class="inline-link"> monthButtonClick</a><span class="parameters">(</span>e) <span>The action triggered when the month button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_newDate" class="inline-link"> newDate</a><span class="parameters">(</span>obj) <span>Creates a new Date object.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_nextRange" class="inline-link"> nextRange</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_previousRange" class="inline-link"> previousRange</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span>Refreshes all the visual rendering of the calendar.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_removeView" class="inline-link"> removeView</a><span class="parameters">(</span>view) <span>Removes a view from the calendar&#39;s view list.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_renderItemToItem" class="inline-link"> renderItemToItem</a><span class="parameters">(</span>renderItem, store) <span>Create a store item based on the render item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_selectFromEvent" class="inline-link"> selectFromEvent</a><span class="parameters">(</span>e, item, renderer, dispatch) <span>Applies selection triggered by an user interaction</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_setItemSelected" class="inline-link"> setItemSelected</a><span class="parameters">(</span>item, value) <span>Change the selection state of an item.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_todayButtonClick" class="inline-link"> todayButtonClick</a><span class="parameters">(</span>e) <span>The action triggered when the today button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_updateRenderers" class="inline-link"> updateRenderers</a><span class="parameters">(</span>obj, stateOnly) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_weekButtonClick" class="inline-link"> weekButtonClick</a><span class="parameters">(</span>e) <span>The action triggered when the week button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_previousRange" class="inline-link"> previousRange</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span>Refreshes all the visual rendering of the calendar.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_removeView" class="inline-link"> removeView</a><span class="parameters">(</span>view) <span>Removes a view from the calendar&#39;s view list.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_renderItemToItem" class="inline-link"> renderItemToItem</a><span class="parameters">(</span>renderItem, store) <span>Create a store item based on the render item.</span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_selectFromEvent" class="inline-link"> selectFromEvent</a><span class="parameters">(</span>e, item, renderer, dispatch) <span>Applies selection triggered by an user interaction</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_setItemSelected" class="inline-link"> setItemSelected</a><span class="parameters">(</span>item, value) <span>Change the selection state of an item.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_todayButtonClick" class="inline-link"> todayButtonClick</a><span class="parameters">(</span>e) <span>The action triggered when the today button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_updateRenderers" class="inline-link"> updateRenderers</a><span class="parameters">(</span>obj, stateOnly) <span></span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_weekButtonClick" class="inline-link"> weekButtonClick</a><span class="parameters">(</span>e) <span>The action triggered when the week button is clicked.</span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererCreated" class="inline-link"> _onRendererCreated</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererDestroyed" class="inline-link"> _onRendererDestroyed</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererRecycled" class="inline-link"> _onRendererRecycled</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererReused" class="inline-link"> _onRendererReused</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRenderersLayoutDone" class="inline-link"> _onRenderersLayoutDone</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onViewAdded" class="inline-link"> _onViewAdded</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onViewRemoved" class="inline-link"> _onViewRemoved</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererCreated" class="inline-link"> _onRendererCreated</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererDestroyed" class="inline-link"> _onRendererDestroyed</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererRecycled" class="inline-link"> _onRendererRecycled</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRendererReused" class="inline-link"> _onRendererReused</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onRenderersLayoutDone" class="inline-link"> _onRenderersLayoutDone</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onViewAdded" class="inline-link"> _onViewAdded</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar_Calendar__onViewRemoved" class="inline-link"> _onViewRemoved</a><span class="parameters">(</span>view) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>) <span>Called when the selection changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onColumnHeaderClick" class="inline-link"> onColumnHeaderClick</a><span class="parameters">(</span>e) <span>Event dispatched when a column header cell is dispatched.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onCurrentViewChange" class="inline-link"> onCurrentViewChange</a><span class="parameters">(</span>e) <span>Event dispatched when the current view has changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onExpandRendererClick" class="inline-link"> onExpandRendererClick</a><span class="parameters">(</span>e) <span>Event dispatched when an expand renderer is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>) <span>Called when the selection changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onColumnHeaderClick" class="inline-link"> onColumnHeaderClick</a><span class="parameters">(</span>e) <span>Event dispatched when a column header cell is dispatched.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onCurrentViewChange" class="inline-link"> onCurrentViewChange</a><span class="parameters">(</span>e) <span>Event dispatched when the current view has changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onExpandRendererClick" class="inline-link"> onExpandRendererClick</a><span class="parameters">(</span>e) <span>Event dispatched when an expand renderer is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onGridClick" class="inline-link"> onGridClick</a><span class="parameters">(</span>e) <span>Event dispatched when the grid has been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onGridDoubleClick" class="inline-link"> onGridDoubleClick</a><span class="parameters">(</span>e) <span>Event dispatched when the grid has been double-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemClick" class="inline-link"> onItemClick</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemContextMenu" class="inline-link"> onItemContextMenu</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been context-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemDoubleClick" class="inline-link"> onItemDoubleClick</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been double-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditBegin" class="inline-link"> onItemEditBegin</a><span class="parameters">(</span>e) <span>Event dispatched when the item is entering the editing mode.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditBeginGesture" class="inline-link"> onItemEditBeginGesture</a><span class="parameters">(</span>e) <span>Event dispatched when an editing gesture is beginning.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditEnd" class="inline-link"> onItemEditEnd</a><span class="parameters">(</span>e) <span>Event dispatched when the item is leaving the editing mode.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditEndGesture" class="inline-link"> onItemEditEndGesture</a><span class="parameters">(</span>e) <span>Event dispatched at the end of an editing gesture.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditMoveGesture" class="inline-link"> onItemEditMoveGesture</a><span class="parameters">(</span>e) <span>Event dispatched during a move editing gesture.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditResizeGesture" class="inline-link"> onItemEditResizeGesture</a><span class="parameters">(</span>e) <span>Event dispatched during a resize editing gesture.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemRollOut" class="inline-link"> onItemRollOut</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemRollOver" class="inline-link"> onItemRollOver</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererCreated" class="inline-link"> onRendererCreated</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been created.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererDestroyed" class="inline-link"> onRendererDestroyed</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer is destroyed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererRecycled" class="inline-link"> onRendererRecycled</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been recycled.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererReused" class="inline-link"> onRendererReused</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer that was recycled is reused.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRenderersLayoutDone" class="inline-link"> onRenderersLayoutDone</a><span class="parameters">(</span>view) <span>Event triggered when item renderers layout has been done.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRowHeaderClick" class="inline-link"> onRowHeaderClick</a><span class="parameters">(</span>e) <span>Event dispatched when a row header cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onTimeIntervalChange" class="inline-link"> onTimeIntervalChange</a><span class="parameters">(</span>e) <span>Event dispatched when the displayed time interval has changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onViewAdded" class="inline-link"> onViewAdded</a><span class="parameters">(</span>view) <span>Event dispatched when a view is added from the calendar.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onViewRemoved" class="inline-link"> onViewRemoved</a><span class="parameters">(</span>view) <span>Event dispatched when a view is removed from the calendar.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onGridClick" class="inline-link"> onGridClick</a><span class="parameters">(</span>e) <span>Event dispatched when the grid has been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onGridDoubleClick" class="inline-link"> onGridDoubleClick</a><span class="parameters">(</span>e) <span>Event dispatched when the grid has been double-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemClick" class="inline-link"> onItemClick</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemContextMenu" class="inline-link"> onItemContextMenu</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been context-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemDoubleClick" class="inline-link"> onItemDoubleClick</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been double-clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditBegin" class="inline-link"> onItemEditBegin</a><span class="parameters">(</span>e) <span>Event dispatched when the item is entering the editing mode.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditBeginGesture" class="inline-link"> onItemEditBeginGesture</a><span class="parameters">(</span>e) <span>Event dispatched when an editing gesture is beginning.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditEnd" class="inline-link"> onItemEditEnd</a><span class="parameters">(</span>e) <span>Event dispatched when the item is leaving the editing mode.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditEndGesture" class="inline-link"> onItemEditEndGesture</a><span class="parameters">(</span>e) <span>Event dispatched at the end of an editing gesture.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditMoveGesture" class="inline-link"> onItemEditMoveGesture</a><span class="parameters">(</span>e) <span>Event dispatched during a move editing gesture.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemEditResizeGesture" class="inline-link"> onItemEditResizeGesture</a><span class="parameters">(</span>e) <span>Event dispatched during a resize editing gesture.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemRollOut" class="inline-link"> onItemRollOut</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onItemRollOver" class="inline-link"> onItemRollOver</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererCreated" class="inline-link"> onRendererCreated</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been created.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererDestroyed" class="inline-link"> onRendererDestroyed</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer is destroyed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererRecycled" class="inline-link"> onRendererRecycled</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer has been recycled.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRendererReused" class="inline-link"> onRendererReused</a><span class="parameters">(</span>e) <span>Event dispatched when an item renderer that was recycled is reused.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRenderersLayoutDone" class="inline-link"> onRenderersLayoutDone</a><span class="parameters">(</span>view) <span>Event triggered when item renderers layout has been done.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onRowHeaderClick" class="inline-link"> onRowHeaderClick</a><span class="parameters">(</span>e) <span>Event dispatched when a row header cell is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onTimeIntervalChange" class="inline-link"> onTimeIntervalChange</a><span class="parameters">(</span>e) <span>Event dispatched when the displayed time interval has changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onViewAdded" class="inline-link"> onViewAdded</a><span class="parameters">(</span>view) <span>Event dispatched when a view is added from the calendar.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar_Calendar_onViewRemoved" class="inline-link"> onViewRemoved</a><span class="parameters">(</span>view) <span>Event dispatched when a view is removed from the calendar.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -4391,4 +4400,4 @@ been clicked.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/calendar/Calendar" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

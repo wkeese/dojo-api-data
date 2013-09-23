@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/_FocusManager</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/_FocusManager" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/_FocusManager.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/_FocusManager<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Controls grid cell focus. Owned by grid and used internally for focusing.
 Note: grid cell actually receives keyboard input only when cell is being edited.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _FocusManager<span class="parameters">(inGrid);</span></div>
 </div>
@@ -23,116 +30,117 @@ Note: grid cell actually receives keyboard input only when cell is being edited.
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_grid__FocusManager__colHeadFocusIdx" class="inline-link"> _colHeadFocusIdx </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_grid__FocusManager__colHeadNode" class="inline-link"> _colHeadNode </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_grid__FocusManager__contextMenuBindNode" class="inline-link"> _contextMenuBindNode </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_grid__FocusManager_focusClass" class="inline-link"> focusClass </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_grid__FocusManager_focusView" class="inline-link"> focusView </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_grid__FocusManager_tabbingOut" class="inline-link"> tabbingOut </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__delayedCellFocus" class="inline-link"> _delayedCellFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__delayedHeaderFocus" class="inline-link"> _delayedHeaderFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__findHeaderCells" class="inline-link"> _findHeaderCells</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__focusifyCellNode" class="inline-link"> _focusifyCellNode</a><span class="parameters">(</span>inBork) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__initColumnHeaders" class="inline-link"> _initColumnHeaders</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__isHeaderHidden" class="inline-link"> _isHeaderHidden</a><span class="parameters">(</span>) <span>determine if the grid headers are hidden
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_grid__FocusManager__colHeadFocusIdx" class="inline-link"> _colHeadFocusIdx </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_grid__FocusManager__colHeadNode" class="inline-link"> _colHeadNode </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_grid__FocusManager__contextMenuBindNode" class="inline-link"> _contextMenuBindNode </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_grid__FocusManager_focusClass" class="inline-link"> focusClass </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_grid__FocusManager_focusView" class="inline-link"> focusView </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_grid__FocusManager_tabbingOut" class="inline-link"> tabbingOut </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__delayedCellFocus" class="inline-link"> _delayedCellFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__delayedHeaderFocus" class="inline-link"> _delayedHeaderFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__findHeaderCells" class="inline-link"> _findHeaderCells</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__focusifyCellNode" class="inline-link"> _focusifyCellNode</a><span class="parameters">(</span>inBork) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__initColumnHeaders" class="inline-link"> _initColumnHeaders</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__isHeaderHidden" class="inline-link"> _isHeaderHidden</a><span class="parameters">(</span>) <span>determine if the grid headers are hidden
 relies on documented technique of setting .dojoxGridHeader { display:none; }</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__mouseDown" class="inline-link"> _mouseDown</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__mouseUp" class="inline-link"> _mouseUp</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__scrollHeader" class="inline-link"> _scrollHeader</a><span class="parameters">(</span>currentIdx) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__scrollInfo" class="inline-link"> _scrollInfo</a><span class="parameters">(</span>cell, domNode) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__setActiveColHeader" class="inline-link"> _setActiveColHeader</a><span class="parameters">(</span>colHeaderNode, colFocusIdx, prevColFocusIdx) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_blurHeader" class="inline-link"> blurHeader</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_colSizeAdjust" class="inline-link"> colSizeAdjust</a><span class="parameters">(</span>e, colIdx, delta) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doBlur" class="inline-link"> doBlur</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doColHeaderBlur" class="inline-link"> doColHeaderBlur</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doColHeaderFocus" class="inline-link"> doColHeaderFocus</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doContextMenu" class="inline-link"> doContextMenu</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doFocus" class="inline-link"> doFocus</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doLastNodeBlur" class="inline-link"> doLastNodeBlur</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doLastNodeFocus" class="inline-link"> doLastNodeFocus</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_findAndFocusGridCell" class="inline-link"> findAndFocusGridCell</a><span class="parameters">(</span>) <span>find the first focusable grid cell</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_focusGrid" class="inline-link"> focusGrid</a><span class="parameters">(</span>inSkipFocusCell) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_focusGridView" class="inline-link"> focusGridView</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_focusHeader" class="inline-link"> focusHeader</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_getHeaderIndex" class="inline-link"> getHeaderIndex</a><span class="parameters">(</span>) <span>if one of the column headers currently has focus, return its index.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_initFocusView" class="inline-link"> initFocusView</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isFirstFocusCell" class="inline-link"> isFirstFocusCell</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isFocusCell" class="inline-link"> isFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>states if the given cell is focused</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isLastFocusCell" class="inline-link"> isLastFocusCell</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isNavHeader" class="inline-link"> isNavHeader</a><span class="parameters">(</span>) <span>states whether currently navigating among column headers.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isNoFocusCell" class="inline-link"> isNoFocusCell</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_move" class="inline-link"> move</a><span class="parameters">(</span>inRowDelta, inColDelta) <span>focus grid cell or  simulate focus to column header based on position relative to current focus</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>focus next grid cell</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_nextKey" class="inline-link"> nextKey</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_previous" class="inline-link"> previous</a><span class="parameters">(</span>) <span>focus previous grid cell</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_previousKey" class="inline-link"> previousKey</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_setFocusCell" class="inline-link"> setFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>focuses the given grid cell</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_setFocusIndex" class="inline-link"> setFocusIndex</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>focuses the given grid cell</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_tabOut" class="inline-link"> tabOut</a><span class="parameters">(</span>inFocusNode) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__mouseDown" class="inline-link"> _mouseDown</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__mouseUp" class="inline-link"> _mouseUp</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__scrollHeader" class="inline-link"> _scrollHeader</a><span class="parameters">(</span>currentIdx) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__scrollInfo" class="inline-link"> _scrollInfo</a><span class="parameters">(</span>cell, domNode) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid__FocusManager__setActiveColHeader" class="inline-link"> _setActiveColHeader</a><span class="parameters">(</span>colHeaderNode, colFocusIdx, prevColFocusIdx) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_blurHeader" class="inline-link"> blurHeader</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_colSizeAdjust" class="inline-link"> colSizeAdjust</a><span class="parameters">(</span>e, colIdx, delta) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doBlur" class="inline-link"> doBlur</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doColHeaderBlur" class="inline-link"> doColHeaderBlur</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doColHeaderFocus" class="inline-link"> doColHeaderFocus</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doContextMenu" class="inline-link"> doContextMenu</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doFocus" class="inline-link"> doFocus</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doLastNodeBlur" class="inline-link"> doLastNodeBlur</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_doLastNodeFocus" class="inline-link"> doLastNodeFocus</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_findAndFocusGridCell" class="inline-link"> findAndFocusGridCell</a><span class="parameters">(</span>) <span>find the first focusable grid cell</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_focusGrid" class="inline-link"> focusGrid</a><span class="parameters">(</span>inSkipFocusCell) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_focusGridView" class="inline-link"> focusGridView</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_focusHeader" class="inline-link"> focusHeader</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_getHeaderIndex" class="inline-link"> getHeaderIndex</a><span class="parameters">(</span>) <span>if one of the column headers currently has focus, return its index.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_initFocusView" class="inline-link"> initFocusView</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isFirstFocusCell" class="inline-link"> isFirstFocusCell</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isFocusCell" class="inline-link"> isFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>states if the given cell is focused</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isLastFocusCell" class="inline-link"> isLastFocusCell</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isNavHeader" class="inline-link"> isNavHeader</a><span class="parameters">(</span>) <span>states whether currently navigating among column headers.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_isNoFocusCell" class="inline-link"> isNoFocusCell</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_move" class="inline-link"> move</a><span class="parameters">(</span>inRowDelta, inColDelta) <span>focus grid cell or  simulate focus to column header based on position relative to current focus</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>focus next grid cell</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_nextKey" class="inline-link"> nextKey</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_previous" class="inline-link"> previous</a><span class="parameters">(</span>) <span>focus previous grid cell</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_previousKey" class="inline-link"> previousKey</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_setFocusCell" class="inline-link"> setFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>focuses the given grid cell</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_setFocusIndex" class="inline-link"> setFocusIndex</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>focuses the given grid cell</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid__FocusManager_tabOut" class="inline-link"> tabOut</a><span class="parameters">(</span>inFocusNode) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -888,4 +896,4 @@ false if no cell found to set focus onto</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/_FocusManager" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

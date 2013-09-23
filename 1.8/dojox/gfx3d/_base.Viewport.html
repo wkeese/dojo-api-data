@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/_base.Viewport</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/gfx3d/_base.Viewport" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/_base.Viewport.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/gfx3d/_base.Viewport<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base.Viewport<span class="parameters">();</span></div>
 </div>
@@ -9,145 +16,145 @@
 <div class="jsdoc-summary"><p>a viewport/container for 3D objects, which knows
 the camera and lightings</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx3d.html" target="_blank">dojox/gfx3d/_base.Viewport reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojox_gfx3d__base_Viewport_nodeType" class="inline-link"> nodeType </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_gfx3d__base_Viewport_textDir" class="inline-link"> textDir </a><span>Will be used for inheritance, or as default for text objects
-that textDir wasn&#39;t directly specified for them but the bidi support was required.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__applyTransform" class="inline-link"> _applyTransform</a><span class="parameters">(</span>) <span>physically sets a matrix</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__getRealMatrix" class="inline-link"> _getRealMatrix</a><span class="parameters">(</span>) <span>returns the cumulative (&#39;real&#39;) transformation matrix
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_gfx3d__base_Viewport_nodeType" class="inline-link"> nodeType </a><span></span><span title="Must manually require () dojox/gfx3d/object to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_gfx3d__base_Viewport_textDir" class="inline-link"> textDir </a><span>Will be used for inheritance, or as default for text objects
+that textDir wasn&#39;t directly specified for them but the bidi support was required.</span><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__applyTransform" class="inline-link"> _applyTransform</a><span class="parameters">(</span>) <span>physically sets a matrix</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__getRealMatrix" class="inline-link"> _getRealMatrix</a><span class="parameters">(</span>) <span>returns the cumulative (&#39;real&#39;) transformation matrix
 by combining the shape&#39;s matrix with its parent&#39;s matrix</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__init" class="inline-link"> _init</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveChildToBack" class="inline-link"> _moveChildToBack</a><span class="parameters">(</span>shape) <span>moves a shape to back of the list of shapes</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveChildToFront" class="inline-link"> _moveChildToFront</a><span class="parameters">(</span>shape) <span>moves a shape to front of the list of shapes</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveToBack" class="inline-link"> _moveToBack</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveToFront" class="inline-link"> _moveToFront</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__setParent" class="inline-link"> _setParent</a><span class="parameters">(</span>parent, matrix) <span>sets a parent</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__updateParentMatrix" class="inline-link"> _updateParentMatrix</a><span class="parameters">(</span>matrix) <span>updates the parent matrix with new matrix</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_abandon" class="inline-link"> abandon</a><span class="parameters">(</span>obj, silently) <span>removes a shape from the list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_add" class="inline-link"> add</a><span class="parameters">(</span>shape) <span>adds a shape to the list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_addLights" class="inline-link"> addLights</a><span class="parameters">(</span>lights) <span>add new light/lights to the viewport.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_addTodo" class="inline-link"> addTodo</a><span class="parameters">(</span>newObject) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_adopt" class="inline-link"> adopt</a><span class="parameters">(</span>obj) <span>adds a shape to the list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyCameraLeftTransform" class="inline-link"> applyCameraLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__init" class="inline-link"> _init</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveChildToBack" class="inline-link"> _moveChildToBack</a><span class="parameters">(</span>shape) <span>moves a shape to back of the list of shapes</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveChildToFront" class="inline-link"> _moveChildToFront</a><span class="parameters">(</span>shape) <span>moves a shape to front of the list of shapes</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveToBack" class="inline-link"> _moveToBack</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__moveToFront" class="inline-link"> _moveToFront</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__setParent" class="inline-link"> _setParent</a><span class="parameters">(</span>parent, matrix) <span>sets a parent</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_gfx3d__base_Viewport__updateParentMatrix" class="inline-link"> _updateParentMatrix</a><span class="parameters">(</span>matrix) <span>updates the parent matrix with new matrix</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_abandon" class="inline-link"> abandon</a><span class="parameters">(</span>obj, silently) <span>removes a shape from the list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_add" class="inline-link"> add</a><span class="parameters">(</span>shape) <span>adds a shape to the list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_addLights" class="inline-link"> addLights</a><span class="parameters">(</span>lights) <span>add new light/lights to the viewport.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_addTodo" class="inline-link"> addTodo</a><span class="parameters">(</span>newObject) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_adopt" class="inline-link"> adopt</a><span class="parameters">(</span>obj) <span>adds a shape to the list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyCameraLeftTransform" class="inline-link"> applyCameraLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
 (matrix * this.matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyCameraRightTransform" class="inline-link"> applyCameraRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyCameraRightTransform" class="inline-link"> applyCameraRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
 (this.matrix * matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyCameraTransform" class="inline-link"> applyCameraTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox.gfx3d.Object.applyRightTransform</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyCameraTransform" class="inline-link"> applyCameraTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox.gfx3d.Object.applyRightTransform</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
 (matrix * this.matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
 (this.matrix * matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_clear" class="inline-link"> clear</a><span class="parameters">(</span>destroy) <span>removes all shapes from a group/surface.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_closeBatch" class="inline-link"> closeBatch</a><span class="parameters">(</span>) <span>submits the current batch, append all pending child shapes to DOM</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_connect" class="inline-link"> connect</a><span class="parameters">(</span>name, object, method) <span>connects a handler to an event on this shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>a viewport/container for 3D objects, which knows
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_clear" class="inline-link"> clear</a><span class="parameters">(</span>destroy) <span>removes all shapes from a group/surface.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_closeBatch" class="inline-link"> closeBatch</a><span class="parameters">(</span>) <span>submits the current batch, append all pending child shapes to DOM</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_connect" class="inline-link"> connect</a><span class="parameters">(</span>name, object, method) <span>connects a handler to an event on this shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>a viewport/container for 3D objects, which knows
 the camera and lightings</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_create3DObject" class="inline-link"> create3DObject</a><span class="parameters">(</span>objectType, rawObject, style) <span>creates an instance of the passed objectType class</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createCircle" class="inline-link"> createCircle</a><span class="parameters">(</span>circle) <span>creates a circle shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createCube" class="inline-link"> createCube</a><span class="parameters">(</span>cube) <span>creates an cube object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createCylinder" class="inline-link"> createCylinder</a><span class="parameters">(</span>cylinder) <span>creates an cylinder object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createEdges" class="inline-link"> createEdges</a><span class="parameters">(</span>edges, style) <span>creates an edge object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createEllipse" class="inline-link"> createEllipse</a><span class="parameters">(</span>ellipse) <span>creates an ellipse shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createGroup" class="inline-link"> createGroup</a><span class="parameters">(</span>) <span>creates a group shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createImage" class="inline-link"> createImage</a><span class="parameters">(</span>image) <span>creates a image shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createLine" class="inline-link"> createLine</a><span class="parameters">(</span>line) <span>creates a line shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createObject" class="inline-link"> createObject</a><span class="parameters">(</span>shapeType, rawShape) <span>creates an instance of the passed shapeType class</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createOrbit" class="inline-link"> createOrbit</a><span class="parameters">(</span>orbit) <span>creates an Orbit object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPath" class="inline-link"> createPath</a><span class="parameters">(</span>path) <span>creates a path shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPath3d" class="inline-link"> createPath3d</a><span class="parameters">(</span>path) <span>creates an 3d path object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPolygon" class="inline-link"> createPolygon</a><span class="parameters">(</span>points) <span>creates an polygon object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPolyline" class="inline-link"> createPolyline</a><span class="parameters">(</span>points) <span>creates a polyline/polygon shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createQuads" class="inline-link"> createQuads</a><span class="parameters">(</span>quads, style) <span>creates an quads object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createRect" class="inline-link"> createRect</a><span class="parameters">(</span>rect) <span>creates a rectangle shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createScene" class="inline-link"> createScene</a><span class="parameters">(</span>) <span>creates a scene object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createShape" class="inline-link"> createShape</a><span class="parameters">(</span>shape) <span>creates a shape object based on its type; it is meant to be used
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_create3DObject" class="inline-link"> create3DObject</a><span class="parameters">(</span>objectType, rawObject, style) <span>creates an instance of the passed objectType class</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createCircle" class="inline-link"> createCircle</a><span class="parameters">(</span>circle) <span>creates a circle shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createCube" class="inline-link"> createCube</a><span class="parameters">(</span>cube) <span>creates an cube object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createCylinder" class="inline-link"> createCylinder</a><span class="parameters">(</span>cylinder) <span>creates an cylinder object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createEdges" class="inline-link"> createEdges</a><span class="parameters">(</span>edges, style) <span>creates an edge object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createEllipse" class="inline-link"> createEllipse</a><span class="parameters">(</span>ellipse) <span>creates an ellipse shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createGroup" class="inline-link"> createGroup</a><span class="parameters">(</span>) <span>creates a group shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createImage" class="inline-link"> createImage</a><span class="parameters">(</span>image) <span>creates a image shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createLine" class="inline-link"> createLine</a><span class="parameters">(</span>line) <span>creates a line shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createObject" class="inline-link"> createObject</a><span class="parameters">(</span>shapeType, rawShape) <span>creates an instance of the passed shapeType class</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createOrbit" class="inline-link"> createOrbit</a><span class="parameters">(</span>orbit) <span>creates an Orbit object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPath" class="inline-link"> createPath</a><span class="parameters">(</span>path) <span>creates a path shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPath3d" class="inline-link"> createPath3d</a><span class="parameters">(</span>path) <span>creates an 3d path object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPolygon" class="inline-link"> createPolygon</a><span class="parameters">(</span>points) <span>creates an polygon object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createPolyline" class="inline-link"> createPolyline</a><span class="parameters">(</span>points) <span>creates a polyline/polygon shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createQuads" class="inline-link"> createQuads</a><span class="parameters">(</span>quads, style) <span>creates an quads object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createRect" class="inline-link"> createRect</a><span class="parameters">(</span>rect) <span>creates a rectangle shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createScene" class="inline-link"> createScene</a><span class="parameters">(</span>) <span>creates a scene object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createShape" class="inline-link"> createShape</a><span class="parameters">(</span>shape) <span>creates a shape object based on its type; it is meant to be used
 by group-like objects</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createText" class="inline-link"> createText</a><span class="parameters">(</span>text) <span>creates a text shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createTextPath" class="inline-link"> createTextPath</a><span class="parameters">(</span>text) <span>creates a text shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createTriangles" class="inline-link"> createTriangles</a><span class="parameters">(</span>tris, style) <span>creates an triangle object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>token) <span>connects a handler by token from an event on this shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>Returns the bounding box Rectangle for this shape.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getClip" class="inline-link"> getClip</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getEventSource" class="inline-link"> getEventSource</a><span class="parameters">(</span>) <span>returns a Node, which is used as
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createText" class="inline-link"> createText</a><span class="parameters">(</span>text) <span>creates a text shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createTextPath" class="inline-link"> createTextPath</a><span class="parameters">(</span>text) <span>creates a text shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_createTriangles" class="inline-link"> createTriangles</a><span class="parameters">(</span>tris, style) <span>creates an triangle object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>token) <span>connects a handler by token from an event on this shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>Returns the bounding box Rectangle for this shape.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getClip" class="inline-link"> getClip</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getEventSource" class="inline-link"> getEventSource</a><span class="parameters">(</span>) <span>returns a Node, which is used as
 a source of events for this shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getFill" class="inline-link"> getFill</a><span class="parameters">(</span>) <span>Returns the current fill object or null
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getFill" class="inline-link"> getFill</a><span class="parameters">(</span>) <span>Returns the current fill object or null
 (see dojox/gfx.defaultLinearGradient,
 dojox/gfx.defaultRadialGradient,
 dojox/gfx.defaultPattern,
 or dojo/Color)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>Different graphics rendering subsystems implement shapes in different ways.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent Shape, Group or null if this Shape is unparented.
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>Different graphics rendering subsystems implement shapes in different ways.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent Shape, Group or null if this Shape is unparented.
 (see dojox/gfx/shape.Surface,
 or dojox/gfx.Group)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getShape" class="inline-link"> getShape</a><span class="parameters">(</span>) <span>returns the current Shape object or null
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getShape" class="inline-link"> getShape</a><span class="parameters">(</span>) <span>returns the current Shape object or null
 (see dojox/gfx.defaultPath,
 dojox/gfx.defaultPolyline,
 dojox/gfx.defaultRect,
@@ -155,59 +162,61 @@ dojox/gfx.defaultEllipse,
 dojox/gfx.defaultCircle,
 dojox/gfx.defaultLine,
 or dojox/gfx.defaultImage)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getStroke" class="inline-link"> getStroke</a><span class="parameters">(</span>) <span>Returns the current stroke object or null
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getStroke" class="inline-link"> getStroke</a><span class="parameters">(</span>) <span>Returns the current stroke object or null
 (see dojox/gfx.defaultStroke)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getTransform" class="inline-link"> getTransform</a><span class="parameters">(</span>) <span>Returns the current transformation matrix applied to this Shape or null</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getTransformedBoundingBox" class="inline-link"> getTransformedBoundingBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getTransform" class="inline-link"> getTransform</a><span class="parameters">(</span>) <span>Returns the current transformation matrix applied to this Shape or null</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_getTransformedBoundingBox" class="inline-link"> getTransformedBoundingBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
 four points represent four corners of the untransformed bounding box</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_moveToBack" class="inline-link"> moveToBack</a><span class="parameters">(</span>) <span>moves a shape to back of its parent&#39;s list of shapes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_moveToFront" class="inline-link"> moveToFront</a><span class="parameters">(</span>) <span>moves a shape to front of its parent&#39;s list of shapes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_openBatch" class="inline-link"> openBatch</a><span class="parameters">(</span>) <span>starts a new batch, subsequent new child shapes will be held in
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_moveToBack" class="inline-link"> moveToBack</a><span class="parameters">(</span>) <span>moves a shape to back of its parent&#39;s list of shapes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_moveToFront" class="inline-link"> moveToFront</a><span class="parameters">(</span>) <span>moves a shape to front of its parent&#39;s list of shapes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_openBatch" class="inline-link"> openBatch</a><span class="parameters">(</span>) <span>starts a new batch, subsequent new child shapes will be held in
 the batch instead of appending to the container directly</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_remove" class="inline-link"> remove</a><span class="parameters">(</span>shape, silently) <span>removes a shape from the list</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_removeShape" class="inline-link"> removeShape</a><span class="parameters">(</span>silently) <span>removes the shape from its parent&#39;s list of shapes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_render" class="inline-link"> render</a><span class="parameters">(</span>) <span>iterate all children and call their render callback function.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setCameraTransform" class="inline-link"> setCameraTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setClip" class="inline-link"> setClip</a><span class="parameters">(</span>clip) <span>sets the clipping area of this shape.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setDimensions" class="inline-link"> setDimensions</a><span class="parameters">(</span>dim) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setDrawer" class="inline-link"> setDrawer</a><span class="parameters">(</span>drawer) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_remove" class="inline-link"> remove</a><span class="parameters">(</span>shape, silently) <span>removes a shape from the list</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_removeShape" class="inline-link"> removeShape</a><span class="parameters">(</span>silently) <span>removes the shape from its parent&#39;s list of shapes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_render" class="inline-link"> render</a><span class="parameters">(</span>) <span>iterate all children and call their render callback function.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setCameraTransform" class="inline-link"> setCameraTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setClip" class="inline-link"> setClip</a><span class="parameters">(</span>clip) <span>sets the clipping area of this shape.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setDimensions" class="inline-link"> setDimensions</a><span class="parameters">(</span>dim) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setDrawer" class="inline-link"> setDrawer</a><span class="parameters">(</span>drawer) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
 (the default implementation simply ignores it)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setLights" class="inline-link"> setLights</a><span class="parameters">(</span>lights, ambient, specular) <span>set the lights</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setScheduler" class="inline-link"> setScheduler</a><span class="parameters">(</span>scheduler) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setShape" class="inline-link"> setShape</a><span class="parameters">(</span>shape) <span>sets a shape object
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setLights" class="inline-link"> setLights</a><span class="parameters">(</span>lights, ambient, specular) <span>set the lights</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setScheduler" class="inline-link"> setScheduler</a><span class="parameters">(</span>scheduler) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setShape" class="inline-link"> setShape</a><span class="parameters">(</span>shape) <span>sets a shape object
 (the default implementation simply ignores it)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
 (the default implementation simply ignores it)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setTextDir" class="inline-link"> setTextDir</a><span class="parameters">(</span>newTextDir) <span>Used for propagation and change of textDir.
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setTextDir" class="inline-link"> setTextDir</a><span class="parameters">(</span>newTextDir) <span>Used for propagation and change of textDir.
 newTextDir will be forced as textDir for all of it&#39;s children (Group/Text/TextPath).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Viewport_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1835,4 +1844,4 @@ constructor for a list of acceptable arguments)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/gfx3d/_base.Viewport" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

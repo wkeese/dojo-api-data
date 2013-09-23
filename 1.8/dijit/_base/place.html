@@ -1,33 +1,41 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_base/place</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/_base/place" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_base/place.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/_base/place<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Deprecated back compatibility module, new code should use <a class="jsdoc-link" href="/api/1.8/dijit/place">dijit/place</a> directly instead of using this module.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/_base/place.html" target="_blank">dijit/_base/place reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit__base_place_getPopupAroundAlignment" class="inline-link"> getPopupAroundAlignment</a><span class="parameters">(</span>position, leftToRight) <span>Deprecated method, unneeded when using dijit/place directly.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_place_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Deprecated method to return the dimensions and scroll position of the viewable area of a browser window.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dijit__base_place_placeOnScreen" class="inline-link"> placeOnScreen</a><span class="parameters">(</span>node, pos, corners, padding) <span>Positions one of the node&#39;s corners at specified position
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit__base_place_getPopupAroundAlignment" class="inline-link"> getPopupAroundAlignment</a><span class="parameters">(</span>position, leftToRight) <span>Deprecated method, unneeded when using dijit/place directly.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_place_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Deprecated method to return the dimensions and scroll position of the viewable area of a browser window.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dijit__base_place_placeOnScreen" class="inline-link"> placeOnScreen</a><span class="parameters">(</span>node, pos, corners, padding) <span>Positions one of the node&#39;s corners at specified position
 such that node is fully visible in viewport.</span><span title="inherited from dijit/place" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_place_placeOnScreenAroundElement" class="inline-link"> placeOnScreenAroundElement</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except it accepts an arbitrary object
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_place_placeOnScreenAroundElement" class="inline-link"> placeOnScreenAroundElement</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except it accepts an arbitrary object
 for the &quot;around&quot; argument and finds a proper processor to place a node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_place_placeOnScreenAroundNode" class="inline-link"> placeOnScreenAroundNode</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Position node adjacent or kitty-corner to aroundNode
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_place_placeOnScreenAroundNode" class="inline-link"> placeOnScreenAroundNode</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Position node adjacent or kitty-corner to aroundNode
 such that it&#39;s fully visible in viewport.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_place_placeOnScreenAroundRectangle" class="inline-link"> placeOnScreenAroundRectangle</a><span class="parameters">(</span>node, aroundRect, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except that the &quot;around&quot;
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_place_placeOnScreenAroundRectangle" class="inline-link"> placeOnScreenAroundRectangle</a><span class="parameters">(</span>node, aroundRect, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except that the &quot;around&quot;
 parameter is an arbitrary rectangle on the screen (x, y, width, height)
 instead of a dom node.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -147,8 +155,10 @@ Possible values are:
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>Try to place node&#39;s top right corner at (10,20).
 If that makes node go (partially) off screen, then try placing
-bottom left corner at (10,20).</p>
-<pre><code>  place(node, {x: 10, y: 20}, [&quot;TR&quot;, &quot;BL&quot;])</code></pre>
+bottom left corner at (10,20).
+
+</p>
+<pre><code>place(node, {x: 10, y: 20}, [&quot;TR&quot;, &quot;BL&quot;])</code></pre>
 
           </div>
         </div>
@@ -279,4 +289,4 @@ Deprecated, new code should use dijit/place.around() instead.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/_base/place" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

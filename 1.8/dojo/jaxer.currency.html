@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/jaxer.currency</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/jaxer.currency" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/jaxer.currency.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/jaxer.currency<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>localized formatting and parsing routines for currencies</p>
 </div>
@@ -12,24 +19,25 @@ on the currency type and is not determined by the &#39;pattern&#39; argument.  T
 portion is optional, by default, and variable length decimals are not supported.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo_jaxer_currency___FormatOptions" class="inline-link"> __FormatOptions</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_jaxer_currency___ParseOptions" class="inline-link"> __ParseOptions</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojo_jaxer_currency__mixInDefaults" class="inline-link"> _mixInDefaults</a><span class="parameters">(</span>options) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_jaxer_currency_format" class="inline-link"> format</a><span class="parameters">(</span>value, options) <span>Format a Number as a currency, using locale-specific settings</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_jaxer_currency_parse" class="inline-link"> parse</a><span class="parameters">(</span>expression, options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_jaxer_currency_regexp" class="inline-link"> regexp</a><span class="parameters">(</span>options) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_jaxer_currency___FormatOptions" class="inline-link"> __FormatOptions</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_jaxer_currency___ParseOptions" class="inline-link"> __ParseOptions</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojo_jaxer_currency__mixInDefaults" class="inline-link"> _mixInDefaults</a><span class="parameters">(</span>options) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_jaxer_currency_format" class="inline-link"> format</a><span class="parameters">(</span>value, options) <span>Format a Number as a currency, using locale-specific settings</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_jaxer_currency_parse" class="inline-link"> parse</a><span class="parameters">(</span>expression, options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_jaxer_currency_regexp" class="inline-link"> regexp</a><span class="parameters">(</span>options) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -129,35 +137,22 @@ as well as the appropriate symbols and delimiters and number of decimal places.
             <td class="jsdoc-param-name">options</td>
             <td class="jsdoc-param-type">Object</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>type (String, optional): <p>Should not be set.  Value is assumed to be currency.</p></p>
-</li>
-<li><p>currency (String, optional): <p>an <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO4217</a> currency code, a three letter sequence like &quot;USD&quot;.
-For use with dojo.currency only.</p></p>
-</li>
-<li><p>symbol (String, optional): <p>localized currency symbol. The default will be looked up in table of supported currencies in <code>dojo.cldr</code>
-A <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO4217</a> currency code will be used if not found.</p></p>
-</li>
-<li><p>places (Number, optional): <p>fixed number of decimal places to accept.  The default is determined based on which currency is used.</p></p>
-</li>
-<li><p>fractional (Boolean|Array, optional): <p>Whether to include the fractional portion, where the number of decimal places are implied by the currency
+              <div><em>Optional</em></div><p>An object with the following properties:</p><ul><li>type (String, optional): <p>Should not be set.  Value is assumed to be currency.</p>
+</li><li>currency (String, optional): <p>an <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO4217</a> currency code, a three letter sequence like &quot;USD&quot;.
+For use with dojo.currency only.</p>
+</li><li>symbol (String, optional): <p>localized currency symbol. The default will be looked up in table of supported currencies in <code>dojo.cldr</code>
+A <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO4217</a> currency code will be used if not found.</p>
+</li><li>places (Number, optional): <p>fixed number of decimal places to accept.  The default is determined based on which currency is used.</p>
+</li><li>fractional (Boolean|Array, optional): <p>Whether to include the fractional portion, where the number of decimal places are implied by the currency
 or explicit &#39;places&#39; parameter.  The value [true,false] makes the fractional portion optional.
-By default for currencies, it the fractional portion is optional.</p></p>
-</li>
-<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+By default for currencies, it the fractional portion is optional.</p>
+</li><li>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
 with this string.  Default value is based on locale.  Overriding this property will defeat
-localization.  Literal characters in patterns are not supported.</p></p>
-</li>
-<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
-</li>
-<li><p>strict (Boolean, optional): <p>strict parsing, false by default.  Strict parsing requires input as produced by the format() method.
-Non-strict is more permissive, e.g. flexible on white space, omitting thousands separators</p></p>
-</li>
-</ul>
-
+localization.  Literal characters in patterns are not supported.</p>
+</li><li>locale (String, optional): <p>override the locale used to determine formatting rules</p>
+</li><li>strict (Boolean, optional): <p>strict parsing, false by default.  Strict parsing requires input as produced by the format() method.
+Non-strict is more permissive, e.g. flexible on white space, omitting thousands separators</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -179,32 +174,22 @@ Non-strict is more permissive, e.g. flexible on white space, omitting thousands 
             <td class="jsdoc-param-name">options</td>
             <td class="jsdoc-param-type">Object</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>An object with the following properties:
-
-</p>
-<ul>
-<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+              <div><em>Optional</em></div><p>An object with the following properties:</p><ul><li>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
 with this string.  Default value is based on locale.  Overriding this property will defeat
-localization.</p></p>
-</li>
-<li><p>type (String, optional): <p>choose a format type based on the locale from the following:
-decimal, scientific (not yet supported), percent, currency. decimal by default.</p></p>
-</li>
-<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
-</li>
-<li><p>strict (Boolean, optional): <p>strict parsing, false by default.  Strict parsing requires input as produced by the format() method.
-Non-strict is more permissive, e.g. flexible on white space, omitting thousands separators</p></p>
-</li>
-<li><p>places (Number|String, optional): <p>number of decimal places to accept: Infinity, a positive number, or
-a range &quot;n,m&quot;.  Defined by pattern or Infinity if pattern not provided.</p></p>
-</li>
-</ul>
-
+localization.</p>
+</li><li>type (String, optional): <p>choose a format type based on the locale from the following:
+decimal, scientific (not yet supported), percent, currency. decimal by default.</p>
+</li><li>locale (String, optional): <p>override the locale used to determine formatting rules</p>
+</li><li>strict (Boolean, optional): <p>strict parsing, false by default.  Strict parsing requires input as produced by the format() method.
+Non-strict is more permissive, e.g. flexible on white space, omitting thousands separators</p>
+</li><li>places (Number|String, optional): <p>number of decimal places to accept: Infinity, a positive number, or
+a range &quot;n,m&quot;.  Defined by pattern or Infinity if pattern not provided.</p>
+</li></ul>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">get places</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/jaxer.currency" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

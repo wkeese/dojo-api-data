@@ -1,62 +1,71 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/_base._Controller</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mvc/_base._Controller" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mvc/_base._Controller.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mvc/_base._Controller<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful, </a><a href="/api/1.8/dojox/mvc/_atBindingMixin" class="jsdoc-link">dojox/mvc/_atBindingMixin</a>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/mvc.html" target="_blank">dojox/mvc/_base._Controller reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mvc__base__Controller_data-mvc-bindings" class="inline-link"> data-mvc-bindings </a><span></span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_mvc__base__Controller_dataBindAttr" class="inline-link"> dataBindAttr </a><span>The attribute name for data binding.</span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__dbpostscript" class="inline-link"> _dbpostscript</a><span class="parameters">(</span>params, srcNodeRef) <span>See if any parameters for this widget are dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__getExcludesAttr" class="inline-link"> _getExcludesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties that data binding is established with.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__getPropertiesAttr" class="inline-link"> _getPropertiesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties in this widget, except &quot;id&quot;.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mvc__base__Controller__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Implement _set() interface so that _set() behavior is consistent whether the instance inherits _WidgetBase or not.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__setAtWatchHandle" class="inline-link"> _setAtWatchHandle</a><span class="parameters">(</span>name, value) <span>Called if the value is a dojox/mvc/at handle.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__setBind" class="inline-link"> _setBind</a><span class="parameters">(</span>value) <span>Sets data binding described in data-mvc-bindings.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__startAtWatchHandles" class="inline-link"> _startAtWatchHandles</a><span class="parameters">(</span>) <span>Establish data bindings based on dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__stopAtWatchHandles" class="inline-link"> _stopAtWatchHandles</a><span class="parameters">(</span>) <span>Stops data binding synchronization handles as widget is destroyed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Stops data binding as this object is destroyed.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mvc__base__Controller_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>If this object is not called from Dojo parser, starts this up right away.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>If the value given is dojox/mvc/at handle, use it for data binding.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Starts up data binding as this object starts up.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_mvc__base__Controller_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mvc__base__Controller_data-mvc-bindings" class="inline-link"> data-mvc-bindings </a><span></span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_mvc__base__Controller_dataBindAttr" class="inline-link"> dataBindAttr </a><span>The attribute name for data binding.</span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__dbpostscript" class="inline-link"> _dbpostscript</a><span class="parameters">(</span>params, srcNodeRef) <span>See if any parameters for this widget are dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__getExcludesAttr" class="inline-link"> _getExcludesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties that data binding is established with.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__getPropertiesAttr" class="inline-link"> _getPropertiesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties in this widget, except &quot;id&quot;.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mvc__base__Controller__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Implement _set() interface so that _set() behavior is consistent whether the instance inherits _WidgetBase or not.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__setAtWatchHandle" class="inline-link"> _setAtWatchHandle</a><span class="parameters">(</span>name, value) <span>Called if the value is a dojox/mvc/at handle.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__setBind" class="inline-link"> _setBind</a><span class="parameters">(</span>value) <span>Sets data binding described in data-mvc-bindings.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__startAtWatchHandles" class="inline-link"> _startAtWatchHandles</a><span class="parameters">(</span>) <span>Establish data bindings based on dojox/mvc/at handles.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_mvc__base__Controller__stopAtWatchHandles" class="inline-link"> _stopAtWatchHandles</a><span class="parameters">(</span>) <span>Stops data binding synchronization handles as widget is destroyed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Stops data binding as this object is destroyed.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mvc__base__Controller_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>If this object is not called from Dojo parser, starts this up right away.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>If the value given is dojox/mvc/at handle, use it for data binding.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mvc__base__Controller_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Starts up data binding as this object starts up.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_mvc__base__Controller_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -487,4 +496,4 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mvc/_base._Controller" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

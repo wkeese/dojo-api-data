@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/tree/model</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/tree/model" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/tree/model.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/tree/model<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Contract for any data provider object for the tree.</p>
 </div>
@@ -11,43 +18,44 @@ it could be anything.
 <p>This (like <a class="jsdoc-link" href="/api/1.8/dojo/data/api/Read">dojo/data/api/Read</a>) is just documentation, and not meant to be used.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys this object, releasing connections to the store</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>Given the identity of an item, this method returns the item that has
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys this object, releasing connections to the store</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>Given the identity of an item, this method returns the item that has
 that identity through the onItem callback.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parentItem, onComplete) <span>Calls onComplete() with array of child items of given parent item, all loaded.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>Returns identity for an item</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>Get the label for an item</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_getRoot" class="inline-link"> getRoot</a><span class="parameters">(</span>onItem) <span>Calls onItem with the root item for the tree, possibly a fabricated item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Returns true if something is an item and came from this model instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_mayHaveChildren" class="inline-link"> mayHaveChildren</a><span class="parameters">(</span>item) <span>Tells if an item has or may have children.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>args, parent, insertIndex, before) <span>Creates a new item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_pasteItem" class="inline-link"> pasteItem</a><span class="parameters">(</span>childItem, oldParentItem, newParentItem, bCopy, insertIndex, before) <span>Move or copy an item from one parent item to another.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>item) <span>Callback whenever an item has changed, so that Tree
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parentItem, onComplete) <span>Calls onComplete() with array of child items of given parent item, all loaded.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>Returns identity for an item</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>Get the label for an item</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_getRoot" class="inline-link"> getRoot</a><span class="parameters">(</span>onItem) <span>Calls onItem with the root item for the tree, possibly a fabricated item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Returns true if something is an item and came from this model instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_mayHaveChildren" class="inline-link"> mayHaveChildren</a><span class="parameters">(</span>item) <span>Tells if an item has or may have children.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>args, parent, insertIndex, before) <span>Creates a new item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_pasteItem" class="inline-link"> pasteItem</a><span class="parameters">(</span>childItem, oldParentItem, newParentItem, bCopy, insertIndex, before) <span>Move or copy an item from one parent item to another.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>item) <span>Callback whenever an item has changed, so that Tree
 can update the label, icon, etc.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_tree_model_onChildrenChange" class="inline-link"> onChildrenChange</a><span class="parameters">(</span>parent, newChildrenList) <span>Callback to do notifications about new, updated, or deleted items.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_tree_model_onChildrenChange" class="inline-link"> onChildrenChange</a><span class="parameters">(</span>parent, newChildrenList) <span>Callback to do notifications about new, updated, or deleted items.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -348,4 +356,4 @@ onChildrenChange() so you can ignore those changes here.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/tree/model" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

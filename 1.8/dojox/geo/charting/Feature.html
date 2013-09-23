@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/charting/Feature</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/geo/charting/Feature" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/charting/Feature.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/geo/charting/Feature<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A class to encapsulate a map element.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Feature<span class="parameters">(parent,name,shapeData);</span></div>
 </div>
@@ -35,54 +42,56 @@
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/geo/charting.html" target="_blank">dojox/geo/charting/Feature reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_8dojox_geo_charting_Feature__isZoomIn" class="inline-link"> _isZoomIn </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_geo_charting_Feature_isSelected" class="inline-link"> isSelected </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_geo_charting_Feature_markerText" class="inline-link"> markerText </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__normalizeStrokeWeight" class="inline-link"> _normalizeStrokeWeight</a><span class="parameters">(</span>weight) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onclickHandler" class="inline-link"> _onclickHandler</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onmousemoveHandler" class="inline-link"> _onmousemoveHandler</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onmouseoutHandler" class="inline-link"> _onmouseoutHandler</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onmouseoverHandler" class="inline-link"> _onmouseoverHandler</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__setFillWith" class="inline-link"> _setFillWith</a><span class="parameters">(</span>color) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__setStrokeWith" class="inline-link"> _setStrokeWith</a><span class="parameters">(</span>stroke) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__zoomIn" class="inline-link"> _zoomIn</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__zoomOut" class="inline-link"> _zoomOut</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>parent, name, shapeData) <span>constructs a new Feature.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initializes this feature.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_select" class="inline-link"> select</a><span class="parameters">(</span>selected) <span>Sets the selected state of this feature to the given value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>value) <span>sets a numeric value on this Feature object (used together with series to apply a color).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_unsetColor" class="inline-link"> unsetColor</a><span class="parameters">(</span>) <span>clears the colors on this Feature object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_unsetValue" class="inline-link"> unsetValue</a><span class="parameters">(</span>) <span>clears the numeric value on this Feature object (removes color).</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_8dojox_geo_charting_Feature__isZoomIn" class="inline-link"> _isZoomIn </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_geo_charting_Feature_isSelected" class="inline-link"> isSelected </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_geo_charting_Feature_markerText" class="inline-link"> markerText </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__normalizeStrokeWeight" class="inline-link"> _normalizeStrokeWeight</a><span class="parameters">(</span>weight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onclickHandler" class="inline-link"> _onclickHandler</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onmousemoveHandler" class="inline-link"> _onmousemoveHandler</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onmouseoutHandler" class="inline-link"> _onmouseoutHandler</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__onmouseoverHandler" class="inline-link"> _onmouseoverHandler</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__setFillWith" class="inline-link"> _setFillWith</a><span class="parameters">(</span>color) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__setStrokeWith" class="inline-link"> _setStrokeWith</a><span class="parameters">(</span>stroke) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__zoomIn" class="inline-link"> _zoomIn</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature__zoomOut" class="inline-link"> _zoomOut</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_charting_Feature_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>parent, name, shapeData) <span>constructs a new Feature.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initializes this feature.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_select" class="inline-link"> select</a><span class="parameters">(</span>selected) <span>Sets the selected state of this feature to the given value.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>value) <span>sets a numeric value on this Feature object (used together with series to apply a color).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_unsetColor" class="inline-link"> unsetColor</a><span class="parameters">(</span>) <span>clears the colors on this Feature object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_charting_Feature_unsetValue" class="inline-link"> unsetValue</a><span class="parameters">(</span>) <span>clears the numeric value on this Feature object (removes color).</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -354,4 +363,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/geo/charting/Feature" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

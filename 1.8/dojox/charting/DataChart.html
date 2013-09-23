@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/DataChart</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/charting/DataChart" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/DataChart.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/DataChart<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/charting/Chart2D" class="jsdoc-link">dojox/charting/Chart2D</a>
@@ -30,7 +37,7 @@ size and keep the chart from stretching or squashing to fit the data.
 a new store query will have no effect (although using setStore
 may work but its untested).</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new DataChart<span class="parameters">(node,kwArgs);</span></div>
 </div>
@@ -65,13 +72,13 @@ may work but its untested).</p>
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/charting/DataChart.html" target="_blank">dojox/charting/DataChart reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>var chart = new dojox.charting.DataChart(&quot;myNode&quot;, {
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var chart = new dojox.charting.DataChart(&quot;myNode&quot;, {
     displayRange:8,
     store:dataStore,
     query:{symbol:&quot;*&quot;},
@@ -79,175 +86,177 @@ may work but its untested).</p>
     type: dojox.charting.plot2d.Columns
 });</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojox_charting_DataChart_chartTheme" class="inline-link"> chartTheme </a><span>The theme to style the chart.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_comparative" class="inline-link"> comparative </a><span>If false, all items are each their own series.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_charting_DataChart_displayRange" class="inline-link"> displayRange </a><span>The number of major ticks to show on the xaxis</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_fieldName" class="inline-link"> fieldName </a><span>The field in the store item that is getting charted</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_label" class="inline-link"> label </a><span>The name field of the store item
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_charting_DataChart_chartTheme" class="inline-link"> chartTheme </a><span>The theme to style the chart.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_comparative" class="inline-link"> comparative </a><span>If false, all items are each their own series.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_charting_DataChart_displayRange" class="inline-link"> displayRange </a><span>The number of major ticks to show on the xaxis</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_fieldName" class="inline-link"> fieldName </a><span>The field in the store item that is getting charted</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_label" class="inline-link"> label </a><span>The name field of the store item
 DO NOT SET: Set from store.labelAttribute</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_charting_DataChart_minHeight" class="inline-link"> minHeight </a><span>The the smallest the chart height can be</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_charting_DataChart_minWidth" class="inline-link"> minWidth </a><span>The the smallest the chart width can be</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_query" class="inline-link"> query </a><span>Used for fetching items.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_queryOptions" class="inline-link"> queryOptions </a><span>Option used for fetching items</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_scroll" class="inline-link"> scroll </a><span>Whether live data updates and changes display, like columns moving
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_charting_DataChart_minHeight" class="inline-link"> minHeight </a><span>The the smallest the chart height can be</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_charting_DataChart_minWidth" class="inline-link"> minWidth </a><span>The the smallest the chart width can be</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_query" class="inline-link"> query </a><span>Used for fetching items.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_queryOptions" class="inline-link"> queryOptions </a><span>Option used for fetching items</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_scroll" class="inline-link"> scroll </a><span>Whether live data updates and changes display, like columns moving
 up and down, or whether it scrolls to the left as data is added</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_showing" class="inline-link"> showing </a><span>Whether the chart is showing (default) on
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_showing" class="inline-link"> showing </a><span>Whether the chart is showing (default) on
 initialization or hidden.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_stretchToFit" class="inline-link"> stretchToFit </a><span>If true, chart is sized to data.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__invalidateDependentPlots" class="inline-link"> _invalidateDependentPlots</a><span class="parameters">(</span>plotName, verticalAxis) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__makeClean" class="inline-link"> _makeClean</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__makeDirty" class="inline-link"> _makeDirty</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__renderChartBackground" class="inline-link"> _renderChartBackground</a><span class="parameters">(</span>dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__renderPlotBackground" class="inline-link"> _renderPlotBackground</a><span class="parameters">(</span>dim, offsets, w, h) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_addAxis" class="inline-link"> addAxis</a><span class="parameters">(</span>name, kwArgs) <span>Add an axis to the chart, for rendering.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_addPlot" class="inline-link"> addPlot</a><span class="parameters">(</span>name, kwArgs) <span>Add a new plot to the chart, defined by name and using the optional keyword arguments object.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>name, data, kwArgs) <span>Add a data series to the chart for rendering.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_calculateGeometry" class="inline-link"> calculateGeometry</a><span class="parameters">(</span>) <span>Calculate the geometry of the chart based on the defined axes of
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_charting_DataChart_stretchToFit" class="inline-link"> stretchToFit </a><span>If true, chart is sized to data.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_charting_DataChart_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="Must manually require () dojox/charting/BidiSupport to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__invalidateDependentPlots" class="inline-link"> _invalidateDependentPlots</a><span class="parameters">(</span>plotName, verticalAxis) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__makeClean" class="inline-link"> _makeClean</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__makeDirty" class="inline-link"> _makeDirty</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__renderChartBackground" class="inline-link"> _renderChartBackground</a><span class="parameters">(</span>dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_DataChart__renderPlotBackground" class="inline-link"> _renderPlotBackground</a><span class="parameters">(</span>dim, offsets, w, h) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_addAxis" class="inline-link"> addAxis</a><span class="parameters">(</span>name, kwArgs) <span>Add an axis to the chart, for rendering.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_addPlot" class="inline-link"> addPlot</a><span class="parameters">(</span>name, kwArgs) <span>Add a new plot to the chart, defined by name and using the optional keyword arguments object.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>name, data, kwArgs) <span>Add a data series to the chart for rendering.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_calculateGeometry" class="inline-link"> calculateGeometry</a><span class="parameters">(</span>) <span>Calculate the geometry of the chart based on the defined axes of
 a chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_connectToPlot" class="inline-link"> connectToPlot</a><span class="parameters">(</span>name, object, method) <span>A convenience method to connect a function to a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, kwArgs) <span>Set up properties and initialize chart build.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_convertLabels" class="inline-link"> convertLabels</a><span class="parameters">(</span>axis) <span>Convenience method to convert a label array of strings
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_connectToPlot" class="inline-link"> connectToPlot</a><span class="parameters">(</span>name, object, method) <span>A convenience method to connect a function to a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, kwArgs) <span>Set up properties and initialize chart build.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_convertLabels" class="inline-link"> convertLabels</a><span class="parameters">(</span>axis) <span>Convenience method to convert a label array of strings
 into an array of objects</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_delayedRender" class="inline-link"> delayedRender</a><span class="parameters">(</span>) <span>Delayed render, which is used to collect multiple updates
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_delayedRender" class="inline-link"> delayedRender</a><span class="parameters">(</span>) <span>Delayed render, which is used to collect multiple updates
 within a delayInMs time window.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>) <span>Fetches initial data.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_fireEvent" class="inline-link"> fireEvent</a><span class="parameters">(</span>seriesName, eventName, index) <span>Fires a synthetic event for a series item.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_fullGeometry" class="inline-link"> fullGeometry</a><span class="parameters">(</span>) <span>Calculate the full geometry of the chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_fullRender" class="inline-link"> fullRender</a><span class="parameters">(</span>) <span>Force a full rendering of the chart, including full resets on the chart itself.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getAxis" class="inline-link"> getAxis</a><span class="parameters">(</span>name) <span>Get the given axis, by name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getCoords" class="inline-link"> getCoords</a><span class="parameters">(</span>) <span>Get the coordinates and dimensions of the containing DOMNode, as
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>) <span>Fetches initial data.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_fireEvent" class="inline-link"> fireEvent</a><span class="parameters">(</span>seriesName, eventName, index) <span>Fires a synthetic event for a series item.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_fullGeometry" class="inline-link"> fullGeometry</a><span class="parameters">(</span>) <span>Calculate the full geometry of the chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_fullRender" class="inline-link"> fullRender</a><span class="parameters">(</span>) <span>Force a full rendering of the chart, including full resets on the chart itself.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getAxis" class="inline-link"> getAxis</a><span class="parameters">(</span>name) <span>Get the given axis, by name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getCoords" class="inline-link"> getCoords</a><span class="parameters">(</span>) <span>Get the coordinates and dimensions of the containing DOMNode, as
 returned by dojo.coords.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getGeometry" class="inline-link"> getGeometry</a><span class="parameters">(</span>) <span>Returns a map of information about all axes in a chart and what they represent
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getGeometry" class="inline-link"> getGeometry</a><span class="parameters">(</span>) <span>Returns a map of information about all axes in a chart and what they represent
 in terms of scaling (see dojox.charting.axis2d.Default.getScaler).</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getPlot" class="inline-link"> getPlot</a><span class="parameters">(</span>name) <span>Get the given plot, by name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getPlotOrder" class="inline-link"> getPlotOrder</a><span class="parameters">(</span>) <span>Returns an array of plot names in the current order
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getPlot" class="inline-link"> getPlot</a><span class="parameters">(</span>name) <span>Get the given plot, by name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getPlotOrder" class="inline-link"> getPlotOrder</a><span class="parameters">(</span>) <span>Returns an array of plot names in the current order
 (the top-most plot is the first).</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_getProperty" class="inline-link"> getProperty</a><span class="parameters">(</span>item, prop) <span>The main use of this function is to determine
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_getProperty" class="inline-link"> getProperty</a><span class="parameters">(</span>item, prop) <span>The main use of this function is to determine
 between a single value and an array of values.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getSeries" class="inline-link"> getSeries</a><span class="parameters">(</span>name) <span>Get the given series, by name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getSeriesOrder" class="inline-link"> getSeriesOrder</a><span class="parameters">(</span>plotName) <span>Returns an array of series names in the current order
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getSeries" class="inline-link"> getSeries</a><span class="parameters">(</span>name) <span>Get the given series, by name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_getSeriesOrder" class="inline-link"> getSeriesOrder</a><span class="parameters">(</span>plotName) <span>Returns an array of series names in the current order
 (the top-most series is the first) within a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text) <span>Return direction of the text.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>If chart is showing, hide it
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text) <span>Return direction of the text.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>If chart is showing, hide it
 Prevents rendering while hidden</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_movePlotToBack" class="inline-link"> movePlotToBack</a><span class="parameters">(</span>name) <span>Moves a given plot to back.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_movePlotToFront" class="inline-link"> movePlotToFront</a><span class="parameters">(</span>name) <span>Moves a given plot to front.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_moveSeriesToBack" class="inline-link"> moveSeriesToBack</a><span class="parameters">(</span>name) <span>Moves a given series to back of a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_moveSeriesToFront" class="inline-link"> moveSeriesToFront</a><span class="parameters">(</span>name) <span>Moves a given series to front of a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_DataChart_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>node, args) <span>Kicks off chart instantiation.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_removeAxis" class="inline-link"> removeAxis</a><span class="parameters">(</span>name) <span>Remove the axis that was defined using name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_removePlot" class="inline-link"> removePlot</a><span class="parameters">(</span>name) <span>Remove the plot defined using name from the chart&#39;s plot stack.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_removeSeries" class="inline-link"> removeSeries</a><span class="parameters">(</span>name) <span>Remove the series defined by name from the chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_render" class="inline-link"> render</a><span class="parameters">(</span>) <span>Render the chart according to the current information defined.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span>Resize the chart to the dimensions of width and height.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_resizeChart" class="inline-link"> resizeChart</a><span class="parameters">(</span>dim) <span>Call this function to change the chart size.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_seriesLabels" class="inline-link"> seriesLabels</a><span class="parameters">(</span>val) <span>Convenience method that sets series labels based on item labels.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setAxisWindow" class="inline-link"> setAxisWindow</a><span class="parameters">(</span>name, scale, offset, zoom) <span>Zooms an axis and all dependent plots.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setPlotOrder" class="inline-link"> setPlotOrder</a><span class="parameters">(</span>newOrder) <span>Sets new order of plots. newOrder cannot add or remove
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_movePlotToBack" class="inline-link"> movePlotToBack</a><span class="parameters">(</span>name) <span>Moves a given plot to back.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_movePlotToFront" class="inline-link"> movePlotToFront</a><span class="parameters">(</span>name) <span>Moves a given plot to front.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_moveSeriesToBack" class="inline-link"> moveSeriesToBack</a><span class="parameters">(</span>name) <span>Moves a given series to back of a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_moveSeriesToFront" class="inline-link"> moveSeriesToFront</a><span class="parameters">(</span>name) <span>Moves a given series to front of a plot.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_DataChart_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>node, args) <span>Kicks off chart instantiation.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_removeAxis" class="inline-link"> removeAxis</a><span class="parameters">(</span>name) <span>Remove the axis that was defined using name.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_removePlot" class="inline-link"> removePlot</a><span class="parameters">(</span>name) <span>Remove the plot defined using name from the chart&#39;s plot stack.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_removeSeries" class="inline-link"> removeSeries</a><span class="parameters">(</span>name) <span>Remove the series defined by name from the chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_render" class="inline-link"> render</a><span class="parameters">(</span>) <span>Render the chart according to the current information defined.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span>Resize the chart to the dimensions of width and height.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_resizeChart" class="inline-link"> resizeChart</a><span class="parameters">(</span>dim) <span>Call this function to change the chart size.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_seriesLabels" class="inline-link"> seriesLabels</a><span class="parameters">(</span>val) <span>Convenience method that sets series labels based on item labels.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setAxisWindow" class="inline-link"> setAxisWindow</a><span class="parameters">(</span>name, scale, offset, zoom) <span>Zooms an axis and all dependent plots.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setPlotOrder" class="inline-link"> setPlotOrder</a><span class="parameters">(</span>newOrder) <span>Sets new order of plots. newOrder cannot add or remove
 plots.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setSeriesOrder" class="inline-link"> setSeriesOrder</a><span class="parameters">(</span>newOrder) <span>Sets new order of series within a plot. newOrder cannot add
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setSeriesOrder" class="inline-link"> setSeriesOrder</a><span class="parameters">(</span>newOrder) <span>Sets new order of series within a plot. newOrder cannot add
 or remove series.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_setStore" class="inline-link"> setStore</a><span class="parameters">(</span>store, query, fieldName, queryOptions) <span>Sets the chart store and query
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_setStore" class="inline-link"> setStore</a><span class="parameters">(</span>store, query, fieldName, queryOptions) <span>Sets the chart store and query
 then does the first fetch and
 connects to subsequent changes.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_setTextDir" class="inline-link"> setTextDir</a><span class="parameters">(</span>newTextDir, obj) <span>Setter for the textDir attribute.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setTheme" class="inline-link"> setTheme</a><span class="parameters">(</span>theme) <span>Set a theme of the chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setWindow" class="inline-link"> setWindow</a><span class="parameters">(</span>sx, sy, dx, dy, zoom) <span>Zooms in or out any plots in two dimensions.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_show" class="inline-link"> show</a><span class="parameters">(</span>) <span>If chart is hidden, show it</span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_DataChart_truncateBidi" class="inline-link"> truncateBidi</a><span class="parameters">(</span>elem, label, labelType) <span>Enables bidi support for truncated labels.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_updateSeries" class="inline-link"> updateSeries</a><span class="parameters">(</span>name, data, offsets) <span>Update the given series with a new set of data points.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_zoomIn" class="inline-link"> zoomIn</a><span class="parameters">(</span>name, range, delayed) <span>Zoom the chart to a specific range on one axis.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onData" class="inline-link"> onData</a><span class="parameters">(</span>items) <span>Called after a completed fetch
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_setTextDir" class="inline-link"> setTextDir</a><span class="parameters">(</span>newTextDir, obj) <span>Setter for the textDir attribute.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setTheme" class="inline-link"> setTheme</a><span class="parameters">(</span>theme) <span>Set a theme of the chart.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_setWindow" class="inline-link"> setWindow</a><span class="parameters">(</span>sx, sy, dx, dy, zoom) <span>Zooms in or out any plots in two dimensions.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_show" class="inline-link"> show</a><span class="parameters">(</span>) <span>If chart is hidden, show it</span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_DataChart_truncateBidi" class="inline-link"> truncateBidi</a><span class="parameters">(</span>elem, label, labelType) <span>Enables bidi support for truncated labels.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_updateSeries" class="inline-link"> updateSeries</a><span class="parameters">(</span>name, data, offsets) <span>Update the given series with a new set of data points.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_DataChart_zoomIn" class="inline-link"> zoomIn</a><span class="parameters">(</span>name, range, delayed) <span>Zoom the chart to a specific range on one axis.</span><span title="inherited from dojox/charting/Chart" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onData" class="inline-link"> onData</a><span class="parameters">(</span>items) <span>Called after a completed fetch
 or when store items change.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onDataReceived" class="inline-link"> onDataReceived</a><span class="parameters">(</span>items) <span>stub.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onError" class="inline-link"> onError</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onSet" class="inline-link"> onSet</a><span class="parameters">(</span>item) <span>Fired when a store item changes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onDataReceived" class="inline-link"> onDataReceived</a><span class="parameters">(</span>items) <span>stub.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onError" class="inline-link"> onError</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_DataChart_onSet" class="inline-link"> onSet</a><span class="parameters">(</span>item) <span>Fired when a store item changes.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1724,4 +1733,4 @@ array to onData().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/charting/DataChart" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

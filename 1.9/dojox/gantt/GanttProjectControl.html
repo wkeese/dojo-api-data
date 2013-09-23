@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gantt/GanttProjectControl</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/gantt/GanttProjectControl" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gantt/GanttProjectControl.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/gantt/GanttProjectControl<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new GanttProjectControl<span class="parameters">(ganttChart,projectItem);</span></div>
 </div>
@@ -27,74 +34,75 @@
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/gantt.html" target="_blank">dojox/gantt/GanttProjectControl reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_adjustPanelTime" class="inline-link"> adjustPanelTime</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_checkWidthProjectNameItem" class="inline-link"> checkWidthProjectNameItem</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>ganttChart, projectItem) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_create" class="inline-link"> create</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_createDescrProject" class="inline-link"> createDescrProject</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_createProjectItem" class="inline-link"> createProjectItem</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_createProjectNameItem" class="inline-link"> createProjectNameItem</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_deleteChildTask" class="inline-link"> deleteChildTask</a><span class="parameters">(</span>task) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_deleteTask" class="inline-link"> deleteTask</a><span class="parameters">(</span>id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getDescStr" class="inline-link"> getDescStr</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getDuration" class="inline-link"> getDuration</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getPercentCompleted" class="inline-link"> getPercentCompleted</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getTaskById" class="inline-link"> getTaskById</a><span class="parameters">(</span>id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_hideDescrProject" class="inline-link"> hideDescrProject</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_insertTask" class="inline-link"> insertTask</a><span class="parameters">(</span>id, name, startTime, duration, percentage, previousTaskId, taskOwner, parentTaskId) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_postLoadData" class="inline-link"> postLoadData</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_refreshDescrProject" class="inline-link"> refreshDescrProject</a><span class="parameters">(</span>divDesc) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_refreshProjectItem" class="inline-link"> refreshProjectItem</a><span class="parameters">(</span>projectItem) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_resizeProjectItem" class="inline-link"> resizeProjectItem</a><span class="parameters">(</span>width) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_searchTaskInTree" class="inline-link"> searchTaskInTree</a><span class="parameters">(</span>task, id) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_setName" class="inline-link"> setName</a><span class="parameters">(</span>name) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_setPercentCompleted" class="inline-link"> setPercentCompleted</a><span class="parameters">(</span>percentage) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftChildTasks" class="inline-link"> shiftChildTasks</a><span class="parameters">(</span>task, height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftDescrProject" class="inline-link"> shiftDescrProject</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftNextParentTask" class="inline-link"> shiftNextParentTask</a><span class="parameters">(</span>task, height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftNextProject" class="inline-link"> shiftNextProject</a><span class="parameters">(</span>project, height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftProject" class="inline-link"> shiftProject</a><span class="parameters">(</span>height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftProjectItem" class="inline-link"> shiftProjectItem</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftTask" class="inline-link"> shiftTask</a><span class="parameters">(</span>task, height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_showDescrProject" class="inline-link"> showDescrProject</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_adjustPanelTime" class="inline-link"> adjustPanelTime</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_checkWidthProjectNameItem" class="inline-link"> checkWidthProjectNameItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>ganttChart, projectItem) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_create" class="inline-link"> create</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_createDescrProject" class="inline-link"> createDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_createProjectItem" class="inline-link"> createProjectItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_createProjectNameItem" class="inline-link"> createProjectNameItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_deleteChildTask" class="inline-link"> deleteChildTask</a><span class="parameters">(</span>task) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_deleteTask" class="inline-link"> deleteTask</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getDescStr" class="inline-link"> getDescStr</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getDuration" class="inline-link"> getDuration</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getPercentCompleted" class="inline-link"> getPercentCompleted</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_getTaskById" class="inline-link"> getTaskById</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_hideDescrProject" class="inline-link"> hideDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_insertTask" class="inline-link"> insertTask</a><span class="parameters">(</span>id, name, startTime, duration, percentage, previousTaskId, taskOwner, parentTaskId) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_postLoadData" class="inline-link"> postLoadData</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_refreshDescrProject" class="inline-link"> refreshDescrProject</a><span class="parameters">(</span>divDesc) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_refreshProjectItem" class="inline-link"> refreshProjectItem</a><span class="parameters">(</span>projectItem) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_resizeProjectItem" class="inline-link"> resizeProjectItem</a><span class="parameters">(</span>width) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_searchTaskInTree" class="inline-link"> searchTaskInTree</a><span class="parameters">(</span>task, id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_setName" class="inline-link"> setName</a><span class="parameters">(</span>name) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_setPercentCompleted" class="inline-link"> setPercentCompleted</a><span class="parameters">(</span>percentage) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftChildTasks" class="inline-link"> shiftChildTasks</a><span class="parameters">(</span>task, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftDescrProject" class="inline-link"> shiftDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftNextParentTask" class="inline-link"> shiftNextParentTask</a><span class="parameters">(</span>task, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftNextProject" class="inline-link"> shiftNextProject</a><span class="parameters">(</span>project, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftProject" class="inline-link"> shiftProject</a><span class="parameters">(</span>height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftProjectItem" class="inline-link"> shiftProjectItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_shiftTask" class="inline-link"> shiftTask</a><span class="parameters">(</span>task, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gantt_GanttProjectControl_showDescrProject" class="inline-link"> showDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -618,4 +626,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gantt/GanttProjectControl" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

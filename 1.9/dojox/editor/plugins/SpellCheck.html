@@ -1,166 +1,174 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/editor/plugins/SpellCheck</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/editor/plugins/SpellCheck" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/editor/plugins/SpellCheck.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/editor/plugins/SpellCheck<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a>
 </div>
 <div class="jsdoc-full-summary"><p>This plugin provides a spelling check capability for the editor.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new SpellCheck<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/editor/plugins/SpellCheck">dojox/editor/plugins/SpellCheck</a></div>
 <p>See the <a href="/reference-guide/1.9/dojox/editor/plugins/SpellCheck.html" target="_blank">dojox/editor/plugins/SpellCheck reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__cursorSelector" class="inline-link"> _cursorSelector </a><span>The CSS selector of the cursor span</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__cursorSpan" class="inline-link"> _cursorSpan </a><span>The span that holds the current position of the cursor</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__editor" class="inline-link"> _editor </a><span>The reference to the editor the plug-in belongs to.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__highlightedIncorrectStyle" class="inline-link"> _highlightedIncorrectStyle </a><span>The style of the highlighted incorrect words</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__ignoredIncorrectStyle" class="inline-link"> _ignoredIncorrectStyle </a><span>The style of the ignored incorrect words</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__incorrectWordsSpan" class="inline-link"> _incorrectWordsSpan </a><span>The wrapper that marks the incorrect words</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__maxItemNumber" class="inline-link"> _maxItemNumber </a><span>The max number of the suggestion list items</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__normalIncorrectStyle" class="inline-link"> _normalIncorrectStyle </a><span>The style of the marked incorrect words.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__selector" class="inline-link"> _selector </a><span>An empty CSS class that identifies the incorrect words</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_editor_plugins_SpellCheck_bufferLength" class="inline-link"> bufferLength </a><span>The max length of each XHR request.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_editor_plugins_SpellCheck_button" class="inline-link"> button </a><span>The button displayed on the editor&#39;s toolbar</span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__cursorSelector" class="inline-link"> _cursorSelector </a><span>The CSS selector of the cursor span</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__cursorSpan" class="inline-link"> _cursorSpan </a><span>The span that holds the current position of the cursor</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__editor" class="inline-link"> _editor </a><span>The reference to the editor the plug-in belongs to.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__highlightedIncorrectStyle" class="inline-link"> _highlightedIncorrectStyle </a><span>The style of the highlighted incorrect words</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__ignoredIncorrectStyle" class="inline-link"> _ignoredIncorrectStyle </a><span>The style of the ignored incorrect words</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__incorrectWordsSpan" class="inline-link"> _incorrectWordsSpan </a><span>The wrapper that marks the incorrect words</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__maxItemNumber" class="inline-link"> _maxItemNumber </a><span>The max number of the suggestion list items</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__normalIncorrectStyle" class="inline-link"> _normalIncorrectStyle </a><span>The style of the marked incorrect words.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__selector" class="inline-link"> _selector </a><span>An empty CSS class that identifies the incorrect words</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_editor_plugins_SpellCheck_bufferLength" class="inline-link"> bufferLength </a><span>The max length of each XHR request.</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_editor_plugins_SpellCheck_button" class="inline-link"> button </a><span>The button displayed on the editor&#39;s toolbar</span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
 helps control button state, among other things.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_editor" class="inline-link"> editor </a><span>Points to the parent editor</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_exArgs" class="inline-link"> exArgs </a><span>The object that holds all the parametes passed into the constructor</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span>The CSS class name for the button node is formed from iconClassPrefix and command</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_interactive" class="inline-link"> interactive </a><span>Indicate if the interactive spelling check is enabled</span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_timeout" class="inline-link"> timeout </a><span>The minutes to waiting for the response.</span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_url" class="inline-link"> url </a><span>The url of the spelling check service</span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span>If true, this plugin executes by calling Editor.execCommand() with the argument specified in command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__add" class="inline-link"> _add</a><span class="parameters">(</span>) <span>Add the unrecognized word into the dictionary</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__addWord" class="inline-link"> _addWord</a><span class="parameters">(</span>index, word) <span>Add the word at the index to the dictionary</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__cancel" class="inline-link"> _cancel</a><span class="parameters">(</span>) <span>Cancel this check action</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__connectUp" class="inline-link"> _connectUp</a><span class="parameters">(</span>) <span>Connect up all the events with their event handlers</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__disabled" class="inline-link"> _disabled</a><span class="parameters">(</span>name, disabled) <span>When the plugin is disabled (the button is disabled), reset all to their initial status.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__enter" class="inline-link"> _enter</a><span class="parameters">(</span>) <span>Handle the ENTER event</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__findText" class="inline-link"> _findText</a><span class="parameters">(</span>txt, caseSensitive, backwards) <span>This function invokes a find with specific options</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__getBookmark" class="inline-link"> _getBookmark</a><span class="parameters">(</span>eValue) <span>Get the cursor position.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__html2Text" class="inline-link"> _html2Text</a><span class="parameters">(</span>html) <span>Substitute the tag with white charactors so that the server
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_editor" class="inline-link"> editor </a><span>Points to the parent editor</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_exArgs" class="inline-link"> exArgs </a><span>The object that holds all the parametes passed into the constructor</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span>The CSS class name for the button node is formed from iconClassPrefix and command</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_interactive" class="inline-link"> interactive </a><span>Indicate if the interactive spelling check is enabled</span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_timeout" class="inline-link"> timeout </a><span>The minutes to waiting for the response.</span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_url" class="inline-link"> url </a><span>The url of the spelling check service</span><span title="inherited from dojox/editor/plugins/SpellCheck" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span>If true, this plugin executes by calling Editor.execCommand() with the argument specified in command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__add" class="inline-link"> _add</a><span class="parameters">(</span>) <span>Add the unrecognized word into the dictionary</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__addWord" class="inline-link"> _addWord</a><span class="parameters">(</span>index, word) <span>Add the word at the index to the dictionary</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__cancel" class="inline-link"> _cancel</a><span class="parameters">(</span>) <span>Cancel this check action</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__connectUp" class="inline-link"> _connectUp</a><span class="parameters">(</span>) <span>Connect up all the events with their event handlers</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__disabled" class="inline-link"> _disabled</a><span class="parameters">(</span>name, disabled) <span>When the plugin is disabled (the button is disabled), reset all to their initial status.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__enter" class="inline-link"> _enter</a><span class="parameters">(</span>) <span>Handle the ENTER event</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__findText" class="inline-link"> _findText</a><span class="parameters">(</span>txt, caseSensitive, backwards) <span>This function invokes a find with specific options</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__getBookmark" class="inline-link"> _getBookmark</a><span class="parameters">(</span>eValue) <span>Get the cursor position.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__html2Text" class="inline-link"> _html2Text</a><span class="parameters">(</span>html) <span>Substitute the tag with white charactors so that the server
 can easily process the text.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span>Initialize the button displayed on the editor&#39;s toolbar</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__keyPress" class="inline-link"> _keyPress</a><span class="parameters">(</span>evt) <span>The handler of the onKeyPress event of the editor</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__loadData" class="inline-link"> _loadData</a><span class="parameters">(</span>data) <span>Apply the query result to the content</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__markIncorrectWords" class="inline-link"> _markIncorrectWords</a><span class="parameters">(</span>html, cache) <span>Mark the incorrect words and set up menus if available</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__moveToBookmark" class="inline-link"> _moveToBookmark</a><span class="parameters">(</span>) <span>Move to the position when the cursor was.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__openDialog" class="inline-link"> _openDialog</a><span class="parameters">(</span>) <span>The handler of the onOpen event</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__populateDialog" class="inline-link"> _populateDialog</a><span class="parameters">(</span>index) <span>Populate the content of the dailog</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__query" class="inline-link"> _query</a><span class="parameters">(</span>html) <span>Send the query text to the service.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__replace" class="inline-link"> _replace</a><span class="parameters">(</span>) <span>Replace the incorrect word with the selected one,
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span>Initialize the button displayed on the editor&#39;s toolbar</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__keyPress" class="inline-link"> _keyPress</a><span class="parameters">(</span>evt) <span>The handler of the onKeyPress event of the editor</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__loadData" class="inline-link"> _loadData</a><span class="parameters">(</span>data) <span>Apply the query result to the content</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__markIncorrectWords" class="inline-link"> _markIncorrectWords</a><span class="parameters">(</span>html, cache) <span>Mark the incorrect words and set up menus if available</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__moveToBookmark" class="inline-link"> _moveToBookmark</a><span class="parameters">(</span>) <span>Move to the position when the cursor was.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__openDialog" class="inline-link"> _openDialog</a><span class="parameters">(</span>) <span>The handler of the onOpen event</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__populateDialog" class="inline-link"> _populateDialog</a><span class="parameters">(</span>index) <span>Populate the content of the dailog</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__query" class="inline-link"> _query</a><span class="parameters">(</span>html) <span>Send the query text to the service.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__replace" class="inline-link"> _replace</a><span class="parameters">(</span>) <span>Replace the incorrect word with the selected one,
 or the one the user types in the textbox</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__replaceAll" class="inline-link"> _replaceAll</a><span class="parameters">(</span>) <span>Replace all the words with the same text</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__replaceWord" class="inline-link"> _replaceWord</a><span class="parameters">(</span>index, text) <span>Replace the word at the given index with the text</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__selectWord" class="inline-link"> _selectWord</a><span class="parameters">(</span>index) <span>Select the incorrect word.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__replaceAll" class="inline-link"> _replaceAll</a><span class="parameters">(</span>) <span>Replace all the words with the same text</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__replaceWord" class="inline-link"> _replaceWord</a><span class="parameters">(</span>index, text) <span>Replace the word at the given index with the text</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__selectWord" class="inline-link"> _selectWord</a><span class="parameters">(</span>index) <span>Select the incorrect word.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
 button is updated appropriately.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__setNetwork" class="inline-link"> _setNetwork</a><span class="parameters">(</span>) <span>Set up the underlying network service</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skip" class="inline-link"> _skip</a><span class="parameters">(</span>evt, noUpdate) <span>Ignore this word and move to the next unignored one.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skipAll" class="inline-link"> _skipAll</a><span class="parameters">(</span>) <span>Ignore all the same words</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skipWord" class="inline-link"> _skipWord</a><span class="parameters">(</span>index) <span>Skip the word at the index</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skipWordAll" class="inline-link"> _skipWordAll</a><span class="parameters">(</span>index, word) <span>Skip the all the word that have the same text as the word at the index
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__setNetwork" class="inline-link"> _setNetwork</a><span class="parameters">(</span>) <span>Set up the underlying network service</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skip" class="inline-link"> _skip</a><span class="parameters">(</span>evt, noUpdate) <span>Ignore this word and move to the next unignored one.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skipAll" class="inline-link"> _skipAll</a><span class="parameters">(</span>) <span>Ignore all the same words</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skipWord" class="inline-link"> _skipWord</a><span class="parameters">(</span>index) <span>Skip the word at the index</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__skipWordAll" class="inline-link"> _skipWordAll</a><span class="parameters">(</span>index, word) <span>Skip the all the word that have the same text as the word at the index
 or the given word</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__SpellCheckControl" class="inline-link"> _SpellCheckControl</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__spellCheckFilter" class="inline-link"> _spellCheckFilter</a><span class="parameters">(</span>value) <span>Filter out the incorrect word style so that the value of the edtior
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__SpellCheckControl" class="inline-link"> _SpellCheckControl</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__spellCheckFilter" class="inline-link"> _spellCheckFilter</a><span class="parameters">(</span>value) <span>Filter out the incorrect word style so that the value of the edtior
 won&#39;t include the spans that wrap around the incorrect words</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__SpellCheckScriptMultiPart" class="inline-link"> _SpellCheckScriptMultiPart</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__submitContent" class="inline-link"> _submitContent</a><span class="parameters">(</span>delay) <span>Functions to submit the content of the editor</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__SpellCheckScriptMultiPart" class="inline-link"> _SpellCheckScriptMultiPart</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_editor_plugins_SpellCheck__submitContent" class="inline-link"> _submitContent</a><span class="parameters">(</span>delay) <span>Functions to submit the content of the editor</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
 that is added to the toolbar to control this plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Deprecated.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_SpellCheck_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Deprecated.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_SpellCheck_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_editor_plugins_SpellCheck_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Tell the plugin to add it&#39;s controller widget (often a button)
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_editor_plugins_SpellCheck_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Tell the plugin to add it&#39;s controller widget (often a button)
 to the toolbar.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Change state of the plugin to respond to events in the editor.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_editor_plugins_SpellCheck_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Change state of the plugin to respond to events in the editor.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1231,4 +1239,4 @@ characters next to the caret are bold or not.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/editor/plugins/SpellCheck" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/charting/plot2d/Indicator</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/charting/plot2d/Indicator" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/charting/plot2d/Indicator.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/plot2d/Indicator<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/charting/plot2d/CartesianBase" class="jsdoc-link">dojox/charting/plot2d/CartesianBase, </a><a href="/api/1.9/dojox/charting/plot2d/_PlotEvents" class="jsdoc-link">dojox/charting/plot2d/_PlotEvents</a>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>A &quot;faux&quot; plot that can be placed behind or above other plots to represent a line or multi-line
 threshold on the chart.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Indicator<span class="parameters">(chart,kwArgs);</span></div>
 </div>
@@ -37,119 +44,120 @@ threshold on the chart.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_baseParams" class="inline-link"> baseParams </a><span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_chart" class="inline-link"> chart </a><span>The parent chart for this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_defaultParams" class="inline-link"> defaultParams </a><span></span><span title="inherited from dojox/charting/plot2d/Indicator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_dirty" class="inline-link"> dirty </a><span>A flag indicating whether or not this element needs to be rendered.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_group" class="inline-link"> group </a><span>The visual GFX group representing this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_htmlElement" class="inline-link"> htmlElement </a><span>Any DOMNodes used as a part of this element (such as HTML-based labels).</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_htmlElements" class="inline-link"> htmlElements </a><span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_optionalParams" class="inline-link"> optionalParams </a><span></span><span title="inherited from dojox/charting/plot2d/Indicator" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__animateIndicator" class="inline-link"> _animateIndicator</a><span class="parameters">(</span>shape, vertical, offset, size, animate) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__connectEvents" class="inline-link"> _connectEvents</a><span class="parameters">(</span>o) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__connectSingleEvent" class="inline-link"> _connectSingleEvent</a><span class="parameters">(</span>o, eventName) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__getLabel" class="inline-link"> _getLabel</a><span class="parameters">(</span>number) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__plotFill" class="inline-link"> _plotFill</a><span class="parameters">(</span>fill, dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__pseudoRadialFill" class="inline-link"> _pseudoRadialFill</a><span class="parameters">(</span>fill, center, radius, start, end) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__reconnectEvents" class="inline-link"> _reconnectEvents</a><span class="parameters">(</span>seriesName) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__renderIndicator" class="inline-link"> _renderIndicator</a><span class="parameters">(</span>coord, index, hn, vn, min, max, events, animate) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__renderText" class="inline-link"> _renderText</a><span class="parameters">(</span>g, text, t, x, y, index, values, data) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__shapeFill" class="inline-link"> _shapeFill</a><span class="parameters">(</span>fill, bbox) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__updateIndicator" class="inline-link"> _updateIndicator</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>run) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_assignAxes" class="inline-link"> assignAxes</a><span class="parameters">(</span>axes) <span>From an array of axes pick the ones that correspond to this plot and
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_baseParams" class="inline-link"> baseParams </a><span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_chart" class="inline-link"> chart </a><span>The parent chart for this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_defaultParams" class="inline-link"> defaultParams </a><span></span><span title="inherited from dojox/charting/plot2d/Indicator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_dirty" class="inline-link"> dirty </a><span>A flag indicating whether or not this element needs to be rendered.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_group" class="inline-link"> group </a><span>The visual GFX group representing this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_htmlElement" class="inline-link"> htmlElement </a><span>Any DOMNodes used as a part of this element (such as HTML-based labels).</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_htmlElements" class="inline-link"> htmlElements </a><span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_plot2d_Indicator_optionalParams" class="inline-link"> optionalParams </a><span></span><span title="inherited from dojox/charting/plot2d/Indicator" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__animateIndicator" class="inline-link"> _animateIndicator</a><span class="parameters">(</span>shape, vertical, offset, size, animate) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__connectEvents" class="inline-link"> _connectEvents</a><span class="parameters">(</span>o) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__connectSingleEvent" class="inline-link"> _connectSingleEvent</a><span class="parameters">(</span>o, eventName) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__getLabel" class="inline-link"> _getLabel</a><span class="parameters">(</span>number) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__plotFill" class="inline-link"> _plotFill</a><span class="parameters">(</span>fill, dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__pseudoRadialFill" class="inline-link"> _pseudoRadialFill</a><span class="parameters">(</span>fill, center, radius, start, end) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__reconnectEvents" class="inline-link"> _reconnectEvents</a><span class="parameters">(</span>seriesName) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__renderIndicator" class="inline-link"> _renderIndicator</a><span class="parameters">(</span>coord, index, hn, vn, min, max, events, animate) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__renderText" class="inline-link"> _renderText</a><span class="parameters">(</span>g, text, t, x, y, index, values, data) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_plot2d_Indicator__shapeFill" class="inline-link"> _shapeFill</a><span class="parameters">(</span>fill, bbox) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_plot2d_Indicator__updateIndicator" class="inline-link"> _updateIndicator</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>run) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_assignAxes" class="inline-link"> assignAxes</a><span class="parameters">(</span>axes) <span>From an array of axes pick the ones that correspond to this plot and
 assign them to the plot using setAxis method.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_calculateAxes" class="inline-link"> calculateAxes</a><span class="parameters">(</span>dim) <span>Stub function for running the axis calculations (deprecated).</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_cleanGroup" class="inline-link"> cleanGroup</a><span class="parameters">(</span>creator, noClip) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_connect" class="inline-link"> connect</a><span class="parameters">(</span>object, method) <span>Helper function to connect any object&#39;s method to our plotEvent.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, kwArgs) <span>Create the faux Grid plot.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_createLabel" class="inline-link"> createLabel</a><span class="parameters">(</span>group, value, bbox, theme) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>API addition to conform to the rest of the Dojo Toolkit&#39;s standard.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_destroyHtmlElements" class="inline-link"> destroyHtmlElements</a><span class="parameters">(</span>) <span>Destroy any DOMNodes that may have been created as a part of this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_events" class="inline-link"> events</a><span class="parameters">(</span>) <span>Find out if any event handlers have been connected to our plotEvent.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_fireEvent" class="inline-link"> fireEvent</a><span class="parameters">(</span>seriesName, eventName, index, eventObject) <span>Emulates firing an event for a given data value (specified by
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_calculateAxes" class="inline-link"> calculateAxes</a><span class="parameters">(</span>dim) <span>Stub function for running the axis calculations (deprecated).</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_cleanGroup" class="inline-link"> cleanGroup</a><span class="parameters">(</span>creator, noClip) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_connect" class="inline-link"> connect</a><span class="parameters">(</span>object, method) <span>Helper function to connect any object&#39;s method to our plotEvent.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, kwArgs) <span>Create the faux Grid plot.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_createLabel" class="inline-link"> createLabel</a><span class="parameters">(</span>group, value, bbox, theme) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>API addition to conform to the rest of the Dojo Toolkit&#39;s standard.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_destroyHtmlElements" class="inline-link"> destroyHtmlElements</a><span class="parameters">(</span>) <span>Destroy any DOMNodes that may have been created as a part of this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_events" class="inline-link"> events</a><span class="parameters">(</span>) <span>Find out if any event handlers have been connected to our plotEvent.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_fireEvent" class="inline-link"> fireEvent</a><span class="parameters">(</span>seriesName, eventName, index, eventObject) <span>Emulates firing an event for a given data value (specified by
 an index) of a given series.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getGroup" class="inline-link"> getGroup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getRequiredColors" class="inline-link"> getRequiredColors</a><span class="parameters">(</span>) <span>Get how many data series we have, so we know how many colors to use.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_getSeriesStats" class="inline-link"> getSeriesStats</a><span class="parameters">(</span>) <span>Returns default stats (irrelevant for this type of plot).</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getTextWidth" class="inline-link"> getTextWidth</a><span class="parameters">(</span>s, font) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getTextWithLimitCharCount" class="inline-link"> getTextWithLimitCharCount</a><span class="parameters">(</span>s, font, wcLimit, truncated) <span>Get the truncated string based on the limited character count(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getTextWithLimitLength" class="inline-link"> getTextWithLimitLength</a><span class="parameters">(</span>s, font, limitWidth, truncated) <span>Get the truncated string based on the limited width in px(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_initializeScalers" class="inline-link"> initializeScalers</a><span class="parameters">(</span>dim, stats) <span>Initializes scalers using attached axes.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_isDataDirty" class="inline-link"> isDataDirty</a><span class="parameters">(</span>) <span>Returns whether or not any of this plot&#39;s data series need to be rendered.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>) <span>Returns whether or not this plot needs to be rendered.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_performZoom" class="inline-link"> performZoom</a><span class="parameters">(</span>dim, offsets) <span>Create/alter any zooming windows on this plot.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_plotEvent" class="inline-link"> plotEvent</a><span class="parameters">(</span>o) <span>Stub function for use by specific plots.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_purgeGroup" class="inline-link"> purgeGroup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_raiseEvent" class="inline-link"> raiseEvent</a><span class="parameters">(</span>o) <span>Raises events in predefined order</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_render" class="inline-link"> render</a><span class="parameters">(</span>dim, offsets) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_renderLabel" class="inline-link"> renderLabel</a><span class="parameters">(</span>group, x, y, label, theme, block, align) <span></span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_resetEvents" class="inline-link"> resetEvents</a><span class="parameters">(</span>) <span>Reset all events attached to our plotEvent (i.e. disconnect).</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_setAxis" class="inline-link"> setAxis</a><span class="parameters">(</span>axis) <span>Set an axis for this plot.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_toData" class="inline-link"> toData</a><span class="parameters">(</span>coord) <span>Compute plot axis data coordinates from page coordinates.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_toPage" class="inline-link"> toPage</a><span class="parameters">(</span>coord) <span>Compute page coordinates from plot axis data coordinates.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getGroup" class="inline-link"> getGroup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getRequiredColors" class="inline-link"> getRequiredColors</a><span class="parameters">(</span>) <span>Get how many data series we have, so we know how many colors to use.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_getSeriesStats" class="inline-link"> getSeriesStats</a><span class="parameters">(</span>) <span>Returns default stats (irrelevant for this type of plot).</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getTextWidth" class="inline-link"> getTextWidth</a><span class="parameters">(</span>s, font) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getTextWithLimitCharCount" class="inline-link"> getTextWithLimitCharCount</a><span class="parameters">(</span>s, font, wcLimit, truncated) <span>Get the truncated string based on the limited character count(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_getTextWithLimitLength" class="inline-link"> getTextWithLimitLength</a><span class="parameters">(</span>s, font, limitWidth, truncated) <span>Get the truncated string based on the limited width in px(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_initializeScalers" class="inline-link"> initializeScalers</a><span class="parameters">(</span>dim, stats) <span>Initializes scalers using attached axes.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_isDataDirty" class="inline-link"> isDataDirty</a><span class="parameters">(</span>) <span>Returns whether or not any of this plot&#39;s data series need to be rendered.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>) <span>Returns whether or not this plot needs to be rendered.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_performZoom" class="inline-link"> performZoom</a><span class="parameters">(</span>dim, offsets) <span>Create/alter any zooming windows on this plot.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_plotEvent" class="inline-link"> plotEvent</a><span class="parameters">(</span>o) <span>Stub function for use by specific plots.</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_purgeGroup" class="inline-link"> purgeGroup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_raiseEvent" class="inline-link"> raiseEvent</a><span class="parameters">(</span>o) <span>Raises events in predefined order</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_plot2d_Indicator_render" class="inline-link"> render</a><span class="parameters">(</span>dim, offsets) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_renderLabel" class="inline-link"> renderLabel</a><span class="parameters">(</span>group, x, y, label, theme, block, align) <span></span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_resetEvents" class="inline-link"> resetEvents</a><span class="parameters">(</span>) <span>Reset all events attached to our plotEvent (i.e. disconnect).</span><span title="inherited from dojox/charting/plot2d/_PlotEvents" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_setAxis" class="inline-link"> setAxis</a><span class="parameters">(</span>axis) <span>Set an axis for this plot.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_toData" class="inline-link"> toData</a><span class="parameters">(</span>coord) <span>Compute plot axis data coordinates from page coordinates.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_plot2d_Indicator_toPage" class="inline-link"> toPage</a><span class="parameters">(</span>coord) <span>Compute page coordinates from plot axis data coordinates.</span><span title="inherited from dojox/charting/plot2d/CartesianBase" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1332,4 +1340,4 @@ If not provided return the transform method instead of the result of the transfo
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/charting/plot2d/Indicator" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/socket</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/socket" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/socket.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojox/socket<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Provides a simple socket connection using WebSocket, or alternate
 communication mechanisms in legacy browsers for comet-style communication. This is based
@@ -25,12 +32,11 @@ work with WebSockets (it can still be host relative, like //other-site.org/endpo
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.socket&quot;);
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>dojo.require(&quot;dojox.socket&quot;);
 var socket = dojox.socket({&quot;url://comet-server/comet&quot;);
 // we could also add auto-reconnect support
 // now we can connect to standard HTML5 WebSocket-style events
@@ -53,23 +59,25 @@ var socket = dojox.socket({url:&quot;/comet&quot;});
 // add auto-reconnect support
 socket = dojox.socket.Reconnect(socket);</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_socket_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>argsOrUrl) <span>Provides a simple socket connection using WebSocket, or alternate
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_socket_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>argsOrUrl) <span>Provides a simple socket connection using WebSocket, or alternate
 communication mechanisms in legacy browsers for comet-style communication.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_socket_LongPoll" class="inline-link"> LongPoll</a><span class="parameters">(</span>args) <span>Provides a simple long-poll based comet-style socket/connection to a server and returns an
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_socket_LongPoll" class="inline-link"> LongPoll</a><span class="parameters">(</span>args) <span>Provides a simple long-poll based comet-style socket/connection to a server and returns an
 object implementing the WebSocket interface:
 http://dev.w3.org/html5/websockets/#websocket</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_socket_replace" class="inline-link"> replace</a><span class="parameters">(</span>socket, newSocket, listenForOpen) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_socket_WebSocket" class="inline-link"> WebSocket</a><span class="parameters">(</span>args, fallback) <span>A wrapper for WebSocket, than handles standard args and relative URLs</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_socket_replace" class="inline-link"> replace</a><span class="parameters">(</span>socket, newSocket, listenForOpen) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_socket_WebSocket" class="inline-link"> WebSocket</a><span class="parameters">(</span>args, fallback) <span>A wrapper for WebSocket, than handles standard args and relative URLs</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -246,4 +254,4 @@ var socket = dojox.socket({url:&quot;/comet&quot;});</code></pre>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/socket" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

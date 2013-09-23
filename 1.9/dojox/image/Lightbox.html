@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/image/Lightbox</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/image/Lightbox" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/image/Lightbox.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/image/Lightbox<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A dojo-based Lightbox implementation.</p>
 </div>
@@ -19,77 +26,78 @@ images with multiple entry points, all using a single &quot;master&quot; Dialog 
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/image/Lightbox.html" target="_blank">dojox/image/Lightbox reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;a href=&quot;image1.jpg&quot; dojoType=&quot;dojox.image.Lightbox&quot;&gt;show lightbox&lt;/a&gt;</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;a href=&quot;image1.jpg&quot; dojoType=&quot;dojox.image.Lightbox&quot;&gt;show lightbox&lt;/a&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>&lt;a href=&quot;image2.jpg&quot; dojoType=&quot;dojox.image.Lightbox&quot; group=&quot;one&quot;&gt;show group lightbox&lt;/a&gt;
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>&lt;a href=&quot;image2.jpg&quot; dojoType=&quot;dojox.image.Lightbox&quot; group=&quot;one&quot;&gt;show group lightbox&lt;/a&gt;
 &lt;a href=&quot;image3.jpg&quot; dojoType=&quot;dojox.image.Lightbox&quot; group=&quot;one&quot;&gt;show group lightbox&lt;/a&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><pre><code>not implemented fully yet, though works with basic datastore access. need to manually call
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><pre><code>not implemented fully yet, though works with basic datastore access. need to manually call
 widget._attachedDialog.addImage(item,&quot;fromStore&quot;) for each item in a store result set.
 &lt;div dojoType=&quot;dojox.image.Lightbox&quot; group=&quot;fromStore&quot; store=&quot;storeName&quot;&gt;&lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_9dojox_image_Lightbox__allowPassthru" class="inline-link"> _allowPassthru </a><span>Privately set this to disable/enable natural link of anchor tags</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_image_Lightbox__attachedDialog" class="inline-link"> _attachedDialog </a><span>The pointer to the global lightbox dialog for this widget</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_image_Lightbox_duration" class="inline-link"> duration </a><span>Generic time in MS to adjust the feel of widget. could possibly add various
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_9dojox_image_Lightbox__allowPassthru" class="inline-link"> _allowPassthru </a><span>Privately set this to disable/enable natural link of anchor tags</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_image_Lightbox__attachedDialog" class="inline-link"> _attachedDialog </a><span>The pointer to the global lightbox dialog for this widget</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_image_Lightbox_duration" class="inline-link"> duration </a><span>Generic time in MS to adjust the feel of widget. could possibly add various
 durations for the various actions (dialog fadein, sizeing, img fadein ...)</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_image_Lightbox_group" class="inline-link"> group </a><span>Grouping images in a page with similar tags will provide a &#39;slideshow&#39; like grouping of images</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_image_Lightbox_href" class="inline-link"> href </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_image_Lightbox_modal" class="inline-link"> modal </a><span>If true, this Dialog instance will be truly modal and prevent closing until
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_image_Lightbox_group" class="inline-link"> group </a><span>Grouping images in a page with similar tags will provide a &#39;slideshow&#39; like grouping of images</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_image_Lightbox_href" class="inline-link"> href </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_image_Lightbox_modal" class="inline-link"> modal </a><span>If true, this Dialog instance will be truly modal and prevent closing until
 explicitly told to by calling hide() or clicking the (x) - Defaults to false
 to preserve previous behaviors. (aka: enable click-to-close on the underlay)</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_image_Lightbox_title" class="inline-link"> title </a><span>A string of text to be shown in the Lightbox beneath the image (empty if using a store)</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_image_Lightbox__addSelf" class="inline-link"> _addSelf</a><span class="parameters">(</span>) <span>Add this instance to the master LightBoxDialog</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_Lightbox__handleClick" class="inline-link"> _handleClick</a><span class="parameters">(</span>e) <span>Handle the click on the link</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_disable" class="inline-link"> disable</a><span class="parameters">(</span>) <span>Disables event clobbering and dialog, and follows natural link</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_enable" class="inline-link"> enable</a><span class="parameters">(</span>) <span>Enables the dialog (prevents default link)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hide the Lightbox currently showing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_LightboxDialog" class="inline-link"> LightboxDialog</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_show" class="inline-link"> show</a><span class="parameters">(</span>) <span>Show the Lightbox with this instance as the starting point</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>) <span>Stub fired when the image in the lightbox is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_image_Lightbox_title" class="inline-link"> title </a><span>A string of text to be shown in the Lightbox beneath the image (empty if using a store)</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_image_Lightbox__addSelf" class="inline-link"> _addSelf</a><span class="parameters">(</span>) <span>Add this instance to the master LightBoxDialog</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_Lightbox__handleClick" class="inline-link"> _handleClick</a><span class="parameters">(</span>e) <span>Handle the click on the link</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_disable" class="inline-link"> disable</a><span class="parameters">(</span>) <span>Disables event clobbering and dialog, and follows natural link</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_enable" class="inline-link"> enable</a><span class="parameters">(</span>) <span>Enables the dialog (prevents default link)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hide the Lightbox currently showing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_LightboxDialog" class="inline-link"> LightboxDialog</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_show" class="inline-link"> show</a><span class="parameters">(</span>) <span>Show the Lightbox with this instance as the starting point</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_image_Lightbox_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>) <span>Stub fired when the image in the lightbox is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -249,4 +257,4 @@ to preserve previous behaviors. (aka: enable click-to-close on the underlay)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/image/Lightbox" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

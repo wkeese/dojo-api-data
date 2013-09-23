@@ -1,27 +1,40 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/declare.__DeclareCreatedObject</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/declare.__DeclareCreatedObject" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/declare.__DeclareCreatedObject.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/_base/declare.__DeclareCreatedObject<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p><a class="jsdoc-link" href="/api/1.8/dojo/_base/declare">dojo/_base/declare()</a> returns a constructor <code>C</code>.   <code>new C()</code> returns an Object with the following
 methods, in addition to the methods and properties specified via the arguments passed to declare().</p>
 </div>
+<p>
+  <strong>Note:</strong> This is not a real constructor, but just a description of the type of object that should be passed as
+  a parameter to some method(s), and/or the return value from some method(s).
+  In other words, the type exists only for documentation purposes, and you <strong>cannot</strong> call <code>new declare.__DeclareCreatedObject()</code>
+</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_extend" class="inline-link"> extend</a><span class="parameters">(</span>source) <span>Adds all properties and methods of source to constructor&#39;s
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_extend" class="inline-link"> extend</a><span class="parameters">(</span>source) <span>Adds all properties and methods of source to constructor&#39;s
 prototype, making them available to all instances created with
 constructor.</span><span title="inherited from dojo/_base/declare" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_getInherited" class="inline-link"> getInherited</a><span class="parameters">(</span>name, args) <span>Returns a super method.</span><span title="inherited from dojo/_base/declare" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_inherited" class="inline-link"> inherited</a><span class="parameters">(</span>name, args, newArgs) <span>Calls a super method.</span><span title="inherited from dojo/_base/declare" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_isInstanceOf" class="inline-link"> isInstanceOf</a><span class="parameters">(</span>cls) <span>Checks the inheritance chain to see if it is inherited from this
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_getInherited" class="inline-link"> getInherited</a><span class="parameters">(</span>name, args) <span>Returns a super method.</span><span title="inherited from dojo/_base/declare" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_inherited" class="inline-link"> inherited</a><span class="parameters">(</span>name, args, newArgs) <span>Calls a super method.</span><span title="inherited from dojo/_base/declare" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo__base_declare___DeclareCreatedObject_isInstanceOf" class="inline-link"> isInstanceOf</a><span class="parameters">(</span>cls) <span>Checks the inheritance chain to see if it is inherited from this
 class.</span><span title="inherited from dojo/_base/declare" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -65,16 +78,16 @@ constructor&#39;s prototype.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var A = declare(null, {
+            <h3>Example 1</h3><pre><code>var A = declare(null, {
     m1: function(){},
     s1: &quot;Popokatepetl&quot;
-  });
-  A.extend({
+});
+A.extend({
     m1: function(){},
     m2: function(){},
     f1: true,
     d1: 42
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -118,21 +131,22 @@ declare(), and it cannot be determined.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">Returns a super method (Function) or "undefined".</div>
+        <div class="jsdoc-return-description"><p>Returns a super method (Function) or &quot;undefined&quot;.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var B = declare(A, {
+            <h3>Example 1</h3><pre><code>var B = declare(A, {
     method: function(a, b){
-      var super = this.getInherited(arguments);
-      // ...
-      if(!super){
-        console.log(&quot;there is no super method&quot;);
-        return 0;
-      }
-      return super.apply(this, arguments);
+        var super = this.getInherited(arguments);
+        // ...
+        if(!super){
+            console.log(&quot;there is no super method&quot;);
+            return 0;
+        }
+        return super.apply(this, arguments);
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -211,39 +225,40 @@ If Array, it will be used to call a super method. Otherwise
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">Whatever is returned by a super method, or a super method itself,
-if "true" was specified as newArgs.</div>
+        <div class="jsdoc-return-description"><p>Whatever is returned by a super method, or a super method itself,
+if &quot;true&quot; was specified as newArgs.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var B = declare(A, {
+            <h3>Example 1</h3><pre><code>var B = declare(A, {
     method1: function(a, b, c){
-      this.inherited(arguments);
+        this.inherited(arguments);
     },
     method2: function(a, b){
-      return this.inherited(arguments, [a + b]);
+        return this.inherited(arguments, [a + b]);
     }
-  });
-  // next method is not in the chain list because it is added
-  // manually after the class was created.
-  B.prototype.method3 = function(){
+});
+// next method is not in the chain list because it is added
+// manually after the class was created.
+B.prototype.method3 = function(){
     console.log(&quot;This is a dynamically-added method.&quot;);
     this.inherited(&quot;method3&quot;, arguments);
-  };</code></pre>
+};</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>  var B = declare(A, {
+            <h3>Example 2</h3><pre><code>var B = declare(A, {
     method: function(a, b){
-      var super = this.inherited(arguments, true);
-      // ...
-      if(!super){
-        console.log(&quot;there is no super method&quot;);
-        return 0;
-      }
-      return super.apply(this, arguments);
+        var super = this.inherited(arguments, true);
+        // ...
+        if(!super){
+            console.log(&quot;there is no super method&quot;);
+            return 0;
+        }
+        return super.apply(this, arguments);
     }
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -276,53 +291,54 @@ not. It models &quot;instanceof&quot; operator.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">"true", if this object is inherited from this class, "false"
-otherwise.</div>
+        <div class="jsdoc-return-description"><p>&quot;true&quot;, if this object is inherited from this class, &quot;false&quot;
+otherwise.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var A = declare(null, {
+            <h3>Example 1</h3><pre><code>var A = declare(null, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var B = declare(null, {
+});
+var B = declare(null, {
     // constructor, properties, and methods go here
     // ...
-  });
-  var C = declare([A, B], {
+});
+var C = declare([A, B], {
     // constructor, properties, and methods go here
     // ...
-  });
-  var D = declare(A, {
+});
+var D = declare(A, {
     // constructor, properties, and methods go here
     // ...
-  });
+});
 
-  var a = new A(), b = new B(), c = new C(), d = new D();
+var a = new A(), b = new B(), c = new C(), d = new D();
 
-  console.log(a.isInstanceOf(A)); // true
-  console.log(b.isInstanceOf(A)); // false
-  console.log(c.isInstanceOf(A)); // true
-  console.log(d.isInstanceOf(A)); // true
+console.log(a.isInstanceOf(A)); // true
+console.log(b.isInstanceOf(A)); // false
+console.log(c.isInstanceOf(A)); // true
+console.log(d.isInstanceOf(A)); // true
 
-  console.log(a.isInstanceOf(B)); // false
-  console.log(b.isInstanceOf(B)); // true
-  console.log(c.isInstanceOf(B)); // true
-  console.log(d.isInstanceOf(B)); // false
+console.log(a.isInstanceOf(B)); // false
+console.log(b.isInstanceOf(B)); // true
+console.log(c.isInstanceOf(B)); // true
+console.log(d.isInstanceOf(B)); // false
 
-  console.log(a.isInstanceOf(C)); // false
-  console.log(b.isInstanceOf(C)); // false
-  console.log(c.isInstanceOf(C)); // true
-  console.log(d.isInstanceOf(C)); // false
+console.log(a.isInstanceOf(C)); // false
+console.log(b.isInstanceOf(C)); // false
+console.log(c.isInstanceOf(C)); // true
+console.log(d.isInstanceOf(C)); // false
 
-  console.log(a.isInstanceOf(D)); // false
-  console.log(b.isInstanceOf(D)); // false
-  console.log(c.isInstanceOf(D)); // false
-  console.log(d.isInstanceOf(D)); // true</code></pre>
+console.log(a.isInstanceOf(D)); // false
+console.log(b.isInstanceOf(D)); // false
+console.log(c.isInstanceOf(D)); // false
+console.log(d.isInstanceOf(D)); // true</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/declare.__DeclareCreatedObject" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

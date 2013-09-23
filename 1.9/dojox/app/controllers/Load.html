@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/app/controllers/Load</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/app/controllers/Load" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/app/controllers/Load.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/app/controllers/Load<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/app/Controller" class="jsdoc-link">dojox/app/Controller</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Load<span class="parameters">(app,events);</span></div>
 </div>
@@ -34,39 +41,40 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon private"><a href="#1_9dojox_app_controllers_Load__waitingQueue" class="inline-link"> _waitingQueue </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Load_bind" class="inline-link"> bind</a><span class="parameters">(</span>evented, event, handler) <span>Bind event on dojo/Evented instance, document, domNode or window.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>app, events) <span>bind &quot;app-load&quot; event on application instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_createChild" class="inline-link"> createChild</a><span class="parameters">(</span>parent, childId, subIds, params) <span>Create a view instance if not already loaded by calling createView.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_createView" class="inline-link"> createView</a><span class="parameters">(</span>parent, id, name, mixin, params, type) <span>Create a dojox/app/View instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_init" class="inline-link"> init</a><span class="parameters">(</span>event) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_load" class="inline-link"> load</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;loadArray&quot; event.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_loadChild" class="inline-link"> loadChild</a><span class="parameters">(</span>parent, childId, subIds, params) <span>Load child and sub children views recursively.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_loadView" class="inline-link"> loadView</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-load&quot; event.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_proceedLoadView" class="inline-link"> proceedLoadView</a><span class="parameters">(</span>loadEvt) <span>Proceed load queue by FIFO by default.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Load_unbind" class="inline-link"> unbind</a><span class="parameters">(</span>evented, event) <span>remove a binded event signal.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon private"><a href="#1_9dojox_app_controllers_Load__waitingQueue" class="inline-link"> _waitingQueue </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Load_bind" class="inline-link"> bind</a><span class="parameters">(</span>evented, event, handler) <span>Bind event on dojo/Evented instance, document, domNode or window.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>app, events) <span>bind &quot;app-load&quot; event on application instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_createChild" class="inline-link"> createChild</a><span class="parameters">(</span>parent, childId, subIds, params) <span>Create a view instance if not already loaded by calling createView.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_createView" class="inline-link"> createView</a><span class="parameters">(</span>parent, id, name, mixin, params, type) <span>Create a dojox/app/View instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_init" class="inline-link"> init</a><span class="parameters">(</span>event) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_load" class="inline-link"> load</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;loadArray&quot; event.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_loadChild" class="inline-link"> loadChild</a><span class="parameters">(</span>parent, childId, subIds, params) <span>Load child and sub children views recursively.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_loadView" class="inline-link"> loadView</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-load&quot; event.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_app_controllers_Load_proceedLoadView" class="inline-link"> proceedLoadView</a><span class="parameters">(</span>loadEvt) <span>Proceed load queue by FIFO by default.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_app_controllers_Load_unbind" class="inline-link"> unbind</a><span class="parameters">(</span>evented, event) <span>remove a binded event signal.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -467,4 +475,4 @@ If load is in proceeding, add the next load to waiting queue.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/app/controllers/Load" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

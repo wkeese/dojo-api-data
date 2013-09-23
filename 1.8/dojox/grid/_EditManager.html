@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/_EditManager</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/_EditManager" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/_EditManager.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/_EditManager<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Controls grid cell editing process. Owned by grid and used internally for editing.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _EditManager<span class="parameters">(inGrid);</span></div>
 </div>
@@ -23,73 +30,74 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_8dojox_grid__EditManager__boomerangWindow" class="inline-link"> _boomerangWindow </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_grid__EditManager_info" class="inline-link"> info </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__boomerangFocus" class="inline-link"> _boomerangFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__doCatchBoomerang" class="inline-link"> _doCatchBoomerang</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__editorDo" class="inline-link"> _editorDo</a><span class="parameters">(</span>inMethod) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__focusEditor" class="inline-link"> _focusEditor</a><span class="parameters">(</span>inCell, inRowIndex) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__isValidInput" class="inline-link"> _isValidInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__shouldCatchBoomerang" class="inline-link"> _shouldCatchBoomerang</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_apply" class="inline-link"> apply</a><span class="parameters">(</span>) <span>Apply a grid edit</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_applyCellEdit" class="inline-link"> applyCellEdit</a><span class="parameters">(</span>inValue, inCell, inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_applyRowEdit" class="inline-link"> applyRowEdit</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>) <span>Cancel a grid edit</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_cellFocus" class="inline-link"> cellFocus</a><span class="parameters">(</span>inCell, inRowIndex) <span>Invoke editing when cell is focused</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_dispatchEvent" class="inline-link"> dispatchEvent</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_editorApply" class="inline-link"> editorApply</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_editorCancel" class="inline-link"> editorCancel</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_focusEditor" class="inline-link"> focusEditor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_isEditCell" class="inline-link"> isEditCell</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>Indicates if the given cell is being edited.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_isEditing" class="inline-link"> isEditing</a><span class="parameters">(</span>) <span>Indicates editing state of the grid.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_isEditRow" class="inline-link"> isEditRow</a><span class="parameters">(</span>inRowIndex) <span>Indicates if the given row is being edited.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_restore" class="inline-link"> restore</a><span class="parameters">(</span>inView, inRowIndex) <span>Restores the grid editing state</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_rowClick" class="inline-link"> rowClick</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_save" class="inline-link"> save</a><span class="parameters">(</span>inRowIndex, inView) <span>Save the grid editing state</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_setEditCell" class="inline-link"> setEditCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>Set the given cell to be edited</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_start" class="inline-link"> start</a><span class="parameters">(</span>inCell, inRowIndex, inEditing) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_8dojox_grid__EditManager__boomerangWindow" class="inline-link"> _boomerangWindow </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_grid__EditManager_info" class="inline-link"> info </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__boomerangFocus" class="inline-link"> _boomerangFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__doCatchBoomerang" class="inline-link"> _doCatchBoomerang</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__editorDo" class="inline-link"> _editorDo</a><span class="parameters">(</span>inMethod) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__focusEditor" class="inline-link"> _focusEditor</a><span class="parameters">(</span>inCell, inRowIndex) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__isValidInput" class="inline-link"> _isValidInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid__EditManager__shouldCatchBoomerang" class="inline-link"> _shouldCatchBoomerang</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_apply" class="inline-link"> apply</a><span class="parameters">(</span>) <span>Apply a grid edit</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_applyCellEdit" class="inline-link"> applyCellEdit</a><span class="parameters">(</span>inValue, inCell, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_applyRowEdit" class="inline-link"> applyRowEdit</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>) <span>Cancel a grid edit</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_cellFocus" class="inline-link"> cellFocus</a><span class="parameters">(</span>inCell, inRowIndex) <span>Invoke editing when cell is focused</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_dispatchEvent" class="inline-link"> dispatchEvent</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_editorApply" class="inline-link"> editorApply</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_editorCancel" class="inline-link"> editorCancel</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_focusEditor" class="inline-link"> focusEditor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_isEditCell" class="inline-link"> isEditCell</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>Indicates if the given cell is being edited.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_isEditing" class="inline-link"> isEditing</a><span class="parameters">(</span>) <span>Indicates editing state of the grid.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_isEditRow" class="inline-link"> isEditRow</a><span class="parameters">(</span>inRowIndex) <span>Indicates if the given row is being edited.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_restore" class="inline-link"> restore</a><span class="parameters">(</span>inView, inRowIndex) <span>Restores the grid editing state</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_rowClick" class="inline-link"> rowClick</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_save" class="inline-link"> save</a><span class="parameters">(</span>inRowIndex, inView) <span>Save the grid editing state</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_setEditCell" class="inline-link"> setEditCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>Set the given cell to be edited</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_start" class="inline-link"> start</a><span class="parameters">(</span>inCell, inRowIndex, inEditing) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid__EditManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -569,4 +577,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/_EditManager" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

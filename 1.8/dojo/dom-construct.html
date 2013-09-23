@@ -1,26 +1,34 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dom-construct</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dom-construct" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dom-construct.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/dom-construct<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <p>See the <a href="/reference-guide/1.8/dojo/dom-construct.html" target="_blank">dojo/dom-construct reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_dom-construct_create" class="inline-link"> create</a><span class="parameters">(</span>tag, attrs, refNode, pos) <span>Create an element, allowing for optional attribute decoration
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_dom-construct_create" class="inline-link"> create</a><span class="parameters">(</span>tag, attrs, refNode, pos) <span>Create an element, allowing for optional attribute decoration
 and placement.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-construct_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>node) <span>Removes a node from its parent, clobbering it and all of its
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-construct_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>node) <span>Removes a node from its parent, clobbering it and all of its
 children.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-construct_empty" class="inline-link"> empty</a><span class="parameters">(</span>node) <span>safely removes all children of the node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-construct_place" class="inline-link"> place</a><span class="parameters">(</span>node, refNode, position) <span>Attempt to insert node into the DOM, choosing from various positioning options.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_dom-construct_toDom" class="inline-link"> toDom</a><span class="parameters">(</span>frag, doc) <span>instantiates an HTML fragment returning the corresponding DOM.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-construct_empty" class="inline-link"> empty</a><span class="parameters">(</span>node) <span>safely removes all children of the node.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-construct_place" class="inline-link"> place</a><span class="parameters">(</span>node, refNode, position) <span>Attempt to insert node into the DOM, choosing from various positioning options.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dom-construct_toDom" class="inline-link"> toDom</a><span class="parameters">(</span>frag, doc) <span>instantiates an HTML fragment returning the corresponding DOM.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -95,43 +103,50 @@ to further control the placement of the new node relative to the refNode.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Create a DIV:</p>
-<pre><code>  var n = dojo.create(&quot;div&quot;);</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Create a DIV:
+
+</p>
+<pre><code>var n = dojo.create(&quot;div&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Create a DIV with content:</p>
-<pre><code>  var n = dojo.create(&quot;div&quot;, { innerHTML:&quot;&lt;p&gt;hi&lt;/p&gt;&quot; });</code></pre>
-<p></p>
+            <h3>Example 2</h3><p>Create a DIV with content:
+
+</p>
+<pre><code>var n = dojo.create(&quot;div&quot;, { innerHTML:&quot;&lt;p&gt;hi&lt;/p&gt;&quot; });</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Place a new DIV in the BODY, with no attributes set</p>
-<pre><code>  var n = dojo.create(&quot;div&quot;, null, dojo.body());</code></pre>
-<p></p>
+            <h3>Example 3</h3><p>Place a new DIV in the BODY, with no attributes set
+
+</p>
+<pre><code>var n = dojo.create(&quot;div&quot;, null, dojo.body());</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>Create an UL, and populate it with LI&#39;s. Place the list as the first-child of a
-node with id=&quot;someId&quot;:</p>
-<pre><code>  var ul = dojo.create(&quot;ul&quot;, null, &quot;someId&quot;, &quot;first&quot;);
-  var items = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
-  dojo.forEach(items, function(data){
+node with id=&quot;someId&quot;:
+
+</p>
+<pre><code>var ul = dojo.create(&quot;ul&quot;, null, &quot;someId&quot;, &quot;first&quot;);
+var items = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
+dojo.forEach(items, function(data){
     dojo.create(&quot;li&quot;, { innerHTML: data }, ul);
-  });</code></pre>
-<p></p>
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>Create an anchor, with an href. Place in BODY:</p>
-<pre><code>  dojo.create(&quot;a&quot;, { href:&quot;foo.html&quot;, title:&quot;Goto FOO!&quot; }, dojo.body());</code></pre>
-<p></p>
+            <h3>Example 5</h3><p>Create an anchor, with an href. Place in BODY:
+
+</p>
+<pre><code>dojo.create(&quot;a&quot;, { href:&quot;foo.html&quot;, title:&quot;Goto FOO!&quot; }, dojo.body());</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Create a <code>dojo/NodeList()</code> from a new element (for syntactic sugar):</p>
-<pre><code>  dojo.query(dojo.create(&#39;div&#39;))
+            <h3>Example 6</h3><p>Create a <code>dojo/NodeList()</code> from a new element (for syntactic sugar):
+
+</p>
+<pre><code>dojo.query(dojo.create(&#39;div&#39;))
     .addClass(&quot;newDiv&quot;)
     .onclick(function(e){ console.log(&#39;clicked&#39;, e.target) })
     .place(&quot;#someNode&quot;); // redundant, but cleaner.</code></pre>
@@ -170,14 +185,17 @@ children. Function only works with DomNodes, and returns nothing.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Destroy a node byId:</p>
-<pre><code>  dojo.destroy(&quot;someId&quot;);</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Destroy a node byId:
+
+</p>
+<pre><code>dojo.destroy(&quot;someId&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Destroy all nodes in a list by reference:</p>
-<pre><code>  dojo.query(&quot;.someNode&quot;).forEach(dojo.destroy);</code></pre>
+            <h3>Example 2</h3><p>Destroy all nodes in a list by reference:
+
+</p>
+<pre><code>dojo.query(&quot;.someNode&quot;).forEach(dojo.destroy);</code></pre>
 
           </div>
         </div>
@@ -206,14 +224,17 @@ children. Function only works with DomNodes, and returns nothing.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Destroy node&#39;s children byId:</p>
-<pre><code>  dojo.empty(&quot;someId&quot;);</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>Destroy node&#39;s children byId:
+
+</p>
+<pre><code>dojo.empty(&quot;someId&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Destroy all nodes&#39; children in a list by reference:</p>
-<pre><code>  dojo.query(&quot;.someNode&quot;).forEach(dojo.empty);</code></pre>
+            <h3>Example 2</h3><p>Destroy all nodes&#39; children in a list by reference:
+
+</p>
+<pre><code>dojo.query(&quot;.someNode&quot;).forEach(dojo.empty);</code></pre>
 
           </div>
         </div>
@@ -270,29 +291,39 @@ Accepted string values are:
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">DOMNode | undefined</span></div>
-        <div class="jsdoc-return-description">Returned values is the first argument resolved to a DOM node.
+        <div class="jsdoc-return-description"><p>Returned values is the first argument resolved to a DOM node.
 
-.place() is also a method of `dojo/NodeList`, allowing `dojo.query` node lookups.</div>
+</p>
+<p>.place() is also a method of <code>dojo/NodeList</code>, allowing <code>dojo.query</code> node lookups.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Place a node by string id as the last child of another node by string id:</p>
-<pre><code>  dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;);</code></pre>
+            <h3>Example 1</h3><p>Place a node by string id as the last child of another node by string id:
+
+</p>
+<pre><code>dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Place a node by string id before another node by string id</p>
-<pre><code>  dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;, &quot;before&quot;);</code></pre>
+            <h3>Example 2</h3><p>Place a node by string id before another node by string id
+
+</p>
+<pre><code>dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;, &quot;before&quot;);</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Create a Node, and place it in the body element (last child):</p>
-<pre><code>  dojo.place(&quot;&lt;div&gt;&lt;/div&gt;&quot;, dojo.body());</code></pre>
+            <h3>Example 3</h3><p>Create a Node, and place it in the body element (last child):
+
+</p>
+<pre><code>dojo.place(&quot;&lt;div&gt;&lt;/div&gt;&quot;, dojo.body());</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 4</h3><p>Put a new LI as the first child of a list by id:</p>
-<pre><code>  dojo.place(&quot;&lt;li&gt;&lt;/li&gt;&quot;, &quot;someUl&quot;, &quot;first&quot;);</code></pre>
+            <h3>Example 4</h3><p>Put a new LI as the first child of a list by id:
+
+</p>
+<pre><code>dojo.place(&quot;&lt;li&gt;&lt;/li&gt;&quot;, &quot;someUl&quot;, &quot;first&quot;);</code></pre>
 
           </div>
         </div>
@@ -328,16 +359,19 @@ dojo.doc if not specified.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Document fragment, unless it's a single node in which case it returns the node itself</div>
+        <div class="jsdoc-return-description"><p>Document fragment, unless it&#39;s a single node in which case it returns the node itself</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Create a table row:</p>
-<pre><code>  var tr = dojo.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);</code></pre>
+            <h3>Example 1</h3><p>Create a table row:
+
+</p>
+<pre><code>var tr = dojo.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dom-construct" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

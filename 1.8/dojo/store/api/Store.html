@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/api/Store</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/store/api/Store" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/api/Store.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/store/api/Store<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This is an abstract API that data provider implementations conform to.
 This file defines methods signatures and intentionally leaves all the
@@ -12,51 +19,52 @@ execution of the operation is asynchronous (except
 for query() which already defines an async return value).</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dojo_store_api_Store_idProperty" class="inline-link"> idProperty </a><span>If the store has a single primary key, this indicates the property to use as the
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dojo_store_api_Store_idProperty" class="inline-link"> idProperty </a><span>If the store has a single primary key, this indicates the property to use as the
 identity property.</span>
-    </li>
-    <li class="functionIcon"><a href="#1_8dojo_store_api_Store_queryEngine" class="inline-link"> queryEngine </a><span>If the store can be queried locally (on the client side in JS), this defines
+        </li>
+        <li class="functionIcon"><a href="#1_8dojo_store_api_Store_queryEngine" class="inline-link"> queryEngine </a><span>If the store can be queried locally (on the client side in JS), this defines
 the query engine to use for querying the data store.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Creates an object, throws an error if the object already exists</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_get" class="inline-link"> get</a><span class="parameters">(</span>id) <span>Retrieves an object by its identity</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_put" class="inline-link"> put</a><span class="parameters">(</span>object, directives) <span>Stores an object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_PutDirectives" class="inline-link"> PutDirectives</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_QueryOptions" class="inline-link"> QueryOptions</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_QueryResults" class="inline-link"> QueryResults</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Deletes an object by its identity</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_SortInformation" class="inline-link"> SortInformation</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_store_api_Store_Transaction" class="inline-link"> Transaction</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Creates an object, throws an error if the object already exists</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_get" class="inline-link"> get</a><span class="parameters">(</span>id) <span>Retrieves an object by its identity</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Returns an object&#39;s identity</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_put" class="inline-link"> put</a><span class="parameters">(</span>object, directives) <span>Stores an object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_PutDirectives" class="inline-link"> PutDirectives</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_QueryOptions" class="inline-link"> QueryOptions</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_QueryResults" class="inline-link"> QueryResults</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Deletes an object by its identity</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_SortInformation" class="inline-link"> SortInformation</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_store_api_Store_Transaction" class="inline-link"> Transaction</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -80,13 +88,19 @@ identity property. The values of this property should be unique.</p>
 the query engine to use for querying the data store.
 This takes a query and query options and returns a function that can execute
 the provided query on a JavaScript array. The queryEngine may be replace to
-provide more sophisticated querying capabilities. For example:</p>
-<pre><code> var query = store.queryEngine({foo:&quot;bar&quot;}, {count:10});
- query(someArray) -&gt; filtered array</pre></code>
+provide more sophisticated querying capabilities. For example:
+
+</p>
+<pre><code>var query = store.queryEngine({foo:&quot;bar&quot;}, {count:10});
+query(someArray) -&gt; filtered array</pre></code>
 <p>The returned query function may have a &quot;matches&quot; property that can be
-used to determine if an object matches the query. For example:</p>
-<pre><code> query.matches({id:&quot;some-object&quot;, foo:&quot;bar&quot;}) -&gt; true
- query.matches({id:&quot;some-object&quot;, foo:&quot;something else&quot;}) -&gt; false</pre></code>
+
+</p>
+<p>used to determine if an object matches the query. For example:
+
+</p>
+<pre><code>query.matches({id:&quot;some-object&quot;, foo:&quot;bar&quot;}) -&gt; true
+query.matches({id:&quot;some-object&quot;, foo:&quot;something else&quot;}) -&gt; false</pre></code>
 </div>
       </div>
     </div>
@@ -145,7 +159,8 @@ used to determine if an object matches the query. For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object</span></div>
-        <div class="jsdoc-return-description">The object in the store that matches the given id.</div>
+        <div class="jsdoc-return-description"><p>The object in the store that matches the given id.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_api_Store_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">(parent, options)</span> 
@@ -177,7 +192,8 @@ used to determine if an object matches the query. For example:</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.QueryResults">dojo/store/api/Store.QueryResults</a></span></div>
-        <div class="jsdoc-return-description">A result set of the children of the parent object.</div>
+        <div class="jsdoc-return-description"><p>A result set of the children of the parent object.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_api_Store_getIdentity"></a><span class="functionIcon">getIdentity</span><span class="parameters">(object)</span> 
@@ -225,7 +241,8 @@ cache directives, history, or version information.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object</span></div>
-        <div class="jsdoc-return-description">An object containing metadata.</div>
+        <div class="jsdoc-return-description"><p>An object containing metadata.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_api_Store_put"></a><span class="functionIcon">put</span><span class="parameters">(object, directives)</span> 
@@ -295,7 +312,8 @@ set of data from the store.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.QueryResults">dojo/store/api/Store.QueryResults</a></span></div>
-        <div class="jsdoc-return-description">The results of the query, extended with iterative methods.
+        <div class="jsdoc-return-description"><p>The results of the query, extended with iterative methods.
+</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
@@ -305,10 +323,11 @@ set of data from the store.</p>
 </p>
 <p>...find all items where &quot;prime&quot; is true:
 
+
 </p>
-<pre><code>  store.query({ prime: true }).forEach(function(object){
+<pre><code>store.query({ prime: true }).forEach(function(object){
     // handle each object
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -367,7 +386,8 @@ delete, etc. in which case these operations effectively could be thought of
 as &quot;auto-commit&quot; style actions.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/store/api/Store.Transaction">dojo/store/api/Store.Transaction</a></span></div>
-        <div class="jsdoc-return-description">This represents the new current transaction.</div>
+        <div class="jsdoc-return-description"><p>This represents the new current transaction.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_store_api_Store_Transaction"></a><span class="functionIcon">Transaction</span><span class="parameters">()</span> 
@@ -378,4 +398,4 @@ as &quot;auto-commit&quot; style actions.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/store/api/Store" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

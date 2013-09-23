@@ -1,66 +1,75 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/_base.lighting</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/gfx3d/_base.lighting" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/_base.lighting.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/gfx3d/_base.lighting<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx3d.html" target="_blank">dojox/gfx3d/_base.lighting reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojox_gfx3d__base_lighting_finish" class="inline-link"> finish </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_add" class="inline-link"> add</a><span class="parameters">(</span>a, b) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_addColor" class="inline-link"> addColor</a><span class="parameters">(</span>a, b) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_black" class="inline-link"> black</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_diff2Color" class="inline-link"> diff2Color</a><span class="parameters">(</span>c1, c2) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_diffuse" class="inline-link"> diffuse</a><span class="parameters">(</span>normal, lights) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_dot" class="inline-link"> dot</a><span class="parameters">(</span>a, b) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_faceforward" class="inline-link"> faceforward</a><span class="parameters">(</span>n, i) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_fromStdColor" class="inline-link"> fromStdColor</a><span class="parameters">(</span>c) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_length" class="inline-link"> length</a><span class="parameters">(</span>v) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_length2Color" class="inline-link"> length2Color</a><span class="parameters">(</span>c) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_mixColor" class="inline-link"> mixColor</a><span class="parameters">(</span>c1, c2, s) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_Model" class="inline-link"> Model</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_multiplyColor" class="inline-link"> multiplyColor</a><span class="parameters">(</span>a, b) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>v) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_phong" class="inline-link"> phong</a><span class="parameters">(</span>normal, v, size, lights) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_reflect" class="inline-link"> reflect</a><span class="parameters">(</span>i, n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_saturate" class="inline-link"> saturate</a><span class="parameters">(</span>v) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_saturateColor" class="inline-link"> saturateColor</a><span class="parameters">(</span>c) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_scale" class="inline-link"> scale</a><span class="parameters">(</span>s, v) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_scaleColor" class="inline-link"> scaleColor</a><span class="parameters">(</span>s, c) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_specular" class="inline-link"> specular</a><span class="parameters">(</span>normal, v, roughness, lights) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_toStdColor" class="inline-link"> toStdColor</a><span class="parameters">(</span>c) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_white" class="inline-link"> white</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_gfx3d__base_lighting_finish" class="inline-link"> finish </a><span></span><span title="Must manually require () dojox/gfx3d/lighting to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_add" class="inline-link"> add</a><span class="parameters">(</span>a, b) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_addColor" class="inline-link"> addColor</a><span class="parameters">(</span>a, b) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_black" class="inline-link"> black</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_diff2Color" class="inline-link"> diff2Color</a><span class="parameters">(</span>c1, c2) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_diffuse" class="inline-link"> diffuse</a><span class="parameters">(</span>normal, lights) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_dot" class="inline-link"> dot</a><span class="parameters">(</span>a, b) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_faceforward" class="inline-link"> faceforward</a><span class="parameters">(</span>n, i) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_fromStdColor" class="inline-link"> fromStdColor</a><span class="parameters">(</span>c) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_length" class="inline-link"> length</a><span class="parameters">(</span>v) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_length2Color" class="inline-link"> length2Color</a><span class="parameters">(</span>c) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_mixColor" class="inline-link"> mixColor</a><span class="parameters">(</span>c1, c2, s) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_Model" class="inline-link"> Model</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_multiplyColor" class="inline-link"> multiplyColor</a><span class="parameters">(</span>a, b) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>v) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_phong" class="inline-link"> phong</a><span class="parameters">(</span>normal, v, size, lights) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_reflect" class="inline-link"> reflect</a><span class="parameters">(</span>i, n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_saturate" class="inline-link"> saturate</a><span class="parameters">(</span>v) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_saturateColor" class="inline-link"> saturateColor</a><span class="parameters">(</span>c) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_scale" class="inline-link"> scale</a><span class="parameters">(</span>s, v) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_scaleColor" class="inline-link"> scaleColor</a><span class="parameters">(</span>s, c) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_specular" class="inline-link"> specular</a><span class="parameters">(</span>normal, v, roughness, lights) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_toStdColor" class="inline-link"> toStdColor</a><span class="parameters">(</span>c) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_lighting_white" class="inline-link"> white</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -628,4 +637,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/gfx3d/_base.lighting" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

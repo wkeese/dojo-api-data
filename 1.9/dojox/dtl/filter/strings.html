@@ -1,83 +1,91 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dtl/filter/strings</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/dtl/filter/strings" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/dtl/filter/strings.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/dtl/filter/strings<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__fix_ampersands" class="inline-link"> _fix_ampersands </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_dtl_filter_strings__strings" class="inline-link"> _strings </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_dtl_filter_strings__truncate_singlets" class="inline-link"> _truncate_singlets </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__truncate_tag" class="inline-link"> _truncate_tag </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__truncate_words" class="inline-link"> _truncate_words </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__truncatewords" class="inline-link"> _truncatewords </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__urlize" class="inline-link"> _urlize </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__urlize2" class="inline-link"> _urlize2 </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_dtl_filter_strings__urlquote" class="inline-link"> _urlquote</a><span class="parameters">(</span>url, safe) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_addslashes" class="inline-link"> addslashes</a><span class="parameters">(</span>value) <span>Adds slashes - useful for passing strings to JavaScript, for example.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_capfirst" class="inline-link"> capfirst</a><span class="parameters">(</span>value) <span>Capitalizes the first character of the value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_center" class="inline-link"> center</a><span class="parameters">(</span>value, arg) <span>Centers the value in a field of a given width</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_cut" class="inline-link"> cut</a><span class="parameters">(</span>value, arg) <span>Removes all values of arg from the given string</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_fix_ampersands" class="inline-link"> fix_ampersands</a><span class="parameters">(</span>value) <span>Replaces ampersands with &amp;amp; entities</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_floatformat" class="inline-link"> floatformat</a><span class="parameters">(</span>value, arg) <span>Format a number according to arg</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_iriencode" class="inline-link"> iriencode</a><span class="parameters">(</span>value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_linenumbers" class="inline-link"> linenumbers</a><span class="parameters">(</span>value) <span>Displays text with line numbers</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_ljust" class="inline-link"> ljust</a><span class="parameters">(</span>value, arg) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_lower" class="inline-link"> lower</a><span class="parameters">(</span>value) <span>Converts a string into all lowercase</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_make_list" class="inline-link"> make_list</a><span class="parameters">(</span>value) <span>Returns the value turned into a list.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_rjust" class="inline-link"> rjust</a><span class="parameters">(</span>value, arg) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_slugify" class="inline-link"> slugify</a><span class="parameters">(</span>value) <span>Converts to lowercase, removes
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__fix_ampersands" class="inline-link"> _fix_ampersands </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_dtl_filter_strings__strings" class="inline-link"> _strings </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_dtl_filter_strings__truncate_singlets" class="inline-link"> _truncate_singlets </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__truncate_tag" class="inline-link"> _truncate_tag </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__truncate_words" class="inline-link"> _truncate_words </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__truncatewords" class="inline-link"> _truncatewords </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__urlize" class="inline-link"> _urlize </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="regexpIcon private"><a href="#1_9dojox_dtl_filter_strings__urlize2" class="inline-link"> _urlize2 </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_dtl_filter_strings__urlquote" class="inline-link"> _urlquote</a><span class="parameters">(</span>url, safe) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_addslashes" class="inline-link"> addslashes</a><span class="parameters">(</span>value) <span>Adds slashes - useful for passing strings to JavaScript, for example.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_capfirst" class="inline-link"> capfirst</a><span class="parameters">(</span>value) <span>Capitalizes the first character of the value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_center" class="inline-link"> center</a><span class="parameters">(</span>value, arg) <span>Centers the value in a field of a given width</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_cut" class="inline-link"> cut</a><span class="parameters">(</span>value, arg) <span>Removes all values of arg from the given string</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_fix_ampersands" class="inline-link"> fix_ampersands</a><span class="parameters">(</span>value) <span>Replaces ampersands with &amp;amp; entities</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_floatformat" class="inline-link"> floatformat</a><span class="parameters">(</span>value, arg) <span>Format a number according to arg</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_iriencode" class="inline-link"> iriencode</a><span class="parameters">(</span>value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_linenumbers" class="inline-link"> linenumbers</a><span class="parameters">(</span>value) <span>Displays text with line numbers</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_ljust" class="inline-link"> ljust</a><span class="parameters">(</span>value, arg) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_lower" class="inline-link"> lower</a><span class="parameters">(</span>value) <span>Converts a string into all lowercase</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_make_list" class="inline-link"> make_list</a><span class="parameters">(</span>value) <span>Returns the value turned into a list.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_rjust" class="inline-link"> rjust</a><span class="parameters">(</span>value, arg) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_slugify" class="inline-link"> slugify</a><span class="parameters">(</span>value) <span>Converts to lowercase, removes
 non-alpha chars and converts spaces to hyphens</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_stringformat" class="inline-link"> stringformat</a><span class="parameters">(</span>value, arg) <span>Formats the variable according to the argument, a string formatting specifier.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_title" class="inline-link"> title</a><span class="parameters">(</span>value) <span>Converts a string into titlecase</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_truncatewords" class="inline-link"> truncatewords</a><span class="parameters">(</span>value, arg) <span>Truncates a string after a certain number of words</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_truncatewords_html" class="inline-link"> truncatewords_html</a><span class="parameters">(</span>value, arg) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_upper" class="inline-link"> upper</a><span class="parameters">(</span>value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_urlencode" class="inline-link"> urlencode</a><span class="parameters">(</span>value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_urlize" class="inline-link"> urlize</a><span class="parameters">(</span>value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_urlizetrunc" class="inline-link"> urlizetrunc</a><span class="parameters">(</span>value, arg) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_wordcount" class="inline-link"> wordcount</a><span class="parameters">(</span>value) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_wordwrap" class="inline-link"> wordwrap</a><span class="parameters">(</span>value, arg) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_stringformat" class="inline-link"> stringformat</a><span class="parameters">(</span>value, arg) <span>Formats the variable according to the argument, a string formatting specifier.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_title" class="inline-link"> title</a><span class="parameters">(</span>value) <span>Converts a string into titlecase</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_truncatewords" class="inline-link"> truncatewords</a><span class="parameters">(</span>value, arg) <span>Truncates a string after a certain number of words</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_truncatewords_html" class="inline-link"> truncatewords_html</a><span class="parameters">(</span>value, arg) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_upper" class="inline-link"> upper</a><span class="parameters">(</span>value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_urlencode" class="inline-link"> urlencode</a><span class="parameters">(</span>value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_urlize" class="inline-link"> urlize</a><span class="parameters">(</span>value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_urlizetrunc" class="inline-link"> urlizetrunc</a><span class="parameters">(</span>value, arg) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_wordcount" class="inline-link"> wordcount</a><span class="parameters">(</span>value) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_dtl_filter_strings_wordwrap" class="inline-link"> wordwrap</a><span class="parameters">(</span>value, arg) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -733,4 +741,4 @@ the leading &quot;%&quot; is dropped.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/dtl/filter/strings" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

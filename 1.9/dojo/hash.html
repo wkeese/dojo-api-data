@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/hash</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/hash" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/hash.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/hash<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Gets or sets the hash string in the browser URL.</p>
 </div>
@@ -37,25 +44,26 @@ state instead of creating a new history state.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/hash.html" target="_blank">dojo/hash reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>topic.subscribe(&quot;/dojo/hashchange&quot;, context, callback);
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>topic.subscribe(&quot;/dojo/hashchange&quot;, context, callback);
 
 function callback (hashValue){
     // do something based on the hash value.
 }</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_hash_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>hash, replace) <span>Gets or sets the hash string in the browser URL.</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_hash_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>hash, replace) <span>Gets or sets the hash string in the browser URL.</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -118,4 +126,4 @@ function callback (hashValue){
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/hash" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

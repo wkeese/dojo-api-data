@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/action2d/_IndicatorElement</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/charting/action2d/_IndicatorElement" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/action2d/_IndicatorElement.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/action2d/_IndicatorElement<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/charting/plot2d/Base" class="jsdoc-link">dojox/charting/plot2d/Base</a>
 </div>
 <div class="jsdoc-full-summary"><p>Internal element used by indicator actions.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _IndicatorElement<span class="parameters">(chart,kwArgs);</span></div>
 </div>
@@ -31,88 +38,89 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_chart" class="inline-link"> chart </a><span>The parent chart for this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_dirty" class="inline-link"> dirty </a><span>A flag indicating whether or not this element needs to be rendered.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_group" class="inline-link"> group </a><span>The visual GFX group representing this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_htmlElement" class="inline-link"> htmlElement </a><span>Any DOMNodes used as a part of this element (such as HTML-based labels).</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_htmlElements" class="inline-link"> htmlElements </a><span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__getData" class="inline-link"> _getData</a><span class="parameters">(</span>cd, attr, v) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement__plotFill" class="inline-link"> _plotFill</a><span class="parameters">(</span>fill, dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement__pseudoRadialFill" class="inline-link"> _pseudoRadialFill</a><span class="parameters">(</span>fill, center, radius, start, end) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__renderIndicator" class="inline-link"> _renderIndicator</a><span class="parameters">(</span>coord, index, hn, vn, min, max) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__renderText" class="inline-link"> _renderText</a><span class="parameters">(</span>text, inter, t, x, y, c1, c2) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement__shapeFill" class="inline-link"> _shapeFill</a><span class="parameters">(</span>fill, bbox) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__trackMove" class="inline-link"> _trackMove</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__updateIndicator" class="inline-link"> _updateIndicator</a><span class="parameters">(</span>cp1, cp2) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__updateVisibility" class="inline-link"> _updateVisibility</a><span class="parameters">(</span>cp, limit, attr) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>run) <span>Add a data series to this plot.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_assignAxes" class="inline-link"> assignAxes</a><span class="parameters">(</span>axes) <span>From an array of axes pick the ones that correspond to this plot and
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_chart" class="inline-link"> chart </a><span>The parent chart for this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_dirty" class="inline-link"> dirty </a><span>A flag indicating whether or not this element needs to be rendered.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_group" class="inline-link"> group </a><span>The visual GFX group representing this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_htmlElement" class="inline-link"> htmlElement </a><span>Any DOMNodes used as a part of this element (such as HTML-based labels).</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_htmlElements" class="inline-link"> htmlElements </a><span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__getData" class="inline-link"> _getData</a><span class="parameters">(</span>cd, attr, v) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement__plotFill" class="inline-link"> _plotFill</a><span class="parameters">(</span>fill, dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement__pseudoRadialFill" class="inline-link"> _pseudoRadialFill</a><span class="parameters">(</span>fill, center, radius, start, end) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__renderIndicator" class="inline-link"> _renderIndicator</a><span class="parameters">(</span>coord, index, hn, vn, min, max) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__renderText" class="inline-link"> _renderText</a><span class="parameters">(</span>text, inter, t, x, y, c1, c2) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement__shapeFill" class="inline-link"> _shapeFill</a><span class="parameters">(</span>fill, bbox) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__trackMove" class="inline-link"> _trackMove</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__updateIndicator" class="inline-link"> _updateIndicator</a><span class="parameters">(</span>cp1, cp2) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_charting_action2d__IndicatorElement__updateVisibility" class="inline-link"> _updateVisibility</a><span class="parameters">(</span>cp, limit, attr) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>run) <span>Add a data series to this plot.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_assignAxes" class="inline-link"> assignAxes</a><span class="parameters">(</span>axes) <span>From an array of axes pick the ones that correspond to this plot and
 assign them to the plot using setAxis method.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_calculateAxes" class="inline-link"> calculateAxes</a><span class="parameters">(</span>dim) <span>Stub function for running the axis calculations (deprecated).</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_cleanGroup" class="inline-link"> cleanGroup</a><span class="parameters">(</span>creator) <span>Clean any elements (HTML or GFX-based) out of our group, and create a new one.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Clear out all of the information tied to this plot.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, kwArgs) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>API addition to conform to the rest of the Dojo Toolkit&#39;s standard.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_destroyHtmlElements" class="inline-link"> destroyHtmlElements</a><span class="parameters">(</span>) <span>Destroy any DOMNodes that may have been created as a part of this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getRequiredColors" class="inline-link"> getRequiredColors</a><span class="parameters">(</span>) <span>Get how many data series we have, so we know how many colors to use.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_getSeriesStats" class="inline-link"> getSeriesStats</a><span class="parameters">(</span>) <span>Returns default stats (irrelevant for this type of plot).</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getTextWidth" class="inline-link"> getTextWidth</a><span class="parameters">(</span>s, font) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getTextWithLimitCharCount" class="inline-link"> getTextWithLimitCharCount</a><span class="parameters">(</span>s, font, wcLimit, truncated) <span>Get the truncated string based on the limited character count(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getTextWithLimitLength" class="inline-link"> getTextWithLimitLength</a><span class="parameters">(</span>s, font, limitWidth, truncated) <span>Get the truncated string based on the limited width in px(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_initializeScalers" class="inline-link"> initializeScalers</a><span class="parameters">(</span>) <span>Does nothing.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_initTrack" class="inline-link"> initTrack</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_isDataDirty" class="inline-link"> isDataDirty</a><span class="parameters">(</span>) <span>Returns whether or not any of this plot&#39;s data series need to be rendered.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>) <span>Return whether or not this plot needs to be redrawn.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_purgeGroup" class="inline-link"> purgeGroup</a><span class="parameters">(</span>) <span>Clear any elements out of our group, and destroy the group.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_render" class="inline-link"> render</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_setAxis" class="inline-link"> setAxis</a><span class="parameters">(</span>axis) <span>Set an axis for this plot.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_stopTrack" class="inline-link"> stopTrack</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_calculateAxes" class="inline-link"> calculateAxes</a><span class="parameters">(</span>dim) <span>Stub function for running the axis calculations (deprecated).</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_cleanGroup" class="inline-link"> cleanGroup</a><span class="parameters">(</span>creator) <span>Clean any elements (HTML or GFX-based) out of our group, and create a new one.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Clear out all of the information tied to this plot.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, kwArgs) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>API addition to conform to the rest of the Dojo Toolkit&#39;s standard.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_destroyHtmlElements" class="inline-link"> destroyHtmlElements</a><span class="parameters">(</span>) <span>Destroy any DOMNodes that may have been created as a part of this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getRequiredColors" class="inline-link"> getRequiredColors</a><span class="parameters">(</span>) <span>Get how many data series we have, so we know how many colors to use.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_getSeriesStats" class="inline-link"> getSeriesStats</a><span class="parameters">(</span>) <span>Returns default stats (irrelevant for this type of plot).</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getTextWidth" class="inline-link"> getTextWidth</a><span class="parameters">(</span>s, font) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getTextWithLimitCharCount" class="inline-link"> getTextWithLimitCharCount</a><span class="parameters">(</span>s, font, wcLimit, truncated) <span>Get the truncated string based on the limited character count(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_getTextWithLimitLength" class="inline-link"> getTextWithLimitLength</a><span class="parameters">(</span>s, font, limitWidth, truncated) <span>Get the truncated string based on the limited width in px(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_initializeScalers" class="inline-link"> initializeScalers</a><span class="parameters">(</span>) <span>Does nothing.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_initTrack" class="inline-link"> initTrack</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_isDataDirty" class="inline-link"> isDataDirty</a><span class="parameters">(</span>) <span>Returns whether or not any of this plot&#39;s data series need to be rendered.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>) <span>Return whether or not this plot needs to be redrawn.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_purgeGroup" class="inline-link"> purgeGroup</a><span class="parameters">(</span>) <span>Clear any elements out of our group, and destroy the group.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_render" class="inline-link"> render</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d__IndicatorElement_setAxis" class="inline-link"> setAxis</a><span class="parameters">(</span>axis) <span>Set an axis for this plot.</span><span title="inherited from dojox/charting/plot2d/Base" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_charting_action2d__IndicatorElement_stopTrack" class="inline-link"> stopTrack</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -868,4 +876,4 @@ assign them to the plot using setAxis method.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/charting/action2d/_IndicatorElement" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

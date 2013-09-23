@@ -1,132 +1,142 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/main</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/main" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/main.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/main<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>The dijit package main module.
 Deprecated.   Users should access individual modules (ex: <a class="jsdoc-link" href="/api/1.8/dijit/registry">dijit/registry</a>) directly.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dijit_main__activeStack" class="inline-link"> _activeStack </a><span>List of currently active widgets (focused widget and it&#39;s ancestors)</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="domnodeIcon private"><a href="#1_8dijit_main__curFocus" class="inline-link"> _curFocus </a><span>Currently focused item on screen</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dijit_main__masterTT" class="inline-link"> _masterTT </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="domnodeIcon private"><a href="#1_8dijit_main__prevFocus" class="inline-link"> _prevFocus </a><span>Previously focused item on screen</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dijit_main__underlay" class="inline-link"> _underlay </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dijit_main_defaultDuration" class="inline-link"> defaultDuration </a><span>Amount of time (in ms) it takes to slide panes</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dijit_main_place" class="inline-link"> place </a><span>Code to place a DOMNode relative to another DOMNode.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dijit_main_popup" class="inline-link"> popup </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dijit_main_range" class="inline-link"> range </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dijit_main_registry" class="inline-link"> registry </a><span>Registry of existing widget on page, plus some utility methods.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dijit_main_typematic" class="inline-link"> typematic </a><span>These functions are used to repetitively call a user specified callback
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dijit_main__activeStack" class="inline-link"> _activeStack </a><span>List of currently active widgets (focused widget and it&#39;s ancestors)</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_base/focus to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="domnodeIcon private"><a href="#1_8dijit_main__curFocus" class="inline-link"> _curFocus </a><span>Currently focused item on screen</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_base/focus to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dijit_main__masterTT" class="inline-link"> _masterTT </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/form/ValidationTextBox to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="domnodeIcon private"><a href="#1_8dijit_main__prevFocus" class="inline-link"> _prevFocus </a><span>Previously focused item on screen</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_base/focus to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dijit_main__underlay" class="inline-link"> _underlay </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/Dialog to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dijit_main_defaultDuration" class="inline-link"> defaultDuration </a><span>The default fx.animation speed (in ms) to use for all Dijit
+transitional fx.animations, unless otherwise specified
+on a per-instance basis.</span><span title="Must manually require () dijit/_base/manager to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dijit_main_place" class="inline-link"> place </a><span>Code to place a DOMNode relative to another DOMNode.</span><span title="Must manually require () dijit/place to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dijit_main_popup" class="inline-link"> popup </a><span></span><span title="Must manually require () dijit/popup to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dijit_main_range" class="inline-link"> range </a><span></span><span title="Must manually require () dijit/_editor/range to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dijit_main_registry" class="inline-link"> registry </a><span>Registry of existing widget on page, plus some utility methods.</span><span title="Must manually require () dijit/registry to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dijit_main_typematic" class="inline-link"> typematic </a><span>These functions are used to repetitively call a user specified callback
 method when a specific key or mouse click over a specific DOM node is
-held down for a specific amount of time.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_main__Calendar" class="inline-link"> _Calendar</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_main__getTabNavigable" class="inline-link"> _getTabNavigable</a><span class="parameters">(</span>root) <span>Finds descendants of the specified root node.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_main__isElementShown" class="inline-link"> _isElementShown</a><span class="parameters">(</span>elem) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_main__setSelectionRange" class="inline-link"> _setSelectionRange</a><span class="parameters">(</span>element, start, stop) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_BackgroundIframe" class="inline-link"> BackgroundIframe</a><span class="parameters">(</span>node) <span>For IE/FF z-index schenanigans. id attribute is required.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_focus" class="inline-link"> focus</a><span class="parameters">(</span>node) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getBookmark" class="inline-link"> getBookmark</a><span class="parameters">(</span>) <span>Retrieves a bookmark that can be used with moveToBookmark to return to the same range</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getDocumentWindow" class="inline-link"> getDocumentWindow</a><span class="parameters">(</span>doc) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getFirstInTabbingOrder" class="inline-link"> getFirstInTabbingOrder</a><span class="parameters">(</span>root, doc) <span>Finds the descendant of the specified root node
+held down for a specific amount of time.</span><span title="Must manually require () dijit/typematic to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_main__Calendar" class="inline-link"> _Calendar</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_main__getTabNavigable" class="inline-link"> _getTabNavigable</a><span class="parameters">(</span>root) <span>Finds descendants of the specified root node.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_main__isElementShown" class="inline-link"> _isElementShown</a><span class="parameters">(</span>elem) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_main__setSelectionRange" class="inline-link"> _setSelectionRange</a><span class="parameters">(</span>element, start, stop) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_BackgroundIframe" class="inline-link"> BackgroundIframe</a><span class="parameters">(</span>node) <span>For IE/FF z-index schenanigans. id attribute is required.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_focus" class="inline-link"> focus</a><span class="parameters">(</span>node) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getBookmark" class="inline-link"> getBookmark</a><span class="parameters">(</span>) <span>Retrieves a bookmark that can be used with moveToBookmark to return to the same range</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getDocumentWindow" class="inline-link"> getDocumentWindow</a><span class="parameters">(</span>doc) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getFirstInTabbingOrder" class="inline-link"> getFirstInTabbingOrder</a><span class="parameters">(</span>root, doc) <span>Finds the descendant of the specified root node
 that is first in the tabbing order</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getFocus" class="inline-link"> getFocus</a><span class="parameters">(</span>menu, openedForWindow) <span>Called as getFocus(), this returns an Object showing the current focus
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getFocus" class="inline-link"> getFocus</a><span class="parameters">(</span>menu, openedForWindow) <span>Called as getFocus(), this returns an Object showing the current focus
 and selected text.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getLastInTabbingOrder" class="inline-link"> getLastInTabbingOrder</a><span class="parameters">(</span>root, doc) <span>Finds the descendant of the specified root node
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getLastInTabbingOrder" class="inline-link"> getLastInTabbingOrder</a><span class="parameters">(</span>root, doc) <span>Finds the descendant of the specified root node
 that is last in the tabbing order</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getPopupAroundAlignment" class="inline-link"> getPopupAroundAlignment</a><span class="parameters">(</span>position, leftToRight) <span>Deprecated method, unneeded when using dijit/place directly.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Deprecated method to return the dimensions and scroll position of the viewable area of a browser window.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getWaiRole" class="inline-link"> getWaiRole</a><span class="parameters">(</span>elem) <span>Gets the role for an element (which should be a wai role).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_getWaiState" class="inline-link"> getWaiState</a><span class="parameters">(</span>elem, state) <span>Gets the value of a state on an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_hasDefaultTabStop" class="inline-link"> hasDefaultTabStop</a><span class="parameters">(</span>elem) <span>Tests if element is tab-navigable even without an explicit tabIndex setting</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_hasWaiRole" class="inline-link"> hasWaiRole</a><span class="parameters">(</span>elem, role) <span>Determines if an element has a particular role.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_hasWaiState" class="inline-link"> hasWaiState</a><span class="parameters">(</span>elem, state) <span>Determines if an element has a given state.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_hideTooltip" class="inline-link"> hideTooltip</a><span class="parameters">(</span>aroundNode) <span>Static method to hide the tooltip displayed via showTooltip()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_isCollapsed" class="inline-link"> isCollapsed</a><span class="parameters">(</span>) <span>Returns true if there is no text selected</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_isTabNavigable" class="inline-link"> isTabNavigable</a><span class="parameters">(</span>elem) <span>Tests if an element is tab-navigable</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_moveToBookmark" class="inline-link"> moveToBookmark</a><span class="parameters">(</span>bookmark) <span>Moves current selection to a bookmark</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreen" class="inline-link"> placeOnScreen</a><span class="parameters">(</span>node, pos, corners, padding) <span>Positions one of the node&#39;s corners at specified position
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getPopupAroundAlignment" class="inline-link"> getPopupAroundAlignment</a><span class="parameters">(</span>position, leftToRight) <span>Deprecated method, unneeded when using dijit/place directly.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Deprecated method to return the dimensions and scroll position of the viewable area of a browser window.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getWaiRole" class="inline-link"> getWaiRole</a><span class="parameters">(</span>elem) <span>Gets the role for an element (which should be a wai role).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_getWaiState" class="inline-link"> getWaiState</a><span class="parameters">(</span>elem, state) <span>Gets the value of a state on an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_hasDefaultTabStop" class="inline-link"> hasDefaultTabStop</a><span class="parameters">(</span>elem) <span>Tests if element is tab-navigable even without an explicit tabIndex setting</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_hasWaiRole" class="inline-link"> hasWaiRole</a><span class="parameters">(</span>elem, role) <span>Determines if an element has a particular role.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_hasWaiState" class="inline-link"> hasWaiState</a><span class="parameters">(</span>elem, state) <span>Determines if an element has a given state.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_hideTooltip" class="inline-link"> hideTooltip</a><span class="parameters">(</span>aroundNode) <span>Static method to hide the tooltip displayed via showTooltip()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_isCollapsed" class="inline-link"> isCollapsed</a><span class="parameters">(</span>) <span>Returns true if there is no text selected</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_isTabNavigable" class="inline-link"> isTabNavigable</a><span class="parameters">(</span>elem) <span>Tests if an element is tab-navigable</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_moveToBookmark" class="inline-link"> moveToBookmark</a><span class="parameters">(</span>bookmark) <span>Moves current selection to a bookmark</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreen" class="inline-link"> placeOnScreen</a><span class="parameters">(</span>node, pos, corners, padding) <span>Positions one of the node&#39;s corners at specified position
 such that node is fully visible in viewport.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreenAroundElement" class="inline-link"> placeOnScreenAroundElement</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except it accepts an arbitrary object
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreenAroundElement" class="inline-link"> placeOnScreenAroundElement</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except it accepts an arbitrary object
 for the &quot;around&quot; argument and finds a proper processor to place a node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreenAroundNode" class="inline-link"> placeOnScreenAroundNode</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Position node adjacent or kitty-corner to aroundNode
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreenAroundNode" class="inline-link"> placeOnScreenAroundNode</a><span class="parameters">(</span>node, aroundNode, aroundCorners, layoutNode) <span>Position node adjacent or kitty-corner to aroundNode
 such that it&#39;s fully visible in viewport.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreenAroundRectangle" class="inline-link"> placeOnScreenAroundRectangle</a><span class="parameters">(</span>node, aroundRect, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except that the &quot;around&quot;
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_placeOnScreenAroundRectangle" class="inline-link"> placeOnScreenAroundRectangle</a><span class="parameters">(</span>node, aroundRect, aroundCorners, layoutNode) <span>Like dijit.placeOnScreenAroundNode(), except that the &quot;around&quot;
 parameter is an arbitrary rectangle on the screen (x, y, width, height)
 instead of a dom node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_registerIframe" class="inline-link"> registerIframe</a><span class="parameters">(</span>iframe) <span>Registers listeners on the specified iframe so that any click
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_registerIframe" class="inline-link"> registerIframe</a><span class="parameters">(</span>iframe) <span>Registers listeners on the specified iframe so that any click
 or focus event on that iframe (or anything in it) is reported
 as a focus/click event on the &lt;iframe&gt; itself.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_registerWin" class="inline-link"> registerWin</a><span class="parameters">(</span>targetWindow, effectiveNode) <span>Registers listeners on the specified window (either the main
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_registerWin" class="inline-link"> registerWin</a><span class="parameters">(</span>targetWindow, effectiveNode) <span>Registers listeners on the specified window (either the main
 window or an iframe&#39;s window) to detect when the user has clicked somewhere
 or focused somewhere.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_removeWaiRole" class="inline-link"> removeWaiRole</a><span class="parameters">(</span>elem, role) <span>Removes the specified role from an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_removeWaiState" class="inline-link"> removeWaiState</a><span class="parameters">(</span>elem, state) <span>Removes a state from an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>node, pos) <span>Scroll the passed node into view, if it is not already.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_selectInputText" class="inline-link"> selectInputText</a><span class="parameters">(</span>element, start, stop) <span>Select text in the input element argument, from start (default 0), to stop (default end).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_setWaiRole" class="inline-link"> setWaiRole</a><span class="parameters">(</span>elem, role) <span>Sets the role on an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_setWaiState" class="inline-link"> setWaiState</a><span class="parameters">(</span>elem, state, value) <span>Sets a state on an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_showTooltip" class="inline-link"> showTooltip</a><span class="parameters">(</span>innerHTML, aroundNode, position, rtl, textDir) <span>Static method to display tooltip w/specified contents in specified position.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_unregisterIframe" class="inline-link"> unregisterIframe</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified iframe created by registerIframe.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_main_unregisterWin" class="inline-link"> unregisterWin</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified window (either the main
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_removeWaiRole" class="inline-link"> removeWaiRole</a><span class="parameters">(</span>elem, role) <span>Removes the specified role from an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_removeWaiState" class="inline-link"> removeWaiState</a><span class="parameters">(</span>elem, state) <span>Removes a state from an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>node, pos) <span>Scroll the passed node into view, if it is not already.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_selectInputText" class="inline-link"> selectInputText</a><span class="parameters">(</span>element, start, stop) <span>Select text in the input element argument, from start (default 0), to stop (default end).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_setWaiRole" class="inline-link"> setWaiRole</a><span class="parameters">(</span>elem, role) <span>Sets the role on an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_setWaiState" class="inline-link"> setWaiState</a><span class="parameters">(</span>elem, state, value) <span>Sets a state on an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_showTooltip" class="inline-link"> showTooltip</a><span class="parameters">(</span>innerHTML, aroundNode, position, rtl, textDir) <span>Static method to display tooltip w/specified contents in specified position.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_unregisterIframe" class="inline-link"> unregisterIframe</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified iframe created by registerIframe.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_main_unregisterWin" class="inline-link"> unregisterWin</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified window (either the main
 window or an iframe&#39;s window) according to handle returned from registerWin().</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -173,7 +183,10 @@ window or an iframe&#39;s window) according to handle returned from registerWin(
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_base/manager" class="jsdoc-link">dijit/_base/manager</a><span title="Must manually require () dijit/_base/manager to access" class="jsdoc-extension"></span>
         </div>
-        <div class="jsdoc-summary"><p>Amount of time (in ms) it takes to slide panes</p>
+        <div class="jsdoc-summary"><p>The default fx.animation speed (in ms) to use for all Dijit
+transitional fx.animations, unless otherwise specified
+on a per-instance basis. Defaults to 200, overrided by
+<code>djConfig.defaultDuration</code></p>
 </div>
       </div>
       <div class="jsdoc-field public extension-module">
@@ -468,7 +481,8 @@ information is already lost, and null is returned.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
-        <div class="jsdoc-return-description">A handle to restore focus/selection, to be passed to `dijit.focus`</div>
+        <div class="jsdoc-return-description"><p>A handle to restore focus/selection, to be passed to <code>dijit.focus</code></p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_getLastInTabbingOrder"></a><span class="functionIcon">getLastInTabbingOrder</span><span class="parameters">(root, doc)</span> 
@@ -574,8 +588,9 @@ New code should use windowUtils.getBox()</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The role of elem or an empty string if elem
-does not have a role.</div>
+        <div class="jsdoc-return-description"><p>The role of elem or an empty string if elem
+does not have a role.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_getWaiState"></a><span class="functionIcon">getWaiState</span><span class="parameters">(elem, state)</span> 
@@ -606,8 +621,9 @@ does not have a role.</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
-        <div class="jsdoc-return-description">The value of the requested state on elem
-or an empty string if elem has no value for state.</div>
+        <div class="jsdoc-return-description"><p>The value of the requested state on elem
+or an empty string if elem has no value for state.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_hasDefaultTabStop"></a><span class="functionIcon">hasDefaultTabStop</span><span class="parameters">(elem)</span> 
@@ -659,9 +675,10 @@ or an empty string if elem has no value for state.</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">True if elem has the specific role attribute and false if not.
+        <div class="jsdoc-return-description"><p>True if elem has the specific role attribute and false if not.
 For backwards compatibility if role parameter not provided,
-returns true if has a role</div>
+returns true if has a role</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_hasWaiState"></a><span class="functionIcon">hasWaiState</span><span class="parameters">(elem, state)</span> 
@@ -692,8 +709,9 @@ returns true if has a role</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">true if elem has a value for the given state and
-false if it does not.</div>
+        <div class="jsdoc-return-description"><p>true if elem has a value for the given state and
+false if it does not.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_hideTooltip"></a><span class="functionIcon">hideTooltip</span><span class="parameters">(aroundNode)</span> 
@@ -831,8 +849,10 @@ Possible values are:
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>Try to place node&#39;s top right corner at (10,20).
 If that makes node go (partially) off screen, then try placing
-bottom left corner at (10,20).</p>
-<pre><code>  place(node, {x: 10, y: 20}, [&quot;TR&quot;, &quot;BL&quot;])</code></pre>
+bottom left corner at (10,20).
+
+</p>
+<pre><code>place(node, {x: 10, y: 20}, [&quot;TR&quot;, &quot;BL&quot;])</code></pre>
 
           </div>
         </div>
@@ -986,7 +1006,8 @@ as a focus/click event on the <code>&lt;iframe&gt;</code> itself.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Handle to pass to unregisterIframe()</div>
+        <div class="jsdoc-return-description"><p>Handle to pass to unregisterIframe()</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_registerWin"></a><span class="functionIcon">registerWin</span><span class="parameters">(targetWindow, effectiveNode)</span> 
@@ -1025,7 +1046,8 @@ an event on effectiveNode, rather than on evt.target.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">Handle to pass to unregisterWin()</div>
+        <div class="jsdoc-return-description"><p>Handle to pass to unregisterWin()</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_main_removeWaiRole"></a><span class="functionIcon">removeWaiRole</span><span class="parameters">(elem, role)</span> 
@@ -1317,4 +1339,4 @@ After calling be sure to delete or null out the handle itself.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/main" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

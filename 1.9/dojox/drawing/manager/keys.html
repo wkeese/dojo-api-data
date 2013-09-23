@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/manager/keys</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/manager/keys" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/manager/keys.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/drawing/manager/keys<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A singleton, master object that detects
 keyboard keys and events
@@ -9,74 +16,75 @@ Connect to it like:
 <pre><code>dojo.connect(this.keys, &quot;onEnter&quot;, ....);</pre></code>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_alt" class="inline-link"> alt </a><span>Indicates whether the Alt or Option key is currently pressed</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_manager_keys_arrowIncrement" class="inline-link"> arrowIncrement </a><span>The amount, in pixels, a selected Stencil will
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_alt" class="inline-link"> alt </a><span>Indicates whether the Alt or Option key is currently pressed</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_manager_keys_arrowIncrement" class="inline-link"> arrowIncrement </a><span>The amount, in pixels, a selected Stencil will
 move on an arrow key event</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_manager_keys_arrowShiftIncrement" class="inline-link"> arrowShiftIncrement </a><span>The amount, in pixels, a selected Stencil will
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_manager_keys_arrowShiftIncrement" class="inline-link"> arrowShiftIncrement </a><span>The amount, in pixels, a selected Stencil will
 move on an arrow key + SHIFT event</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_cmmd" class="inline-link"> cmmd </a><span>Indicates whether the Apple Command key is currently pressed</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_ctrl" class="inline-link"> ctrl </a><span>Indicates whether the Control key is currently pressed</span>
-    </li>
-    <li class="arrayIcon"><a href="#1_9dojox_drawing_manager_keys_listeners" class="inline-link"> listeners </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_meta" class="inline-link"> meta </a><span>Indicates whether any &#39;meta&#39; key is currently pressed:
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_cmmd" class="inline-link"> cmmd </a><span>Indicates whether the Apple Command key is currently pressed</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_ctrl" class="inline-link"> ctrl </a><span>Indicates whether the Control key is currently pressed</span>
+        </li>
+        <li class="arrayIcon"><a href="#1_9dojox_drawing_manager_keys_listeners" class="inline-link"> listeners </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_meta" class="inline-link"> meta </a><span>Indicates whether any &#39;meta&#39; key is currently pressed:
 shift || ctrl || cmd || alt</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_shift" class="inline-link"> shift </a><span>Indicates whether the Shift key is currently pressed</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_keys__getLetter" class="inline-link"> _getLetter</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_keys__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>evt) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_editMode" class="inline-link"> editMode</a><span class="parameters">(</span>_isedit) <span>Relinquishes control of events to another portion
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_keys_shift" class="inline-link"> shift </a><span>Indicates whether the Shift key is currently pressed</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_keys__getLetter" class="inline-link"> _getLetter</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_keys__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>evt) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_editMode" class="inline-link"> editMode</a><span class="parameters">(</span>_isedit) <span>Relinquishes control of events to another portion
 of Drawing; namely the TextBlock.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_enable" class="inline-link"> enable</a><span class="parameters">(</span>_enabled) <span>Enables or disables key events, to relinquish
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_enable" class="inline-link"> enable</a><span class="parameters">(</span>_enabled) <span>Enables or disables key events, to relinquish
 control to something outside of Drawing; input
 fields for example.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initialize the keys object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_register" class="inline-link"> register</a><span class="parameters">(</span>options) <span>Register an object and callback to be notified
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initialize the keys object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_register" class="inline-link"> register</a><span class="parameters">(</span>options) <span>Register an object and callback to be notified
 of events.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_scanForFields" class="inline-link"> scanForFields</a><span class="parameters">(</span>) <span>Scans the document for inputs
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_scanForFields" class="inline-link"> scanForFields</a><span class="parameters">(</span>) <span>Scans the document for inputs
 and calls this automatically.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onArrow" class="inline-link"> onArrow</a><span class="parameters">(</span>evt) <span>Event fires when an Arrow key is released
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onArrow" class="inline-link"> onArrow</a><span class="parameters">(</span>evt) <span>Event fires when an Arrow key is released
 You will have to further check if evt.keyCode
 is 37,38,39, or 40</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>evt) <span>Event fires when Delete key is released</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onEnter" class="inline-link"> onEnter</a><span class="parameters">(</span>evt) <span>Event fires when Enter key is released</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onEsc" class="inline-link"> onEsc</a><span class="parameters">(</span>evt) <span>Event fires when ESC key is released</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>evt) <span>Event fires when any key is pressed</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onKeyUp" class="inline-link"> onKeyUp</a><span class="parameters">(</span>evt) <span>Event fires when any key is released</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onDelete" class="inline-link"> onDelete</a><span class="parameters">(</span>evt) <span>Event fires when Delete key is released</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onEnter" class="inline-link"> onEnter</a><span class="parameters">(</span>evt) <span>Event fires when Enter key is released</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onEsc" class="inline-link"> onEsc</a><span class="parameters">(</span>evt) <span>Event fires when ESC key is released</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>evt) <span>Event fires when any key is pressed</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_keys_onKeyUp" class="inline-link"> onKeyUp</a><span class="parameters">(</span>evt) <span>Event fires when any key is released</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -332,4 +340,4 @@ is 37,38,39, or 40</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/manager/keys" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

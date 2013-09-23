@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/kernel.i18n</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/_base/kernel.i18n" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/kernel.i18n.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/_base/kernel.i18n<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This module implements the <a class="jsdoc-link" href="/api/1.9/dojo/i18n">dojo/i18n</a>! plugin and the v1.6- i18n API</p>
 </div>
@@ -8,29 +15,28 @@ and thereby reduce the size of the plugin compared to various loader implementat
 allows foreign AMD loaders to be used without their plugins.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_9dojo__base_kernel_i18n_cache" class="inline-link"> cache </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojo__base_kernel_i18n_dynamic" class="inline-link"> dynamic </a><span></span>
-    </li>
-    <li class="arrayIcon"><a href="#1_9dojo__base_kernel_i18n_unitTests" class="inline-link"> unitTests </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojo__base_kernel_i18n__preloadLocalizations" class="inline-link"> _preloadLocalizations</a><span class="parameters">(</span>bundlePrefix, localesGenerated, guaranteedAmdFormat, contextRequire) <span>Load available flattened resource bundles associated with a particular module for dojo/locale and all dojo/config.extraLocale (if any)</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_getL10nName" class="inline-link"> getL10nName</a><span class="parameters">(</span>moduleName, bundleName, locale) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_getLocalization" class="inline-link"> getLocalization</a><span class="parameters">(</span>moduleName, bundleName, locale) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_load" class="inline-link"> load</a><span class="parameters">(</span>id, require, load) <span>id is in one of the following formats
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_9dojo__base_kernel_i18n_cache" class="inline-link"> cache </a><span></span><span title="Must manually require () dojo/i18n to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojo__base_kernel_i18n_dynamic" class="inline-link"> dynamic </a><span></span><span title="Must manually require () dojo/i18n to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="arrayIcon"><a href="#1_9dojo__base_kernel_i18n_unitTests" class="inline-link"> unitTests </a><span></span><span title="Must manually require () dojo/i18n to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojo__base_kernel_i18n__preloadLocalizations" class="inline-link"> _preloadLocalizations</a><span class="parameters">(</span>bundlePrefix, localesGenerated, guaranteedAmdFormat, contextRequire) <span>Load available flattened resource bundles associated with a particular module for dojo/locale and all dojo/config.extraLocale (if any)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_getL10nName" class="inline-link"> getL10nName</a><span class="parameters">(</span>moduleName, bundleName, locale) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_getLocalization" class="inline-link"> getLocalization</a><span class="parameters">(</span>moduleName, bundleName, locale) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_load" class="inline-link"> load</a><span class="parameters">(</span>id, require, load) <span>id is in one of the following formats
 
 
 
@@ -44,14 +50,16 @@ allows foreign AMD loaders to be used without their plugins.</p>
 preload/nls/*
  =&gt; for config.locale and all config.extraLocale, load all bundles found
  in the best-matching bundle rollup.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>id, toAbsMid) <span>id may be relative.
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>id, toAbsMid) <span>id may be relative.
 preload has form *preload*&lt;path&gt;/nls/&lt;module&gt;*&lt;flattened locales&gt; and
 therefore never looks like a relative</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_normalizeLocale" class="inline-link"> normalizeLocale</a><span class="parameters">(</span>locale) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_i18n_normalizeLocale" class="inline-link"> normalizeLocale</a><span class="parameters">(</span>locale) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -416,4 +424,4 @@ therefore never looks like a relative</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/kernel.i18n" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dnd/TimedMoveable</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/dnd/TimedMoveable" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dnd/TimedMoveable.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/dnd/TimedMoveable<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/dnd/Moveable" class="jsdoc-link">dojo/dnd/Moveable</a>
@@ -9,7 +16,7 @@ This class puts an upper restriction on FPS, which may reduce
 the CPU load. The additional parameter &quot;timeout&quot; regulates
 the delay before actually moving the moveable object.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new TimedMoveable<span class="parameters">(node,params);</span></div>
 </div>
@@ -39,64 +46,65 @@ the delay before actually moving the moveable object.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/dnd.html" target="_blank">dojo/dnd/TimedMoveable reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_delay" class="inline-link"> delay </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_handle" class="inline-link"> handle </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_skip" class="inline-link"> skip </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_timeout" class="inline-link"> timeout </a><span></span><span title="inherited from dojo/dnd/TimedMoveable" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_dnd_TimedMoveable_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>an object that makes a node moveable with a timer</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops watching for possible move, deletes all references, so the object can be garbage-collected</span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onDragDetected" class="inline-link"> onDragDetected</a><span class="parameters">(</span>e) <span>called when the drag is detected;
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_delay" class="inline-link"> delay </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_handle" class="inline-link"> handle </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_skip" class="inline-link"> skip </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojo_dnd_TimedMoveable_timeout" class="inline-link"> timeout </a><span></span><span title="inherited from dojo/dnd/TimedMoveable" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_dnd_TimedMoveable_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>an object that makes a node moveable with a timer</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops watching for possible move, deletes all references, so the object can be garbage-collected</span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onDragDetected" class="inline-link"> onDragDetected</a><span class="parameters">(</span>e) <span>called when the drag is detected;
 responsible for creation of the mover</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>mover, e) <span>called during the very first move notification;
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>mover, e) <span>called during the very first move notification;
 can be used to initialize coordinates, can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>event processor for onmousedown/ontouchstart, creates a Mover for the node</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_TimedMoveable_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>mover, leftTop) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMoved" class="inline-link"> onMoved</a><span class="parameters">(</span>mover, leftTop) <span>called after every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMoveStart" class="inline-link"> onMoveStart</a><span class="parameters">(</span>mover) <span>called before every move operation</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_TimedMoveable_onMoveStop" class="inline-link"> onMoveStop</a><span class="parameters">(</span>mover) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMoving" class="inline-link"> onMoving</a><span class="parameters">(</span>mover, leftTop) <span>called before every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>event processor for onmousedown/ontouchstart, creates a Mover for the node</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_TimedMoveable_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>mover, leftTop) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMoved" class="inline-link"> onMoved</a><span class="parameters">(</span>mover, leftTop) <span>called after every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMoveStart" class="inline-link"> onMoveStart</a><span class="parameters">(</span>mover) <span>called before every move operation</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_TimedMoveable_onMoveStop" class="inline-link"> onMoveStop</a><span class="parameters">(</span>mover) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onMoving" class="inline-link"> onMoving</a><span class="parameters">(</span>mover, leftTop) <span>called before every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_TimedMoveable_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -333,4 +341,4 @@ can be used to initialize coordinates, can be overwritten.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/dnd/TimedMoveable" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

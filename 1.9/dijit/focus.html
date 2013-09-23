@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/focus</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/focus" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/focus.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/focus<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful, </a><a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
@@ -24,67 +31,68 @@ when widgets become active/inactive
 </div>
 <p>See the <a href="/reference-guide/1.9/dijit/focus.html" target="_blank">dijit/focus reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dijit_focus__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dijit_focus__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dijit_focus_activeStack" class="inline-link"> activeStack </a><span>List of currently active widgets (focused widget and it&#39;s ancestors)</span><span title="inherited from dijit/focus" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dijit_focus_curNode" class="inline-link"> curNode </a><span>Currently focused item on screen</span><span title="inherited from dijit/focus" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dijit_focus__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_focus__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dijit_focus__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_focus__setStack" class="inline-link"> _setStack</a><span class="parameters">(</span>newStack, by) <span>The stack of active widgets has changed.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_focus_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_focus_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_focus_focus" class="inline-link"> focus</a><span class="parameters">(</span>node) <span>Focus the specified node, suppressing errors if they occur</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_focus_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_focus_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_focus_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_focus_registerIframe" class="inline-link"> registerIframe</a><span class="parameters">(</span>iframe) <span>Registers listeners on the specified iframe so that any click
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dijit_focus_activeStack" class="inline-link"> activeStack </a><span>List of currently active widgets (focused widget and it&#39;s ancestors)</span><span title="inherited from dijit/focus" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dijit_focus_curNode" class="inline-link"> curNode </a><span>Currently focused item on screen</span><span title="inherited from dijit/focus" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dijit_focus__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_focus__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_focus__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_focus__setStack" class="inline-link"> _setStack</a><span class="parameters">(</span>newStack, by) <span>The stack of active widgets has changed.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_focus_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_focus_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_focus_focus" class="inline-link"> focus</a><span class="parameters">(</span>node) <span>Focus the specified node, suppressing errors if they occur</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_focus_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_focus_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_focus_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_focus_registerIframe" class="inline-link"> registerIframe</a><span class="parameters">(</span>iframe) <span>Registers listeners on the specified iframe so that any click
 or focus event on that iframe (or anything in it) is reported
 as a focus/click event on the &lt;iframe&gt; itself.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_focus_registerWin" class="inline-link"> registerWin</a><span class="parameters">(</span>targetWindow, effectiveNode) <span>Registers listeners on the specified window (either the main
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_focus_registerWin" class="inline-link"> registerWin</a><span class="parameters">(</span>targetWindow, effectiveNode) <span>Registers listeners on the specified window (either the main
 window or an iframe&#39;s window) to detect when the user has clicked somewhere
 or focused somewhere.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_focus_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dijit_focus_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_focus__onBlurNode" class="inline-link"> _onBlurNode</a><span class="parameters">(</span>node) <span>Called when focus leaves a node.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_focus__onFocusNode" class="inline-link"> _onFocusNode</a><span class="parameters">(</span>node) <span>Callback when node is focused</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_focus__onTouchNode" class="inline-link"> _onTouchNode</a><span class="parameters">(</span>node, by) <span>Callback when node is focused or mouse-downed</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_focus_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dijit_focus_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_focus__onBlurNode" class="inline-link"> _onBlurNode</a><span class="parameters">(</span>node) <span>Called when focus leaves a node.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_focus__onFocusNode" class="inline-link"> _onFocusNode</a><span class="parameters">(</span>node) <span>Callback when node is focused</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_focus__onTouchNode" class="inline-link"> _onTouchNode</a><span class="parameters">(</span>node, by) <span>Callback when node is focused or mouse-downed</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -568,4 +576,4 @@ in which case every widget is marked inactive</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/focus" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

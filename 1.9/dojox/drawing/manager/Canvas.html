@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/manager/Canvas</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/manager/Canvas" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/manager/Canvas.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/manager/Canvas<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Creates a dojox.gfx.surface to be used for Drawing. Note that
 The &#39;surface&#39; that Drawing uses is actually a dojox.gfx.group.
@@ -12,7 +19,7 @@ This allows for more versatility.
 <p>Note: Surface creation is asynchronous. Connect to
 onSurfaceReady in Drawing.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Canvas<span class="parameters">(options);</span></div>
 </div>
@@ -31,43 +38,44 @@ onSurfaceReady in Drawing.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_drawing_manager_Canvas_baseClass" class="inline-link"> baseClass </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_Canvas_useScrollbars" class="inline-link"> useScrollbars </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_manager_Canvas_zoom" class="inline-link"> zoom </a><span>The amount the canvas is zoomed</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_getScrollOffset" class="inline-link"> getScrollOffset</a><span class="parameters">(</span>) <span>Get the scroll position of the canvas</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_getScrollWidth" class="inline-link"> getScrollWidth</a><span class="parameters">(</span>) <span>Special method used to detect the width (and height)
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_drawing_manager_Canvas_baseClass" class="inline-link"> baseClass </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_manager_Canvas_useScrollbars" class="inline-link"> useScrollbars </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_manager_Canvas_zoom" class="inline-link"> zoom </a><span>The amount the canvas is zoomed</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_getScrollOffset" class="inline-link"> getScrollOffset</a><span class="parameters">(</span>) <span>Get the scroll position of the canvas</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_getScrollWidth" class="inline-link"> getScrollWidth</a><span class="parameters">(</span>) <span>Special method used to detect the width (and height)
 of the browser scrollbars.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span>Method used to change size of canvas.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_setDimensions" class="inline-link"> setDimensions</a><span class="parameters">(</span>width, height, scrollx, scrolly) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_setZoom" class="inline-link"> setZoom</a><span class="parameters">(</span>zoom) <span>Internal.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_onScroll" class="inline-link"> onScroll</a><span class="parameters">(</span>) <span>Event fires on scroll.NOT IMPLEMENTED</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span>Method used to change size of canvas.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_setDimensions" class="inline-link"> setDimensions</a><span class="parameters">(</span>width, height, scrollx, scrolly) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_setZoom" class="inline-link"> setZoom</a><span class="parameters">(</span>zoom) <span>Internal.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Canvas_onScroll" class="inline-link"> onScroll</a><span class="parameters">(</span>) <span>Event fires on scroll.NOT IMPLEMENTED</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -237,4 +245,4 @@ Do not call this, use resize().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/manager/Canvas" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

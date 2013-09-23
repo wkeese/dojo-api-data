@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/_StoreLayer._ServerSideLayer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/plugins/_StoreLayer._ServerSideLayer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/_StoreLayer._ServerSideLayer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/_StoreLayer._ServerSideLayer<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>The most abstract class for all server side store layers.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _StoreLayer._ServerSideLayer<span class="parameters">(args);</span></div>
 </div>
@@ -22,68 +29,69 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer___cmds" class="inline-link"> __cmds </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer___enabled" class="inline-link"> __enabled </a><span>To control whether this layer is valid.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__originFetch" class="inline-link"> _originFetch </a><span>The original fetch function of the store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__store" class="inline-link"> _store </a><span>The wrapped store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__url" class="inline-link"> _url </a><span>The url of the server</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_layerFuncName" class="inline-link"> layerFuncName </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_tags" class="inline-link"> tags </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>userRequest) <span>Implementation of _StoreLayer._fetch</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__unwrap" class="inline-link"> _unwrap</a><span class="parameters">(</span>nextLayer) <span>Do the actual unwrapping to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>store, funcName, layerFuncName, nextLayer) <span>Do the actual wrapping (or &#39;hacking&#39; if you like) to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_command" class="inline-link"> command</a><span class="parameters">(</span>cmdName, cmdContent) <span>get/set a command (a name-value pair)</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_enabled" class="inline-link"> enabled</a><span class="parameters">(</span>toEnable) <span>Overrided from _StoreLayer.enabled</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_name" class="inline-link"> name</a><span class="parameters">(</span>) <span>Get the name of this store layer.</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_originFetch" class="inline-link"> originFetch</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_useCommands" class="inline-link"> useCommands</a><span class="parameters">(</span>toUse) <span>If you only want to modify the user request, instead of sending a separate command
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer___cmds" class="inline-link"> __cmds </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer___enabled" class="inline-link"> __enabled </a><span>To control whether this layer is valid.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__originFetch" class="inline-link"> _originFetch </a><span>The original fetch function of the store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__store" class="inline-link"> _store </a><span>The wrapped store.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__url" class="inline-link"> _url </a><span>The url of the server</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_layerFuncName" class="inline-link"> layerFuncName </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_tags" class="inline-link"> tags </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>userRequest) <span>Implementation of _StoreLayer._fetch</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__unwrap" class="inline-link"> _unwrap</a><span class="parameters">(</span>nextLayer) <span>Do the actual unwrapping to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>store, funcName, layerFuncName, nextLayer) <span>Do the actual wrapping (or &#39;hacking&#39; if you like) to the store.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_command" class="inline-link"> command</a><span class="parameters">(</span>cmdName, cmdContent) <span>get/set a command (a name-value pair)</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_enabled" class="inline-link"> enabled</a><span class="parameters">(</span>toEnable) <span>Overrided from _StoreLayer.enabled</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_name" class="inline-link"> name</a><span class="parameters">(</span>) <span>Get the name of this store layer.</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_originFetch" class="inline-link"> originFetch</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>store) <span></span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_useCommands" class="inline-link"> useCommands</a><span class="parameters">(</span>toUse) <span>If you only want to modify the user request, instead of sending a separate command
 to server before fetch, just call:
 
 
 this.useCommand(false);</span><span title="inherited from dojox/grid/enhanced/plugins/_StoreLayer" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_onCommandError" class="inline-link"> onCommandError</a><span class="parameters">(</span>error) <span>handle errors when sending commands.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_onCommandLoad" class="inline-link"> onCommandLoad</a><span class="parameters">(</span>response, userRequest) <span>When the server gives back response for the commands, you can do something here.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_onCommandError" class="inline-link"> onCommandError</a><span class="parameters">(</span>error) <span>handle errors when sending commands.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_grid_enhanced_plugins__StoreLayer__ServerSideLayer_onCommandLoad" class="inline-link"> onCommandLoad</a><span class="parameters">(</span>response, userRequest) <span>When the server gives back response for the commands, you can do something here.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -417,4 +425,4 @@ to server before fetch, just call:
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/plugins/_StoreLayer._ServerSideLayer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

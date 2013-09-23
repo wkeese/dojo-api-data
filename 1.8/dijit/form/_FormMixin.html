@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_FormMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/form/_FormMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_FormMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/form/_FormMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Mixin for containers of form widgets (i.e. widgets that represent a single value
 and can be children of a <code>&lt;form&gt;</code> node or <a class="jsdoc-link" href="/api/1.8/dijit/form/Form">dijit/form/Form</a> widget)</p>
@@ -11,65 +18,66 @@ form widgets</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/form/_FormMixin.html" target="_blank">dijit/form/_FormMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dijit_form__FormMixin_state" class="inline-link"> state </a><span>Will be &quot;Error&quot; if one or more of the child widgets has an invalid value,
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dijit_form__FormMixin_state" class="inline-link"> state </a><span>Will be &quot;Error&quot; if one or more of the child widgets has an invalid value,
 &quot;Incomplete&quot; if not all of the required child widgets are filled in.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__getDescendantFormWidgets" class="inline-link"> _getDescendantFormWidgets</a><span class="parameters">(</span>children) <span>Returns all form widget descendants, searching through non-form child widgets like BorderContainer</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__getState" class="inline-link"> _getState</a><span class="parameters">(</span>) <span>Compute what this.state should be based on state of children</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Returns Object representing form values.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>obj) <span>Fill in form values from according to an Object (in the format returned by get(&#39;value&#39;))</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_connectChildren" class="inline-link"> connectChildren</a><span class="parameters">(</span>inStartup) <span>You can call this function directly, ex. in the event that you
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__getDescendantFormWidgets" class="inline-link"> _getDescendantFormWidgets</a><span class="parameters">(</span>children) <span>Returns all form widget descendants, searching through non-form child widgets like BorderContainer</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__getState" class="inline-link"> _getState</a><span class="parameters">(</span>) <span>Compute what this.state should be based on state of children</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Returns Object representing form values.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>obj) <span>Fill in form values from according to an Object (in the format returned by get(&#39;value&#39;))</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_connectChildren" class="inline-link"> connectChildren</a><span class="parameters">(</span>inStartup) <span>You can call this function directly, ex. in the event that you
 programmatically add a widget to the form after the form has been
 initialized.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_disconnectChildren" class="inline-link"> disconnectChildren</a><span class="parameters">(</span>) <span>Deprecated method.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>) <span>Returns true if all of the widgets are valid.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>val) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_validate" class="inline-link"> validate</a><span class="parameters">(</span>) <span>returns if the form is valid - same as isValid - but
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_disconnectChildren" class="inline-link"> disconnectChildren</a><span class="parameters">(</span>) <span>Deprecated method.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>) <span>Returns true if all of the widgets are valid.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>val) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_validate" class="inline-link"> validate</a><span class="parameters">(</span>) <span>returns if the form is valid - same as isValid - but
 provides a few additional (ui-specific) features:
 
 
 
 it will highlight any sub-widgets that are not valid
 it will call focus() on the first invalid sub-widget</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__onChildChange" class="inline-link"> _onChildChange</a><span class="parameters">(</span>attr) <span>Called when child&#39;s value or disabled state changes</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_onValidStateChange" class="inline-link"> onValidStateChange</a><span class="parameters">(</span>isValid) <span>Stub function to connect to if you want to do something
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_form__FormMixin__onChildChange" class="inline-link"> _onChildChange</a><span class="parameters">(</span>attr) <span>Called when child&#39;s value or disabled state changes</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_form__FormMixin_onValidStateChange" class="inline-link"> onValidStateChange</a><span class="parameters">(</span>isValid) <span>Stub function to connect to if you want to do something
 (like disable/enable a submit button) when the valid
 state changes on the form as a whole.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -281,4 +289,4 @@ state changes on the form as a whole.
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/form/_FormMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

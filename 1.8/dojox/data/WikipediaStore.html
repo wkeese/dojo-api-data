@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/WikipediaStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/data/WikipediaStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/WikipediaStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/WikipediaStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/data/ServiceStore" class="jsdoc-link">dojox/data/ServiceStore</a>
@@ -11,7 +18,7 @@ Wikipedia SMD spec from dojox.rpc. It currently is useful only for
 finding articles that contain some particular text or grabbing single
 articles by full name; no wildcards or other filtering are supported.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new WikipediaStore<span class="parameters">(options);</span></div>
 </div>
@@ -29,13 +36,13 @@ articles by full name; no wildcards or other filtering are supported.</p>
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/data/WikipediaStore.html" target="_blank">dojox/data/WikipediaStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>var store = new dojox.data.WikipediaStore();
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var store = new dojox.data.WikipediaStore();
 store.fetch({
     query: {title:&quot;Dojo Toolkit&quot;},
     onItem: function(item){
@@ -43,78 +50,80 @@ store.fetch({
     }
 });</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private inherited"><a href="#1_8dojox_data_WikipediaStore__currentId" class="inline-link"> _currentId </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojox_data_WikipediaStore_estimateCountFactor" class="inline-link"> estimateCountFactor </a><span>This parameter is used by the ServiceStore to estimate the total count.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_data_WikipediaStore_idAttribute" class="inline-link"> idAttribute </a><span>Defaults to &#39;id&#39;.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_data_WikipediaStore_labelAttribute" class="inline-link"> labelAttribute </a><span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_data_WikipediaStore_loadLazyValues" class="inline-link"> loadLazyValues </a><span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_data_WikipediaStore_schema" class="inline-link"> schema </a><span>This is a schema object for this store.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_data_WikipediaStore_service" class="inline-link"> service </a><span>This is the service object that is used to retrieve lazy data and save results
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private inherited"><a href="#1_8dojox_data_WikipediaStore__currentId" class="inline-link"> _currentId </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojox_data_WikipediaStore_estimateCountFactor" class="inline-link"> estimateCountFactor </a><span>This parameter is used by the ServiceStore to estimate the total count.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_data_WikipediaStore_idAttribute" class="inline-link"> idAttribute </a><span>Defaults to &#39;id&#39;.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_data_WikipediaStore_labelAttribute" class="inline-link"> labelAttribute </a><span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_data_WikipediaStore_loadLazyValues" class="inline-link"> loadLazyValues </a><span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_data_WikipediaStore_schema" class="inline-link"> schema </a><span>This is a schema object for this store.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_data_WikipediaStore_service" class="inline-link"> service </a><span>This is the service object that is used to retrieve lazy data and save results
 The function should be directly callable with a single parameter of an object id to be loaded</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_data_WikipediaStore_syncMode" class="inline-link"> syncMode </a><span>Setting this to true will set the store to using synchronous calls by default.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_data_WikipediaStore__doQuery" class="inline-link"> _doQuery</a><span class="parameters">(</span>args) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_WikipediaStore__processResults" class="inline-link"> _processResults</a><span class="parameters">(</span>results, def) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_WikipediaStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Checks to see if &#39;item&#39; has &#39;value&#39; at &#39;attribute&#39;</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_WikipediaStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>Fetch a page or some partially-loaded search results from
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_data_WikipediaStore_syncMode" class="inline-link"> syncMode </a><span>Setting this to true will set the store to using synchronous calls by default.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_data_WikipediaStore__doQuery" class="inline-link"> _doQuery</a><span class="parameters">(</span>args) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_WikipediaStore__processResults" class="inline-link"> _processResults</a><span class="parameters">(</span>results, def) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_WikipediaStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Checks to see if &#39;item&#39; has &#39;value&#39; at &#39;attribute&#39;</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_WikipediaStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>Fetch a page or some partially-loaded search results from
 Wikipedia.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>args) <span>fetch an item by its identity, by looking in our index of what we have loaded</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Gets the available attributes of an item&#39;s &#39;property&#39; and returns
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>args) <span>fetch an item by its identity, by looking in our index of what we have loaded</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Gets the available attributes of an item&#39;s &#39;property&#39; and returns
 it as an array.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>return the store feature set</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>returns the attributes which are used to make up the
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>return the store feature set</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span></span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>returns the attributes which are used to make up the
 identity of an item.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>returns the label for an item.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>returns an array of attributes that are used to create the label of an item</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getSchema" class="inline-link"> getSchema</a><span class="parameters">(</span>) <span>Returns a reference to the JSON Schema</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, property, defaultValue) <span>Gets the value of an item&#39;s &#39;property&#39;</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, property) <span>Gets the value of an item&#39;s &#39;property&#39; and returns
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>returns the label for an item.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>returns an array of attributes that are used to create the label of an item</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getSchema" class="inline-link"> getSchema</a><span class="parameters">(</span>) <span>Returns a reference to the JSON Schema</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, property, defaultValue) <span>Gets the value of an item&#39;s &#39;property&#39;</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, property) <span>Gets the value of an item&#39;s &#39;property&#39; and returns
 it.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Checks to see if item has attribute</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>Checks to see if the argument is an item</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>Checks to see if the item is loaded.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>args) <span>Loads an item and calls the callback handler.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Checks to see if item has attribute</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>Checks to see if the argument is an item</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>Checks to see if the item is loaded.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_WikipediaStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>args) <span>Loads an item and calls the callback handler.</span><span title="inherited from dojox/data/ServiceStore" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -716,4 +725,4 @@ a lazy value as well (doesn&#39;t need to be an item).</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/data/WikipediaStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

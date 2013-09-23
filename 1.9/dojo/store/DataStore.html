@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/store/DataStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/store/DataStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/store/DataStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/store/DataStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/store/api/Store" class="jsdoc-link">dojo/store/api/Store</a>
@@ -8,7 +15,7 @@
 You can provide a Dojo data store and use this adapter to interact with it through
 the Dojo object store API</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new DataStore<span class="parameters">(options);</span></div>
 </div>
@@ -31,47 +38,48 @@ including a reference to the Dojo data store under the property &quot;store&quot
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/store/DataStore.html" target="_blank">dojo/store/DataStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojo_store_DataStore_idProperty" class="inline-link"> idProperty </a><span>The object property to use to store the identity of the store items.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojo_store_DataStore_store" class="inline-link"> store </a><span>The object store to convert to a data store</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojo_store_DataStore_target" class="inline-link"> target </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojo_store_DataStore__objectConverter" class="inline-link"> _objectConverter</a><span class="parameters">(</span>callback) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Creates an object, throws an error if the object already exists</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_get" class="inline-link"> get</a><span class="parameters">(</span>id, options) <span>Retrieves an object by it&#39;s identity.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Fetch the identity for the given object.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_put" class="inline-link"> put</a><span class="parameters">(</span>object, options) <span>Stores an object by its identity.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_queryEngine" class="inline-link"> queryEngine</a><span class="parameters">(</span>query, options) <span>Defines the query engine to use for querying the data store</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_store_DataStore_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Deletes an object by its identity.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojo_store_DataStore_idProperty" class="inline-link"> idProperty </a><span>The object property to use to store the identity of the store items.</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojo_store_DataStore_store" class="inline-link"> store </a><span>The object store to convert to a data store</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojo_store_DataStore_target" class="inline-link"> target </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojo_store_DataStore__objectConverter" class="inline-link"> _objectConverter</a><span class="parameters">(</span>callback) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Creates an object, throws an error if the object already exists</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_get" class="inline-link"> get</a><span class="parameters">(</span>id, options) <span>Retrieves an object by it&#39;s identity.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parent, options) <span>Retrieves the children of an object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>object) <span>Fetch the identity for the given object.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_getMetadata" class="inline-link"> getMetadata</a><span class="parameters">(</span>object) <span>Returns any metadata about the object.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_put" class="inline-link"> put</a><span class="parameters">(</span>object, options) <span>Stores an object by its identity.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_query" class="inline-link"> query</a><span class="parameters">(</span>query, options) <span>Queries the store for objects.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_queryEngine" class="inline-link"> queryEngine</a><span class="parameters">(</span>query, options) <span>Defines the query engine to use for querying the data store</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_remove" class="inline-link"> remove</a><span class="parameters">(</span>id) <span>Deletes an object by its identity.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_transaction" class="inline-link"> transaction</a><span class="parameters">(</span>) <span>Starts a new transaction.</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -434,4 +442,4 @@ as &quot;auto-commit&quot; style actions.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/store/DataStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

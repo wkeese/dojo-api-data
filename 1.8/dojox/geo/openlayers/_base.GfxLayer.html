@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/_base.GfxLayer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/geo/openlayers/_base.GfxLayer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/_base.GfxLayer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/geo/openlayers/_base.GfxLayer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
@@ -10,7 +17,7 @@
 This layer class accepts Features which encapsulates graphic objects to be added to the map.
 All objects should be added to this group.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base.GfxLayer<span class="parameters">(name,options);</span></div>
 </div>
@@ -36,65 +43,67 @@ All objects should be added to this group.</p>
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/_base.GfxLayer reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojox_geo_openlayers__base_GfxLayer__viewport" class="inline-link"> _viewport </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_GfxLayer__surfaceSize" class="inline-link"> _surfaceSize</a><span class="parameters">(</span>) <span>Recomputes the surface size when being resized.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_added" class="inline-link"> added</a><span class="parameters">(</span>) <span>Called when added to a map.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_addFeature" class="inline-link"> addFeature</a><span class="parameters">(</span>f) <span>Add a feature or an array of features to the layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Removes all the features from this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>name, options) <span>Constructs a new GFX layer.</span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getDataExtent" class="inline-link"> getDataExtent</a><span class="parameters">(</span>) <span>Get data extent</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getDojoMap" class="inline-link"> getDojoMap</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getFeatureAt" class="inline-link"> getFeatureAt</a><span class="parameters">(</span>i) <span>Returns the i-th feature of this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getFeatureCount" class="inline-link"> getFeatureCount</a><span class="parameters">(</span>) <span>Returns the number of the features contained by this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Returns the feature hold by this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getSurface" class="inline-link"> getSurface</a><span class="parameters">(</span>) <span>Get the underlying dojox.gfx.Surface</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Gets the viewport</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>event) <span>Called when this layer is moved or zoomed.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_redraw" class="inline-link"> redraw</a><span class="parameters">(</span>) <span>Redraws this layer</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_removeFeature" class="inline-link"> removeFeature</a><span class="parameters">(</span>f) <span>Removes a feature or an array of features from the layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_removeFeatureAt" class="inline-link"> removeFeatureAt</a><span class="parameters">(</span>index) <span>Remove the feature at the specified index.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_renderFeature" class="inline-link"> renderFeature</a><span class="parameters">(</span>f) <span>Called when rendering a feature is necessary.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_setMap" class="inline-link"> setMap</a><span class="parameters">(</span>map) <span>Sets the map for this layer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_setViewport" class="inline-link"> setViewport</a><span class="parameters">(</span>g) <span>Sets the viewport</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_onMapResize" class="inline-link"> onMapResize</a><span class="parameters">(</span>) <span>Called when map is resized.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojox_geo_openlayers__base_GfxLayer__viewport" class="inline-link"> _viewport </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/geo/openlayers/GfxLayer to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_GfxLayer__surfaceSize" class="inline-link"> _surfaceSize</a><span class="parameters">(</span>) <span>Recomputes the surface size when being resized.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_added" class="inline-link"> added</a><span class="parameters">(</span>) <span>Called when added to a map.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_addFeature" class="inline-link"> addFeature</a><span class="parameters">(</span>f) <span>Add a feature or an array of features to the layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Removes all the features from this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>name, options) <span>Constructs a new GFX layer.</span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getDataExtent" class="inline-link"> getDataExtent</a><span class="parameters">(</span>) <span>Get data extent</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getDojoMap" class="inline-link"> getDojoMap</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getFeatureAt" class="inline-link"> getFeatureAt</a><span class="parameters">(</span>i) <span>Returns the i-th feature of this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getFeatureCount" class="inline-link"> getFeatureCount</a><span class="parameters">(</span>) <span>Returns the number of the features contained by this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Returns the feature hold by this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getSurface" class="inline-link"> getSurface</a><span class="parameters">(</span>) <span>Get the underlying dojox.gfx.Surface</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Gets the viewport</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>event) <span>Called when this layer is moved or zoomed.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_redraw" class="inline-link"> redraw</a><span class="parameters">(</span>) <span>Redraws this layer</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_removeFeature" class="inline-link"> removeFeature</a><span class="parameters">(</span>f) <span>Removes a feature or an array of features from the layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_removeFeatureAt" class="inline-link"> removeFeatureAt</a><span class="parameters">(</span>index) <span>Remove the feature at the specified index.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_renderFeature" class="inline-link"> renderFeature</a><span class="parameters">(</span>f) <span>Called when rendering a feature is necessary.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_setMap" class="inline-link"> setMap</a><span class="parameters">(</span>map) <span>Sets the map for this layer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_setViewport" class="inline-link"> setViewport</a><span class="parameters">(</span>g) <span>Sets the viewport</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_GfxLayer_onMapResize" class="inline-link"> onMapResize</a><span class="parameters">(</span>) <span>Called when map is resized.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -497,4 +506,4 @@ newTextDir will be forced as textDir for all of it&#39;s children (Group/Text/Te
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/geo/openlayers/_base.GfxLayer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

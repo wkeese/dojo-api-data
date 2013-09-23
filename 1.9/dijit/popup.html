@@ -1,44 +1,52 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/popup</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/popup" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/popup.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/popup<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Used to show drop downs (ex: the select list of a ComboBox)
 or popups (ex: right-click context menus).</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dijit/popup.html" target="_blank">dijit/popup reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_9dijit_popup__beginZIndex" class="inline-link"> _beginZIndex </a><span>Z-index of the first popup.   (If first popup opens other
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_9dijit_popup__beginZIndex" class="inline-link"> _beginZIndex </a><span>Z-index of the first popup.   (If first popup opens other
 popups they get a higher z-index.)</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dijit_popup__idGen" class="inline-link"> _idGen </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dijit_popup__stack" class="inline-link"> _stack </a><span>Stack of currently popped up widgets.
+        </li>
+        <li class="numberIcon private"><a href="#1_9dijit_popup__idGen" class="inline-link"> _idGen </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dijit_popup__stack" class="inline-link"> _stack </a><span>Stack of currently popped up widgets.
 (someone opened _stack[0], and then it opened _stack[1], etc.)</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_popup__createWrapper" class="inline-link"> _createWrapper</a><span class="parameters">(</span>widget) <span>Initialization for widgets that will be used as popups.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_popup__repositionAll" class="inline-link"> _repositionAll</a><span class="parameters">(</span>) <span>If screen has been scrolled, reposition all the popups in the stack.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_popup_close" class="inline-link"> close</a><span class="parameters">(</span>popup) <span>Close specified popup and any popups that it parented.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_popup_getTopPopup" class="inline-link"> getTopPopup</a><span class="parameters">(</span>) <span>Compute the closest ancestor popup that&#39;s not a child of another popup.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_popup_hide" class="inline-link"> hide</a><span class="parameters">(</span>widget) <span>Hide this popup widget (until it is ready to be shown).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_popup_moveOffScreen" class="inline-link"> moveOffScreen</a><span class="parameters">(</span>widget) <span>Moves the popup widget off-screen.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_popup_open" class="inline-link"> open</a><span class="parameters">(</span>args) <span>Popup the widget at the specified position</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_popup__createWrapper" class="inline-link"> _createWrapper</a><span class="parameters">(</span>widget) <span>Initialization for widgets that will be used as popups.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_popup__repositionAll" class="inline-link"> _repositionAll</a><span class="parameters">(</span>) <span>If screen has been scrolled, reposition all the popups in the stack.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_popup_close" class="inline-link"> close</a><span class="parameters">(</span>popup) <span>Close specified popup and any popups that it parented.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_popup_getTopPopup" class="inline-link"> getTopPopup</a><span class="parameters">(</span>) <span>Compute the closest ancestor popup that&#39;s not a child of another popup.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_popup_hide" class="inline-link"> hide</a><span class="parameters">(</span>widget) <span>Hide this popup widget (until it is ready to be shown).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_popup_moveOffScreen" class="inline-link"> moveOffScreen</a><span class="parameters">(</span>widget) <span>Moves the popup widget off-screen.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_popup_open" class="inline-link"> open</a><span class="parameters">(</span>args) <span>Popup the widget at the specified position</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -281,4 +289,4 @@ above or below the aroundNode or specified x/y position.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/popup" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/move.boxConstrainedMoveable</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dnd/move.boxConstrainedMoveable" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/move.boxConstrainedMoveable.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/dnd/move.boxConstrainedMoveable<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/dnd/Moveable" class="jsdoc-link">dojo/dnd/Moveable,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/dnd/Moveable" class="jsdoc-link">dojo/dnd/Moveable</a>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/dnd/move.boxConstrainedMoveable<span class="parameters">(node,params);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new move.boxConstrainedMoveable<span class="parameters">(node,params);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/dnd/move">dojo/dnd/move</a></div>
 <div class="jsdoc-summary"><p>an object, which makes a node moveable</p>
@@ -35,69 +42,70 @@
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/dnd.html" target="_blank">dojo/dnd/move.boxConstrainedMoveable reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_box" class="inline-link"> box </a><span>object attributes (for markup)</span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_delay" class="inline-link"> delay </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_handle" class="inline-link"> handle </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_skip" class="inline-link"> skip </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_within" class="inline-link"> within </a><span></span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_constraints" class="inline-link"> constraints</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>an object, which makes a node moveable</span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops watching for possible move, deletes all references, so the object can be garbage-collected</span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onDragDetected" class="inline-link"> onDragDetected</a><span class="parameters">(</span>e) <span>called when the drag is detected;
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_box" class="inline-link"> box </a><span>object attributes (for markup)</span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_delay" class="inline-link"> delay </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_handle" class="inline-link"> handle </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_skip" class="inline-link"> skip </a><span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_within" class="inline-link"> within </a><span></span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_constraints" class="inline-link"> constraints</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, params) <span>an object, which makes a node moveable</span><span title="inherited from dojo/dnd/move" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops watching for possible move, deletes all references, so the object can be garbage-collected</span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>params, node, Ctor) <span></span><span title="inherited from dojo/dnd/Moveable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onDragDetected" class="inline-link"> onDragDetected</a><span class="parameters">(</span>e) <span>called when the drag is detected;
 responsible for creation of the mover</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>mover) <span>called during the very first move notification;
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>mover) <span>called during the very first move notification;
 can be used to initialize coordinates, can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>event processor for onmousedown/ontouchstart, creates a Mover for the node</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>mover, leftTop) <span>called during every move notification;
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>event processor for onmousedown/ontouchstart, creates a Mover for the node</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup, used only for delayed drags</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>mover, leftTop) <span>called during every move notification;
 should actually move the node; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoved" class="inline-link"> onMoved</a><span class="parameters">(</span>mover, leftTop) <span>called after every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoveStart" class="inline-link"> onMoveStart</a><span class="parameters">(</span>mover) <span>called before every move operation</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoveStop" class="inline-link"> onMoveStop</a><span class="parameters">(</span>mover) <span>called after every move operation</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoving" class="inline-link"> onMoving</a><span class="parameters">(</span>mover, leftTop) <span>called before every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoved" class="inline-link"> onMoved</a><span class="parameters">(</span>mover, leftTop) <span>called after every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoveStart" class="inline-link"> onMoveStart</a><span class="parameters">(</span>mover) <span>called before every move operation</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoveStop" class="inline-link"> onMoveStop</a><span class="parameters">(</span>mover) <span>called after every move operation</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onMoving" class="inline-link"> onMoving</a><span class="parameters">(</span>mover, leftTop) <span>called before every incremental move; can be overwritten.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_move_boxConstrainedMoveable_onSelectStart" class="inline-link"> onSelectStart</a><span class="parameters">(</span>e) <span>event processor for onselectevent and ondragevent</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -355,4 +363,4 @@ should actually move the node; can be overwritten.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dnd/move.boxConstrainedMoveable" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

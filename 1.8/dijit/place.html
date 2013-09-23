@@ -1,32 +1,40 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/place</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/place" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/place.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/place<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Code to place a DOMNode relative to another DOMNode.
 Load using require([&quot;<a class="jsdoc-link" href="/api/1.8/dijit/place">dijit/place</a>&quot;], function(place){ ... }).</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/place.html" target="_blank">dijit/place reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dijit_place___Position" class="inline-link"> __Position </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dijit_place___Rectangle" class="inline-link"> __Rectangle </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit_place_around" class="inline-link"> around</a><span class="parameters">(</span>node, anchor, positions, leftToRight, layoutNode) <span>Position node adjacent or kitty-corner to anchor
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dijit_place___Position" class="inline-link"> __Position </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dijit_place___Rectangle" class="inline-link"> __Rectangle </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit_place_around" class="inline-link"> around</a><span class="parameters">(</span>node, anchor, positions, leftToRight, layoutNode) <span>Position node adjacent or kitty-corner to anchor
 such that it&#39;s fully visible in viewport.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_place_at" class="inline-link"> at</a><span class="parameters">(</span>node, pos, corners, padding) <span>Positions one of the node&#39;s corners at specified position
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_place_at" class="inline-link"> at</a><span class="parameters">(</span>node, pos, corners, padding) <span>Positions one of the node&#39;s corners at specified position
 such that node is fully visible in viewport.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -85,15 +93,15 @@ aroundNode, and that node is fully visible.</p>
 </p>
 <ul>
 <li>before: places drop down to the left of the anchor node/widget, or to the right in the case
-of RTL scripts like Hebrew and Arabic; aligns either the top of the drop down
-with the top of the anchor, or the bottom of the drop down with bottom of the anchor.</li>
+  of RTL scripts like Hebrew and Arabic; aligns either the top of the drop down
+  with the top of the anchor, or the bottom of the drop down with bottom of the anchor.</li>
 <li>after: places drop down to the right of the anchor node/widget, or to the left in the case
-of RTL scripts like Hebrew and Arabic; aligns either the top of the drop down
-with the top of the anchor, or the bottom of the drop down with bottom of the anchor.</li>
+  of RTL scripts like Hebrew and Arabic; aligns either the top of the drop down
+  with the top of the anchor, or the bottom of the drop down with bottom of the anchor.</li>
 <li>before-centered: centers drop down to the left of the anchor node/widget, or to the right
-in the case of RTL scripts like Hebrew and Arabic</li>
+   in the case of RTL scripts like Hebrew and Arabic</li>
 <li>after-centered: centers drop down to the right of the anchor node/widget, or to the left
-in the case of RTL scripts like Hebrew and Arabic</li>
+   in the case of RTL scripts like Hebrew and Arabic</li>
 <li>above-centered: drop down is centered above anchor node</li>
 <li>above: drop down goes above anchor node, left sides aligned</li>
 <li>above-alt: drop down goes above anchor node, right sides aligned</li>
@@ -126,10 +134,12 @@ based on their orientation relative to the parent.   This adjusts the popup base
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  placeAroundNode(node, aroundNode, {&#39;BL&#39;:&#39;TL&#39;, &#39;TR&#39;:&#39;BR&#39;});</code></pre>
+            <h3>Example 1</h3><pre><code>placeAroundNode(node, aroundNode, {&#39;BL&#39;:&#39;TL&#39;, &#39;TR&#39;:&#39;BR&#39;});</code></pre>
 <p>This will try to position node such that node&#39;s top-left corner is at the same position
-as the bottom left corner of the aroundNode (ie, put node below
-aroundNode, with left edges aligned).  If that fails it will try to put
+
+</p>
+<p>as the bottom left corner of the aroundNode (ie, put node below
+aroundNode, with left edges aligned).   If that fails it will try to put
 the bottom-right corner of node where the top right corner of aroundNode is
 (ie, put node above aroundNode, with right edges aligned)
 </p>
@@ -198,12 +208,14 @@ Possible values are:
           <div class="jsdoc-example">
             <h3>Example 1</h3><p>Try to place node&#39;s top right corner at (10,20).
 If that makes node go (partially) off screen, then try placing
-bottom left corner at (10,20).</p>
-<pre><code>  place(node, {x: 10, y: 20}, [&quot;TR&quot;, &quot;BL&quot;])</code></pre>
+bottom left corner at (10,20).
+
+</p>
+<pre><code>place(node, {x: 10, y: 20}, [&quot;TR&quot;, &quot;BL&quot;])</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/place" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

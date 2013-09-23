@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/_dndContainer</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/tree/_dndContainer" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/_dndContainer.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/tree/_dndContainer<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This is a base class for <a class="jsdoc-link" href="/api/1.9/dijit/tree/_dndSelector">dijit/tree/_dndSelector</a>, and isn&#39;t meant to be used directly.
 It&#39;s modeled after <a class="jsdoc-link" href="/api/1.9/dojo/dnd/Container">dojo/dnd/Container</a>.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _dndContainer<span class="parameters">(tree,params);</span></div>
 </div>
@@ -34,42 +41,43 @@ It&#39;s modeled after <a class="jsdoc-link" href="/api/1.9/dojo/dnd/Container">
 </table>
 <p>See the <a href="/reference-guide/1.9/dijit/tree/_dndContainer.html" target="_blank">dijit/tree/_dndContainer reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_9dijit_tree__dndContainer_current" class="inline-link"> current </a><span>The currently hovered TreeNode.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>Adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>Changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>Removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>tree, params) <span>A constructor of the Container</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Prepares this object to be garbage-collected</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>widget, evt) <span>Called when mouse is moved away from a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>widget, evt) <span>Called when mouse is moved over a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>This function is called once, when mouse is out of our container</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>This function is called once, when mouse is over our container</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_9dijit_tree__dndContainer_current" class="inline-link"> current </a><span>The currently hovered TreeNode.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer__addItemClass" class="inline-link"> _addItemClass</a><span class="parameters">(</span>node, type) <span>Adds a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer__changeState" class="inline-link"> _changeState</a><span class="parameters">(</span>type, newState) <span>Changes a named state to new state value</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer__removeItemClass" class="inline-link"> _removeItemClass</a><span class="parameters">(</span>node, type) <span>Removes a class with prefix &quot;dojoDndItem&quot;</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dijit_tree__dndContainer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>tree, params) <span>A constructor of the Container</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Prepares this object to be garbage-collected</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onMouseOut" class="inline-link"> onMouseOut</a><span class="parameters">(</span>widget, evt) <span>Called when mouse is moved away from a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onMouseOver" class="inline-link"> onMouseOver</a><span class="parameters">(</span>widget, evt) <span>Called when mouse is moved over a TreeNode</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onOutEvent" class="inline-link"> onOutEvent</a><span class="parameters">(</span>) <span>This function is called once, when mouse is out of our container</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit_tree__dndContainer_onOverEvent" class="inline-link"> onOverEvent</a><span class="parameters">(</span>) <span>This function is called once, when mouse is over our container</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -243,4 +251,4 @@ It&#39;s modeled after <a class="jsdoc-link" href="/api/1.9/dojo/dnd/Container">
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/tree/_dndContainer" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

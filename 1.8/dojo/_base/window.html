@@ -1,38 +1,46 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/window</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/_base/window" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/window.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/_base/window<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>API to save/set/restore the global/document scope.</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/_base/window.html" target="_blank">dojo/_base/window reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojo__base_window_doc" class="inline-link"> doc </a><span>Alias for the current document. &#39;doc&#39; can be modified
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojo__base_window_doc" class="inline-link"> doc </a><span>Alias for the current document. &#39;doc&#39; can be modified
 for temporary context shifting.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojo__base_window_global" class="inline-link"> global </a><span>Alias for the current window. &#39;global&#39; can be modified
+        </li>
+        <li class="objectIcon"><a href="#1_8dojo__base_window_global" class="inline-link"> global </a><span>Alias for the current window. &#39;global&#39; can be modified
 for temporary context shifting.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo__base_window_body" class="inline-link"> body</a><span class="parameters">(</span>doc) <span>Return the body element of the specified document or of dojo/_base/window::doc.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_window_setContext" class="inline-link"> setContext</a><span class="parameters">(</span>globalObject, globalDocument) <span>changes the behavior of many core Dojo functions that deal with
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo__base_window_body" class="inline-link"> body</a><span class="parameters">(</span>doc) <span>Return the body element of the specified document or of dojo/_base/window::doc.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_window_setContext" class="inline-link"> setContext</a><span class="parameters">(</span>globalObject, globalDocument) <span>changes the behavior of many core Dojo functions that deal with
 namespace and DOM lookup, changing them to work in a new global
 context (e.g., an iframe).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_window_withDoc" class="inline-link"> withDoc</a><span class="parameters">(</span>documentObject, callback, thisObject, cbArguments) <span>Invoke callback with documentObject as dojo/_base/window::doc.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo__base_window_withGlobal" class="inline-link"> withGlobal</a><span class="parameters">(</span>globalObject, callback, thisObject, cbArguments) <span>Invoke callback with globalObject as dojo.global and
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_window_withDoc" class="inline-link"> withDoc</a><span class="parameters">(</span>documentObject, callback, thisObject, cbArguments) <span>Invoke callback with documentObject as dojo/_base/window::doc.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo__base_window_withGlobal" class="inline-link"> withGlobal</a><span class="parameters">(</span>globalObject, callback, thisObject, cbArguments) <span>Invoke callback with globalObject as dojo.global and
 globalObject.document as dojo.doc.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -84,7 +92,7 @@ for temporary context shifting. See also withGlobal().</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  win.body().appendChild(dojo.doc.createElement(&#39;div&#39;));</code></pre>
+            <h3>Example 1</h3><pre><code>win.body().appendChild(dojo.doc.createElement(&#39;div&#39;));</code></pre>
 
           </div>
         </div>
@@ -218,4 +226,4 @@ and dojo.doc will be restored to its previous state.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/window" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

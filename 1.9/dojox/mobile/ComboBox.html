@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/ComboBox</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mobile/ComboBox" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/ComboBox.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/ComboBox<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/mobile/TextBox" class="jsdoc-link">dojox/mobile/TextBox, </a><a href="/api/1.9/dijit/form/_AutoCompleterMixin" class="jsdoc-link">dijit/form/_AutoCompleterMixin</a>
 </div>
 <div class="jsdoc-full-summary"><p>A non-templated auto-completing text box widget.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new ComboBox<span class="parameters">(params,srcNodeRef);</span></div>
 </div>
@@ -46,376 +53,377 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/mobile/ComboBox.html" target="_blank">dojox/mobile/ComboBox reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox___skipInputEvent" class="inline-link"> __skipInputEvent </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__blankValue" class="inline-link"> _blankValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onChangeActive" class="inline-link"> _onChangeActive </a><span>Indicates that changes to the value should call onChange() callback.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setTabIndexAttr" class="inline-link"> _setTabIndexAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setTypeAttr" class="inline-link"> _setTypeAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__stopClickEvents" class="inline-link"> _stopClickEvents </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_alt" class="inline-link"> alt </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_aria-label" class="inline-link"> aria-label </a><span></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_autoComplete" class="inline-link"> autoComplete </a><span>Flag which enables the auto-completion.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_ComboBox_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox___skipInputEvent" class="inline-link"> __skipInputEvent </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__blankValue" class="inline-link"> _blankValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onChangeActive" class="inline-link"> _onChangeActive </a><span>Indicates that changes to the value should call onChange() callback.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setTabIndexAttr" class="inline-link"> _setTabIndexAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setTypeAttr" class="inline-link"> _setTypeAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__stopClickEvents" class="inline-link"> _stopClickEvents </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_alt" class="inline-link"> alt </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_aria-label" class="inline-link"> aria-label </a><span></span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_autoComplete" class="inline-link"> autoComplete </a><span>Flag which enables the auto-completion.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_ComboBox_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_disabled" class="inline-link"> disabled </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_displayedValue" class="inline-link"> displayedValue </a><span>For subclasses like ComboBox where the displayed value
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_disabled" class="inline-link"> disabled </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_displayedValue" class="inline-link"> displayedValue </a><span>For subclasses like ComboBox where the displayed value
 (ex: Kentucky) and the serialized value (ex: KY) are different,
 this represents the displayed value.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_ComboBox_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dropDown" class="inline-link"> dropDown </a><span>The widget to display as a popup.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dropDownClass" class="inline-link"> dropDownClass </a><span>Name of the drop-down widget class used to select a date/time.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dropDownPosition" class="inline-link"> dropDownPosition </a><span>This variable controls the position of the drop-down.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_fetchProperties" class="inline-link"> fetchProperties </a><span>Mixin to the store&#39;s fetch.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
-it was recently clicked.</span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_highlightMatch" class="inline-link"> highlightMatch </a><span>One of: &quot;first&quot;, &quot;all&quot; or &quot;none&quot;.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_ComboBox_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dropDown" class="inline-link"> dropDown </a><span>The widget to display as a popup.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dropDownClass" class="inline-link"> dropDownClass </a><span>Name of the drop-down widget class used to select a date/time.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_dropDownPosition" class="inline-link"> dropDownPosition </a><span>This variable controls the position of the drop-down.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_fetchProperties" class="inline-link"> fetchProperties </a><span>Mixin to the store&#39;s fetch.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+it was recently clicked.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_highlightMatch" class="inline-link"> highlightMatch </a><span>One of: &quot;first&quot;, &quot;all&quot; or &quot;none&quot;.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_ignoreCase" class="inline-link"> ignoreCase </a><span>Set true if the query should ignore case when matching possible items</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_intermediateChanges" class="inline-link"> intermediateChanges </a><span>Fires onChange for each value change or only on demand</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_item" class="inline-link"> item </a><span>This is the item returned by the dojo/store/api/Store implementation that
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_ignoreCase" class="inline-link"> ignoreCase </a><span>Set true if the query should ignore case when matching possible items</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_intermediateChanges" class="inline-link"> intermediateChanges </a><span>Fires onChange for each value change or only on demand</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_item" class="inline-link"> item </a><span>This is the item returned by the dojo/store/api/Store implementation that
 provides the data for this ComboBox, it&#39;s the currently selected item.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_labelAttr" class="inline-link"> labelAttr </a><span>The entries in the drop down list come from this attribute in the
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_labelAttr" class="inline-link"> labelAttr </a><span>The entries in the drop down list come from this attribute in the
 dojo.data items.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_labelType" class="inline-link"> labelType </a><span>Specifies how to interpret the labelAttr in the data store items.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_lowercase" class="inline-link"> lowercase </a><span>Converts all characters to lowercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile_ComboBox_maxHeight" class="inline-link"> maxHeight </a><span>The maximum height for the drop-down.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_maxLength" class="inline-link"> maxLength </a><span>HTML INPUT tag maxLength declaration.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_name" class="inline-link"> name </a><span>Name used when submitting form; same as &quot;name&quot; attribute or plain HTML elements</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile_ComboBox_pageSize" class="inline-link"> pageSize </a><span>Argument to data provider.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_placeHolder" class="inline-link"> placeHolder </a><span>Defines a hint to help users fill out the input field (as defined in HTML 5).</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_propercase" class="inline-link"> propercase </a><span>Converts the first character of each word to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_query" class="inline-link"> query </a><span>A query that can be passed to store to initially filter the items.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_queryExpr" class="inline-link"> queryExpr </a><span>This specifies what query is sent to the data store,
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_labelType" class="inline-link"> labelType </a><span>Specifies how to interpret the labelAttr in the data store items.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_lowercase" class="inline-link"> lowercase </a><span>Converts all characters to lowercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile_ComboBox_maxHeight" class="inline-link"> maxHeight </a><span>The maximum height for the drop-down.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_maxLength" class="inline-link"> maxLength </a><span>HTML INPUT tag maxLength declaration.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_name" class="inline-link"> name </a><span>Name used when submitting form; same as &quot;name&quot; attribute or plain HTML elements</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile_ComboBox_pageSize" class="inline-link"> pageSize </a><span>Argument to data provider.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_placeHolder" class="inline-link"> placeHolder </a><span>Defines a hint to help users fill out the input field (as defined in HTML 5).</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_propercase" class="inline-link"> propercase </a><span>Converts the first character of each word to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_query" class="inline-link"> query </a><span>A query that can be passed to store to initially filter the items.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_queryExpr" class="inline-link"> queryExpr </a><span>This specifies what query is sent to the data store,
 based on what the user has typed.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_readOnly" class="inline-link"> readOnly </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_scrollOnFocus" class="inline-link"> scrollOnFocus </a><span>On focus, should this widget scroll into view?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_searchAttr" class="inline-link"> searchAttr </a><span>Search for items in the data store where this attribute (in the item)
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_readOnly" class="inline-link"> readOnly </a><span>Should this widget respond to user input?</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_scrollOnFocus" class="inline-link"> scrollOnFocus </a><span>On focus, should this widget scroll into view?</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_searchAttr" class="inline-link"> searchAttr </a><span>Search for items in the data store where this attribute (in the item)
 matches what the user typed</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_mobile_ComboBox_searchDelay" class="inline-link"> searchDelay </a><span>Delay in milliseconds between when user types something and we start
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_mobile_ComboBox_searchDelay" class="inline-link"> searchDelay </a><span>Delay in milliseconds between when user types something and we start
 searching based on that value</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_selectOnClick" class="inline-link"> selectOnClick </a><span>Flag which enables the selection on click.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_ComboBox_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_store" class="inline-link"> store </a><span>Reference to data provider object used by this ComboBox.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_selectOnClick" class="inline-link"> selectOnClick </a><span>Flag which enables the selection on click.</span><span title="inherited from dojox/mobile/ComboBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_ComboBox_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_ComboBox_store" class="inline-link"> store </a><span>Reference to data provider object used by this ComboBox.</span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_trim" class="inline-link"> trim </a><span>Removes leading and trailing whitespace if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_type" class="inline-link"> type </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_uppercase" class="inline-link"> uppercase </a><span>Converts all characters to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_value" class="inline-link"> value </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__abortQuery" class="inline-link"> _abortQuery</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__announceOption" class="inline-link"> _announceOption</a><span class="parameters">(</span>node) <span>a11y code that puts the highlighted option in the textbox.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_trim" class="inline-link"> trim </a><span>Removes leading and trailing whitespace if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_type" class="inline-link"> type </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_ComboBox_uppercase" class="inline-link"> uppercase </a><span>Converts all characters to uppercase if true.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_ComboBox_value" class="inline-link"> value </a><span>Corresponds to the native HTML &lt;input&gt; element&#39;s attribute.</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__abortQuery" class="inline-link"> _abortQuery</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__announceOption" class="inline-link"> _announceOption</a><span class="parameters">(</span>node) <span>a11y code that puts the highlighted option in the textbox.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__autoCompleteText" class="inline-link"> _autoCompleteText</a><span class="parameters">(</span>text) <span>Fill in the textbox with the first item from the drop down
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__autoCompleteText" class="inline-link"> _autoCompleteText</a><span class="parameters">(</span>text) <span>Fill in the textbox with the first item from the drop down
 list, and highlight the characters that were
 auto-completed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__escapeHtml" class="inline-link"> _escapeHtml</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__escapeHtml" class="inline-link"> _escapeHtml</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
 i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getCaretPos" class="inline-link"> _getCaretPos</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;displayedValue&#39;) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getMenuLabelFromItem" class="inline-link"> _getMenuLabelFromItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works as we like.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getValueField" class="inline-link"> _getValueField</a><span class="parameters">(</span>) <span>Helper for postMixInProperties() to set this.value based on data inlined into the markup.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>newValue, priorityChange) <span>Called when the value of the widget has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getCaretPos" class="inline-link"> _getCaretPos</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;displayedValue&#39;) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getMenuLabelFromItem" class="inline-link"> _getMenuLabelFromItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works as we like.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__getValueField" class="inline-link"> _getValueField</a><span class="parameters">(</span>) <span>Helper for postMixInProperties() to set this.value based on data inlined into the markup.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>newValue, priorityChange) <span>Called when the value of the widget has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
 
 
 - list of attributes with custom setters, storing in this.constructor._setterAttrs
 - generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__isTextSelected" class="inline-link"> _isTextSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__openResultList" class="inline-link"> _openResultList</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__patternToRegExp" class="inline-link"> _patternToRegExp</a><span class="parameters">(</span>pattern) <span>Helper function to convert a simple pattern to a regular expression for matching.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Default action handler for user input events</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__refreshState" class="inline-link"> _refreshState</a><span class="parameters">(</span>) <span>After the user types some characters, etc., this method is
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__isTextSelected" class="inline-link"> _isTextSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__openResultList" class="inline-link"> _openResultList</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__patternToRegExp" class="inline-link"> _patternToRegExp</a><span class="parameters">(</span>pattern) <span>Helper function to convert a simple pattern to a regular expression for matching.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_SearchMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__processInput" class="inline-link"> _processInput</a><span class="parameters">(</span>evt) <span>Default action handler for user input events</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__refreshState" class="inline-link"> _refreshState</a><span class="parameters">(</span>) <span>After the user types some characters, etc., this method is
 called to check the field for validity etc.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__selectOption" class="inline-link"> _selectOption</a><span class="parameters">(</span>target) <span>Menu callback function, called when an item in the menu is selected.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__selectOption" class="inline-link"> _selectOption</a><span class="parameters">(</span>target) <span>Menu callback function, called when an item in the menu is selected.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setCaretPos" class="inline-link"> _setCaretPos</a><span class="parameters">(</span>element, location) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setDisplayedValueAttr" class="inline-link"> _setDisplayedValueAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setItemAttr" class="inline-link"> _setItemAttr</a><span class="parameters">(</span>item, priorityChange, displayedValue) <span>Set the displayed valued in the input box, and the hidden value
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setCaretPos" class="inline-link"> _setCaretPos</a><span class="parameters">(</span>element, location) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setDisplayedValueAttr" class="inline-link"> _setDisplayedValueAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setItemAttr" class="inline-link"> _setItemAttr</a><span class="parameters">(</span>item, priorityChange, displayedValue) <span>Set the displayed valued in the input box, and the hidden value
 that gets submitted, based on a dojo.data store item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__setListAttr" class="inline-link"> _setListAttr</a><span class="parameters">(</span>v) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setPlaceHolderAttr" class="inline-link"> _setPlaceHolderAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setReadOnlyAttr" class="inline-link"> _setReadOnlyAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__setListAttr" class="inline-link"> _setListAttr</a><span class="parameters">(</span>v) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setPlaceHolderAttr" class="inline-link"> _setPlaceHolderAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setReadOnlyAttr" class="inline-link"> _setReadOnlyAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>newValue, priorityChange) <span>Hook so set(&#39;value&#39;, value) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__showResultList" class="inline-link"> _showResultList</a><span class="parameters">(</span>) <span>Display the drop down if not already displayed, or if it is displayed, then
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>newValue, priorityChange) <span>Hook so set(&#39;value&#39;, value) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__showResultList" class="inline-link"> _showResultList</a><span class="parameters">(</span>) <span>Display the drop down if not already displayed, or if it is displayed, then
 reposition it if necessary (reposition may be necessary if drop down&#39;s height changed).</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__startSearch" class="inline-link"> _startSearch</a><span class="parameters">(</span>key) <span>Starts a search for elements matching key (key==&quot;&quot; means to return all items),
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__startSearch" class="inline-link"> _startSearch</a><span class="parameters">(</span>key) <span>Starts a search for elements matching key (key==&quot;&quot; means to return all items),
 and calls _openResultList() when the search completes, to display the results.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__startSearchAll" class="inline-link"> _startSearchAll</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__startSearchFromInput" class="inline-link"> _startSearchFromInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__throttleOpenClose" class="inline-link"> _throttleOpenClose</a><span class="parameters">(</span>) <span>Prevents the open/close in rapid succession.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_closeDropDown" class="inline-link"> closeDropDown</a><span class="parameters">(</span>) <span>Closes the drop down on this widget</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_compare" class="inline-link"> compare</a><span class="parameters">(</span>val1, val2) <span>Compare 2 values (as returned by get(&#39;value&#39;) for this widget).</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__startSearchAll" class="inline-link"> _startSearchAll</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__startSearchFromInput" class="inline-link"> _startSearchFromInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__throttleOpenClose" class="inline-link"> _throttleOpenClose</a><span class="parameters">(</span>) <span>Prevents the open/close in rapid succession.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/mobile/TextBox" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_closeDropDown" class="inline-link"> closeDropDown</a><span class="parameters">(</span>) <span>Closes the drop down on this widget</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_compare" class="inline-link"> compare</a><span class="parameters">(</span>val1, val2) <span>Compare 2 values (as returned by get(&#39;value&#39;) for this widget).</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_doHighlight" class="inline-link"> doHighlight</a><span class="parameters">(</span>label, find) <span>Highlights the string entered by the user in the menu.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_doHighlight" class="inline-link"> doHighlight</a><span class="parameters">(</span>label, find) <span>Highlights the string entered by the user in the menu.</span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_filter" class="inline-link"> filter</a><span class="parameters">(</span>val) <span>Auto-corrections (such as trimming) that are applied to textbox
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_filter" class="inline-link"> filter</a><span class="parameters">(</span>val) <span>Auto-corrections (such as trimming) that are applied to textbox
 value on blur or form submit.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Put focus on this widget</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a value to a properly formatted string.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_focus" class="inline-link"> focus</a><span class="parameters">(</span>) <span>Put focus on this widget</span><span title="inherited from dijit/form/_FormWidgetMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a value to a properly formatted string.</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
 is this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_isLoaded" class="inline-link"> isLoaded</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox_labelFunc" class="inline-link"> labelFunc</a><span class="parameters">(</span>item, store) <span>Computes the label to display based on the dojo.data store item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_loadDropDown" class="inline-link"> loadDropDown</a><span class="parameters">(</span>callback) <span></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_openDropDown" class="inline-link"> openDropDown</a><span class="parameters">(</span>) <span>Opens the dropdown for this widget.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_isLoaded" class="inline-link"> isLoaded</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox_labelFunc" class="inline-link"> labelFunc</a><span class="parameters">(</span>item, store) <span>Computes the label to display based on the dojo.data store item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_loadDropDown" class="inline-link"> loadDropDown</a><span class="parameters">(</span>callback) <span></span><span title="inherited from dijit/form/_AutoCompleterMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_openDropDown" class="inline-link"> openDropDown</a><span class="parameters">(</span>) <span>Opens the dropdown for this widget.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a value</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a value</span><span title="inherited from dijit/form/_TextBoxMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Reset the widget&#39;s value to what it was at initialization time</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_undo" class="inline-link"> undo</a><span class="parameters">(</span>) <span>Restore the value to the last value passed to onChange</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Reset the widget&#39;s value to what it was at initialization time</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_undo" class="inline-link"> undo</a><span class="parameters">(</span>) <span>Restore the value to the last value passed to onChange</span><span title="inherited from dijit/form/_FormValueMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>Shows drop-down if the user is selecting Next/Previous from the virtual keyboard.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>evt) <span>Handles keyboard events</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_ComboBox__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>Shows drop-down if the user is selecting Next/Previous from the virtual keyboard.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onKey" class="inline-link"> _onKey</a><span class="parameters">(</span>evt) <span>Handles keyboard events</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_ComboBox__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>newValue) <span>Callback when this widget&#39;s value is changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>newValue) <span>Callback when this widget&#39;s value is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_onInput" class="inline-link"> onInput</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_onSearch" class="inline-link"> onSearch</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ComboBox_onInput" class="inline-link"> onInput</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ComboBox_onSearch" class="inline-link"> onSearch</a><span class="parameters">(</span>results, query, options) <span>Callback when a search completes.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -3020,4 +3028,4 @@ been clicked.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/ComboBox" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

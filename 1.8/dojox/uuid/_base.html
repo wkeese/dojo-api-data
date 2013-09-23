@@ -1,47 +1,56 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/uuid/_base</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/uuid/_base" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/uuid/_base.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojox/uuid/_base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojox/uuid.html" target="_blank">dojox/uuid/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dojox_uuid__base_NIL_UUID" class="inline-link"> NIL_UUID </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_uuid__base_variant" class="inline-link"> variant </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_uuid__base_version" class="inline-link"> version </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_assert" class="inline-link"> assert</a><span class="parameters">(</span>booleanValue, message) <span>Throws an exception if the assertion fails.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_generateNilUuid" class="inline-link"> generateNilUuid</a><span class="parameters">(</span>) <span>This function returns the Nil UUID: &quot;00000000-0000-0000-0000-000000000000&quot;.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_generateRandomUuid" class="inline-link"> generateRandomUuid</a><span class="parameters">(</span>) <span>This function generates random UUIDs, meaning &quot;version 4&quot; UUIDs.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_generateTimeBasedUuid" class="inline-link"> generateTimeBasedUuid</a><span class="parameters">(</span>node) <span>This function generates time-based UUIDs, meaning &quot;version 1&quot; UUIDs.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>uuidString) <span>If this is a version 1 UUID (a time-based UUID), getNode() returns a
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dojox_uuid__base_NIL_UUID" class="inline-link"> NIL_UUID </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_uuid__base_variant" class="inline-link"> variant </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_uuid__base_version" class="inline-link"> version </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_assert" class="inline-link"> assert</a><span class="parameters">(</span>booleanValue, message) <span>Throws an exception if the assertion fails.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_generateNilUuid" class="inline-link"> generateNilUuid</a><span class="parameters">(</span>) <span>This function returns the Nil UUID: &quot;00000000-0000-0000-0000-000000000000&quot;.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_generateRandomUuid" class="inline-link"> generateRandomUuid</a><span class="parameters">(</span>) <span>This function generates random UUIDs, meaning &quot;version 4&quot; UUIDs.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_generateTimeBasedUuid" class="inline-link"> generateTimeBasedUuid</a><span class="parameters">(</span>node) <span>This function generates time-based UUIDs, meaning &quot;version 1&quot; UUIDs.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>uuidString) <span>If this is a version 1 UUID (a time-based UUID), getNode() returns a
 12-character string with the &quot;node&quot; or &quot;pseudonode&quot; portion of the UUID,
 which is the rightmost 12 characters.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_getTimestamp" class="inline-link"> getTimestamp</a><span class="parameters">(</span>uuidString, returnType) <span>If this is a version 1 UUID (a time-based UUID), this method returns
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_getTimestamp" class="inline-link"> getTimestamp</a><span class="parameters">(</span>uuidString, returnType) <span>If this is a version 1 UUID (a time-based UUID), this method returns
 the timestamp value encoded in the UUID.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_getVariant" class="inline-link"> getVariant</a><span class="parameters">(</span>uuidString) <span>Returns a variant code that indicates what type of UUID this is.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_getVersion" class="inline-link"> getVersion</a><span class="parameters">(</span>uuidString) <span>Returns a version number that indicates what type of UUID this is.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>uuidString) <span>Returns true if the UUID was initialized with a valid value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_uuid__base_Uuid" class="inline-link"> Uuid</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_getVariant" class="inline-link"> getVariant</a><span class="parameters">(</span>uuidString) <span>Returns a variant code that indicates what type of UUID this is.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_getVersion" class="inline-link"> getVersion</a><span class="parameters">(</span>uuidString) <span>Returns a version number that indicates what type of UUID this is.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>uuidString) <span>Returns true if the UUID was initialized with a valid value.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_uuid__base_Uuid" class="inline-link"> Uuid</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -397,4 +406,4 @@ dojox.uuid.assert(!uuid.isEqual(dojox.uuid.NIL_UUID));</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/uuid/_base" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

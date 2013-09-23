@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/charting/axis2d/Default</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/charting/axis2d/Default" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/charting/axis2d/Default.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/charting/axis2d/Default<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/charting/axis2d/Invisible" class="jsdoc-link">dojox/charting/axis2d/Invisible</a>
 </div>
 <div class="jsdoc-full-summary"><p>The default axis object used in dojox.charting.  See dojox.charting.Chart.addAxis for details.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Default<span class="parameters">(chart,kwArgs);</span></div>
 </div>
@@ -36,99 +43,100 @@
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_chart" class="inline-link"> chart </a><span>The parent chart for this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_defaultParams" class="inline-link"> defaultParams </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_dirty" class="inline-link"> dirty </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_group" class="inline-link"> group </a><span>The visual GFX group representing this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="arrayIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_htmlElement" class="inline-link"> htmlElement </a><span>Any DOMNodes used as a part of this element (such as HTML-based labels).</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_htmlElements" class="inline-link"> htmlElements </a><span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_offset" class="inline-link"> offset </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_opt" class="inline-link"> opt </a><span>The actual options used to define this axis, created at initialization.</span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_optionalParams" class="inline-link"> optionalParams </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_scale" class="inline-link"> scale </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_scaler" class="inline-link"> scaler </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_ticks" class="inline-link"> ticks </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_charting_axis2d_Default__getMaxLabelSize" class="inline-link"> _getMaxLabelSize</a><span class="parameters">(</span>min, max, span, rotation, font, size) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_charting_axis2d_Default__groupLabelWidth" class="inline-link"> _groupLabelWidth</a><span class="parameters">(</span>labels, font, wcLimit) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_charting_axis2d_Default__isRtl" class="inline-link"> _isRtl</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_axis2d_Default__plotFill" class="inline-link"> _plotFill</a><span class="parameters">(</span>fill, dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_axis2d_Default__pseudoRadialFill" class="inline-link"> _pseudoRadialFill</a><span class="parameters">(</span>fill, center, radius, start, end) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_charting_axis2d_Default__shapeFill" class="inline-link"> _shapeFill</a><span class="parameters">(</span>fill, bbox) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_calculate" class="inline-link"> calculate</a><span class="parameters">(</span>min, max, span) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_cleanGroup" class="inline-link"> cleanGroup</a><span class="parameters">(</span>creator) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Clear out all calculated properties on this axis;</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, kwArgs) <span>The constructor for an axis.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_createLine" class="inline-link"> createLine</a><span class="parameters">(</span>creator, params) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_createText" class="inline-link"> createText</a><span class="parameters">(</span>labelType, creator, x, y, align, textContent, font, fontColor, labelWidth) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_dependOnData" class="inline-link"> dependOnData</a><span class="parameters">(</span>) <span>Find out whether or not the axis options depend on the data in the axis.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>API addition to conform to the rest of the Dojo Toolkit&#39;s standard.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_destroyHtmlElements" class="inline-link"> destroyHtmlElements</a><span class="parameters">(</span>) <span>Destroy any DOMNodes that may have been created as a part of this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getGroup" class="inline-link"> getGroup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_getOffsets" class="inline-link"> getOffsets</a><span class="parameters">(</span>) <span>Get the physical offset values for this axis (used in drawing data series).</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getScaler" class="inline-link"> getScaler</a><span class="parameters">(</span>) <span>Get the pre-calculated scaler object.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTextWidth" class="inline-link"> getTextWidth</a><span class="parameters">(</span>s, font) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTextWithLimitCharCount" class="inline-link"> getTextWithLimitCharCount</a><span class="parameters">(</span>s, font, wcLimit, truncated) <span>Get the truncated string based on the limited character count(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTextWithLimitLength" class="inline-link"> getTextWithLimitLength</a><span class="parameters">(</span>s, font, limitWidth, truncated) <span>Get the truncated string based on the limited width in px(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTicks" class="inline-link"> getTicks</a><span class="parameters">(</span>) <span>Get the pre-calculated ticks object.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getWindowOffset" class="inline-link"> getWindowOffset</a><span class="parameters">(</span>) <span>Get the current windowing offset for the axis.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getWindowScale" class="inline-link"> getWindowScale</a><span class="parameters">(</span>) <span>Get the current windowing scale of the axis.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_initialized" class="inline-link"> initialized</a><span class="parameters">(</span>) <span>Finds out if this axis has been initialized or not.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_labelTooltip" class="inline-link"> labelTooltip</a><span class="parameters">(</span>elem, chart, label, truncatedLabel, font, elemType) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_purgeGroup" class="inline-link"> purgeGroup</a><span class="parameters">(</span>) <span>Clear any elements out of our group, and destroy the group.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_render" class="inline-link"> render</a><span class="parameters">(</span>dim, offsets) <span>Render/draw the axis.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_setWindow" class="inline-link"> setWindow</a><span class="parameters">(</span>scale, offset) <span>Set the drawing &quot;window&quot; for the axis.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_chart" class="inline-link"> chart </a><span>The parent chart for this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_defaultParams" class="inline-link"> defaultParams </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_dirty" class="inline-link"> dirty </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_group" class="inline-link"> group </a><span>The visual GFX group representing this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_htmlElement" class="inline-link"> htmlElement </a><span>Any DOMNodes used as a part of this element (such as HTML-based labels).</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_htmlElements" class="inline-link"> htmlElements </a><span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_offset" class="inline-link"> offset </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_opt" class="inline-link"> opt </a><span>The actual options used to define this axis, created at initialization.</span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_optionalParams" class="inline-link"> optionalParams </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_scale" class="inline-link"> scale </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_scaler" class="inline-link"> scaler </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_charting_axis2d_Default_ticks" class="inline-link"> ticks </a><span></span><span title="inherited from dojox/charting/axis2d/Default" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_charting_axis2d_Default__getMaxLabelSize" class="inline-link"> _getMaxLabelSize</a><span class="parameters">(</span>min, max, span, rotation, font, size) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_axis2d_Default__groupLabelWidth" class="inline-link"> _groupLabelWidth</a><span class="parameters">(</span>labels, font, wcLimit) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_axis2d_Default__isRtl" class="inline-link"> _isRtl</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_axis2d_Default__plotFill" class="inline-link"> _plotFill</a><span class="parameters">(</span>fill, dim, offsets) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_axis2d_Default__pseudoRadialFill" class="inline-link"> _pseudoRadialFill</a><span class="parameters">(</span>fill, center, radius, start, end) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_charting_axis2d_Default__shapeFill" class="inline-link"> _shapeFill</a><span class="parameters">(</span>fill, bbox) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_calculate" class="inline-link"> calculate</a><span class="parameters">(</span>min, max, span) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_cleanGroup" class="inline-link"> cleanGroup</a><span class="parameters">(</span>creator) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Clear out all calculated properties on this axis;</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, kwArgs) <span>The constructor for an axis.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_createLine" class="inline-link"> createLine</a><span class="parameters">(</span>creator, params) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_createText" class="inline-link"> createText</a><span class="parameters">(</span>labelType, creator, x, y, align, textContent, font, fontColor, labelWidth) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_dependOnData" class="inline-link"> dependOnData</a><span class="parameters">(</span>) <span>Find out whether or not the axis options depend on the data in the axis.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>API addition to conform to the rest of the Dojo Toolkit&#39;s standard.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_destroyHtmlElements" class="inline-link"> destroyHtmlElements</a><span class="parameters">(</span>) <span>Destroy any DOMNodes that may have been created as a part of this element.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getGroup" class="inline-link"> getGroup</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_getOffsets" class="inline-link"> getOffsets</a><span class="parameters">(</span>) <span>Get the physical offset values for this axis (used in drawing data series).</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getScaler" class="inline-link"> getScaler</a><span class="parameters">(</span>) <span>Get the pre-calculated scaler object.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTextWidth" class="inline-link"> getTextWidth</a><span class="parameters">(</span>s, font) <span></span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTextWithLimitCharCount" class="inline-link"> getTextWithLimitCharCount</a><span class="parameters">(</span>s, font, wcLimit, truncated) <span>Get the truncated string based on the limited character count(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTextWithLimitLength" class="inline-link"> getTextWithLimitLength</a><span class="parameters">(</span>s, font, limitWidth, truncated) <span>Get the truncated string based on the limited width in px(dichotomy algorithm)</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getTicks" class="inline-link"> getTicks</a><span class="parameters">(</span>) <span>Get the pre-calculated ticks object.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getWindowOffset" class="inline-link"> getWindowOffset</a><span class="parameters">(</span>) <span>Get the current windowing offset for the axis.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_getWindowScale" class="inline-link"> getWindowScale</a><span class="parameters">(</span>) <span>Get the current windowing scale of the axis.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_initialized" class="inline-link"> initialized</a><span class="parameters">(</span>) <span>Finds out if this axis has been initialized or not.</span><span title="inherited from dojox/charting/axis2d/Invisible" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_labelTooltip" class="inline-link"> labelTooltip</a><span class="parameters">(</span>elem, chart, label, truncatedLabel, font, elemType) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_charting_axis2d_Default_purgeGroup" class="inline-link"> purgeGroup</a><span class="parameters">(</span>) <span>Clear any elements out of our group, and destroy the group.</span><span title="inherited from dojox/charting/Element" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_render" class="inline-link"> render</a><span class="parameters">(</span>dim, offsets) <span>Render/draw the axis.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_charting_axis2d_Default_setWindow" class="inline-link"> setWindow</a><span class="parameters">(</span>scale, offset) <span>Set the drawing &quot;window&quot; for the axis.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -956,4 +964,4 @@ supposed to be called by the users but internally.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/charting/axis2d/Default" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

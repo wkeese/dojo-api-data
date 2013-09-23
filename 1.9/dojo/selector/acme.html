@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/selector/acme</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/selector/acme" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/selector/acme.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/selector/acme<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Returns nodes which match the given CSS3 selector, searching the
 entire document by default but optionally taking a node to scope
@@ -116,12 +123,11 @@ CSS3 selectors, see <a href="http://www.w3.org/TR/css3-selectors/#selectors">htt
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/selector/acme.html" target="_blank">dojo/selector/acme reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><p>search the entire document for elements with the class &quot;foo&quot;:
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>search the entire document for elements with the class &quot;foo&quot;:
 
 </p>
 <pre><code>dojo.query(&quot;.foo&quot;);</code></pre>
@@ -133,9 +139,9 @@ CSS3 selectors, see <a href="http://www.w3.org/TR/css3-selectors/#selectors">htt
 &lt;span class=&quot;foo bar&quot;&gt;&lt;/span&gt;
 &lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><p>search the entire document for elements with the classes &quot;foo&quot; <em>and</em> &quot;bar&quot;:
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><p>search the entire document for elements with the classes &quot;foo&quot; <em>and</em> &quot;bar&quot;:
 
 </p>
 <pre><code>dojo.query(&quot;.foo.bar&quot;);</code></pre>
@@ -151,9 +157,9 @@ CSS3 selectors, see <a href="http://www.w3.org/TR/css3-selectors/#selectors">htt
 <pre><code>&lt;span class=&quot;foo&quot;&gt;&lt;/span&gt;
 &lt;p class=&quot;thud foo&quot;&gt;&lt;/p&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 3</h3><p>find <code>&lt;span&gt;</code> elements which are descendants of paragraphs and
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 3</h3><p>find <code>&lt;span&gt;</code> elements which are descendants of paragraphs and
 which have a &quot;highlighted&quot; class:
 
 </p>
@@ -168,26 +174,26 @@ which have a &quot;highlighted&quot; class:
     &lt;/span&gt;
 &lt;/p&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 4</h3><p>set an &quot;odd&quot; class on all odd table rows inside of the table
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 4</h3><p>set an &quot;odd&quot; class on all odd table rows inside of the table
 <code>#tabular_data</code>, using the <code>&gt;</code> (direct child) selector to avoid
 affecting any nested tables:
 
 </p>
 <pre><code>dojo.query(&quot;#tabular_data &gt; tbody &gt; tr:nth-child(odd)&quot;).addClass(&quot;odd&quot;);</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 5</h3><p>remove all elements with the class &quot;error&quot; from the document
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 5</h3><p>remove all elements with the class &quot;error&quot; from the document
 and store them in a list:
 
 </p>
 <pre><code>var errors = dojo.query(&quot;.error&quot;).orphan();</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 6</h3><p>add an onclick handler to every submit button in the document
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 6</h3><p>add an onclick handler to every submit button in the document
 which causes the form to be sent via Ajax instead:
 
 </p>
@@ -206,18 +212,20 @@ which causes the form to be sent via Ajax instead:
     });
 });</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_selector_acme_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, root) <span>Returns nodes which match the given CSS3 selector, searching the
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_selector_acme_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, root) <span>Returns nodes which match the given CSS3 selector, searching the
 entire document by default but optionally taking a node to scope
 the search by.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_selector_acme_filter" class="inline-link"> filter</a><span class="parameters">(</span>nodeList, filter, root) <span>function for filtering a NodeList based on a selector, optimized for simple selectors</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_selector_acme_filter" class="inline-link"> filter</a><span class="parameters">(</span>nodeList, filter, root) <span>function for filtering a NodeList based on a selector, optimized for simple selectors</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -469,4 +477,4 @@ which causes the form to be sent via Ajax instead:
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/selector/acme" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

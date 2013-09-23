@@ -1,11 +1,18 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/XmlStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/data/XmlStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/XmlStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/XmlStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A data store for XML based services or documents</p>
 </div>
 <div class="jsdoc-full-summary"><p>A data store for XML based services or documents</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new XmlStore<span class="parameters">(args);</span></div>
 </div>
@@ -43,126 +50,128 @@
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/data/XmlStore.html" target="_blank">dojox/data/XmlStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_8dojox_data_XmlStore_attributeMap" class="inline-link"> attributeMap </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_keyAttribute" class="inline-link"> keyAttribute </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_label" class="inline-link"> label </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_rootItem" class="inline-link"> rootItem </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_data_XmlStore_sendQuery" class="inline-link"> sendQuery </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_url" class="inline-link"> url </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_data_XmlStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__backupItem" class="inline-link"> _backupItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Fetch items (XML elements) that match to a query</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__flattenNodes" class="inline-link"> _flattenNodes</a><span class="parameters">(</span>nodes) <span>Function used to flatten a hierarchy of XML nodes into a single list for
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_data_XmlStore_attributeMap" class="inline-link"> attributeMap </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_keyAttribute" class="inline-link"> keyAttribute </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_label" class="inline-link"> label </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_rootItem" class="inline-link"> rootItem </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_data_XmlStore_sendQuery" class="inline-link"> sendQuery </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_data_XmlStore_url" class="inline-link"> url </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_data_XmlStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__backupItem" class="inline-link"> _backupItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Fetch items (XML elements) that match to a query</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__flattenNodes" class="inline-link"> _flattenNodes</a><span class="parameters">(</span>nodes) <span>Function used to flatten a hierarchy of XML nodes into a single list for
 querying over.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__forgetItem" class="inline-link"> _forgetItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getAttribute" class="inline-link"> _getAttribute</a><span class="parameters">(</span>tagName, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getDeleteUrl" class="inline-link"> _getDeleteUrl</a><span class="parameters">(</span>item) <span>Generate a URL for delete</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getDocument" class="inline-link"> _getDocument</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getFetchUrl" class="inline-link"> _getFetchUrl</a><span class="parameters">(</span>request) <span>Generate a URL for fetch</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getItem" class="inline-link"> _getItem</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getItemIndex" class="inline-link"> _getItemIndex</a><span class="parameters">(</span>items, element) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getItems" class="inline-link"> _getItems</a><span class="parameters">(</span>document, request) <span>Fetch items (XML elements) in an XML document based on a request</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPostContent" class="inline-link"> _getPostContent</a><span class="parameters">(</span>item) <span>Generate a content to post</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPostUrl" class="inline-link"> _getPostUrl</a><span class="parameters">(</span>item) <span>Generate a URL for post</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPutContent" class="inline-link"> _getPutContent</a><span class="parameters">(</span>item) <span>Generate a content to put</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPutUrl" class="inline-link"> _getPutUrl</a><span class="parameters">(</span>item) <span>Generate a URL for put</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getRootElement" class="inline-link"> _getRootElement</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getXPath" class="inline-link"> _getXPath</a><span class="parameters">(</span>element) <span>A function to compute the xpath of a node in a DOM document.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__restoreItems" class="inline-link"> _restoreItems</a><span class="parameters">(</span>items) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__saveItem" class="inline-link"> _saveItem</a><span class="parameters">(</span>item, keywordArgs, method) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Constructor for the XML store.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Check whether the attribute values contain the value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>Delete an dojox.data.XmlItem (wrapper to a XML element).</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_XmlStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_XmlStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__forgetItem" class="inline-link"> _forgetItem</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getAttribute" class="inline-link"> _getAttribute</a><span class="parameters">(</span>tagName, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getDeleteUrl" class="inline-link"> _getDeleteUrl</a><span class="parameters">(</span>item) <span>Generate a URL for delete</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getDocument" class="inline-link"> _getDocument</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getFetchUrl" class="inline-link"> _getFetchUrl</a><span class="parameters">(</span>request) <span>Generate a URL for fetch</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getItem" class="inline-link"> _getItem</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getItemIndex" class="inline-link"> _getItemIndex</a><span class="parameters">(</span>items, element) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getItems" class="inline-link"> _getItems</a><span class="parameters">(</span>document, request) <span>Fetch items (XML elements) in an XML document based on a request</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPostContent" class="inline-link"> _getPostContent</a><span class="parameters">(</span>item) <span>Generate a content to post</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPostUrl" class="inline-link"> _getPostUrl</a><span class="parameters">(</span>item) <span>Generate a URL for post</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPutContent" class="inline-link"> _getPutContent</a><span class="parameters">(</span>item) <span>Generate a content to put</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getPutUrl" class="inline-link"> _getPutUrl</a><span class="parameters">(</span>item) <span>Generate a URL for put</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getRootElement" class="inline-link"> _getRootElement</a><span class="parameters">(</span>element) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__getXPath" class="inline-link"> _getXPath</a><span class="parameters">(</span>element) <span>A function to compute the xpath of a node in a DOM document.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__restoreItems" class="inline-link"> _restoreItems</a><span class="parameters">(</span>items) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_XmlStore__saveItem" class="inline-link"> _saveItem</a><span class="parameters">(</span>item, keywordArgs, method) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Constructor for the XML store.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Check whether the attribute values contain the value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>Delete an dojox.data.XmlItem (wrapper to a XML element).</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_XmlStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_XmlStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_data_XmlStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity(keywordArgs)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Return an array of attribute names</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Return supported data APIs</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>Returns a unique identifier for an item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>Returns an array of attribute names that are used to generate the identity.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>Return an attribute value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>Return an array of attribute values</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Check whether an element has the attribute</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item) <span>Check whether an item is new, modified or deleted</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Check whether the object is an item (XML element)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>Check whether the object is an item (XML element) and loaded</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>Load an item (XML element)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>keywordArgs, parentInfo) <span>Return a new dojox.data.XmlItem</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_revert" class="inline-link"> revert</a><span class="parameters">(</span>) <span>Invalidate changes (new and/or modified elements)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_save" class="inline-link"> save</a><span class="parameters">(</span>keywordArgs) <span>Save new and/or modified items (XML elements)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>item, attribute, value) <span>Set an attribute value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>item, attribute, values) <span>Set attribute values</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_unsetAttribute" class="inline-link"> unsetAttribute</a><span class="parameters">(</span>item, attribute) <span>Remove an attribute</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_data_XmlStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity(keywordArgs)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Return an array of attribute names</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Return supported data APIs</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>Returns a unique identifier for an item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>Returns an array of attribute names that are used to generate the identity.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>Return an attribute value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>Return an array of attribute values</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Check whether an element has the attribute</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item) <span>Check whether an item is new, modified or deleted</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Check whether the object is an item (XML element)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>Check whether the object is an item (XML element) and loaded</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>Load an item (XML element)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>keywordArgs, parentInfo) <span>Return a new dojox.data.XmlItem</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_revert" class="inline-link"> revert</a><span class="parameters">(</span>) <span>Invalidate changes (new and/or modified elements)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_save" class="inline-link"> save</a><span class="parameters">(</span>keywordArgs) <span>Save new and/or modified items (XML elements)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>item, attribute, value) <span>Set an attribute value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>item, attribute, values) <span>Set attribute values</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_XmlStore_unsetAttribute" class="inline-link"> unsetAttribute</a><span class="parameters">(</span>item, attribute) <span>Remove an attribute</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1741,4 +1750,4 @@ special names</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/data/XmlStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

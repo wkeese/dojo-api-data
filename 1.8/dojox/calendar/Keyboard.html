@@ -1,71 +1,80 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/Keyboard</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/calendar/Keyboard" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/Keyboard.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/calendar/Keyboard<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This mixin is managing the keyboard interactions on a calendar view.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/Keyboard reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightSteps" class="inline-link"> allDayKeyboardLeftRightSteps </a><span>Unit used during editing of an all day event using the keyboard and the left or right keys were pressed.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightUnit" class="inline-link"> allDayKeyboardLeftRightUnit </a><span>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownSteps" class="inline-link"> allDayKeyboardUpDownSteps </a><span>Unit used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownUnit" class="inline-link"> allDayKeyboardUpDownUnit </a><span>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_calendar_Keyboard_focusedItem" class="inline-link"> focusedItem </a><span>The data item that currently has the focus.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardLeftRightSteps" class="inline-link"> keyboardLeftRightSteps </a><span>Unit used during editing of an event using the keyboard and the left or right keys were pressed.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardLeftRightUnit" class="inline-link"> keyboardLeftRightUnit </a><span>Unit used during editing of an event using the keyboard and the left or right keys were pressed.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardUpDownSteps" class="inline-link"> keyboardUpDownSteps </a><span>Steps used during editing of an event using the keyboard and the up or down keys were pressed.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardUpDownUnit" class="inline-link"> keyboardUpDownUnit </a><span>Unit used during editing of an event using the keyboard and the up or down keys were pressed.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_maxScrollAnimationDuration" class="inline-link"> maxScrollAnimationDuration </a><span>The duration in milliseconds to scroll the entire view.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_resizeModifier" class="inline-link"> resizeModifier </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_calendar_Keyboard_showFocus" class="inline-link"> showFocus </a><span>Show or hide the focus graphic feedback on item renderers.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__checkDir" class="inline-link"> _checkDir</a><span class="parameters">(</span>dir, value) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__focusNextItem" class="inline-link"> _focusNextItem</a><span class="parameters">(</span>dir) <span>Moves the focus to the next item in the specified direction.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__focusNextItemImpl" class="inline-link"> _focusNextItemImpl</a><span class="parameters">(</span>dir, index, max) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__handlePrevNextKeyCode" class="inline-link"> _handlePrevNextKeyCode</a><span class="parameters">(</span>e, dir) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__isItemFocused" class="inline-link"> _isItemFocused</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__keyboardItemEditing" class="inline-link"> _keyboardItemEditing</a><span class="parameters">(</span>e, dir) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__setFocusedItemAttr" class="inline-link"> _setFocusedItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_calendar_Keyboard_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__onKeyDown" class="inline-link"> _onKeyDown</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_calendar_Keyboard_onFocusChange" class="inline-link"> onFocusChange</a><span class="parameters">(</span>e) <span>Event dispatched when the focus has changed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightSteps" class="inline-link"> allDayKeyboardLeftRightSteps </a><span>Unit used during editing of an all day event using the keyboard and the left or right keys were pressed.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardLeftRightUnit" class="inline-link"> allDayKeyboardLeftRightUnit </a><span>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownSteps" class="inline-link"> allDayKeyboardUpDownSteps </a><span>Unit used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_allDayKeyboardUpDownUnit" class="inline-link"> allDayKeyboardUpDownUnit </a><span>Steps used during editing of an all day event using the keyboard and the up or down keys were pressed.</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_calendar_Keyboard_focusedItem" class="inline-link"> focusedItem </a><span>The data item that currently has the focus.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardLeftRightSteps" class="inline-link"> keyboardLeftRightSteps </a><span>Unit used during editing of an event using the keyboard and the left or right keys were pressed.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardLeftRightUnit" class="inline-link"> keyboardLeftRightUnit </a><span>Unit used during editing of an event using the keyboard and the left or right keys were pressed.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardUpDownSteps" class="inline-link"> keyboardUpDownSteps </a><span>Steps used during editing of an event using the keyboard and the up or down keys were pressed.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_keyboardUpDownUnit" class="inline-link"> keyboardUpDownUnit </a><span>Unit used during editing of an event using the keyboard and the up or down keys were pressed.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_calendar_Keyboard_maxScrollAnimationDuration" class="inline-link"> maxScrollAnimationDuration </a><span>The duration in milliseconds to scroll the entire view.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_resizeModifier" class="inline-link"> resizeModifier </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_calendar_Keyboard_showFocus" class="inline-link"> showFocus </a><span>Show or hide the focus graphic feedback on item renderers.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_calendar_Keyboard_tabIndex" class="inline-link"> tabIndex </a><span>Order fields are traversed when user hits the tab key</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__checkDir" class="inline-link"> _checkDir</a><span class="parameters">(</span>dir, value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__focusNextItem" class="inline-link"> _focusNextItem</a><span class="parameters">(</span>dir) <span>Moves the focus to the next item in the specified direction.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__focusNextItemImpl" class="inline-link"> _focusNextItemImpl</a><span class="parameters">(</span>dir, index, max) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__handlePrevNextKeyCode" class="inline-link"> _handlePrevNextKeyCode</a><span class="parameters">(</span>e, dir) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__isItemFocused" class="inline-link"> _isItemFocused</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__keyboardItemEditing" class="inline-link"> _keyboardItemEditing</a><span class="parameters">(</span>e, dir) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__setFocusedItemAttr" class="inline-link"> _setFocusedItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_calendar_Keyboard_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_calendar_Keyboard__onKeyDown" class="inline-link"> _onKeyDown</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_calendar_Keyboard_onFocusChange" class="inline-link"> onFocusChange</a><span class="parameters">(</span>e) <span>Event dispatched when the focus has changed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -384,4 +393,4 @@ If there is no current child focused, the first (dir == 1) or last (dir == -1) i
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/calendar/Keyboard" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

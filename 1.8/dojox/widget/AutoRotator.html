@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/AutoRotator</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/widget/AutoRotator" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/AutoRotator.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/widget/AutoRotator<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/widget/Rotator" class="jsdoc-link">dojox/widget/Rotator</a>
@@ -12,20 +19,20 @@ affect the rotator including a suspend when hovering over the
 rotator and pausing when the user manually advances to another
 pane.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new AutoRotator<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/widget/AutoRotator">dojox/widget/AutoRotator</a></div>
 <div class="jsdoc-summary"><p>Initializes the timer and connect to the rotator.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/widget/AutoRotator.html" target="_blank">dojox/widget/AutoRotator reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;div dojoType=&quot;dojox.widget.AutoRotator&quot; duration=&quot;3000&quot;&gt;
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;div dojoType=&quot;dojox.widget.AutoRotator&quot; duration=&quot;3000&quot;&gt;
     &lt;div&gt;
         Pane 1!
     &lt;/div&gt;
@@ -34,74 +41,76 @@ pane.</p>
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon"><a href="#1_8dojox_widget_AutoRotator_autoStart" class="inline-link"> autoStart </a><span>Starts the timer to transition children upon creation.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_widget_AutoRotator_cycles" class="inline-link"> cycles </a><span>Number of cycles before pausing.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_widget_AutoRotator_duration" class="inline-link"> duration </a><span>The time in milliseconds before transitioning to the next pane.</span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_8dojox_widget_AutoRotator_panes" class="inline-link"> panes </a><span>Array of panes to be created in the Rotator.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_pauseOnManualChange" class="inline-link"> pauseOnManualChange </a><span>Pause the rotator when the pane is changed or a controller&#39;s next or
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon"><a href="#1_8dojox_widget_AutoRotator_autoStart" class="inline-link"> autoStart </a><span>Starts the timer to transition children upon creation.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_widget_AutoRotator_cycles" class="inline-link"> cycles </a><span>Number of cycles before pausing.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_widget_AutoRotator_duration" class="inline-link"> duration </a><span>The time in milliseconds before transitioning to the next pane.</span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_widget_AutoRotator_panes" class="inline-link"> panes </a><span>Array of panes to be created in the Rotator.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_pauseOnManualChange" class="inline-link"> pauseOnManualChange </a><span>Pause the rotator when the pane is changed or a controller&#39;s next or
 previous buttons are clicked.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_random" class="inline-link"> random </a><span>Determines if the panes should cycle randomly.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_reverse" class="inline-link"> reverse </a><span>Causes the rotator to rotate in reverse order.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_suspendOnHover" class="inline-link"> suspendOnHover </a><span>Pause the rotator when the mouse hovers over it.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_widget_AutoRotator_transition" class="inline-link"> transition </a><span>The name of a function that is passed two panes nodes and a duration,
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_random" class="inline-link"> random </a><span>Determines if the panes should cycle randomly.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_reverse" class="inline-link"> reverse </a><span>Causes the rotator to rotate in reverse order.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_AutoRotator_suspendOnHover" class="inline-link"> suspendOnHover </a><span>Pause the rotator when the mouse hovers over it.</span><span title="inherited from dojox/widget/AutoRotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_widget_AutoRotator_transition" class="inline-link"> transition </a><span>The name of a function that is passed two panes nodes and a duration,
 then returns a dojo.Animation object.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon inherited"><a href="#1_8dojox_widget_AutoRotator_transitionParams" class="inline-link"> transitionParams </a><span>Parameters for the transition.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_widget_AutoRotator__cycle" class="inline-link"> _cycle</a><span class="parameters">(</span>manual) <span>Cycles the rotator to the next/previous pane.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_widget_AutoRotator__now" class="inline-link"> _now</a><span class="parameters">(</span>) <span>Helper function to return the current system time in milliseconds.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_widget_AutoRotator__resetTimer" class="inline-link"> _resetTimer</a><span class="parameters">(</span>) <span>Resets the timer used to schedule the next transition.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_8dojox_widget_AutoRotator__resetWaitForEvent" class="inline-link"> _resetWaitForEvent</a><span class="parameters">(</span>) <span>If there is a waitForEvent pending, kill it.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Initializes the timer and connect to the rotator.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_control" class="inline-link"> control</a><span class="parameters">(</span>action) <span>Dispatches an action, first to this engine, then to the Rotator.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Disconnect the AutoRotator&#39;s events.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_go" class="inline-link"> go</a><span class="parameters">(</span>p) <span>Transitions the Rotator to the specified pane index.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>Transitions the Rotator to the next pane.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_pause" class="inline-link"> pause</a><span class="parameters">(</span>) <span>Sets the state to &quot;not playing&quot; and clears the cycle timer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_play" class="inline-link"> play</a><span class="parameters">(</span>skipCycleDecrement, skipDuration) <span>Sets the state to &quot;playing&quot; and schedules the next cycle to run.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_prev" class="inline-link"> prev</a><span class="parameters">(</span>) <span>Transitions the Rotator to the previous pane.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span></span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_onManualChange" class="inline-link"> onManualChange</a><span class="parameters">(</span>action) <span>Override the Rotator&#39;s onManualChange so we can pause.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_onUpdate" class="inline-link"> onUpdate</a><span class="parameters">(</span>type, params) <span>Send a notification to all controllers with the state of the rotator.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_widget_AutoRotator_transitionParams" class="inline-link"> transitionParams </a><span>Parameters for the transition.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_widget_AutoRotator__cycle" class="inline-link"> _cycle</a><span class="parameters">(</span>manual) <span>Cycles the rotator to the next/previous pane.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_widget_AutoRotator__now" class="inline-link"> _now</a><span class="parameters">(</span>) <span>Helper function to return the current system time in milliseconds.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_widget_AutoRotator__resetTimer" class="inline-link"> _resetTimer</a><span class="parameters">(</span>) <span>Resets the timer used to schedule the next transition.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_AutoRotator__resetWaitForEvent" class="inline-link"> _resetWaitForEvent</a><span class="parameters">(</span>) <span>If there is a waitForEvent pending, kill it.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Initializes the timer and connect to the rotator.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_control" class="inline-link"> control</a><span class="parameters">(</span>action) <span>Dispatches an action, first to this engine, then to the Rotator.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Disconnect the AutoRotator&#39;s events.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_go" class="inline-link"> go</a><span class="parameters">(</span>p) <span>Transitions the Rotator to the specified pane index.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>Transitions the Rotator to the next pane.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_pause" class="inline-link"> pause</a><span class="parameters">(</span>) <span>Sets the state to &quot;not playing&quot; and clears the cycle timer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_play" class="inline-link"> play</a><span class="parameters">(</span>skipCycleDecrement, skipDuration) <span>Sets the state to &quot;playing&quot; and schedules the next cycle to run.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_prev" class="inline-link"> prev</a><span class="parameters">(</span>) <span>Transitions the Rotator to the previous pane.</span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span></span><span title="inherited from dojox/widget/Rotator" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_widget_AutoRotator_onManualChange" class="inline-link"> onManualChange</a><span class="parameters">(</span>action) <span>Override the Rotator&#39;s onManualChange so we can pause.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_AutoRotator_onUpdate" class="inline-link"> onUpdate</a><span class="parameters">(</span>type, params) <span>Send a notification to all controllers with the state of the rotator.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -403,4 +412,4 @@ object.  If the duration is absent, the default value will be used.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/widget/AutoRotator" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

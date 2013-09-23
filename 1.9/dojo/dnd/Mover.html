@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dnd/Mover</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/dnd/Mover" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dnd/Mover.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/dnd/Mover<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>an object which makes a node follow the mouse, or touch-drag on touch devices.
 Used as a default mover, and as a base class for custom movers.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Mover<span class="parameters">(node,e,host);</span></div>
 </div>
@@ -45,32 +52,33 @@ and defines proper events (onMoveStart and onMoveStop)</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojo/dnd.html" target="_blank">dojo/dnd/Mover reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, e, host) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops the move, deletes all references, so the object can be garbage-collected</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_Mover_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_Mover_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>e) <span>makes the node absolute; it is meant to be called only once.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, e, host) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops the move, deletes all references, so the object can be garbage-collected</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_Mover_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_dnd_Mover_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>e) <span>makes the node absolute; it is meant to be called only once.
 relative and absolutely positioned nodes are assumed to use pixel units</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -201,4 +209,4 @@ relative and absolutely positioned nodes are assumed to use pixel units</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/dnd/Mover" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

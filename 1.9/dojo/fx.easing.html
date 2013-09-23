@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/fx.easing</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/fx.easing" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/fx.easing.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/fx.easing<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Collection of easing functions to use beyond the default
 <code>dojo._defaultEasing</code> function.</p>
@@ -22,12 +29,11 @@ beginning and end.
 the <code>easing</code> property of an animation.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>dojo.require(&quot;dojo.fx.easing&quot;);
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>dojo.require(&quot;dojo.fx.easing&quot;);
 var anim = dojo.fadeOut({
     node: &#39;node&#39;,
     duration: 2000,
@@ -35,77 +41,79 @@ var anim = dojo.fadeOut({
     easing: dojo.fx.easing.quadIn
 }).play();</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_backIn" class="inline-link"> backIn</a><span class="parameters">(</span>n) <span>An easing function that starts away from the target,
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_backIn" class="inline-link"> backIn</a><span class="parameters">(</span>n) <span>An easing function that starts away from the target,
 and quickly accelerates towards the end value.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_backInOut" class="inline-link"> backInOut</a><span class="parameters">(</span>n) <span>An easing function combining the effects of backIn and backOut</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_backOut" class="inline-link"> backOut</a><span class="parameters">(</span>n) <span>An easing function that pops past the range briefly, and slowly comes back.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_bounceIn" class="inline-link"> bounceIn</a><span class="parameters">(</span>n) <span>An easing function that &#39;bounces&#39; near the beginning of an Animation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_bounceInOut" class="inline-link"> bounceInOut</a><span class="parameters">(</span>n) <span>An easing function that &#39;bounces&#39; at the beginning and end of the Animation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_bounceOut" class="inline-link"> bounceOut</a><span class="parameters">(</span>n) <span>An easing function that &#39;bounces&#39; near the end of an Animation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_circIn" class="inline-link"> circIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_circInOut" class="inline-link"> circInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_circOut" class="inline-link"> circOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_cubicIn" class="inline-link"> cubicIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_cubicInOut" class="inline-link"> cubicInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_cubicOut" class="inline-link"> cubicOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_elasticIn" class="inline-link"> elasticIn</a><span class="parameters">(</span>n) <span>An easing function the elastically snaps from the start value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_elasticInOut" class="inline-link"> elasticInOut</a><span class="parameters">(</span>n) <span>An easing function that elasticly snaps around the value, near
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_backInOut" class="inline-link"> backInOut</a><span class="parameters">(</span>n) <span>An easing function combining the effects of backIn and backOut</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_backOut" class="inline-link"> backOut</a><span class="parameters">(</span>n) <span>An easing function that pops past the range briefly, and slowly comes back.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_bounceIn" class="inline-link"> bounceIn</a><span class="parameters">(</span>n) <span>An easing function that &#39;bounces&#39; near the beginning of an Animation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_bounceInOut" class="inline-link"> bounceInOut</a><span class="parameters">(</span>n) <span>An easing function that &#39;bounces&#39; at the beginning and end of the Animation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_bounceOut" class="inline-link"> bounceOut</a><span class="parameters">(</span>n) <span>An easing function that &#39;bounces&#39; near the end of an Animation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_circIn" class="inline-link"> circIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_circInOut" class="inline-link"> circInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_circOut" class="inline-link"> circOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_cubicIn" class="inline-link"> cubicIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_cubicInOut" class="inline-link"> cubicInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_cubicOut" class="inline-link"> cubicOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_elasticIn" class="inline-link"> elasticIn</a><span class="parameters">(</span>n) <span>An easing function the elastically snaps from the start value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_elasticInOut" class="inline-link"> elasticInOut</a><span class="parameters">(</span>n) <span>An easing function that elasticly snaps around the value, near
 the beginning and end of the Animation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_elasticOut" class="inline-link"> elasticOut</a><span class="parameters">(</span>n) <span>An easing function that elasticly snaps around the target value,
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_elasticOut" class="inline-link"> elasticOut</a><span class="parameters">(</span>n) <span>An easing function that elasticly snaps around the target value,
 near the end of the Animation</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_expoIn" class="inline-link"> expoIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_expoInOut" class="inline-link"> expoInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_expoOut" class="inline-link"> expoOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_linear" class="inline-link"> linear</a><span class="parameters">(</span>n) <span>A linear easing function</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quadIn" class="inline-link"> quadIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quadInOut" class="inline-link"> quadInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quadOut" class="inline-link"> quadOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quartIn" class="inline-link"> quartIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quartInOut" class="inline-link"> quartInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quartOut" class="inline-link"> quartOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quintIn" class="inline-link"> quintIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quintInOut" class="inline-link"> quintInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_quintOut" class="inline-link"> quintOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_sineIn" class="inline-link"> sineIn</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_sineInOut" class="inline-link"> sineInOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_fx_easing_sineOut" class="inline-link"> sineOut</a><span class="parameters">(</span>n) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_expoIn" class="inline-link"> expoIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_expoInOut" class="inline-link"> expoInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_expoOut" class="inline-link"> expoOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_linear" class="inline-link"> linear</a><span class="parameters">(</span>n) <span>A linear easing function</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quadIn" class="inline-link"> quadIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quadInOut" class="inline-link"> quadInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quadOut" class="inline-link"> quadOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quartIn" class="inline-link"> quartIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quartInOut" class="inline-link"> quartInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quartOut" class="inline-link"> quartOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quintIn" class="inline-link"> quintIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quintInOut" class="inline-link"> quintInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_quintOut" class="inline-link"> quintOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_sineIn" class="inline-link"> sineIn</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_sineInOut" class="inline-link"> sineInOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_fx_easing_sineOut" class="inline-link"> sineOut</a><span class="parameters">(</span>n) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -842,4 +850,4 @@ negative as some properties cannot be set to negative values.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/fx.easing" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

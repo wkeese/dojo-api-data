@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/exporter/_ExportWriter</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/enhanced/plugins/exporter/_ExportWriter" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/enhanced/plugins/exporter/_ExportWriter.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/exporter/_ExportWriter<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This is an abstract class for all kinds of writers used in the Exporter plugin.
 It utilizes the strategy pattern to break the export work into several stages,
@@ -17,7 +24,7 @@ will be reached, and the header line is only handled once.
 <p>An <em>argObj</em> object is passed to most functions of this class.
 It carries context arguments that make sense when they are called.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _ExportWriter<span class="parameters">(writerArgs);</span></div>
 </div>
@@ -41,47 +48,48 @@ which contains some writer-specific arguments given by the user.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_argObj" class="inline-link"> argObj </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter__getExportDataForCell" class="inline-link"> _getExportDataForCell</a><span class="parameters">(</span>rowIndex, rowItem, cell, grid) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterContent" class="inline-link"> afterContent</a><span class="parameters">(</span>) <span>We have finished the entire grid travel.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterContentRow" class="inline-link"> afterContentRow</a><span class="parameters">(</span>argObj) <span>After handling a line of data (not header).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterHeader" class="inline-link"> afterHeader</a><span class="parameters">(</span>) <span>The header line has been handled.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterSubrow" class="inline-link"> afterSubrow</a><span class="parameters">(</span>argObj) <span>Before handling a subrow in a line (defined in the grid structure).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterView" class="inline-link"> afterView</a><span class="parameters">(</span>argObj) <span>After handling a view.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeContent" class="inline-link"> beforeContent</a><span class="parameters">(</span>items) <span>We are ready to go through all the contents(items).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeContentRow" class="inline-link"> beforeContentRow</a><span class="parameters">(</span>argObj) <span>Before handling a line of data (not header).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeHeader" class="inline-link"> beforeHeader</a><span class="parameters">(</span>grid) <span>We are going to start the travel in the grid.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeSubrow" class="inline-link"> beforeSubrow</a><span class="parameters">(</span>argObj) <span>Before handling a subrow in a line (defined in the grid structure).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeView" class="inline-link"> beforeView</a><span class="parameters">(</span>argObj) <span>Before handling a view.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>writerArgs) <span>Writer initializations goes here.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_handleCell" class="inline-link"> handleCell</a><span class="parameters">(</span>argObj) <span>Handle a header cell or data cell.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Export to a string.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_argObj" class="inline-link"> argObj </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter__getExportDataForCell" class="inline-link"> _getExportDataForCell</a><span class="parameters">(</span>rowIndex, rowItem, cell, grid) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterContent" class="inline-link"> afterContent</a><span class="parameters">(</span>) <span>We have finished the entire grid travel.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterContentRow" class="inline-link"> afterContentRow</a><span class="parameters">(</span>argObj) <span>After handling a line of data (not header).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterHeader" class="inline-link"> afterHeader</a><span class="parameters">(</span>) <span>The header line has been handled.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterSubrow" class="inline-link"> afterSubrow</a><span class="parameters">(</span>argObj) <span>Before handling a subrow in a line (defined in the grid structure).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_afterView" class="inline-link"> afterView</a><span class="parameters">(</span>argObj) <span>After handling a view.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeContent" class="inline-link"> beforeContent</a><span class="parameters">(</span>items) <span>We are ready to go through all the contents(items).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeContentRow" class="inline-link"> beforeContentRow</a><span class="parameters">(</span>argObj) <span>Before handling a line of data (not header).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeHeader" class="inline-link"> beforeHeader</a><span class="parameters">(</span>grid) <span>We are going to start the travel in the grid.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeSubrow" class="inline-link"> beforeSubrow</a><span class="parameters">(</span>argObj) <span>Before handling a subrow in a line (defined in the grid structure).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeView" class="inline-link"> beforeView</a><span class="parameters">(</span>argObj) <span>Before handling a view.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>writerArgs) <span>Writer initializations goes here.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_handleCell" class="inline-link"> handleCell</a><span class="parameters">(</span>argObj) <span>Handle a header cell or data cell.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_enhanced_plugins_exporter__ExportWriter_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Export to a string.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -491,4 +499,4 @@ which contains some writer-specific arguments given by the user.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

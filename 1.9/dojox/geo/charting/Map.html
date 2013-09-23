@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/geo/charting/Map</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/geo/charting/Map" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/geo/charting/Map.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/geo/charting/Map<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Map widget interacted with charting.</p>
 </div>
 <div class="jsdoc-full-summary"><p>Support rendering Americas, AsiaPacific, ContinentalEurope, EuropeMiddleEastAfrica,
 USStates, WorldCountries, and WorldCountriesMercator by default.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Map<span class="parameters">(container,shapeData);</span></div>
 </div>
@@ -36,123 +43,124 @@ USStates, WorldCountries, and WorldCountriesMercator by default.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/geo/charting/Map.html" target="_blank">dojox/geo/charting/Map reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>var usaMap = new dojox.geo.charting.Map(srcNode, &quot;dojotoolkit/dojox/geo/charting/resources/data/USStates.json&quot;);
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var usaMap = new dojox.geo.charting.Map(srcNode, &quot;dojotoolkit/dojox/geo/charting/resources/data/USStates.json&quot;);
 &lt;div id=&quot;map&quot; style=&quot;width:600px;height:400px;&quot;&gt;&lt;/div&gt;</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__idAttributes" class="inline-link"> _idAttributes </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__onDeleteListener" class="inline-link"> _onDeleteListener </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__onNewListener" class="inline-link"> _onNewListener </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__onSetListener" class="inline-link"> _onSetListener </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_geo_charting_Map_colorAnimationDuration" class="inline-link"> colorAnimationDuration </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_geo_charting_Map_dataBindingAttribute" class="inline-link"> dataBindingAttribute </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_geo_charting_Map_dataBindingValueFunction" class="inline-link"> dataBindingValueFunction </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_geo_charting_Map_dataStore" class="inline-link"> dataStore </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_geo_charting_Map_defaultColor" class="inline-link"> defaultColor </a><span>Default map feature color, e.g: &quot;#B7B7B7&quot;</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_geo_charting_Map_enableFeatureZoom" class="inline-link"> enableFeatureZoom </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_geo_charting_Map_highlightColor" class="inline-link"> highlightColor </a><span>Map feature color when mouse over it, e.g: &quot;#&quot;</span>
-    </li>
-    <li class="arrayIcon"><a href="#1_9dojox_geo_charting_Map_series" class="inline-link"> series </a><span>stack to data range, e.g: [{name:&#39;label 1&#39;, min:20, max:70, color:&#39;#DDDDDD&#39;},{...},...]</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_geo_charting_Map_showTooltips" class="inline-link"> showTooltips </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__addSeriesImpl" class="inline-link"> _addSeriesImpl</a><span class="parameters">(</span>series) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__appendMarker" class="inline-link"> _appendMarker</a><span class="parameters">(</span>markerData) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__createAnimation" class="inline-link"> _createAnimation</a><span class="parameters">(</span>onShape, fromTransform, toTransform, onAnimationEnd) <span>creates a transform animation object (between two transforms) used internally</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__createZoomingCursor" class="inline-link"> _createZoomingCursor</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__getContainerBounds" class="inline-link"> _getContainerBounds</a><span class="parameters">(</span>) <span>returns the bounds {x:, y:, w: ,h:} of the DOM node container in absolute coordinates</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__init" class="inline-link"> _init</a><span class="parameters">(</span>shapeData) <span>inits this Map component.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__isMobileDevice" class="inline-link"> _isMobileDevice</a><span class="parameters">(</span>) <span>tests whether the application is running on a mobile device (android or iOS)</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__queryDataStore" class="inline-link"> _queryDataStore</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>series) <span>sets ranges of data values (associated with label, color) to style map data values</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>container, shapeData) <span>Constructs a new Map instance.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_deselectAll" class="inline-link"> deselectAll</a><span class="parameters">(</span>) <span>deselect all features of map</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_fitToMapArea" class="inline-link"> fitToMapArea</a><span class="parameters">(</span>mapArea, pixelMargin, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the specified area fits in the component (centered)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_fitToMapContents" class="inline-link"> fitToMapContents</a><span class="parameters">(</span>pixelMargin, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the whole map data fits in the component (centered)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_getMapCenter" class="inline-link"> getMapCenter</a><span class="parameters">(</span>) <span>returns the map coordinates of the center of this Map component.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_getMapScale" class="inline-link"> getMapScale</a><span class="parameters">(</span>) <span>returns the scale of this Map component.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_mapCoordsToScreenCoords" class="inline-link"> mapCoordsToScreenCoords</a><span class="parameters">(</span>mapX, mapY) <span>converts map coordinates to screen coordinates given the current transform of this Map component</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_resize" class="inline-link"> resize</a><span class="parameters">(</span>adjustMapCenter, adjustMapScale, animate) <span>resize the underlying GFX surface to accommodate to parent DOM Node size change</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_screenCoordsToMapCoords" class="inline-link"> screenCoordsToMapCoords</a><span class="parameters">(</span>screenX, screenY) <span>converts screen coordinates to map coordinates given the current transform of this Map component</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setDataBindingAttribute" class="inline-link"> setDataBindingAttribute</a><span class="parameters">(</span>prop) <span>sets the property name of the dataStore items to use as value (see Feature.setValue function)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setDataBindingValueFunction" class="inline-link"> setDataBindingValueFunction</a><span class="parameters">(</span>valueFunction) <span>sets the function that extracts values from dataStore items,to use as Feature values (see Feature.setValue function)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setDataStore" class="inline-link"> setDataStore</a><span class="parameters">(</span>dataStore, dataBindingProp) <span>populate data for each map feature from fetched data store</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapCenter" class="inline-link"> setMapCenter</a><span class="parameters">(</span>centerX, centerY, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is centered on the specified map coordinates</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapCenterAndScale" class="inline-link"> setMapCenterAndScale</a><span class="parameters">(</span>centerX, centerY, scale, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is centered on the specified map coordinates
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__idAttributes" class="inline-link"> _idAttributes </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__onDeleteListener" class="inline-link"> _onDeleteListener </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__onNewListener" class="inline-link"> _onNewListener </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_geo_charting_Map__onSetListener" class="inline-link"> _onSetListener </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_geo_charting_Map_colorAnimationDuration" class="inline-link"> colorAnimationDuration </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_geo_charting_Map_dataBindingAttribute" class="inline-link"> dataBindingAttribute </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_geo_charting_Map_dataBindingValueFunction" class="inline-link"> dataBindingValueFunction </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_geo_charting_Map_dataStore" class="inline-link"> dataStore </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_geo_charting_Map_defaultColor" class="inline-link"> defaultColor </a><span>Default map feature color, e.g: &quot;#B7B7B7&quot;</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_geo_charting_Map_enableFeatureZoom" class="inline-link"> enableFeatureZoom </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_geo_charting_Map_highlightColor" class="inline-link"> highlightColor </a><span>Map feature color when mouse over it, e.g: &quot;#&quot;</span>
+        </li>
+        <li class="arrayIcon"><a href="#1_9dojox_geo_charting_Map_series" class="inline-link"> series </a><span>stack to data range, e.g: [{name:&#39;label 1&#39;, min:20, max:70, color:&#39;#DDDDDD&#39;},{...},...]</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_geo_charting_Map_showTooltips" class="inline-link"> showTooltips </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__addSeriesImpl" class="inline-link"> _addSeriesImpl</a><span class="parameters">(</span>series) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__appendMarker" class="inline-link"> _appendMarker</a><span class="parameters">(</span>markerData) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__createAnimation" class="inline-link"> _createAnimation</a><span class="parameters">(</span>onShape, fromTransform, toTransform, onAnimationEnd) <span>creates a transform animation object (between two transforms) used internally</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__createZoomingCursor" class="inline-link"> _createZoomingCursor</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__getContainerBounds" class="inline-link"> _getContainerBounds</a><span class="parameters">(</span>) <span>returns the bounds {x:, y:, w: ,h:} of the DOM node container in absolute coordinates</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__init" class="inline-link"> _init</a><span class="parameters">(</span>shapeData) <span>inits this Map component.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__isMobileDevice" class="inline-link"> _isMobileDevice</a><span class="parameters">(</span>) <span>tests whether the application is running on a mobile device (android or iOS)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__queryDataStore" class="inline-link"> _queryDataStore</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_addSeries" class="inline-link"> addSeries</a><span class="parameters">(</span>series) <span>sets ranges of data values (associated with label, color) to style map data values</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>container, shapeData) <span>Constructs a new Map instance.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_deselectAll" class="inline-link"> deselectAll</a><span class="parameters">(</span>) <span>deselect all features of map</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_fitToMapArea" class="inline-link"> fitToMapArea</a><span class="parameters">(</span>mapArea, pixelMargin, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the specified area fits in the component (centered)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_fitToMapContents" class="inline-link"> fitToMapContents</a><span class="parameters">(</span>pixelMargin, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the whole map data fits in the component (centered)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_getMapCenter" class="inline-link"> getMapCenter</a><span class="parameters">(</span>) <span>returns the map coordinates of the center of this Map component.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_getMapScale" class="inline-link"> getMapScale</a><span class="parameters">(</span>) <span>returns the scale of this Map component.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_mapCoordsToScreenCoords" class="inline-link"> mapCoordsToScreenCoords</a><span class="parameters">(</span>mapX, mapY) <span>converts map coordinates to screen coordinates given the current transform of this Map component</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_resize" class="inline-link"> resize</a><span class="parameters">(</span>adjustMapCenter, adjustMapScale, animate) <span>resize the underlying GFX surface to accommodate to parent DOM Node size change</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_screenCoordsToMapCoords" class="inline-link"> screenCoordsToMapCoords</a><span class="parameters">(</span>screenX, screenY) <span>converts screen coordinates to map coordinates given the current transform of this Map component</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setDataBindingAttribute" class="inline-link"> setDataBindingAttribute</a><span class="parameters">(</span>prop) <span>sets the property name of the dataStore items to use as value (see Feature.setValue function)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setDataBindingValueFunction" class="inline-link"> setDataBindingValueFunction</a><span class="parameters">(</span>valueFunction) <span>sets the function that extracts values from dataStore items,to use as Feature values (see Feature.setValue function)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setDataStore" class="inline-link"> setDataStore</a><span class="parameters">(</span>dataStore, dataBindingProp) <span>populate data for each map feature from fetched data store</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapCenter" class="inline-link"> setMapCenter</a><span class="parameters">(</span>centerX, centerY, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is centered on the specified map coordinates</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapCenterAndScale" class="inline-link"> setMapCenterAndScale</a><span class="parameters">(</span>centerX, centerY, scale, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is centered on the specified map coordinates
 and scaled to the specified scale.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapScale" class="inline-link"> setMapScale</a><span class="parameters">(</span>scale, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is scaled to the specified scale.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapScaleAt" class="inline-link"> setMapScaleAt</a><span class="parameters">(</span>scale, fixedMapX, fixedMapY, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is scaled to the specified scale, and the specified
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapScale" class="inline-link"> setMapScale</a><span class="parameters">(</span>scale, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is scaled to the specified scale.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMapScaleAt" class="inline-link"> setMapScaleAt</a><span class="parameters">(</span>scale, fixedMapX, fixedMapY, animate, onAnimationEnd) <span>set this component&#39;s transformation so that the map is scaled to the specified scale, and the specified
 point (in map coordinates) stays fixed on this Map component</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMarkerData" class="inline-link"> setMarkerData</a><span class="parameters">(</span>markerFile) <span>import markers from outside file, associate with map feature by feature id
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_setMarkerData" class="inline-link"> setMarkerData</a><span class="parameters">(</span>markerFile) <span>import markers from outside file, associate with map feature by feature id
 which identified in map shape file, e.g: &quot;NY&quot;:&quot;New York&quot;</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__onDelete" class="inline-link"> _onDelete</a><span class="parameters">(</span>item) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__onNew" class="inline-link"> _onNew</a><span class="parameters">(</span>newItem, parentItem) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__onSet" class="inline-link"> _onSet</a><span class="parameters">(</span>item, attribute, oldValue, newValue) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_onFeatureClick" class="inline-link"> onFeatureClick</a><span class="parameters">(</span>feature) <span>Invoked when the specified feature is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_onFeatureOver" class="inline-link"> onFeatureOver</a><span class="parameters">(</span>feature) <span>Invoked when the specified feature is hovered.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_onZoomEnd" class="inline-link"> onZoomEnd</a><span class="parameters">(</span>feature) <span>Invoked when the specified feature has been zoomed.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__onDelete" class="inline-link"> _onDelete</a><span class="parameters">(</span>item) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__onNew" class="inline-link"> _onNew</a><span class="parameters">(</span>newItem, parentItem) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_geo_charting_Map__onSet" class="inline-link"> _onSet</a><span class="parameters">(</span>item, attribute, oldValue, newValue) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_onFeatureClick" class="inline-link"> onFeatureClick</a><span class="parameters">(</span>feature) <span>Invoked when the specified feature is clicked.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_onFeatureOver" class="inline-link"> onFeatureOver</a><span class="parameters">(</span>feature) <span>Invoked when the specified feature is hovered.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_geo_charting_Map_onZoomEnd" class="inline-link"> onZoomEnd</a><span class="parameters">(</span>feature) <span>Invoked when the specified feature has been zoomed.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -961,4 +969,4 @@ data format: {&quot;NY&quot;:&quot;New York&quot;,.....}</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/geo/charting/Map" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

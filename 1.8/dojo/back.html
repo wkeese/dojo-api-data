@@ -1,33 +1,41 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/back</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/back" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/back.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/back<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Browser history management resources</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dojo/back.html" target="_blank">dojo/back reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojo_back__iframeLoaded" class="inline-link"> _iframeLoaded</a><span class="parameters">(</span>evt, ifrLoc) <span>private method.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_addToHistory" class="inline-link"> addToHistory</a><span class="parameters">(</span>args) <span>adds a state object (args) to the history list.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_getHash" class="inline-link"> getHash</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_goBack" class="inline-link"> goBack</a><span class="parameters">(</span>) <span>private method.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_goForward" class="inline-link"> goForward</a><span class="parameters">(</span>) <span>private method.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initializes the undo stack.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_setHash" class="inline-link"> setHash</a><span class="parameters">(</span>h) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_back_setInitialState" class="inline-link"> setInitialState</a><span class="parameters">(</span>args) <span>Sets the state object and back callback for the very first page
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_back__iframeLoaded" class="inline-link"> _iframeLoaded</a><span class="parameters">(</span>evt, ifrLoc) <span>private method.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_addToHistory" class="inline-link"> addToHistory</a><span class="parameters">(</span>args) <span>adds a state object (args) to the history list.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_getHash" class="inline-link"> getHash</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_goBack" class="inline-link"> goBack</a><span class="parameters">(</span>) <span>private method.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_goForward" class="inline-link"> goForward</a><span class="parameters">(</span>) <span>private method.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initializes the undo stack.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_setHash" class="inline-link"> setHash</a><span class="parameters">(</span>h) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_back_setInitialState" class="inline-link"> setInitialState</a><span class="parameters">(</span>args) <span>Sets the state object and back callback for the very first page
 that is loaded.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -111,11 +119,11 @@ consider using <a class="jsdoc-link" href="/api/1.8/dojo/hash">dojo/hash</a> ins
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  back.addToHistory({
+            <h3>Example 1</h3><pre><code>back.addToHistory({
     back: function(){ console.log(&#39;back pressed&#39;); },
     forward: function(){ console.log(&#39;forward pressed&#39;); },
     changeUrl: true
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
@@ -207,4 +215,4 @@ listener that is registered via dojo/ready.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/back" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

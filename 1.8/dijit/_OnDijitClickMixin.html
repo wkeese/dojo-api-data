@@ -1,20 +1,28 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_OnDijitClickMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/_OnDijitClickMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_OnDijitClickMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dijit/_OnDijitClickMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <p>See the <a href="/reference-guide/1.8/dijit/_OnDijitClickMixin.html" target="_blank">dijit/_OnDijitClickMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_8dijit__OnDijitClickMixin_a11yclick" class="inline-link"> a11yclick</a><span class="parameters">(</span>node, listener) <span>Custom a11yclick (a.k.a. ondijitclick) event
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_8dijit__OnDijitClickMixin_a11yclick" class="inline-link"> a11yclick</a><span class="parameters">(</span>node, listener) <span>Custom a11yclick (a.k.a. ondijitclick) event
 which triggers on a mouse click, touch, or space/enter keyup.</span><span title="inherited from dijit/a11yclick" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__OnDijitClickMixin_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__OnDijitClickMixin_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object
 and registers for disconnect() on widget destroy.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -89,21 +97,22 @@ destruction.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">A handle that can be passed to `disconnect` in order to disconnect before
-the widget is destroyed.</div>
+        <div class="jsdoc-return-description"><p>A handle that can be passed to <code>disconnect</code> in order to disconnect before
+the widget is destroyed.</p>
+</div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>  var btn = new Button();
-  // when foo.bar() is called, call the listener we&#39;re going to
-  // provide in the scope of btn
-  btn.connect(foo, &quot;bar&quot;, function(){
+            <h3>Example 1</h3><pre><code>var btn = new Button();
+// when foo.bar() is called, call the listener we&#39;re going to
+// provide in the scope of btn
+btn.connect(foo, &quot;bar&quot;, function(){
     console.debug(this.toString());
-  });</code></pre>
+});</code></pre>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/_OnDijitClickMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/CssRuleStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/data/CssRuleStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/CssRuleStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/CssRuleStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Basic store to display CSS information.</p>
 </div>
@@ -19,7 +26,7 @@ It can also filter out rules from specific stylesheets.  The attributes it expos
 </ul>
 <p>AND every style attribute denoted as style.*, such as style.textAlign or style.backgroundColor</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new CssRuleStore<span class="parameters">(keywordParameters);</span></div>
 </div>
@@ -37,72 +44,74 @@ It can also filter out rules from specific stylesheets.  The attributes it expos
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/data/CssRuleStore.html" target="_blank">dojox/data/CssRuleStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_8dojox_data_CssRuleStore__browserMap" class="inline-link"> _browserMap </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dojox_data_CssRuleStore__cache" class="inline-link"> _cache </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_data_CssRuleStore__cName" class="inline-link"> _cName </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_data_CssRuleStore__labelAttribute" class="inline-link"> _labelAttribute </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_data_CssRuleStore__storeRef" class="inline-link"> _storeRef </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>request) <span>Populates the _allItems object with unique class names</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__handleFetchReturn" class="inline-link"> _handleFetchReturn</a><span class="parameters">(</span>request) <span>Handles a fetchByIdentity request by finding the correct items.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__handleReturn" class="inline-link"> _handleReturn</a><span class="parameters">(</span>) <span>Handles the return from a fetching action.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__handleRule" class="inline-link"> _handleRule</a><span class="parameters">(</span>rule, styleSheet, href) <span>Handles the creation of an item based on the passed rule.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_close" class="inline-link"> close</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.close().</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.fetch()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_setContext" class="inline-link"> setContext</a><span class="parameters">(</span>context) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_8dojox_data_CssRuleStore__browserMap" class="inline-link"> _browserMap </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dojox_data_CssRuleStore__cache" class="inline-link"> _cache </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_data_CssRuleStore__cName" class="inline-link"> _cName </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_data_CssRuleStore__labelAttribute" class="inline-link"> _labelAttribute </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_data_CssRuleStore__storeRef" class="inline-link"> _storeRef </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__fetch" class="inline-link"> _fetch</a><span class="parameters">(</span>request) <span>Populates the _allItems object with unique class names</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__handleFetchReturn" class="inline-link"> _handleFetchReturn</a><span class="parameters">(</span>request) <span>Handles a fetchByIdentity request by finding the correct items.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__handleReturn" class="inline-link"> _handleReturn</a><span class="parameters">(</span>) <span>Handles the return from a fetching action.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_data_CssRuleStore__handleRule" class="inline-link"> _handleRule</a><span class="parameters">(</span>rule, styleSheet, href) <span>Handles the creation of an item based on the passed rule.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_close" class="inline-link"> close</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.close().</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.fetch()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_data_CssRuleStore_setContext" class="inline-link"> setContext</a><span class="parameters">(</span>context) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -660,4 +669,4 @@ the stylesheets.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/data/CssRuleStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/data/api/Write</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/data/api/Write" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/data/api/Write.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/data/api/Write<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/data/api/Read" class="jsdoc-link">dojo/data/api/Read</a>
@@ -10,63 +17,64 @@ functions unimplemented.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/data/api/Write.html" target="_blank">dojo/data/api/Write reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>The close() method is intended for instructing the store to &#39;close&#39; out
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>The close() method is intended for instructing the store to &#39;close&#39; out
 any information associated with a particular request.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Returns true if the given value is one of the values that getValues()
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>Returns true if the given value is one of the values that getValues()
 would return.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>Deletes an item from the store.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>keywordArgs) <span>Given a query and set of defined options, such as a start and count of items to return,
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_deleteItem" class="inline-link"> deleteItem</a><span class="parameters">(</span>item) <span>Deletes an item from the store.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>keywordArgs) <span>Given a query and set of defined options, such as a start and count of items to return,
 this method executes the query and makes the results available as data items.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Returns an array with all the attributes that this item has.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>Method to inspect the item and return a user-readable &#39;label&#39; for the item
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>Returns an array with all the attributes that this item has.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>Method to inspect the item and return a user-readable &#39;label&#39; for the item
 that provides a general/adequate description of what the item is.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>Method to inspect the item and return an array of what attributes of the item were used
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>Method to inspect the item and return an array of what attributes of the item were used
 to generate its label, if any.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>Returns a single attribute value.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>This getValues() method works just like the getValue() method, but getValues()
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>Returns a single attribute value.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>This getValues() method works just like the getValue() method, but getValues()
 always returns an array rather than a single attribute value.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Returns true if the given item has a value for the given attribute.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item) <span>Given an item, isDirty() returns true if the item has been modified
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>Returns true if the given item has a value for the given attribute.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_isDirty" class="inline-link"> isDirty</a><span class="parameters">(</span>item) <span>Given an item, isDirty() returns true if the item has been modified
 since the last save().</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Returns true if something is an item and came from the store instance.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>Returns false if isItem(something) is false.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>Given an item, this method loads the item so that a subsequent call
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>Returns true if something is an item and came from the store instance.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>Returns false if isItem(something) is false.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojo_data_api_Write_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>Given an item, this method loads the item so that a subsequent call
 to store.isItemLoaded(item) will return true.</span><span title="inherited from dojo/data/api/Read" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>keywordArgs, parentInfo) <span>Returns a newly created item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_revert" class="inline-link"> revert</a><span class="parameters">(</span>) <span>Discards any unsaved changes.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_save" class="inline-link"> save</a><span class="parameters">(</span>keywordArgs) <span>Saves to the server all the changes that have been made locally.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>item, attribute, value) <span>Sets the value of an attribute on an item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>item, attribute, values) <span>Adds each value in the values array as a value of the given
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_newItem" class="inline-link"> newItem</a><span class="parameters">(</span>keywordArgs, parentInfo) <span>Returns a newly created item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_revert" class="inline-link"> revert</a><span class="parameters">(</span>) <span>Discards any unsaved changes.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_save" class="inline-link"> save</a><span class="parameters">(</span>keywordArgs) <span>Saves to the server all the changes that have been made locally.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>item, attribute, value) <span>Sets the value of an attribute on an item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_setValues" class="inline-link"> setValues</a><span class="parameters">(</span>item, attribute, values) <span>Adds each value in the values array as a value of the given
 attribute on the given item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_data_api_Write_unsetAttribute" class="inline-link"> unsetAttribute</a><span class="parameters">(</span>item, attribute) <span>Deletes all the values of an attribute on an item.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_data_api_Write_unsetAttribute" class="inline-link"> unsetAttribute</a><span class="parameters">(</span>item, attribute) <span>Deletes all the values of an attribute on an item.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1156,4 +1164,4 @@ if (success){assert(!store.hasAttribute(kermit, &quot;color&quot;));}</code></pr
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/data/api/Write" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

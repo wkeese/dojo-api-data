@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/promise/Promise</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/promise/Promise" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/promise/Promise.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/promise/Promise<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>The public interface to a deferred.</p>
 </div>
@@ -8,37 +15,38 @@ instances of this class.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/promise/Promise.html" target="_blank">dojo/promise/Promise reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_always" class="inline-link"> always</a><span class="parameters">(</span>callbackOrErrback) <span>Add a callback to be invoked when the promise is resolved
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_always" class="inline-link"> always</a><span class="parameters">(</span>callbackOrErrback) <span>Add a callback to be invoked when the promise is resolved
 or rejected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved or rejected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the promise has been rejected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_otherwise" class="inline-link"> otherwise</a><span class="parameters">(</span>errback) <span>Add new errbacks to the promise.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the promise.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span>Trace the promise.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_promise_Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span>Trace rejection of the promise.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved or rejected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the promise has been rejected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_otherwise" class="inline-link"> otherwise</a><span class="parameters">(</span>errback) <span>Add new errbacks to the promise.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the promise.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span>Trace the promise.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span>Trace rejection of the promise.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -280,4 +288,4 @@ to handle traces.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/promise/Promise" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

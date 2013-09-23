@@ -1,9 +1,16 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gfx/_base.TextPath</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/gfx/_base.TextPath" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gfx/_base.TextPath.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/gfx/_base.TextPath<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>a generalized TextPath shape</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base.TextPath<span class="parameters">(rawNode);</span></div>
 </div>
@@ -26,102 +33,101 @@
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/gfx.html" target="_blank">dojox/gfx/_base.TextPath reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_9dojox_gfx__base_TextPath__2PI" class="inline-link"> _2PI </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_9dojox_gfx__base_TextPath__validSegments" class="inline-link"> _validSegments </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_gfx__base_TextPath_textDir" class="inline-link"> textDir </a><span>Used for displaying bidi scripts in right layout.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__applyTransform" class="inline-link"> _applyTransform</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__collectArgs" class="inline-link"> _collectArgs</a><span class="parameters">(</span>array, args) <span>converts an array of arguments to plain numeric values</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__confirmSegmented" class="inline-link"> _confirmSegmented</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__getRealBBox" class="inline-link"> _getRealBBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_9dojox_gfx__base_TextPath__2PI" class="inline-link"> _2PI </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/gfx/path to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_9dojox_gfx__base_TextPath__validSegments" class="inline-link"> _validSegments </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/gfx/path to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_gfx__base_TextPath_textDir" class="inline-link"> textDir </a><span>Used for displaying bidi scripts in right layout.</span><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__applyTransform" class="inline-link"> _applyTransform</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__collectArgs" class="inline-link"> _collectArgs</a><span class="parameters">(</span>array, args) <span>converts an array of arguments to plain numeric values</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__confirmSegmented" class="inline-link"> _confirmSegmented</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__getRealBBox" class="inline-link"> _getRealBBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
 four points represent four corners of the untransformed bounding box</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__getRealMatrix" class="inline-link"> _getRealMatrix</a><span class="parameters">(</span>) <span>returns the cumulative (&#39;real&#39;) transformation matrix
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__getRealMatrix" class="inline-link"> _getRealMatrix</a><span class="parameters">(</span>) <span>returns the cumulative (&#39;real&#39;) transformation matrix
 by combining the shape&#39;s matrix with its parent&#39;s matrix</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__moveToBack" class="inline-link"> _moveToBack</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__moveToFront" class="inline-link"> _moveToFront</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__pushSegment" class="inline-link"> _pushSegment</a><span class="parameters">(</span>action, args) <span>adds a segment</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__setParent" class="inline-link"> _setParent</a><span class="parameters">(</span>parent, matrix) <span>sets a parent</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__setPath" class="inline-link"> _setPath</a><span class="parameters">(</span>path) <span>forms a path using an SVG path string</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__updateBBox" class="inline-link"> _updateBBox</a><span class="parameters">(</span>x, y, m) <span>updates the bounding box of path with new point</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__updateParentMatrix" class="inline-link"> _updateParentMatrix</a><span class="parameters">(</span>matrix) <span>updates the parent matrix with new matrix</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__updateWithSegment" class="inline-link"> _updateWithSegment</a><span class="parameters">(</span>segment, matrix) <span>updates the bounding box of path with new segment</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__moveToBack" class="inline-link"> _moveToBack</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__moveToFront" class="inline-link"> _moveToFront</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__pushSegment" class="inline-link"> _pushSegment</a><span class="parameters">(</span>action, args) <span>adds a segment</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__setParent" class="inline-link"> _setParent</a><span class="parameters">(</span>parent, matrix) <span>sets a parent</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__setPath" class="inline-link"> _setPath</a><span class="parameters">(</span>path) <span>forms a path using an SVG path string</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__updateBBox" class="inline-link"> _updateBBox</a><span class="parameters">(</span>x, y, m) <span>updates the bounding box of path with new point</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__updateParentMatrix" class="inline-link"> _updateParentMatrix</a><span class="parameters">(</span>matrix) <span>updates the parent matrix with new matrix</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx__base_TextPath__updateWithSegment" class="inline-link"> _updateWithSegment</a><span class="parameters">(</span>segment, matrix) <span>updates the bounding box of path with new segment</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
 (matrix * this.matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
 (this.matrix * matrix)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_arcTo" class="inline-link"> arcTo</a><span class="parameters">(</span>) <span>forms an elliptic arc segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_bidiPreprocess" class="inline-link"> bidiPreprocess</a><span class="parameters">(</span>newText) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_closePath" class="inline-link"> closePath</a><span class="parameters">(</span>) <span>closes a path</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_connect" class="inline-link"> connect</a><span class="parameters">(</span>name, object, method) <span>connects a handler to an event on this shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>rawNode) <span>a TextPath shape constructor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_curveTo" class="inline-link"> curveTo</a><span class="parameters">(</span>) <span>forms a curve segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>token) <span>connects a handler by token from an event on this shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_formatText" class="inline-link"> formatText</a><span class="parameters">(</span>text, textDir) <span>Applies the right transform on text, according to renderer.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getAbsoluteMode" class="inline-link"> getAbsoluteMode</a><span class="parameters">(</span>) <span>returns a current value of the absolute mode</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>returns the bounding box {x, y, width, height} or null</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getClip" class="inline-link"> getClip</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getEventSource" class="inline-link"> getEventSource</a><span class="parameters">(</span>) <span>returns a Node, which is used as
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_arcTo" class="inline-link"> arcTo</a><span class="parameters">(</span>) <span>forms an elliptic arc segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_bidiPreprocess" class="inline-link"> bidiPreprocess</a><span class="parameters">(</span>newText) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_closePath" class="inline-link"> closePath</a><span class="parameters">(</span>) <span>closes a path</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_connect" class="inline-link"> connect</a><span class="parameters">(</span>name, object, method) <span>connects a handler to an event on this shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>rawNode) <span>a TextPath shape constructor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_curveTo" class="inline-link"> curveTo</a><span class="parameters">(</span>) <span>forms a curve segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>token) <span>connects a handler by token from an event on this shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_formatText" class="inline-link"> formatText</a><span class="parameters">(</span>text, textDir) <span>Applies the right transform on text, according to renderer.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getAbsoluteMode" class="inline-link"> getAbsoluteMode</a><span class="parameters">(</span>) <span>returns a current value of the absolute mode</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>returns the bounding box {x, y, width, height} or null</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getClip" class="inline-link"> getClip</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getEventSource" class="inline-link"> getEventSource</a><span class="parameters">(</span>) <span>returns a Node, which is used as
 a source of events for this shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getFill" class="inline-link"> getFill</a><span class="parameters">(</span>) <span>Returns the current fill object or null
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getFill" class="inline-link"> getFill</a><span class="parameters">(</span>) <span>Returns the current fill object or null
 (see dojox/gfx.defaultLinearGradient,
 dojox/gfx.defaultRadialGradient,
 dojox/gfx.defaultPattern,
 or dojo/Color)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getFont" class="inline-link"> getFont</a><span class="parameters">(</span>) <span>returns the current font object or null</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getLastPosition" class="inline-link"> getLastPosition</a><span class="parameters">(</span>) <span>returns the last point in the path, or null</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>Different graphics rendering subsystems implement shapes in different ways.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent Shape, Group or null if this Shape is unparented.
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getFont" class="inline-link"> getFont</a><span class="parameters">(</span>) <span>returns the current font object or null</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getLastPosition" class="inline-link"> getLastPosition</a><span class="parameters">(</span>) <span>returns the last point in the path, or null</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>Different graphics rendering subsystems implement shapes in different ways.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent Shape, Group or null if this Shape is unparented.
 (see dojox/gfx/shape.Surface,
 or dojox/gfx.Group)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getShape" class="inline-link"> getShape</a><span class="parameters">(</span>) <span>returns the current Shape object or null
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getShape" class="inline-link"> getShape</a><span class="parameters">(</span>) <span>returns the current Shape object or null
 (see dojox/gfx.defaultPath,
 dojox/gfx.defaultPolyline,
 dojox/gfx.defaultRect,
@@ -129,58 +135,60 @@ dojox/gfx.defaultEllipse,
 dojox/gfx.defaultCircle,
 dojox/gfx.defaultLine,
 or dojox/gfx.defaultImage)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getStroke" class="inline-link"> getStroke</a><span class="parameters">(</span>) <span>Returns the current stroke object or null
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getStroke" class="inline-link"> getStroke</a><span class="parameters">(</span>) <span>Returns the current stroke object or null
 (see dojox/gfx.defaultStroke)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getText" class="inline-link"> getText</a><span class="parameters">(</span>) <span>returns the current text object or null</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getTransform" class="inline-link"> getTransform</a><span class="parameters">(</span>) <span>Returns the current transformation matrix applied to this Shape or null</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getTransformedBoundingBox" class="inline-link"> getTransformedBoundingBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getText" class="inline-link"> getText</a><span class="parameters">(</span>) <span>returns the current text object or null</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getTransform" class="inline-link"> getTransform</a><span class="parameters">(</span>) <span>Returns the current transformation matrix applied to this Shape or null</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_getTransformedBoundingBox" class="inline-link"> getTransformedBoundingBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
 four points represent four corners of the untransformed bounding box</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_hLineTo" class="inline-link"> hLineTo</a><span class="parameters">(</span>) <span>forms a horizontal line segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_lineTo" class="inline-link"> lineTo</a><span class="parameters">(</span>) <span>forms a line segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>) <span>forms a move segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_moveToBack" class="inline-link"> moveToBack</a><span class="parameters">(</span>) <span>moves a shape to back of its parent&#39;s list of shapes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_moveToFront" class="inline-link"> moveToFront</a><span class="parameters">(</span>) <span>moves a shape to front of its parent&#39;s list of shapes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span>Connects an event to this shape.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_qCurveTo" class="inline-link"> qCurveTo</a><span class="parameters">(</span>) <span>forms a quadratic curve segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_qSmoothCurveTo" class="inline-link"> qSmoothCurveTo</a><span class="parameters">(</span>) <span>forms a quadratic smooth curve segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_removeShape" class="inline-link"> removeShape</a><span class="parameters">(</span>silently) <span>removes the shape from its parent&#39;s list of shapes</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setAbsoluteMode" class="inline-link"> setAbsoluteMode</a><span class="parameters">(</span>mode) <span>sets an absolute or relative mode for path points</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setClip" class="inline-link"> setClip</a><span class="parameters">(</span>clip) <span>sets the clipping area of this shape.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_hLineTo" class="inline-link"> hLineTo</a><span class="parameters">(</span>) <span>forms a horizontal line segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_lineTo" class="inline-link"> lineTo</a><span class="parameters">(</span>) <span>forms a line segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>) <span>forms a move segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_moveToBack" class="inline-link"> moveToBack</a><span class="parameters">(</span>) <span>moves a shape to back of its parent&#39;s list of shapes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_moveToFront" class="inline-link"> moveToFront</a><span class="parameters">(</span>) <span>moves a shape to front of its parent&#39;s list of shapes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span>Connects an event to this shape.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_qCurveTo" class="inline-link"> qCurveTo</a><span class="parameters">(</span>) <span>forms a quadratic curve segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_qSmoothCurveTo" class="inline-link"> qSmoothCurveTo</a><span class="parameters">(</span>) <span>forms a quadratic smooth curve segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_removeShape" class="inline-link"> removeShape</a><span class="parameters">(</span>silently) <span>removes the shape from its parent&#39;s list of shapes</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setAbsoluteMode" class="inline-link"> setAbsoluteMode</a><span class="parameters">(</span>mode) <span>sets an absolute or relative mode for path points</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setClip" class="inline-link"> setClip</a><span class="parameters">(</span>clip) <span>sets the clipping area of this shape.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
 (the default implementation simply ignores it)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setFont" class="inline-link"> setFont</a><span class="parameters">(</span>newFont) <span>sets a font for text</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setShape" class="inline-link"> setShape</a><span class="parameters">(</span>newShape) <span>forms a path using a shape</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setFont" class="inline-link"> setFont</a><span class="parameters">(</span>newFont) <span>sets a font for text</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setShape" class="inline-link"> setShape</a><span class="parameters">(</span>newShape) <span>forms a path using a shape</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
 (the default implementation simply ignores it)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setText" class="inline-link"> setText</a><span class="parameters">(</span>newText) <span>sets a text to be drawn along the path</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_smoothCurveTo" class="inline-link"> smoothCurveTo</a><span class="parameters">(</span>) <span>forms a smooth curve segment</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_vLineTo" class="inline-link"> vLineTo</a><span class="parameters">(</span>) <span>forms a vertical line segment</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setText" class="inline-link"> setText</a><span class="parameters">(</span>newText) <span>sets a text to be drawn along the path</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_smoothCurveTo" class="inline-link"> smoothCurveTo</a><span class="parameters">(</span>) <span>forms a smooth curve segment</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_gfx__base_TextPath_vLineTo" class="inline-link"> vLineTo</a><span class="parameters">(</span>) <span>forms a vertical line segment</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1278,4 +1286,4 @@ constructor for a list of acceptable arguments)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gfx/_base.TextPath" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

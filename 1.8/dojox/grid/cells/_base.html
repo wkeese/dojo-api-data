@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/cells/_base</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/cells/_base" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/cells/_base.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/cells/_base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Represents a grid cell and contains information about column options and methods
 for retrieving cell related information.
 Each column in a grid layout has a cell object and most events and many methods
 provide access to these objects.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base<span class="parameters">(inProps);</span></div>
 </div>
@@ -25,100 +32,101 @@ provide access to these objects.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="booleanIcon private"><a href="#1_8dojox_grid_cells__base__formatPending" class="inline-link"> _formatPending </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_8dojox_grid_cells__base__valueProp" class="inline-link"> _valueProp </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_alwaysEditing" class="inline-link"> alwaysEditing </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_classes" class="inline-link"> classes </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_defaultValue" class="inline-link"> defaultValue </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_draggable" class="inline-link"> draggable </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_editable" class="inline-link"> editable </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_grid_cells__base_formatter" class="inline-link"> formatter </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_hidden" class="inline-link"> hidden </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_noresize" class="inline-link"> noresize </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_styles" class="inline-link"> styles </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_grid_cells__base_value" class="inline-link"> value </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__defaultFormat" class="inline-link"> _defaultFormat</a><span class="parameters">(</span>inValue, callArgs) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__finish" class="inline-link"> _finish</a><span class="parameters">(</span>inRowIndex) <span>called when editing is completed to clean up editor</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__formatNode" class="inline-link"> _formatNode</a><span class="parameters">(</span>inDatum, inRowIndex) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_apply" class="inline-link"> apply</a><span class="parameters">(</span>inRowIndex) <span>apply edit from cell editor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_applyEdit" class="inline-link"> applyEdit</a><span class="parameters">(</span>inValue, inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>inRowIndex) <span>cancel cell edit</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancelEdit" class="inline-link"> cancelEdit</a><span class="parameters">(</span>inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancelFormatNode" class="inline-link"> cancelFormatNode</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_canResize" class="inline-link"> canResize</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inProps) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_dispatchEvent" class="inline-link"> dispatchEvent</a><span class="parameters">(</span>m, e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_focus" class="inline-link"> focus</a><span class="parameters">(</span>inRowIndex, inNode) <span>focus the grid editor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_format" class="inline-link"> format</a><span class="parameters">(</span>inRowIndex, inItem) <span>provides the html for a given grid cell.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_formatEditing" class="inline-link"> formatEditing</a><span class="parameters">(</span>inDatum, inRowIndex) <span>formats the cell for editing</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_formatNode" class="inline-link"> formatNode</a><span class="parameters">(</span>inNode, inDatum, inRowIndex) <span>format the editing dom node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getEditNode" class="inline-link"> getEditNode</a><span class="parameters">(</span>inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getHeaderNode" class="inline-link"> getHeaderNode</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>inRowIndex) <span>gets the dom node for a given grid cell.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>inRowIndex) <span>returns value entered into editor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_isFlex" class="inline-link"> isFlex</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>node, cellDef) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_needFormatNode" class="inline-link"> needFormatNode</a><span class="parameters">(</span>inDatum, inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_registerOnBlur" class="inline-link"> registerOnBlur</a><span class="parameters">(</span>inNode, inRowIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_restore" class="inline-link"> restore</a><span class="parameters">(</span>inRowIndex) <span>restore editor state</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_save" class="inline-link"> save</a><span class="parameters">(</span>inRowIndex) <span>save editor state</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>inRowIndex, inValue) <span>set the value of the grid editor</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__onEditBlur" class="inline-link"> _onEditBlur</a><span class="parameters">(</span>inRowIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_8dojox_grid_cells__base__formatPending" class="inline-link"> _formatPending </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_grid_cells__base__valueProp" class="inline-link"> _valueProp </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_alwaysEditing" class="inline-link"> alwaysEditing </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_classes" class="inline-link"> classes </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_defaultValue" class="inline-link"> defaultValue </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_draggable" class="inline-link"> draggable </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_editable" class="inline-link"> editable </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_grid_cells__base_formatter" class="inline-link"> formatter </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_hidden" class="inline-link"> hidden </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_noresize" class="inline-link"> noresize </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_styles" class="inline-link"> styles </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_grid_cells__base_value" class="inline-link"> value </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__defaultFormat" class="inline-link"> _defaultFormat</a><span class="parameters">(</span>inValue, callArgs) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__finish" class="inline-link"> _finish</a><span class="parameters">(</span>inRowIndex) <span>called when editing is completed to clean up editor</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__formatNode" class="inline-link"> _formatNode</a><span class="parameters">(</span>inDatum, inRowIndex) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_apply" class="inline-link"> apply</a><span class="parameters">(</span>inRowIndex) <span>apply edit from cell editor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_applyEdit" class="inline-link"> applyEdit</a><span class="parameters">(</span>inValue, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>inRowIndex) <span>cancel cell edit</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancelEdit" class="inline-link"> cancelEdit</a><span class="parameters">(</span>inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancelFormatNode" class="inline-link"> cancelFormatNode</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_canResize" class="inline-link"> canResize</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inProps) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_dispatchEvent" class="inline-link"> dispatchEvent</a><span class="parameters">(</span>m, e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_focus" class="inline-link"> focus</a><span class="parameters">(</span>inRowIndex, inNode) <span>focus the grid editor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_format" class="inline-link"> format</a><span class="parameters">(</span>inRowIndex, inItem) <span>provides the html for a given grid cell.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_formatEditing" class="inline-link"> formatEditing</a><span class="parameters">(</span>inDatum, inRowIndex) <span>formats the cell for editing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_formatNode" class="inline-link"> formatNode</a><span class="parameters">(</span>inNode, inDatum, inRowIndex) <span>format the editing dom node.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getEditNode" class="inline-link"> getEditNode</a><span class="parameters">(</span>inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getHeaderNode" class="inline-link"> getHeaderNode</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>inRowIndex) <span>gets the dom node for a given grid cell.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>inRowIndex) <span>returns value entered into editor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_isFlex" class="inline-link"> isFlex</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>node, cellDef) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_needFormatNode" class="inline-link"> needFormatNode</a><span class="parameters">(</span>inDatum, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_registerOnBlur" class="inline-link"> registerOnBlur</a><span class="parameters">(</span>inNode, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_restore" class="inline-link"> restore</a><span class="parameters">(</span>inRowIndex) <span>restore editor state</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_save" class="inline-link"> save</a><span class="parameters">(</span>inRowIndex) <span>save editor state</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>inRowIndex, inValue) <span>set the value of the grid editor</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__onEditBlur" class="inline-link"> _onEditBlur</a><span class="parameters">(</span>inRowIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -802,4 +810,4 @@ provide access to these objects.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/cells/_base" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/LongListMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mobile/LongListMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/LongListMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/LongListMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This mixin enhances performance of very long lists contained in scrollable views.</p>
 </div>
@@ -17,53 +24,54 @@ will not behave correctly.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/mobile/LongListMixin.html" target="_blank">dojox/mobile/LongListMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_9dojox_mobile_LongListMixin_maxPages" class="inline-link"> maxPages </a><span>When this limit is reached, previous pages will be unloaded.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_mobile_LongListMixin_pageSize" class="inline-link"> pageSize </a><span>Items are loaded in the DOM by chunks of this size.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_mobile_LongListMixin_unloadPages" class="inline-link"> unloadPages </a><span>Number of pages that will be unloaded when maxPages is reached.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__addAfter" class="inline-link"> _addAfter</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__addBefore" class="inline-link"> _addBefore</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__adjustBottomDiv" class="inline-link"> _adjustBottomDiv</a><span class="parameters">(</span>newBox) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__adjustTopDiv" class="inline-link"> _adjustTopDiv</a><span class="parameters">(</span>oldBox, newBox) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__childrenChanged" class="inline-link"> _childrenChanged</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__clearItems" class="inline-link"> _clearItems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__loadItems" class="inline-link"> _loadItems</a><span class="parameters">(</span>toPos) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__reloadItems" class="inline-link"> _reloadItems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_generateList" class="inline-link"> generateList</a><span class="parameters">(</span>items) <span>Overrides dojox.mobile._StoreListMixin when the list is a store list.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_9dojox_mobile_LongListMixin_maxPages" class="inline-link"> maxPages </a><span>When this limit is reached, previous pages will be unloaded.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_mobile_LongListMixin_pageSize" class="inline-link"> pageSize </a><span>Items are loaded in the DOM by chunks of this size.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_mobile_LongListMixin_unloadPages" class="inline-link"> unloadPages </a><span>Number of pages that will be unloaded when maxPages is reached.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__addAfter" class="inline-link"> _addAfter</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__addBefore" class="inline-link"> _addBefore</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__adjustBottomDiv" class="inline-link"> _adjustBottomDiv</a><span class="parameters">(</span>newBox) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__adjustTopDiv" class="inline-link"> _adjustTopDiv</a><span class="parameters">(</span>oldBox, newBox) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__childrenChanged" class="inline-link"> _childrenChanged</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__clearItems" class="inline-link"> _clearItems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__loadItems" class="inline-link"> _loadItems</a><span class="parameters">(</span>toPos) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_LongListMixin__reloadItems" class="inline-link"> _reloadItems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_generateList" class="inline-link"> generateList</a><span class="parameters">(</span>items) <span>Overrides dojox.mobile._StoreListMixin when the list is a store list.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_LongListMixin_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -318,4 +326,4 @@ will not behave correctly.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/LongListMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

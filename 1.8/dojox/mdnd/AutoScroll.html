@@ -1,55 +1,64 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/AutoScroll</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/mdnd/AutoScroll" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/AutoScroll.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/AutoScroll<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Activate scrolling while dragging a widget.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new AutoScroll<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mdnd/AutoScroll">dojox/mdnd/AutoScroll</a></div>
+<p>See the <a href="/reference-guide/1.8/dojox/mdnd.html" target="_blank">dojox/mdnd/AutoScroll reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_8dojox_mdnd_AutoScroll_interval" class="inline-link"> interval </a><span>default mouse move offset</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_mdnd_AutoScroll_marginMouse" class="inline-link"> marginMouse </a><span>Default mouse margin</span>
-    </li>
-    <li class="numberIcon"><a href="#1_8dojox_mdnd_AutoScroll_recursiveTimer" class="inline-link"> recursiveTimer </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollDown" class="inline-link"> _autoScrollDown</a><span class="parameters">(</span>) <span>Manage the down autoscroll.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollLeft" class="inline-link"> _autoScrollLeft</a><span class="parameters">(</span>e) <span>Manage the left autoscroll.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollRight" class="inline-link"> _autoScrollRight</a><span class="parameters">(</span>) <span>Manage the right autoscroll.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollUp" class="inline-link"> _autoScrollUp</a><span class="parameters">(</span>) <span>Manage the up autoscroll.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_checkAutoScroll" class="inline-link"> checkAutoScroll</a><span class="parameters">(</span>e) <span>Check if an autoScroll have to be launched.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Set the visible part of the window.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_setAutoScrollMaxPage" class="inline-link"> setAutoScrollMaxPage</a><span class="parameters">(</span>) <span>Set the hightest heigh and width authorized scroll.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_setAutoScrollNode" class="inline-link"> setAutoScrollNode</a><span class="parameters">(</span>node) <span>set the node which is dragged</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_stopAutoScroll" class="inline-link"> stopAutoScroll</a><span class="parameters">(</span>) <span>Stop the autoscroll.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_8dojox_mdnd_AutoScroll_interval" class="inline-link"> interval </a><span>default mouse move offset</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_mdnd_AutoScroll_marginMouse" class="inline-link"> marginMouse </a><span>Default mouse margin</span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojox_mdnd_AutoScroll_recursiveTimer" class="inline-link"> recursiveTimer </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollDown" class="inline-link"> _autoScrollDown</a><span class="parameters">(</span>) <span>Manage the down autoscroll.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollLeft" class="inline-link"> _autoScrollLeft</a><span class="parameters">(</span>e) <span>Manage the left autoscroll.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollRight" class="inline-link"> _autoScrollRight</a><span class="parameters">(</span>) <span>Manage the right autoscroll.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AutoScroll__autoScrollUp" class="inline-link"> _autoScrollUp</a><span class="parameters">(</span>) <span>Manage the up autoscroll.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_checkAutoScroll" class="inline-link"> checkAutoScroll</a><span class="parameters">(</span>e) <span>Check if an autoScroll have to be launched.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_getViewport" class="inline-link"> getViewport</a><span class="parameters">(</span>) <span>Set the visible part of the window.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_setAutoScrollMaxPage" class="inline-link"> setAutoScrollMaxPage</a><span class="parameters">(</span>) <span>Set the hightest heigh and width authorized scroll.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_setAutoScrollNode" class="inline-link"> setAutoScrollNode</a><span class="parameters">(</span>node) <span>set the node which is dragged</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_mdnd_AutoScroll_stopAutoScroll" class="inline-link"> stopAutoScroll</a><span class="parameters">(</span>) <span>Stop the autoscroll.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -215,4 +224,4 @@
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mdnd/AutoScroll" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

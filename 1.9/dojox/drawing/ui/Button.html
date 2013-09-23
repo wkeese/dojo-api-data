@@ -1,12 +1,19 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/ui/Button</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/ui/Button" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/ui/Button.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/ui/Button<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Creates a clickable button in &quot;UI&quot; mode of the drawing.</p>
 </div>
 <div class="jsdoc-full-summary"><p>Creates a 4-state button: normal, hover, active, selected.
 Optionally may include button text or an icon.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Button<span class="parameters">(options);</span></div>
 </div>
@@ -25,62 +32,63 @@ Optionally may include button text or an icon.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon"><a href="#1_9dojox_drawing_ui_Button_callback" class="inline-link"> callback </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_ui_Button_enabled" class="inline-link"> enabled </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_ui_Button_hitched" class="inline-link"> hitched </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_ui_Button_scope" class="inline-link"> scope </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_drawing_ui_Button_selected" class="inline-link"> selected </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Button_toolType" class="inline-link"> toolType </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Button_type" class="inline-link"> type </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_ui_Button__change" class="inline-link"> _change</a><span class="parameters">(</span>sty) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_attr" class="inline-link"> attr</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_disable" class="inline-link"> disable</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_enable" class="inline-link"> enable</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_makeOptions" class="inline-link"> makeOptions</a><span class="parameters">(</span>d, s) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_select" class="inline-link"> select</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>button) <span>Stub to connect.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onDown" class="inline-link"> onDown</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onOut" class="inline-link"> onOut</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onOver" class="inline-link"> onOver</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onUp" class="inline-link"> onUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_9dojox_drawing_ui_Button_callback" class="inline-link"> callback </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_ui_Button_enabled" class="inline-link"> enabled </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_ui_Button_hitched" class="inline-link"> hitched </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_ui_Button_scope" class="inline-link"> scope </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_drawing_ui_Button_selected" class="inline-link"> selected </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Button_toolType" class="inline-link"> toolType </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_drawing_ui_Button_type" class="inline-link"> type </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_ui_Button__change" class="inline-link"> _change</a><span class="parameters">(</span>sty) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_attr" class="inline-link"> attr</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_disable" class="inline-link"> disable</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_enable" class="inline-link"> enable</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_makeOptions" class="inline-link"> makeOptions</a><span class="parameters">(</span>d, s) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_select" class="inline-link"> select</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>button) <span>Stub to connect.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onDown" class="inline-link"> onDown</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onOut" class="inline-link"> onOut</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onOver" class="inline-link"> onOver</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_Button_onUp" class="inline-link"> onUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -280,4 +288,4 @@ on creation.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/ui/Button" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

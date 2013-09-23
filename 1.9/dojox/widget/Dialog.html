@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/widget/Dialog</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/widget/Dialog" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/widget/Dialog.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/widget/Dialog<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A Lightbox-like Modal-dialog for HTML Content</p>
 </div>
@@ -13,7 +20,7 @@ options, animated show/hide and other useful options.
 <p>It works identically to a <code>dijit.Dialog</code> with several
 additional parameters.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Dialog<span class="parameters">(props,node);</span></div>
 </div>
@@ -39,60 +46,61 @@ additional parameters.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/widget/Dialog.html" target="_blank">dojox/widget/Dialog reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon"><a href="#1_9dojox_widget_Dialog_dimensions" class="inline-link"> dimensions </a><span>A two-element array of [width,height] to animate the Dialog to if sizeToViewport=&quot;false&quot;
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon"><a href="#1_9dojox_widget_Dialog_dimensions" class="inline-link"> dimensions </a><span>A two-element array of [width,height] to animate the Dialog to if sizeToViewport=&quot;false&quot;
 Defaults to [300,300]</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_draggable" class="inline-link"> draggable </a><span>Make the pane draggable.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_widget_Dialog_easing" class="inline-link"> easing </a><span>An easing function to apply to the sizing animation.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_modal" class="inline-link"> modal </a><span>If true, this Dialog instance will be truly modal and prevent closing until
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_draggable" class="inline-link"> draggable </a><span>Make the pane draggable.</span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_widget_Dialog_easing" class="inline-link"> easing </a><span>An easing function to apply to the sizing animation.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_modal" class="inline-link"> modal </a><span>If true, this Dialog instance will be truly modal and prevent closing until
 explicitly told to by calling hide() - Defaults to false to preserve previous
 behaviors.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_showTitle" class="inline-link"> showTitle </a><span>Toogle to show or hide the Title area.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_widget_Dialog_sizeDuration" class="inline-link"> sizeDuration </a><span>Time (in ms) to use in the Animation for sizing.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_widget_Dialog_sizeMethod" class="inline-link"> sizeMethod </a><span>To be passed to dojox.fx.sizeTo, one of &quot;chain&quot; or &quot;combine&quot; to effect
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_showTitle" class="inline-link"> showTitle </a><span>Toogle to show or hide the Title area.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_widget_Dialog_sizeDuration" class="inline-link"> sizeDuration </a><span>Time (in ms) to use in the Animation for sizing.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_widget_Dialog_sizeMethod" class="inline-link"> sizeMethod </a><span>To be passed to dojox.fx.sizeTo, one of &quot;chain&quot; or &quot;combine&quot; to effect
 the animation sequence.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_sizeToViewport" class="inline-link"> sizeToViewport </a><span>If true, fix the size of the dialog to the Viewport based on
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_widget_Dialog_sizeToViewport" class="inline-link"> sizeToViewport </a><span>If true, fix the size of the dialog to the Viewport based on
 viewportPadding value rather than the calculated or natural
 style.</span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_widget_Dialog_templateString" class="inline-link"> templateString </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_widget_Dialog_viewportPadding" class="inline-link"> viewportPadding </a><span>If sizeToViewport=&quot;true&quot;, this is the amount of padding in pixels to leave
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_widget_Dialog_templateString" class="inline-link"> templateString </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_widget_Dialog_viewportPadding" class="inline-link"> viewportPadding </a><span>If sizeToViewport=&quot;true&quot;, this is the amount of padding in pixels to leave
 between the dialog border and the viewport edge.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__handleNav" class="inline-link"> _handleNav</a><span class="parameters">(</span>e) <span>Handle&#39;s showing or hiding the close icon</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__position" class="inline-link"> _position</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__setSize" class="inline-link"> _setSize</a><span class="parameters">(</span>) <span>cache and set our desired end position</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__setup" class="inline-link"> _setup</a><span class="parameters">(</span>) <span>Piggyback on dijit.Dialog&#39;s _setup for load-time options, deferred to</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__showContent" class="inline-link"> _showContent</a><span class="parameters">(</span>e) <span>Show the inner container after sizing animation</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_widget_Dialog_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_widget_Dialog_layout" class="inline-link"> layout</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_widget_Dialog_show" class="inline-link"> show</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__handleNav" class="inline-link"> _handleNav</a><span class="parameters">(</span>e) <span>Handle&#39;s showing or hiding the close icon</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__position" class="inline-link"> _position</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__setSize" class="inline-link"> _setSize</a><span class="parameters">(</span>) <span>cache and set our desired end position</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__setup" class="inline-link"> _setup</a><span class="parameters">(</span>) <span>Piggyback on dijit.Dialog&#39;s _setup for load-time options, deferred to</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_widget_Dialog__showContent" class="inline-link"> _showContent</a><span class="parameters">(</span>e) <span>Show the inner container after sizing animation</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_widget_Dialog_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>props, node) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_widget_Dialog_layout" class="inline-link"> layout</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_widget_Dialog_show" class="inline-link"> show</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -311,4 +319,4 @@ by dialog content to ensure dialog does not go outside viewport boundary</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/widget/Dialog" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

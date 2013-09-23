@@ -1,50 +1,58 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_base/focus</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dijit/_base/focus" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_base/focus.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/_base/focus<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Deprecated module to monitor currently focused node and stack of currently focused widgets.
 New code should access <a class="jsdoc-link" href="/api/1.9/dijit/focus">dijit/focus</a> directly.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dijit/_base/focus.html" target="_blank">dijit/_base/focus reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dijit__base_focus__activeStack" class="inline-link"> _activeStack </a><span>List of currently active widgets (focused widget and it&#39;s ancestors)</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="domnodeIcon private"><a href="#1_9dijit__base_focus__curFocus" class="inline-link"> _curFocus </a><span>Currently focused item on screen</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="domnodeIcon private"><a href="#1_9dijit__base_focus__prevFocus" class="inline-link"> _prevFocus </a><span>Previously focused item on screen</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_getBookmark" class="inline-link"> getBookmark</a><span class="parameters">(</span>) <span>Retrieves a bookmark that can be used with moveToBookmark to return to the same range</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_getFocus" class="inline-link"> getFocus</a><span class="parameters">(</span>menu, openedForWindow) <span>Called as getFocus(), this returns an Object showing the current focus
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dijit__base_focus__activeStack" class="inline-link"> _activeStack </a><span>List of currently active widgets (focused widget and it&#39;s ancestors)</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="domnodeIcon private"><a href="#1_9dijit__base_focus__curFocus" class="inline-link"> _curFocus </a><span>Currently focused item on screen</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="domnodeIcon private"><a href="#1_9dijit__base_focus__prevFocus" class="inline-link"> _prevFocus </a><span>Previously focused item on screen</span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_getBookmark" class="inline-link"> getBookmark</a><span class="parameters">(</span>) <span>Retrieves a bookmark that can be used with moveToBookmark to return to the same range</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_getFocus" class="inline-link"> getFocus</a><span class="parameters">(</span>menu, openedForWindow) <span>Called as getFocus(), this returns an Object showing the current focus
 and selected text.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_isCollapsed" class="inline-link"> isCollapsed</a><span class="parameters">(</span>) <span>Returns true if there is no text selected</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_moveToBookmark" class="inline-link"> moveToBookmark</a><span class="parameters">(</span>bookmark) <span>Moves current selection to a bookmark</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_registerIframe" class="inline-link"> registerIframe</a><span class="parameters">(</span>iframe) <span>Registers listeners on the specified iframe so that any click
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_isCollapsed" class="inline-link"> isCollapsed</a><span class="parameters">(</span>) <span>Returns true if there is no text selected</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_moveToBookmark" class="inline-link"> moveToBookmark</a><span class="parameters">(</span>bookmark) <span>Moves current selection to a bookmark</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_registerIframe" class="inline-link"> registerIframe</a><span class="parameters">(</span>iframe) <span>Registers listeners on the specified iframe so that any click
 or focus event on that iframe (or anything in it) is reported
 as a focus/click event on the &lt;iframe&gt; itself.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_registerWin" class="inline-link"> registerWin</a><span class="parameters">(</span>targetWindow, effectiveNode) <span>Registers listeners on the specified window (either the main
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_registerWin" class="inline-link"> registerWin</a><span class="parameters">(</span>targetWindow, effectiveNode) <span>Registers listeners on the specified window (either the main
 window or an iframe&#39;s window) to detect when the user has clicked somewhere
 or focused somewhere.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_unregisterIframe" class="inline-link"> unregisterIframe</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified iframe created by registerIframe.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dijit__base_focus_unregisterWin" class="inline-link"> unregisterWin</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified window (either the main
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_unregisterIframe" class="inline-link"> unregisterIframe</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified iframe created by registerIframe.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dijit__base_focus_unregisterWin" class="inline-link"> unregisterWin</a><span class="parameters">(</span>handle) <span>Unregisters listeners on the specified window (either the main
 window or an iframe&#39;s window) according to handle returned from registerWin().</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -281,4 +289,4 @@ After calling be sure to delete or null out the handle itself.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dijit/_base/focus" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

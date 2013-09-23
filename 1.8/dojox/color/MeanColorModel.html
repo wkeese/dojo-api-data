@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/color/MeanColorModel</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/color/MeanColorModel" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/color/MeanColorModel.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/color/MeanColorModel<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojox/color/NeutralColorModel" class="jsdoc-link">dojox/color/NeutralColorModel</a>
@@ -7,7 +14,7 @@
 <div class="jsdoc-full-summary"><p>A color model that returns a color from a data value
 using an interpolation between two extremum colors around the mean value.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new MeanColorModel<span class="parameters">(startColor,endColor);</span></div>
 </div>
@@ -34,41 +41,43 @@ using an interpolation between two extremum colors around the mean value.</p>
     </td>
   </tr>
 </table>
+<p>See the <a href="/reference-guide/1.8/dojox/color.html" target="_blank">dojox/color/MeanColorModel reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__e" class="inline-link"> _e </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__endColor" class="inline-link"> _endColor </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__max" class="inline-link"> _max </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="numberIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__min" class="inline-link"> _min </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__startColor" class="inline-link"> _startColor </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__getInterpoledValue" class="inline-link"> _getInterpoledValue</a><span class="parameters">(</span>from, to, value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_color_MeanColorModel_computeNeutral" class="inline-link"> computeNeutral</a><span class="parameters">(</span>min, max, sum, values) <span>Return the neutral value in this case the mean value of the data values.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_color_MeanColorModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>startColor, endColor) <span></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_color_MeanColorModel_getColor" class="inline-link"> getColor</a><span class="parameters">(</span>value) <span>return the color for a given data value.</span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_color_MeanColorModel_getNormalizedValue" class="inline-link"> getNormalizedValue</a><span class="parameters">(</span>value) <span>Return the normalized (between 0 and 1) value for a given data value.</span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_color_MeanColorModel_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>items, colorFunc) <span>Initialize the color model from a list of data items and using a function
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__e" class="inline-link"> _e </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__endColor" class="inline-link"> _endColor </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__max" class="inline-link"> _max </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__min" class="inline-link"> _min </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__startColor" class="inline-link"> _startColor </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_color_MeanColorModel__getInterpoledValue" class="inline-link"> _getInterpoledValue</a><span class="parameters">(</span>from, to, value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_color_MeanColorModel_computeNeutral" class="inline-link"> computeNeutral</a><span class="parameters">(</span>min, max, sum, values) <span>Return the neutral value in this case the mean value of the data values.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_color_MeanColorModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>startColor, endColor) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_color_MeanColorModel_getColor" class="inline-link"> getColor</a><span class="parameters">(</span>value) <span>return the color for a given data value.</span><span title="inherited from dojox/color/SimpleColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_color_MeanColorModel_getNormalizedValue" class="inline-link"> getNormalizedValue</a><span class="parameters">(</span>value) <span>Return the normalized (between 0 and 1) value for a given data value.</span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_color_MeanColorModel_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>items, colorFunc) <span>Initialize the color model from a list of data items and using a function
 that returns the value used to compute the color for a given item.</span><span title="inherited from dojox/color/NeutralColorModel" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -293,4 +302,4 @@ that returns the value used to compute the color for a given item.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/color/MeanColorModel" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

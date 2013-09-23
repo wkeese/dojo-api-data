@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/ScreenSizeAware</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mobile/ScreenSizeAware" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/ScreenSizeAware.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/ScreenSizeAware<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A module to make a screen size aware application.</p>
 </div>
@@ -12,7 +19,7 @@ split view whose left pane is a list widget.
 In a phone-sized screen, the application shows a list widget that fills the screen.
 </p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new ScreenSizeAware<span class="parameters">(options);</span></div>
 </div>
@@ -36,12 +43,11 @@ In a phone-sized screen, the application shows a list widget that fills the scre
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/mobile/ScreenSizeAware.html" target="_blank">dojox/mobile/ScreenSizeAware reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;span data-dojo-type=&quot;dojox.mobile.ScreenSizeAware&quot;&gt;&lt;/span&gt;
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;span data-dojo-type=&quot;dojox.mobile.ScreenSizeAware&quot;&gt;&lt;/span&gt;
 &lt;div data-dojo-type=&quot;dojox.mobile.FixedSplitter&quot; data-dojo-props=&#39;orientation:&quot;H&quot;&#39;&gt;
   &lt;div data-dojo-type=&quot;dojox.mobile.Container&quot; style=&quot;width:300px;&quot;&gt;
     &lt;div id=&quot;leftView&quot; data-dojo-type=&quot;dojox.mobile.ScrollableView&quot;&gt;
@@ -60,59 +66,61 @@ In a phone-sized screen, the application shows a list widget that fills the scre
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private"><a href="#1_9dojox_mobile_ScreenSizeAware__instance" class="inline-link"> _instance </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_leftListId" class="inline-link"> leftListId </a><span>The id of the list widget in the left view.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_leftPaneId" class="inline-link"> leftPaneId </a><span>The id of the left pane.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_leftViewId" class="inline-link"> leftViewId </a><span>The id of the left View.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_rightPaneId" class="inline-link"> rightPaneId </a><span>The id of the right pane.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_splitterId" class="inline-link"> splitterId </a><span>The id of the FixedSplitter.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span>Creates a new instance of the class.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_getDestinationId" class="inline-link"> getDestinationId</a><span class="parameters">(</span>item) <span>Returns the id of the target view of the given item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_getInstance" class="inline-link"> getInstance</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_getShowingView" class="inline-link"> getShowingView</a><span class="parameters">(</span>) <span>Returns the view currently shown.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initializes the application.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_isPhone" class="inline-link"> isPhone</a><span class="parameters">(</span>) <span>Returns true if the current mode set by transformUI(mode) is &quot;phone&quot;.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_leftItemSelected" class="inline-link"> leftItemSelected</a><span class="parameters">(</span>e) <span>Function called when an item in the left-side list is selected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_moveList" class="inline-link"> moveList</a><span class="parameters">(</span>) <span>Places the list widget.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_showLeftView" class="inline-link"> showLeftView</a><span class="parameters">(</span>) <span>Shows the left-side view.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_showRightView" class="inline-link"> showRightView</a><span class="parameters">(</span>) <span>Shows the right-side view.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_transformUI" class="inline-link"> transformUI</a><span class="parameters">(</span>mode) <span>Applies an UI mode.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateBackButton" class="inline-link"> updateBackButton</a><span class="parameters">(</span>) <span>Updates the back button.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateSelectedItem" class="inline-link"> updateSelectedItem</a><span class="parameters">(</span>) <span>Updates the selected item.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateStateful" class="inline-link"> updateStateful</a><span class="parameters">(</span>) <span>Updates the stateful property of the list widget in the left-side pane.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateTransition" class="inline-link"> updateTransition</a><span class="parameters">(</span>) <span>Updates the transition property of the items in the left-side widget.</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private"><a href="#1_9dojox_mobile_ScreenSizeAware__instance" class="inline-link"> _instance </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_leftListId" class="inline-link"> leftListId </a><span>The id of the list widget in the left view.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_leftPaneId" class="inline-link"> leftPaneId </a><span>The id of the left pane.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_leftViewId" class="inline-link"> leftViewId </a><span>The id of the left View.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_rightPaneId" class="inline-link"> rightPaneId </a><span>The id of the right pane.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile_ScreenSizeAware_splitterId" class="inline-link"> splitterId </a><span>The id of the FixedSplitter.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span>Creates a new instance of the class.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_getDestinationId" class="inline-link"> getDestinationId</a><span class="parameters">(</span>item) <span>Returns the id of the target view of the given item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_getInstance" class="inline-link"> getInstance</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_getShowingView" class="inline-link"> getShowingView</a><span class="parameters">(</span>) <span>Returns the view currently shown.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initializes the application.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_isPhone" class="inline-link"> isPhone</a><span class="parameters">(</span>) <span>Returns true if the current mode set by transformUI(mode) is &quot;phone&quot;.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_leftItemSelected" class="inline-link"> leftItemSelected</a><span class="parameters">(</span>e) <span>Function called when an item in the left-side list is selected.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_moveList" class="inline-link"> moveList</a><span class="parameters">(</span>) <span>Places the list widget.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_showLeftView" class="inline-link"> showLeftView</a><span class="parameters">(</span>) <span>Shows the left-side view.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_showRightView" class="inline-link"> showRightView</a><span class="parameters">(</span>) <span>Shows the right-side view.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_transformUI" class="inline-link"> transformUI</a><span class="parameters">(</span>mode) <span>Applies an UI mode.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateBackButton" class="inline-link"> updateBackButton</a><span class="parameters">(</span>) <span>Updates the back button.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateSelectedItem" class="inline-link"> updateSelectedItem</a><span class="parameters">(</span>) <span>Updates the selected item.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateStateful" class="inline-link"> updateStateful</a><span class="parameters">(</span>) <span>Updates the stateful property of the list widget in the left-side pane.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile_ScreenSizeAware_updateTransition" class="inline-link"> updateTransition</a><span class="parameters">(</span>) <span>Updates the transition property of the items in the left-side widget.</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -348,4 +356,4 @@ in tablet mode.      </p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/ScreenSizeAware" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

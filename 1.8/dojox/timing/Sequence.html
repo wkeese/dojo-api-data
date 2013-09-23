@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/timing/Sequence</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/timing/Sequence" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/timing/Sequence.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/timing/Sequence<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This class provides functionality to really sequentialize
 function calls. You need to provide a list of functions and
@@ -14,40 +21,42 @@ the repeat handling is easier and we don&#39;t need to handle that
 many extra cases. Also the doneFunction, if given is added at the
 end of the resolved-sequences.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Sequence<span class="parameters">();</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/timing/Sequence">dojox/timing/Sequence</a></div>
+<p>See the <a href="/reference-guide/1.8/dojox/timing.html" target="_blank">dojox/timing/Sequence reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="arrayIcon private"><a href="#1_8dojox_timing_Sequence__defsResolved" class="inline-link"> _defsResolved </a><span>The resolved sequence, for easier handling.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_8dojox_timing_Sequence__goOnPause" class="inline-link"> _goOnPause </a><span>The pause to wait before really going on.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_8dojox_timing_Sequence__running" class="inline-link"> _running </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_timing_Sequence__go" class="inline-link"> _go</a><span class="parameters">(</span>) <span>Execute one task of this._defsResolved.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_go" class="inline-link"> go</a><span class="parameters">(</span>defs, doneFunction) <span>Run the passed sequence definition</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_goOn" class="inline-link"> goOn</a><span class="parameters">(</span>) <span>This method just provides a hook from the outside, so that
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon private"><a href="#1_8dojox_timing_Sequence__defsResolved" class="inline-link"> _defsResolved </a><span>The resolved sequence, for easier handling.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_8dojox_timing_Sequence__goOnPause" class="inline-link"> _goOnPause </a><span>The pause to wait before really going on.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_8dojox_timing_Sequence__running" class="inline-link"> _running </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_timing_Sequence__go" class="inline-link"> _go</a><span class="parameters">(</span>) <span>Execute one task of this._defsResolved.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_go" class="inline-link"> go</a><span class="parameters">(</span>defs, doneFunction) <span>Run the passed sequence definition</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_goOn" class="inline-link"> goOn</a><span class="parameters">(</span>) <span>This method just provides a hook from the outside, so that
 an interrupted sequence can be continued.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_stop" class="inline-link"> stop</a><span class="parameters">(</span>) <span>Stop the currently running sequence.</span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_timing_Sequence_stop" class="inline-link"> stop</a><span class="parameters">(</span>) <span>Stop the currently running sequence.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -150,4 +159,4 @@ it using this method.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/timing/Sequence" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

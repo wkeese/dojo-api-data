@@ -1,16 +1,23 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/rpc/JsonpService</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/rpc/JsonpService" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/rpc/JsonpService.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojo/rpc/JsonpService<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojo/rpc/RpcService" class="jsdoc-link">dojo/rpc/RpcService,   </a>
+  <label>Extends </label><a href="/api/1.8/dojo/rpc/RpcService" class="jsdoc-link">dojo/rpc/RpcService</a>
 </div>
 <div class="jsdoc-full-summary"><p>Generic JSONP service.  Minimally extends RpcService to allow
 easy definition of nearly any JSONP style service. Example
 SMD files exist in dojox.data</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new dojo/rpc/JsonpService<span class="parameters">(args,requiredArgs);</span></div>
+  <div class="function-signature"><span class="keyword">var</span> foo = new JsonpService<span class="parameters">(args,requiredArgs);</span></div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/rpc/JsonpService">dojo/rpc/JsonpService</a></div>
 <table class="jsdoc-parameters">
@@ -34,39 +41,40 @@ SMD files exist in dojox.data</p>
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/rpc/JsonpService.html" target="_blank">dojo/rpc/JsonpService reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon inherited"><a href="#1_8dojo_rpc_JsonpService_serviceUrl" class="inline-link"> serviceUrl </a><span></span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_8dojo_rpc_JsonpService_strictArgChecks" class="inline-link"> strictArgChecks </a><span></span><span title="inherited from dojo/rpc/JsonpService" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_rpc_JsonpService_bind" class="inline-link"> bind</a><span class="parameters">(</span>method, parameters, deferredRequestHandler, url) <span>JSONP bind method.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_JsonpService_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args, requiredArgs) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_rpc_JsonpService_createRequest" class="inline-link"> createRequest</a><span class="parameters">(</span>parameters) <span>create a JSONP req</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_errorCallback" class="inline-link"> errorCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred errback method</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_generateMethod" class="inline-link"> generateMethod</a><span class="parameters">(</span>method, parameters, url) <span>generate the local bind methods for the remote object</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_parseResults" class="inline-link"> parseResults</a><span class="parameters">(</span>obj) <span>parse the results coming back from an rpc request.  this
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon inherited"><a href="#1_8dojo_rpc_JsonpService_serviceUrl" class="inline-link"> serviceUrl </a><span></span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_8dojo_rpc_JsonpService_strictArgChecks" class="inline-link"> strictArgChecks </a><span></span><span title="inherited from dojo/rpc/JsonpService" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_rpc_JsonpService_bind" class="inline-link"> bind</a><span class="parameters">(</span>method, parameters, deferredRequestHandler, url) <span>JSONP bind method.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_JsonpService_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args, requiredArgs) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_rpc_JsonpService_createRequest" class="inline-link"> createRequest</a><span class="parameters">(</span>parameters) <span>create a JSONP req</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_errorCallback" class="inline-link"> errorCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred errback method</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_generateMethod" class="inline-link"> generateMethod</a><span class="parameters">(</span>method, parameters, url) <span>generate the local bind methods for the remote object</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_parseResults" class="inline-link"> parseResults</a><span class="parameters">(</span>obj) <span>parse the results coming back from an rpc request.  this
 base implementation, just returns the full object
 subclasses should parse and only return the actual results</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_processSmd" class="inline-link"> processSmd</a><span class="parameters">(</span>object) <span>callback method for receipt of a smd object.</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_resultCallback" class="inline-link"> resultCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred&#39;s callback method</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_processSmd" class="inline-link"> processSmd</a><span class="parameters">(</span>object) <span>callback method for receipt of a smd object.</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_rpc_JsonpService_resultCallback" class="inline-link"> resultCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred&#39;s callback method</span><span title="inherited from dojo/rpc/RpcService" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -314,4 +322,4 @@ and generate functions based on the description</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/rpc/JsonpService" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._DataExpr</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._DataExpr" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._DataExpr.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/filter/_FilterExpr._DataExpr<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>The most abstract class for all data expressions.
 A _DataExpr is a condition expression for a single data value.
@@ -8,7 +15,7 @@ this _DataExpr is nothing more than a simple wrapper.
 If the data value to be represent is in a store, then _DataExpr is responsible to extract it
 from the store when this condition is applied to a data row.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _FilterExpr._DataExpr<span class="parameters">(dataValue,isColumn,convertArgs);</span></div>
 </div>
@@ -49,35 +56,36 @@ return it.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__colArg" class="inline-link"> _colArg </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="stringIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__name" class="inline-link"> _name </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__value" class="inline-link"> _value </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__convertData" class="inline-link"> _convertData</a><span class="parameters">(</span>dataValue) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_applyRow" class="inline-link"> applyRow</a><span class="parameters">(</span>datarow, getter) <span>Implement _ConditionExpr.applyRow.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>dataValue, isColumn, convertArgs) <span>If a _DataExpr is constructed with only one argument, this argument is regarded as a pure value.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_getName" class="inline-link"> getName</a><span class="parameters">(</span>) <span>Get the name of this kind of expression.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>) <span>If this is a pure value wrapper, simply return the value.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_toObject" class="inline-link"> toObject</a><span class="parameters">(</span>) <span>Overrided from _ConditionExpr.toObject</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__colArg" class="inline-link"> _colArg </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__name" class="inline-link"> _name </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__value" class="inline-link"> _value </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr__convertData" class="inline-link"> _convertData</a><span class="parameters">(</span>dataValue) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_applyRow" class="inline-link"> applyRow</a><span class="parameters">(</span>datarow, getter) <span>Implement _ConditionExpr.applyRow.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>dataValue, isColumn, convertArgs) <span>If a _DataExpr is constructed with only one argument, this argument is regarded as a pure value.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_getName" class="inline-link"> getName</a><span class="parameters">(</span>) <span>Get the name of this kind of expression.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>) <span>If this is a pure value wrapper, simply return the value.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__DataExpr_toObject" class="inline-link"> toObject</a><span class="parameters">(</span>) <span>Overrided from _ConditionExpr.toObject</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -244,4 +252,4 @@ Otherwise (it&#39;s a column), return is undefined.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._DataExpr" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

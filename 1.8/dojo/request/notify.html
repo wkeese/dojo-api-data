@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request/notify</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/request/notify" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request/notify.html</div>
 <h1 class="functionIcon36 jsdoc-title">dojo/request/notify<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Register a listener to be notified when an event
 in <a class="jsdoc-link" href="/api/1.8/dojo/request">dojo/request</a> happens.</p>
@@ -30,17 +37,18 @@ in <a class="jsdoc-link" href="/api/1.8/dojo/request">dojo/request</a> happens.<
 </table>
 <p>See the <a href="/reference-guide/1.8/dojo/request/notify.html" target="_blank">dojo/request/notify reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dojo_request_notify_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>type, listener) <span>Register a listener to be notified when an event
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_request_notify_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>type, listener) <span>Register a listener to be notified when an event
 in dojo/request happens.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojo_request_notify_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event, cancel) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_request_notify_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event, cancel) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -79,9 +87,10 @@ in dojo/request happens.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">A signal object that can be used to cancel the listener.
+        <div class="jsdoc-return-description"><p>A signal object that can be used to cancel the listener.
 If remove() is called on this signal object, it will
-stop the listener from being executed.</div>
+stop the listener from being executed.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_request_notify_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, event, cancel)</span> 
@@ -117,4 +126,4 @@ stop the listener from being executed.</div>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/request/notify" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

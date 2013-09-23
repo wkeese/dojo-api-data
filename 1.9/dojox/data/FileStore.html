@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/FileStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/data/FileStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/FileStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/FileStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new FileStore<span class="parameters">(args);</span></div>
 </div>
@@ -50,83 +57,84 @@ example:    options=&quot;expand,dirsOnly,showHiddenFiles&quot;</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/data/FileStore.html" target="_blank">dojox/data/FileStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_9dojox_data_FileStore__attributes" class="inline-link"> _attributes </a><span>Internal variable of attributes all file items should have.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dojox_data_FileStore__identifier" class="inline-link"> _identifier </a><span>Default attribute to use to represent the item&#39;s identifier.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon private"><a href="#1_9dojox_data_FileStore__storeRef" class="inline-link"> _storeRef </a><span>Internal variable used to denote an item came from this store instance.</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_data_FileStore_failOk" class="inline-link"> failOk </a><span>Flag to pass on to xhr functions to check if we are OK to fail the call silently</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_FileStore_label" class="inline-link"> label </a><span>Default attribute to use to represent the item as a user-readable
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_9dojox_data_FileStore__attributes" class="inline-link"> _attributes </a><span>Internal variable of attributes all file items should have.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dojox_data_FileStore__identifier" class="inline-link"> _identifier </a><span>Default attribute to use to represent the item&#39;s identifier.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_9dojox_data_FileStore__storeRef" class="inline-link"> _storeRef </a><span>Internal variable used to denote an item came from this store instance.</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_data_FileStore_failOk" class="inline-link"> failOk </a><span>Flag to pass on to xhr functions to check if we are OK to fail the call silently</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_FileStore_label" class="inline-link"> label </a><span>Default attribute to use to represent the item as a user-readable
 string.</span>
-    </li>
-    <li class="arrayIcon"><a href="#1_9dojox_data_FileStore_options" class="inline-link"> options </a><span>Array of options to always send when doing requests.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_data_FileStore_pathAsQueryParam" class="inline-link"> pathAsQueryParam </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_FileStore_pathSeparator" class="inline-link"> pathSeparator </a><span>The path separator to use when chaining requests for children
+        </li>
+        <li class="arrayIcon"><a href="#1_9dojox_data_FileStore_options" class="inline-link"> options </a><span>Array of options to always send when doing requests.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_data_FileStore_pathAsQueryParam" class="inline-link"> pathAsQueryParam </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_FileStore_pathSeparator" class="inline-link"> pathSeparator </a><span>The path separator to use when chaining requests for children
 Can be overriden by the server on initial load</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_FileStore_url" class="inline-link"> url </a><span>The URL to the file path service.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_FileStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag to dennote if preventCache should be passed to xhrGet.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__processItem" class="inline-link"> _processItem</a><span class="parameters">(</span>item) <span>Internal function for processing an item returned from the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__processItemArray" class="inline-link"> _processItemArray</a><span class="parameters">(</span>itemArray) <span>Internal function for processing an array of items for return.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__processResult" class="inline-link"> _processResult</a><span class="parameters">(</span>data, request) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>A simple store that provides a datastore interface to a filesystem.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>Fetch  items that match to a query</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItemLoaded()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_FileStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
-    </li>
-  </ul>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_FileStore_url" class="inline-link"> url </a><span>The URL to the file path service.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_FileStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag to dennote if preventCache should be passed to xhrGet.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__processItem" class="inline-link"> _processItem</a><span class="parameters">(</span>item) <span>Internal function for processing an item returned from the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__processItemArray" class="inline-link"> _processItemArray</a><span class="parameters">(</span>itemArray) <span>Internal function for processing an array of items for return.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_FileStore__processResult" class="inline-link"> _processResult</a><span class="parameters">(</span>data, request) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>A simple store that provides a datastore interface to a filesystem.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>Fetch  items that match to a query</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItemLoaded()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_FileStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -757,4 +765,4 @@ example:    options=&quot;expand,dirsOnly,showHiddenFiles&quot;</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/data/FileStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

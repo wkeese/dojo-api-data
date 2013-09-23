@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/_ContentPaneMixin</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mobile/_ContentPaneMixin" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/_ContentPaneMixin.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mobile/_ContentPaneMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojox/mobile/_ExecScriptMixin" class="jsdoc-link">dojox/mobile/_ExecScriptMixin</a>
@@ -9,7 +16,7 @@
 <div class="jsdoc-full-summary"><p>By mixing this class into a widget, the widget can have the ability
 to embed an external HTML fragment and to run the parser.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _ContentPaneMixin<span class="parameters">();</span></div>
 </div>
@@ -18,53 +25,54 @@ to embed an external HTML fragment and to run the parser.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojox/mobile.html" target="_blank">dojox/mobile/_ContentPaneMixin reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_content" class="inline-link"> content </a><span>An HTML fragment to embed.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_executeScripts" class="inline-link"> executeScripts </a><span>If true, executes scripts that is found in the content.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_href" class="inline-link"> href </a><span>URL of the content to embed.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_lazy" class="inline-link"> lazy </a><span>If true, external content specified with the href property is
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_content" class="inline-link"> content </a><span>An HTML fragment to embed.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_executeScripts" class="inline-link"> executeScripts </a><span>If true, executes scripts that is found in the content.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_href" class="inline-link"> href </a><span>URL of the content to embed.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_lazy" class="inline-link"> lazy </a><span>If true, external content specified with the href property is
 not loaded at startup time.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_parseOnLoad" class="inline-link"> parseOnLoad </a><span>If true, runs the parser when the load completes.</span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_prog" class="inline-link"> prog </a><span>If true, shows progress indicator while loading an HTML fragment
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_parseOnLoad" class="inline-link"> parseOnLoad </a><span>If true, runs the parser when the load completes.</span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_mobile__ContentPaneMixin_prog" class="inline-link"> prog </a><span>If true, shows progress indicator while loading an HTML fragment
 specified by href.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_mobile__ContentPaneMixin__setContentAttr" class="inline-link"> _setContentAttr</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile__ContentPaneMixin__setHrefAttr" class="inline-link"> _setHrefAttr</a><span class="parameters">(</span>href) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_mobile__ContentPaneMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Creates a new instance of the class.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>err) <span>An error handler called when load fails.</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ContentPaneMixin_execScript" class="inline-link"> execScript</a><span class="parameters">(</span>html) <span>Finds script tags and executes the script.</span><span title="inherited from dojox/mobile/_ExecScriptMixin" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_load" class="inline-link"> load</a><span class="parameters">(</span>) <span>Loads external content specified with href.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_loadHandler" class="inline-link"> loadHandler</a><span class="parameters">(</span>response) <span>A handler called when load completes.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>) <span>Stub method to allow the application to connect to the
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_mobile__ContentPaneMixin__setContentAttr" class="inline-link"> _setContentAttr</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile__ContentPaneMixin__setHrefAttr" class="inline-link"> _setHrefAttr</a><span class="parameters">(</span>href) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile__ContentPaneMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Creates a new instance of the class.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>err) <span>An error handler called when load fails.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile__ContentPaneMixin_execScript" class="inline-link"> execScript</a><span class="parameters">(</span>html) <span>Finds script tags and executes the script.</span><span title="inherited from dojox/mobile/_ExecScriptMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_load" class="inline-link"> load</a><span class="parameters">(</span>) <span>Loads external content specified with href.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_loadHandler" class="inline-link"> loadHandler</a><span class="parameters">(</span>response) <span>A handler called when load completes.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_mobile__ContentPaneMixin_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>) <span>Stub method to allow the application to connect to the
 loading of external content (see load()).</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -262,4 +270,4 @@ Called when parsing is done and the content is ready.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/_ContentPaneMixin" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

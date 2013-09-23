@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._BiOpExpr</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._BiOpExpr" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._BiOpExpr.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/filter/_FilterExpr._BiOpExpr<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>The most abstract class for all bi-operator expressions.
 A bi-operator expression is an _OperatorExpr that allow and only allow two operands.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _FilterExpr._BiOpExpr<span class="parameters">();</span></div>
 </div>
@@ -14,31 +21,32 @@ is an Array) of this operator, ordering from left to right.
 Every operand should be a _ConditionExpr.</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr__name" class="inline-link"> _name </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr__calculate" class="inline-link"> _calculate</a><span class="parameters">(</span>left_operand, right_operand, datarow, getter) <span>Unimplemented Interface
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr__name" class="inline-link"> _name </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr__calculate" class="inline-link"> _calculate</a><span class="parameters">(</span>left_operand, right_operand, datarow, getter) <span>Unimplemented Interface
 Do the actrual work of applyRow here.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_applyRow" class="inline-link"> applyRow</a><span class="parameters">(</span>datarow, getter) <span>Implement _ConditionExpr.applyRow.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The arguments are operands (or an array of operands, if the first argument
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_applyRow" class="inline-link"> applyRow</a><span class="parameters">(</span>datarow, getter) <span>Implement _ConditionExpr.applyRow.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The arguments are operands (or an array of operands, if the first argument
 is an Array) of this operator, ordering from left to right.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_getName" class="inline-link"> getName</a><span class="parameters">(</span>) <span>Get the name of this kind of expression.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_toObject" class="inline-link"> toObject</a><span class="parameters">(</span>) <span>Overrided from _ConditionExpr.toObject</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_getName" class="inline-link"> getName</a><span class="parameters">(</span>) <span>Get the name of this kind of expression.</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_filter__FilterExpr__BiOpExpr_toObject" class="inline-link"> toObject</a><span class="parameters">(</span>) <span>Overrided from _ConditionExpr.toObject</span><span title="inherited from dojox/grid/enhanced/plugins/filter/_ConditionExpr" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -165,4 +173,4 @@ Every operand should be a _ConditionExpr.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/filter/_FilterExpr._BiOpExpr" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

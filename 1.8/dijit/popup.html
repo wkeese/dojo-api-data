@@ -1,42 +1,50 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/popup</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/popup" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/popup.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/popup<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Used to show drop downs (ex: the select list of a ComboBox)
 or popups (ex: right-click context menus).</p>
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/popup.html" target="_blank">dijit/popup reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_8dijit_popup__beginZIndex" class="inline-link"> _beginZIndex </a><span>Z-index of the first popup.   (If first popup opens other
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_8dijit_popup__beginZIndex" class="inline-link"> _beginZIndex </a><span>Z-index of the first popup.   (If first popup opens other
 popups they get a higher z-index.)</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_8dijit_popup__idGen" class="inline-link"> _idGen </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon private"><a href="#1_8dijit_popup__stack" class="inline-link"> _stack </a><span>Stack of currently popped up widgets.
+        </li>
+        <li class="numberIcon private"><a href="#1_8dijit_popup__idGen" class="inline-link"> _idGen </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon private"><a href="#1_8dijit_popup__stack" class="inline-link"> _stack </a><span>Stack of currently popped up widgets.
 (someone opened _stack[0], and then it opened _stack[1], etc.)</span><span title="private" class="jsdoc-private"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dijit_popup__createWrapper" class="inline-link"> _createWrapper</a><span class="parameters">(</span>widget) <span>Initialization for widgets that will be used as popups.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_popup_close" class="inline-link"> close</a><span class="parameters">(</span>popup) <span>Close specified popup and any popups that it parented.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_popup_getTopPopup" class="inline-link"> getTopPopup</a><span class="parameters">(</span>) <span>Compute the closest ancestor popup that&#39;s not a child of another popup.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_popup_hide" class="inline-link"> hide</a><span class="parameters">(</span>widget) <span>Hide this popup widget (until it is ready to be shown).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_popup_moveOffScreen" class="inline-link"> moveOffScreen</a><span class="parameters">(</span>widget) <span>Moves the popup widget off-screen.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit_popup_open" class="inline-link"> open</a><span class="parameters">(</span>args) <span>Popup the widget at the specified position</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dijit_popup__createWrapper" class="inline-link"> _createWrapper</a><span class="parameters">(</span>widget) <span>Initialization for widgets that will be used as popups.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_popup_close" class="inline-link"> close</a><span class="parameters">(</span>popup) <span>Close specified popup and any popups that it parented.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_popup_getTopPopup" class="inline-link"> getTopPopup</a><span class="parameters">(</span>) <span>Compute the closest ancestor popup that&#39;s not a child of another popup.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_popup_hide" class="inline-link"> hide</a><span class="parameters">(</span>widget) <span>Hide this popup widget (until it is ready to be shown).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_popup_moveOffScreen" class="inline-link"> moveOffScreen</a><span class="parameters">(</span>widget) <span>Moves the popup widget off-screen.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit_popup_open" class="inline-link"> open</a><span class="parameters">(</span>args) <span>Popup the widget at the specified position</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -196,29 +204,25 @@ still in the tabbing order.</p>
           <tr>
             <td class="jsdoc-param-name">args</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An object with the following properties:
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>popup (Widget): <p>widget to display</p>
+</li><li>parent (Widget): <p>the button etc. that is displaying this popup</p>
+</li><li>around (DomNode): <p>DOM node (typically a button); place popup relative to this node.  (Specify this <em>or</em> &quot;x&quot; and &quot;y&quot; parameters.)</p>
+</li><li>x (Integer): <p>Absolute horizontal position (in pixels) to place node at.  (Specify this <em>or</em> &quot;around&quot; parameter.)</p>
+</li><li>y (Integer): <p>Absolute vertical position (in pixels) to place node at.  (Specify this <em>or</em> &quot;around&quot; parameter.)</p>
+</li><li>orient (Object|String): <p>When the around parameter is specified, orient should be a list of positions to try, ex:
 
 </p>
-<ul>
-<li><p>popup (Widget): <p>widget to display</p></p>
-</li>
-<li><p>parent (Widget): <p>the button etc. that is displaying this popup</p></p>
-</li>
-<li><p>around (DomNode): <p>DOM node (typically a button); place popup relative to this node.  (Specify this <em>or</em> &quot;x&quot; and &quot;y&quot; parameters.)</p></p>
-</li>
-<li><p>x (Integer): <p>Absolute horizontal position (in pixels) to place node at.  (Specify this <em>or</em> &quot;around&quot; parameter.)</p></p>
-</li>
-<li><p>y (Integer): <p>Absolute vertical position (in pixels) to place node at.  (Specify this <em>or</em> &quot;around&quot; parameter.)</p></p>
-</li>
-<li><p>orient (Object|String): <p>When the around parameter is specified, orient should be a list of positions to try, ex:</p>
-<pre><code>  [ &quot;below&quot;, &quot;above&quot; ]</code></pre>
+<pre><code>[ &quot;below&quot;, &quot;above&quot; ]</code></pre>
 <p>For backwards compatibility it can also be an (ordered) hash of tuples of the form
-(around-node-corner, popup-node-corner), ex:</p>
-<pre><code>  { &quot;BL&quot;: &quot;TL&quot;, &quot;TL&quot;: &quot;BL&quot; }</code></pre>
-<p>where BL means &quot;bottom left&quot; and &quot;TL&quot; means &quot;top left&quot;, etc.</p>
-</li>
-</ul>
-<p></p>
+
+</p>
+<p>(around-node-corner, popup-node-corner), ex:
+
+</p>
+<pre><code>{ &quot;BL&quot;: &quot;TL&quot;, &quot;TL&quot;: &quot;BL&quot; }</code></pre>
+<p>where BL means &quot;bottom left&quot; and &quot;TL&quot; means &quot;top left&quot;, etc.
+
+
 </p>
 <p>dijit/popup.open() tries to position the popup according to each specified position, in order,
 until the popup appears fully within the viewport.
@@ -232,27 +236,18 @@ until the popup appears fully within the viewport.
 specifically positioning the popup&#39;s top-right corner at the mouse position, and if that doesn&#39;t
 fit in the viewport, then it tries, in order, the bottom-right corner, the top left corner,
 and the top-right corner.</p>
+</li><li>onCancel (Function): <p>callback when user has canceled the popup by:
 
-<ul>
-<li>onCancel (Function): <p>callback when user has canceled the popup by:</li>
-</ul>
-<p></p>
 </p>
 <ol>
 <li>hitting ESC or</li>
 <li>by using the popup widget&#39;s proprietary cancel mechanism (like a cancel button in a dialog);
 i.e. whenever popupWidget.onCancel() is called, args.onCancel is called</li>
 </ol>
-
-<ul>
-<li><p>onClose (Function): <p>callback whenever this popup is closed</p></p>
-</li>
-<li><p>onExecute (Function): <p>callback when user &quot;executed&quot; on the popup/sub-popup by selecting a menu choice, etc. (top menu only)</p></p>
-</li>
-<li><p>padding (Object): <p>adding a buffer around the opening position. This is only useful when around is not set.</p></p>
-</li>
-</ul>
-
+</li><li>onClose (Function): <p>callback whenever this popup is closed</p>
+</li><li>onExecute (Function): <p>callback when user &quot;executed&quot; on the popup/sub-popup by selecting a menu choice, etc. (top menu only)</p>
+</li><li>padding ([object Value(type: object, value: undefined)]): <p>adding a buffer around the opening position. This is only useful when around is not set.</p>
+</li></ul>
             </td>
           </tr>
         </table>
@@ -260,15 +255,17 @@ i.e. whenever popupWidget.onCancel() is called, args.onCancel is called</li>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><p>opening at the mouse position</p>
-<pre><code>    popup.open({popup: menuWidget, x: evt.pageX, y: evt.pageY});</code></pre>
-<p></p>
+            <h3>Example 1</h3><p>opening at the mouse position
+
+</p>
+<pre><code>popup.open({popup: menuWidget, x: evt.pageX, y: evt.pageY});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><p>opening the widget as a dropdown</p>
-<pre><code>    popup.open({parent: this, popup: menuWidget, around: this.domNode, onClose: function(){...}});</code></pre>
-<p></p>
+            <h3>Example 2</h3><p>opening the widget as a dropdown
+
+</p>
+<pre><code>popup.open({parent: this, popup: menuWidget, around: this.domNode, onClose: function(){...}});</code></pre>
 <p>Note that whatever widget called dijit/popup.open() should also listen to its own _onBlur callback
 (fired from _base/focus.js) to know that focus has moved somewhere else and thus the popup should be closed.</p>
 
@@ -277,4 +274,4 @@ i.e. whenever popupWidget.onCancel() is called, args.onCancel is called</li>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/popup" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mvc/_base.StatefulModel</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/mvc/_base.StatefulModel" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mvc/_base.StatefulModel.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/mvc/_base.StatefulModel<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a>
@@ -150,7 +157,7 @@ patterns on the client. As an example, CRUD operations can be
 supported with minimal application code.
 </p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new _base.StatefulModel<span class="parameters">(args);</span></div>
 </div>
@@ -176,86 +183,87 @@ the data structure.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/mvc.html" target="_blank">dojox/mvc/_base.StatefulModel reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="objectIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
 and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_data" class="inline-link"> data </a><span>The plain JavaScript object / data structure used to initialize
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_data" class="inline-link"> data </a><span>The plain JavaScript object / data structure used to initialize
 this model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_getPlainValueOptions" class="inline-link"> getPlainValueOptions </a><span>An object that defines how plain value should be created from model object.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_getStatefulOptions" class="inline-link"> getStatefulOptions </a><span>An object that defines how model object should be created from plain object hierarchy.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_store" class="inline-link"> store </a><span>The data store from where to retrieve initial data for this model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="booleanIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_valid" class="inline-link"> valid </a><span>Whether this model deems the associated data to be valid.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_value" class="inline-link"> value </a><span>The associated value (if this is a leaf node).</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__commit" class="inline-link"> _commit</a><span class="parameters">(</span>) <span>Commits this data model, saves the current state into data to become the saved state, 
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_getPlainValueOptions" class="inline-link"> getPlainValueOptions </a><span>An object that defines how plain value should be created from model object.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_getStatefulOptions" class="inline-link"> getStatefulOptions </a><span>An object that defines how model object should be created from plain object hierarchy.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_store" class="inline-link"> store </a><span>The data store from where to retrieve initial data for this model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_valid" class="inline-link"> valid </a><span>Whether this model deems the associated data to be valid.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mvc__base_StatefulModel_value" class="inline-link"> value </a><span>The associated value (if this is a leaf node).</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__commit" class="inline-link"> _commit</a><span class="parameters">(</span>) <span>Commits this data model, saves the current state into data to become the saved state, 
 so a reset will not undo any prior changes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__createModel" class="inline-link"> _createModel</a><span class="parameters">(</span>data) <span>Create this data model from provided input data.
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__createModel" class="inline-link"> _createModel</a><span class="parameters">(</span>data) <span>Create this data model from provided input data.
 obj:
 The input for the model, as a plain JavaScript object.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__saveToStore" class="inline-link"> _saveToStore</a><span class="parameters">(</span>store) <span>Commit the current values to the data store:
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel__saveToStore" class="inline-link"> _saveToStore</a><span class="parameters">(</span>store) <span>Commit the current values to the data store:
 
 
 
 remove() any deleted entries
 put() any new or updated entries</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_add" class="inline-link"> add</a><span class="parameters">(</span>name, stateful) <span>Adds a dojo/Stateful tree represented by the given
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_add" class="inline-link"> add</a><span class="parameters">(</span>name, stateful) <span>Adds a dojo/Stateful tree represented by the given
 dojox/mvc/StatefulModel at the given property name.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_commit" class="inline-link"> commit</a><span class="parameters">(</span>store) <span>Commits this data model:
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_commit" class="inline-link"> commit</a><span class="parameters">(</span>store) <span>Commits this data model:
 
 
 
 Saves the current state such that a subsequent reset will not
 undo any prior changes.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Instantiates a new data model that view components may bind to.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_remove" class="inline-link"> remove</a><span class="parameters">(</span>name) <span>Removes the dojo/Stateful tree at the given property name.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Resets this data model values to its original state.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_splice" class="inline-link"> splice</a><span class="parameters">(</span>idx, n) <span>Removes and then adds some elements to this array.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_toPlainObject" class="inline-link"> toPlainObject</a><span class="parameters">(</span>) <span>Produces a plain JavaScript object representation of the data
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base_StatefulModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Instantiates a new data model that view components may bind to.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_remove" class="inline-link"> remove</a><span class="parameters">(</span>name) <span>Removes the dojo/Stateful tree at the given property name.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Resets this data model values to its original state.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_splice" class="inline-link"> splice</a><span class="parameters">(</span>idx, n) <span>Removes and then adds some elements to this array.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_toPlainObject" class="inline-link"> toPlainObject</a><span class="parameters">(</span>) <span>Produces a plain JavaScript object representation of the data
 currently within this data model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns the string representation of the data currently within this data model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_valueOf" class="inline-link"> valueOf</a><span class="parameters">(</span>) <span>Returns the value representation of the data currently within this data model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns the string representation of the data currently within this data model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_valueOf" class="inline-link"> valueOf</a><span class="parameters">(</span>) <span>Returns the value representation of the data currently within this data model.</span><span title="inherited from dojox/mvc/StatefulModel" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base_StatefulModel_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -835,4 +843,4 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mvc/_base.StatefulModel" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

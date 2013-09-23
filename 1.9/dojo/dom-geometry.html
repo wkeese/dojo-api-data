@@ -1,41 +1,47 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dom-geometry</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojo/dom-geometry" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/dom-geometry.html</div>
 <h1 class="objectIcon36 jsdoc-title">dojo/dom-geometry<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines the core dojo DOM geometry API.</p>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/dom-geometry.html" target="_blank">dojo/dom-geometry reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojo_dom-geometry_boxModel" class="inline-link"> boxModel </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_docScroll" class="inline-link"> docScroll</a><span class="parameters">(</span>doc) <span>Returns an object with {node, x, y} with corresponding offsets.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_fixIeBiDiScrollLeft" class="inline-link"> fixIeBiDiScrollLeft</a><span class="parameters">(</span>scrollLeft, doc) <span>In RTL direction, scrollLeft should be a negative value, but IE
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojo_dom-geometry_boxModel" class="inline-link"> boxModel </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_docScroll" class="inline-link"> docScroll</a><span class="parameters">(</span>doc) <span>Returns an object with {node, x, y} with corresponding offsets.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_fixIeBiDiScrollLeft" class="inline-link"> fixIeBiDiScrollLeft</a><span class="parameters">(</span>scrollLeft, doc) <span>In RTL direction, scrollLeft should be a negative value, but IE
 returns a positive one.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getBorderExtents" class="inline-link"> getBorderExtents</a><span class="parameters">(</span>node, computedStyle) <span>returns an object with properties useful for noting the border
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getBorderExtents" class="inline-link"> getBorderExtents</a><span class="parameters">(</span>node, computedStyle) <span>returns an object with properties useful for noting the border
 dimensions.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getContentBox" class="inline-link"> getContentBox</a><span class="parameters">(</span>node, computedStyle) <span>Returns an object that encodes the width, height, left and top
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getContentBox" class="inline-link"> getContentBox</a><span class="parameters">(</span>node, computedStyle) <span>Returns an object that encodes the width, height, left and top
 positions of the node&#39;s content box, irrespective of the
 current box model.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getIeDocumentElementOffset" class="inline-link"> getIeDocumentElementOffset</a><span class="parameters">(</span>doc) <span>returns the offset in x and y from the document body to the
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getIeDocumentElementOffset" class="inline-link"> getIeDocumentElementOffset</a><span class="parameters">(</span>doc) <span>returns the offset in x and y from the document body to the
 visual edge of the page for IE</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getMarginBox" class="inline-link"> getMarginBox</a><span class="parameters">(</span>node, computedStyle) <span>returns an object that encodes the width, height, left and top
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getMarginBox" class="inline-link"> getMarginBox</a><span class="parameters">(</span>node, computedStyle) <span>returns an object that encodes the width, height, left and top
 positions of the node&#39;s margin box.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getMarginExtents" class="inline-link"> getMarginExtents</a><span class="parameters">(</span>node, computedStyle) <span>returns object with properties useful for box fitting with
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getMarginExtents" class="inline-link"> getMarginExtents</a><span class="parameters">(</span>node, computedStyle) <span>returns object with properties useful for box fitting with
 regards to box margins (i.e., the outer-box).
 
 
@@ -45,32 +51,34 @@ w = total width, margin inclusive
 h = total height, margin inclusive
 
 The w/h are used for calculating boxes.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getMarginSize" class="inline-link"> getMarginSize</a><span class="parameters">(</span>node, computedStyle) <span>returns an object that encodes the width and height of
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getMarginSize" class="inline-link"> getMarginSize</a><span class="parameters">(</span>node, computedStyle) <span>returns an object that encodes the width and height of
 the node&#39;s margin box</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getPadBorderExtents" class="inline-link"> getPadBorderExtents</a><span class="parameters">(</span>node, computedStyle) <span>Returns object with properties useful for box fitting with
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getPadBorderExtents" class="inline-link"> getPadBorderExtents</a><span class="parameters">(</span>node, computedStyle) <span>Returns object with properties useful for box fitting with
 regards to padding.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getPadExtents" class="inline-link"> getPadExtents</a><span class="parameters">(</span>node, computedStyle) <span>Returns object with special values specifically useful for node
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_getPadExtents" class="inline-link"> getPadExtents</a><span class="parameters">(</span>node, computedStyle) <span>Returns object with special values specifically useful for node
 fitting.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_isBodyLtr" class="inline-link"> isBodyLtr</a><span class="parameters">(</span>doc) <span>Returns true if the current language is left-to-right, and false otherwise.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_normalizeEvent" class="inline-link"> normalizeEvent</a><span class="parameters">(</span>event) <span>Normalizes the geometry of a DOM event, normalizing the pageX, pageY,
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_isBodyLtr" class="inline-link"> isBodyLtr</a><span class="parameters">(</span>doc) <span>Returns true if the current language is left-to-right, and false otherwise.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_normalizeEvent" class="inline-link"> normalizeEvent</a><span class="parameters">(</span>event) <span>Normalizes the geometry of a DOM event, normalizing the pageX, pageY,
 offsetX, offsetY, layerX, and layerX properties</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_position" class="inline-link"> position</a><span class="parameters">(</span>node, includeScroll) <span>Gets the position and size of the passed element relative to
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_position" class="inline-link"> position</a><span class="parameters">(</span>node, includeScroll) <span>Gets the position and size of the passed element relative to
 the viewport (if includeScroll==false), or relative to the
 document root (if includeScroll==true).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_setContentSize" class="inline-link"> setContentSize</a><span class="parameters">(</span>node, box, computedStyle) <span>Sets the size of the node&#39;s contents, irrespective of margins,
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_setContentSize" class="inline-link"> setContentSize</a><span class="parameters">(</span>node, box, computedStyle) <span>Sets the size of the node&#39;s contents, irrespective of margins,
 padding, or borders.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojo_dom-geometry_setMarginBox" class="inline-link"> setMarginBox</a><span class="parameters">(</span>node, box, computedStyle) <span>sets the size of the node&#39;s margin box and placement
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo_dom-geometry_setMarginBox" class="inline-link"> setMarginBox</a><span class="parameters">(</span>node, box, computedStyle) <span>sets the size of the node&#39;s margin box and placement
 (left/top), irrespective of box model.</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -653,4 +661,4 @@ object of dojo/dom-style.getComputedStyle().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/dom-geometry" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

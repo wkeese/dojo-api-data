@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/manager/Mouse</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/drawing/manager/Mouse" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/manager/Mouse.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/drawing/manager/Mouse<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Master object (instance) that tracks mouse
 events. A new instance is created for each
@@ -17,7 +24,7 @@ a certain object is clicked upon (or dragged, etc),
 that object&#39;s drawingType will create the custom event,
 such as onAnchorDown, or onStencilDown.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Mouse<span class="parameters">(options);</span></div>
 </div>
@@ -36,98 +43,99 @@ such as onAnchorDown, or onStencilDown.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_9dojox_drawing_manager_Mouse___reg" class="inline-link"> __reg </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="booleanIcon private"><a href="#1_9dojox_drawing_manager_Mouse__downOnCanvas" class="inline-link"> _downOnCanvas </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_drawing_manager_Mouse__lastx" class="inline-link"> _lastx </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_drawing_manager_Mouse__lasty" class="inline-link"> _lasty </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_drawing_manager_Mouse_CustomEventMethod" class="inline-link"> CustomEventMethod </a><span>The custom event methods that an Object that has
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_9dojox_drawing_manager_Mouse___reg" class="inline-link"> __reg </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon private"><a href="#1_9dojox_drawing_manager_Mouse__downOnCanvas" class="inline-link"> _downOnCanvas </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_drawing_manager_Mouse__lastx" class="inline-link"> _lastx </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_drawing_manager_Mouse__lasty" class="inline-link"> _lasty </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_manager_Mouse_CustomEventMethod" class="inline-link"> CustomEventMethod </a><span>The custom event methods that an Object that has
 registered with manager.Mouse can receive.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_manager_Mouse_doublClickSpeed" class="inline-link"> doublClickSpeed </a><span>Milliseconds between clicks to
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_manager_Mouse_doublClickSpeed" class="inline-link"> doublClickSpeed </a><span>Milliseconds between clicks to
 register as for onDoubleClick</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_drawing_manager_Mouse_zoom" class="inline-link"> zoom </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_Mouse__broadcastEvent" class="inline-link"> _broadcastEvent</a><span class="parameters">(</span>strEvt, obj) <span>Fire events to all registered objects.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_Mouse__getId" class="inline-link"> _getId</a><span class="parameters">(</span>evt, squelchErrors) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_Mouse__getXY" class="inline-link"> _getXY</a><span class="parameters">(</span>evt) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_create" class="inline-link"> create</a><span class="parameters">(</span>evt, squelchErrors) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_down" class="inline-link"> down</a><span class="parameters">(</span>evt) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_drag" class="inline-link"> drag</a><span class="parameters">(</span>evt) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_eventName" class="inline-link"> eventName</a><span class="parameters">(</span>name) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_EventObject" class="inline-link"> EventObject</a><span class="parameters">(</span>) <span>The custom event object that is sent to registered objects
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_drawing_manager_Mouse_zoom" class="inline-link"> zoom </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_Mouse__broadcastEvent" class="inline-link"> _broadcastEvent</a><span class="parameters">(</span>strEvt, obj) <span>Fire events to all registered objects.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_Mouse__getId" class="inline-link"> _getId</a><span class="parameters">(</span>evt, squelchErrors) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_drawing_manager_Mouse__getXY" class="inline-link"> _getXY</a><span class="parameters">(</span>evt) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_create" class="inline-link"> create</a><span class="parameters">(</span>evt, squelchErrors) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_down" class="inline-link"> down</a><span class="parameters">(</span>evt) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_drag" class="inline-link"> drag</a><span class="parameters">(</span>evt) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_eventName" class="inline-link"> eventName</a><span class="parameters">(</span>name) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_EventObject" class="inline-link"> EventObject</a><span class="parameters">(</span>) <span>The custom event object that is sent to registered objects
 and their respective methods.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_init" class="inline-link"> init</a><span class="parameters">(</span>node) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_move" class="inline-link"> move</a><span class="parameters">(</span>evt) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_out" class="inline-link"> out</a><span class="parameters">(</span>obj) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_over" class="inline-link"> over</a><span class="parameters">(</span>obj) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_overName" class="inline-link"> overName</a><span class="parameters">(</span>obj, evt) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_register" class="inline-link"> register</a><span class="parameters">(</span>scope) <span>All objects (Stencils) should register here if they
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_init" class="inline-link"> init</a><span class="parameters">(</span>node) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_move" class="inline-link"> move</a><span class="parameters">(</span>evt) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_out" class="inline-link"> out</a><span class="parameters">(</span>obj) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_over" class="inline-link"> over</a><span class="parameters">(</span>obj) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_overName" class="inline-link"> overName</a><span class="parameters">(</span>obj, evt) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_register" class="inline-link"> register</a><span class="parameters">(</span>scope) <span>All objects (Stencils) should register here if they
 use mouse events.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_scrollOffset" class="inline-link"> scrollOffset</a><span class="parameters">(</span>) <span>Gets scroll offset of canvas</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setCanvas" class="inline-link"> setCanvas</a><span class="parameters">(</span>) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setCursor" class="inline-link"> setCursor</a><span class="parameters">(</span>cursor, node) <span>Sets the cursor for  a given node.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setEventMode" class="inline-link"> setEventMode</a><span class="parameters">(</span>mode) <span>Sets the mouse mode s that custom events can be called.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setZoom" class="inline-link"> setZoom</a><span class="parameters">(</span>zoom) <span>Internal.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_unregister" class="inline-link"> unregister</a><span class="parameters">(</span>handle) <span>Disconnects object.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_up" class="inline-link"> up</a><span class="parameters">(</span>evt) <span>Internal.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onDown" class="inline-link"> onDown</a><span class="parameters">(</span>obj) <span>Create on[xx]Down event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onDrag" class="inline-link"> onDrag</a><span class="parameters">(</span>obj) <span>Create on[xx]Drag event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>obj) <span>Create onMove event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onOut" class="inline-link"> onOut</a><span class="parameters">(</span>obj) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onOver" class="inline-link"> onOver</a><span class="parameters">(</span>obj) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onUp" class="inline-link"> onUp</a><span class="parameters">(</span>obj) <span>Create on[xx]Up event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_resize" class="inline-link"> resize</a><span class="parameters">(</span>width, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_scrollOffset" class="inline-link"> scrollOffset</a><span class="parameters">(</span>) <span>Gets scroll offset of canvas</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setCanvas" class="inline-link"> setCanvas</a><span class="parameters">(</span>) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setCursor" class="inline-link"> setCursor</a><span class="parameters">(</span>cursor, node) <span>Sets the cursor for  a given node.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setEventMode" class="inline-link"> setEventMode</a><span class="parameters">(</span>mode) <span>Sets the mouse mode s that custom events can be called.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_setZoom" class="inline-link"> setZoom</a><span class="parameters">(</span>zoom) <span>Internal.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_unregister" class="inline-link"> unregister</a><span class="parameters">(</span>handle) <span>Disconnects object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_up" class="inline-link"> up</a><span class="parameters">(</span>evt) <span>Internal.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onDown" class="inline-link"> onDown</a><span class="parameters">(</span>obj) <span>Create on[xx]Down event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onDrag" class="inline-link"> onDrag</a><span class="parameters">(</span>obj) <span>Create on[xx]Drag event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>obj) <span>Create onMove event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onOut" class="inline-link"> onOut</a><span class="parameters">(</span>obj) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onOver" class="inline-link"> onOver</a><span class="parameters">(</span>obj) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_manager_Mouse_onUp" class="inline-link"> onUp</a><span class="parameters">(</span>obj) <span>Create on[xx]Up event and send to broadcaster.</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -747,4 +755,4 @@ Could be connected to.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/manager/Mouse" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

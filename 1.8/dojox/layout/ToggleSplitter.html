@@ -1,75 +1,84 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/layout/ToggleSplitter</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/layout/ToggleSplitter" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/layout/ToggleSplitter.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/layout/ToggleSplitter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A draggable and clickable spacer between two items in a <code>dijit.layout.BorderContainer</code>.</p>
 </div>
 <div class="jsdoc-full-summary"><p>This is instantiated by <code>dijit.layout.BorderContainer</code>. Users should not
 create it directly.</p>
 </div>
+<p>See the <a href="/reference-guide/1.8/dojox/layout/ToggleSplitter.html" target="_blank">dojox/layout/ToggleSplitter reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_8dojox_layout_ToggleSplitter__closedSize" class="inline-link"> _closedSize </a><span>the css height/width value to apply by default when the attached pane is closed</span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_baseClass" class="inline-link"> baseClass </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_layout_ToggleSplitter_child" class="inline-link"> child </a><span>Pointer to the pane associated with this splitter</span>
-    </li>
-    <li class="objectIcon"><a href="#1_8dojox_layout_ToggleSplitter_container" class="inline-link"> container </a><span>Pointer to the parent BorderContainer</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_region" class="inline-link"> region </a><span>Region of pane associated with this splitter.
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_8dojox_layout_ToggleSplitter__closedSize" class="inline-link"> _closedSize </a><span>the css height/width value to apply by default when the attached pane is closed</span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_baseClass" class="inline-link"> baseClass </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_layout_ToggleSplitter_child" class="inline-link"> child </a><span>Pointer to the pane associated with this splitter</span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_layout_ToggleSplitter_container" class="inline-link"> container </a><span>Pointer to the parent BorderContainer</span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_region" class="inline-link"> region </a><span>Region of pane associated with this splitter.
 &quot;top&quot;, &quot;bottom&quot;, &quot;left&quot;, &quot;right&quot;.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_state" class="inline-link"> state </a><span>the initial and current state of the splitter (and its attached pane)
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_state" class="inline-link"> state </a><span>the initial and current state of the splitter (and its attached pane)
 It has three values: full, collapsed (optional), closed</span>
-    </li>
-    <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_templateString" class="inline-link"> templateString </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__getStyleProps" class="inline-link"> _getStyleProps</a><span class="parameters">(</span>paneNode, state, paneStyle) <span>Create an object with the style property name: values
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_layout_ToggleSplitter_templateString" class="inline-link"> templateString </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__getStyleProps" class="inline-link"> _getStyleProps</a><span class="parameters">(</span>paneNode, state, paneStyle) <span>Create an object with the style property name: values
 that will need to be applied to the child pane render the given state</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>preState) <span>Effect the state change with the new value of this.state</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__setStateAttr" class="inline-link"> _setStateAttr</a><span class="parameters">(</span>state) <span>setter for the state property</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__setStateClass" class="inline-link"> _setStateClass</a><span class="parameters">(</span>) <span>Apply the appropriate classes for the current open state</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__startDrag" class="inline-link"> _startDrag</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__stopDrag" class="inline-link"> _stopDrag</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__toggle" class="inline-link"> _toggle</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__onKeyPress" class="inline-link"> _onKeyPress</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__onToggleNodeMouseDown" class="inline-link"> _onToggleNodeMouseDown</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__onToggleNodeMouseMove" class="inline-link"> _onToggleNodeMouseMove</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_onClosed" class="inline-link"> onClosed</a><span class="parameters">(</span>pane) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_onCollapsed" class="inline-link"> onCollapsed</a><span class="parameters">(</span>pane) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_onOpen" class="inline-link"> onOpen</a><span class="parameters">(</span>pane) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__handleOnChange" class="inline-link"> _handleOnChange</a><span class="parameters">(</span>preState) <span>Effect the state change with the new value of this.state</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__setStateAttr" class="inline-link"> _setStateAttr</a><span class="parameters">(</span>state) <span>setter for the state property</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__setStateClass" class="inline-link"> _setStateClass</a><span class="parameters">(</span>) <span>Apply the appropriate classes for the current open state</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__startDrag" class="inline-link"> _startDrag</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__stopDrag" class="inline-link"> _stopDrag</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__toggle" class="inline-link"> _toggle</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__onKeyPress" class="inline-link"> _onKeyPress</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__onToggleNodeMouseDown" class="inline-link"> _onToggleNodeMouseDown</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_layout_ToggleSplitter__onToggleNodeMouseMove" class="inline-link"> _onToggleNodeMouseMove</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_onClosed" class="inline-link"> onClosed</a><span class="parameters">(</span>pane) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_onCollapsed" class="inline-link"> onCollapsed</a><span class="parameters">(</span>pane) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_layout_ToggleSplitter_onOpen" class="inline-link"> onOpen</a><span class="parameters">(</span>pane) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -327,4 +336,4 @@ that will need to be applied to the child pane render the given state</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/layout/ToggleSplitter" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

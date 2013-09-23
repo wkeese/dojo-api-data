@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/image/LightboxNano</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/image/LightboxNano" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/image/LightboxNano.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/image/LightboxNano<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A simple &quot;nano&quot; version of the lightbox.</p>
 </div>
@@ -11,7 +18,7 @@ then it is wrapped in an <code>&lt;a&gt;</code> tag, then a <code>&lt;div class=
 inside the <code>&lt;a&gt;</code> and can be styled to display an icon that the original
 can be enlarged.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new LightboxNano<span class="parameters">(p,n);</span></div>
 </div>
@@ -41,60 +48,61 @@ can be enlarged.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/image/LightboxNano.html" target="_blank">dojox/image/LightboxNano reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>&lt;a dojoType=&quot;dojox.image.LightboxNano&quot; href=&quot;/path/to/largeimage.jpg&quot;&gt;&lt;img src=&quot;/path/to/thumbnail.jpg&quot;&gt;&lt;/a&gt;</code></pre>
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>&lt;a dojoType=&quot;dojox.image.LightboxNano&quot; href=&quot;/path/to/largeimage.jpg&quot;&gt;&lt;img src=&quot;/path/to/thumbnail.jpg&quot;&gt;&lt;/a&gt;</code></pre>
 
-  </div>
-  <div class="jsdoc-example">
-    <h3>Example 2</h3><pre><code>&lt;img dojoType=&quot;dojox.image.LightboxNano&quot; src=&quot;/path/to/thumbnail.jpg&quot; href=&quot;/path/to/largeimage.jpg&quot;&gt;</code></pre>
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><pre><code>&lt;img dojoType=&quot;dojox.image.LightboxNano&quot; src=&quot;/path/to/thumbnail.jpg&quot; href=&quot;/path/to/largeimage.jpg&quot;&gt;</code></pre>
 
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_9dojox_image_LightboxNano_duration" class="inline-link"> duration </a><span>The delay in milliseconds of the LightboxNano open and close animation.</span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_image_LightboxNano_href" class="inline-link"> href </a><span>URL to the large image to show in the lightbox.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_image_LightboxNano_preloadDelay" class="inline-link"> preloadDelay </a><span>The delay in milliseconds after the LightboxNano is created before preloading the larger image.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__anim" class="inline-link"> _anim</a><span class="parameters">(</span>node, args, onEnd) <span>Creates the lightbox open/close and background fadein/out animations</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__coords" class="inline-link"> _coords</a><span class="parameters">(</span>s, e) <span>Returns animation parameters with the start and end coords</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__createDiv" class="inline-link"> _createDiv</a><span class="parameters">(</span>cssClass, refNode, display) <span>Creates a div for the enlarge icon and loading indicator layers</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__hide" class="inline-link"> _hide</a><span class="parameters">(</span>) <span>Closes the lightbox</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__hideLoading" class="inline-link"> _hideLoading</a><span class="parameters">(</span>) <span>Hides the animated loading indicator</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__key" class="inline-link"> _key</a><span class="parameters">(</span>e) <span>A key was pressed, so hide the lightbox</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__load" class="inline-link"> _load</a><span class="parameters">(</span>e) <span>Creates the large image and begins to show it</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__reset" class="inline-link"> _reset</a><span class="parameters">(</span>) <span>Destroys the lightbox</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__show" class="inline-link"> _show</a><span class="parameters">(</span>) <span>The image is now loaded, calculate size and display</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__sizeBg" class="inline-link"> _sizeBg</a><span class="parameters">(</span>) <span>Resize the background to fill the page</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_LightboxNano_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>p, n) <span>Initializes the DOM node and connect onload event</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_LightboxNano_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys the LightboxNano and it&#39;s DOM node</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_image_LightboxNano_show" class="inline-link"> show</a><span class="parameters">(</span>args) <span>Shows this LightboxNano programatically.</span>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon"><a href="#1_9dojox_image_LightboxNano_duration" class="inline-link"> duration </a><span>The delay in milliseconds of the LightboxNano open and close animation.</span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_image_LightboxNano_href" class="inline-link"> href </a><span>URL to the large image to show in the lightbox.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_image_LightboxNano_preloadDelay" class="inline-link"> preloadDelay </a><span>The delay in milliseconds after the LightboxNano is created before preloading the larger image.</span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__anim" class="inline-link"> _anim</a><span class="parameters">(</span>node, args, onEnd) <span>Creates the lightbox open/close and background fadein/out animations</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__coords" class="inline-link"> _coords</a><span class="parameters">(</span>s, e) <span>Returns animation parameters with the start and end coords</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__createDiv" class="inline-link"> _createDiv</a><span class="parameters">(</span>cssClass, refNode, display) <span>Creates a div for the enlarge icon and loading indicator layers</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__hide" class="inline-link"> _hide</a><span class="parameters">(</span>) <span>Closes the lightbox</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__hideLoading" class="inline-link"> _hideLoading</a><span class="parameters">(</span>) <span>Hides the animated loading indicator</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__key" class="inline-link"> _key</a><span class="parameters">(</span>e) <span>A key was pressed, so hide the lightbox</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__load" class="inline-link"> _load</a><span class="parameters">(</span>e) <span>Creates the large image and begins to show it</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__reset" class="inline-link"> _reset</a><span class="parameters">(</span>) <span>Destroys the lightbox</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__show" class="inline-link"> _show</a><span class="parameters">(</span>) <span>The image is now loaded, calculate size and display</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_image_LightboxNano__sizeBg" class="inline-link"> _sizeBg</a><span class="parameters">(</span>) <span>Resize the background to fill the page</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_LightboxNano_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>p, n) <span>Initializes the DOM node and connect onload event</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_LightboxNano_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys the LightboxNano and it&#39;s DOM node</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_image_LightboxNano_show" class="inline-link"> show</a><span class="parameters">(</span>args) <span>Shows this LightboxNano programatically.</span>
-    </li>
-  </ul>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -376,4 +384,4 @@ the original srcNodeRef for the widget.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/image/LightboxNano" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

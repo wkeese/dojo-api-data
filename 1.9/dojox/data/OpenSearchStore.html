@@ -1,7 +1,14 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/OpenSearchStore</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/data/OpenSearchStore" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/OpenSearchStore.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/data/OpenSearchStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new OpenSearchStore<span class="parameters">(args);</span></div>
 </div>
@@ -24,106 +31,107 @@ engine that implements the open search specifications.</p>
 </table>
 <p>See the <a href="/reference-guide/1.9/dojox/data/OpenSearchStore.html" target="_blank">dojox/data/OpenSearchStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon private"><a href="#1_9dojox_data_OpenSearchStore__storeRef" class="inline-link"> _storeRef </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_data_OpenSearchStore_ATOM_CONTENT_TYPE" class="inline-link"> ATOM_CONTENT_TYPE </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_ATOM_CONTENT_TYPE_STRING" class="inline-link"> ATOM_CONTENT_TYPE_STRING </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_data_OpenSearchStore_iframeElement" class="inline-link"> iframeElement </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_itemPath" class="inline-link"> itemPath </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_data_OpenSearchStore_RSS_CONTENT_TYPE" class="inline-link"> RSS_CONTENT_TYPE </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_RSS_CONTENT_TYPE_STRING" class="inline-link"> RSS_CONTENT_TYPE_STRING </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_url" class="inline-link"> url </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_data_OpenSearchStore_urlElement" class="inline-link"> urlElement </a><span></span>
-    </li>
-    <li class="booleanIcon"><a href="#1_9dojox_data_OpenSearchStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag denoting if xhrGet calls should use the preventCache option.</span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_data_OpenSearchStore_XML_CONTENT_TYPE" class="inline-link"> XML_CONTENT_TYPE </a><span></span>
-    </li>
-    <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_XML_CONTENT_TYPE_STRING" class="inline-link"> XML_CONTENT_TYPE_STRING </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__createSearchUrl" class="inline-link"> _createSearchUrl</a><span class="parameters">(</span>request) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Fetch OpenSearch items that match to a query</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__getNodeXml" class="inline-link"> _getNodeXml</a><span class="parameters">(</span>node, skipFirst) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItematom" class="inline-link"> _processItematom</a><span class="parameters">(</span>item, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItemfeed" class="inline-link"> _processItemfeed</a><span class="parameters">(</span>item, attribute, type) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItemrss" class="inline-link"> _processItemrss</a><span class="parameters">(</span>item, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItemxml" class="inline-link"> _processItemxml</a><span class="parameters">(</span>item, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDatom" class="inline-link"> _processOSDatom</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOsdd" class="inline-link"> _processOsdd</a><span class="parameters">(</span>doc) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDfeed" class="inline-link"> _processOSDfeed</a><span class="parameters">(</span>data, type) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDrss" class="inline-link"> _processOSDrss</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDxml" class="inline-link"> _processOSDxml</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initializer for the OpenSearchStore store.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_OpenSearchStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_OpenSearchStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon private"><a href="#1_9dojox_data_OpenSearchStore__storeRef" class="inline-link"> _storeRef </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_data_OpenSearchStore_ATOM_CONTENT_TYPE" class="inline-link"> ATOM_CONTENT_TYPE </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_ATOM_CONTENT_TYPE_STRING" class="inline-link"> ATOM_CONTENT_TYPE_STRING </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_data_OpenSearchStore_iframeElement" class="inline-link"> iframeElement </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_itemPath" class="inline-link"> itemPath </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_data_OpenSearchStore_RSS_CONTENT_TYPE" class="inline-link"> RSS_CONTENT_TYPE </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_RSS_CONTENT_TYPE_STRING" class="inline-link"> RSS_CONTENT_TYPE_STRING </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_url" class="inline-link"> url </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_data_OpenSearchStore_urlElement" class="inline-link"> urlElement </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_9dojox_data_OpenSearchStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag denoting if xhrGet calls should use the preventCache option.</span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_data_OpenSearchStore_XML_CONTENT_TYPE" class="inline-link"> XML_CONTENT_TYPE </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_9dojox_data_OpenSearchStore_XML_CONTENT_TYPE_STRING" class="inline-link"> XML_CONTENT_TYPE_STRING </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__createSearchUrl" class="inline-link"> _createSearchUrl</a><span class="parameters">(</span>request) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Fetch OpenSearch items that match to a query</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__getNodeXml" class="inline-link"> _getNodeXml</a><span class="parameters">(</span>node, skipFirst) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItematom" class="inline-link"> _processItematom</a><span class="parameters">(</span>item, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItemfeed" class="inline-link"> _processItemfeed</a><span class="parameters">(</span>item, attribute, type) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItemrss" class="inline-link"> _processItemrss</a><span class="parameters">(</span>item, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processItemxml" class="inline-link"> _processItemxml</a><span class="parameters">(</span>item, attribute) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDatom" class="inline-link"> _processOSDatom</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOsdd" class="inline-link"> _processOsdd</a><span class="parameters">(</span>doc) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDfeed" class="inline-link"> _processOSDfeed</a><span class="parameters">(</span>data, type) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDrss" class="inline-link"> _processOSDrss</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_data_OpenSearchStore__processOSDxml" class="inline-link"> _processOSDxml</a><span class="parameters">(</span>data) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initializer for the OpenSearchStore store.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_OpenSearchStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_OpenSearchStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon  inherited"><a href="#1_9dojox_data_OpenSearchStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValue()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttributes()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItemLoaded()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_process" class="inline-link"> process</a><span class="parameters">(</span>data) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_processItem" class="inline-link"> processItem</a><span class="parameters">(</span>item, attribute) <span></span>
-    </li>
-  </ul>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_OpenSearchStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValue()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttributes()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.isItemLoaded()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_process" class="inline-link"> process</a><span class="parameters">(</span>data) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_data_OpenSearchStore_processItem" class="inline-link"> processItem</a><span class="parameters">(</span>item, attribute) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -1167,4 +1175,4 @@ and is used by simpleFetch.fetch().</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/data/OpenSearchStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

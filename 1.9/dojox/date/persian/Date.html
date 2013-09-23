@@ -1,11 +1,18 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/date/persian/Date</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/date/persian/Date" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/date/persian/Date.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/date/persian/Date<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>The component defines the Persian (Hijri) Calendar Object</p>
 </div>
 <div class="jsdoc-full-summary"><p>This module is similar to the Date() object provided by JavaScript</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Date<span class="parameters">();</span></div>
 </div>
@@ -13,120 +20,121 @@
 <div class="jsdoc-summary"><p>This function initialize the date object values</p>
 </div>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<div class="jsdoc-examples">
-  <h2>Examples</h2>
-  <div class="jsdoc-example">
-    <h3>Example 1</h3><pre><code>var date = new dojox.date.persian.Date();
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><pre><code>var date = new dojox.date.persian.Date();
 document.writeln(date.getFullYear()+&#39;\&#39;+date.getMonth()+&#39;\&#39;+date.getDate());</code></pre>
 
-  </div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__date" class="inline-link"> _date </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__day" class="inline-link"> _day </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__GREGORIAN_EPOCH" class="inline-link"> _GREGORIAN_EPOCH </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__hours" class="inline-link"> _hours </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__milliseconds" class="inline-link"> _milliseconds </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__minutes" class="inline-link"> _minutes </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__month" class="inline-link"> _month </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__PERSIAN_EPOCH" class="inline-link"> _PERSIAN_EPOCH </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__seconds" class="inline-link"> _seconds </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__year" class="inline-link"> _year </a><span></span><span title="private" class="jsdoc-private"></span>
-    </li>
-    <li class="arrayIcon"><a href="#1_9dojox_date_persian_Date_daysInMonth" class="inline-link"> daysInMonth </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__addMilliseconds" class="inline-link"> _addMilliseconds</a><span class="parameters">(</span>milliseconds) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__addMinutes" class="inline-link"> _addMinutes</a><span class="parameters">(</span>minutes) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__addSeconds" class="inline-link"> _addSeconds</a><span class="parameters">(</span>seconds) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__mod" class="inline-link"> _mod</a><span class="parameters">(</span>a, b) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__monthStart" class="inline-link"> _monthStart</a><span class="parameters">(</span>year, month) <span>return the start of Persian Month</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__yearStart" class="inline-link"> _yearStart</a><span class="parameters">(</span>year) <span>return start of Persian year</span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_calcGregorian" class="inline-link"> calcGregorian</a><span class="parameters">(</span>year, month, day) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>This is the constructor</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_fromGregorian" class="inline-link"> fromGregorian</a><span class="parameters">(</span>gdate) <span>This function returns the equivalent Persian Date value for the Gregorian Date</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDate" class="inline-link"> getDate</a><span class="parameters">(</span>) <span>This function returns the date value (1 - 30)</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDay" class="inline-link"> getDay</a><span class="parameters">(</span>) <span>This function return Week Day value ( 0 - 6 )</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDaysInPersianMonth" class="inline-link"> getDaysInPersianMonth</a><span class="parameters">(</span>month, year) <span>returns the number of days in the given Persian Month</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDaysInPersianMonth" class="inline-link"> getDaysInPersianMonth</a><span class="parameters">(</span>month) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getFullYear" class="inline-link"> getFullYear</a><span class="parameters">(</span>) <span>This function return the Year value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getHours" class="inline-link"> getHours</a><span class="parameters">(</span>) <span>returns the Hour value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getMilliseconds" class="inline-link"> getMilliseconds</a><span class="parameters">(</span>) <span>returns the Milliseconds value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getMinutes" class="inline-link"> getMinutes</a><span class="parameters">(</span>) <span>returns the Minutes value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getMonth" class="inline-link"> getMonth</a><span class="parameters">(</span>) <span>This function return the month value ( 0 - 11 )</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getSeconds" class="inline-link"> getSeconds</a><span class="parameters">(</span>) <span>returns the seconds value</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_gregorian_to_jd" class="inline-link"> gregorian_to_jd</a><span class="parameters">(</span>year, month, day) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_isLeapYear" class="inline-link"> isLeapYear</a><span class="parameters">(</span>j_y, j_m, j_d) <span>return Boolean value if Persian leap year</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_jd_to_gregorian" class="inline-link"> jd_to_gregorian</a><span class="parameters">(</span>jd, jmonth) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_jd_to_persian" class="inline-link"> jd_to_persian</a><span class="parameters">(</span>jd) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_jwday" class="inline-link"> jwday</a><span class="parameters">(</span>j) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_leap_gregorian" class="inline-link"> leap_gregorian</a><span class="parameters">(</span>year) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_persian_to_jd" class="inline-link"> persian_to_jd</a><span class="parameters">(</span>year, month, day) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setDate" class="inline-link"> setDate</a><span class="parameters">(</span>date) <span>This function sets the Date</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setFullYear" class="inline-link"> setFullYear</a><span class="parameters">(</span>year) <span>This function set Year</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setHours" class="inline-link"> setHours</a><span class="parameters">(</span>) <span>set the Hours</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setMilliseconds" class="inline-link"> setMilliseconds</a><span class="parameters">(</span>milliseconds) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setMinutes" class="inline-link"> setMinutes</a><span class="parameters">(</span>minutes) <span>sets the minutes (0-59) only.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setMonth" class="inline-link"> setMonth</a><span class="parameters">(</span>month) <span>This function set Month</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setSeconds" class="inline-link"> setSeconds</a><span class="parameters">(</span>seconds) <span>sets the seconds (0-59) only.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_toGregorian" class="inline-link"> toGregorian</a><span class="parameters">(</span>) <span>This returns the equevalent Grogorian date value in Date object</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>This returns a string representation of the date in &quot;DDDD MMMM DD YYYY HH:MM:SS&quot; format</span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_valueOf" class="inline-link"> valueOf</a><span class="parameters">(</span>) <span>This function returns The stored time value in milliseconds
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__date" class="inline-link"> _date </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__day" class="inline-link"> _day </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__GREGORIAN_EPOCH" class="inline-link"> _GREGORIAN_EPOCH </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__hours" class="inline-link"> _hours </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__milliseconds" class="inline-link"> _milliseconds </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__minutes" class="inline-link"> _minutes </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__month" class="inline-link"> _month </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__PERSIAN_EPOCH" class="inline-link"> _PERSIAN_EPOCH </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__seconds" class="inline-link"> _seconds </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_date_persian_Date__year" class="inline-link"> _year </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="arrayIcon"><a href="#1_9dojox_date_persian_Date_daysInMonth" class="inline-link"> daysInMonth </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__addMilliseconds" class="inline-link"> _addMilliseconds</a><span class="parameters">(</span>milliseconds) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__addMinutes" class="inline-link"> _addMinutes</a><span class="parameters">(</span>minutes) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__addSeconds" class="inline-link"> _addSeconds</a><span class="parameters">(</span>seconds) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__mod" class="inline-link"> _mod</a><span class="parameters">(</span>a, b) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__monthStart" class="inline-link"> _monthStart</a><span class="parameters">(</span>year, month) <span>return the start of Persian Month</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_date_persian_Date__yearStart" class="inline-link"> _yearStart</a><span class="parameters">(</span>year) <span>return start of Persian year</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_calcGregorian" class="inline-link"> calcGregorian</a><span class="parameters">(</span>year, month, day) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>This is the constructor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_fromGregorian" class="inline-link"> fromGregorian</a><span class="parameters">(</span>gdate) <span>This function returns the equivalent Persian Date value for the Gregorian Date</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDate" class="inline-link"> getDate</a><span class="parameters">(</span>) <span>This function returns the date value (1 - 30)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDay" class="inline-link"> getDay</a><span class="parameters">(</span>) <span>This function return Week Day value ( 0 - 6 )</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDaysInPersianMonth" class="inline-link"> getDaysInPersianMonth</a><span class="parameters">(</span>month, year) <span>returns the number of days in the given Persian Month</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getDaysInPersianMonth" class="inline-link"> getDaysInPersianMonth</a><span class="parameters">(</span>month) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getFullYear" class="inline-link"> getFullYear</a><span class="parameters">(</span>) <span>This function return the Year value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getHours" class="inline-link"> getHours</a><span class="parameters">(</span>) <span>returns the Hour value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getMilliseconds" class="inline-link"> getMilliseconds</a><span class="parameters">(</span>) <span>returns the Milliseconds value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getMinutes" class="inline-link"> getMinutes</a><span class="parameters">(</span>) <span>returns the Minutes value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getMonth" class="inline-link"> getMonth</a><span class="parameters">(</span>) <span>This function return the month value ( 0 - 11 )</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_getSeconds" class="inline-link"> getSeconds</a><span class="parameters">(</span>) <span>returns the seconds value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_gregorian_to_jd" class="inline-link"> gregorian_to_jd</a><span class="parameters">(</span>year, month, day) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_isLeapYear" class="inline-link"> isLeapYear</a><span class="parameters">(</span>j_y, j_m, j_d) <span>return Boolean value if Persian leap year</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_jd_to_gregorian" class="inline-link"> jd_to_gregorian</a><span class="parameters">(</span>jd, jmonth) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_jd_to_persian" class="inline-link"> jd_to_persian</a><span class="parameters">(</span>jd) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_jwday" class="inline-link"> jwday</a><span class="parameters">(</span>j) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_leap_gregorian" class="inline-link"> leap_gregorian</a><span class="parameters">(</span>year) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_persian_to_jd" class="inline-link"> persian_to_jd</a><span class="parameters">(</span>year, month, day) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setDate" class="inline-link"> setDate</a><span class="parameters">(</span>date) <span>This function sets the Date</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setFullYear" class="inline-link"> setFullYear</a><span class="parameters">(</span>year) <span>This function set Year</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setHours" class="inline-link"> setHours</a><span class="parameters">(</span>) <span>set the Hours</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setMilliseconds" class="inline-link"> setMilliseconds</a><span class="parameters">(</span>milliseconds) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setMinutes" class="inline-link"> setMinutes</a><span class="parameters">(</span>minutes) <span>sets the minutes (0-59) only.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setMonth" class="inline-link"> setMonth</a><span class="parameters">(</span>month) <span>This function set Month</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_setSeconds" class="inline-link"> setSeconds</a><span class="parameters">(</span>seconds) <span>sets the seconds (0-59) only.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_toGregorian" class="inline-link"> toGregorian</a><span class="parameters">(</span>) <span>This returns the equevalent Grogorian date value in Date object</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>This returns a string representation of the date in &quot;DDDD MMMM DD YYYY HH:MM:SS&quot; format</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_date_persian_Date_valueOf" class="inline-link"> valueOf</a><span class="parameters">(</span>) <span>This function returns The stored time value in milliseconds
 since midnight, January 1, 1970 UTC</span>
-    </li>
-  </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -982,4 +990,4 @@ since midnight, January 1, 1970 UTC</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/date/persian/Date" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

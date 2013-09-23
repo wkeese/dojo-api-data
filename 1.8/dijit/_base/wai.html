@@ -1,5 +1,12 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_base/wai</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dijit/_base/wai" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_base/wai.html</div>
 <h1 class="objectIcon36 jsdoc-title">dijit/_base/wai<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Deprecated methods for setting/getting wai roles and states.
 New code should call setAttribute()/getAttribute() directly.
@@ -9,28 +16,29 @@ New code should call setAttribute()/getAttribute() directly.
 </div>
 <p>See the <a href="/reference-guide/1.8/dijit/_base/wai.html" target="_blank">dijit/_base/wai reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_getWaiRole" class="inline-link"> getWaiRole</a><span class="parameters">(</span>elem) <span>Gets the role for an element (which should be a wai role).</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_getWaiState" class="inline-link"> getWaiState</a><span class="parameters">(</span>elem, state) <span>Gets the value of a state on an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_hasWaiRole" class="inline-link"> hasWaiRole</a><span class="parameters">(</span>elem, role) <span>Determines if an element has a particular role.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_hasWaiState" class="inline-link"> hasWaiState</a><span class="parameters">(</span>elem, state) <span>Determines if an element has a given state.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_removeWaiRole" class="inline-link"> removeWaiRole</a><span class="parameters">(</span>elem, role) <span>Removes the specified role from an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_removeWaiState" class="inline-link"> removeWaiState</a><span class="parameters">(</span>elem, state) <span>Removes a state from an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_setWaiRole" class="inline-link"> setWaiRole</a><span class="parameters">(</span>elem, role) <span>Sets the role on an element.</span>
-    </li>
-    <li class="functionIcon "><a href="#1_8dijit__base_wai_setWaiState" class="inline-link"> setWaiState</a><span class="parameters">(</span>elem, state, value) <span>Sets a state on an element.</span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_getWaiRole" class="inline-link"> getWaiRole</a><span class="parameters">(</span>elem) <span>Gets the role for an element (which should be a wai role).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_getWaiState" class="inline-link"> getWaiState</a><span class="parameters">(</span>elem, state) <span>Gets the value of a state on an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_hasWaiRole" class="inline-link"> hasWaiRole</a><span class="parameters">(</span>elem, role) <span>Determines if an element has a particular role.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_hasWaiState" class="inline-link"> hasWaiState</a><span class="parameters">(</span>elem, state) <span>Determines if an element has a given state.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_removeWaiRole" class="inline-link"> removeWaiRole</a><span class="parameters">(</span>elem, role) <span>Removes the specified role from an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_removeWaiState" class="inline-link"> removeWaiState</a><span class="parameters">(</span>elem, state) <span>Removes a state from an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_setWaiRole" class="inline-link"> setWaiRole</a><span class="parameters">(</span>elem, role) <span>Sets the role on an element.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dijit__base_wai_setWaiState" class="inline-link"> setWaiState</a><span class="parameters">(</span>elem, state, value) <span>Sets a state on an element.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -57,8 +65,9 @@ New code should call setAttribute()/getAttribute() directly.
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description">The role of elem or an empty string if elem
-does not have a role.</div>
+        <div class="jsdoc-return-description"><p>The role of elem or an empty string if elem
+does not have a role.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__base_wai_getWaiState"></a><span class="functionIcon">getWaiState</span><span class="parameters">(elem, state)</span> 
@@ -89,8 +98,9 @@ does not have a role.</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
-        <div class="jsdoc-return-description">The value of the requested state on elem
-or an empty string if elem has no value for state.</div>
+        <div class="jsdoc-return-description"><p>The value of the requested state on elem
+or an empty string if elem has no value for state.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__base_wai_hasWaiRole"></a><span class="functionIcon">hasWaiRole</span><span class="parameters">(elem, role)</span> 
@@ -120,9 +130,10 @@ or an empty string if elem has no value for state.</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">True if elem has the specific role attribute and false if not.
+        <div class="jsdoc-return-description"><p>True if elem has the specific role attribute and false if not.
 For backwards compatibility if role parameter not provided,
-returns true if has a role</div>
+returns true if has a role</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__base_wai_hasWaiState"></a><span class="functionIcon">hasWaiState</span><span class="parameters">(elem, state)</span> 
@@ -153,8 +164,9 @@ returns true if has a role</div>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
-        <div class="jsdoc-return-description">true if elem has a value for the given state and
-false if it does not.</div>
+        <div class="jsdoc-return-description"><p>true if elem has a value for the given state and
+false if it does not.</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__base_wai_removeWaiRole"></a><span class="functionIcon">removeWaiRole</span><span class="parameters">(elem, role)</span> 
@@ -279,4 +291,4 @@ Removes role attribute if no specific role provided (for backwards compat.)</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dijit/_base/wai" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

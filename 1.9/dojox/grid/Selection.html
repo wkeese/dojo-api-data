@@ -1,10 +1,17 @@
 
-<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/Selection</div>
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.9/dojox/grid/Selection" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/grid/Selection.html</div>
 <h1 class="constructorIcon36 jsdoc-title">dojox/grid/Selection<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Manages row selection for grid. Owned by grid and used internally
 for selection. Override to implement custom selection.</p>
 </div>
-<div class="jsdoc-function-information"> 
+<div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Selection<span class="parameters">(inGrid);</span></div>
 </div>
@@ -23,90 +30,91 @@ for selection. Override to implement custom selection.</p>
   </tr>
 </table>
 <div class="jsdoc-children">
-  <div class="jsdoc-fieldlist"></div>
-</div>
-<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="stringIcon"><a href="#1_9dojox_grid_Selection_mode" class="inline-link"> mode </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid_Selection_rangeStartIndex" class="inline-link"> rangeStartIndex </a><span></span>
-    </li>
-    <li class="objectIcon"><a href="#1_9dojox_grid_Selection_selected" class="inline-link"> selected </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid_Selection_selectedIndex" class="inline-link"> selectedIndex </a><span></span>
-    </li>
-    <li class="numberIcon"><a href="#1_9dojox_grid_Selection_updating" class="inline-link"> updating </a><span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon private"><a href="#1_9dojox_grid_Selection__beginUpdate" class="inline-link"> _beginUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_Selection__endUpdate" class="inline-link"> _endUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon private"><a href="#1_9dojox_grid_Selection__range" class="inline-link"> _range</a><span class="parameters">(</span>inFrom, inTo, func) <span></span><span title="private" class="jsdoc-private"> </span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_addToSelection" class="inline-link"> addToSelection</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_clickSelect" class="inline-link"> clickSelect</a><span class="parameters">(</span>inIndex, inCtrlKey, inShiftKey) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_clickSelectEvent" class="inline-link"> clickSelectEvent</a><span class="parameters">(</span>e) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_deselectAll" class="inline-link"> deselectAll</a><span class="parameters">(</span>inExcept) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_deselectRange" class="inline-link"> deselectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getFirstSelected" class="inline-link"> getFirstSelected</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getNextSelected" class="inline-link"> getNextSelected</a><span class="parameters">(</span>inPrev) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_insert" class="inline-link"> insert</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_remove" class="inline-link"> remove</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_select" class="inline-link"> select</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_setMode" class="inline-link"> setMode</a><span class="parameters">(</span>mode) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_setSelected" class="inline-link"> setSelected</a><span class="parameters">(</span>inIndex, inSelect) <span></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>inIndex) <span></span>
-    </li>
-  </ul>
-</div>
-<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
-<div class="jsdoc-summary-list">
-  <ul class="jsdoc-property-list">
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onCanDeselect" class="inline-link"> onCanDeselect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onCanSelect" class="inline-link"> onCanSelect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onChanged" class="inline-link"> onChanged</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onChanging" class="inline-link"> onChanging</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onDeselected" class="inline-link"> onDeselected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-    <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onSelected" class="inline-link"> onSelected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
-    </li>
-  </ul>
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="stringIcon"><a href="#1_9dojox_grid_Selection_mode" class="inline-link"> mode </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid_Selection_rangeStartIndex" class="inline-link"> rangeStartIndex </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_9dojox_grid_Selection_selected" class="inline-link"> selected </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid_Selection_selectedIndex" class="inline-link"> selectedIndex </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_9dojox_grid_Selection_updating" class="inline-link"> updating </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_grid_Selection__beginUpdate" class="inline-link"> _beginUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_Selection__endUpdate" class="inline-link"> _endUpdate</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_grid_Selection__range" class="inline-link"> _range</a><span class="parameters">(</span>inFrom, inTo, func) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_addToSelection" class="inline-link"> addToSelection</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_clickSelect" class="inline-link"> clickSelect</a><span class="parameters">(</span>inIndex, inCtrlKey, inShiftKey) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_clickSelectEvent" class="inline-link"> clickSelectEvent</a><span class="parameters">(</span>e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_deselectAll" class="inline-link"> deselectAll</a><span class="parameters">(</span>inExcept) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_deselectRange" class="inline-link"> deselectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getFirstSelected" class="inline-link"> getFirstSelected</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getNextSelected" class="inline-link"> getNextSelected</a><span class="parameters">(</span>inPrev) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_insert" class="inline-link"> insert</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_remove" class="inline-link"> remove</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_select" class="inline-link"> select</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>inFrom, inTo) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_setMode" class="inline-link"> setMode</a><span class="parameters">(</span>mode) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_setSelected" class="inline-link"> setSelected</a><span class="parameters">(</span>inIndex, inSelect) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>inIndex) <span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onCanDeselect" class="inline-link"> onCanDeselect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onCanSelect" class="inline-link"> onCanSelect</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onChanged" class="inline-link"> onChanged</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onChanging" class="inline-link"> onChanging</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onDeselected" class="inline-link"> onDeselected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_grid_Selection_onSelected" class="inline-link"> onSelected</a><span class="parameters">(</span>inIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="jsdoc-children">
   <div class="jsdoc-fields">
@@ -609,4 +617,4 @@ for selection. Override to implement custom selection.</p>
       </div>
     </div>
   </div>
-</div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/grid/Selection" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
