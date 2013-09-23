@@ -2,9 +2,6 @@
 
 RewriteEngine On
 
-# Assumes that the API data is accessible via the URL /api-data
-RewriteBase   /api-data/
-
 # Namespace objects with same name as constructors.
 # Namespace objects renamed (ex: dijit/tree --> dijit/tree_ns)
 RewriteRule ^(1.[3-7]/dijit/tree).html$ $1_ns.html [L,QSA]
