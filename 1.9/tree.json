@@ -14826,12 +14826,6 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/mobile/Slider2",
-							"name": "Slider2",
-							"fullname": "dojox/mobile/Slider2",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/mobile/sniff",
 							"name": "sniff",
 							"fullname": "dojox/mobile/sniff",

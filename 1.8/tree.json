@@ -1454,7 +1454,7 @@
 					"id": "doh/_rhinoRunner",
 					"name": "_rhinoRunner",
 					"fullname": "doh/_rhinoRunner",
-					"type": "undefined"
+					"type": "object"
 				},
 				{
 					"id": "doh/main",
@@ -1498,10 +1498,22 @@
 							"type": "undefined"
 						},
 						{
+							"id": "doh/plugins/android-webdriver-robot",
+							"name": "android-webdriver-robot",
+							"fullname": "doh/plugins/android-webdriver-robot",
+							"type": "object"
+						},
+						{
 							"id": "doh/plugins/hello",
 							"name": "hello",
 							"fullname": "doh/plugins/hello",
 							"type": "undefined"
+						},
+						{
+							"id": "doh/plugins/remoteRobot",
+							"name": "remoteRobot",
+							"fullname": "doh/plugins/remoteRobot",
+							"type": "object"
 						}
 					]
 				},
@@ -4023,6 +4035,12 @@
 							"type": "folder",
 							"children": [
 								{
+									"id": "dojox/app/controllers/BorderLayout",
+									"name": "BorderLayout",
+									"fullname": "dojox/app/controllers/BorderLayout",
+									"type": "constructor"
+								},
+								{
 									"id": "dojox/app/controllers/History",
 									"name": "History",
 									"fullname": "dojox/app/controllers/History",
@@ -4041,6 +4059,12 @@
 									"type": "constructor"
 								},
 								{
+									"id": "dojox/app/controllers/LayoutBase",
+									"name": "LayoutBase",
+									"fullname": "dojox/app/controllers/LayoutBase",
+									"type": "constructor"
+								},
+								{
 									"id": "dojox/app/controllers/Load",
 									"name": "Load",
 									"fullname": "dojox/app/controllers/Load",
@@ -4055,29 +4079,9 @@
 							]
 						},
 						{
-							"id": "dojox/app/layout/",
-							"name": "layout",
-							"fullname": "dojox/app/layout",
-							"type": "folder",
-							"children": [
-								{
-									"id": "dojox/app/layout/utils",
-									"name": "utils",
-									"fullname": "dojox/app/layout/utils",
-									"type": "object"
-								}
-							]
-						},
-						{
 							"id": "dojox/app/main",
 							"name": "main",
 							"fullname": "dojox/app/main",
-							"type": "function"
-						},
-						{
-							"id": "dojox/app/model",
-							"name": "model",
-							"fullname": "dojox/app/model",
 							"type": "function"
 						},
 						{
@@ -4107,9 +4111,45 @@
 							"type": "folder",
 							"children": [
 								{
+									"id": "dojox/app/utils/config",
+									"name": "config",
+									"fullname": "dojox/app/utils/config",
+									"type": "object"
+								},
+								{
+									"id": "dojox/app/utils/constraints",
+									"name": "constraints",
+									"fullname": "dojox/app/utils/constraints",
+									"type": "object"
+								},
+								{
+									"id": "dojox/app/utils/hash",
+									"name": "hash",
+									"fullname": "dojox/app/utils/hash",
+									"type": "object"
+								},
+								{
+									"id": "dojox/app/utils/layout",
+									"name": "layout",
+									"fullname": "dojox/app/utils/layout",
+									"type": "object"
+								},
+								{
+									"id": "dojox/app/utils/model",
+									"name": "model",
+									"fullname": "dojox/app/utils/model",
+									"type": "function"
+								},
+								{
 									"id": "dojox/app/utils/mvcModel",
 									"name": "mvcModel",
 									"fullname": "dojox/app/utils/mvcModel",
+									"type": "function"
+								},
+								{
+									"id": "dojox/app/utils/nls",
+									"name": "nls",
+									"fullname": "dojox/app/utils/nls",
 									"type": "function"
 								},
 								{
@@ -4124,6 +4164,12 @@
 							"id": "dojox/app/View",
 							"name": "View",
 							"fullname": "dojox/app/View",
+							"type": "constructor"
+						},
+						{
+							"id": "dojox/app/ViewBase",
+							"name": "ViewBase",
+							"fullname": "dojox/app/ViewBase",
 							"type": "constructor"
 						},
 						{
@@ -5839,12 +5885,6 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/data/ItemExplorer",
-							"name": "ItemExplorer",
-							"fullname": "dojox/data/ItemExplorer",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/data/JsonQueryRestStore",
 							"name": "JsonQueryRestStore",
 							"fullname": "dojox/data/JsonQueryRestStore",
@@ -5921,12 +5961,6 @@
 							"name": "SnapLogicStore",
 							"fullname": "dojox/data/SnapLogicStore",
 							"type": "undefined"
-						},
-						{
-							"id": "dojox/data/StoreExplorer",
-							"name": "StoreExplorer",
-							"fullname": "dojox/data/StoreExplorer",
-							"type": "constructor"
 						},
 						{
 							"id": "dojox/data/util/",
@@ -6456,25 +6490,34 @@
 									"id": "dojox/drawing/annotations/Angle",
 									"name": "Angle",
 									"fullname": "dojox/drawing/annotations/Angle",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/annotations/Arrow",
 									"name": "Arrow",
 									"fullname": "dojox/drawing/annotations/Arrow",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/annotations/BoxShadow",
 									"name": "BoxShadow",
 									"fullname": "dojox/drawing/annotations/BoxShadow",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/annotations/Label",
 									"name": "Label",
 									"fullname": "dojox/drawing/annotations/Label",
-									"type": "object"
+									"type": "object",
+									"children": [
+										{
+											"id": "dojox/drawing/annotations/Label.Label",
+											"name": "Label",
+											"fullname": "dojox/drawing/annotations/Label.Label",
+											"type": "constructor",
+											"children": []
+										}
+									]
 								}
 							]
 						},
@@ -6740,13 +6783,13 @@
 									"id": "dojox/drawing/manager/Anchors",
 									"name": "Anchors",
 									"fullname": "dojox/drawing/manager/Anchors",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/manager/Canvas",
 									"name": "Canvas",
 									"fullname": "dojox/drawing/manager/Canvas",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/manager/keys",
@@ -6758,25 +6801,25 @@
 									"id": "dojox/drawing/manager/Mouse",
 									"name": "Mouse",
 									"fullname": "dojox/drawing/manager/Mouse",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/manager/Stencil",
 									"name": "Stencil",
 									"fullname": "dojox/drawing/manager/Stencil",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/manager/StencilUI",
 									"name": "StencilUI",
 									"fullname": "dojox/drawing/manager/StencilUI",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/manager/Undo",
 									"name": "Undo",
 									"fullname": "dojox/drawing/manager/Undo",
-									"type": "undefined"
+									"type": "constructor"
 								}
 							]
 						},
@@ -6790,7 +6833,7 @@
 									"id": "dojox/drawing/plugins/_Plugin",
 									"name": "_Plugin",
 									"fullname": "dojox/drawing/plugins/_Plugin",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/plugins/drawing/",
@@ -6808,7 +6851,7 @@
 											"id": "dojox/drawing/plugins/drawing/Grid",
 											"name": "Grid",
 											"fullname": "dojox/drawing/plugins/drawing/Grid",
-											"type": "undefined"
+											"type": "constructor"
 										},
 										{
 											"id": "dojox/drawing/plugins/drawing/Silverlight",
@@ -6828,7 +6871,7 @@
 											"id": "dojox/drawing/plugins/tools/Iconize",
 											"name": "Iconize",
 											"fullname": "dojox/drawing/plugins/tools/Iconize",
-											"type": "undefined",
+											"type": "constructor",
 											"children": [
 												{
 													"id": "dojox/drawing/plugins/tools/Iconize.setup",
@@ -6843,7 +6886,7 @@
 											"id": "dojox/drawing/plugins/tools/Pan",
 											"name": "Pan",
 											"fullname": "dojox/drawing/plugins/tools/Pan",
-											"type": "undefined",
+											"type": "constructor",
 											"children": [
 												{
 													"id": "dojox/drawing/plugins/tools/Pan.setup",
@@ -6858,7 +6901,30 @@
 											"id": "dojox/drawing/plugins/tools/Zoom",
 											"name": "Zoom",
 											"fullname": "dojox/drawing/plugins/tools/Zoom",
-											"type": "object"
+											"type": "object",
+											"children": [
+												{
+													"id": "dojox/drawing/plugins/tools/Zoom.Zoom100",
+													"name": "Zoom100",
+													"fullname": "dojox/drawing/plugins/tools/Zoom.Zoom100",
+													"type": "constructor",
+													"children": []
+												},
+												{
+													"id": "dojox/drawing/plugins/tools/Zoom.ZoomIn",
+													"name": "ZoomIn",
+													"fullname": "dojox/drawing/plugins/tools/Zoom.ZoomIn",
+													"type": "constructor",
+													"children": []
+												},
+												{
+													"id": "dojox/drawing/plugins/tools/Zoom.ZoomOut",
+													"name": "ZoomOut",
+													"fullname": "dojox/drawing/plugins/tools/Zoom.ZoomOut",
+													"type": "constructor",
+													"children": []
+												}
+											]
 										}
 									]
 								}
@@ -6874,43 +6940,43 @@
 									"id": "dojox/drawing/stencil/_Base",
 									"name": "_Base",
 									"fullname": "dojox/drawing/stencil/_Base",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/stencil/Ellipse",
 									"name": "Ellipse",
 									"fullname": "dojox/drawing/stencil/Ellipse",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/stencil/Image",
 									"name": "Image",
 									"fullname": "dojox/drawing/stencil/Image",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/stencil/Line",
 									"name": "Line",
 									"fullname": "dojox/drawing/stencil/Line",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/stencil/Path",
 									"name": "Path",
 									"fullname": "dojox/drawing/stencil/Path",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/stencil/Rect",
 									"name": "Rect",
 									"fullname": "dojox/drawing/stencil/Rect",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/stencil/Text",
 									"name": "Text",
 									"fullname": "dojox/drawing/stencil/Text",
-									"type": "undefined"
+									"type": "constructor"
 								}
 							]
 						},
@@ -6924,7 +6990,7 @@
 									"id": "dojox/drawing/tools/Arrow",
 									"name": "Arrow",
 									"fullname": "dojox/drawing/tools/Arrow",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/Arrow.setup",
@@ -6945,7 +7011,7 @@
 											"id": "dojox/drawing/tools/custom/Axes",
 											"name": "Axes",
 											"fullname": "dojox/drawing/tools/custom/Axes",
-											"type": "undefined",
+											"type": "constructor",
 											"children": [
 												{
 													"id": "dojox/drawing/tools/custom/Axes.setup",
@@ -6960,7 +7026,7 @@
 											"id": "dojox/drawing/tools/custom/Equation",
 											"name": "Equation",
 											"fullname": "dojox/drawing/tools/custom/Equation",
-											"type": "undefined",
+											"type": "constructor",
 											"children": [
 												{
 													"id": "dojox/drawing/tools/custom/Equation.setup",
@@ -6975,7 +7041,7 @@
 											"id": "dojox/drawing/tools/custom/Vector",
 											"name": "Vector",
 											"fullname": "dojox/drawing/tools/custom/Vector",
-											"type": "undefined",
+											"type": "constructor",
 											"children": [
 												{
 													"id": "dojox/drawing/tools/custom/Vector.setup",
@@ -6992,7 +7058,7 @@
 									"id": "dojox/drawing/tools/Ellipse",
 									"name": "Ellipse",
 									"fullname": "dojox/drawing/tools/Ellipse",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/Ellipse.setup",
@@ -7007,7 +7073,7 @@
 									"id": "dojox/drawing/tools/Line",
 									"name": "Line",
 									"fullname": "dojox/drawing/tools/Line",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/Line.setup",
@@ -7022,7 +7088,7 @@
 									"id": "dojox/drawing/tools/Path",
 									"name": "Path",
 									"fullname": "dojox/drawing/tools/Path",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/Path.setup",
@@ -7037,7 +7103,7 @@
 									"id": "dojox/drawing/tools/Pencil",
 									"name": "Pencil",
 									"fullname": "dojox/drawing/tools/Pencil",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/Pencil.setup",
@@ -7052,7 +7118,7 @@
 									"id": "dojox/drawing/tools/Rect",
 									"name": "Rect",
 									"fullname": "dojox/drawing/tools/Rect",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/Rect.setup",
@@ -7067,7 +7133,7 @@
 									"id": "dojox/drawing/tools/TextBlock",
 									"name": "TextBlock",
 									"fullname": "dojox/drawing/tools/TextBlock",
-									"type": "undefined",
+									"type": "constructor",
 									"children": [
 										{
 											"id": "dojox/drawing/tools/TextBlock.setup",
@@ -7090,7 +7156,7 @@
 									"id": "dojox/drawing/ui/Button",
 									"name": "Button",
 									"fullname": "dojox/drawing/ui/Button",
-									"type": "undefined"
+									"type": "constructor"
 								},
 								{
 									"id": "dojox/drawing/ui/dom/",
@@ -7102,7 +7168,7 @@
 											"id": "dojox/drawing/ui/dom/Pan",
 											"name": "Pan",
 											"fullname": "dojox/drawing/ui/dom/Pan",
-											"type": "undefined",
+											"type": "constructor",
 											"children": [
 												{
 													"id": "dojox/drawing/ui/dom/Pan.setup",
@@ -7123,7 +7189,7 @@
 											"id": "dojox/drawing/ui/dom/Zoom",
 											"name": "Zoom",
 											"fullname": "dojox/drawing/ui/dom/Zoom",
-											"type": "undefined"
+											"type": "constructor"
 										}
 									]
 								},
@@ -7137,7 +7203,7 @@
 									"id": "dojox/drawing/ui/Tooltip",
 									"name": "Tooltip",
 									"fullname": "dojox/drawing/ui/Tooltip",
-									"type": "undefined"
+									"type": "constructor"
 								}
 							]
 						},
@@ -7656,12 +7722,6 @@
 									"type": "undefined"
 								},
 								{
-									"id": "dojox/editor/plugins/ResizeTableColumn",
-									"name": "ResizeTableColumn",
-									"fullname": "dojox/editor/plugins/ResizeTableColumn",
-									"type": "constructor"
-								},
-								{
 									"id": "dojox/editor/plugins/SafePaste",
 									"name": "SafePaste",
 									"fullname": "dojox/editor/plugins/SafePaste",
@@ -7684,12 +7744,6 @@
 									"name": "Smiley",
 									"fullname": "dojox/editor/plugins/Smiley",
 									"type": "undefined"
-								},
-								{
-									"id": "dojox/editor/plugins/SpellCheck",
-									"name": "SpellCheck",
-									"fullname": "dojox/editor/plugins/SpellCheck",
-									"type": "constructor"
 								},
 								{
 									"id": "dojox/editor/plugins/StatusBar",
@@ -9167,13 +9221,6 @@
 							"children": []
 						},
 						{
-							"id": "dojox/gfx.Path",
-							"name": "Path",
-							"fullname": "dojox/gfx.Path",
-							"type": "constructor",
-							"children": []
-						},
-						{
 							"id": "dojox/gfx.Pattern",
 							"name": "Pattern",
 							"fullname": "dojox/gfx.Pattern",
@@ -9615,13 +9662,6 @@
 									"children": []
 								},
 								{
-									"id": "dojox/gfx/_base.Path",
-									"name": "Path",
-									"fullname": "dojox/gfx/_base.Path",
-									"type": "constructor",
-									"children": []
-								},
-								{
 									"id": "dojox/gfx/_base.Pattern",
 									"name": "Pattern",
 									"fullname": "dojox/gfx/_base.Pattern",
@@ -10054,13 +10094,6 @@
 									"name": "path",
 									"fullname": "dojox/gfx/_gfxBidiSupport.path",
 									"type": "object",
-									"children": []
-								},
-								{
-									"id": "dojox/gfx/_gfxBidiSupport.Path",
-									"name": "Path",
-									"fullname": "dojox/gfx/_gfxBidiSupport.Path",
-									"type": "constructor",
 									"children": []
 								},
 								{
@@ -12348,7 +12381,7 @@
 							"id": "dojox/help/_base",
 							"name": "_base",
 							"fullname": "dojox/help/_base",
-							"type": "undefined"
+							"type": "object"
 						},
 						{
 							"id": "dojox/help/console",
@@ -12890,12 +12923,6 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/image/Gallery",
-							"name": "Gallery",
-							"fullname": "dojox/image/Gallery",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/image/Lightbox",
 							"name": "Lightbox",
 							"fullname": "dojox/image/Lightbox",
@@ -12917,18 +12944,6 @@
 							"id": "dojox/image/MagnifierLite",
 							"name": "MagnifierLite",
 							"fullname": "dojox/image/MagnifierLite",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/image/SlideShow",
-							"name": "SlideShow",
-							"fullname": "dojox/image/SlideShow",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/image/ThumbnailPicker",
-							"name": "ThumbnailPicker",
-							"fullname": "dojox/image/ThumbnailPicker",
 							"type": "constructor"
 						}
 					]
@@ -13193,18 +13208,6 @@
 									"type": "object"
 								},
 								{
-									"id": "dojox/lang/functional/binrec",
-									"name": "binrec",
-									"fullname": "dojox/lang/functional/binrec",
-									"type": "function"
-								},
-								{
-									"id": "dojox/lang/functional/curry",
-									"name": "curry",
-									"fullname": "dojox/lang/functional/curry",
-									"type": "object"
-								},
-								{
 									"id": "dojox/lang/functional/fold",
 									"name": "fold",
 									"fullname": "dojox/lang/functional/fold",
@@ -13217,28 +13220,10 @@
 									"type": "object"
 								},
 								{
-									"id": "dojox/lang/functional/linrec",
-									"name": "linrec",
-									"fullname": "dojox/lang/functional/linrec",
-									"type": "function"
-								},
-								{
 									"id": "dojox/lang/functional/listcomp",
 									"name": "listcomp",
 									"fullname": "dojox/lang/functional/listcomp",
 									"type": "object"
-								},
-								{
-									"id": "dojox/lang/functional/multirec",
-									"name": "multirec",
-									"fullname": "dojox/lang/functional/multirec",
-									"type": "function"
-								},
-								{
-									"id": "dojox/lang/functional/numrec",
-									"name": "numrec",
-									"fullname": "dojox/lang/functional/numrec",
-									"type": "function"
 								},
 								{
 									"id": "dojox/lang/functional/object",
@@ -13262,18 +13247,6 @@
 									"id": "dojox/lang/functional/sequence",
 									"name": "sequence",
 									"fullname": "dojox/lang/functional/sequence",
-									"type": "object"
-								},
-								{
-									"id": "dojox/lang/functional/tailrec",
-									"name": "tailrec",
-									"fullname": "dojox/lang/functional/tailrec",
-									"type": "function"
-								},
-								{
-									"id": "dojox/lang/functional/util",
-									"name": "util",
-									"fullname": "dojox/lang/functional/util",
 									"type": "object"
 								},
 								{
@@ -13397,28 +13370,6 @@
 							"name": "ExpandoPane",
 							"fullname": "dojox/layout/ExpandoPane",
 							"type": "constructor"
-						},
-						{
-							"id": "dojox/layout/ext-dijit/",
-							"name": "ext-dijit",
-							"fullname": "dojox/layout/ext-dijit",
-							"type": "folder",
-							"children": [
-								{
-									"id": "dojox/layout/ext-dijit/layout/",
-									"name": "layout",
-									"fullname": "dojox/layout/ext-dijit/layout",
-									"type": "folder",
-									"children": [
-										{
-											"id": "dojox/layout/ext-dijit/layout/StackContainer-touch",
-											"name": "StackContainer-touch",
-											"fullname": "dojox/layout/ext-dijit/layout/StackContainer-touch",
-											"type": "object"
-										}
-									]
-								}
-							]
 						},
 						{
 							"id": "dojox/layout/FloatingPane",
@@ -13882,104 +13833,6 @@
 									"fullname": "dojox/mobile/Accordion.ChildWidgetProperties",
 									"type": "object",
 									"children": []
-								}
-							]
-						},
-						{
-							"id": "dojox/mobile/app",
-							"name": "app",
-							"fullname": "dojox/mobile/app",
-							"type": "object"
-						},
-						{
-							"id": "dojox/mobile/app/",
-							"name": "app",
-							"fullname": "dojox/mobile/app",
-							"type": "folder",
-							"children": [
-								{
-									"id": "dojox/mobile/app/_base",
-									"name": "_base",
-									"fullname": "dojox/mobile/app/_base",
-									"type": "object"
-								},
-								{
-									"id": "dojox/mobile/app/_event",
-									"name": "_event",
-									"fullname": "dojox/mobile/app/_event",
-									"type": "object"
-								},
-								{
-									"id": "dojox/mobile/app/_FormWidget",
-									"name": "_FormWidget",
-									"fullname": "dojox/mobile/app/_FormWidget",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/_Widget",
-									"name": "_Widget",
-									"fullname": "dojox/mobile/app/_Widget",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/AlertDialog",
-									"name": "AlertDialog",
-									"fullname": "dojox/mobile/app/AlertDialog",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/compat",
-									"name": "compat",
-									"fullname": "dojox/mobile/app/compat",
-									"type": "object"
-								},
-								{
-									"id": "dojox/mobile/app/ImageThumbView",
-									"name": "ImageThumbView",
-									"fullname": "dojox/mobile/app/ImageThumbView",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/ImageView",
-									"name": "ImageView",
-									"fullname": "dojox/mobile/app/ImageView",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/List",
-									"name": "List",
-									"fullname": "dojox/mobile/app/List",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/ListSelector",
-									"name": "ListSelector",
-									"fullname": "dojox/mobile/app/ListSelector",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/SceneAssistant",
-									"name": "SceneAssistant",
-									"fullname": "dojox/mobile/app/SceneAssistant",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/SceneController",
-									"name": "SceneController",
-									"fullname": "dojox/mobile/app/SceneController",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/StageController",
-									"name": "StageController",
-									"fullname": "dojox/mobile/app/StageController",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/mobile/app/TextBox",
-									"name": "TextBox",
-									"fullname": "dojox/mobile/app/TextBox",
-									"type": "constructor"
 								}
 							]
 						},
@@ -15457,86 +15310,6 @@
 					"type": "object"
 				},
 				{
-					"id": "dojox/storage/",
-					"name": "storage",
-					"fullname": "dojox/storage",
-					"type": "folder",
-					"children": [
-						{
-							"id": "dojox/storage/_common",
-							"name": "_common",
-							"fullname": "dojox/storage/_common",
-							"type": "object"
-						},
-						{
-							"id": "dojox/storage/AirDBStorageProvider",
-							"name": "AirDBStorageProvider",
-							"fullname": "dojox/storage/AirDBStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/AirEncryptedLocalStorageProvider",
-							"name": "AirEncryptedLocalStorageProvider",
-							"fullname": "dojox/storage/AirEncryptedLocalStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/AirFileStorageProvider",
-							"name": "AirFileStorageProvider",
-							"fullname": "dojox/storage/AirFileStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/BehaviorStorageProvider",
-							"name": "BehaviorStorageProvider",
-							"fullname": "dojox/storage/BehaviorStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/CookieStorageProvider",
-							"name": "CookieStorageProvider",
-							"fullname": "dojox/storage/CookieStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/FlashStorageProvider",
-							"name": "FlashStorageProvider",
-							"fullname": "dojox/storage/FlashStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/GearsStorageProvider",
-							"name": "GearsStorageProvider",
-							"fullname": "dojox/storage/GearsStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/LocalStorageProvider",
-							"name": "LocalStorageProvider",
-							"fullname": "dojox/storage/LocalStorageProvider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/manager",
-							"name": "manager",
-							"fullname": "dojox/storage/manager",
-							"type": "instance"
-						},
-						{
-							"id": "dojox/storage/Provider",
-							"name": "Provider",
-							"fullname": "dojox/storage/Provider",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/storage/WhatWGStorageProvider",
-							"name": "WhatWGStorageProvider",
-							"fullname": "dojox/storage/WhatWGStorageProvider",
-							"type": "constructor"
-						}
-					]
-				},
-				{
 					"id": "dojox/string/",
 					"name": "string",
 					"fullname": "dojox/string",
@@ -15957,21 +15730,9 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/widget/AnalogGauge",
-							"name": "AnalogGauge",
-							"fullname": "dojox/widget/AnalogGauge",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/widget/AutoRotator",
 							"name": "AutoRotator",
 							"fullname": "dojox/widget/AutoRotator",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/widget/BarGauge",
-							"name": "BarGauge",
-							"fullname": "dojox/widget/BarGauge",
 							"type": "constructor"
 						},
 						{
@@ -16023,12 +15784,6 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/widget/DataPresentation",
-							"name": "DataPresentation",
-							"fullname": "dojox/widget/DataPresentation",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/widget/Dialog",
 							"name": "Dialog",
 							"fullname": "dojox/widget/Dialog",
@@ -16041,28 +15796,10 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/widget/DocTester",
-							"name": "DocTester",
-							"fullname": "dojox/widget/DocTester",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/widget/DynamicTooltip",
-							"name": "DynamicTooltip",
-							"fullname": "dojox/widget/DynamicTooltip",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/widget/FeedPortlet",
-							"name": "FeedPortlet",
-							"fullname": "dojox/widget/FeedPortlet",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/widget/FilePicker",
 							"name": "FilePicker",
 							"fullname": "dojox/widget/FilePicker",
-							"type": "constructor"
+							"type": "object"
 						},
 						{
 							"id": "dojox/widget/FisheyeList",
@@ -16080,65 +15817,6 @@
 							"id": "dojox/widget/FisheyeLite",
 							"name": "FisheyeLite",
 							"fullname": "dojox/widget/FisheyeLite",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/widget/gauge/",
-							"name": "gauge",
-							"fullname": "dojox/widget/gauge",
-							"type": "folder",
-							"children": [
-								{
-									"id": "dojox/widget/gauge/_Gauge",
-									"name": "_Gauge",
-									"fullname": "dojox/widget/gauge/_Gauge",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/widget/gauge/AnalogArcIndicator",
-									"name": "AnalogArcIndicator",
-									"fullname": "dojox/widget/gauge/AnalogArcIndicator",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/widget/gauge/AnalogArrowIndicator",
-									"name": "AnalogArrowIndicator",
-									"fullname": "dojox/widget/gauge/AnalogArrowIndicator",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/widget/gauge/AnalogNeedleIndicator",
-									"name": "AnalogNeedleIndicator",
-									"fullname": "dojox/widget/gauge/AnalogNeedleIndicator",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/widget/gauge/BarIndicator",
-									"name": "BarIndicator",
-									"fullname": "dojox/widget/gauge/BarIndicator",
-									"type": "constructor"
-								}
-							]
-						},
-						{
-							"id": "dojox/widget/Iterator",
-							"name": "Iterator",
-							"fullname": "dojox/widget/Iterator",
-							"type": "constructor",
-							"children": [
-								{
-									"id": "dojox/widget/Iterator._classes",
-									"name": "_classes",
-									"fullname": "dojox/widget/Iterator._classes",
-									"type": "object",
-									"children": []
-								}
-							]
-						},
-						{
-							"id": "dojox/widget/Loader",
-							"name": "Loader",
-							"fullname": "dojox/widget/Loader",
 							"type": "constructor"
 						},
 						{
@@ -16199,12 +15877,6 @@
 							"id": "dojox/widget/Roller",
 							"name": "Roller",
 							"fullname": "dojox/widget/Roller",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/widget/RollingList",
-							"name": "RollingList",
-							"fullname": "dojox/widget/RollingList",
 							"type": "constructor"
 						},
 						{
@@ -16270,12 +15942,6 @@
 							"type": "constructor"
 						},
 						{
-							"id": "dojox/widget/SortList",
-							"name": "SortList",
-							"fullname": "dojox/widget/SortList",
-							"type": "constructor"
-						},
-						{
 							"id": "dojox/widget/Standby",
 							"name": "Standby",
 							"fullname": "dojox/widget/Standby",
@@ -16320,136 +15986,6 @@
 					]
 				},
 				{
-					"id": "dojox/wire",
-					"name": "wire",
-					"fullname": "dojox/wire",
-					"type": "object"
-				},
-				{
-					"id": "dojox/wire/",
-					"name": "wire",
-					"fullname": "dojox/wire",
-					"type": "folder",
-					"children": [
-						{
-							"id": "dojox/wire/_base",
-							"name": "_base",
-							"fullname": "dojox/wire/_base",
-							"type": "object"
-						},
-						{
-							"id": "dojox/wire/CompositeWire",
-							"name": "CompositeWire",
-							"fullname": "dojox/wire/CompositeWire",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/wire/DataWire",
-							"name": "DataWire",
-							"fullname": "dojox/wire/DataWire",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/wire/ml/",
-							"name": "ml",
-							"fullname": "dojox/wire/ml",
-							"type": "folder",
-							"children": [
-								{
-									"id": "dojox/wire/ml/Action",
-									"name": "Action",
-									"fullname": "dojox/wire/ml/Action",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/Data",
-									"name": "Data",
-									"fullname": "dojox/wire/ml/Data",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/DataStore",
-									"name": "DataStore",
-									"fullname": "dojox/wire/ml/DataStore",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/Invocation",
-									"name": "Invocation",
-									"fullname": "dojox/wire/ml/Invocation",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/JsonHandler",
-									"name": "JsonHandler",
-									"fullname": "dojox/wire/ml/JsonHandler",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/RestHandler",
-									"name": "RestHandler",
-									"fullname": "dojox/wire/ml/RestHandler",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/Service",
-									"name": "Service",
-									"fullname": "dojox/wire/ml/Service",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/Transfer",
-									"name": "Transfer",
-									"fullname": "dojox/wire/ml/Transfer",
-									"type": "constructor"
-								},
-								{
-									"id": "dojox/wire/ml/util",
-									"name": "util",
-									"fullname": "dojox/wire/ml/util",
-									"type": "object"
-								},
-								{
-									"id": "dojox/wire/ml/XmlHandler",
-									"name": "XmlHandler",
-									"fullname": "dojox/wire/ml/XmlHandler",
-									"type": "constructor"
-								}
-							]
-						},
-						{
-							"id": "dojox/wire/TableAdapter",
-							"name": "TableAdapter",
-							"fullname": "dojox/wire/TableAdapter",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/wire/TextAdapter",
-							"name": "TextAdapter",
-							"fullname": "dojox/wire/TextAdapter",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/wire/TreeAdapter",
-							"name": "TreeAdapter",
-							"fullname": "dojox/wire/TreeAdapter",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/wire/Wire",
-							"name": "Wire",
-							"fullname": "dojox/wire/Wire",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/wire/XmlWire",
-							"name": "XmlWire",
-							"fullname": "dojox/wire/XmlWire",
-							"type": "constructor"
-						}
-					]
-				},
-				{
 					"id": "dojox/xml/",
 					"name": "xml",
 					"fullname": "dojox/xml",
@@ -16478,121 +16014,6 @@
 							"name": "widgetParser",
 							"fullname": "dojox/xml/widgetParser",
 							"type": "undefined"
-						}
-					]
-				},
-				{
-					"id": "dojox/xmpp/",
-					"name": "xmpp",
-					"fullname": "dojox/xmpp",
-					"type": "folder",
-					"children": [
-						{
-							"id": "dojox/xmpp/bosh",
-							"name": "bosh",
-							"fullname": "dojox/xmpp/bosh",
-							"type": "object"
-						},
-						{
-							"id": "dojox/xmpp/ChatService",
-							"name": "ChatService",
-							"fullname": "dojox/xmpp/ChatService",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/xmpp/PresenceService",
-							"name": "PresenceService",
-							"fullname": "dojox/xmpp/PresenceService",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/xmpp/RosterService",
-							"name": "RosterService",
-							"fullname": "dojox/xmpp/RosterService",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/xmpp/sasl",
-							"name": "sasl",
-							"fullname": "dojox/xmpp/sasl",
-							"type": "object",
-							"children": [
-								{
-									"id": "dojox/xmpp/sasl._Base",
-									"name": "_Base",
-									"fullname": "dojox/xmpp/sasl._Base",
-									"type": "constructor",
-									"children": []
-								},
-								{
-									"id": "dojox/xmpp/sasl.DigestMD5",
-									"name": "DigestMD5",
-									"fullname": "dojox/xmpp/sasl.DigestMD5",
-									"type": "constructor",
-									"children": []
-								},
-								{
-									"id": "dojox/xmpp/sasl.Plain",
-									"name": "Plain",
-									"fullname": "dojox/xmpp/sasl.Plain",
-									"type": "constructor",
-									"children": []
-								},
-								{
-									"id": "dojox/xmpp/sasl.SunWebClientAuth",
-									"name": "SunWebClientAuth",
-									"fullname": "dojox/xmpp/sasl.SunWebClientAuth",
-									"type": "constructor",
-									"children": []
-								}
-							]
-						},
-						{
-							"id": "dojox/xmpp/TransportSession",
-							"name": "TransportSession",
-							"fullname": "dojox/xmpp/TransportSession",
-							"type": "function"
-						},
-						{
-							"id": "dojox/xmpp/UserService",
-							"name": "UserService",
-							"fullname": "dojox/xmpp/UserService",
-							"type": "constructor"
-						},
-						{
-							"id": "dojox/xmpp/util",
-							"name": "util",
-							"fullname": "dojox/xmpp/util",
-							"type": "object",
-							"children": [
-								{
-									"id": "dojox/xmpp/util.Base64",
-									"name": "Base64",
-									"fullname": "dojox/xmpp/util.Base64",
-									"type": "object",
-									"children": []
-								}
-							]
-						},
-						{
-							"id": "dojox/xmpp/widget/",
-							"name": "widget",
-							"fullname": "dojox/xmpp/widget",
-							"type": "folder",
-							"children": [
-								{
-									"id": "dojox/xmpp/widget/ChatSession",
-									"name": "ChatSession",
-									"fullname": "dojox/xmpp/widget/ChatSession",
-									"type": "constructor"
-								}
-							]
-						},
-						{
-							"id": "dojox/xmpp/xmppSession",
-							"name": "xmppSession",
-							"fullname": "dojox/xmpp/xmppSession",
-							"type": "function"
 						}
 					]
 				}
