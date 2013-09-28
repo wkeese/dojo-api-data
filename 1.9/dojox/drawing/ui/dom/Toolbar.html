@@ -63,9 +63,9 @@ children for tools and plugins.</span>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>type) <span>Event fired from clicking a Tool, not a PLugin.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>type) <span>Event fired from clicking a Tool, not a PLugin.</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onSetTool" class="inline-link"> onSetTool</a><span class="parameters">(</span>type) <span>handles buttons clicks and selects or deselects</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_ui_dom_Toolbar_onSetTool" class="inline-link"> onSetTool</a><span class="parameters">(</span>type) <span>handles buttons clicks and selects or deselects</span>
         </li>
       </ul>
     </div>
@@ -105,7 +105,7 @@ children for tools and plugins.</span>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_drawing_ui_dom_Toolbar_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(props, node)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -131,7 +131,7 @@ children for tools and plugins.</span>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_drawing_ui_dom_Toolbar_createIcon"></a><span class="functionIcon">createIcon</span><span class="parameters">(node, constr)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
         </div>
         <div class="jsdoc-full-summary"><p>Internal. Creates an icon node for each button.</p>
 </div>
@@ -164,7 +164,7 @@ of each tool. See: stencil._Base</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_drawing_ui_dom_Toolbar_createTool"></a><span class="functionIcon">createTool</span><span class="parameters">(node)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
         </div>
         <div class="jsdoc-full-summary"><p>Creates a button on the Toolbar that is
 a Tool, not a Plugin. Tools draw Stencils,
@@ -188,7 +188,7 @@ Plugins do actions.</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_drawing_ui_dom_Toolbar_parse"></a><span class="functionIcon">parse</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
         </div>
         <div class="jsdoc-full-summary"><p>Initializing method that reads the dom node and its
 children for tools and plugins.</p>
@@ -200,17 +200,46 @@ children for tools and plugins.</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_drawing_ui_dom_Toolbar_onClick"></a><span class="functionIcon">onClick</span><span class="parameters">(type)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Event fired from clicking a Tool, not a PLugin.
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Event fired from clicking a Tool, not a PLugin.
 Plugin clicks are handled within the plugin&#39;s class.</p>
 </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>Fully qualified name of class. ex: dojox.drawing.tools.Ellipse</p>
+ 
+            </td>
+          </tr>
+        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_drawing_ui_dom_Toolbar_onSetTool"></a><span class="functionIcon">onSetTool</span><span class="parameters">(type)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>handles buttons clicks and selects or deselects</p>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/drawing/ui/dom/Toolbar" class="jsdoc-link">dojox/drawing/ui/dom/Toolbar</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>handles buttons clicks and selects or deselects</p>
 </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>

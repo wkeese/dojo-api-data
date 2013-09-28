@@ -26,11 +26,11 @@ and sets this._firstFocusItem and this._lastFocusItem</span><span title="private
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dijit__DialogMixin__onSubmit" class="inline-link"> _onSubmit</a><span class="parameters">(</span>) <span>Callback when user hits submit button</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon private"><a href="#1_8dijit__DialogMixin__onSubmit" class="inline-link"> _onSubmit</a><span class="parameters">(</span>) <span>Callback when user hits submit button</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dijit__DialogMixin_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>) <span>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_8dijit__DialogMixin_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>) <span>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dijit__DialogMixin_onExecute" class="inline-link"> onExecute</a><span class="parameters">(</span>) <span>Called when user has pressed the dialog&#39;s OK button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_8dijit__DialogMixin_onExecute" class="inline-link"> onExecute</a><span class="parameters">(</span>) <span>Called when user has pressed the dialog&#39;s OK button, to notify container.</span>
         </li>
       </ul>
     </div>
@@ -43,7 +43,7 @@ and sets this._firstFocusItem and this._lastFocusItem</span><span title="private
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dijit__DialogMixin__getFocusItems"></a><span class="functionIcon">_getFocusItems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
         </div>
         <div class="jsdoc-full-summary"><p>Finds focusable items in dialog,
 and sets this._firstFocusItem and this._lastFocusItem</p>
@@ -52,7 +52,7 @@ and sets this._firstFocusItem and this._lastFocusItem</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__DialogMixin_execute"></a><span class="functionIcon">execute</span><span class="parameters">(formContents)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
         </div>
         <div class="jsdoc-full-summary"><p>Callback when the user hits the submit button.
 Override this method to handle Dialog execution.</p>
@@ -84,22 +84,33 @@ dialog and restore focus to wherever it used to be.
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dijit__DialogMixin__onSubmit"></a><span class="functionIcon">_onSubmit</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Callback when user hits submit button</p>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Callback when user hits submit button</p>
 </div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__DialogMixin_onCancel"></a><span class="functionIcon">onCancel</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</p>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Developer shouldn&#39;t override or connect to this method;
+it&#39;s a private communication device between the TooltipDialog
+and the thing that opened it (ex: <a class="jsdoc-link" href="/api/1.8/dijit/form/DropDownButton">dijit/form/DropDownButton</a>)</p>
 </div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit__DialogMixin_onExecute"></a><span class="functionIcon">onExecute</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>Called when user has pressed the dialog&#39;s OK button, to notify container.</p>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called when user has pressed the dialog&#39;s OK button, to notify container.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Developer shouldn&#39;t override or connect to this method;
+it&#39;s a private communication device between the TooltipDialog
+and the thing that opened it (ex: <a class="jsdoc-link" href="/api/1.8/dijit/form/DropDownButton">dijit/form/DropDownButton</a>)</p>
 </div>
       </div>
     </div>

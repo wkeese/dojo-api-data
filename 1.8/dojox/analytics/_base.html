@@ -53,7 +53,7 @@
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
         <li class="functionIcon "><a href="#1_8dojox_analytics__base_onPushComplete" class="inline-link"> onPushComplete</a><span class="parameters">(</span>results) <span>If our data push was successfully, remove the _inTransit data and schedule the next
-parser run.</span><span title="TODO" class="jsdoc-extension"></span>
+parser run.</span>
         </li>
       </ul>
     </div>
@@ -111,7 +111,7 @@ parser run.</span><span title="TODO" class="jsdoc-extension"></span>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_addData"></a><span class="functionIcon">addData</span><span class="parameters">(dataType, data)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
         </div>
         <div class="jsdoc-full-summary"><p>add data to the queue. Will be pusshed to the server on the next
 data push</p>
@@ -139,7 +139,7 @@ data push</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_checkData"></a><span class="functionIcon">checkData</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
         </div>
         <div class="jsdoc-full-summary"><p>TODOC?</p>
 </div>
@@ -147,7 +147,7 @@ data push</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
         </div>
         <div class="jsdoc-full-summary"><p>where we store data until we&#39;re ready to send it off.</p>
 </div>
@@ -155,7 +155,7 @@ data push</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_getQueryPacket"></a><span class="functionIcon">getQueryPacket</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
@@ -163,7 +163,7 @@ data push</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_pushData"></a><span class="functionIcon">pushData</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
         </div>
         <div class="jsdoc-full-summary"><p>pushes data to the server if any exists.  If a push is done, return
 the deferred after hooking up completion callbacks.  If there is no data
@@ -174,7 +174,7 @@ to be pushed, return false;</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_schedulePusher"></a><span class="functionIcon">schedulePusher</span><span class="parameters">(interval)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
         </div>
         <div class="jsdoc-full-summary"><p>Schedule the data pushing routines to happen in interval ms</p>
 </div>
@@ -198,10 +198,24 @@ to be pushed, return false;</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_analytics__base_onPushComplete"></a><span class="functionIcon">onPushComplete</span><span class="parameters">(results)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>If our data push was successfully, remove the _inTransit data and schedule the next
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/analytics/_base" class="jsdoc-link">dojox/analytics/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>If our data push was successfully, remove the _inTransit data and schedule the next
 parser run.</p>
 </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">results</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>

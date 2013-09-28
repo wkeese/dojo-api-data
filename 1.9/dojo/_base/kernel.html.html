@@ -17,7 +17,7 @@
       <ul class="jsdoc-property-list">
         <li class="functionIcon private"><a href="#1_9dojo__base_kernel_html__ContentSetter" class="inline-link"> _ContentSetter</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojo__base_kernel_html__emptyNode" class="inline-link"> _emptyNode</a><span class="parameters">(</span>node) <span>Removes all child nodes from the given node.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_kernel_html__emptyNode" class="inline-link"> _emptyNode</a><span class="parameters">(</span>node) <span>safely removes all children of the node.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon private"><a href="#1_9dojo__base_kernel_html__secureForInnerHtml" class="inline-link"> _secureForInnerHtml</a><span class="parameters">(</span>cont) <span>removes !DOCTYPE and title elements from the html string.
 
@@ -27,7 +27,7 @@ must go into head, so we need to cut out those tags</span><span title="private" 
         </li>
         <li class="functionIcon private"><a href="#1_9dojo__base_kernel_html__setNodeContent" class="inline-link"> _setNodeContent</a><span class="parameters">(</span>node, cont) <span>inserts the given content into the given node</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_kernel_html_set" class="inline-link"> set</a><span class="parameters">(</span>node, cont, params) <span>inserts (replaces) the given content into the given node. dojo.place(cont, node, &quot;only&quot;)
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_html_set" class="inline-link"> set</a><span class="parameters">(</span>node, cont, params) <span>inserts (replaces) the given content into the given node. dojo/dom-construct.place(cont, node, &quot;only&quot;)
 may be a better choice for simple HTML insertion.</span>
         </li>
       </ul>
@@ -41,17 +41,16 @@ may be a better choice for simple HTML insertion.</span>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dojo__base_kernel_html__ContentSetter"></a><span class="functionIcon">_ContentSetter</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dojo__base_kernel_html__emptyNode"></a><span class="functionIcon">_emptyNode</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Removes all child nodes from the given node.   Deprecated, should use dojo/dom-constuct.empty() directly
-instead.</p>
+        <div class="jsdoc-full-summary"><p>safely removes all children of the node.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -61,17 +60,34 @@ instead.</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">node</td>
-            <td class="jsdoc-param-type">DOMNode</td>
-            <td class="jsdoc-param-description"><p>the parent element</p>
+            <td class="jsdoc-param-type">DOMNode | String</td>
+            <td class="jsdoc-param-description"><p>a reference to a DOM node or an id.</p>
  
             </td>
           </tr>
         </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Destroy node&#39;s children byId:
+
+</p>
+<pre><code>dojo.empty(&quot;someId&quot;);</code></pre>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 2</h3><p>Destroy all nodes&#39; children in a list by reference:
+
+</p>
+<pre><code>dojo.query(&quot;.someNode&quot;).forEach(dojo.empty);</code></pre>
+
+          </div>
+        </div>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dojo__base_kernel_html__secureForInnerHtml"></a><span class="functionIcon">_secureForInnerHtml</span><span class="parameters">(cont)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
         <div class="jsdoc-full-summary"><p>removes !DOCTYPE and title elements from the html string.
 
@@ -99,7 +115,7 @@ must go into head, so we need to cut out those tags</p>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dojo__base_kernel_html__setNodeContent"></a><span class="functionIcon">_setNodeContent</span><span class="parameters">(node, cont)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
         <div class="jsdoc-full-summary"><p>inserts the given content into the given node</p>
 </div>
@@ -123,20 +139,22 @@ must go into head, so we need to cut out those tags</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">DomNode</span></div>
+        <div class="jsdoc-return-description"><p>the parent element</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo__base_kernel_html_set"></a><span class="functionIcon">set</span><span class="parameters">(node, cont, params)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/html" class="jsdoc-link">dojo/html</a><span title="Must manually require () dojo/html to access" class="jsdoc-extension"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>inserts (replaces) the given content into the given node. dojo.place(cont, node, &quot;only&quot;)
+        <div class="jsdoc-full-summary"><p>inserts (replaces) the given content into the given node. dojo/dom-construct.place(cont, node, &quot;only&quot;)
 may be a better choice for simple HTML insertion.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Unless you need to use the params capabilities of this method, you should use
-dojo.place(cont, node, &quot;only&quot;). dojo.place() has more robust support for injecting
+<a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place(cont, node, &quot;only&quot;). <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place() has more robust support for injecting
 an HTML string into the DOM, but it only handles inserting an HTML string as DOM
-elements, or inserting a DOM node. dojo.place does not handle NodeList insertions
+elements, or inserting a DOM node. <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place does not handle NodeList insertions
 or the other capabilities as defined by the params object for this method.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -169,6 +187,7 @@ This can be an html string, a node reference or a NodeList, dojo/NodeList, Array
             </td>
           </tr>
         </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">

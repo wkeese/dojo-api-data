@@ -70,11 +70,11 @@ and defines proper events (onMoveStart and onMoveStop)</p>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
         <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>e) <span>makes the node absolute; it is meant to be called only once.
-relative and absolutely positioned nodes are assumed to use pixel units</span><span title="TODO" class="jsdoc-extension"></span>
+relative and absolutely positioned nodes are assumed to use pixel units</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove/ontouchmove</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojo_dnd_Mover_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span></span>
         </li>
       </ul>
     </div>
@@ -87,7 +87,7 @@ relative and absolutely positioned nodes are assumed to use pixel units</span><s
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(node, e, host)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -125,7 +125,7 @@ and defines proper events (onMoveStart and onMoveStop)</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
         </div>
         <div class="jsdoc-full-summary"><p>stops the move, deletes all references, so the object can be garbage-collected</p>
 </div>
@@ -133,7 +133,7 @@ and defines proper events (onMoveStart and onMoveStop)</p>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, event)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -160,7 +160,7 @@ and defines proper events (onMoveStart and onMoveStop)</p>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_on"></a><span class="functionIcon">on</span><span class="parameters">(type, listener)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Evented" class="jsdoc-link">dojo/Evented</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -190,22 +190,65 @@ and defines proper events (onMoveStart and onMoveStop)</p>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_onFirstMove"></a><span class="functionIcon">onFirstMove</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>makes the node absolute; it is meant to be called only once.
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>makes the node absolute; it is meant to be called only once.
 relative and absolutely positioned nodes are assumed to use pixel units</p>
 </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_onMouseMove"></a><span class="functionIcon">onMouseMove</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
-        <div class="jsdoc-summary"><p>event processor for onmousemove/ontouchmove</p>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>event processor for onmousemove/ontouchmove</p>
 </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">Event</td>
+            <td class="jsdoc-param-description"><p>mouse/touch event</p>
+ 
+            </td>
+          </tr>
+        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo_dnd_Mover_onMouseUp"></a><span class="functionIcon">onMouseUp</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojo/dnd/Mover" class="jsdoc-link">dojo/dnd/Mover</a>
+        </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
