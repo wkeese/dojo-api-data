@@ -1,6 +1,9 @@
-# Mapping from case sensitive names to case insensitive names
-
 RewriteEngine On
+
+# Add version if it's a permalink URL for a module but no version specified
+RewriteRule ^(dijit|dojo|dojox|util|doh)/(.+)$ 1.9/$1/$2
+
+## Mappings from case sensitive names to case insensitive names
 
 # Namespace objects with same name as constructors.
 # Namespace objects renamed (ex: dijit/tree --> dijit/tree_ns)
