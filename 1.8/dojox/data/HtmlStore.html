@@ -7,10 +7,11 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/HtmlStore.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/data/HtmlStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/data/HtmlStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new HtmlStore<span class="parameters">(args);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new HtmlStore<span class="parameters">(args);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/HtmlStore">dojox/data/HtmlStore</a></div>
 <div class="jsdoc-summary"><p>The HtmlStore can be created in one of two ways: a) by parsing an existing
@@ -97,17 +98,17 @@ backwards compatibility.</li>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_8dojox_data_HtmlStore_dataId" class="inline-link"> dataId </a><span>The id in the document for an element from which to get the data.</span>
+        <li class="stringIcon public"><a href="#1_8dojox_data_HtmlStore_dataId" class="inline-link">dataId  </a><span>The id in the document for an element from which to get the data.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_HtmlStore_fetchOnCreate" class="inline-link"> fetchOnCreate </a><span>Flag to denote if it should try to load from a data id (nested in the page)
+        <li class="booleanIcon public"><a href="#1_8dojox_data_HtmlStore_fetchOnCreate" class="inline-link">fetchOnCreate  </a><span>Flag to denote if it should try to load from a data id (nested in the page)
 The moment the store is created, instead of waiting for first
-fetch call.</span>
+fetch call.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_HtmlStore_trimWhitespace" class="inline-link"> trimWhitespace </a><span></span>
+        <li class="booleanIcon public"><a href="#1_8dojox_data_HtmlStore_trimWhitespace" class="inline-link">trimWhitespace  </a><span>  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojox_data_HtmlStore_url" class="inline-link"> url </a><span>The URL from which to load an HTML document for data loading</span>
+        <li class="stringIcon public"><a href="#1_8dojox_data_HtmlStore_url" class="inline-link">url  </a><span>The URL from which to load an HTML document for data loading  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_HtmlStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag to denote if peventCache should be used on xhrGet calls.</span>
+        <li class="booleanIcon public"><a href="#1_8dojox_data_HtmlStore_urlPreventCache" class="inline-link">urlPreventCache  </a><span>Flag to denote if peventCache should be used on xhrGet calls.  </span>
         </li>
       </ul>
     </div>
@@ -132,8 +133,6 @@ attributes (cells in a row), can have a reasonable name.</span><span title="priv
         <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__indexItems" class="inline-link"> _indexItems</a><span class="parameters">(</span>) <span>Function to index items found under the id.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initializer for the HTML table store.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
         </li>
@@ -441,92 +440,6 @@ For list items, returns single implicit heading, [&quot;name&quot;]</p>
             <td class="jsdoc-param-type"><a class="jsdoc-link" href="/api/1.8/dojo/data/api/Request">dojo/data/api/Request</a> | Object</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Initializer for the HTML table store.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>The HtmlStore can be created in one of two ways: a) by parsing an existing
-table or list DOM node on the current page or b) by referencing an external url and giving
-the id of the table or list in that page.  The remote url will be parsed as an html page.
-
-</p>
-<p>The HTML table or list should be of the following form:
-
-
-</p>
-<pre><code>&lt;table id=&quot;myTable&quot;&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Attribute1&lt;/th&gt;
-            &lt;th&gt;Attribute2&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Value1.1&lt;/td&gt;
-            &lt;td&gt;Value1.2&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Value2.1&lt;/td&gt;
-            &lt;td&gt;Value2.2&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;</pre></code>
-<p>-or-
-
-
-</p>
-<pre><code>&lt;ul id=&quot;myUnorderedList&quot;&gt;
-    &lt;li&gt;Value.1&lt;/li&gt;
-    &lt;li&gt;Value.2&lt;/li&gt;
-&lt;/ul&gt;</pre></code>
-<p>-or-
-
-
-</p>
-<pre><code>&lt;ol id=&quot;myOrderedList&quot;&gt;
-    &lt;li&gt;Value.1&lt;/li&gt;
-    &lt;li&gt;Value.2&lt;/li&gt;
-&lt;/ol&gt;</pre></code>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">args</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>An anonymous object to initialize properties.  It expects the following values:
-
-</p>
-<ul>
-<li>dataId:   The id of the HTML table to use.</li>
-</ul>
-<p>OR
-
-</p>
-<ul>
-<li>url:  The url of the remote page to load</li>
-<li>dataId:   The id of the table element in the remote page</li>
-</ul>
-<p>and the option:
-
-</p>
-<ul>
-<li>trimWhitespace:  Trim off any surrounding whitespace from the headers (attribute
-names) and text content of the items in question.  Default is false for
-backwards compatibility.</li>
-</ul>
- 
             </td>
           </tr>
         </table>

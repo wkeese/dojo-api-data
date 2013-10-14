@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/tree/ObjectStoreModel.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dijit/tree/ObjectStoreModel<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dijit/tree/ObjectStoreModel<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Implements <a class="jsdoc-link" href="/api/1.9/dijit/tree/model">dijit/tree/model</a> connecting <a class="jsdoc-link" href="/api/1.9/dijit/Tree">dijit/Tree</a> to a <a class="jsdoc-link" href="/api/1.9/dojo/store/api/Store">dojo/store/api/Store</a> that implements
 getChildren().
 
@@ -24,12 +24,11 @@ And in order to have child elements ordered according to how the user dropped th
 put() must support the before option.</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new ObjectStoreModel<span class="parameters">(args);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ObjectStoreModel<span class="parameters">(args);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dijit/tree/ObjectStoreModel">dijit/tree/ObjectStoreModel</a></div>
-<div class="jsdoc-summary"><p>Passed the arguments listed above (store, etc)</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -49,23 +48,21 @@ put() must support the before option.</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_9dijit_tree_ObjectStoreModel_labelAttr" class="inline-link"> labelAttr </a><span>Get label for tree node from this attribute</span>
+        <li class="stringIcon public"><a href="#1_9dijit_tree_ObjectStoreModel_labelAttr" class="inline-link">labelAttr  </a><span>Get label for tree node from this attribute  </span>
         </li>
-        <li class="stringIcon"><a href="#1_9dijit_tree_ObjectStoreModel_labelType" class="inline-link"> labelType </a><span>Specifies how to interpret the labelAttr in the data store items.</span>
+        <li class="stringIcon public"><a href="#1_9dijit_tree_ObjectStoreModel_labelType" class="inline-link">labelType  </a><span>Specifies how to interpret the labelAttr in the data store items.  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dijit_tree_ObjectStoreModel_query" class="inline-link"> query </a><span>Specifies datastore query to return the root item for the tree.</span>
+        <li class="objectIcon public"><a href="#1_9dijit_tree_ObjectStoreModel_query" class="inline-link">query  </a><span>Specifies datastore query to return the root item for the tree.  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dijit_tree_ObjectStoreModel_root" class="inline-link"> root </a><span>Pointer to the root item from the dojo/store/api/Store (read only, not a parameter)</span>
+        <li class="objectIcon public"><a href="#1_9dijit_tree_ObjectStoreModel_root" class="inline-link">root  </a><span>Pointer to the root item from the dojo/store/api/Store (read only, not a parameter)  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dijit_tree_ObjectStoreModel_store" class="inline-link"> store </a><span>Underlying store</span>
+        <li class="objectIcon public"><a href="#1_9dijit_tree_ObjectStoreModel_store" class="inline-link">store  </a><span>Underlying store  </span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_9dijit_tree_ObjectStoreModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Passed the arguments listed above (store, etc)</span><span title="private" class="jsdoc-private"> </span>
-        </li>
         <li class="functionIcon "><a href="#1_9dijit_tree_ObjectStoreModel_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
         </li>
         <li class="functionIcon "><a href="#1_9dijit_tree_ObjectStoreModel_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>parentItem, onComplete, onError) <span>Calls onComplete() with array of child items of given parent item.</span>
@@ -150,27 +147,6 @@ to root item.</p>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit_tree_ObjectStoreModel_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/tree/ObjectStoreModel" class="jsdoc-link">dijit/tree/ObjectStoreModel</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Passed the arguments listed above (store, etc)</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">args</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dijit_tree_ObjectStoreModel_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>

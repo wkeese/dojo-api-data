@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mvc/_base._Controller.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/mvc/_base._Controller<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/mvc/_base._Controller<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful, </a><a href="/api/1.9/dojox/mvc/_atBindingMixin" class="jsdoc-link">dojox/mvc/_atBindingMixin</a>
 </div>
@@ -17,12 +17,12 @@
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_9dojox_mvc__base__Controller__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
-and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mvc__base__Controller__attrPairNames" class="inline-link">_attrPairNames  </a><span>Used across all instances a hash to cache attribute names and their getter 
+and setter names.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dojox_mvc__base__Controller_data-mvc-bindings" class="inline-link"> data-mvc-bindings </a><span></span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_mvc__base__Controller_data-mvc-bindings" class="inline-link">data-mvc-bindings  </a><span>  </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dojox_mvc__base__Controller_dataBindAttr" class="inline-link"> dataBindAttr </a><span>The attribute name for data binding.</span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_mvc__base__Controller_dataBindAttr" class="inline-link">dataBindAttr  </a><span>The attribute name for data binding.  </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -41,7 +41,7 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base__Controller__getPropertiesAttr" class="inline-link"> _getPropertiesAttr</a><span class="parameters">(</span>) <span>Returns list of all properties in this widget, except &quot;id&quot;.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc__base__Controller__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Implement _set() interface so that _set() behavior is consistent whether the instance inherits _WidgetBase or not.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc__base__Controller__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Implement _set() interface so that _set() behavior is consistent whether the instance inherits _WidgetBase or not.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base__Controller__setAtWatchHandle" class="inline-link"> _setAtWatchHandle</a><span class="parameters">(</span>name, value) <span>Called if the value is a dojox/mvc/at handle.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
         </li>
@@ -51,15 +51,15 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mvc__base__Controller__stopAtWatchHandles" class="inline-link"> _stopAtWatchHandles</a><span class="parameters">(</span>) <span>Stops data binding synchronization handles as widget is destroyed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mvc/_atBindingMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc__base__Controller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Stops data binding as this object is destroyed.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc__base__Controller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Stops data binding as this object is destroyed.</span><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base__Controller_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc__base__Controller_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>If this object is not called from Dojo parser, starts this up right away.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc__base__Controller_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>If this object is not called from Dojo parser, starts this up right away.</span><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc__base__Controller_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>If the value given is dojox/mvc/at handle, use it for data binding.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc__base__Controller_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>If the value given is dojox/mvc/at handle, use it for data binding.</span><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc__base__Controller_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Starts up data binding as this object starts up.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc__base__Controller_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Starts up data binding as this object starts up.</span><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_mvc__base__Controller_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
@@ -71,7 +71,7 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -80,13 +80,13 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
 and setter names.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller_data-mvc-bindings"></a><span class="stringIcon">data-mvc-bindings</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mvc/_atBindingMixin" class="jsdoc-link">dojox/mvc/_atBindingMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller_dataBindAttr"></a><span class="stringIcon">dataBindAttr</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mvc/_atBindingMixin" class="jsdoc-link">dojox/mvc/_atBindingMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -238,7 +238,7 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div class="jsdoc-return-description"><p>The list of all properties in this widget, except &quot;id&quot;..</p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller</a><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
@@ -349,7 +349,7 @@ Otherwise, queue it up to this._refs so that _dbstartup() can pick it up.</p>
         <div class="jsdoc-full-summary"><p>Stops data binding synchronization handles as widget is destroyed.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller</a><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
@@ -392,7 +392,7 @@ stateful.foo // returns 3</pre></code>
         <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller</a><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
@@ -422,7 +422,7 @@ Also, if widget registry is available, register this object.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller</a><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>
@@ -458,7 +458,7 @@ Otherwise, if setter function is there, use it.
 Otherwise, set the value to the data model or to this object.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc__base__Controller_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/_Controller" class="jsdoc-link">dojox/mvc/_Controller</a><span title="Must manually require () dojox/mvc/_Controller to access" class="jsdoc-extension"></span>

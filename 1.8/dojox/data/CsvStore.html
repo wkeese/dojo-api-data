@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/CsvStore.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/data/CsvStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/data/CsvStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>The CsvStore implements the <a class="jsdoc-link" href="/api/1.8/dojo/data/api/Read">dojo/data/api/Read</a> API and reads
 data from files in CSV (Comma Separated Values) format.
 All values are simple string values. References to other items
@@ -26,12 +26,11 @@ Also note that values containing quotes must be escaped with two consecutive quo
 </p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new CsvStore<span class="parameters">(keywordParameters);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new CsvStore<span class="parameters">(keywordParameters);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/CsvStore">dojox/data/CsvStore</a></div>
-<div class="jsdoc-summary"><p>initializer</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -65,16 +64,16 @@ var csvStore = new dojox.data.CsvStore({url:&quot;<a href="http://example.com/mo
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_8dojox_data_CsvStore_identifier" class="inline-link"> identifier </a><span>Declarative hook for setting the identifier.</span>
+        <li class="stringIcon public"><a href="#1_8dojox_data_CsvStore_identifier" class="inline-link">identifier  </a><span>Declarative hook for setting the identifier.  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojox_data_CsvStore_label" class="inline-link"> label </a><span>Declarative hook for setting the label attribute.</span>
+        <li class="stringIcon public"><a href="#1_8dojox_data_CsvStore_label" class="inline-link">label  </a><span>Declarative hook for setting the label attribute.  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojox_data_CsvStore_separator" class="inline-link"> separator </a><span>Declatative and programmatic hook for defining the separator
-character used in the Csv style file.</span>
+        <li class="stringIcon public"><a href="#1_8dojox_data_CsvStore_separator" class="inline-link">separator  </a><span>Declatative and programmatic hook for defining the separator
+character used in the Csv style file.  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojox_data_CsvStore_url" class="inline-link"> url </a><span>Declarative hook for setting Csv source url.</span>
+        <li class="stringIcon public"><a href="#1_8dojox_data_CsvStore_url" class="inline-link">url  </a><span>Declarative hook for setting Csv source url.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_CsvStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span></span>
+        <li class="booleanIcon public"><a href="#1_8dojox_data_CsvStore_urlPreventCache" class="inline-link">urlPreventCache  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -100,8 +99,6 @@ character used in the Csv style file.</span>
         <li class="functionIcon private"><a href="#1_8dojox_data_CsvStore__splitLines" class="inline-link"> _splitLines</a><span class="parameters">(</span>csvContent) <span>Function to split the CSV file contents into separate lines.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_data_CsvStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_CsvStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>initializer</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_data_CsvStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
         </li>
@@ -473,33 +470,6 @@ work as well.  A quick passover parse should be just as efficient.</p>
             <td class="jsdoc-param-type"><a class="jsdoc-link" href="/api/1.8/dojo/data/api/Request">dojo/data/api/Request</a> | Object</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_CsvStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(keywordParameters)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/data/CsvStore" class="jsdoc-link">dojox/data/CsvStore</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>initializer</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">keywordParameters</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><ul>
-<li>url: String</li>
-<li>data: String</li>
-<li>label: String: The column label for the column to use for the label returned by getLabel.</li>
-<li>identifier: String: The column label for the column to use for the identity.  Optional.  If not set, the identity is the row number.</li>
-</ul>
- 
             </td>
           </tr>
         </table>

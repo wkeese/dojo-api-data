@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/store/DataStore.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojo/store/DataStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojo/store/DataStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/store/api/Store" class="jsdoc-link">dojo/store/api/Store</a>
 </div>
@@ -16,8 +16,9 @@ You can provide a Dojo data store and use this adapter to interact with it throu
 the Dojo object store API</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new DataStore<span class="parameters">(options);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new DataStore<span class="parameters">(options);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojo/store/DataStore">dojo/store/DataStore</a></div>
 <table class="jsdoc-parameters">
@@ -42,11 +43,11 @@ including a reference to the Dojo data store under the property &quot;store&quot
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_9dojo_store_DataStore_idProperty" class="inline-link"> idProperty </a><span>The object property to use to store the identity of the store items.</span>
+        <li class="stringIcon public"><a href="#1_9dojo_store_DataStore_idProperty" class="inline-link">idProperty  </a><span>The object property to use to store the identity of the store items.  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojo_store_DataStore_store" class="inline-link"> store </a><span>The object store to convert to a data store</span>
+        <li class="objectIcon public"><a href="#1_9dojo_store_DataStore_store" class="inline-link">store  </a><span>The object store to convert to a data store  </span>
         </li>
-        <li class="stringIcon"><a href="#1_9dojo_store_DataStore_target" class="inline-link"> target </a><span></span>
+        <li class="stringIcon public"><a href="#1_9dojo_store_DataStore_target" class="inline-link">target  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -56,8 +57,6 @@ including a reference to the Dojo data store under the property &quot;store&quot
         <li class="functionIcon private"><a href="#1_9dojo_store_DataStore__objectConverter" class="inline-link"> _objectConverter</a><span class="parameters">(</span>callback) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojo_store_DataStore_add" class="inline-link"> add</a><span class="parameters">(</span>object, directives) <span>Creates an object, throws an error if the object already exists</span><span title="inherited from dojo/store/api/Store" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon "><a href="#1_9dojo_store_DataStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>options) <span></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo_store_DataStore_get" class="inline-link"> get</a><span class="parameters">(</span>id, options) <span>Retrieves an object by it&#39;s identity.</span>
         </li>
@@ -161,29 +160,6 @@ including a reference to the Dojo data store under the property &quot;store&quot
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number|String</span></div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dojo_store_DataStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(options)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/store/DataStore" class="jsdoc-link">dojo/store/DataStore</a>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">options</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>This provides any configuration information that will be mixed into the store,
-including a reference to the Dojo data store under the property &quot;store&quot;.</p>
- 
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo_store_DataStore_get"></a><span class="functionIcon">get</span><span class="parameters">(id, options)</span> 

@@ -241,9 +241,11 @@ div.jsdoc-toolbar label {
 	top: 10px;
 	right: 84px;
 }
+/* looks naff in FF
 div.jsdoc-toolbar * {
     opacity:1;
 }
+*/
 div.jsdoc-toolbar .off {
 	opacity: 0.25;
 }
@@ -406,4 +408,54 @@ ul.jsdoc-legend {
 ul.jsdoc-legend img, ul.jsdoc-legend li > span:first-child {
 	/* align icon vertically with text; note that icons in second list are <span> nodes */
 	vertical-align: middle;
+}
+/* TODO: reset of 'div.jsdoc-toolbar label' above, remove */
+div.jsdoc-toolbar label {
+    position: relative;
+    top : auto;
+    right : auto;
+    cursor : pointer;
+    color : #4477aa;
+    margin-left : 5px;
+}
+.dijitCheckBoxInput {
+    cursor : pointer;
+}
+.viewOptions {
+    float: right;
+}
+
+/* reset */
+div.jsdoc-toolbar {
+    margin : 0;
+}
+
+/* temp try out floating toolbar */
+div.jsdoc-toolbar {
+    position: fixed;
+    float: right;
+    right: 30px;
+    border-radius: 5px;
+    z-index: 1000;
+    border-bottom: 3px solid #E5E3CF;
+    padding: 0;
+    height : initial;
+    padding: 2px 6px 0px 6px;
+    border-right: 2px solid #E5E3CF;
+    border-top: 1px solid #E5E3CF;
+    border-left: 1px solid #E5E3CF;
+
+}
+/* temp - underline toolbar labels */
+.viewOptions label:hover {
+    text-decoration: underline;
+}
+/* temp - play with layout */
+div.jsdoc-toolbar .jsdoc-permalink {
+    position : initial;
+    top : initial;
+    left : initial;
+    float : left;
+    border : none;
+    width: initial;
 }

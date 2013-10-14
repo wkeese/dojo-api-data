@@ -7,18 +7,18 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/uuid/_base.html</div>
-<h1 class="objectIcon36 jsdoc-title">dojox/uuid/_base<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="objectIcon36 jsdoc-title module-title">dojox/uuid/_base<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <p>See the <a href="/reference-guide/1.9/dojox/uuid.html" target="_blank">dojox/uuid/_base reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_9dojox_uuid__base_NIL_UUID" class="inline-link"> NIL_UUID </a><span></span>
+        <li class="stringIcon public"><a href="#1_9dojox_uuid__base_NIL_UUID" class="inline-link">NIL_UUID  </a><span>  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_uuid__base_variant" class="inline-link"> variant </a><span></span>
+        <li class="objectIcon public"><a href="#1_9dojox_uuid__base_variant" class="inline-link">variant  </a><span>  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_uuid__base_version" class="inline-link"> version </a><span></span>
+        <li class="objectIcon public"><a href="#1_9dojox_uuid__base_version" class="inline-link">version  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -29,9 +29,9 @@
         </li>
         <li class="functionIcon "><a href="#1_9dojox_uuid__base_generateNilUuid" class="inline-link"> generateNilUuid</a><span class="parameters">(</span>) <span>This function returns the Nil UUID: &quot;00000000-0000-0000-0000-000000000000&quot;.</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_uuid__base_generateRandomUuid" class="inline-link"> generateRandomUuid</a><span class="parameters">(</span>) <span>This function generates random UUIDs, meaning &quot;version 4&quot; UUIDs.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_uuid__base_generateRandomUuid" class="inline-link"> generateRandomUuid</a><span class="parameters">(</span>) <span>This function generates random UUIDs, meaning &quot;version 4&quot; UUIDs.</span><span title="Must manually require () dojox/uuid/generateRandomUuid to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_uuid__base_generateTimeBasedUuid" class="inline-link"> generateTimeBasedUuid</a><span class="parameters">(</span>node) <span>This function generates time-based UUIDs, meaning &quot;version 1&quot; UUIDs.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_uuid__base_generateTimeBasedUuid" class="inline-link"> generateTimeBasedUuid</a><span class="parameters">(</span>node) <span>This function generates time-based UUIDs, meaning &quot;version 1&quot; UUIDs.</span><span title="Must manually require () dojox/uuid/generateTimeBasedUuid to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_uuid__base_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>uuidString) <span>If this is a version 1 UUID (a time-based UUID), getNode() returns a
 12-character string with the &quot;node&quot; or &quot;pseudonode&quot; portion of the UUID,
@@ -46,7 +46,7 @@ the timestamp value encoded in the UUID.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_uuid__base_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>uuidString) <span>Returns true if the UUID was initialized with a valid value.</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_uuid__base_Uuid" class="inline-link"> Uuid</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_uuid__base_Uuid" class="inline-link"> Uuid</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span><span title="Must manually require () dojox/uuid/Uuid to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -126,7 +126,7 @@ RFC 4122: <a href="http://tools.ietf.org/html/rfc4122#section-4.1.7">http://tool
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_uuid__base_generateRandomUuid"></a><span class="functionIcon">generateRandomUuid</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/uuid/generateRandomUuid" class="jsdoc-link">dojox/uuid/generateRandomUuid</a><span title="Must manually require () dojox/uuid/generateRandomUuid to access" class="jsdoc-extension"></span>
@@ -165,7 +165,7 @@ of randomness, which may or may not provide much randomness.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_uuid__base_generateTimeBasedUuid"></a><span class="functionIcon">generateTimeBasedUuid</span><span class="parameters">(node)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/uuid/generateTimeBasedUuid" class="jsdoc-link">dojox/uuid/generateTimeBasedUuid</a><span title="Must manually require () dojox/uuid/generateTimeBasedUuid to access" class="jsdoc-extension"></span>
@@ -367,7 +367,7 @@ dojox.uuid.assert(version == dojox.uuid.version.TIME_BASED);</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_uuid__base_Uuid"></a><span class="functionIcon">Uuid</span><span class="parameters">(input)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a><span title="Must manually require () dojox/uuid/Uuid to access" class="jsdoc-extension"></span>

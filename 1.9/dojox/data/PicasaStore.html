@@ -7,10 +7,11 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/PicasaStore.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/data/PicasaStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/data/PicasaStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new PicasaStore<span class="parameters">(args);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new PicasaStore<span class="parameters">(args);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/data/PicasaStore">dojox/data/PicasaStore</a></div>
 <div class="jsdoc-summary"><p>The PicasaStore is a Datastore interface to one of the basic services
@@ -38,15 +39,15 @@ provides no interface for wildcards.</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon private"><a href="#1_9dojox_data_PicasaStore__picasaUrl" class="inline-link"> _picasaUrl </a><span></span><span title="private" class="jsdoc-private"></span>
+        <li class="stringIcon private"><a href="#1_9dojox_data_PicasaStore__picasaUrl" class="inline-link">_picasaUrl  </a><span>  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="stringIcon private"><a href="#1_9dojox_data_PicasaStore__storeRef" class="inline-link"> _storeRef </a><span></span><span title="private" class="jsdoc-private"></span>
+        <li class="stringIcon private"><a href="#1_9dojox_data_PicasaStore__storeRef" class="inline-link">_storeRef  </a><span>  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="stringIcon"><a href="#1_9dojox_data_PicasaStore_label" class="inline-link"> label </a><span>The attribute to use from the picasa item as its label.</span>
+        <li class="stringIcon public"><a href="#1_9dojox_data_PicasaStore_label" class="inline-link">label  </a><span>The attribute to use from the picasa item as its label.  </span>
         </li>
-        <li class="numberIcon"><a href="#1_9dojox_data_PicasaStore_maxResults" class="inline-link"> maxResults </a><span>Define out how many results to return for a fetch.</span>
+        <li class="numberIcon public"><a href="#1_9dojox_data_PicasaStore_maxResults" class="inline-link">maxResults  </a><span>Define out how many results to return for a fetch.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_9dojox_data_PicasaStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag denoting if preventCache should be passed to io.script.</span>
+        <li class="booleanIcon public"><a href="#1_9dojox_data_PicasaStore_urlPreventCache" class="inline-link">urlPreventCache  </a><span>Flag denoting if preventCache should be passed to io.script.  </span>
         </li>
       </ul>
     </div>
@@ -64,8 +65,6 @@ provides no interface for wildcards.</p>
         <li class="functionIcon private"><a href="#1_9dojox_data_PicasaStore__unescapeHtml" class="inline-link"> _unescapeHtml</a><span class="parameters">(</span>str) <span>Utility function to un-escape XML special characters in an HTML string.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_data_PicasaStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-        </li>
-        <li class="functionIcon "><a href="#1_9dojox_data_PicasaStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initializer for the PicasaStore store.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_data_PicasaStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
         </li>
@@ -287,33 +286,6 @@ be mixed into other datastore implementations to accelerate their development.</
           <tr>
             <td class="jsdoc-param-name">request</td>
             <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dojox_data_PicasaStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/data/PicasaStore" class="jsdoc-link">dojox/data/PicasaStore</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Initializer for the PicasaStore store.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>The PicasaStore is a Datastore interface to one of the basic services
-of the Picasa service, the public photo feed.  This does not provide
-access to all the services of Picasa.
-This store cannot do * and ? filtering as the picasa service
-provides no interface for wildcards.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">args</td>
-            <td class="jsdoc-param-type">Object</td>
             <td class="jsdoc-param-description">
             </td>
           </tr>

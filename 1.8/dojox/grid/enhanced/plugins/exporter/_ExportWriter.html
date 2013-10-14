@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/exporter/_ExportWriter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/grid/enhanced/plugins/exporter/_ExportWriter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This is an abstract class for all kinds of writers used in the Exporter plugin.
 It utilizes the strategy pattern to break the export work into several stages,
 and provide interfaces for all of them.
@@ -25,12 +25,11 @@ will be reached, and the header line is only handled once.
 It carries context arguments that make sense when they are called.</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new _ExportWriter<span class="parameters">(writerArgs);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _ExportWriter<span class="parameters">(writerArgs);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a></div>
-<div class="jsdoc-summary"><p>Writer initializations goes here.</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -52,7 +51,7 @@ which contains some writer-specific arguments given by the user.</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_argObj" class="inline-link"> argObj </a><span></span>
+        <li class="objectIcon public"><a href="#1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_argObj" class="inline-link">argObj  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -80,8 +79,6 @@ which contains some writer-specific arguments given by the user.</p>
         <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeSubrow" class="inline-link"> beforeSubrow</a><span class="parameters">(</span>argObj) <span>Before handling a subrow in a line (defined in the grid structure).</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_beforeView" class="inline-link"> beforeView</a><span class="parameters">(</span>argObj) <span>Before handling a view.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>writerArgs) <span>Writer initializations goes here.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_handleCell" class="inline-link"> handleCell</a><span class="parameters">(</span>argObj) <span>Handle a header cell or data cell.</span>
         </li>
@@ -426,30 +423,6 @@ Is there anything we should do now?</p>
 <li>false: skip the current view, won&#39;t call afterView.</li>
 </ul>
 </div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(writerArgs)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Writer initializations goes here.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">writerArgs</td>
-            <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>Any implementation of this class might accept a writerArgs object (optional),
-which contains some writer-specific arguments given by the user.</p>
- 
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter__ExportWriter_handleCell"></a><span class="functionIcon">handleCell</span><span class="parameters">(argObj)</span> 

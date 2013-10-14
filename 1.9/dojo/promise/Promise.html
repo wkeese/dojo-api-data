@@ -7,11 +7,16 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/promise/Promise.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/promise/Promise<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojo/promise/Promise<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>The public interface to a deferred.</p>
 </div>
 <div class="jsdoc-full-summary"><p>The public interface to a deferred. All promises in Dojo are
 instances of this class.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">Promise<span class="parameters">();</span>
+  </div>
 </div>
 <p>See the <a href="/reference-guide/1.9/dojo/promise/Promise.html" target="_blank">dojo/promise/Promise reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
@@ -23,8 +28,6 @@ instances of this class.</p>
 or rejected.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo_promise_Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo_promise_Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span>
         </li>
@@ -40,9 +43,9 @@ or rejected.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo_promise_Promise_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span>Trace the promise.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo_promise_Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span>Trace the promise.</span><span title="Must manually require () dojo/promise/tracer to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo_promise_Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span>Trace rejection of the promise.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo_promise_Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span>Trace rejection of the promise.</span><span title="Must manually require () dojo/promise/tracer to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -118,17 +121,6 @@ been fulfilled and consequently cannot be canceled.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
         <div class="jsdoc-return-description"><p>Returns the rejection reason if the deferred was canceled
 normally.</p>
-</div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dojo_promise_Promise_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>The public interface to a deferred.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>The public interface to a deferred. All promises in Dojo are
-instances of this class.</p>
 </div>
       </div>
       <div class="jsdoc-field">
@@ -252,7 +244,7 @@ This can be used for chaining many asynchronous operations.</p>
         <div class="jsdoc-return-description"><p>Returns <code>[object Promise]</code>.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo_promise_Promise_trace"></a><span class="functionIcon">trace</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/promise/tracer" class="jsdoc-link">dojo/promise/tracer</a><span title="Must manually require () dojo/promise/tracer to access" class="jsdoc-extension"></span>
@@ -269,7 +261,7 @@ to handle traces.</p>
         <div class="jsdoc-return-description"><p>The promise instance <code>trace()</code> is called on.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo_promise_Promise_traceRejected"></a><span class="functionIcon">traceRejected</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/promise/tracer" class="jsdoc-link">dojo/promise/tracer</a><span title="Must manually require () dojo/promise/tracer to access" class="jsdoc-extension"></span>

@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_AttachMixin.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dijit/_AttachMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dijit/_AttachMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Mixin for widgets to attach to dom nodes and setup events via
 convenient data-dojo-attach-point and data-dojo-attach-event DOM attributes.
 
@@ -21,12 +21,11 @@ scanning for data-dojo-attach-point and data-dojo-attach-event inside this.conta
 doesn&#39;t.</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new _AttachMixin<span class="parameters">(params,srcNodeRef);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _AttachMixin<span class="parameters">(params,srcNodeRef);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dijit/_AttachMixin">dijit/_AttachMixin</a></div>
-<div class="jsdoc-summary"><p>Create the widget.</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -57,15 +56,15 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private"><a href="#1_9dijit__AttachMixin__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
-template</span><span title="private" class="jsdoc-private"></span>
+        <li class="objectIcon private"><a href="#1_9dijit__AttachMixin__attachEvents" class="inline-link">_attachEvents  </a><span>List of connections associated with data-dojo-attach-event=... in the
+template  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="objectIcon private"><a href="#1_9dijit__AttachMixin__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
-template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span>
+        <li class="objectIcon private"><a href="#1_9dijit__AttachMixin__attachPoints" class="inline-link">_attachPoints  </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="objectIcon"><a href="#1_9dijit__AttachMixin_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span>
+        <li class="objectIcon public"><a href="#1_9dijit__AttachMixin_attachScope" class="inline-link">attachScope  </a><span>Object to which attach points and events will be scoped.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_9dijit__AttachMixin_searchContainerNode" class="inline-link"> searchContainerNode </a><span>Search descendants of this.containerNode for data-dojo-attach-point and data-dojo-attach-event.</span>
+        <li class="booleanIcon public"><a href="#1_9dijit__AttachMixin_searchContainerNode" class="inline-link">searchContainerNode  </a><span>Search descendants of this.containerNode for data-dojo-attach-point and data-dojo-attach-event.  </span>
         </li>
       </ul>
     </div>
@@ -84,8 +83,6 @@ data-dojo-attach-event.</span><span title="private" class="jsdoc-private"> </spa
         <li class="functionIcon private"><a href="#1_9dijit__AttachMixin__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon "><a href="#1_9dijit__AttachMixin_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Attach to DOM nodes marked with special attributes.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_9dijit__AttachMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dijit__AttachMixin_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span>
         </li>
@@ -266,38 +263,6 @@ Returns true if caller should process baseNode&#39;s children too.</p>
         </div>
         <div class="jsdoc-full-summary"><p>Attach to DOM nodes marked with special attributes.</p>
 </div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dijit__AttachMixin_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params, srcNodeRef)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Create the widget.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">params</td>
-            <td class="jsdoc-param-type">Object | null</td>
-            <td class="jsdoc-param-description"><p>Hash of initialization parameters for widget, including scalar values (like title, duration etc.)
-and functions, typically callbacks like onClick.
-The hash can contain any of the widget&#39;s properties, excluding read-only properties.</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">srcNodeRef</td>
-            <td class="jsdoc-param-type">DOMNode | String</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>If a srcNodeRef (DOM node) is specified, replace srcNodeRef with my generated DOM tree.</p>
- 
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dijit__AttachMixin_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">()</span> 

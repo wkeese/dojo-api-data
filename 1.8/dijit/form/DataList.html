@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/DataList.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dijit/form/DataList<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dijit/form/DataList<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojo/store/Memory" class="jsdoc-link">dojo/store/Memory</a>
 </div>
@@ -23,12 +23,11 @@
     ...</pre></code>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new DataList<span class="parameters">(params,srcNodeRef);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new DataList<span class="parameters">(params,srcNodeRef);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/form/DataList">dijit/form/DataList</a></div>
-<div class="jsdoc-summary"><p>Create the widget.</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -58,11 +57,11 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="arrayIcon inherited"><a href="#1_8dijit_form_DataList_data" class="inline-link"> data </a><span>The array of all the objects in the memory store</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        <li class="arrayIcon public inherited"><a href="#1_8dijit_form_DataList_data" class="inline-link">data  </a><span>The array of all the objects in the memory store  </span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dijit_form_DataList_idProperty" class="inline-link"> idProperty </a><span>Indicates the property to use as the identity property.</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_8dijit_form_DataList_idProperty" class="inline-link">idProperty  </a><span>Indicates the property to use as the identity property.  </span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dijit_form_DataList_index" class="inline-link"> index </a><span>An index of data indices into the data array by id</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_8dijit_form_DataList_index" class="inline-link">index  </a><span>An index of data indices into the data array by id  </span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -70,8 +69,6 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
         <li class="functionIcon  inherited"><a href="#1_8dijit_form_DataList_add" class="inline-link"> add</a><span class="parameters">(</span>object, options) <span>Creates an object, throws an error if the object already exists</span><span title="inherited from dojo/store/Memory" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dijit_form_DataList_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dijit_form_DataList_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
         </li>
@@ -105,7 +102,7 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_8dijit_form_DataList_data"></a><span class="arrayIcon">data</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/store/Memory" class="jsdoc-link">dojo/store/Memory</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -113,7 +110,7 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
         <div class="jsdoc-summary"><p>The array of all the objects in the memory store</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_8dijit_form_DataList_idProperty"></a><span class="stringIcon">idProperty</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/store/Memory" class="jsdoc-link">dojo/store/Memory</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -122,7 +119,7 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
 property should be unique.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_8dijit_form_DataList_index"></a><span class="objectIcon">index</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/store/Memory" class="jsdoc-link">dojo/store/Memory</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -164,37 +161,6 @@ property if a specific id is to be used.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | undefined</span></div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dijit_form_DataList_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params, srcNodeRef)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/DataList" class="jsdoc-link">dijit/form/DataList</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Create the widget.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">params</td>
-            <td class="jsdoc-param-type">Object | null</td>
-            <td class="jsdoc-param-description"><p>Hash of initialization parameters for widget, including scalar values (like title, duration etc.)
-and functions, typically callbacks like onClick.
-The hash can contain any of the widget&#39;s properties, excluding read-only properties.</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">srcNodeRef</td>
-            <td class="jsdoc-param-type">DOMNode | String</td>
-            <td class="jsdoc-param-description"><p>Attach widget to this DOM node.</p>
- 
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dijit_form_DataList_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 

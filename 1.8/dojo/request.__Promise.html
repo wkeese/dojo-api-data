@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request.__Promise.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojo/request.__Promise<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojo/request.__Promise<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
 </div>
@@ -17,8 +17,9 @@
   In other words, the type exists only for documentation purposes, and you <strong>cannot</strong> call <code>new request.__Promise()</code>
 </p>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new request.__Promise<span class="parameters">();</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new request.__Promise<span class="parameters">();</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a></div>
 <div class="jsdoc-summary"><p>The public interface to a deferred. All promises in Dojo are
@@ -29,8 +30,8 @@ instances of this class.</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon inherited"><a href="#1_8dojo_request___Promise_response" class="inline-link"> response </a><span>A promise resolving to an object representing
-the response from the server.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_8dojo_request___Promise_response" class="inline-link">response  </a><span>A promise resolving to an object representing
+the response from the server.  </span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -41,8 +42,6 @@ the response from the server.</span><span title="inherited from dojo/request" cl
 or rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_request___Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span><span title="inherited from dojo/promise/Promise" class="jsdoc-inherited"></span>
         </li>
@@ -70,7 +69,7 @@ or rejected.</span><span title="inherited from dojo/promise/Promise" class="jsdo
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_8dojo_request___Promise_response"></a><span class="objectIcon">response</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request" class="jsdoc-link">dojo/request</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -148,17 +147,6 @@ been fulfilled and consequently cannot be canceled.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
         <div class="jsdoc-return-description"><p>Returns the rejection reason if the deferred was canceled
 normally.</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojo_request___Promise_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>The public interface to a deferred.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>The public interface to a deferred. All promises in Dojo are
-instances of this class.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">

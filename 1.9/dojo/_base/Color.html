@@ -7,11 +7,16 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/Color.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/_base/Color<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojo/_base/Color<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Takes a named string, hex string, array of rgb or rgba values,
 an object with r, g, b, and a properties, or another <code>Color</code> object
 and creates a new Color instance to work from.
 </p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">Color<span class="parameters">(color);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -55,15 +60,15 @@ console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="numberIcon"><a href="#1_9dojo__base_Color_a" class="inline-link"> a </a><span></span>
+        <li class="numberIcon public"><a href="#1_9dojo__base_Color_a" class="inline-link">a  </a><span>  </span>
         </li>
-        <li class="numberIcon"><a href="#1_9dojo__base_Color_b" class="inline-link"> b </a><span></span>
+        <li class="numberIcon public"><a href="#1_9dojo__base_Color_b" class="inline-link">b  </a><span>  </span>
         </li>
-        <li class="numberIcon"><a href="#1_9dojo__base_Color_g" class="inline-link"> g </a><span></span>
+        <li class="numberIcon public"><a href="#1_9dojo__base_Color_g" class="inline-link">g  </a><span>  </span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojo__base_Color_named" class="inline-link"> named </a><span>Dictionary list of all CSS named colors, by name.</span>
+        <li class="objectIcon public"><a href="#1_9dojo__base_Color_named" class="inline-link">named  </a><span>Dictionary list of all CSS named colors, by name.  </span>
         </li>
-        <li class="numberIcon"><a href="#1_9dojo__base_Color_r" class="inline-link"> r </a><span></span>
+        <li class="numberIcon public"><a href="#1_9dojo__base_Color_r" class="inline-link">r  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -75,38 +80,34 @@ console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_blendColors" class="inline-link"> blendColors</a><span class="parameters">(</span>start, end, weight, obj) <span>Blend colors end and start with weight from 0 to 1, 0.5 being a 50/50 blend,
 can reuse a previously allocated Color object for the result</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>color) <span>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another Color object
-and creates a new Color instance to work from.</span>
-        </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_fromArray" class="inline-link"> fromArray</a><span class="parameters">(</span>a, obj) <span>Builds a Color from a 3 or 4 element array, mapping each
 element in sequence to the rgb(a) values of the color.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_fromHex" class="inline-link"> fromHex</a><span class="parameters">(</span>color, obj) <span>Converts a hex string with a &#39;#&#39; prefix to a color object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_fromRgb" class="inline-link"> fromRgb</a><span class="parameters">(</span>color, obj) <span>get rgb(a) array from css-style color declarations</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_fromRgb" class="inline-link"> fromRgb</a><span class="parameters">(</span>color, obj) <span>get rgb(a) array from css-style color declarations</span><span title="Must manually require () dojo/colors to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_fromString" class="inline-link"> fromString</a><span class="parameters">(</span>str, obj) <span>Parses str for a color value.</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_makeGrey" class="inline-link"> makeGrey</a><span class="parameters">(</span>g, a) <span>creates a greyscale color with an optional alpha</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_makeGrey" class="inline-link"> makeGrey</a><span class="parameters">(</span>g, a) <span>creates a greyscale color with an optional alpha</span><span title="Must manually require () dojo/colors to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_sanitize" class="inline-link"> sanitize</a><span class="parameters">(</span>) <span>makes sure that the object has correct attributes</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_sanitize" class="inline-link"> sanitize</a><span class="parameters">(</span>) <span>makes sure that the object has correct attributes</span><span title="Must manually require () dojo/colors to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_setColor" class="inline-link"> setColor</a><span class="parameters">(</span>color) <span>Takes a named string, hex string, array of rgb or rgba values,
 an object with r, g, b, and a properties, or another Color object
 and sets this color instance to that value.</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_toCmy" class="inline-link"> toCmy</a><span class="parameters">(</span>) <span>Convert this Color to a CMY definition.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_toCmy" class="inline-link"> toCmy</a><span class="parameters">(</span>) <span>Convert this Color to a CMY definition.</span><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_toCmyk" class="inline-link"> toCmyk</a><span class="parameters">(</span>) <span>Convert this Color to a CMYK definition.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_toCmyk" class="inline-link"> toCmyk</a><span class="parameters">(</span>) <span>Convert this Color to a CMYK definition.</span><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_toCss" class="inline-link"> toCss</a><span class="parameters">(</span>includeAlpha) <span>Returns a css color string in rgb(a) representation</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_toHex" class="inline-link"> toHex</a><span class="parameters">(</span>) <span>Returns a CSS color string in hexadecimal representation</span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_toHsl" class="inline-link"> toHsl</a><span class="parameters">(</span>) <span>Convert this Color to an HSL definition.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_toHsl" class="inline-link"> toHsl</a><span class="parameters">(</span>) <span>Convert this Color to an HSL definition.</span><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojo__base_Color_toHsv" class="inline-link"> toHsv</a><span class="parameters">(</span>) <span>Convert this Color to an HSV definition.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojo__base_Color_toHsv" class="inline-link"> toHsv</a><span class="parameters">(</span>) <span>Convert this Color to an HSV definition.</span><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojo__base_Color_toRgb" class="inline-link"> toRgb</a><span class="parameters">(</span>) <span>Returns 3 component array of rgb values</span>
         </li>
@@ -239,53 +240,6 @@ can reuse a previously allocated Color object for the result</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dojo__base_Color_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(color)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/_base/Color" class="jsdoc-link">dojo/_base/Color</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Takes a named string, hex string, array of rgb or rgba values,
-an object with r, g, b, and a properties, or another <code>Color</code> object
-and creates a new Color instance to work from.
-</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">color</td>
-            <td class="jsdoc-param-type">Array | String | Object</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-        <div class="jsdoc-examples">
-          <h2>Examples</h2>
-          <div class="jsdoc-example">
-            <h3>Example 1</h3><p>Work with a Color instance:
-
-</p>
-<pre><code>var c = new Color();
-c.setColor([0,0,0]); // black
-var hex = c.toHex(); // #000000</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Work with a node&#39;s color:
-
-</p>
-<pre><code>var color = dojo.style(&quot;someNode&quot;, &quot;backgroundColor&quot;);
-var n = new Color(color);
-// adjust the color some
-n.r *= .5;
-console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
-
-          </div>
-        </div>
-      </div>
-      <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_fromArray"></a><span class="functionIcon">fromArray</span><span class="parameters">(a, obj)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/_base/Color" class="jsdoc-link">dojo/_base/Color</a>
@@ -370,7 +324,7 @@ Supports 12-bit #rgb shorthand. Optionally accepts a
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_fromRgb"></a><span class="functionIcon">fromRgb</span><span class="parameters">(color, obj)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/colors" class="jsdoc-link">dojo/colors</a><span title="Must manually require () dojo/colors to access" class="jsdoc-extension"></span>
@@ -439,7 +393,7 @@ rgb or rgba strings such as &quot;rgb(133, 200, 16)&quot; or &quot;rgba(10, 10,
         <div class="jsdoc-return-description"><p>A Color object. If obj is passed, it will be the return value.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_makeGrey"></a><span class="functionIcon">makeGrey</span><span class="parameters">(g, a)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/colors" class="jsdoc-link">dojo/colors</a><span title="Must manually require () dojo/colors to access" class="jsdoc-extension"></span>
@@ -467,7 +421,7 @@ rgb or rgba strings such as &quot;rgb(133, 200, 16)&quot; or &quot;rgba(10, 10,
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_sanitize"></a><span class="functionIcon">sanitize</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/colors" class="jsdoc-link">dojo/colors</a><span title="Must manually require () dojo/colors to access" class="jsdoc-extension"></span>
@@ -513,7 +467,7 @@ c.setColor(&quot;#ededed&quot;); // greyish</code></pre>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_toCmy"></a><span class="functionIcon">toCmy</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/color/_base" class="jsdoc-link">dojox/color/_base</a><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
@@ -522,7 +476,7 @@ c.setColor(&quot;#ededed&quot;); // greyish</code></pre>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_toCmyk"></a><span class="functionIcon">toCmyk</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/color/_base" class="jsdoc-link">dojox/color/_base</a><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
@@ -578,7 +532,7 @@ console.log(c); // rgb(&#39;255&#39;,&#39;255&#39;,&#39;255&#39;)</code></pre>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_toHsl"></a><span class="functionIcon">toHsl</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/color/_base" class="jsdoc-link">dojox/color/_base</a><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>
@@ -587,7 +541,7 @@ console.log(c); // rgb(&#39;255&#39;,&#39;255&#39;,&#39;255&#39;)</code></pre>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojo__base_Color_toHsv"></a><span class="functionIcon">toHsv</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/color/_base" class="jsdoc-link">dojox/color/_base</a><span title="Must manually require () dojox/color/_base to access" class="jsdoc-extension"></span>

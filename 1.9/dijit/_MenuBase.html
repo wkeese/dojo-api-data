@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_MenuBase.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dijit/_MenuBase<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dijit/_MenuBase<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_Widget" class="jsdoc-link">dijit/_Widget, </a><a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin, </a><a href="/api/1.9/dijit/_KeyNavContainer" class="jsdoc-link">dijit/_KeyNavContainer, </a><a href="/api/1.9/dijit/_CssStateMixin" class="jsdoc-link">dijit/_CssStateMixin</a>
 </div>
@@ -15,12 +15,11 @@
 Subclass should implement _onUpArrow(), _onDownArrow(), _onLeftArrow(), and _onRightArrow().</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new _MenuBase<span class="parameters">(params,srcNodeRef);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _MenuBase<span class="parameters">(params,srcNodeRef);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dijit/_Widget">dijit/_Widget</a></div>
-<div class="jsdoc-summary"><p>Create the widget.</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -58,109 +57,109 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
-template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__attachEvents" class="inline-link">_attachEvents  </a><span>List of connections associated with data-dojo-attach-event=... in the
+template  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
-template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__attachPoints" class="inline-link">_attachPoints  </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__attrPairNames" class="inline-link">_attrPairNames  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_9dijit__MenuBase__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dijit__MenuBase__blankGif" class="inline-link">_blankGif  </a><span>Path to a blank 1x1 image.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__focusManager" class="inline-link"> _focusManager </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__focusManager" class="inline-link">_focusManager  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__keyNavCodes" class="inline-link"> _keyNavCodes </a><span>Hash mapping key code (arrow keys and home/end key) to functions to handle those keys.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__keyNavCodes" class="inline-link">_keyNavCodes  </a><span>Hash mapping key code (arrow keys and home/end key) to functions to handle those keys.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_9dijit__MenuBase__rendered" class="inline-link"> _rendered </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
-i.e. already inlining the template for the widget into the main page.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit__MenuBase__rendered" class="inline-link">_rendered  </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
+i.e. already inlining the template for the widget into the main page.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_9dijit__MenuBase__searchString" class="inline-link"> _searchString </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dijit__MenuBase__searchString" class="inline-link">_searchString  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__setClassAttr" class="inline-link">_setClassAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__setDirAttr" class="inline-link">_setDirAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_9dijit__MenuBase__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dijit__MenuBase__setIdAttr" class="inline-link">_setIdAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__MenuBase__setLangAttr" class="inline-link">_setLangAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_9dijit__MenuBase__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit__MenuBase__skipNodeCache" class="inline-link">_skipNodeCache  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_9dijit__MenuBase__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dijit__MenuBase__started" class="inline-link">_started  </a><span>startup() has completed.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dijit__MenuBase_activated" class="inline-link"> activated </a><span>This Menu has been clicked (mouse or via space/arrow key) or opened as a submenu,
-so mere mouseover will open submenus.</span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon public"><a href="#1_9dijit__MenuBase_activated" class="inline-link">activated  </a><span>This Menu has been clicked (mouse or via space/arrow key) or opened as a submenu,
+so mere mouseover will open submenus.  </span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dijit__MenuBase_active" class="inline-link"> active </a><span>True if mouse was pressed while over this widget, and hasn&#39;t been released yet</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        <li class="booleanIcon public inherited"><a href="#1_9dijit__MenuBase_active" class="inline-link">active  </a><span>True if mouse was pressed while over this widget, and hasn&#39;t been released yet  </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dijit__MenuBase_attachScope" class="inline-link">attachScope  </a><span>Object to which attach points and events will be scoped.  </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dijit__MenuBase_attributeMap" class="inline-link">attributeMap  </a><span>Deprecated.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dijit__MenuBase_autoFocus" class="inline-link"> autoFocus </a><span>A toggle to control whether or not a Menu gets focused when opened as a drop down from a MenuBar
-or DropDownButton/ComboButton.</span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon public"><a href="#1_9dijit__MenuBase_autoFocus" class="inline-link">autoFocus  </a><span>A toggle to control whether or not a Menu gets focused when opened as a drop down from a MenuBar
+or DropDownButton/ComboButton.  </span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_baseClass" class="inline-link"> baseClass </a><span>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
-widget state.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_baseClass" class="inline-link">baseClass  </a><span>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
+widget state.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_class" class="inline-link">class  </a><span>  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_9dijit__MenuBase_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
-&quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon public inherited"><a href="#1_9dijit__MenuBase_containerNode" class="inline-link">containerNode  </a><span>Designates where children of the source DOM node will be placed.
+&quot;Children&quot; in this case refers to both DOM nodes and widgets.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_cssStateNodes" class="inline-link"> cssStateNodes </a><span>Subclasses may define a cssStateNodes property that lists sub-nodes within the widget that
-need CSS classes applied on mouse hover/press and focus.</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dijit__MenuBase_cssStateNodes" class="inline-link">cssStateNodes  </a><span>Subclasses may define a cssStateNodes property that lists sub-nodes within the widget that
+need CSS classes applied on mouse hover/press and focus.  </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
-attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_dir" class="inline-link">dir  </a><span>Bi-directional support, as defined by the HTML DIR
+attribute.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_9dijit__MenuBase_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon public inherited"><a href="#1_9dijit__MenuBase_domNode" class="inline-link">domNode  </a><span>This is our visible representation of the widget!  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dijit__MenuBase_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
-it was recently clicked.</span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        <li class="booleanIcon public inherited"><a href="#1_9dijit__MenuBase_focused" class="inline-link">focused  </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+it was recently clicked.  </span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_focusedChild" class="inline-link"> focusedChild </a><span>The currently focused child widget, or null if there isn&#39;t one</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dijit__MenuBase_focusedChild" class="inline-link">focusedChild  </a><span>The currently focused child widget, or null if there isn&#39;t one  </span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dijit__MenuBase_hovering" class="inline-link"> hovering </a><span>True if cursor is over this widget</span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
+        <li class="booleanIcon public inherited"><a href="#1_9dijit__MenuBase_hovering" class="inline-link">hovering  </a><span>True if cursor is over this widget  </span><span title="inherited from dijit/_CssStateMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
-system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_id" class="inline-link">id  </a><span>A unique, opaque ID string that can be assigned by users or by the
+system.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_lang" class="inline-link">lang  </a><span>Rarely used.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="numberIcon inherited"><a href="#1_9dijit__MenuBase_multiCharSearchDuration" class="inline-link"> multiCharSearchDuration </a><span>If multiple characters are typed where each keystroke happens within
+        <li class="numberIcon public inherited"><a href="#1_9dijit__MenuBase_multiCharSearchDuration" class="inline-link">multiCharSearchDuration  </a><span>If multiple characters are typed where each keystroke happens within
 multiCharSearchDuration of the previous keystroke,
-search for nodes matching all the keystrokes.</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+search for nodes matching all the keystrokes.  </span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dijit__MenuBase_ownerDocument" class="inline-link">ownerDocument  </a><span>The document this widget belongs to.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_parentMenu" class="inline-link"> parentMenu </a><span>pointer to menu that displayed me</span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon public"><a href="#1_9dijit__MenuBase_parentMenu" class="inline-link">parentMenu  </a><span>pointer to menu that displayed me  </span>
         </li>
-        <li class="numberIcon inherited"><a href="#1_9dijit__MenuBase_passivePopupDelay" class="inline-link"> passivePopupDelay </a><span>For a passive (unclicked) Menu, number of milliseconds before hovering (without clicking) will cause
-the popup to open.</span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
+        <li class="numberIcon public"><a href="#1_9dijit__MenuBase_passivePopupDelay" class="inline-link">passivePopupDelay  </a><span>For a passive (unclicked) Menu, number of milliseconds before hovering (without clicking) will cause
+the popup to open.  </span>
         </li>
-        <li class="numberIcon inherited"><a href="#1_9dijit__MenuBase_popupDelay" class="inline-link"> popupDelay </a><span>After a menu has been activated (by clicking on it etc.), number of milliseconds before hovering
-(without clicking) another MenuItem causes that MenuItem&#39;s popup to automatically open.</span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
+        <li class="numberIcon public"><a href="#1_9dijit__MenuBase_popupDelay" class="inline-link">popupDelay  </a><span>After a menu has been activated (by clicking on it etc.), number of milliseconds before hovering
+(without clicking) another MenuItem causes that MenuItem&#39;s popup to automatically open.  </span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dijit__MenuBase_searchContainerNode" class="inline-link"> searchContainerNode </a><span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="booleanIcon public inherited"><a href="#1_9dijit__MenuBase_searchContainerNode" class="inline-link">searchContainerNode  </a><span>  </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__MenuBase_selected" class="inline-link"> selected </a><span>Currently selected (a.k.a. highlighted) MenuItem, or null if no MenuItem is selected.</span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon public"><a href="#1_9dijit__MenuBase_selected" class="inline-link">selected  </a><span>Currently selected (a.k.a. highlighted) MenuItem, or null if no MenuItem is selected.  </span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_9dijit__MenuBase_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon public inherited"><a href="#1_9dijit__MenuBase_srcNodeRef" class="inline-link">srcNodeRef  </a><span>pointer to original DOM node  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_style" class="inline-link">style  </a><span>HTML style attributes as cssText string or name/value hash  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_tabIndex" class="inline-link"> tabIndex </a><span>Tab index of the container; same as HTML tabIndex attribute.</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_tabIndex" class="inline-link">tabIndex  </a><span>Tab index of the container; same as HTML tabIndex attribute.  </span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_templatePath" class="inline-link">templatePath  </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.  </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_templateString" class="inline-link"> templateString </a><span>A string that represents the widget template.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_templateString" class="inline-link">templateString  </a><span>A string that represents the widget template.  </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_title" class="inline-link">title  </a><span>HTML title attribute.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__MenuBase_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
-this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dijit__MenuBase_tooltip" class="inline-link">tooltip  </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+this specifies the tooltip to appear when the mouse is hovered over that text.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -282,8 +281,6 @@ like MenuSeparator.</span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_connectKeyNavHandlers" class="inline-link"> connectKeyNavHandlers</a><span class="parameters">(</span>prevKeyCodes, nextKeyCodes) <span>Deprecated.</span><span title="inherited from dijit/_KeyNavContainer" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, srcNodeRef) <span>Create the widget.</span><span title="inherited from dijit/_Widget" class="jsdoc-inherited"></span>
-        </li>
         <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
@@ -377,26 +374,26 @@ not destroy it.</span><span title="inherited from dijit/_Container" class="jsdoc
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>Called when focus is moved away from this Menu and it&#39;s submenus.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>Called when focus is moved away from this Menu and it&#39;s submenus.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onChildBlur" class="inline-link"> _onChildBlur</a><span class="parameters">(</span>widget) <span>Called when focus leaves a child widget to go
-to a sibling widget.</span><span title="inherited" class="jsdoc-inherited"></span>
+to a sibling widget.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onChildDeselect" class="inline-link"> _onChildDeselect</a><span class="parameters">(</span>item) <span>Called when a child MenuItem becomes deselected.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onChildDeselect" class="inline-link"> _onChildDeselect</a><span class="parameters">(</span>item) <span>Called when a child MenuItem becomes deselected.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onChildFocus" class="inline-link"> _onChildFocus</a><span class="parameters">(</span>child) <span>Called when a child widget gets focus, either by user clicking
-it, or programatically by arrow key handling code.</span><span title="inherited" class="jsdoc-inherited"></span>
+it, or programatically by arrow key handling code.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onContainerFocus" class="inline-link"> _onContainerFocus</a><span class="parameters">(</span>evt) <span>Handler for when the container itself gets focus.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onContainerFocus" class="inline-link"> _onContainerFocus</a><span class="parameters">(</span>evt) <span>Handler for when the container itself gets focus.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onContainerKeydown" class="inline-link"> _onContainerKeydown</a><span class="parameters">(</span>evt) <span>When a key is pressed, if it&#39;s an arrow key etc. then it&#39;s handled here.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onContainerKeydown" class="inline-link"> _onContainerKeydown</a><span class="parameters">(</span>evt) <span>When a key is pressed, if it&#39;s an arrow key etc. then it&#39;s handled here.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onContainerKeypress" class="inline-link"> _onContainerKeypress</a><span class="parameters">(</span>evt) <span>When a printable key is pressed, it&#39;s handled here, searching by letter.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onContainerKeypress" class="inline-link"> _onContainerKeypress</a><span class="parameters">(</span>evt) <span>When a printable key is pressed, it&#39;s handled here, searching by letter.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onDownArrow" class="inline-link"> _onDownArrow</a><span class="parameters">(</span>) <span>Called on down arrow key.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onDownArrow" class="inline-link"> _onDownArrow</a><span class="parameters">(</span>) <span>Called on down arrow key.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
-such as changing CSS classes.</span><span title="inherited" class="jsdoc-inherited"></span>
+such as changing CSS classes.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onItemFocus" class="inline-link"> _onItemFocus</a><span class="parameters">(</span>item) <span>Called when child of this Menu gets focus from:
 
@@ -404,19 +401,19 @@ such as changing CSS classes.</span><span title="inherited" class="jsdoc-inherit
 
 clicking it
 tabbing into it
-being opened by a parent menu.</span>
+being opened by a parent menu.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onLeftArrow" class="inline-link"> _onLeftArrow</a><span class="parameters">(</span>) <span>Called on left arrow key, or right arrow key if widget is in RTL mode.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onLeftArrow" class="inline-link"> _onLeftArrow</a><span class="parameters">(</span>) <span>Called on left arrow key, or right arrow key if widget is in RTL mode.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onPopupHover" class="inline-link"> _onPopupHover</a><span class="parameters">(</span>evt) <span>This handler is called when the mouse moves over the popup.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__MenuBase__onPopupHover" class="inline-link"> _onPopupHover</a><span class="parameters">(</span>evt) <span>This handler is called when the mouse moves over the popup.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onRightArrow" class="inline-link"> _onRightArrow</a><span class="parameters">(</span>) <span>Called on right arrow key, or left arrow key if widget is in RTL mode.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onRightArrow" class="inline-link"> _onRightArrow</a><span class="parameters">(</span>) <span>Called on right arrow key, or left arrow key if widget is in RTL mode.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onShow" class="inline-link"> _onShow</a><span class="parameters">(</span>) <span>Internal method called when this widget is made visible.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onShow" class="inline-link"> _onShow</a><span class="parameters">(</span>) <span>Internal method called when this widget is made visible.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onUpArrow" class="inline-link"> _onUpArrow</a><span class="parameters">(</span>) <span>Called on up arrow key.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit__MenuBase__onUpArrow" class="inline-link"> _onUpArrow</a><span class="parameters">(</span>) <span>Called on up arrow key.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
@@ -429,7 +426,7 @@ close them.</span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>event) <span>Connect to this function to receive notifications of mouse click events.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__MenuBase_onClose" class="inline-link"> onClose</a><span class="parameters">(</span>) <span>Callback when this menu is closed.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__MenuBase_onClose" class="inline-link"> onClose</a><span class="parameters">(</span>) <span>Callback when this menu is closed.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_onDblClick" class="inline-link"> onDblClick</a><span class="parameters">(</span>event) <span>Connect to this function to receive notifications of mouse double click events.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
@@ -443,7 +440,7 @@ been clicked.</span><span title="inherited" class="jsdoc-inherited"></span>
 dijit/layout/TabContainer, dijit/layout/StackContainer,
 dijit/layout/AccordionContainer, etc.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__MenuBase_onItemClick" class="inline-link"> onItemClick</a><span class="parameters">(</span>item, evt) <span>Handle clicks on an item.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__MenuBase_onItemClick" class="inline-link"> onItemClick</a><span class="parameters">(</span>item, evt) <span>Handle clicks on an item.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dijit__MenuBase_onItemHover" class="inline-link"> onItemHover</a><span class="parameters">(</span>item) <span>Called when cursor is over a MenuItem.</span>
         </li>
@@ -472,7 +469,7 @@ via the keyboard search mechanism.</span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>event) <span>Connect to this function to receive notifications of when the mouse button is released.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__MenuBase_onOpen" class="inline-link"> onOpen</a><span class="parameters">(</span>e) <span>Callback when this menu is opened.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__MenuBase_onOpen" class="inline-link"> onOpen</a><span class="parameters">(</span>e) <span>Callback when this menu is opened.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dijit__MenuBase_onShow" class="inline-link"> onShow</a><span class="parameters">(</span>) <span>Called when this widget becomes the selected pane in a
 dijit/layout/TabContainer, dijit/layout/StackContainer,
@@ -486,7 +483,7 @@ dijit/layout/AccordionContainer, etc.</span><span title="inherited" class="jsdoc
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__attachEvents"></a><span class="objectIcon">_attachEvents</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -495,7 +492,7 @@ dijit/layout/AccordionContainer, etc.</span><span title="inherited" class="jsdoc
 template</p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__attachPoints"></a><span class="objectIcon">_attachPoints</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -504,13 +501,13 @@ template</p>
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -519,13 +516,13 @@ template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</p>
 Used by <code>&lt;img&gt;</code> nodes in templates that really get their image via CSS background-image.</p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__focusManager"></a><span class="objectIcon">_focusManager</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__keyNavCodes"></a><span class="objectIcon">_keyNavCodes</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -534,7 +531,7 @@ Used by <code>&lt;img&gt;</code> nodes in templates that really get their image 
 Usually not used directly, as subclasses can instead override _onLeftArrow() etc.</p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__rendered"></a><span class="booleanIcon">_rendered</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -544,43 +541,43 @@ i.e. already inlining the template for the widget into the main page.   Reduces 
 just function like _AttachMixin.</p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__searchString"></a><span class="stringIcon">_searchString</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__skipNodeCache"></a><span class="booleanIcon">_skipNodeCache</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -591,7 +588,7 @@ just function like _AttachMixin.</p>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_activated"></a><span class="booleanIcon">activated</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
         <div class="jsdoc-summary"><p>This Menu has been clicked (mouse or via space/arrow key) or opened as a submenu,
 so mere mouseover will open submenus.  Focusing a menu via TAB does NOT automatically make it active
@@ -600,7 +597,7 @@ For Windows apps, pressing the ALT key focuses the menubar menus (similar to TAB
 menu is not active (ie no dropdown) until an item is clicked.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_active"></a><span class="booleanIcon">active</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_CssStateMixin" class="jsdoc-link">dijit/_CssStateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -608,7 +605,7 @@ menu is not active (ie no dropdown) until an item is clicked.</p>
         <div class="jsdoc-summary"><p>True if mouse was pressed while over this widget, and hasn&#39;t been released yet</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_attachScope"></a><span class="objectIcon">attachScope</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -617,7 +614,7 @@ menu is not active (ie no dropdown) until an item is clicked.</p>
 to &#39;this&#39;.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_attributeMap"></a><span class="objectIcon">attributeMap</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -684,13 +681,13 @@ formats of the above list.
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_autoFocus"></a><span class="booleanIcon">autoFocus</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
         <div class="jsdoc-summary"><p>A toggle to control whether or not a Menu gets focused when opened as a drop down from a MenuBar
 or DropDownButton/ComboButton.   Note though that it always get focused when opened via the keyboard.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_baseClass"></a><span class="stringIcon">baseClass</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -699,13 +696,13 @@ or DropDownButton/ComboButton.   Note though that it always get focused when ope
 widget state.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_class"></a><span class="stringIcon">class</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_containerNode"></a><span class="domnodeIcon">containerNode</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -737,7 +734,7 @@ data-dojo-attach-point assignment.
 is null for widgets that don&#39;t, like TextBox.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_cssStateNodes"></a><span class="objectIcon">cssStateNodes</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_CssStateMixin" class="jsdoc-link">dijit/_CssStateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -760,7 +757,7 @@ need CSS classes applied on mouse hover/press and focus.
 <p>is hovered, etc.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_dir"></a><span class="stringIcon">dir</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -770,7 +767,7 @@ attribute. Either left-to-right &quot;ltr&quot; or right-to-left &quot;rtl&quot;
 default direction.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_domNode"></a><span class="domnodeIcon">domNode</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -781,7 +778,7 @@ template system&#39;s data-dojo-attach-point syntax, but the domNode
 property is the canonical &quot;top level&quot; node in widget UI.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_focused"></a><span class="booleanIcon">focused</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -790,7 +787,7 @@ property is the canonical &quot;top level&quot; node in widget UI.</p>
 it was recently clicked.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_focusedChild"></a><span class="objectIcon">focusedChild</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -798,7 +795,7 @@ it was recently clicked.</p>
         <div class="jsdoc-summary"><p>The currently focused child widget, or null if there isn&#39;t one</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_hovering"></a><span class="booleanIcon">hovering</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_CssStateMixin" class="jsdoc-link">dijit/_CssStateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -806,7 +803,7 @@ it was recently clicked.</p>
         <div class="jsdoc-summary"><p>True if cursor is over this widget</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_id"></a><span class="stringIcon">id</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -817,7 +814,7 @@ unique, the specified ID is ignored and the system-generated ID is
 used instead.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_lang"></a><span class="stringIcon">lang</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -828,7 +825,7 @@ Value must be among the list of locales specified during by the Dojo bootstrap,
 formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a> (like en-us).</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_multiCharSearchDuration"></a><span class="numberIcon">multiCharSearchDuration</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -842,7 +839,7 @@ search for nodes matching all the keystrokes.
 &quot;ab&quot; unless the delay between &quot;a&quot; and &quot;b&quot; is greater than multiCharSearchDuration.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -854,7 +851,7 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document glo
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_parentMenu"></a><span class="objectIcon">parentMenu</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
         <div class="jsdoc-summary"><p>pointer to menu that displayed me</p>
 </div>
@@ -862,7 +859,7 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document glo
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_passivePopupDelay"></a><span class="numberIcon">passivePopupDelay</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
         <div class="jsdoc-summary"><p>For a passive (unclicked) Menu, number of milliseconds before hovering (without clicking) will cause
 the popup to open.  Default is Infinity, meaning you need to click the menu to open it.</p>
@@ -871,13 +868,13 @@ the popup to open.  Default is Infinity, meaning you need to click the menu to o
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_popupDelay"></a><span class="numberIcon">popupDelay</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
         <div class="jsdoc-summary"><p>After a menu has been activated (by clicking on it etc.), number of milliseconds before hovering
 (without clicking) another MenuItem causes that MenuItem&#39;s popup to automatically open.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_searchContainerNode"></a><span class="booleanIcon">searchContainerNode</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -886,7 +883,7 @@ the popup to open.  Default is Infinity, meaning you need to click the menu to o
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_selected"></a><span class="objectIcon">selected</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
         <div class="jsdoc-summary"><p>Currently selected (a.k.a. highlighted) MenuItem, or null if no MenuItem is selected.
 If a submenu is open, will be set to MenuItem that displayed the submenu.   OTOH, if
@@ -894,7 +891,7 @@ this Menu is in passive mode (i.e. hasn&#39;t been clicked yet), will be null, b
 &quot;selected&quot; is not merely &quot;hovered&quot;.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -902,7 +899,7 @@ this Menu is in passive mode (i.e. hasn&#39;t been clicked yet), will be null, b
         <div class="jsdoc-summary"><p>pointer to original DOM node</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_style"></a><span class="stringIcon">style</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -910,7 +907,7 @@ this Menu is in passive mode (i.e. hasn&#39;t been clicked yet), will be null, b
         <div class="jsdoc-summary"><p>HTML style attributes as cssText string or name/value hash</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_tabIndex"></a><span class="stringIcon">tabIndex</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -920,7 +917,7 @@ Note then when user tabs into the container, focus is immediately
 moved to the first item in the container.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_templatePath"></a><span class="stringIcon">templatePath</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -929,7 +926,7 @@ moved to the first item in the container.</p>
 Deprecated: use templateString with require([... &quot;<a class="jsdoc-link" href="/api/1.9/dojo/text">dojo/text</a>!...&quot;], ...) instead</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_templateString"></a><span class="stringIcon">templateString</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -938,7 +935,7 @@ Deprecated: use templateString with require([... &quot;<a class="jsdoc-link" hre
 Use in conjunction with dojo.cache() to load from a file.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_title"></a><span class="stringIcon">title</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -955,7 +952,7 @@ etc., it&#39;s used to specify the tab label, accordion pane title, etc.  In thi
 interpreted as HTML.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_tooltip"></a><span class="stringIcon">tooltip</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -2077,45 +2074,6 @@ _onUpArrow() and _onDownArrow(), to call focusPrev() and focusNext().</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params, srcNodeRef)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_Widget" class="jsdoc-link">dijit/_Widget</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Create the widget.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">params</td>
-            <td class="jsdoc-param-type">Object | null</td>
-            <td class="jsdoc-param-description"><p>Hash of initialization parameters for widget, including scalar values (like title, duration etc.)
-and functions, typically callbacks like onClick.
-The hash can contain any of the widget&#39;s properties, excluding read-only properties.</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">srcNodeRef</td>
-            <td class="jsdoc-param-type">DOMNode | String</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>If a srcNodeRef (DOM node) is specified:
-
-</p>
-<ul>
-<li>use srcNodeRef.innerHTML as my contents</li>
-<li>if this is a behavioral widget then apply behavior to that srcNodeRef</li>
-<li>otherwise, replace srcNodeRef with my generated DOM tree</li>
-</ul>
- 
-            </td>
-          </tr>
-        </table>
-      </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__MenuBase_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
@@ -3005,7 +2963,7 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
@@ -3013,7 +2971,7 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onChildBlur"></a><span class="functionIcon">_onChildBlur</span><span class="parameters">(widget)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onChildBlur"></a><span class="functionIcon">_onChildBlur</span><span class="parameters">(widget)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3036,7 +2994,7 @@ Used to be used by MenuBase.js (remove for 2.0)</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onChildDeselect"></a><span class="functionIcon">_onChildDeselect</span><span class="parameters">(item)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onChildDeselect"></a><span class="functionIcon">_onChildDeselect</span><span class="parameters">(item)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
@@ -3057,7 +3015,7 @@ Used to be used by MenuBase.js (remove for 2.0)</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onChildFocus"></a><span class="functionIcon">_onChildFocus</span><span class="parameters">(child)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onChildFocus"></a><span class="functionIcon">_onChildFocus</span><span class="parameters">(child)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3082,7 +3040,7 @@ selected node no longer is.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onContainerFocus"></a><span class="functionIcon">_onContainerFocus</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onContainerFocus"></a><span class="functionIcon">_onContainerFocus</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3111,7 +3069,7 @@ That would avoid various issues like #17347.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onContainerKeydown"></a><span class="functionIcon">_onContainerKeydown</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onContainerKeydown"></a><span class="functionIcon">_onContainerKeydown</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3132,7 +3090,7 @@ That would avoid various issues like #17347.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onContainerKeypress"></a><span class="functionIcon">_onContainerKeypress</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onContainerKeypress"></a><span class="functionIcon">_onContainerKeypress</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3153,7 +3111,7 @@ That would avoid various issues like #17347.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onDownArrow"></a><span class="functionIcon">_onDownArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onDownArrow"></a><span class="functionIcon">_onDownArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3161,7 +3119,7 @@ That would avoid various issues like #17347.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3170,7 +3128,7 @@ such as changing CSS classes.  See onFocus() for more details.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onItemFocus"></a><span class="functionIcon">_onItemFocus</span><span class="parameters">(item)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onItemFocus"></a><span class="functionIcon">_onItemFocus</span><span class="parameters">(item)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
@@ -3199,7 +3157,7 @@ such as changing CSS classes.  See onFocus() for more details.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onLeftArrow"></a><span class="functionIcon">_onLeftArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onLeftArrow"></a><span class="functionIcon">_onLeftArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3208,7 +3166,7 @@ Should go back to the previous child in horizontal container widgets like Toolba
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3231,7 +3189,7 @@ If type is a synthetic event like touch.press then returns undefined.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onPopupHover"></a><span class="functionIcon">_onPopupHover</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onPopupHover"></a><span class="functionIcon">_onPopupHover</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
@@ -3252,7 +3210,7 @@ If type is a synthetic event like touch.press then returns undefined.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onRightArrow"></a><span class="functionIcon">_onRightArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onRightArrow"></a><span class="functionIcon">_onRightArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3261,7 +3219,7 @@ Should go to the next child in horizontal container widgets like Toolbar.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onShow"></a><span class="functionIcon">_onShow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onShow"></a><span class="functionIcon">_onShow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_Widget" class="jsdoc-link">dijit/_Widget</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3270,7 +3228,7 @@ See <code>onShow</code> for details.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onUpArrow"></a><span class="functionIcon">_onUpArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase__onUpArrow"></a><span class="functionIcon">_onUpArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -3334,7 +3292,7 @@ close them.  In general developers should not attach to or override this method.
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_onClose"></a><span class="functionIcon">onClose</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_onClose"></a><span class="functionIcon">onClose</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
@@ -3400,7 +3358,7 @@ been clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_onItemClick"></a><span class="functionIcon">onItemClick</span><span class="parameters">(item, evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_onItemClick"></a><span class="functionIcon">onItemClick</span><span class="parameters">(item, evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>
@@ -3730,7 +3688,7 @@ via the keyboard search mechanism.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_onOpen"></a><span class="functionIcon">onOpen</span><span class="parameters">(e)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__MenuBase_onOpen"></a><span class="functionIcon">onOpen</span><span class="parameters">(e)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_MenuBase" class="jsdoc-link">dijit/_MenuBase</a>
         </div>

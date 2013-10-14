@@ -7,40 +7,37 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/_base.Feature.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/geo/openlayers/_base.Feature<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/geo/openlayers/_base.Feature<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A Feature encapsulates an item so that it can be added to a Layer.
 This class is not attended to be used as it, but serve as a base class
 for specific features such as GeometryFeature which can display georeferenced 
 geometries and WidgetFeature which can display georeferenced widgets. </p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new _base.Feature<span class="parameters">();</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _base.Feature<span class="parameters">();</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/openlayers/Feature">dojox/geo/openlayers/Feature</a></div>
-<div class="jsdoc-summary"><p>Construct a new Feature</p>
-</div>
 <p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/_base.Feature reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_Feature__getLocalXY" class="inline-link"> _getLocalXY</a><span class="parameters">(</span>p) <span>From projected coordinates to screen coordinates</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature__getLocalXY" class="inline-link"> _getLocalXY</a><span class="parameters">(</span>p) <span>From projected coordinates to screen coordinates</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_geo_openlayers__base_Feature__setLayer" class="inline-link"> _setLayer</a><span class="parameters">(</span>l) <span>Sets the layer to which this Feature belongs</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature__setLayer" class="inline-link"> _setLayer</a><span class="parameters">(</span>l) <span>Sets the layer to which this Feature belongs</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_Feature_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Construct a new Feature</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature_getCoordinateSystem" class="inline-link"> getCoordinateSystem</a><span class="parameters">(</span>) <span>Returns the coordinate system in which coordinates of this feature are expressed.</span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_Feature_getCoordinateSystem" class="inline-link"> getCoordinateSystem</a><span class="parameters">(</span>) <span>Returns the coordinate system in which coordinates of this feature are expressed.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature_getLayer" class="inline-link"> getLayer</a><span class="parameters">(</span>) <span>Returns the Layer to which this feature belongs.</span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_Feature_getLayer" class="inline-link"> getLayer</a><span class="parameters">(</span>) <span>Returns the Layer to which this feature belongs.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature_remove" class="inline-link"> remove</a><span class="parameters">(</span>) <span>Subclasses implements specific behavior.</span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_Feature_remove" class="inline-link"> remove</a><span class="parameters">(</span>) <span>Subclasses implements specific behavior.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature_render" class="inline-link"> render</a><span class="parameters">(</span>) <span>subclasses implements drawing specific behavior.</span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_Feature_render" class="inline-link"> render</a><span class="parameters">(</span>) <span>subclasses implements drawing specific behavior.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_geo_openlayers__base_Feature_setCoordinateSystem" class="inline-link"> setCoordinateSystem</a><span class="parameters">(</span>cs) <span>Set the coordinate system in which coordinates of this feature are expressed.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_geo_openlayers__base_Feature_setCoordinateSystem" class="inline-link"> setCoordinateSystem</a><span class="parameters">(</span>cs) <span>Set the coordinate system in which coordinates of this feature are expressed.</span><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -50,7 +47,7 @@ geometries and WidgetFeature which can display georeferenced widgets. </p>
   <div class="jsdoc-fields">
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature__getLocalXY"></a><span class="functionIcon">_getLocalXY</span><span class="parameters">(p)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
@@ -73,7 +70,7 @@ geometries and WidgetFeature which can display georeferenced widgets. </p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature__setLayer"></a><span class="functionIcon">_setLayer</span><span class="parameters">(l)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
@@ -96,15 +93,7 @@ geometries and WidgetFeature which can display georeferenced widgets. </p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Construct a new Feature</p>
-</div>
-      </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature_getCoordinateSystem"></a><span class="functionIcon">getCoordinateSystem</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
@@ -115,7 +104,7 @@ geometries and WidgetFeature which can display georeferenced widgets. </p>
         <div class="jsdoc-return-description"><p>The coordinate system in which coordinates of this feature are expressed.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature_getLayer"></a><span class="functionIcon">getLayer</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
@@ -126,7 +115,7 @@ geometries and WidgetFeature which can display georeferenced widgets. </p>
         <div class="jsdoc-return-description"><p>The layer to which this feature belongs.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature_remove"></a><span class="functionIcon">remove</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
@@ -135,7 +124,7 @@ geometries and WidgetFeature which can display georeferenced widgets. </p>
 Called when removed from the layer.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature_render"></a><span class="functionIcon">render</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>
@@ -143,7 +132,7 @@ Called when removed from the layer.</p>
         <div class="jsdoc-full-summary"><p>subclasses implements drawing specific behavior.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers__base_Feature_setCoordinateSystem"></a><span class="functionIcon">setCoordinateSystem</span><span class="parameters">(cs)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/geo/openlayers/Feature" class="jsdoc-link">dojox/geo/openlayers/Feature</a><span title="Must manually require () dojox/geo/openlayers/Feature to access" class="jsdoc-extension"></span>

@@ -7,10 +7,11 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx/canvas.Text.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/gfx/canvas.Text<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/gfx/canvas.Text<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new canvas.Text<span class="parameters">();</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new canvas.Text<span class="parameters">();</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx/shape">dojox/gfx/shape</a></div>
 <p>See the <a href="/reference-guide/1.8/dojox/gfx.html" target="_blank">dojox/gfx/canvas.Text reference documentation</a> for more information.</p>
@@ -19,9 +20,9 @@
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon inherited"><a href="#1_8dojox_gfx_canvas_Text_canvasClip" class="inline-link"> canvasClip </a><span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_8dojox_gfx_canvas_Text_canvasClip" class="inline-link">canvasClip  </a><span>  </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_gfx_canvas_Text_textDir" class="inline-link"> textDir </a><span>Used for displaying bidi scripts in right layout.</span><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span><span title="inherited from dojox/gfx/_gfxBidiSupport" class="jsdoc-inherited"></span>
+        <li class="stringIcon public extension-module"><a href="#1_8dojox_gfx_canvas_Text_textDir" class="inline-link">textDir  </a><span>Used for displaying bidi scripts in right layout.  </span><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -63,17 +64,15 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</span><span tit
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_Text_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_canvas_Text_bidiPreprocess" class="inline-link"> bidiPreprocess</a><span class="parameters">(</span>newShape) <span></span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_gfx_canvas_Text_bidiPreprocess" class="inline-link"> bidiPreprocess</a><span class="parameters">(</span>newShape) <span></span><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_Text_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_Text_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_Text_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_Text_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_canvas_Text_formatText" class="inline-link"> formatText</a><span class="parameters">(</span>text, textDir) <span>Applies the right transform on text, according to renderer.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_gfx_canvas_Text_formatText" class="inline-link"> formatText</a><span class="parameters">(</span>text, textDir) <span>Applies the right transform on text, according to renderer.</span><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_Text_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>Returns the bounding box Rectangle for this shape or null if a BoundingBox cannot be
 calculated for the shape on the current renderer or for shapes with no geometric area (points).</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
@@ -144,7 +143,7 @@ four points represent four corners of the untransformed bounding box</span><span
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_Text_canvasClip"></a><span class="objectIcon">canvasClip</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -489,7 +488,7 @@ constructor for a list of acceptable arguments)</p>
         <div class="jsdoc-return-description"><p>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_Text_bidiPreprocess"></a><span class="functionIcon">bidiPreprocess</span><span class="parameters">(newShape)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/gfx/_gfxBidiSupport" class="jsdoc-link">dojox/gfx/_gfxBidiSupport</a><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>
@@ -518,13 +517,6 @@ constructor for a list of acceptable arguments)</p>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_Text_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-      </div>
-      <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_Text_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -540,7 +532,7 @@ the instance is considered destroyed and should not be used anymore.</p>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_Text_formatText"></a><span class="functionIcon">formatText</span><span class="parameters">(text, textDir)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/gfx/_gfxBidiSupport" class="jsdoc-link">dojox/gfx/_gfxBidiSupport</a><span title="Must manually require () dojox/gfx/_gfxBidiSupport to access" class="jsdoc-extension"></span>

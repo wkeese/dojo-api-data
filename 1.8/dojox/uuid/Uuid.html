@@ -7,9 +7,14 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/uuid/Uuid.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojox/uuid/Uuid<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojox/uuid/Uuid<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>This is the constructor for the Uuid class.  The Uuid class offers
 methods for inspecting existing UUIDs.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">Uuid<span class="parameters">(input);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -48,8 +53,6 @@ dojox.uuid.assert(!uuid.isEqual(dojox.uuid.NIL_UUID));</p>
         <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_compare" class="inline-link"> compare</a><span class="parameters">(</span>otherUuid) <span>Compares this UUID to another UUID, and returns 0, 1, or -1.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_compare" class="inline-link"> compare</a><span class="parameters">(</span>uuidOne, uuidTwo) <span>Given two UUIDs to compare, this method returns 0, 1, or -1.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_getGenerator" class="inline-link"> getGenerator</a><span class="parameters">(</span>) <span>Returns the default generator.</span>
         </li>
@@ -138,43 +141,6 @@ intended to match the sample implementation in IETF RFC 4122:
             </td>
           </tr>
         </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(input)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>This is the constructor for the Uuid class.  The Uuid class offers
-methods for inspecting existing UUIDs.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">input</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div>
-            </td>
-          </tr>
-        </table>
-        <div class="jsdoc-examples">
-          <h2>Examples</h2>
-          <div class="jsdoc-example">
-            <h3>Example 1</h3><p>var uuid;
-uuid = new dojox.uuid.Uuid(&quot;3b12f1df-5232-4804-897e-917bf397618a&quot;);
-uuid = new dojox.uuid.Uuid(); // &quot;00000000-0000-0000-0000-000000000000&quot;
-uuid = new dojox.uuid.Uuid(dojox.uuid.generateRandomUuid());
-uuid = new dojox.uuid.Uuid(dojox.uuid.generateTimeBasedUuid());
-dojox.uuid.Uuid.setGenerator(dojox.uuid.generateRandomUuid);
-uuid = new dojox.uuid.Uuid();
-dojox.uuid.assert(!uuid.isEqual(dojox.uuid.NIL_UUID));</p>
-
-          </div>
-        </div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_getGenerator"></a><span class="functionIcon">getGenerator</span><span class="parameters">()</span> 

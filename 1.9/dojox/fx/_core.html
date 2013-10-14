@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/fx/_core.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojox/fx/_core<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojox/fx/_core<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>a custom _Line to accommodate multi-dimensional values</p>
 </div>
 <div class="jsdoc-full-summary"><p>a normal dojo._Line is the curve, and does Line(start,end)
@@ -19,6 +19,11 @@ some properties can have 2, or 4 values relevant (x,y) or (t,l,r,b) for example
 this is a lot of extra code for something so seldom used, so we&#39;ll put it here as
 and optional core addition. you can create a new line, and use it during onAnimate
 as you see fit.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">_core<span class="parameters">(start,end);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -62,17 +67,15 @@ var curve = new dojox.fx._Line([10,50],[100,500]);
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="numberIcon"><a href="#1_9dojox_fx__core_end" class="inline-link"> end </a><span>An Integer (or an Array of integers) to use as an ending point</span>
+        <li class="numberIcon public"><a href="#1_9dojox_fx__core_end" class="inline-link">end  </a><span>An Integer (or an Array of integers) to use as an ending point  </span>
         </li>
-        <li class="numberIcon"><a href="#1_9dojox_fx__core_start" class="inline-link"> start </a><span>An Integer (or an Array of integers) to use as a starting point</span>
+        <li class="numberIcon public"><a href="#1_9dojox_fx__core_start" class="inline-link">start  </a><span>An Integer (or an Array of integers) to use as a starting point  </span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_9dojox_fx__core_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>start, end) <span>a custom _Line to accommodate multi-dimensional values</span>
-        </li>
         <li class="functionIcon "><a href="#1_9dojox_fx__core_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>n) <span>Returns the point on the line, or an array of points</span>
         </li>
       </ul>
@@ -102,60 +105,6 @@ var curve = new dojox.fx._Line([10,50],[100,500]);
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dojox_fx__core_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(start, end)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/fx/_core" class="jsdoc-link">dojox/fx/_core</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>a custom _Line to accommodate multi-dimensional values</p>
-</div>
-        <div class="jsdoc-full-summary"><p>a normal dojo._Line is the curve, and does Line(start,end)
-for propertyAnimation. as we make more complicatied animations, we realize
-some properties can have 2, or 4 values relevant (x,y) or (t,l,r,b) for example
-
-</p>
-<p>this function provides support for those Lines, and is ported directly from 0.4
-this is a lot of extra code for something so seldom used, so we&#39;ll put it here as
-and optional core addition. you can create a new line, and use it during onAnimate
-as you see fit.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">start</td>
-            <td class="jsdoc-param-type">Integer | Array</td>
-            <td class="jsdoc-param-description"><p>An Integer (or an Array of integers) to use as a starting point</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">end</td>
-            <td class="jsdoc-param-type">Integer | Array</td>
-            <td class="jsdoc-param-description"><p>An Integer (or an Array of integers) to use as an ending point</p>
- 
-            </td>
-          </tr>
-        </table>
-        <div class="jsdoc-examples">
-          <h2>Examples</h2>
-          <div class="jsdoc-example">
-            <h3>Example 1</h3><p>see dojox.fx.smoothScroll</p>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>// this is 10 .. 100 and 50 .. 500
-var curve = new dojox.fx._Line([10,50],[100,500]);
-// dojo.Animation.onAnimate is called at every step of the animation
-// to define current values. this _Line returns an array
-// at each step. arguments[0] and [1] in this example.</code></pre>
-
-          </div>
-        </div>
-      </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_fx__core_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">(n)</span> 
         </div>

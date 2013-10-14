@@ -7,13 +7,14 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_SearchMixin.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dijit/form/_SearchMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dijit/form/_SearchMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>A mixin that implements the base functionality to search a store based upon user-entered text such as
 with <a class="jsdoc-link" href="/api/1.8/dijit/form/ComboBox">dijit/form/ComboBox</a> or <a class="jsdoc-link" href="/api/1.8/dijit/form/FilteringSelect">dijit/form/FilteringSelect</a></p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new _SearchMixin<span class="parameters">();</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _SearchMixin<span class="parameters">();</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/form/_SearchMixin">dijit/form/_SearchMixin</a></div>
 <p>See the <a href="/reference-guide/1.8/dijit/form.html" target="_blank">dijit/form/_SearchMixin reference documentation</a> for more information.</p>
@@ -22,24 +23,24 @@ with <a class="jsdoc-link" href="/api/1.8/dijit/form/ComboBox">dijit/form/ComboB
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dijit_form__SearchMixin_fetchProperties" class="inline-link"> fetchProperties </a><span>Mixin to the store&#39;s fetch.</span>
+        <li class="objectIcon public"><a href="#1_8dijit_form__SearchMixin_fetchProperties" class="inline-link">fetchProperties  </a><span>Mixin to the store&#39;s fetch.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dijit_form__SearchMixin_ignoreCase" class="inline-link"> ignoreCase </a><span>Set true if the query should ignore case when matching possible items</span>
+        <li class="booleanIcon public"><a href="#1_8dijit_form__SearchMixin_ignoreCase" class="inline-link">ignoreCase  </a><span>Set true if the query should ignore case when matching possible items  </span>
         </li>
-        <li class="numberIcon"><a href="#1_8dijit_form__SearchMixin_pageSize" class="inline-link"> pageSize </a><span>Argument to data provider.</span>
+        <li class="numberIcon public"><a href="#1_8dijit_form__SearchMixin_pageSize" class="inline-link">pageSize  </a><span>Argument to data provider.  </span>
         </li>
-        <li class="objectIcon"><a href="#1_8dijit_form__SearchMixin_query" class="inline-link"> query </a><span>A query that can be passed to store to initially filter the items.</span>
+        <li class="objectIcon public"><a href="#1_8dijit_form__SearchMixin_query" class="inline-link">query  </a><span>A query that can be passed to store to initially filter the items.  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dijit_form__SearchMixin_queryExpr" class="inline-link"> queryExpr </a><span>This specifies what query is sent to the data store,
-based on what the user has typed.</span>
+        <li class="stringIcon public"><a href="#1_8dijit_form__SearchMixin_queryExpr" class="inline-link">queryExpr  </a><span>This specifies what query is sent to the data store,
+based on what the user has typed.  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dijit_form__SearchMixin_searchAttr" class="inline-link"> searchAttr </a><span>Search for items in the data store where this attribute (in the item)
-matches what the user typed</span>
+        <li class="stringIcon public"><a href="#1_8dijit_form__SearchMixin_searchAttr" class="inline-link">searchAttr  </a><span>Search for items in the data store where this attribute (in the item)
+matches what the user typed  </span>
         </li>
-        <li class="numberIcon"><a href="#1_8dijit_form__SearchMixin_searchDelay" class="inline-link"> searchDelay </a><span>Delay in milliseconds between when user types something and we start
-searching based on that value</span>
+        <li class="numberIcon public"><a href="#1_8dijit_form__SearchMixin_searchDelay" class="inline-link">searchDelay  </a><span>Delay in milliseconds between when user types something and we start
+searching based on that value  </span>
         </li>
-        <li class="objectIcon"><a href="#1_8dijit_form__SearchMixin_store" class="inline-link"> store </a><span>Reference to data provider object used by this ComboBox.</span>
+        <li class="objectIcon public"><a href="#1_8dijit_form__SearchMixin_store" class="inline-link">store  </a><span>Reference to data provider object used by this ComboBox.  </span>
         </li>
       </ul>
     </div>
@@ -54,8 +55,6 @@ searching based on that value</span>
 and calls onSearch(...) when the search completes, to display the results.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon private"><a href="#1_8dijit_form__SearchMixin__startSearchFromInput" class="inline-link"> _startSearchFromInput</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dijit_form__SearchMixin_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
         </li>
         <li class="functionIcon "><a href="#1_8dijit_form__SearchMixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
         </li>
@@ -214,13 +213,6 @@ and calls onSearch(...) when the search completes, to display the results.</p>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_8dijit_form__SearchMixin__startSearchFromInput"></a><span class="functionIcon">_startSearchFromInput</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_SearchMixin" class="jsdoc-link">dijit/form/_SearchMixin</a>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dijit_form__SearchMixin_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_SearchMixin" class="jsdoc-link">dijit/form/_SearchMixin</a>
         </div>

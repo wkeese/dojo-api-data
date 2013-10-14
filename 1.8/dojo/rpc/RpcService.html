@@ -7,18 +7,15 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/rpc/RpcService.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojo/rpc/RpcService<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojo/rpc/RpcService<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>TODOC</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new RpcService<span class="parameters">(args);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new RpcService<span class="parameters">(args);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/rpc/RpcService">dojo/rpc/RpcService</a></div>
-<div class="jsdoc-summary"><p>Take a string as a url to retrieve an smd or an object that is an smd or partial smd to use
-as a definition for the service
-</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -48,18 +45,15 @@ smdObject is accepts an smdObject directly.
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_8dojo_rpc_RpcService_serviceUrl" class="inline-link"> serviceUrl </a><span></span>
+        <li class="stringIcon public"><a href="#1_8dojo_rpc_RpcService_serviceUrl" class="inline-link">serviceUrl  </a><span>  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojo_rpc_RpcService_strictArgChecks" class="inline-link"> strictArgChecks </a><span></span>
+        <li class="booleanIcon public"><a href="#1_8dojo_rpc_RpcService_strictArgChecks" class="inline-link">strictArgChecks  </a><span>  </span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Take a string as a url to retrieve an smd or an object that is an smd or partial smd to use
-as a definition for the service</span>
-        </li>
         <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_errorCallback" class="inline-link"> errorCallback</a><span class="parameters">(</span>deferredRequestHandler) <span>create callback that calls the Deferred errback method</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojo_rpc_RpcService_generateMethod" class="inline-link"> generateMethod</a><span class="parameters">(</span>method, parameters, url) <span>generate the local bind methods for the remote object</span>
@@ -95,39 +89,6 @@ subclasses should parse and only return the actual results</span>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo_rpc_RpcService_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/rpc/RpcService" class="jsdoc-link">dojo/rpc/RpcService</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Take a string as a url to retrieve an smd or an object that is an smd or partial smd to use
-as a definition for the service
-</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">args</td>
-            <td class="jsdoc-param-type">object</td>
-            <td class="jsdoc-param-description"><p>Takes a number of properties as kwArgs for defining the service.  It also
-accepts a string.  When passed a string, it is treated as a url from
-which it should synchronously retrieve an smd file.  Otherwise it is a kwArgs
-object.  It accepts serviceUrl, to manually define a url for the rpc service
-allowing the rpc system to be used without an smd definition. strictArgChecks
-forces the system to verify that the # of arguments provided in a call
-matches those defined in the smd.  smdString allows a developer to pass
-a jsonString directly, which will be converted into an object or alternatively
-smdObject is accepts an smdObject directly.
-</p>
- 
-            </td>
-          </tr>
-        </table>
-      </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_rpc_RpcService_errorCallback"></a><span class="functionIcon">errorCallback</span><span class="parameters">(deferredRequestHandler)</span> 
         </div>

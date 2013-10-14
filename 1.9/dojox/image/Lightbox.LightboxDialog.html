@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/image/Lightbox.LightboxDialog.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/image/Lightbox.LightboxDialog<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/image/Lightbox.LightboxDialog<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>The &quot;dialog&quot; shared  between any Lightbox instances on the page, publically available
 for programmatic manipulation.</p>
 </div>
@@ -21,8 +21,9 @@ unless you need the direct access.
 (the first instance of a Lightbox to be show()&#39;n will create me If i do not exist)</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new Lightbox.LightboxDialog<span class="parameters">(args);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Lightbox.LightboxDialog<span class="parameters">(args);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/image/Lightbox">dojox/image/Lightbox</a></div>
 <table class="jsdoc-parameters">
@@ -54,31 +55,31 @@ dialog.show({ href: url, title:&quot;My Remote Image&quot;});</code></pre>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog__groups" class="inline-link"> _groups </a><span>an object of arrays, each array (of objects) being a unique &#39;group&#39;</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog__groups" class="inline-link">_groups  </a><span>an object of arrays, each array (of objects) being a unique &#39;group&#39;  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_adjust" class="inline-link"> adjust </a><span>If true, ensure the image always stays within the viewport
+        <li class="booleanIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_adjust" class="inline-link">adjust  </a><span>If true, ensure the image always stays within the viewport
 more difficult than necessary to disable, but enabled by default
-seems sane in most use cases.</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+seems sane in most use cases.  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_errorImg" class="inline-link"> errorImg </a><span>Path to the image used when a 404 is encountered</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_errorImg" class="inline-link">errorImg  </a><span>Path to the image used when a 404 is encountered  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_errorMessage" class="inline-link"> errorMessage </a><span>The text to display when an unreachable image is linked</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_errorMessage" class="inline-link">errorMessage  </a><span>The text to display when an unreachable image is linked  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_imageClass" class="inline-link"> imageClass </a><span>The classname to apply to the image node in the dialog (for extra styling)</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_imageClass" class="inline-link">imageClass  </a><span>The classname to apply to the image node in the dialog (for extra styling)  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_imgUrl" class="inline-link"> imgUrl </a><span>The src=&quot;&quot; attribute of our imageNode (can be null at statup)</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_imgUrl" class="inline-link">imgUrl  </a><span>The src=&quot;&quot; attribute of our imageNode (can be null at statup)  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="arrayIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_inGroup" class="inline-link"> inGroup </a><span>Array of objects. this is populated by from the JSON object _groups, and
+        <li class="arrayIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_inGroup" class="inline-link">inGroup  </a><span>Array of objects. this is populated by from the JSON object _groups, and
 should not be populate manually. it is a placeholder for the currently
-showing group of images in this master dialog</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+showing group of images in this master dialog  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_modal" class="inline-link"> modal </a><span>If true, this Dialog instance will be truly modal and prevent closing until
+        <li class="booleanIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_modal" class="inline-link">modal  </a><span>If true, this Dialog instance will be truly modal and prevent closing until
 explicitly told to by calling hide() or clicking the (x) - Defaults to false
-to preserve previous behaviors. (aka: enable click-to-close on the underlay)</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+to preserve previous behaviors. (aka: enable click-to-close on the underlay)  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_templateString" class="inline-link"> templateString </a><span></span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_templateString" class="inline-link">templateString  </a><span>  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_title" class="inline-link"> title </a><span>The current title, read from object passed to show()</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_title" class="inline-link">title  </a><span>The current title, read from object passed to show()  </span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -115,8 +116,6 @@ to preserve previous behaviors. (aka: enable click-to-close on the underlay)</sp
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_addImage" class="inline-link"> addImage</a><span class="parameters">(</span>child, group) <span>Add an image to this Master Lightbox</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
-        </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hide the Master Lightbox</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_removeGroup" class="inline-link"> removeGroup</a><span class="parameters">(</span>group) <span>Remove all images in a passed group</span><span title="inherited from dojox/image/Lightbox" class="jsdoc-inherited"></span>
@@ -134,7 +133,7 @@ to preserve previous behaviors. (aka: enable click-to-close on the underlay)</sp
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog__onImageClick" class="inline-link"> _onImageClick</a><span class="parameters">(</span>e) <span></span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog__onImageClick" class="inline-link"> _onImageClick</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_image_Lightbox_LightboxDialog_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>groupData) <span>a stub function, called with the currently displayed image as the only argument</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
@@ -146,7 +145,7 @@ to preserve previous behaviors. (aka: enable click-to-close on the underlay)</sp
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog__groups"></a><span class="objectIcon">_groups</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -154,7 +153,7 @@ to preserve previous behaviors. (aka: enable click-to-close on the underlay)</sp
         <div class="jsdoc-summary"><p>an object of arrays, each array (of objects) being a unique &#39;group&#39;</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_adjust"></a><span class="booleanIcon">adjust</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -164,7 +163,7 @@ more difficult than necessary to disable, but enabled by default
 seems sane in most use cases.</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_errorImg"></a><span class="objectIcon">errorImg</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -172,7 +171,7 @@ seems sane in most use cases.</p>
         <div class="jsdoc-summary"><p>Path to the image used when a 404 is encountered</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_errorMessage"></a><span class="stringIcon">errorMessage</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -180,7 +179,7 @@ seems sane in most use cases.</p>
         <div class="jsdoc-summary"><p>The text to display when an unreachable image is linked</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_imageClass"></a><span class="stringIcon">imageClass</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -188,7 +187,7 @@ seems sane in most use cases.</p>
         <div class="jsdoc-summary"><p>The classname to apply to the image node in the dialog (for extra styling)</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_imgUrl"></a><span class="stringIcon">imgUrl</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -196,7 +195,7 @@ seems sane in most use cases.</p>
         <div class="jsdoc-summary"><p>The src=&quot;&quot; attribute of our imageNode (can be null at statup)</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_inGroup"></a><span class="arrayIcon">inGroup</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -206,7 +205,7 @@ should not be populate manually. it is a placeholder for the currently
 showing group of images in this master dialog</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_modal"></a><span class="booleanIcon">modal</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -216,13 +215,13 @@ explicitly told to by calling hide() or clicking the (x) - Defaults to false
 to preserve previous behaviors. (aka: enable click-to-close on the underlay)</p>
 </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_templateString"></a><span class="objectIcon">templateString</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
-      <div class="jsdoc-field public">
+      <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_title"></a><span class="stringIcon">title</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -448,26 +447,6 @@ to preserve previous behaviors. (aka: enable click-to-close on the underlay)</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">args</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog_hide"></a><span class="functionIcon">hide</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -587,7 +566,7 @@ not already visible</p>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog__onImageClick"></a><span class="functionIcon">_onImageClick</span><span class="parameters">(e)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_image_Lightbox_LightboxDialog__onImageClick"></a><span class="functionIcon">_onImageClick</span><span class="parameters">(e)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/image/Lightbox" class="jsdoc-link">dojox/image/Lightbox</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>

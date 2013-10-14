@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/color/Palette.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojox/color/Palette<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojox/color/Palette<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>An object that represents a palette of colors.</p>
 </div>
 <div class="jsdoc-full-summary"><p>A Palette is a representation of a set of colors.  While the standard
@@ -19,6 +19,11 @@ number of colors.
 using a simple object-based approach.  In addition, you can generate
 palettes using dojox.color.Palette.generate; these generated palettes
 are based on the palette generators at <a href="http://kuler.adobe.com">http://kuler.adobe.com</a>.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">Palette<span class="parameters">(base);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -39,7 +44,7 @@ are based on the palette generators at <a href="http://kuler.adobe.com">http://k
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dojox_color_Palette_generators" class="inline-link"> generators </a><span></span>
+        <li class="objectIcon public"><a href="#1_8dojox_color_Palette_generators" class="inline-link">generators  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -47,8 +52,6 @@ are based on the palette generators at <a href="http://kuler.adobe.com">http://k
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
         <li class="functionIcon "><a href="#1_8dojox_color_Palette_clone" class="inline-link"> clone</a><span class="parameters">(</span>) <span>Clones the current palette.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_color_Palette_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>base) <span>An object that represents a palette of colors.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_color_Palette_generate" class="inline-link"> generate</a><span class="parameters">(</span>base, type) <span>Generate a new Palette using any of the named functions in
 dojox.color.Palette.generators or an optional function definition.</span>
@@ -81,37 +84,6 @@ and a set of transformation parameters.</span>
         <div class="jsdoc-full-summary"><p>Clones the current palette.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_color_Palette_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(base)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/color/Palette" class="jsdoc-link">dojox/color/Palette</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>An object that represents a palette of colors.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>A Palette is a representation of a set of colors.  While the standard
-number of colors contained in a palette is 5, it can really handle any
-number of colors.
-
-</p>
-<p>A palette is useful for the ability to transform all the colors in it
-using a simple object-based approach.  In addition, you can generate
-palettes using dojox.color.Palette.generate; these generated palettes
-are based on the palette generators at <a href="http://kuler.adobe.com">http://kuler.adobe.com</a>.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">base</td>
-            <td class="jsdoc-param-type">String | Array | dojox.color.Color | dojox.color.Palette</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_color_Palette_generate"></a><span class="functionIcon">generate</span><span class="parameters">(base, type)</span> 

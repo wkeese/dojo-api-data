@@ -7,14 +7,13 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/charting/DataSeries.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/charting/DataSeries<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/charting/DataSeries<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new DataSeries<span class="parameters">(store,kwArgs,value);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new DataSeries<span class="parameters">(store,kwArgs,value);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/charting/DataSeries">dojox/charting/DataSeries</a></div>
-<div class="jsdoc-summary"><p>Series adapter for dojo.data stores.</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -65,8 +64,6 @@ or empty string (the default), &quot;value&quot; field is extracted.</p>
         </li>
         <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__pushDataChanges" class="inline-link"> _pushDataChanges</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_charting_DataSeries_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>store, kwArgs, value) <span>Series adapter for dojo.data stores.</span>
-        </li>
         <li class="functionIcon "><a href="#1_9dojox_charting_DataSeries_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Clean up before GC.</span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_charting_DataSeries_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>) <span>Fetches data from the store and updates a chart.</span>
@@ -78,13 +75,13 @@ or empty string (the default), &quot;value&quot; field is extracted.</p>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onFetchComplete" class="inline-link"> _onFetchComplete</a><span class="parameters">(</span>items, request) <span></span>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onFetchComplete" class="inline-link"> _onFetchComplete</a><span class="parameters">(</span>items, request) <span></span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onStoreDelete" class="inline-link"> _onStoreDelete</a><span class="parameters">(</span>item) <span></span>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onStoreDelete" class="inline-link"> _onStoreDelete</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onStoreNew" class="inline-link"> _onStoreNew</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onStoreNew" class="inline-link"> _onStoreNew</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onStoreSet" class="inline-link"> _onStoreSet</a><span class="parameters">(</span>item) <span></span>
+        <li class="functionIcon private"><a href="#1_9dojox_charting_DataSeries__onStoreSet" class="inline-link"> _onStoreSet</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_charting_DataSeries_onFetchError" class="inline-link"> onFetchError</a><span class="parameters">(</span>errorData, request) <span>As stub to process fetch errors.</span>
         </li>
@@ -212,48 +209,6 @@ or empty string (the default), &quot;value&quot; field is extracted.</p>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(store, kwArgs, value)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/charting/DataSeries" class="jsdoc-link">dojox/charting/DataSeries</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Series adapter for dojo.data stores.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">store</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>A dojo.data store object.</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">kwArgs</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>A store-specific keyword parameters used for fetching items.
-See dojo/data/api/Read.fetch().</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">value</td>
-            <td class="jsdoc-param-type">Function | Object | String</td>
-            <td class="jsdoc-param-description"><p>Function, which takes a store, and an object handle, and
-produces an output possibly inspecting the store&#39;s item. Or
-a dictionary object, which tells what names to extract from
-an object and how to map them to an output. Or a string, which
-is a numeric field name to use for plotting. If undefined, null
-or empty string (the default), &quot;value&quot; field is extracted.</p>
- 
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/charting/DataSeries" class="jsdoc-link">dojox/charting/DataSeries</a>
@@ -295,7 +250,7 @@ or empty string (the default), &quot;value&quot; field is extracted.</p>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onFetchComplete"></a><span class="functionIcon">_onFetchComplete</span><span class="parameters">(items, request)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onFetchComplete"></a><span class="functionIcon">_onFetchComplete</span><span class="parameters">(items, request)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/charting/DataSeries" class="jsdoc-link">dojox/charting/DataSeries</a>
         </div>
@@ -320,7 +275,7 @@ or empty string (the default), &quot;value&quot; field is extracted.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onStoreDelete"></a><span class="functionIcon">_onStoreDelete</span><span class="parameters">(item)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onStoreDelete"></a><span class="functionIcon">_onStoreDelete</span><span class="parameters">(item)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/charting/DataSeries" class="jsdoc-link">dojox/charting/DataSeries</a>
         </div>
@@ -339,13 +294,13 @@ or empty string (the default), &quot;value&quot; field is extracted.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onStoreNew"></a><span class="functionIcon">_onStoreNew</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onStoreNew"></a><span class="functionIcon">_onStoreNew</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/charting/DataSeries" class="jsdoc-link">dojox/charting/DataSeries</a>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onStoreSet"></a><span class="functionIcon">_onStoreSet</span><span class="parameters">(item)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_charting_DataSeries__onStoreSet"></a><span class="functionIcon">_onStoreSet</span><span class="parameters">(item)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/charting/DataSeries" class="jsdoc-link">dojox/charting/DataSeries</a>
         </div>

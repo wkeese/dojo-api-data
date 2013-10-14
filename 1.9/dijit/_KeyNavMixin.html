@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dijit/_KeyNavMixin.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dijit/_KeyNavMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dijit/_KeyNavMixin<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a>
 </div>
@@ -34,21 +34,21 @@ or more complex widgets like <a class="jsdoc-link" href="/api/1.9/dijit/Tree">di
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_9dijit__KeyNavMixin__focusManager" class="inline-link"> _focusManager </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dijit__KeyNavMixin__focusManager" class="inline-link">_focusManager  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_9dijit__KeyNavMixin__keyNavCodes" class="inline-link"> _keyNavCodes </a><span>Hash mapping key code (arrow keys and home/end key) to functions to handle those keys.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private"><a href="#1_9dijit__KeyNavMixin__keyNavCodes" class="inline-link">_keyNavCodes  </a><span>Hash mapping key code (arrow keys and home/end key) to functions to handle those keys.  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_9dijit__KeyNavMixin__searchString" class="inline-link"> _searchString </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon private"><a href="#1_9dijit__KeyNavMixin__searchString" class="inline-link">_searchString  </a><span>  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon inherited"><a href="#1_9dijit__KeyNavMixin_childSelector" class="inline-link"> childSelector </a><span>Selector (passed to on.selector()) used to identify what to treat as a child widget.</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon public"><a href="#1_9dijit__KeyNavMixin_childSelector" class="inline-link">childSelector  </a><span>Selector (passed to on.selector()) used to identify what to treat as a child widget.  </span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_9dijit__KeyNavMixin_focusedChild" class="inline-link"> focusedChild </a><span>The currently focused child widget, or null if there isn&#39;t one</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon public"><a href="#1_9dijit__KeyNavMixin_focusedChild" class="inline-link">focusedChild  </a><span>The currently focused child widget, or null if there isn&#39;t one  </span>
         </li>
-        <li class="numberIcon inherited"><a href="#1_9dijit__KeyNavMixin_multiCharSearchDuration" class="inline-link"> multiCharSearchDuration </a><span>If multiple characters are typed where each keystroke happens within
+        <li class="numberIcon public"><a href="#1_9dijit__KeyNavMixin_multiCharSearchDuration" class="inline-link">multiCharSearchDuration  </a><span>If multiple characters are typed where each keystroke happens within
 multiCharSearchDuration of the previous keystroke,
-search for nodes matching all the keystrokes.</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+search for nodes matching all the keystrokes.  </span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_9dijit__KeyNavMixin_tabIndex" class="inline-link"> tabIndex </a><span>Tab index of the container; same as HTML tabIndex attribute.</span><span title="inherited from dijit/_KeyNavMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon public"><a href="#1_9dijit__KeyNavMixin_tabIndex" class="inline-link">tabIndex  </a><span>Tab index of the container; same as HTML tabIndex attribute.  </span>
         </li>
       </ul>
     </div>
@@ -91,29 +91,29 @@ search for nodes matching all the keystrokes.</span><span title="inherited from 
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>evt) <span></span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onChildBlur" class="inline-link"> _onChildBlur</a><span class="parameters">(</span>widget) <span>Called when focus leaves a child widget to go
-to a sibling widget.</span>
+to a sibling widget.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onChildFocus" class="inline-link"> _onChildFocus</a><span class="parameters">(</span>child) <span>Called when a child widget gets focus, either by user clicking
-it, or programatically by arrow key handling code.</span>
+it, or programatically by arrow key handling code.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onContainerFocus" class="inline-link"> _onContainerFocus</a><span class="parameters">(</span>evt) <span>Handler for when the container itself gets focus.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onContainerFocus" class="inline-link"> _onContainerFocus</a><span class="parameters">(</span>evt) <span>Handler for when the container itself gets focus.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onContainerKeydown" class="inline-link"> _onContainerKeydown</a><span class="parameters">(</span>evt) <span>When a key is pressed, if it&#39;s an arrow key etc. then it&#39;s handled here.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onContainerKeydown" class="inline-link"> _onContainerKeydown</a><span class="parameters">(</span>evt) <span>When a key is pressed, if it&#39;s an arrow key etc. then it&#39;s handled here.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onContainerKeypress" class="inline-link"> _onContainerKeypress</a><span class="parameters">(</span>evt) <span>When a printable key is pressed, it&#39;s handled here, searching by letter.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onContainerKeypress" class="inline-link"> _onContainerKeypress</a><span class="parameters">(</span>evt) <span>When a printable key is pressed, it&#39;s handled here, searching by letter.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onDownArrow" class="inline-link"> _onDownArrow</a><span class="parameters">(</span>) <span>Called on down arrow key.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onDownArrow" class="inline-link"> _onDownArrow</a><span class="parameters">(</span>) <span>Called on down arrow key.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onLeftArrow" class="inline-link"> _onLeftArrow</a><span class="parameters">(</span>) <span>Called on left arrow key, or right arrow key if widget is in RTL mode.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onLeftArrow" class="inline-link"> _onLeftArrow</a><span class="parameters">(</span>) <span>Called on left arrow key, or right arrow key if widget is in RTL mode.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onRightArrow" class="inline-link"> _onRightArrow</a><span class="parameters">(</span>) <span>Called on right arrow key, or left arrow key if widget is in RTL mode.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onRightArrow" class="inline-link"> _onRightArrow</a><span class="parameters">(</span>) <span>Called on right arrow key, or left arrow key if widget is in RTL mode.</span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onUpArrow" class="inline-link"> _onUpArrow</a><span class="parameters">(</span>) <span>Called on up arrow key.</span>
+        <li class="functionIcon private"><a href="#1_9dijit__KeyNavMixin__onUpArrow" class="inline-link"> _onUpArrow</a><span class="parameters">(</span>) <span>Called on up arrow key.</span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dijit__KeyNavMixin_onKeyboardSearch" class="inline-link"> onKeyboardSearch</a><span class="parameters">(</span>item, evt, searchString, numMatches) <span>When a key is pressed that matches a child item,
 this method is called so that a widget can take appropriate action is necessary.</span>
@@ -126,7 +126,7 @@ this method is called so that a widget can take appropriate action is necessary.
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__focusManager"></a><span class="objectIcon">_focusManager</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -135,7 +135,7 @@ this method is called so that a widget can take appropriate action is necessary.
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__keyNavCodes"></a><span class="objectIcon">_keyNavCodes</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
         <div class="jsdoc-summary"><p>Hash mapping key code (arrow keys and home/end key) to functions to handle those keys.
 Usually not used directly, as subclasses can instead override _onLeftArrow() etc.</p>
@@ -144,13 +144,13 @@ Usually not used directly, as subclasses can instead override _onLeftArrow() etc
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__searchString"></a><span class="stringIcon">_searchString</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin_childSelector"></a><span class="functionIcon">childSelector</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
         <div class="jsdoc-summary"><p>Selector (passed to on.selector()) used to identify what to treat as a child widget.   Used to monitor
 focus events and set this.focusedChild.   Must be set by implementing class.   If this is a string
@@ -160,7 +160,7 @@ focus events and set this.focusedChild.   Must be set by implementing class.   I
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin_focusedChild"></a><span class="objectIcon">focusedChild</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
         <div class="jsdoc-summary"><p>The currently focused child widget, or null if there isn&#39;t one</p>
 </div>
@@ -168,7 +168,7 @@ focus events and set this.focusedChild.   Must be set by implementing class.   I
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin_multiCharSearchDuration"></a><span class="numberIcon">multiCharSearchDuration</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
         <div class="jsdoc-summary"><p>If multiple characters are typed where each keystroke happens within
 multiCharSearchDuration of the previous keystroke,
@@ -182,7 +182,7 @@ search for nodes matching all the keystrokes.
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin_tabIndex"></a><span class="stringIcon">tabIndex</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
         <div class="jsdoc-summary"><p>Tab index of the container; same as HTML tabIndex attribute.
 Note then when user tabs into the container, focus is immediately
@@ -424,7 +424,7 @@ last one instead of the first one</p>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -443,7 +443,7 @@ last one instead of the first one</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onChildBlur"></a><span class="functionIcon">_onChildBlur</span><span class="parameters">(widget)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onChildBlur"></a><span class="functionIcon">_onChildBlur</span><span class="parameters">(widget)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -466,7 +466,7 @@ Used to be used by MenuBase.js (remove for 2.0)</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onChildFocus"></a><span class="functionIcon">_onChildFocus</span><span class="parameters">(child)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onChildFocus"></a><span class="functionIcon">_onChildFocus</span><span class="parameters">(child)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -491,7 +491,7 @@ selected node no longer is.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onContainerFocus"></a><span class="functionIcon">_onContainerFocus</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onContainerFocus"></a><span class="functionIcon">_onContainerFocus</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -520,7 +520,7 @@ That would avoid various issues like #17347.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onContainerKeydown"></a><span class="functionIcon">_onContainerKeydown</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onContainerKeydown"></a><span class="functionIcon">_onContainerKeydown</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -541,7 +541,7 @@ That would avoid various issues like #17347.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onContainerKeypress"></a><span class="functionIcon">_onContainerKeypress</span><span class="parameters">(evt)</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onContainerKeypress"></a><span class="functionIcon">_onContainerKeypress</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -562,7 +562,7 @@ That would avoid various issues like #17347.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onDownArrow"></a><span class="functionIcon">_onDownArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onDownArrow"></a><span class="functionIcon">_onDownArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -570,13 +570,13 @@ That would avoid various issues like #17347.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onLeftArrow"></a><span class="functionIcon">_onLeftArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onLeftArrow"></a><span class="functionIcon">_onLeftArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -585,7 +585,7 @@ Should go back to the previous child in horizontal container widgets like Toolba
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onRightArrow"></a><span class="functionIcon">_onRightArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onRightArrow"></a><span class="functionIcon">_onRightArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>
@@ -594,7 +594,7 @@ Should go to the next child in horizontal container widgets like Toolbar.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onUpArrow"></a><span class="functionIcon">_onUpArrow</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dijit__KeyNavMixin__onUpArrow"></a><span class="functionIcon">_onUpArrow</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dijit/_KeyNavMixin" class="jsdoc-link">dijit/_KeyNavMixin</a>
         </div>

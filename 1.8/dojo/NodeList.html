@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/NodeList.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/NodeList<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojo/NodeList<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Array-like object which adds syntactic
 sugar for chaining, common iteration operations, animation, and
 node manipulation. NodeLists are most often returned as the
@@ -19,6 +19,11 @@ manipulation, and event handling. Instead of needing to dig up
 functions in the dojo.* namespace, NodeLists generally make the
 full power of Dojo available for DOM manipulation tasks in a
 simple, chainable way.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">NodeList<span class="parameters">(array);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -33,6 +38,7 @@ simple, chainable way.</p>
     </td>
   </tr>
 </table>
+<div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
 <p>See the <a href="/reference-guide/1.8/dojo/NodeList.html" target="_blank">dojo/NodeList reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
@@ -134,7 +140,7 @@ dojo.query(&quot;p&quot;)
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="arrayIcon"><a href="#1_8dojo_NodeList_events" class="inline-link"> events </a><span></span><span title="Must manually require () dojo/_base/NodeList to access" class="jsdoc-extension"></span>
+        <li class="arrayIcon public extension-module"><a href="#1_8dojo_NodeList_events" class="inline-link">events  </a><span>  </span><span title="Must manually require () dojo/_base/NodeList to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -152,31 +158,31 @@ actions.</span><span title="private" class="jsdoc-private"> </span><span title="
         <li class="functionIcon private inherited"><a href="#1_8dojo_NodeList__adaptWithCondition" class="inline-link"> _adaptWithCondition</a><span class="parameters">(</span>f, g, o) <span>adapts a single node function to be used in the map-type
 actions, behaves like forEach() or map() depending on arguments</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__anim" class="inline-link"> _anim</a><span class="parameters">(</span>obj, method, args) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__anim" class="inline-link"> _anim</a><span class="parameters">(</span>obj, method, args) <span></span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__buildArrayFromCallback" class="inline-link"> _buildArrayFromCallback</a><span class="parameters">(</span>callback) <span>builds a new array of possibly differing size based on the input list.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__buildArrayFromCallback" class="inline-link"> _buildArrayFromCallback</a><span class="parameters">(</span>callback) <span>builds a new array of possibly differing size based on the input list.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__cloneNode" class="inline-link"> _cloneNode</a><span class="parameters">(</span>node) <span>private utility to clone a node.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__cloneNode" class="inline-link"> _cloneNode</a><span class="parameters">(</span>node) <span>private utility to clone a node.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__getRelatedUniqueNodes" class="inline-link"> _getRelatedUniqueNodes</a><span class="parameters">(</span>query, callback) <span>cycles over all the nodes and calls a callback
-to collect nodes for a possible inclusion in a result.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__getRelatedUniqueNodes" class="inline-link"> _getRelatedUniqueNodes</a><span class="parameters">(</span>query, callback) <span>cycles over all the nodes and calls a callback
+to collect nodes for a possible inclusion in a result.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__getUniqueAsNodeList" class="inline-link"> _getUniqueAsNodeList</a><span class="parameters">(</span>nodes) <span>given a list of nodes, make sure only unique
-elements are returned as our NodeList object.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__getUniqueAsNodeList" class="inline-link"> _getUniqueAsNodeList</a><span class="parameters">(</span>nodes) <span>given a list of nodes, make sure only unique
+elements are returned as our NodeList object.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__getUniqueNodeListWithParent" class="inline-link"> _getUniqueNodeListWithParent</a><span class="parameters">(</span>nodes, query) <span>gets unique element nodes, filters them further
-with an optional query and then calls _stash to track parent NodeList.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__getUniqueNodeListWithParent" class="inline-link"> _getUniqueNodeListWithParent</a><span class="parameters">(</span>nodes, query) <span>gets unique element nodes, filters them further
+with an optional query and then calls _stash to track parent NodeList.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dojo_NodeList__NodeListCtor" class="inline-link"> _NodeListCtor</a><span class="parameters">(</span>array) <span>Array-like object which adds syntactic
 sugar for chaining, common iteration operations, animation, and
 node manipulation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__normalize" class="inline-link"> _normalize</a><span class="parameters">(</span>content, refNode) <span>normalizes data to an array of items to insert.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__normalize" class="inline-link"> _normalize</a><span class="parameters">(</span>content, refNode) <span>normalizes data to an array of items to insert.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__place" class="inline-link"> _place</a><span class="parameters">(</span>ary, refNode, position, useClone) <span>private utility to handle placing an array of nodes relative to another node.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__place" class="inline-link"> _place</a><span class="parameters">(</span>ary, refNode, position, useClone) <span>private utility to handle placing an array of nodes relative to another node.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo_NodeList__placeMultiple" class="inline-link"> _placeMultiple</a><span class="parameters">(</span>query, position) <span>private method for inserting queried nodes into all nodes in this NodeList
-at different positions.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_8dojo_NodeList__placeMultiple" class="inline-link"> _placeMultiple</a><span class="parameters">(</span>query, position) <span>private method for inserting queried nodes into all nodes in this NodeList
+at different positions.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dojo_NodeList__stash" class="inline-link"> _stash</a><span class="parameters">(</span>parent) <span>private function to hold to a parent NodeList. end() to return the parent NodeList.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
@@ -184,171 +190,167 @@ at different positions.</span><span title="private" class="jsdoc-private"> </spa
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dojo_NodeList__wrap" class="inline-link"> _wrap</a><span class="parameters">(</span>a, parent, NodeListCtor) <span>decorate an array to make it look like a dojo/NodeList.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_addClass" class="inline-link"> addClass</a><span class="parameters">(</span>className) <span>adds the specified class to every node in the list</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_addClass" class="inline-link"> addClass</a><span class="parameters">(</span>className) <span>adds the specified class to every node in the list</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_addClassFx" class="inline-link"> addClassFx</a><span class="parameters">(</span>cssClass, args) <span>Animate the effects of adding a class to all nodes in this list.
-see dojox.fx.addClass</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_addClassFx" class="inline-link"> addClassFx</a><span class="parameters">(</span>cssClass, args) <span>Animate the effects of adding a class to all nodes in this list.
+see dojox.fx.addClass</span><span title="Must manually require () dojox/fx/ext-dojo/NodeList-style to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_addContent" class="inline-link"> addContent</a><span class="parameters">(</span>content, position) <span>add a node, NodeList or some HTML as a string to every item in the
-list.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_addContent" class="inline-link"> addContent</a><span class="parameters">(</span>content, position) <span>add a node, NodeList or some HTML as a string to every item in the
+list.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_adopt" class="inline-link"> adopt</a><span class="parameters">(</span>queryOrListOrNode, position) <span>places any/all elements in queryOrListOrNode at a
-position relative to the first element in this list.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_adopt" class="inline-link"> adopt</a><span class="parameters">(</span>queryOrListOrNode, position) <span>places any/all elements in queryOrListOrNode at a
+position relative to the first element in this list.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_after" class="inline-link"> after</a><span class="parameters">(</span>content) <span>Places the content after every node in the NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_after" class="inline-link"> after</a><span class="parameters">(</span>content) <span>Places the content after every node in the NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_andSelf" class="inline-link"> andSelf</a><span class="parameters">(</span>) <span>Adds the nodes from the previous dojo/NodeList to the current dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_andSelf" class="inline-link"> andSelf</a><span class="parameters">(</span>) <span>Adds the nodes from the previous dojo/NodeList to the current dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_anim" class="inline-link"> anim</a><span class="parameters">(</span>properties, duration, easing, onEnd, delay) <span>Animate one or more CSS properties for all nodes in this list.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_anim" class="inline-link"> anim</a><span class="parameters">(</span>properties, duration, easing, onEnd, delay) <span>Animate one or more CSS properties for all nodes in this list.</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_animateProperty" class="inline-link"> animateProperty</a><span class="parameters">(</span>args) <span>Animate all elements of this NodeList across the properties specified.
-syntax identical to dojo.animateProperty</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_animateProperty" class="inline-link"> animateProperty</a><span class="parameters">(</span>args) <span>Animate all elements of this NodeList across the properties specified.
+syntax identical to dojo.animateProperty</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_append" class="inline-link"> append</a><span class="parameters">(</span>content) <span>appends the content to every node in the NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_append" class="inline-link"> append</a><span class="parameters">(</span>content) <span>appends the content to every node in the NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_appendTo" class="inline-link"> appendTo</a><span class="parameters">(</span>query) <span>appends nodes in this NodeList to the nodes matched by
-the query passed to appendTo.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_appendTo" class="inline-link"> appendTo</a><span class="parameters">(</span>query) <span>appends nodes in this NodeList to the nodes matched by
+the query passed to appendTo.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_at" class="inline-link"> at</a><span class="parameters">(</span>index) <span>Returns a new NodeList comprised of items in this NodeList
 at the given index or indices.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_attr" class="inline-link"> attr</a><span class="parameters">(</span>property, value) <span>gets or sets the DOM attribute for every element in the
-NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_attr" class="inline-link"> attr</a><span class="parameters">(</span>property, value) <span>gets or sets the DOM attribute for every element in the
+NodeList.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_before" class="inline-link"> before</a><span class="parameters">(</span>content) <span>Places the content before every node in the NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_before" class="inline-link"> before</a><span class="parameters">(</span>content) <span>Places the content before every node in the NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_children" class="inline-link"> children</a><span class="parameters">(</span>query) <span>Returns all immediate child elements for nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_children" class="inline-link"> children</a><span class="parameters">(</span>query) <span>Returns all immediate child elements for nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_clone" class="inline-link"> clone</a><span class="parameters">(</span>) <span>Clones all the nodes in this NodeList and returns them as a new NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_clone" class="inline-link"> clone</a><span class="parameters">(</span>) <span>Clones all the nodes in this NodeList and returns them as a new NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_closest" class="inline-link"> closest</a><span class="parameters">(</span>query, root) <span>Returns closest parent that matches query, including current node in this
-dojo/NodeList if it matches the query.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_closest" class="inline-link"> closest</a><span class="parameters">(</span>query, root) <span>Returns closest parent that matches query, including current node in this
+dojo/NodeList if it matches the query.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_concat" class="inline-link"> concat</a><span class="parameters">(</span>item) <span>Returns a new NodeList comprised of items in this NodeList
 as well as items passed in as parameters</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_connect" class="inline-link"> connect</a><span class="parameters">(</span>methodName, objOrFunc, funcName) <span>Attach event handlers to every item of the NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_connect" class="inline-link"> connect</a><span class="parameters">(</span>methodName, objOrFunc, funcName) <span>Attach event handlers to every item of the NodeList.</span><span title="Must manually require () dojo/_base/NodeList to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>array) <span>Array-like object which adds syntactic
-sugar for chaining, common iteration operations, animation, and
-node manipulation.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_coords" class="inline-link"> coords</a><span class="parameters">(</span>) <span>Deprecated: Use position() for border-box x/y/w/h
+or marginBox() for margin-box w/h/l/t.</span><span title="Must manually require () dojo/_base/NodeList to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_coords" class="inline-link"> coords</a><span class="parameters">(</span>) <span>Deprecated: Use position() for border-box x/y/w/h
-or marginBox() for margin-box w/h/l/t.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_data" class="inline-link"> data</a><span class="parameters">(</span>key, value) <span>stash or get some arbitrary data on/from these nodes.</span><span title="Must manually require () dojo/NodeList-data to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_data" class="inline-link"> data</a><span class="parameters">(</span>key, value) <span>stash or get some arbitrary data on/from these nodes.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_delegate" class="inline-link"> delegate</a><span class="parameters">(</span>selector, eventName, fn) <span>Monitor nodes in this NodeList for [bubbled] events on nodes that match selector.</span><span title="Must manually require () dojox/NodeList/delegate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_delegate" class="inline-link"> delegate</a><span class="parameters">(</span>selector, eventName, fn) <span>Monitor nodes in this NodeList for [bubbled] events on nodes that match selector.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_dtl" class="inline-link"> dtl</a><span class="parameters">(</span>template, context) <span>Renders the specified template in each of the NodeList entries.</span><span title="Must manually require () dojox/dtl/ext-dojo/NodeList to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_dtl" class="inline-link"> dtl</a><span class="parameters">(</span>template, context) <span>Renders the specified template in each of the NodeList entries.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_empty" class="inline-link"> empty</a><span class="parameters">(</span>) <span>clears all content from each node in the list.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_empty" class="inline-link"> empty</a><span class="parameters">(</span>) <span>clears all content from each node in the list.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_end" class="inline-link"> end</a><span class="parameters">(</span>) <span>Ends use of the current NodeList by returning the previous NodeList
 that generated the current NodeList.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_even" class="inline-link"> even</a><span class="parameters">(</span>) <span>Returns the even nodes in this dojo/NodeList as a dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_even" class="inline-link"> even</a><span class="parameters">(</span>) <span>Returns the even nodes in this dojo/NodeList as a dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_every" class="inline-link"> every</a><span class="parameters">(</span>callback, thisObject) <span>see dojo.every() and the Array.every
 docs.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_fadeIn" class="inline-link"> fadeIn</a><span class="parameters">(</span>args) <span>fade in all elements of this NodeList via dojo.fadeIn</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_fadeIn" class="inline-link"> fadeIn</a><span class="parameters">(</span>args) <span>fade in all elements of this NodeList via dojo.fadeIn</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_fadeOut" class="inline-link"> fadeOut</a><span class="parameters">(</span>args) <span>fade out all elements of this NodeList via dojo.fadeOut</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_fadeOut" class="inline-link"> fadeOut</a><span class="parameters">(</span>args) <span>fade out all elements of this NodeList via dojo.fadeOut</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter) <span>&quot;masks&quot; the built-in javascript filter() method (supported
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter) <span>&quot;masks&quot; the built-in javascript filter() method (supported
 in Dojo via dojo.filter) to support passing a simple
 string filter in addition to supporting filtering function
-objects.</span>
+objects.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_first" class="inline-link"> first</a><span class="parameters">(</span>) <span>Returns the first node in this dojo/NodeList as a dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_first" class="inline-link"> first</a><span class="parameters">(</span>) <span>Returns the first node in this dojo/NodeList as a dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>callback, thisObj) <span>see dojo.forEach().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_html" class="inline-link"> html</a><span class="parameters">(</span>value) <span>allows setting the innerHTML of each node in the NodeList,
-if there is a value passed in, otherwise, reads the innerHTML value of the first node.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_html" class="inline-link"> html</a><span class="parameters">(</span>value) <span>allows setting the innerHTML of each node in the NodeList,
+if there is a value passed in, otherwise, reads the innerHTML value of the first node.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_indexOf" class="inline-link"> indexOf</a><span class="parameters">(</span>value, fromIndex) <span>see dojo.indexOf().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_innerHTML" class="inline-link"> innerHTML</a><span class="parameters">(</span>value) <span>allows setting the innerHTML of each node in the NodeList,
-if there is a value passed in, otherwise, reads the innerHTML value of the first node.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_innerHTML" class="inline-link"> innerHTML</a><span class="parameters">(</span>value) <span>allows setting the innerHTML of each node in the NodeList,
+if there is a value passed in, otherwise, reads the innerHTML value of the first node.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_insertAfter" class="inline-link"> insertAfter</a><span class="parameters">(</span>query) <span>The nodes in this NodeList will be placed after the nodes
-matched by the query passed to insertAfter.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_insertAfter" class="inline-link"> insertAfter</a><span class="parameters">(</span>query) <span>The nodes in this NodeList will be placed after the nodes
+matched by the query passed to insertAfter.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_insertBefore" class="inline-link"> insertBefore</a><span class="parameters">(</span>query) <span>The nodes in this NodeList will be placed after the nodes
-matched by the query passed to insertAfter.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_insertBefore" class="inline-link"> insertBefore</a><span class="parameters">(</span>query) <span>The nodes in this NodeList will be placed after the nodes
+matched by the query passed to insertAfter.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_instantiate" class="inline-link"> instantiate</a><span class="parameters">(</span>declaredClass, properties) <span>Create a new instance of a specified class, using the
 specified properties and each node in the NodeList as a
 srcNodeRef.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_last" class="inline-link"> last</a><span class="parameters">(</span>) <span>Returns the last node in this dojo/NodeList as a dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_last" class="inline-link"> last</a><span class="parameters">(</span>) <span>Returns the last node in this dojo/NodeList as a dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_lastIndexOf" class="inline-link"> lastIndexOf</a><span class="parameters">(</span>value, fromIndex) <span>see dojo.lastIndexOf().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_map" class="inline-link"> map</a><span class="parameters">(</span>func, obj) <span>see dojo.map().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_marginBox" class="inline-link"> marginBox</a><span class="parameters">(</span>) <span>Returns margin-box size of nodes</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_marginBox" class="inline-link"> marginBox</a><span class="parameters">(</span>) <span>Returns margin-box size of nodes</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_next" class="inline-link"> next</a><span class="parameters">(</span>query) <span>Returns the next element for nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_next" class="inline-link"> next</a><span class="parameters">(</span>query) <span>Returns the next element for nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_nextAll" class="inline-link"> nextAll</a><span class="parameters">(</span>query) <span>Returns all sibling elements that come after the nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_nextAll" class="inline-link"> nextAll</a><span class="parameters">(</span>query) <span>Returns all sibling elements that come after the nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_odd" class="inline-link"> odd</a><span class="parameters">(</span>) <span>Returns the odd nodes in this dojo/NodeList as a dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_odd" class="inline-link"> odd</a><span class="parameters">(</span>) <span>Returns the odd nodes in this dojo/NodeList as a dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_on" class="inline-link"> on</a><span class="parameters">(</span>eventName, listener) <span>Listen for events on the nodes in the NodeList.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_orphan" class="inline-link"> orphan</a><span class="parameters">(</span>filter) <span>removes elements in this list that match the filter
-from their parents and returns them as a new NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_orphan" class="inline-link"> orphan</a><span class="parameters">(</span>filter) <span>removes elements in this list that match the filter
+from their parents and returns them as a new NodeList.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_parent" class="inline-link"> parent</a><span class="parameters">(</span>query) <span>Returns immediate parent elements for nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_parent" class="inline-link"> parent</a><span class="parameters">(</span>query) <span>Returns immediate parent elements for nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_parents" class="inline-link"> parents</a><span class="parameters">(</span>query) <span>Returns all parent elements for nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_parents" class="inline-link"> parents</a><span class="parameters">(</span>query) <span>Returns all parent elements for nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_place" class="inline-link"> place</a><span class="parameters">(</span>queryOrNode, position) <span>places elements of this node list relative to the first element matched
-by queryOrNode.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_place" class="inline-link"> place</a><span class="parameters">(</span>queryOrNode, position) <span>places elements of this node list relative to the first element matched
+by queryOrNode.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_position" class="inline-link"> position</a><span class="parameters">(</span>) <span>Returns border-box objects (x/y/w/h) of all elements in a node list
-as an Array (not a NodeList).</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_position" class="inline-link"> position</a><span class="parameters">(</span>) <span>Returns border-box objects (x/y/w/h) of all elements in a node list
+as an Array (not a NodeList).</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_prepend" class="inline-link"> prepend</a><span class="parameters">(</span>content) <span>prepends the content to every node in the NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_prepend" class="inline-link"> prepend</a><span class="parameters">(</span>content) <span>prepends the content to every node in the NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_prependTo" class="inline-link"> prependTo</a><span class="parameters">(</span>query) <span>prepends nodes in this NodeList to the nodes matched by
-the query passed to prependTo.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_prependTo" class="inline-link"> prependTo</a><span class="parameters">(</span>query) <span>prepends nodes in this NodeList to the nodes matched by
+the query passed to prependTo.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_prev" class="inline-link"> prev</a><span class="parameters">(</span>query) <span>Returns the previous element for nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_prev" class="inline-link"> prev</a><span class="parameters">(</span>query) <span>Returns the previous element for nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_prevAll" class="inline-link"> prevAll</a><span class="parameters">(</span>query) <span>Returns all sibling elements that come before the nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_prevAll" class="inline-link"> prevAll</a><span class="parameters">(</span>query) <span>Returns all sibling elements that come before the nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_query" class="inline-link"> query</a><span class="parameters">(</span>queryStr) <span>Returns a new list whose members match the passed query,
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_query" class="inline-link"> query</a><span class="parameters">(</span>queryStr) <span>Returns a new list whose members match the passed query,
 assuming elements of the current NodeList as the root for
-each search.</span>
+each search.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_remove" class="inline-link"> remove</a><span class="parameters">(</span>filter) <span>removes elements in this list that match the filter
-from their parents and returns them as a new NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_remove" class="inline-link"> remove</a><span class="parameters">(</span>filter) <span>removes elements in this list that match the filter
+from their parents and returns them as a new NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_removeAttr" class="inline-link"> removeAttr</a><span class="parameters">(</span>name) <span>Removes an attribute from each node in the list.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_removeAttr" class="inline-link"> removeAttr</a><span class="parameters">(</span>name) <span>Removes an attribute from each node in the list.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_removeClass" class="inline-link"> removeClass</a><span class="parameters">(</span>className) <span>removes the specified class from every node in the list</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_removeClass" class="inline-link"> removeClass</a><span class="parameters">(</span>className) <span>removes the specified class from every node in the list</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_removeClassFx" class="inline-link"> removeClassFx</a><span class="parameters">(</span>cssClass, args) <span>Animate the effect of removing a class to all nodes in this list.
-see dojox.fx.removeClass</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_removeClassFx" class="inline-link"> removeClassFx</a><span class="parameters">(</span>cssClass, args) <span>Animate the effect of removing a class to all nodes in this list.
+see dojox.fx.removeClass</span><span title="Must manually require () dojox/fx/ext-dojo/NodeList-style to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_removeData" class="inline-link"> removeData</a><span class="parameters">(</span>key) <span>Remove the data associated with these nodes.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_removeData" class="inline-link"> removeData</a><span class="parameters">(</span>key) <span>Remove the data associated with these nodes.</span><span title="Must manually require () dojo/NodeList-data to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_replaceAll" class="inline-link"> replaceAll</a><span class="parameters">(</span>query) <span>replaces nodes matched by the query passed to replaceAll with the nodes
-in this NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_replaceAll" class="inline-link"> replaceAll</a><span class="parameters">(</span>query) <span>replaces nodes matched by the query passed to replaceAll with the nodes
+in this NodeList.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_replaceClass" class="inline-link"> replaceClass</a><span class="parameters">(</span>addClassStr, removeClassStr) <span>Replaces one or more classes on a node if not present.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_replaceClass" class="inline-link"> replaceClass</a><span class="parameters">(</span>addClassStr, removeClassStr) <span>Replaces one or more classes on a node if not present.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_replaceWith" class="inline-link"> replaceWith</a><span class="parameters">(</span>content) <span>Replaces each node in ths NodeList with the content passed to replaceWith.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_replaceWith" class="inline-link"> replaceWith</a><span class="parameters">(</span>content) <span>Replaces each node in ths NodeList with the content passed to replaceWith.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_siblings" class="inline-link"> siblings</a><span class="parameters">(</span>query) <span>Returns all sibling elements for nodes in this dojo/NodeList.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_siblings" class="inline-link"> siblings</a><span class="parameters">(</span>query) <span>Returns all sibling elements for nodes in this dojo/NodeList.</span><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_slice" class="inline-link"> slice</a><span class="parameters">(</span>begin, end) <span>Returns a new NodeList, maintaining this one in place</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>slide all elements of the node list to the specified place via dojo/fx.slideTo()</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>slide all elements of the node list to the specified place via dojo/fx.slideTo()</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_some" class="inline-link"> some</a><span class="parameters">(</span>callback, thisObject) <span>Takes the same structure of arguments and returns as
 dojo.some() with the caveat that the passed array is
@@ -358,33 +360,33 @@ implicitly this NodeList.</span><span title="inherited from dojo/query" class="j
 the arguments passed, potentially splicing in new elements
 at an offset, optionally deleting elements</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_style" class="inline-link"> style</a><span class="parameters">(</span>property, value) <span>gets or sets the CSS property for every element in the NodeList</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_style" class="inline-link"> style</a><span class="parameters">(</span>property, value) <span>gets or sets the CSS property for every element in the NodeList</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_text" class="inline-link"> text</a><span class="parameters">(</span>value) <span>allows setting the text value of each node in the NodeList,
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_text" class="inline-link"> text</a><span class="parameters">(</span>value) <span>allows setting the text value of each node in the NodeList,
 if there is a value passed in, otherwise, returns the text value for all the
-nodes in the NodeList in one string.</span>
+nodes in the NodeList in one string.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_toggleClass" class="inline-link"> toggleClass</a><span class="parameters">(</span>className, condition) <span>Adds a class to node if not present, or removes if present.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_toggleClass" class="inline-link"> toggleClass</a><span class="parameters">(</span>className, condition) <span>Adds a class to node if not present, or removes if present.</span><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_toggleClassFx" class="inline-link"> toggleClassFx</a><span class="parameters">(</span>cssClass, force, args) <span>Animate the effect of adding or removing a class to all nodes in this list.
-see dojox.fx.toggleClass</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_toggleClassFx" class="inline-link"> toggleClassFx</a><span class="parameters">(</span>cssClass, force, args) <span>Animate the effect of adding or removing a class to all nodes in this list.
+see dojox.fx.toggleClass</span><span title="Must manually require () dojox/fx/ext-dojo/NodeList-style to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8dojo_NodeList_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_val" class="inline-link"> val</a><span class="parameters">(</span>value) <span>If a value is passed, allows seting the value property of form elements in this
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_val" class="inline-link"> val</a><span class="parameters">(</span>value) <span>If a value is passed, allows seting the value property of form elements in this
 NodeList, or properly selecting/checking the right value for radio/checkbox/select
-elements.</span>
+elements.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_wipeIn" class="inline-link"> wipeIn</a><span class="parameters">(</span>args) <span>wipe in all elements of this NodeList via dojo/fx.wipeIn()</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_wipeIn" class="inline-link"> wipeIn</a><span class="parameters">(</span>args) <span>wipe in all elements of this NodeList via dojo/fx.wipeIn()</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_wipeOut" class="inline-link"> wipeOut</a><span class="parameters">(</span>args) <span>wipe out all elements of this NodeList via dojo/fx.wipeOut()</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_wipeOut" class="inline-link"> wipeOut</a><span class="parameters">(</span>args) <span>wipe out all elements of this NodeList via dojo/fx.wipeOut()</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_wrap" class="inline-link"> wrap</a><span class="parameters">(</span>html) <span>Wrap each node in the NodeList with html passed to wrap.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_wrap" class="inline-link"> wrap</a><span class="parameters">(</span>html) <span>Wrap each node in the NodeList with html passed to wrap.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_wrapAll" class="inline-link"> wrapAll</a><span class="parameters">(</span>html) <span>Insert html where the first node in this NodeList lives, then place all
-nodes in this NodeList as the child of the html.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_wrapAll" class="inline-link"> wrapAll</a><span class="parameters">(</span>html) <span>Insert html where the first node in this NodeList lives, then place all
+nodes in this NodeList as the child of the html.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo_NodeList_wrapInner" class="inline-link"> wrapInner</a><span class="parameters">(</span>html) <span>For each node in the NodeList, wrap all its children with the passed in html.</span>
+        <li class="functionIcon  extension-module"><a href="#1_8dojo_NodeList_wrapInner" class="inline-link"> wrapInner</a><span class="parameters">(</span>html) <span>For each node in the NodeList, wrap all its children with the passed in html.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -538,7 +540,7 @@ actions, behaves like forEach() or map() depending on arguments</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__anim"></a><span class="functionIcon">_anim</span><span class="parameters">(obj, method, args)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -571,7 +573,7 @@ actions, behaves like forEach() or map() depending on arguments</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__buildArrayFromCallback"></a><span class="functionIcon">_buildArrayFromCallback</span><span class="parameters">(callback)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -595,7 +597,7 @@ the array&#39;s map function cannot be used.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__cloneNode"></a><span class="functionIcon">_cloneNode</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -619,7 +621,7 @@ clone event handlers if that is derivable from the node.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__getRelatedUniqueNodes"></a><span class="functionIcon">_getRelatedUniqueNodes</span><span class="parameters">(query, callback)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -651,7 +653,7 @@ where ary is the array being used to collect the nodes.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__getUniqueAsNodeList"></a><span class="functionIcon">_getUniqueAsNodeList</span><span class="parameters">(nodes)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -675,7 +677,7 @@ Does not call _stash().</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__getUniqueNodeListWithParent"></a><span class="functionIcon">_getUniqueNodeListWithParent</span><span class="parameters">(nodes, query)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -831,7 +833,7 @@ dojo.query(&quot;p&quot;)
           </div>
         </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__normalize"></a><span class="functionIcon">_normalize</span><span class="parameters">(content, refNode)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -869,7 +871,7 @@ nodes are inserted into the DOM. At that point, the nodes will be parsed for wid
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__place"></a><span class="functionIcon">_place</span><span class="parameters">(ary, refNode, position, useClone)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -911,7 +913,7 @@ optionally parsing widgets, if ary._runParse is true.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList__placeMultiple"></a><span class="functionIcon">_placeMultiple</span><span class="parameters">(query, position)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -1080,7 +1082,7 @@ NodeList calls to use a different object than dojo/NodeList.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_addClass"></a><span class="functionIcon">addClass</span><span class="parameters">(className)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -1103,7 +1105,7 @@ or an array of class names.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_addClassFx"></a><span class="functionIcon">addClassFx</span><span class="parameters">(cssClass, args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/fx/ext-dojo/NodeList-style" class="jsdoc-link">dojox/fx/ext-dojo/NodeList-style</a><span title="Must manually require () dojox/fx/ext-dojo/NodeList-style to access" class="jsdoc-extension"></span>
@@ -1140,7 +1142,7 @@ dojo.query(&quot;.bar&quot;).addClassFx(&quot;bar&quot;).play();</code></pre>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_addContent"></a><span class="functionIcon">addContent</span><span class="parameters">(content, position)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -1250,7 +1252,7 @@ var notes = dojo.query(&quot;.note&quot;).addContent({
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_adopt"></a><span class="functionIcon">adopt</span><span class="parameters">(queryOrListOrNode, position)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -1296,7 +1298,7 @@ first element of this NodeList.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_after"></a><span class="functionIcon">after</span><span class="parameters">(content)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -1347,7 +1349,7 @@ not the appended content.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_andSelf"></a><span class="functionIcon">andSelf</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -1382,7 +1384,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_anim"></a><span class="functionIcon">anim</span><span class="parameters">(properties, duration, easing, onEnd, delay)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -1458,7 +1460,7 @@ pixels over half a second
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_animateProperty"></a><span class="functionIcon">animateProperty</span><span class="parameters">(args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -1513,7 +1515,7 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_append"></a><span class="functionIcon">append</span><span class="parameters">(content)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -1564,7 +1566,7 @@ not the appended content.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_appendTo"></a><span class="functionIcon">appendTo</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -1672,7 +1674,7 @@ the original list and continue chaining:
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_attr"></a><span class="functionIcon">attr</span><span class="parameters">(property, value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -1732,7 +1734,7 @@ var ih = dojo.query(&quot;li.replaceable&quot;).attr(&quot;innerHTML&quot;);</co
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_before"></a><span class="functionIcon">before</span><span class="parameters">(content)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -1783,7 +1785,7 @@ not the appended content.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_children"></a><span class="functionIcon">children</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -1843,7 +1845,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_clone"></a><span class="functionIcon">clone</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -1888,7 +1890,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_closest"></a><span class="functionIcon">closest</span><span class="parameters">(query, root)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -1980,7 +1982,7 @@ spliced into the NodeList</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_connect"></a><span class="functionIcon">connect</span><span class="parameters">(methodName, objOrFunc, funcName)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/_base/NodeList" class="jsdoc-link">dojo/_base/NodeList</a><span title="Must manually require () dojo/_base/NodeList to access" class="jsdoc-extension"></span>
@@ -2046,134 +2048,7 @@ event. May also be a function reference.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojo_NodeList_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(array)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Array-like object which adds syntactic
-sugar for chaining, common iteration operations, animation, and
-node manipulation. NodeLists are most often returned as the
-result of dojo.query() calls.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>NodeList instances provide many utilities that reflect
-core Dojo APIs for Array iteration and manipulation, DOM
-manipulation, and event handling. Instead of needing to dig up
-functions in the dojo.* namespace, NodeLists generally make the
-full power of Dojo available for DOM manipulation tasks in a
-simple, chainable way.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">array</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
-        <div class="jsdoc-examples">
-          <h2>Examples</h2>
-          <div class="jsdoc-example">
-            <h3>Example 1</h3><p>create a node list from a node
-
-</p>
-<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
-
-</p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-l.forEach(function(node, index, nodeList){
-    console.log(index, node.innerHTML);
-});</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 3</h3><p>use native and Dojo-provided array methods to manipulate a
-NodeList without needing to use dojo.* functions explicitly:
-
-</p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-// since NodeLists are real arrays, they have a length
-// property that is both readable and writable and
-// push/pop/shift/unshift methods
-console.log(l.length);
-l.push(dojo.create(&quot;span&quot;));
-
-// dojo&#39;s normalized array methods work too:
-console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-// ...including the special &quot;function as string&quot; shorthand
-console.log( l.every(&quot;item.nodeType == 1&quot;) );
-
-// NodeLists can be [..] indexed, or you can use the at()
-// function to get specific items wrapped in a new NodeList:
-var node = l[3]; // the 4th element
-var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>the style functions you expect are all there too:
-
-</p>
-<pre><code>// style() as a getter...
-var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-// ...and as a setter:
-dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-// class manipulation
-dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-// even getting the coordinates of all the items
-var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
-
-</p>
-<pre><code>// remove all of the elements in the list from their
-// parents (akin to &quot;deleting&quot; them from the document)
-dojo.query(&quot;.thinger&quot;).orphan();
-// place all elements in the list at the front of #foo
-dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:
-
-</p>
-<pre><code>// like dojo.connect(), but with implicit scope
-dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
-
-// many common event handlers are already available directly:
-dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-dojo.query(&quot;p&quot;)
-    .onmouseenter(toggleHovered)
-    .onmouseleave(toggleHovered);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
-
-</p>
-<pre><code>dojo.query(&quot;.thinger&quot;)
-    .onclick(function(e){ /* ... */ })
-    .at(1, 3, 8) // get a subset
-        .style(&quot;padding&quot;, &quot;5px&quot;)
-        .forEach(console.log);</code></pre>
-
-          </div>
-        </div>
-      </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_coords"></a><span class="functionIcon">coords</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/_base/NodeList" class="jsdoc-link">dojo/_base/NodeList</a><span title="Must manually require () dojo/_base/NodeList to access" class="jsdoc-extension"></span>
@@ -2185,7 +2060,7 @@ an Array (<em>not</em> a NodeList). Acts like <code>domGeom.coords</code>, thoug
 the node passed is each node in this list.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_data"></a><span class="functionIcon">data</span><span class="parameters">(key, value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-data" class="jsdoc-link">dojo/NodeList-data</a><span title="Must manually require () dojo/NodeList-data to access" class="jsdoc-extension"></span>
@@ -2271,7 +2146,7 @@ var first = list[0];</code></pre>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_delegate"></a><span class="functionIcon">delegate</span><span class="parameters">(selector, eventName, fn)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/NodeList/delegate" class="jsdoc-link">dojox/NodeList/delegate</a><span title="Must manually require () dojox/NodeList/delegate to access" class="jsdoc-extension"></span>
@@ -2343,7 +2218,7 @@ That means that for example, after setting up a handler via
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_dtl"></a><span class="functionIcon">dtl</span><span class="parameters">(template, context)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/dtl/ext-dojo/NodeList" class="jsdoc-link">dojox/dtl/ext-dojo/NodeList</a><span title="Must manually require () dojox/dtl/ext-dojo/NodeList to access" class="jsdoc-extension"></span>
@@ -2375,7 +2250,7 @@ That means that for example, after setting up a handler via
         <div class="jsdoc-return-description"><p>Renders the specified template in each of the NodeList entries.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_empty"></a><span class="functionIcon">empty</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -2412,7 +2287,7 @@ is no parent NodeList, an empty NodeList is returned.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_even"></a><span class="functionIcon">even</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -2483,7 +2358,7 @@ implicitly this NodeList</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_fadeIn"></a><span class="functionIcon">fadeIn</span><span class="parameters">(args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -2525,7 +2400,7 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_fadeOut"></a><span class="functionIcon">fadeOut</span><span class="parameters">(args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -2583,7 +2458,7 @@ fo.play();</code></pre>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_filter"></a><span class="functionIcon">filter</span><span class="parameters">(filter)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -2629,7 +2504,7 @@ objects.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_first"></a><span class="functionIcon">first</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -2699,7 +2574,7 @@ array is implicitly this NodeList. If you want the option to break out
 of the forEach loop, use every() or some() instead.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_html"></a><span class="functionIcon">html</span><span class="parameters">(value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -2805,7 +2680,7 @@ docs</a></p>
         <div class="jsdoc-return-description"><p>Positive Integer or 0 for a match, -1 of not found.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_innerHTML"></a><span class="functionIcon">innerHTML</span><span class="parameters">(value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -2873,7 +2748,7 @@ If a value is passed, the return is this dojo/NodeList</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_insertAfter"></a><span class="functionIcon">insertAfter</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -2926,7 +2801,7 @@ not the matched nodes from the query.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_insertBefore"></a><span class="functionIcon">insertBefore</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -3020,7 +2895,7 @@ srcNodeRef.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_last"></a><span class="functionIcon">last</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3125,7 +3000,7 @@ NodeList (a subclass of Array)</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_marginBox"></a><span class="functionIcon">marginBox</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3133,7 +3008,7 @@ NodeList (a subclass of Array)</p>
         <div class="jsdoc-full-summary"><p>Returns margin-box size of nodes</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_next"></a><span class="functionIcon">next</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3193,7 +3068,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_nextAll"></a><span class="functionIcon">nextAll</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3253,7 +3128,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_odd"></a><span class="functionIcon">odd</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3334,7 +3209,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_orphan"></a><span class="functionIcon">orphan</span><span class="parameters">(filter)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3361,7 +3236,7 @@ from their parents and returns them as a new NodeList.</p>
         <div class="jsdoc-return-description"><p>NodeList containing the orphaned elements</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_parent"></a><span class="functionIcon">parent</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3420,7 +3295,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_parents"></a><span class="functionIcon">parents</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3482,7 +3357,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_place"></a><span class="functionIcon">place</span><span class="parameters">(queryOrNode, position)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3526,7 +3401,7 @@ for relative positioning.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_position"></a><span class="functionIcon">position</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3537,7 +3412,7 @@ assumes the node passed is each node in this list.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_prepend"></a><span class="functionIcon">prepend</span><span class="parameters">(content)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -3582,7 +3457,7 @@ assume a DOM created by this markup:
 &lt;div id=&quot;bar&quot;&gt;&lt;span&gt;prepend&lt;/span&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/div&gt;</code></pre>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_prependTo"></a><span class="functionIcon">prependTo</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -3635,7 +3510,7 @@ not the matched nodes from the query.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_prev"></a><span class="functionIcon">prev</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3695,7 +3570,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_prevAll"></a><span class="functionIcon">prevAll</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -3757,7 +3632,7 @@ original <a class="jsdoc-link" href="/api/1.8/dojo/NodeList">dojo/NodeList</a>.<
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_query"></a><span class="functionIcon">query</span><span class="parameters">(queryStr)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3814,7 +3689,7 @@ each search.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_remove"></a><span class="functionIcon">remove</span><span class="parameters">(filter)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -3841,7 +3716,7 @@ from their parents and returns them as a new NodeList.</p>
         <div class="jsdoc-return-description"><p>NodeList containing the orphaned elements</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_removeAttr"></a><span class="functionIcon">removeAttr</span><span class="parameters">(name)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3863,7 +3738,7 @@ from their parents and returns them as a new NodeList.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_removeClass"></a><span class="functionIcon">removeClass</span><span class="parameters">(className)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -3891,7 +3766,7 @@ will be deleted.</p>
         <div class="jsdoc-return-description"><p>this list</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_removeClassFx"></a><span class="functionIcon">removeClassFx</span><span class="parameters">(cssClass, args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/fx/ext-dojo/NodeList-style" class="jsdoc-link">dojox/fx/ext-dojo/NodeList-style</a><span title="Must manually require () dojox/fx/ext-dojo/NodeList-style to access" class="jsdoc-extension"></span>
@@ -3927,7 +3802,7 @@ see <code>dojox.fx.removeClass</code></p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_removeData"></a><span class="functionIcon">removeData</span><span class="parameters">(key)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-data" class="jsdoc-link">dojo/NodeList-data</a><span title="Must manually require () dojo/NodeList-data to access" class="jsdoc-extension"></span>
@@ -3951,7 +3826,7 @@ If passed, remove the data item found at <code>key</code></p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_replaceAll"></a><span class="functionIcon">replaceAll</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -4020,7 +3895,7 @@ been cloned, so the returned NodeList will include the cloned nodes.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_replaceClass"></a><span class="functionIcon">replaceClass</span><span class="parameters">(addClassStr, removeClassStr)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -4053,7 +3928,7 @@ or an array of class names.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_replaceWith"></a><span class="functionIcon">replaceWith</span><span class="parameters">(content)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -4112,7 +3987,7 @@ Note that the returned nodes have been removed from the DOM.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_siblings"></a><span class="functionIcon">siblings</span><span class="parameters">(query)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-traverse" class="jsdoc-link">dojo/NodeList-traverse</a><span title="Must manually require () dojo/NodeList-traverse to access" class="jsdoc-extension"></span>
@@ -4216,7 +4091,7 @@ can be positive or negative.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_slideTo"></a><span class="functionIcon">slideTo</span><span class="parameters">(args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -4348,7 +4223,7 @@ spliced into the NodeList</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_style"></a><span class="functionIcon">style</span><span class="parameters">(property, value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -4383,7 +4258,7 @@ spliced into the NodeList</p>
 If a value is passed, the return is this NodeList</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_text"></a><span class="functionIcon">text</span><span class="parameters">(value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -4439,7 +4314,7 @@ If a value is passed, the return is this dojo/NodeList</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_toggleClass"></a><span class="functionIcon">toggleClass</span><span class="parameters">(className, condition)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="Must manually require () dojo/NodeList-dom to access" class="jsdoc-extension"></span>
@@ -4470,7 +4345,7 @@ Pass a boolean condition if you want to explicitly add or remove.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_toggleClassFx"></a><span class="functionIcon">toggleClassFx</span><span class="parameters">(cssClass, force, args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/fx/ext-dojo/NodeList-style" class="jsdoc-link">dojox/fx/ext-dojo/NodeList-style</a><span title="Must manually require () dojox/fx/ext-dojo/NodeList-style to access" class="jsdoc-extension"></span>
@@ -4520,7 +4395,7 @@ see <code>dojox.fx.toggleClass</code></p>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_val"></a><span class="functionIcon">val</span><span class="parameters">(value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -4572,7 +4447,7 @@ dojo.query(&quot;select&quot;).val([&quot;blue&quot;, &quot;yellow&quot;]) //Set
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_wipeIn"></a><span class="functionIcon">wipeIn</span><span class="parameters">(args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -4621,7 +4496,7 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_wipeOut"></a><span class="functionIcon">wipeOut</span><span class="parameters">(args)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-fx" class="jsdoc-link">dojo/NodeList-fx</a><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -4663,7 +4538,7 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_wrap"></a><span class="functionIcon">wrap</span><span class="parameters">(html)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -4714,7 +4589,7 @@ not the nodes from html argument.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_wrapAll"></a><span class="functionIcon">wrapAll</span><span class="parameters">(html)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -4772,7 +4647,7 @@ not the nodes from html argument.</p>
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dojo_NodeList_wrapInner"></a><span class="functionIcon">wrapInner</span><span class="parameters">(html)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/NodeList-manipulate" class="jsdoc-link">dojo/NodeList-manipulate</a><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>

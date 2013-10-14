@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/Deferred.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/Deferred<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojo/Deferred<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Creates a new deferred. This API is preferred over
 <a class="jsdoc-link" href="/api/1.8/dojo/_base/Deferred">dojo/_base/Deferred</a>.</p>
 </div>
@@ -15,6 +15,11 @@
 asynchronous operations. The deferred is the private interface
 that should not be returned to calling code. That&#39;s what the
 <code>promise</code> is for. See <a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a>.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">Deferred<span class="parameters">(canceler);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -40,7 +45,7 @@ The deferred is rejected with its return value, or a new
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dojo_Deferred_promise" class="inline-link"> promise </a><span></span>
+        <li class="objectIcon public"><a href="#1_8dojo_Deferred_promise" class="inline-link">promise  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -48,8 +53,6 @@ The deferred is rejected with its return value, or a new
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
         <li class="functionIcon "><a href="#1_8dojo_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojo_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceler) <span>Creates a new deferred.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojo_Deferred_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been canceled.</span>
         </li>
@@ -126,38 +129,6 @@ been fulfilled and consequently cannot be canceled.</p>
         <div class="jsdoc-return-description"><p>Returns the rejection reason if the deferred was canceled
 normally.</p>
 </div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo_Deferred_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(canceler)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/Deferred" class="jsdoc-link">dojo/Deferred</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Creates a new deferred. This API is preferred over
-<code>dojo/_base/Deferred</code>.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>Creates a new deferred, as an abstraction over (primarily)
-asynchronous operations. The deferred is the private interface
-that should not be returned to calling code. That&#39;s what the
-<code>promise</code> is for. See <a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a>.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">canceler</td>
-            <td class="jsdoc-param-type">Function</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div><p>Will be invoked if the deferred is canceled. The canceler
-receives the reason the deferred was canceled as its argument.
-The deferred is rejected with its return value, or a new
-<code>dojo/errors/CancelError</code> instance.</p>
- 
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_Deferred_isCanceled"></a><span class="functionIcon">isCanceled</span><span class="parameters">()</span> 

@@ -7,12 +7,17 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/has.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/has<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="functionIcon36 jsdoc-title module-title">dojo/has<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-full-summary"><p>Return the current value of the named feature.
 </p>
 </div>
 <div class="jsdoc-full-summary"><p>Returns the value of the feature named by name. The feature must have been
 previously added to the cache by has.add.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature">has<span class="parameters">(name);</span>
+  </div>
 </div>
 <table class="jsdoc-parameters">
   <tr>
@@ -29,13 +34,14 @@ previously added to the cache by has.add.</p>
     </td>
   </tr>
 </table>
+<div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
 <p>See the <a href="/reference-guide/1.8/dojo/has.html" target="_blank">dojo/has reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_8dojo_has_cache" class="inline-link"> cache </a><span></span>
+        <li class="stringIcon public"><a href="#1_8dojo_has_cache" class="inline-link">cache  </a><span>  </span>
         </li>
       </ul>
     </div>
@@ -45,8 +51,6 @@ previously added to the cache by has.add.</p>
         <li class="functionIcon "><a href="#1_8dojo_has_add" class="inline-link"> add</a><span class="parameters">(</span>name, test, now, force) <span>Register a new feature test for some named feature.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojo_has_clearElement" class="inline-link"> clearElement</a><span class="parameters">(</span>element) <span>Deletes the contents of the element passed to test functions.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojo_has_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>name) <span>Return the current value of the named feature.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojo_has_load" class="inline-link"> load</a><span class="parameters">(</span>id, parentRequire, loaded) <span>Conditional loading of AMD modules based on a has feature test value.</span>
         </li>
@@ -171,34 +175,6 @@ from which to work your test should the need arise.
             </td>
           </tr>
         </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo_has_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(name)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/has" class="jsdoc-link">dojo/has</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Return the current value of the named feature.
-</p>
-</div>
-        <div class="jsdoc-full-summary"><p>Returns the value of the feature named by name. The feature must have been
-previously added to the cache by has.add.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">name</td>
-            <td class="jsdoc-param-type">String | Integer</td>
-            <td class="jsdoc-param-description"><p>The name (if a string) or identifier (if an integer) of the feature to test.
-</p>
- 
-            </td>
-          </tr>
-        </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojo_has_load"></a><span class="functionIcon">load</span><span class="parameters">(id, parentRequire, loaded)</span> 

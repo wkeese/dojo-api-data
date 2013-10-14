@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mvc/Bind.StatefulModel.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/mvc/Bind.StatefulModel<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/mvc/Bind.StatefulModel<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a>
 </div>
@@ -158,8 +158,9 @@ supported with minimal application code.
 </p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new Bind.StatefulModel<span class="parameters">(args);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Bind.StatefulModel<span class="parameters">(args);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/mvc/StatefulModel">dojox/mvc/StatefulModel</a></div>
 <div class="jsdoc-summary"><p>Creates a tree of dojo/Stateful objects matching the initial
@@ -187,79 +188,77 @@ the data structure.</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
-and setter names.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
+        <li class="objectIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__attrPairNames" class="inline-link">_attrPairNames  </a><span>Used across all instances a hash to cache attribute names and their getter 
+and setter names.  </span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_mvc_Bind_StatefulModel_data" class="inline-link"> data </a><span>The plain JavaScript object / data structure used to initialize
-this model.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
+        <li class="objectIcon public extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_data" class="inline-link">data  </a><span>The plain JavaScript object / data structure used to initialize
+this model.  </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_mvc_Bind_StatefulModel_getPlainValueOptions" class="inline-link"> getPlainValueOptions </a><span>An object that defines how plain value should be created from model object.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
+        <li class="objectIcon public extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_getPlainValueOptions" class="inline-link">getPlainValueOptions  </a><span>An object that defines how plain value should be created from model object.  </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_mvc_Bind_StatefulModel_getStatefulOptions" class="inline-link"> getStatefulOptions </a><span>An object that defines how model object should be created from plain object hierarchy.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
+        <li class="objectIcon public extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_getStatefulOptions" class="inline-link">getStatefulOptions  </a><span>An object that defines how model object should be created from plain object hierarchy.  </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_mvc_Bind_StatefulModel_store" class="inline-link"> store </a><span>The data store from where to retrieve initial data for this model.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
+        <li class="objectIcon public extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_store" class="inline-link">store  </a><span>The data store from where to retrieve initial data for this model.  </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="booleanIcon"><a href="#1_9dojox_mvc_Bind_StatefulModel_valid" class="inline-link"> valid </a><span>Whether this model deems the associated data to be valid.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
+        <li class="booleanIcon public extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_valid" class="inline-link">valid  </a><span>Whether this model deems the associated data to be valid.  </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="objectIcon"><a href="#1_9dojox_mvc_Bind_StatefulModel_value" class="inline-link"> value </a><span>The associated value (if this is a leaf node).</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
+        <li class="objectIcon public extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_value" class="inline-link">value  </a><span>The associated value (if this is a leaf node).  </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__commit" class="inline-link"> _commit</a><span class="parameters">(</span>) <span>Commits this data model, saves the current state into data to become the saved state, 
-so a reset will not undo any prior changes.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__commit" class="inline-link"> _commit</a><span class="parameters">(</span>) <span>Commits this data model, saves the current state into data to become the saved state, 
+so a reset will not undo any prior changes.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__createModel" class="inline-link"> _createModel</a><span class="parameters">(</span>data) <span>Create this data model from provided input data.
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__createModel" class="inline-link"> _createModel</a><span class="parameters">(</span>data) <span>Create this data model from provided input data.
 obj:
-The input for the model, as a plain JavaScript object.</span><span title="private" class="jsdoc-private"> </span>
+The input for the model, as a plain JavaScript object.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel__saveToStore" class="inline-link"> _saveToStore</a><span class="parameters">(</span>store) <span>Commit the current values to the data store:
+        <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel__saveToStore" class="inline-link"> _saveToStore</a><span class="parameters">(</span>store) <span>Commit the current values to the data store:
 
 
 
 remove() any deleted entries
-put() any new or updated entries</span><span title="private" class="jsdoc-private"> </span>
+put() any new or updated entries</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_add" class="inline-link"> add</a><span class="parameters">(</span>name, stateful) <span>Adds a dojo/Stateful tree represented by the given
-dojox/mvc/StatefulModel at the given property name.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_add" class="inline-link"> add</a><span class="parameters">(</span>name, stateful) <span>Adds a dojo/Stateful tree represented by the given
+dojox/mvc/StatefulModel at the given property name.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_commit" class="inline-link"> commit</a><span class="parameters">(</span>store) <span>Commits this data model:
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_commit" class="inline-link"> commit</a><span class="parameters">(</span>store) <span>Commits this data model:
 
 
 
 Saves the current state such that a subsequent reset will not
-undo any prior changes.</span>
+undo any prior changes.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_9dojox_mvc_Bind_StatefulModel_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Instantiates a new data model that view components may bind to.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_remove" class="inline-link"> remove</a><span class="parameters">(</span>name) <span>Removes the dojo/Stateful tree at the given property name.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_remove" class="inline-link"> remove</a><span class="parameters">(</span>name) <span>Removes the dojo/Stateful tree at the given property name.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Resets this data model values to its original state.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_reset" class="inline-link"> reset</a><span class="parameters">(</span>) <span>Resets this data model values to its original state.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_splice" class="inline-link"> splice</a><span class="parameters">(</span>idx, n) <span>Removes and then adds some elements to this array.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_splice" class="inline-link"> splice</a><span class="parameters">(</span>idx, n) <span>Removes and then adds some elements to this array.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_toPlainObject" class="inline-link"> toPlainObject</a><span class="parameters">(</span>) <span>Produces a plain JavaScript object representation of the data
+currently within this data model.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_toPlainObject" class="inline-link"> toPlainObject</a><span class="parameters">(</span>) <span>Produces a plain JavaScript object representation of the data
-currently within this data model.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns the string representation of the data currently within this data model.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns the string representation of the data currently within this data model.</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_valueOf" class="inline-link"> valueOf</a><span class="parameters">(</span>) <span>Returns the value representation of the data currently within this data model.</span><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_valueOf" class="inline-link"> valueOf</a><span class="parameters">(</span>) <span>Returns the value representation of the data currently within this data model.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_9dojox_mvc_Bind_StatefulModel_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind_StatefulModel_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -335,7 +334,7 @@ intermediate nodes in the model is not defined.</p>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
@@ -375,7 +374,7 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 </p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel__commit"></a><span class="functionIcon">_commit</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -384,7 +383,7 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 so a reset will not undo any prior changes.  </p>
 </div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel__createModel"></a><span class="functionIcon">_createModel</span><span class="parameters">(data)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -407,7 +406,7 @@ The input for the model, as a plain JavaScript object.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
@@ -436,7 +435,7 @@ The input for the model, as a plain JavaScript object.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
@@ -459,7 +458,7 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
       </div>
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel__saveToStore"></a><span class="functionIcon">_saveToStore</span><span class="parameters">(store)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -487,7 +486,7 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_add"></a><span class="functionIcon">add</span><span class="parameters">(name, stateful)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -522,7 +521,7 @@ dijit/Stateful tree.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_commit"></a><span class="functionIcon">commit</span><span class="parameters">(store)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -555,36 +554,7 @@ will be used instead.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Instantiates a new data model that view components may bind to.
-This is a private constructor, use the factory method
-instead: dojox/mvc/newStatefulModel(args)</p>
-</div>
-        <div class="jsdoc-full-summary"><p>Creates a tree of <a class="jsdoc-link" href="/api/1.9/dojo/Stateful">dojo/Stateful</a> objects matching the initial
-data structure passed as input. The mixin property &quot;data&quot; is
-used to provide a plain JavaScript object directly representing
-the data structure.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">args</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>The mixin properties.</p>
- 
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
@@ -619,7 +589,7 @@ stateful.foo // returns 3</pre></code>
         <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
@@ -640,7 +610,7 @@ stateful.foo // returns 3</pre></code>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_remove"></a><span class="functionIcon">remove</span><span class="parameters">(name)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -666,7 +636,7 @@ results in left-shifting any trailing sibling nodes.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_reset"></a><span class="functionIcon">reset</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -676,7 +646,7 @@ Structural changes to the data model (such as adds or removes)
 are not restored.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>
@@ -728,7 +698,7 @@ stateful.set(foo, 5);</pre></code>
         <div class="jsdoc-return-description"><p>The function returns this dojo.Stateful instance.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_splice"></a><span class="functionIcon">splice</span><span class="parameters">(idx, n)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -761,7 +731,7 @@ Updates the removed/added elements, as well as the length, as stateful.</p>
         <div class="jsdoc-return-description"><p>The removed elements.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_toPlainObject"></a><span class="functionIcon">toPlainObject</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -775,7 +745,7 @@ The plain JavaScript object representation of the data in this
 model.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -787,7 +757,7 @@ model.</p>
 The object representation of the data in this model.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_valueOf"></a><span class="functionIcon">valueOf</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mvc/StatefulModel" class="jsdoc-link">dojox/mvc/StatefulModel</a><span title="Must manually require () dojox/mvc/StatefulModel to access" class="jsdoc-extension"></span>
@@ -799,7 +769,7 @@ The object representation of the data in this model.</p>
 The object representation of the data in this model.</p>
 </div>
       </div>
-      <div class="jsdoc-field">
+      <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind_StatefulModel_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="Must manually require () dojo/Stateful to access" class="jsdoc-extension"></span>

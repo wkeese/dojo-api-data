@@ -7,7 +7,7 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/data/ItemFileReadStore.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojo/data/ItemFileReadStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojo/data/ItemFileReadStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
 </div>
@@ -26,12 +26,11 @@ data from JSON files that have contents in this format --
 <p>in the array of items that acts as the unique identifier for that item.</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new ItemFileReadStore<span class="parameters">(keywordParameters);</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new ItemFileReadStore<span class="parameters">(keywordParameters);</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/data/ItemFileReadStore">dojo/data/ItemFileReadStore</a></div>
-<div class="jsdoc-summary"><p>constructor</p>
-</div>
 <table class="jsdoc-parameters">
   <tr>
     <th>Parameter</th>
@@ -72,22 +71,22 @@ to be an object of general form:
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon private"><a href="#1_8dojo_data_ItemFileReadStore__ccUrl" class="inline-link"> _ccUrl </a><span></span><span title="private" class="jsdoc-private"></span>
+        <li class="stringIcon private"><a href="#1_8dojo_data_ItemFileReadStore__ccUrl" class="inline-link">_ccUrl  </a><span>  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_clearOnClose" class="inline-link"> clearOnClose </a><span>Parameter to allow users to specify if a close call should force a reload or not.</span>
+        <li class="booleanIcon public"><a href="#1_8dojo_data_ItemFileReadStore_clearOnClose" class="inline-link">clearOnClose  </a><span>Parameter to allow users to specify if a close call should force a reload or not.  </span>
         </li>
-        <li class="objectIcon"><a href="#1_8dojo_data_ItemFileReadStore_data" class="inline-link"> data </a><span></span>
+        <li class="objectIcon public"><a href="#1_8dojo_data_ItemFileReadStore_data" class="inline-link">data  </a><span>  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_failOk" class="inline-link"> failOk </a><span>Parameter for specifying that it is OK for the xhrGet call to fail silently.</span>
+        <li class="booleanIcon public"><a href="#1_8dojo_data_ItemFileReadStore_failOk" class="inline-link">failOk  </a><span>Parameter for specifying that it is OK for the xhrGet call to fail silently.  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_hierarchical" class="inline-link"> hierarchical </a><span>Parameter to indicate to process data from the url as hierarchical
-(data items can contain other data items in js form).</span>
+        <li class="booleanIcon public"><a href="#1_8dojo_data_ItemFileReadStore_hierarchical" class="inline-link">hierarchical  </a><span>Parameter to indicate to process data from the url as hierarchical
+(data items can contain other data items in js form).  </span>
         </li>
-        <li class="objectIcon"><a href="#1_8dojo_data_ItemFileReadStore_typeMap" class="inline-link"> typeMap </a><span></span>
+        <li class="objectIcon public"><a href="#1_8dojo_data_ItemFileReadStore_typeMap" class="inline-link">typeMap  </a><span>  </span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojo_data_ItemFileReadStore_url" class="inline-link"> url </a><span></span>
+        <li class="stringIcon public"><a href="#1_8dojo_data_ItemFileReadStore_url" class="inline-link">url  </a><span>  </span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojo_data_ItemFileReadStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Parameter to allow specifying if preventCache should be passed to the xhrGet call or not when loading data from a url.</span>
+        <li class="booleanIcon public"><a href="#1_8dojo_data_ItemFileReadStore_urlPreventCache" class="inline-link">urlPreventCache  </a><span>Parameter to allow specifying if preventCache should be passed to the xhrGet call or not when loading data from a url.  </span>
         </li>
       </ul>
     </div>
@@ -115,8 +114,6 @@ to be an object of general form:
         <li class="functionIcon private"><a href="#1_8dojo_data_ItemFileReadStore__handleQueuedFetches" class="inline-link"> _handleQueuedFetches</a><span class="parameters">(</span>) <span>Internal function to execute delayed request in the store.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>keywordParameters) <span>constructor</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojo_data_ItemFileReadStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
         </li>
@@ -507,48 +504,6 @@ for specific functions to work properly.</p>
             <td class="jsdoc-param-type"><a class="jsdoc-link" href="/api/1.8/dojo/data/api/Request">dojo/data/api/Request</a> | Object</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo_data_ItemFileReadStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(keywordParameters)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/data/ItemFileReadStore" class="jsdoc-link">dojo/data/ItemFileReadStore</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>constructor</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">keywordParameters</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description"><p>{url: String} {data: jsonObject} {typeMap: object}
-The structure of the typeMap object is as follows:
-
-</p>
-<pre><code>{
-    type0: function || object,
-    type1: function || object,
-    ...
-    typeN: function || object
-}</code></pre>
-<p>Where if it is a function, it is assumed to be an object constructor that takes the
-
-</p>
-<p>value of _value as the initialization parameters.  If it is an object, then it is assumed
-to be an object of general form:
-
-</p>
-<pre><code>{
-    type: function, //constructor.
-    deserialize:    function(value) //The function that parses the value and constructs the object defined by type appropriately.
-}</code></pre>
- 
             </td>
           </tr>
         </table>

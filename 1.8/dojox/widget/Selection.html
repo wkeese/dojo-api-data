@@ -7,15 +7,16 @@
   
 </script>
 <div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/Selection.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/widget/Selection<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/widget/Selection<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
   <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a>
 </div>
 <div class="jsdoc-full-summary"><p>Base class for widgets that manage a list of selected data items.</p>
 </div>
 <div class="jsdoc-function-information">
-  <h3>Usage:</h3>
-  <div class="function-signature"><span class="keyword">var</span> foo = new Selection<span class="parameters">();</span></div>
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Selection<span class="parameters">();</span>
+  </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/widget/Selection">dojox/widget/Selection</a></div>
 <p>See the <a href="/reference-guide/1.8/dojox/widget.html" target="_blank">dojox/widget/Selection reference documentation</a> for more information.</p>
@@ -24,20 +25,20 @@
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_Selection__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
-and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_Selection__attrPairNames" class="inline-link">_attrPairNames  </a><span>Used across all instances a hash to cache attribute names and their getter 
+and setter names.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_widget_Selection_selectedItem" class="inline-link"> selectedItem </a><span>In single selection mode, the selected item or in multiple selection mode the last selected item.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        <li class="objectIcon public"><a href="#1_8dojox_widget_Selection_selectedItem" class="inline-link">selectedItem  </a><span>In single selection mode, the selected item or in multiple selection mode the last selected item.  </span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_widget_Selection_selectedItems" class="inline-link"> selectedItems </a><span>The list of selected items.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+        <li class="objectIcon public"><a href="#1_8dojox_widget_Selection_selectedItems" class="inline-link">selectedItems  </a><span>The list of selected items.  </span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_Selection_selectionMode" class="inline-link"> selectionMode </a><span>Valid values are:
+        <li class="stringIcon public"><a href="#1_8dojox_widget_Selection_selectionMode" class="inline-link">selectionMode  </a><span>Valid values are:
 
 
 
 &quot;none&quot;: No selection can be done.
 &quot;single&quot;: Only one item can be selected at a time.
-&quot;multiple&quot;: Several item can be selected using the control key modifier.</span><span title="inherited from dojox/widget/Selection" class="jsdoc-inherited"></span>
+&quot;multiple&quot;: Several item can be selected using the control key modifier.  </span>
         </li>
       </ul>
     </div>
@@ -57,8 +58,6 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
         <li class="functionIcon private"><a href="#1_8dojox_widget_Selection__setSelectedItemsAttr" class="inline-link"> _setSelectedItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon private"><a href="#1_8dojox_widget_Selection__setSelectionModeAttr" class="inline-link"> _setSelectionModeAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_widget_Selection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_widget_Selection_dispatchChange" class="inline-link"> dispatchChange</a><span class="parameters">(</span>oldSelectedItem, newSelectedItem, renderer, triggerEvent) <span>Dispatch a selection change event.</span>
         </li>
@@ -93,7 +92,7 @@ and setter names.</span><span title="private" class="jsdoc-private"></span><span
   <div class="jsdoc-fields">
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private">
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_8dojox_widget_Selection__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -105,7 +104,7 @@ and setter names.</p>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_widget_Selection_selectedItem"></a><span class="objectIcon">selectedItem</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a>
         </div>
         <div class="jsdoc-summary"><p>In single selection mode, the selected item or in multiple selection mode the last selected item.
 Warning: Do not use this property directly, make sure to call set() or get() methods.</p>
@@ -114,7 +113,7 @@ Warning: Do not use this property directly, make sure to call set() or get() met
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_widget_Selection_selectedItems"></a><span class="objectIcon">selectedItems</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a>
         </div>
         <div class="jsdoc-summary"><p>The list of selected items.
 Warning: Do not use this property directly, make sure to call set() or get() methods.</p>
@@ -123,7 +122,7 @@ Warning: Do not use this property directly, make sure to call set() or get() met
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_8dojox_widget_Selection_selectionMode"></a><span class="stringIcon">selectionMode</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a>
         </div>
         <div class="jsdoc-summary"><p>Valid values are:
 
@@ -298,13 +297,6 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
             </td>
           </tr>
         </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_Selection_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/widget/Selection" class="jsdoc-link">dojox/widget/Selection</a>
-        </div>
-        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_8dojox_widget_Selection_dispatchChange"></a><span class="functionIcon">dispatchChange</span><span class="parameters">(oldSelectedItem, newSelectedItem, renderer, triggerEvent)</span> 
