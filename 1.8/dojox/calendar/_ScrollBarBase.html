@@ -3,26 +3,17 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/mobile/_ComboBoxMenu" + location.hash;
+  location = "/api/?qs=1.8/dojox/calendar/_ScrollBarBase" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/_ComboBoxMenu.html</div>
-<h1 class="constructorIcon36 jsdoc-title module-title">dojox/mobile/_ComboBoxMenu<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/_ScrollBarBase.html</div>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/calendar/_ScrollBarBase<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase, </a><a href="/api/1.8/dojox/mobile/_ListTouchMixin" class="jsdoc-link">dojox/mobile/_ListTouchMixin, </a><a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
-</div>
-<div class="jsdoc-full-summary"><p>Focus-less menu for internal use in <a class="jsdoc-link" href="/api/1.8/dojox/mobile/ComboBox">dojox/mobile/ComboBox</a>.
-Abstract methods that must be defined externally:
-
-</p>
-<ul>
-<li>onChange: item was explicitly chosen (mousedown somewhere on the menu and mouseup somewhere on the menu);</li>
-<li>onPage: next(1) or previous(-1) button pressed.</li>
-</ul>
+  <label>Extends </label><a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a>
 </div>
 <div class="jsdoc-function-information">
   <h2>Usage:</h2>
-  <div class="function-signature"><span class="keyword">var</span> foo = new _ComboBoxMenu<span class="parameters">(params,srcNodeRef);</span>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _ScrollBarBase<span class="parameters">(params,srcNodeRef);</span>
   </div>
 </div>
 <div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/_WidgetBase">dijit/_WidgetBase</a></div>
@@ -57,231 +48,210 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/mobile.html" target="_blank">dojox/mobile/_ComboBoxMenu reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/_ScrollBarBase reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__attrPairNames" class="inline-link">_attrPairNames  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__attrPairNames" class="inline-link">_attrPairNames  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__blankGif" class="inline-link">_blankGif  </a><span>Path to a blank 1x1 image.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__blankGif" class="inline-link">_blankGif  </a><span>Path to a blank 1x1 image.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__messages" class="inline-link">_messages  </a><span>Holds &quot;next&quot; and &quot;previous&quot; text for paging buttons on drop down  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__scrollHandle" class="inline-link">_scrollHandle  </a><span>  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setClassAttr" class="inline-link">_setClassAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__setClassAttr" class="inline-link">_setClassAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setDirAttr" class="inline-link">_setDirAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__setDirAttr" class="inline-link">_setDirAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setIdAttr" class="inline-link">_setIdAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__setIdAttr" class="inline-link">_setIdAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setLangAttr" class="inline-link">_setLangAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__setLangAttr" class="inline-link">_setLangAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__started" class="inline-link">_started  </a><span>startup() has completed.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__started" class="inline-link">_started  </a><span>startup() has completed.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_attributeMap" class="inline-link">attributeMap  </a><span>Deprecated.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__vertical" class="inline-link">_vertical  </a><span>  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="stringIcon public"><a href="#1_8dojox_mobile__ComboBoxMenu_baseClass" class="inline-link">baseClass  </a><span>The name of the CSS class of this widget.  </span>
+        <li class="objectIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_attributeMap" class="inline-link">attributeMap  </a><span>Deprecated.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private"><a href="#1_8dojox_mobile__ComboBoxMenu_bgIframe" class="inline-link">bgIframe  </a><span>Flag to prevent the creation of a background iframe, when appropriate.  </span><span title="private" class="jsdoc-private"></span>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_baseClass" class="inline-link">baseClass  </a><span>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
+widget state.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_class" class="inline-link">class  </a><span>  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_class" class="inline-link">class  </a><span>  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_containerNode" class="inline-link">containerNode  </a><span>Designates where children of the source DOM node will be placed.
+        <li class="domnodeIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_containerNode" class="inline-link">containerNode  </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_dir" class="inline-link">dir  </a><span>Bi-directional support, as defined by the HTML DIR
+        <li class="numberIcon public"><a href="#1_8dojox_calendar__ScrollBarBase_containerSize" class="inline-link">containerSize  </a><span>  </span>
+        </li>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_dir" class="inline-link">dir  </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_domNode" class="inline-link">domNode  </a><span>This is our visible representation of the widget!  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public"><a href="#1_8dojox_calendar__ScrollBarBase_direction" class="inline-link">direction  </a><span>Direction of the scroll bar.  </span>
         </li>
-        <li class="booleanIcon public extension-module"><a href="#1_8dojox_mobile__ComboBoxMenu_focused" class="inline-link">focused  </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+        <li class="domnodeIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_domNode" class="inline-link">domNode  </a><span>This is our visible representation of the widget!  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="booleanIcon public extension-module"><a href="#1_8dojox_calendar__ScrollBarBase_focused" class="inline-link">focused  </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.  </span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_id" class="inline-link">id  </a><span>A unique, opaque ID string that can be assigned by users or by the
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_id" class="inline-link">id  </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_lang" class="inline-link">lang  </a><span>Rarely used.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_lang" class="inline-link">lang  </a><span>Rarely used.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_ownerDocument" class="inline-link">ownerDocument  </a><span>The document this widget belongs to.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="numberIcon public"><a href="#1_8dojox_calendar__ScrollBarBase_maximum" class="inline-link">maximum  </a><span>The maximum value of the scroll bar.  </span>
         </li>
-        <li class="domnodeIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_selected" class="inline-link">selected  </a><span>currently selected node  </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="numberIcon public"><a href="#1_8dojox_calendar__ScrollBarBase_minimum" class="inline-link">minimum  </a><span>The minimum value of the scroll bar.  </span>
         </li>
-        <li class="domnodeIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_srcNodeRef" class="inline-link">srcNodeRef  </a><span>pointer to original DOM node  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_ownerDocument" class="inline-link">ownerDocument  </a><span>The document this widget belongs to.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_style" class="inline-link">style  </a><span>HTML style attributes as cssText string or name/value hash  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_srcNodeRef" class="inline-link">srcNodeRef  </a><span>pointer to original DOM node  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_textDir" class="inline-link">textDir  </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_style" class="inline-link">style  </a><span>HTML style attributes as cssText string or name/value hash  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_title" class="inline-link">title  </a><span>HTML title attribute.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_textDir" class="inline-link">textDir  </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_tooltip" class="inline-link">tooltip  </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_title" class="inline-link">title  </a><span>HTML title attribute.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon public inherited"><a href="#1_8dojox_calendar__ScrollBarBase_tooltip" class="inline-link">tooltip  </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon public"><a href="#1_8dojox_calendar__ScrollBarBase_value" class="inline-link">value  </a><span>The value of the scroll bar in pixel offset.  </span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile__ComboBoxMenu__createMenuItem" class="inline-link"> _createMenuItem</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__createOption" class="inline-link"> _createOption</a><span class="parameters">(</span>item, labelFunc) <span>Creates an option to appear on the popup menu subclassed by
-dijit/form/FilteringSelect.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__getDomScrollerValue" class="inline-link"> _getDomScrollerValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__listConnect" class="inline-link"> _listConnect</a><span class="parameters">(</span>eventType, callbackFuncName) <span>Connects &#39;containerNode&#39; to specified method of this object
-and automatically registers for &#39;disconnect&#39; on widget destroy.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__setDirectionAttr" class="inline-link"> _setDirectionAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node, scroll) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__setDomScrollerValue" class="inline-link"> _setDomScrollerValue</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        <li class="functionIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__setMaximumAttr" class="inline-link"> _setMaximumAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__setMinimumAttr" class="inline-link"> _setMinimumAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon private"><a href="#1_8dojox_calendar__ScrollBarBase__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
 originally used for setting element.dir according to this.textDir.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_8dojox_calendar__ScrollBarBase_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_clearResultList" class="inline-link"> clearResultList</a><span class="parameters">(</span>) <span>Clears the entries in the drop down list, but of course keeps the previous and next buttons.</span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_createOptions" class="inline-link"> createOptions</a><span class="parameters">(</span>results, options, labelFunc) <span>Fills in the items in the drop down list</span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_getHighlightedOption" class="inline-link"> getHighlightedOption</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_highlightFirstOption" class="inline-link"> highlightFirstOption</a><span class="parameters">(</span>) <span>Highlight the first real item in the list (not Previous Choices).</span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_highlightLastOption" class="inline-link"> highlightLastOption</a><span class="parameters">(</span>) <span>Highlight the last real item in the list (not More Choices).</span><span title="inherited from dijit/form/_ComboBoxMenuMixin" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is created</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_selectFirstNode" class="inline-link"> selectFirstNode</a><span class="parameters">(</span>) <span>Select the first displayed item in the list.</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_selectLastNode" class="inline-link"> selectLastNode</a><span class="parameters">(</span>) <span>Select the last displayed item in the list</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_selectNextNode" class="inline-link"> selectNextNode</a><span class="parameters">(</span>) <span>Select the item just below the current selection.</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_selectPreviousNode" class="inline-link"> selectPreviousNode</a><span class="parameters">(</span>) <span>Select the item just above the current selection.</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__ScrollBarBase_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private extension-module"><a href="#1_8dojox_mobile__ComboBoxMenu__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        <li class="functionIcon private extension-module"><a href="#1_8dojox_calendar__ScrollBarBase__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>evt, target) <span></span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon private extension-module"><a href="#1_8dojox_mobile__ComboBoxMenu__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
+        <li class="functionIcon private extension-module"><a href="#1_8dojox_calendar__ScrollBarBase__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ComboBoxMenu__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__ScrollBarBase__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  extension-module"><a href="#1_8dojox_mobile__ComboBoxMenu_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_calendar__ScrollBarBase_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>direction) <span>Notifies ComboBox/FilteringSelect that user selected an option.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon "><a href="#1_8dojox_calendar__ScrollBarBase_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>value) <span>An extension point invoked when the value has changed.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>node) <span></span><span title="inherited" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_onClose" class="inline-link"> onClose</a><span class="parameters">(</span>) <span>Called when the menu closes.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_onDeselect" class="inline-link"> onDeselect</a><span class="parameters">(</span>node) <span>Remove selected CSS.</span>
-        </li>
-        <li class="functionIcon  extension-module"><a href="#1_8dojox_mobile__ComboBoxMenu_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        <li class="functionIcon  extension-module"><a href="#1_8dojox_calendar__ScrollBarBase_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_onOpen" class="inline-link"> onOpen</a><span class="parameters">(</span>) <span>Called when the menu opens.</span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ComboBoxMenu_onPage" class="inline-link"> onPage</a><span class="parameters">(</span>direction) <span>Notifies ComboBox/FilteringSelect that user clicked to advance to next/previous page.</span><span title="inherited" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile__ComboBoxMenu_onSelect" class="inline-link"> onSelect</a><span class="parameters">(</span>node) <span>Add selected CSS.</span>
+        <li class="functionIcon "><a href="#1_8dojox_calendar__ScrollBarBase_onScroll" class="inline-link"> onScroll</a><span class="parameters">(</span>value) <span>An extension point invoked when the user scrolls with the mouse.</span>
         </li>
       </ul>
     </div>
@@ -292,13 +262,13 @@ been clicked.</span><span title="Must manually require () dijit/_FocusMixin to a
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -306,48 +276,52 @@ been clicked.</span><span title="Must manually require () dijit/_FocusMixin to a
 Used by <code>&lt;img&gt;</code> nodes in templates that really get their image via CSS background-image.</p>
 </div>
       </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__messages"></a><span class="objectIcon">_messages</span><span title="private" class="jsdoc-private"> </span>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__scrollHandle"></a><span class="objectIcon">_scrollHandle</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
         </div>
-        <div class="jsdoc-summary"><p>Holds &quot;next&quot; and &quot;previous&quot; text for paging buttons on drop down</p>
-</div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>startup() has completed.</p>
 </div>
       </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__vertical"></a><span class="booleanIcon">_vertical</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+      </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_attributeMap"></a><span class="objectIcon">attributeMap</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_attributeMap"></a><span class="objectIcon">attributeMap</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -410,30 +384,23 @@ formats of the above list.
 </ul>
 </div>
       </div>
-      <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_baseClass"></a><span class="stringIcon">baseClass</span>
+      <div class="jsdoc-field public inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_baseClass"></a><span class="stringIcon">baseClass</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>The name of the CSS class of this widget.</p>
-</div>
-      </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_bgIframe"></a><span class="booleanIcon">bgIframe</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
-        </div>
-        <div class="jsdoc-summary"><p>Flag to prevent the creation of a background iframe, when appropriate. For internal usage. </p>
+        <div class="jsdoc-summary"><p>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
+widget state.</p>
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_class"></a><span class="stringIcon">class</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_class"></a><span class="stringIcon">class</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_containerNode"></a><span class="domnodeIcon">containerNode</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_containerNode"></a><span class="domnodeIcon">containerNode</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -464,8 +431,14 @@ data-dojo-attach-point assignment.
 is null for widgets that don&#39;t, like TextBox.</p>
 </div>
       </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_containerSize"></a><span class="numberIcon">containerSize</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+      </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_dir"></a><span class="stringIcon">dir</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_dir"></a><span class="stringIcon">dir</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -474,8 +447,16 @@ attribute. Either left-to-right &quot;ltr&quot; or right-to-left &quot;rtl&quot;
 default direction.</p>
 </div>
       </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_direction"></a><span class="stringIcon">direction</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-summary"><p>Direction of the scroll bar. Valid values are &quot;vertical&quot; or &quot;horizontal&quot;.</p>
+</div>
+      </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_domNode"></a><span class="domnodeIcon">domNode</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_domNode"></a><span class="domnodeIcon">domNode</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -486,7 +467,7 @@ property is the canonical &quot;top level&quot; node in widget UI.</p>
 </div>
       </div>
       <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_focused"></a><span class="booleanIcon">focused</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_focused"></a><span class="booleanIcon">focused</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
@@ -495,7 +476,7 @@ it was recently clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_id"></a><span class="stringIcon">id</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_id"></a><span class="stringIcon">id</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -506,7 +487,7 @@ used instead.</p>
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_lang"></a><span class="stringIcon">lang</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_lang"></a><span class="stringIcon">lang</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -516,8 +497,24 @@ Value must be among the list of locales specified during by the Dojo bootstrap,
 formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a> (like en-us).</p>
 </div>
       </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_maximum"></a><span class="numberIcon">maximum</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-summary"><p>The maximum value of the scroll bar.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_minimum"></a><span class="numberIcon">minimum</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-summary"><p>The minimum value of the scroll bar.</p>
+</div>
+      </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -526,15 +523,7 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_selected"></a><span class="domnodeIcon">selected</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-summary"><p>currently selected node</p>
-</div>
-      </div>
-      <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -542,7 +531,7 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_style"></a><span class="stringIcon">style</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_style"></a><span class="stringIcon">style</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -550,7 +539,7 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_textDir"></a><span class="stringIcon">textDir</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_textDir"></a><span class="stringIcon">textDir</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -571,7 +560,7 @@ of a widget.
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_title"></a><span class="stringIcon">title</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_title"></a><span class="stringIcon">title</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -587,7 +576,7 @@ etc., it&#39;s used to specify the tab label, accordion pane title, etc.</p>
 </div>
       </div>
       <div class="jsdoc-field public inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_tooltip"></a><span class="stringIcon">tooltip</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_tooltip"></a><span class="stringIcon">tooltip</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -595,11 +584,19 @@ etc., it&#39;s used to specify the tab label, accordion pane title, etc.</p>
 this specifies the tooltip to appear when the mouse is hovered over that text.</p>
 </div>
       </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_value"></a><span class="numberIcon">value</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-summary"><p>The value of the scroll bar in pixel offset.</p>
+</div>
+      </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__applyAttributes"></a><span class="functionIcon">_applyAttributes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__applyAttributes"></a><span class="functionIcon">_applyAttributes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -618,7 +615,7 @@ _setXXXAttr is a hash/string/array, but _setXXXAttr as a functions override attr
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__attrToDom"></a><span class="functionIcon">_attrToDom</span><span class="parameters">(attr, value, commands)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__attrToDom"></a><span class="functionIcon">_attrToDom</span><span class="parameters">(attr, value, commands)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -658,7 +655,7 @@ to DOMNode inside the widget, or alternately pointing to a subwidget</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -697,45 +694,8 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 </p>
 </div>
       </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__createMenuItem"></a><span class="functionIcon">_createMenuItem</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
-      </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__createOption"></a><span class="functionIcon">_createOption</span><span class="parameters">(item, labelFunc)</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Creates an option to appear on the popup menu subclassed by
-<code>dijit/form/FilteringSelect</code>.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">item</td>
-            <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">labelFunc</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
-      </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -764,7 +724,7 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -786,45 +746,16 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
       </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__listConnect"></a><span class="functionIcon">_listConnect</span><span class="parameters">(eventType, callbackFuncName)</span> <span title="private" class="jsdoc-private"> </span>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__getDomScrollerValue"></a><span class="functionIcon">_getDomScrollerValue</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Connects &#39;containerNode&#39; to specified method of this object
-and automatically registers for &#39;disconnect&#39; on widget destroy.</p>
-</div>
-        <div class="jsdoc-full-summary"><p>Provide widget-specific analog to &#39;connect&#39;.
-The callback function is called with the normal event object,
-but also a second parameter is passed that indicates which list item
-actually received the event.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">eventType</td>
-            <td class="jsdoc-param-type">String | Function</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">callbackFuncName</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
-        <div class="jsdoc-return-description"><p>A handle that can be passed to <code>disconnect</code> in order to disconnect
-before the widget is destroyed.</p>
-</div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -851,8 +782,88 @@ registered with watch() if the value has changed.</p>
           </tr>
         </table>
       </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setDirectionAttr"></a><span class="functionIcon">_setDirectionAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setDomScrollerValue"></a><span class="functionIcon">_setDomScrollerValue</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setMaximumAttr"></a><span class="functionIcon">_setMaximumAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setMinimumAttr"></a><span class="functionIcon">_setMinimumAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setOwnerDocumentAttr"></a><span class="functionIcon">_setOwnerDocumentAttr</span><span class="parameters">(val)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setOwnerDocumentAttr"></a><span class="functionIcon">_setOwnerDocumentAttr</span><span class="parameters">(val)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -872,37 +883,7 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node, scroll)</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Does the actual select.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">node</td>
-            <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description"><p>The option to select</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">scroll</td>
-            <td class="jsdoc-param-type">Boolean</td>
-            <td class="jsdoc-param-description"><p>If necessary, scroll node into view.  Set to false for mouse/touch to
-avoid jumping problems on mobile/RTL, see <a href="https://bugs.dojotoolkit.org/ticket/17739">https://bugs.dojotoolkit.org/ticket/17739</a>.</p>
- 
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -927,10 +908,10 @@ in attributeMap.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -941,14 +922,14 @@ in attributeMap.</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">value</td>
-            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-type">undefined</td>
             <td class="jsdoc-param-description">
             </td>
           </tr>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_applyTextDir"></a><span class="functionIcon">applyTextDir</span><span class="parameters">(element, text)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_applyTextDir"></a><span class="functionIcon">applyTextDir</span><span class="parameters">(element, text)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -977,22 +958,14 @@ In this case does nothing.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_clearResultList"></a><span class="functionIcon">clearResultList</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Clears the entries in the drop down list, but of course keeps the previous and next buttons.</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1051,7 +1024,7 @@ btn.connect(foo, &quot;bar&quot;, function(){
         </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1098,44 +1071,7 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_createOptions"></a><span class="functionIcon">createOptions</span><span class="parameters">(results, options, labelFunc)</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Fills in the items in the drop down list</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">results</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description"><p>Array of items</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">options</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description"><p>The options to the query function of the store
-</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">labelFunc</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description"><p>Function to produce a label in the drop down list from a dojo.data item</p>
- 
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_defer"></a><span class="functionIcon">defer</span><span class="parameters">(fcn, delay)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_defer"></a><span class="functionIcon">defer</span><span class="parameters">(fcn, delay)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1165,7 +1101,7 @@ Returns an object handle with a remove method (that returns null) (replaces clea
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">(preserveDom)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1189,7 +1125,7 @@ Note: This will not yet work with _Templated widgets</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_destroyDescendants"></a><span class="functionIcon">destroyDescendants</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_destroyDescendants"></a><span class="functionIcon">destroyDescendants</span><span class="parameters">(preserveDom)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1215,7 +1151,7 @@ widgets.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_destroyRecursive"></a><span class="functionIcon">destroyRecursive</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_destroyRecursive"></a><span class="functionIcon">destroyRecursive</span><span class="parameters">(preserveDom)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1243,15 +1179,33 @@ dijit._Templated widgets.</p>
           </tr>
         </table>
       </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">()</span> 
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"></div>
+        <div class="jsdoc-full-summary"><p>Destroys the DOM nodes associated with this widget</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">preserveDom</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>If true, this method will leave the original DOM structure alone
+during tear-down. Note: this will not work with _Templated
+widgets yet.</p>
+ 
+            </td>
+          </tr>
+        </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1275,7 +1229,7 @@ dijit._Templated widgets.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, eventObj, callbackArgs)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, eventObj, callbackArgs)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1318,7 +1272,7 @@ Modifies eventObj by adding missing parameters (bubbles, cancelable, widget).</p
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1353,7 +1307,7 @@ would be equivalent to the expression
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1363,15 +1317,7 @@ Does not return nested widgets, nor widgets that are part of this widget&#39;s t
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_getHighlightedOption"></a><span class="functionIcon">getHighlightedOption</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1380,7 +1326,7 @@ Does not return nested widgets, nor widgets that are part of this widget&#39;s t
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_getTextDir"></a><span class="functionIcon">getTextDir</span><span class="parameters">(text, originalDir)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_getTextDir"></a><span class="functionIcon">getTextDir</span><span class="parameters">(text, originalDir)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1411,23 +1357,7 @@ text, if was defined by the programmer through textDir.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_highlightFirstOption"></a><span class="functionIcon">highlightFirstOption</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Highlight the first real item in the list (not Previous Choices).</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_highlightLastOption"></a><span class="functionIcon">highlightLastOption</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Highlight the last real item in the list (not More Choices).</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1437,7 +1367,7 @@ and false if not</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_isLeftToRight"></a><span class="functionIcon">isLeftToRight</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_isLeftToRight"></a><span class="functionIcon">isLeftToRight</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1446,7 +1376,7 @@ and false if not</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_on"></a><span class="functionIcon">on</span><span class="parameters">(type, func)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_on"></a><span class="functionIcon">on</span><span class="parameters">(type, func)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1479,7 +1409,7 @@ widget&#39;s scope you must do <code>myWidget.on(&quot;click&quot;, lang.hitch(m
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_own"></a><span class="functionIcon">own</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_own"></a><span class="functionIcon">own</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/Destroyable" class="jsdoc-link">dijit/Destroyable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1494,7 +1424,7 @@ already removed/destroyed manually.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1566,15 +1496,20 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
           </div>
         </div>
       </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"></div>
+        <div class="jsdoc-full-summary"><p>Processing after the DOM fragment is created</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Called after the DOM fragment has been created, but not necessarily
+added to the document.  Do not include any operations which rely on
+node dimensions or placement.</p>
+</div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1585,7 +1520,7 @@ template.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1613,42 +1548,7 @@ template.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_selectFirstNode"></a><span class="functionIcon">selectFirstNode</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Select the first displayed item in the list.</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_selectLastNode"></a><span class="functionIcon">selectLastNode</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Select the last displayed item in the list</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_selectNextNode"></a><span class="functionIcon">selectNextNode</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Select the item just below the current selection.
-If nothing selected, select first node.</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_selectPreviousNode"></a><span class="functionIcon">selectPreviousNode</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Select the item just above the current selection.
-If nothing selected, select last node (if
-you select Previous and try to keep scrolling up the list).</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1701,7 +1601,7 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1714,7 +1614,7 @@ Many layout widgets can use this as a wiring phase.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(t, method)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(t, method)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1764,7 +1664,7 @@ btn.subscribe(&quot;/my/topic&quot;, function(v){
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1777,7 +1677,7 @@ serialization.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_uninitialize"></a><span class="functionIcon">uninitialize</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_uninitialize"></a><span class="functionIcon">uninitialize</span><span class="parameters">()</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1787,7 +1687,7 @@ behavior.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1812,7 +1712,7 @@ Also removes handle from this widget&#39;s list of subscriptions</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1857,7 +1757,7 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
@@ -1865,33 +1765,8 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
 such as changing CSS classes.  See onBlur() for more details.</p>
 </div>
       </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__onClick"></a><span class="functionIcon">_onClick</span><span class="parameters">(evt, target)</span><span title="private" class="jsdoc-private"></span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/mobile/_ListTouchMixin" class="jsdoc-link">dojox/mobile/_ListTouchMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">evt</td>
-            <td class="jsdoc-param-type">Event</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">target</td>
-            <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
       <div class="jsdoc-field private extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
@@ -1900,7 +1775,7 @@ such as changing CSS classes.  See onFocus() for more details.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span><span title="private" class="jsdoc-private"></span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1923,7 +1798,7 @@ If type is a synthetic event like touch.press then returns undefined.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onBlur"></a><span class="functionIcon">onBlur</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_onBlur"></a><span class="functionIcon">onBlur</span><span class="parameters">()</span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
@@ -1933,60 +1808,12 @@ clicked somewhere outside of it, or the widget was
 hidden.</p>
 </div>
       </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onChange"></a><span class="functionIcon">onChange</span><span class="parameters">(direction)</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Notifies ComboBox/FilteringSelect that user selected an option.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">direction</td>
-            <td class="jsdoc-param-type">Number</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onClick"></a><span class="functionIcon">onClick</span><span class="parameters">(node)</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">node</td>
-            <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onClose"></a><span class="functionIcon">onClose</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_onChange"></a><span class="functionIcon">onChange</span><span class="parameters">(value)</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Called when the menu closes.</p>
-</div>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onDeselect"></a><span class="functionIcon">onDeselect</span><span class="parameters">(node)</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Remove selected CSS.</p>
+        <div class="jsdoc-full-summary"><p>An extension point invoked when the value has changed.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1995,15 +1822,16 @@ hidden.</p>
             <th>Description</th>
           </tr>
           <tr>
-            <td class="jsdoc-param-name">node</td>
-            <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description"><p>The position of the scroll bar in pixels.</p>
+ 
             </td>
           </tr>
         </table>
       </div>
       <div class="jsdoc-field extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onFocus"></a><span class="functionIcon">onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_onFocus"></a><span class="functionIcon">onFocus</span><span class="parameters">()</span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
@@ -2013,19 +1841,11 @@ been clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onOpen"></a><span class="functionIcon">onOpen</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__ScrollBarBase_onScroll"></a><span class="functionIcon">onScroll</span><span class="parameters">(value)</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/calendar/_ScrollBarBase" class="jsdoc-link">dojox/calendar/_ScrollBarBase</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Called when the menu opens.</p>
-</div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onPage"></a><span class="functionIcon">onPage</span><span class="parameters">(direction)</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Notifies ComboBox/FilteringSelect that user clicked to advance to next/previous page.</p>
+        <div class="jsdoc-full-summary"><p>An extension point invoked when the user scrolls with the mouse.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -2034,34 +1854,14 @@ been clicked.</p>
             <th>Description</th>
           </tr>
           <tr>
-            <td class="jsdoc-param-name">direction</td>
-            <td class="jsdoc-param-type">Number</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile__ComboBoxMenu_onSelect"></a><span class="functionIcon">onSelect</span><span class="parameters">(node)</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dojox/mobile/_ComboBoxMenu" class="jsdoc-link">dojox/mobile/_ComboBoxMenu</a>
-        </div>
-        <div class="jsdoc-full-summary"><p>Add selected CSS.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">node</td>
-            <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description"><p>The position of the scroll bar in pixels.</p>
+ 
             </td>
           </tr>
         </table>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mobile/_ComboBoxMenu" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/calendar/_ScrollBarBase" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -84,24 +84,66 @@ EI callbacks can be used properly).
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon public"><a href="#1_9dojox_embed_Flash_available" class="inline-link">available  </a><span>  </span>
+        <li class="numberIcon public"><a href="#1_9dojox_embed_Flash_available" class="inline-link">available  </a><span>Used as both a detection (i.e. if(dojox.embed.Flash.available){ })
+and as a variable holding the major version of the player installed.  </span>
         </li>
         <li class="objectIcon public"><a href="#1_9dojox_embed_Flash_domNode" class="inline-link">domNode  </a><span>  </span>
         </li>
         <li class="objectIcon public"><a href="#1_9dojox_embed_Flash_id" class="inline-link">id  </a><span>  </span>
         </li>
-        <li class="booleanIcon public"><a href="#1_9dojox_embed_Flash_initialized" class="inline-link">initialized  </a><span>  </span>
+        <li class="booleanIcon public"><a href="#1_9dojox_embed_Flash_initialized" class="inline-link">initialized  </a><span>Whether or not the Flash engine is available for use.  </span>
+        </li>
+        <li class="objectIcon public"><a href="#1_9dojox_embed_Flash_minimumRequired" class="inline-link">minimumRequired  </a><span>  </span>
         </li>
         <li class="numberIcon public"><a href="#1_9dojox_embed_Flash_minimumVersion" class="inline-link">minimumVersion  </a><span>  </span>
         </li>
+        <li class="numberIcon public"><a href="#1_9dojox_embed_Flash_minSupported" class="inline-link">minSupported  </a><span>The minimum supported version of the Flash Player, defaults to 8.  </span>
+        </li>
         <li class="objectIcon public"><a href="#1_9dojox_embed_Flash_movie" class="inline-link">movie  </a><span>  </span>
+        </li>
+        <li class="booleanIcon public"><a href="#1_9dojox_embed_Flash_supported" class="inline-link">supported  </a><span>Whether or not the Flash Player installed is supported by dojox.embed.  </span>
+        </li>
+        <li class="objectIcon public"><a href="#1_9dojox_embed_Flash_version" class="inline-link">version  </a><span>The version of the installed Flash Player; takes the form of
+{ major, minor, rev }.  </span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_9dojox_embed_Flash___ie_markup__" class="inline-link"> __ie_markup__</a><span class="parameters">(</span>kwArgs) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_embed_Flash__destroy" class="inline-link"> _destroy</a><span class="parameters">(</span>) <span>Kill the movie and reset all the properties of this object.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_embed_Flash__onload" class="inline-link"> _onload</a><span class="parameters">(</span>) <span>Internal.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_byId" class="inline-link"> byId</a><span class="parameters">(</span>movieName, doc) <span>Gets Flash movie by id.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Public interface for destroying all the properties in this object.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_init" class="inline-link"> init</a><span class="parameters">(</span>kwArgs, node) <span>Initialize (i.e. place and load) the movie based on kwArgs.</span>
+        </li>
         <li class="functionIcon "><a href="#1_9dojox_embed_Flash_place" class="inline-link"> place</a><span class="parameters">(</span>kwArgs, node) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_proxy" class="inline-link"> proxy</a><span class="parameters">(</span>obj, methods) <span>Create the set of passed methods on the Flash object
+so that you can call that object directly, as opposed to having to
+delve into the internal movie to do this.</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_onError" class="inline-link"> onError</a><span class="parameters">(</span>msg) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_onInitialize" class="inline-link"> onInitialize</a><span class="parameters">(</span>) <span>A stub you can connect to if you are looking to fire code when the
+engine becomes available.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>movie) <span>Stub function for you to attach to when the movie has finished downloading
+and is ready to be manipulated.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_embed_Flash_onReady" class="inline-link"> onReady</a><span class="parameters">(</span>movie) <span>Stub function for you to attach to when the movie reference is first
+pushed into the document.</span>
         </li>
       </ul>
     </div>
@@ -112,10 +154,13 @@ EI callbacks can be used properly).
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_available"></a><span class="objectIcon">available</span>
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_available"></a><span class="numberIcon">available</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
         </div>
+        <div class="jsdoc-summary"><p>Used as both a detection (i.e. if(dojox.embed.Flash.available){ })
+and as a variable holding the major version of the player installed.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_domNode"></a><span class="objectIcon">domNode</span>
@@ -134,6 +179,14 @@ EI callbacks can be used properly).
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
         </div>
+        <div class="jsdoc-summary"><p>Whether or not the Flash engine is available for use.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_minimumRequired"></a><span class="objectIcon">minimumRequired</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_minimumVersion"></a><span class="numberIcon">minimumVersion</span>
@@ -142,14 +195,167 @@ EI callbacks can be used properly).
         </div>
       </div>
       <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_minSupported"></a><span class="numberIcon">minSupported</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-summary"><p>The minimum supported version of the Flash Player, defaults to 8.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_movie"></a><span class="objectIcon">movie</span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
         </div>
       </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_supported"></a><span class="booleanIcon">supported</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-summary"><p>Whether or not the Flash Player installed is supported by dojox.embed.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_version"></a><span class="objectIcon">version</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-summary"><p>The version of the installed Flash Player; takes the form of
+{ major, minor, rev }.  To get the major version, you&#39;d do this:
+var v=dojox.embed.Flash.version.major;</p>
+</div>
+      </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash___ie_markup__"></a><span class="functionIcon">__ie_markup__</span><span class="parameters">(kwArgs)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">kwArgs</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash__destroy"></a><span class="functionIcon">_destroy</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Kill the movie and reset all the properties of this object.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash__onload"></a><span class="functionIcon">_onload</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal. Cleans up before calling onLoad.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_byId"></a><span class="functionIcon">byId</span><span class="parameters">(movieName, doc)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Gets Flash movie by id.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Probably includes methods for outdated
+browsers, but this should catch all cases.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">movieName</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The name of the SWF</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">doc</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The document, if not current window
+(not fully supported)</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>var movie = dojox.embed.Flash.byId(&quot;myId&quot;);</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Public interface for destroying all the properties in this object.
+Will also clean all proxied methods.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_init"></a><span class="functionIcon">init</span><span class="parameters">(kwArgs, node)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Initialize (i.e. place and load) the movie based on kwArgs.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">kwArgs</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>path (String): <p>The URL of the movie to embed.</p>
+</li><li>id (String, optional): <p>A unique key that will be used as the id of the created markup.  If you don&#39;t
+provide this, a unique key will be generated.</p>
+</li><li>width (Number, optional): <p>The width of the embedded movie; the default value is 320px.</p>
+</li><li>height (Number, optional): <p>The height of the embedded movie; the default value is 240px</p>
+</li><li>minimumVersion (Number, optional): <p>The minimum targeted version of the Flash Player (defaults to 9)</p>
+</li><li>style (String, optional): <p>Any CSS style information (i.e. style=&quot;background-color:transparent&quot;) you want
+to define on the markup.</p>
+</li><li>params (Object, optional): <p>A set of key/value pairs that you want to define in the resultant markup.</p>
+</li><li>vars (Object, optional): <p>A set of key/value pairs that the Flash movie will interpret as FlashVars.</p>
+</li><li>expressInstall (Boolean, optional): <p>Whether or not to include any kind of expressInstall info. Default is false.</p>
+</li><li>redirect (String, optional): <p>A url to redirect the browser to if the current Flash version is not supported.</p>
+</li></ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_place"></a><span class="functionIcon">place</span><span class="parameters">(kwArgs, node)</span> 
         </div>
@@ -171,6 +377,129 @@ EI callbacks can be used properly).
           <tr>
             <td class="jsdoc-param-name">node</td>
             <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_proxy"></a><span class="functionIcon">proxy</span><span class="parameters">(obj, methods)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create the set of passed methods on the Flash object
+so that you can call that object directly, as opposed to having to
+delve into the internal movie to do this.  Intended to make working
+with Flash movies that use ExternalInterface much easier to use.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type"><a class="jsdoc-link" href="/api/1.9/dojox/embed/Flash">dojox/embed/Flash</a></td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">methods</td>
+            <td class="jsdoc-param-type">Array | String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Create &quot;setMessage&quot; and &quot;getMessage&quot; methods on foo.
+
+</p>
+<pre><code>var foo = new Flash(args, someNode);
+dojo.connect(foo, &quot;onLoad&quot;, lang.hitch(foo, function(){
+    Flash.proxy(this, [ &quot;setMessage&quot;, &quot;getMessage&quot; ]);
+    this.setMessage(&quot;Flash.proxy is pretty cool...&quot;);
+    console.log(this.getMessage());
+}));</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_onError"></a><span class="functionIcon">onError</span><span class="parameters">(msg)</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">msg</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_onInitialize"></a><span class="functionIcon">onInitialize</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>A stub you can connect to if you are looking to fire code when the
+engine becomes available.  A note: DO NOT use this event to
+place a movie in a document; it will usually fire before DOMContentLoaded
+is fired, and you will get an error.  Use dojo.addOnLoad instead.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_onLoad"></a><span class="functionIcon">onLoad</span><span class="parameters">(movie)</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Stub function for you to attach to when the movie has finished downloading
+and is ready to be manipulated.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">movie</td>
+            <td class="jsdoc-param-type">HTMLObject</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojox_embed_Flash_onReady"></a><span class="functionIcon">onReady</span><span class="parameters">(movie)</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/embed/Flash" class="jsdoc-link">dojox/embed/Flash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Stub function for you to attach to when the movie reference is first
+pushed into the document.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">movie</td>
+            <td class="jsdoc-param-type">HTMLObject</td>
             <td class="jsdoc-param-description">
             </td>
           </tr>

@@ -172,7 +172,7 @@ registered with watch() if the value has changed.</span><span title="private" cl
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dijit_form__ComboBoxMenu__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dijit_form__ComboBoxMenu__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form__ComboBoxMenu__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node, scroll) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dijit_form__ComboBoxMenu__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
@@ -280,6 +280,8 @@ but before the widget template is instantiated.</span><span title="inherited fro
       <ul class="jsdoc-property-list">
         <li class="functionIcon private extension-module"><a href="#1_8dijit_form__ComboBoxMenu__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form__ComboBoxMenu__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>evt, target) <span></span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private extension-module"><a href="#1_8dijit_form__ComboBoxMenu__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
@@ -1042,7 +1044,7 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenu__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenu__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node, scroll)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1057,7 +1059,16 @@ registered with watch() if the value has changed.</p>
           <tr>
             <td class="jsdoc-param-name">node</td>
             <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-description"><p>The option to select</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scroll</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>If necessary, scroll node into view.  Set to false for mouse/touch to
+avoid jumping problems on mobile/RTL, see <a href="https://bugs.dojotoolkit.org/ticket/17739">https://bugs.dojotoolkit.org/ticket/17739</a>.</p>
+ 
             </td>
           </tr>
         </table>
@@ -2090,6 +2101,31 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
         <div class="jsdoc-full-summary"><p>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.  See onBlur() for more details.</p>
 </div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenu__onClick"></a><span class="functionIcon">_onClick</span><span class="parameters">(evt, target)</span><span title="private" class="jsdoc-private"></span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/form/_ListMouseMixin" class="jsdoc-link">dijit/form/_ListMouseMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">Event</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">target</td>
+            <td class="jsdoc-param-type">DomNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
       </div>
       <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenu__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span><span title="private" class="jsdoc-private"></span>

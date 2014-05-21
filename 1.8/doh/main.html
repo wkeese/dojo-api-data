@@ -35,8 +35,6 @@
         </li>
         <li class="booleanIcon private inherited"><a href="#1_8doh_main__paused" class="inline-link">_paused  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private extension-module"><a href="#1_8doh_main__registerUrl" class="inline-link">_registerUrl  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/plugins/remoteRobot to access" class="jsdoc-extension"></span>
-        </li>
         <li class="objectIcon private extension-module"><a href="#1_8doh_main__setupGroupForRun" class="inline-link">_setupGroupForRun  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
         </li>
         <li class="numberIcon private inherited"><a href="#1_8doh_main__testCount" class="inline-link">_testCount  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
@@ -65,8 +63,6 @@
         <li class="functionIcon private inherited"><a href="#1_8doh_main__calcTrialIterations" class="inline-link"> _calcTrialIterations</a><span class="parameters">(</span>groupName, fixture) <span>This function determines the rough number of iterations to
 use to reach a particular MS threshold.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private extension-module"><a href="#1_8doh_main__fixHeight" class="inline-link"> _fixHeight</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
-        </li>
         <li class="functionIcon private extension-module"><a href="#1_8doh_main__groupFinished" class="inline-link"> _groupFinished</a><span class="parameters">(</span>group, success) <span></span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon private extension-module"><a href="#1_8doh_main__groupStarted" class="inline-link"> _groupStarted</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
@@ -83,6 +79,8 @@ use to reach a particular MS threshold.</span><span title="private" class="jsdoc
 test group.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_8doh_main__registerTestAndCheck" class="inline-link"> _registerTestAndCheck</a><span class="parameters">(</span>groupId, test, type, testArgPosition, args, setUp, tearDown) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private extension-module"><a href="#1_8doh_main__registerUrl" class="inline-link"> _registerUrl</a><span class="parameters">(</span>group, url, timeout, type, dohArgs) <span></span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon private extension-module"><a href="#1_8doh_main__report" class="inline-link"> _report</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () doh/_rhinoRunner to access" class="jsdoc-extension"></span>
         </li>
@@ -131,7 +129,8 @@ not equivalent?</span><span title="inherited from doh/runner" class="jsdoc-inher
         </li>
         <li class="functionIcon  inherited"><a href="#1_8doh_main_register" class="inline-link"> register</a><span class="parameters">(</span>a1, a2, a3, a4, a5) <span></span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8doh_main_registerDocTests" class="inline-link"> registerDocTests</a><span class="parameters">(</span>module) <span>Deprecated.</span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_8doh_main_registerDocTests" class="inline-link"> registerDocTests</a><span class="parameters">(</span>module) <span>Get all the doctests from the given module and register each of them
+as a single test case here.</span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_8doh_main_registerGroup" class="inline-link"> registerGroup</a><span class="parameters">(</span>group, tests, setUp, tearDown, type) <span>Deprecated.</span><span title="inherited from doh/runner" class="jsdoc-inherited"></span>
         </li>
@@ -234,12 +233,6 @@ not equivalent?</span><span title="inherited from doh/runner" class="jsdoc-inher
         <div class="jsdoc-title"><a name="1_8doh_main__paused"></a><span class="booleanIcon">_paused</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/doh/runner" class="jsdoc-link">doh/runner</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field private extension-module">
-        <div class="jsdoc-title"><a name="1_8doh_main__registerUrl"></a><span class="objectIcon">_registerUrl</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/doh/plugins/remoteRobot" class="jsdoc-link">doh/plugins/remoteRobot</a><span title="Must manually require () doh/plugins/remoteRobot to access" class="jsdoc-extension"></span>
         </div>
       </div>
       <div class="jsdoc-field private extension-module">
@@ -377,13 +370,6 @@ threshold.</p>
             </td>
           </tr>
         </table>
-      </div>
-      <div class="jsdoc-field private extension-module">
-        <div class="jsdoc-title"><a name="1_8doh_main__fixHeight"></a><span class="functionIcon">_fixHeight</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/doh/_browserRunner" class="jsdoc-link">doh/_browserRunner</a><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
-        </div>
-        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field private extension-module">
         <div class="jsdoc-title"><a name="1_8doh_main__groupFinished"></a><span class="functionIcon">_groupFinished</span><span class="parameters">(group, success)</span> <span title="private" class="jsdoc-private"> </span>
@@ -605,6 +591,50 @@ as a performance test. If falsy, defaults to test.type.</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">tearDown</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private extension-module">
+        <div class="jsdoc-title"><a name="1_8doh_main__registerUrl"></a><span class="functionIcon">_registerUrl</span><span class="parameters">(group, url, timeout, type, dohArgs)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/doh/_browserRunner" class="jsdoc-link">doh/_browserRunner</a><span title="Must manually require () doh/_browserRunner to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">group</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">url</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">timeout</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dohArgs</td>
             <td class="jsdoc-param-type">undefined</td>
             <td class="jsdoc-param-description">
             </td>
@@ -1278,8 +1308,8 @@ not equivalent?</p>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/doh/runner" class="jsdoc-link">doh/runner</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Deprecated.    Won&#39;t work unless you manually load dojox.testing.DocTest, and likely not even then.
-Gets all the doctests from the given module and register each of them as a single test case here.</p>
+        <div class="jsdoc-full-summary"><p>Get all the doctests from the given module and register each of them
+as a single test case here.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

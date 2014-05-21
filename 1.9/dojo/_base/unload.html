@@ -79,9 +79,13 @@ loading via back button instantaneous.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>dojo.addOnUnload(functionPointer)
-dojo.addOnUnload(object, &quot;functionName&quot;)
-dojo.addOnUnload(object, function(){ /* ... */});</code></pre>
+            <h3>Example 1</h3><pre><code>var afunc = function() {console.log(&quot;global function&quot;);};
+require([&quot;dojo/_base/unload&quot;], function(unload) {
+    var foo = {unload: function(){ console.log(&quot;unloading...&quot;);}, data: &quot;mydata&quot;};
+    unload.addOnUnload(afunc);
+    unload.addOnUnload(foo, &quot;unload&quot;);
+    unload.addOnUnload(foo, function(){console.log(&quot;&quot;, this.data);});
+});</code></pre>
 
           </div>
         </div>

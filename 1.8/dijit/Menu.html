@@ -202,7 +202,7 @@ ancestor MenuBar</span><span title="private" class="jsdoc-private"> </span><span
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dijit_Menu__openPopup" class="inline-link"> _openPopup</a><span class="parameters">(</span>focus) <span>Open the popup to the side of/underneath the current menu item, and optionally focus first item</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_MenuBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dijit_Menu__scheduleOpen" class="inline-link"> _scheduleOpen</a><span class="parameters">(</span>target, iframe, coords) <span>Set timer to display myself.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_8dijit_Menu__scheduleOpen" class="inline-link"> _scheduleOpen</a><span class="parameters">(</span>delegatedTarget, iframe, coords, target) <span>Set timer to display myself.</span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dijit_Menu__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
@@ -769,7 +769,7 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/Menu" class="jsdoc-link">dijit/Menu</a>
         </div>
         <div class="jsdoc-summary"><p>CSS expression to apply this Menu to descendants of targetNodeIds, rather than to
-the nodes specified by targetNodeIds themselves.    Useful for applying a Menu to
+the nodes specified by targetNodeIds themselves.  Useful for applying a Menu to
 a range of rows in a table, tree, etc.
 
 </p>
@@ -1322,10 +1322,12 @@ ancestor MenuBar</p>
 
 </p>
 <ul>
-<li>target: The node that is being clicked</li>
+<li>target: The node that is being clicked.</li>
+<li>delegatedTarget: The node from this.targetNodeIds or matching this.selector,
+either the same as target or an ancestor of target.</li>
 <li>iframe: If an <code>&lt;iframe&gt;</code> is being clicked, iframe points to that iframe</li>
-<li>coords: Put menu at specified x/y position in viewport, or if iframe is
-specified, then relative to iframe.</li>
+<li>coords: Mouse cursor x/y coordinates.  Null when opened via keyboard.
+Put menu at specified position in iframe (if iframe specified) or otherwise in viewport.</li>
 </ul>
 <p>_openMyself() formerly took the event object, and since various code references
 evt.target (after connecting to _openMyself()), using an Object for parameters
@@ -1357,23 +1359,13 @@ evt.target (after connecting to _openMyself()), using an Object for parameters
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dijit_Menu__scheduleOpen"></a><span class="functionIcon">_scheduleOpen</span><span class="parameters">(target, iframe, coords)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_8dijit_Menu__scheduleOpen"></a><span class="functionIcon">_scheduleOpen</span><span class="parameters">(delegatedTarget, iframe, coords, target)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/Menu" class="jsdoc-link">dijit/Menu</a>
         </div>
         <div class="jsdoc-full-summary"><p>Set timer to display myself.  Using a timer rather than displaying immediately solves
-two problems:
-
-</p>
-<ol>
-<li><p>IE: without the delay, focus work in &quot;open&quot; causes the system
-context menu to appear in spite of stopEvent.</p>
-</li>
-<li><p>Avoid double-shows on linux, where shift-F10 generates an oncontextmenu event
-even after a event.stop(e).  (Shift-F10 on windows doesn&#39;t generate the
-oncontextmenu event.)</p>
-</li>
-</ol>
+IE problem: without the delay, focus work in &quot;open&quot; causes the system
+context menu to appear in spite of evt.preventDefault().</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1382,24 +1374,32 @@ oncontextmenu event.)</p>
             <th>Description</th>
           </tr>
           <tr>
-            <td class="jsdoc-param-name">target</td>
-            <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div>
+            <td class="jsdoc-param-name">delegatedTarget</td>
+            <td class="jsdoc-param-type">Element</td>
+            <td class="jsdoc-param-description"><p>The node specified in targetNodeIds or matching selector that the menu is being opened for.</p>
+ 
             </td>
           </tr>
           <tr>
             <td class="jsdoc-param-name">iframe</td>
-            <td class="jsdoc-param-type">DomNode</td>
+            <td class="jsdoc-param-type">HTMLIframeElement</td>
             <td class="jsdoc-param-description">
-              <div><em>Optional</em></div>
+              <div><em>Optional</em></div><p>Set if target is inside the specified iframe.</p>
+ 
             </td>
           </tr>
           <tr>
             <td class="jsdoc-param-name">coords</td>
             <td class="jsdoc-param-type">Object</td>
-            <td class="jsdoc-param-description">
-              <div><em>Optional</em></div>
+            <td class="jsdoc-param-description"><p>x/y position to center the menu around.  Undefined if menu was opened via keyboard.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">target</td>
+            <td class="jsdoc-param-type">Element</td>
+            <td class="jsdoc-param-description"><p>The actual clicked node, either delegatedTarget or a descendant.</p>
+ 
             </td>
           </tr>
         </table>

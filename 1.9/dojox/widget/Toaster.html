@@ -123,8 +123,6 @@ system.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inhe
         </li>
         <li class="arrayIcon public"><a href="#1_9dojox_widget_Toaster_positionDirectionTypes" class="inline-link">positionDirectionTypes  </a><span>Possible values for positionDirection parameter  </span>
         </li>
-        <li class="stringIcon public extension-module"><a href="#1_9dojox_widget_Toaster_postMixInProperties" class="inline-link">postMixInProperties  </a><span>  </span><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
-        </li>
         <li class="booleanIcon public inherited"><a href="#1_9dojox_widget_Toaster_searchContainerNode" class="inline-link">searchContainerNode  </a><span>  </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
         <li class="stringIcon public"><a href="#1_9dojox_widget_Toaster_separator" class="inline-link">separator  </a><span>String used to separate messages if consecutive calls are made to setContent before previous messages go away  </span>
@@ -259,6 +257,9 @@ already removed/destroyed manually.</span><span title="inherited from dijit/Dest
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_widget_Toaster_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_Toaster_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_widget_Toaster_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -627,12 +628,6 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document glo
         </div>
         <div class="jsdoc-summary"><p>Possible values for positionDirection parameter</p>
 </div>
-      </div>
-      <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_9dojox_widget_Toaster_postMixInProperties"></a><span class="stringIcon">postMixInProperties</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/migrationAssist" class="jsdoc-link">dojox/mobile/migrationAssist</a><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
-        </div>
       </div>
       <div class="jsdoc-field public inherited">
         <div class="jsdoc-title"><a name="1_9dojox_widget_Toaster_searchContainerNode"></a><span class="booleanIcon">searchContainerNode</span>
@@ -1785,6 +1780,17 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/widget/Toaster" class="jsdoc-link">dojox/widget/Toaster</a>
         </div>
         <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_Toaster_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called after the parameters to the widget have been read-in,
+but before the widget template is instantiated. Especially
+useful to set properties that are referenced in the widget
+template.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_widget_Toaster_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>

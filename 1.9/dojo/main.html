@@ -1043,10 +1043,10 @@ as the actual codes can vary by browser.</p>
         <div class="jsdoc-summary"><p>This module provides unified touch event handlers by exporting
 press, move, release and cancel which can also run well on desktop.
 Based on <a href="http://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html">http://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html</a>
-Also, if the dojoClick property is set to true on a DOM node, <a class="jsdoc-link" href="/api/1.9/dojo/touch">dojo/touch</a> generates
-click events immediately for this node and its descendants, to avoid the
-delay before native browser click events, and regardless of whether evt.preventDefault()
-was called in a touch.press event listener.
+Also, if the dojoClick property is set to truthy on a DOM node, <a class="jsdoc-link" href="/api/1.9/dojo/touch">dojo/touch</a> generates
+click events immediately for this node and its descendants (except for descendants that
+have a dojoClick property set to falsy), to avoid the delay before native browser click events,
+and regardless of whether evt.preventDefault() was called in a touch.press event listener.
 </p>
 </div>
       </div>
@@ -1498,8 +1498,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -1535,8 +1535,8 @@ current box model.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -1612,8 +1612,8 @@ positions of the node&#39;s margin box.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -1658,8 +1658,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -1694,8 +1694,8 @@ the node&#39;s margin box</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -1739,8 +1739,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -1788,8 +1788,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -2309,7 +2309,7 @@ If passed, remove only the passed <code>key</code> in the associated dataset</p>
             <td class="jsdoc-param-type">DocumentNode</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>optional document to use when creating DOM nodes, defaults to
-dojo.doc if not specified.</p>
+dojo/_base/window.doc if not specified.</p>
  
             </td>
           </tr>
@@ -2323,7 +2323,9 @@ dojo.doc if not specified.</p>
             <h3>Example 1</h3><p>Create a table row:
 
 </p>
-<pre><code>var tr = dojo.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var tr = domConstruct.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -2385,24 +2387,29 @@ in this registry should be of the same arity.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><pre><code>// create a new registry
-var reg = new dojo.AdapterRegistry();
-reg.register(&quot;handleString&quot;,
-    dojo.isString,
-    function(str){
-        // do something with the string here
-    }
-);
-reg.register(&quot;handleArr&quot;,
-    dojo.isArray,
-    function(arr){
-        // do something with the array here
-    }
-);
+require([&quot;dojo/AdapterRegistry&quot;],
+function(AdapterRegistry){
+    var reg = new AdapterRegistry();
+    reg.register(&quot;handleString&quot;,
+        function(str){
+            return typeof val == &quot;string&quot;
+        },
+        function(str){
+            // do something with the string here
+        }
+    );
+    reg.register(&quot;handleArr&quot;,
+        dojo.isArray,
+        function(arr){
+            // do something with the array here
+        }
+    );
 
-// now we can pass reg.match() *either* an array or a string and
-// the value we pass will get handled by the right function
-reg.match(&quot;someValue&quot;); // will call the first function
-reg.match([&quot;someValue&quot;]); // will call the second</code></pre>
+    // now we can pass reg.match() *either* an array or a string and
+    // the value we pass will get handled by the right function
+    reg.match(&quot;someValue&quot;); // will call the first function
+    reg.match([&quot;someValue&quot;]); // will call the second
+});</code></pre>
 
           </div>
         </div>
@@ -2616,9 +2623,13 @@ loading via back button instantaneous.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>dojo.addOnUnload(functionPointer)
-dojo.addOnUnload(object, &quot;functionName&quot;)
-dojo.addOnUnload(object, function(){ /* ... */});</code></pre>
+            <h3>Example 1</h3><pre><code>var afunc = function() {console.log(&quot;global function&quot;);};
+require([&quot;dojo/_base/unload&quot;], function(unload) {
+    var foo = {unload: function(){ console.log(&quot;unloading...&quot;);}, data: &quot;mydata&quot;};
+    unload.addOnUnload(afunc);
+    unload.addOnUnload(foo, &quot;unload&quot;);
+    unload.addOnUnload(foo, function(){console.log(&quot;&quot;, this.data);});
+});</code></pre>
 
           </div>
         </div>
@@ -3156,7 +3167,7 @@ if not found.  If <code>id</code> is a DomNode, this function is a no-op.
             <td class="jsdoc-param-type">Document</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>Document to work in. Defaults to the current value of
-dojo.doc.  Can be used to retrieve
+dojo/_base/window.doc.  Can be used to retrieve
 node references from other documents.
 </p>
  
@@ -3170,25 +3181,31 @@ node references from other documents.
             <h3>Example 1</h3><p>Look up a node by ID:
 
 </p>
-<pre><code>var n = dojo.byId(&quot;foo&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom&quot;], function(dom){
+    var n = dom.byId(&quot;foo&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Check if a node exists, and use it.
 
 </p>
-<pre><code>var n = dojo.byId(&quot;bar&quot;);
-if(n){ doStuff() ... }</code></pre>
+<pre><code>require([&quot;dojo/dom&quot;], function(dom){
+    var n = dom.byId(&quot;bar&quot;);
+    if(n){ doStuff() ... }
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Allow string or DomNode references to be passed to a custom function:
 
 </p>
-<pre><code>var foo = function(nodeOrId){
-    nodeOrId = dojo.byId(nodeOrId);
-    // ... more stuff
-}</code></pre>
+<pre><code>require([&quot;dojo/dom&quot;], function(dom){
+    var foo = function(nodeOrId){
+        nodeOrId = dom.byId(nodeOrId);
+        // ... more stuff
+    }
+});</code></pre>
 
           </div>
         </div>
@@ -3261,6 +3278,7 @@ this example. To get the build system to intern your dojo.cache calls, use the
 </p>
 <pre><code>//If template.html contains &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot; that will be
 //the value for the text variable.
+//Note: This is pre-AMD, deprecated syntax
 var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;);</code></pre>
 
           </div>
@@ -3273,6 +3291,7 @@ dojo.cache calls, use the &quot;dojo.cache&quot; style of call):
 </p>
 <pre><code>//If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
 //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+//Note: This is pre-AMD, deprecated syntax
 var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;, {sanitize: true});</code></pre>
 
           </div>
@@ -3283,6 +3302,7 @@ the first argument, then the value argument can then be the second argument.
 </p>
 <pre><code>//If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
 //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+//Note: This is pre-AMD, deprecated syntax
 var text = dojo[&quot;cache&quot;](new dojo._Url(&quot;my/module/template.html&quot;), {sanitize: true});</code></pre>
 
           </div>
@@ -3324,20 +3344,25 @@ and creates a new Color instance to work from.
             <h3>Example 1</h3><p>Work with a Color instance:
 
 </p>
-<pre><code>var c = new Color();
-c.setColor([0,0,0]); // black
-var hex = c.toHex(); // #000000</code></pre>
+<pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var c = new Color();
+    c.setColor([0,0,0]); // black
+    var hex = c.toHex(); // #000000
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Work with a node&#39;s color:
 
+
 </p>
-<pre><code>var color = dojo.style(&quot;someNode&quot;, &quot;backgroundColor&quot;);
-var n = new Color(color);
-// adjust the color some
-n.r *= .5;
-console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
+<pre><code>  require([&quot;dojo/_base/color&quot;, &quot;dojo/dom-style&quot;], function(Color, domStyle){
+      var color = domStyle(&quot;someNode&quot;, &quot;backgroundColor&quot;);
+      var n = new Color(color);
+      // adjust the color some
+      n.r *= .5;
+      console.log(n.toString()); // rgb(128, 255, 255);
+  });</code></pre>
 
           </div>
         </div>
@@ -3376,7 +3401,9 @@ element in sequence to the rgb(a) values of the color.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var myColor = dojo.colorFromArray([237,237,237,0.5]); // grey, 50% alpha</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var myColor = new Color().fromArray([237,237,237,0.5]); // grey, 50% alpha
+});</code></pre>
 
           </div>
         </div>
@@ -3418,11 +3445,10 @@ Supports 12-bit #rgb shorthand. Optionally accepts a
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var thing = dojo.colorFromHex(&quot;#ededed&quot;); // grey, longhand</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>var thing = dojo.colorFromHex(&quot;#000&quot;); // black, shorthand</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var thing = new Color().fromHex(&quot;#ededed&quot;); // grey, longhand
+    var thing2 = new Color().fromHex(&quot;#000&quot;); // black, shorthand
+});</code></pre>
 
           </div>
         </div>
@@ -3895,21 +3921,27 @@ to further control the placement of the new node relative to the refNode.
             <h3>Example 1</h3><p>Create a DIV:
 
 </p>
-<pre><code>var n = dojo.create(&quot;div&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var n = domConstruct.create(&quot;div&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Create a DIV with content:
 
 </p>
-<pre><code>var n = dojo.create(&quot;div&quot;, { innerHTML:&quot;&lt;p&gt;hi&lt;/p&gt;&quot; });</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var n = domConstruct.create(&quot;div&quot;, { innerHTML:&quot;&lt;p&gt;hi&lt;/p&gt;&quot; });
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Place a new DIV in the BODY, with no attributes set
 
 </p>
-<pre><code>var n = dojo.create(&quot;div&quot;, null, dojo.body());</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var n = domConstruct.create(&quot;div&quot;, null, dojo.body());
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -3917,10 +3949,13 @@ to further control the placement of the new node relative to the refNode.
 node with id=&quot;someId&quot;:
 
 </p>
-<pre><code>var ul = dojo.create(&quot;ul&quot;, null, &quot;someId&quot;, &quot;first&quot;);
-var items = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
-dojo.forEach(items, function(data){
-    dojo.create(&quot;li&quot;, { innerHTML: data }, ul);
+<pre><code>require([&quot;dojo/dom-construct&quot;, &quot;dojo/_base/array&quot;],
+function(domConstruct, arrayUtil){
+    var ul = domConstruct.create(&quot;ul&quot;, null, &quot;someId&quot;, &quot;first&quot;);
+    var items = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
+    arrayUtil.forEach(items, function(data){
+        domConstruct.create(&quot;li&quot;, { innerHTML: data }, ul);
+    });
 });</code></pre>
 
           </div>
@@ -3928,17 +3963,9 @@ dojo.forEach(items, function(data){
             <h3>Example 5</h3><p>Create an anchor, with an href. Place in BODY:
 
 </p>
-<pre><code>dojo.create(&quot;a&quot;, { href:&quot;foo.html&quot;, title:&quot;Goto FOO!&quot; }, dojo.body());</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Create a <code>dojo/NodeList()</code> from a new element (for syntactic sugar):
-
-</p>
-<pre><code>dojo.query(dojo.create(&#39;div&#39;))
-    .addClass(&quot;newDiv&quot;)
-    .onclick(function(e){ console.log(&#39;clicked&#39;, e.target) })
-    .place(&quot;#someNode&quot;); // redundant, but cleaner.</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.create(&quot;a&quot;, { href:&quot;foo.html&quot;, title:&quot;Goto FOO!&quot; }, dojo.body());
+});</code></pre>
 
           </div>
         </div>
@@ -5234,9 +5261,11 @@ default value;
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><pre><code>// get the current value of the &quot;foo&quot; attribute on a node
-dojo.getAttr(dojo.byId(&quot;nodeId&quot;), &quot;foo&quot;);
-// or we can just pass the id:
-dojo.getAttr(&quot;nodeId&quot;, &quot;foo&quot;);</code></pre>
+require([&quot;dojo/dom-attr&quot;, &quot;dojo/dom&quot;], function(domAttr, dom){
+    domAttr.get(dom.byId(&quot;nodeId&quot;), &quot;foo&quot;);
+    // or we can just pass the id:
+    domAttr.get(&quot;nodeId&quot;, &quot;foo&quot;);
+}); </code></pre>
 
           </div>
         </div>
@@ -5276,8 +5305,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5307,7 +5336,7 @@ browsers.
 reuse the returned object.
 
 </p>
-<p>Use the dojo.style() method for more consistent (pixelized)
+<p>Use the <a class="jsdoc-link" href="/api/1.9/dojo/dom-style#get">dojo/dom-style.get()</a> method for more consistent (pixelized)
 return values.
 </p>
 </div>
@@ -5329,15 +5358,19 @@ ID string for speed reasons.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>dojo.getComputedStyle(dojo.byId(&#39;foo&#39;)).borderWidth;</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    domStyle.getComputedStyle(dom.byId(&#39;foo&#39;)).borderWidth;
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Reusing the returned object, avoiding multiple lookups:
 
 </p>
-<pre><code>var cs = dojo.getComputedStyle(dojo.byId(&quot;someNode&quot;));
-var w = cs.width, h = cs.height;</code></pre>
+<pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    var cs = domStyle.getComputedStyle(dom.byId(&quot;someNode&quot;));
+    var w = cs.width, h = cs.height;
+});</code></pre>
 
           </div>
         </div>
@@ -5369,8 +5402,8 @@ current box model.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5479,8 +5512,8 @@ positions of the node&#39;s margin box.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5525,8 +5558,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5561,8 +5594,8 @@ the node&#39;s margin box</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5638,8 +5671,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5687,8 +5720,8 @@ directly, and will use the ...box... functions instead.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -5736,9 +5769,11 @@ object of dojo/dom-style.getComputedStyle().</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><pre><code>// get the current value of the &quot;foo&quot; property on a node
-dojo.getProp(dojo.byId(&quot;nodeId&quot;), &quot;foo&quot;);
-// or we can just pass the id:
-dojo.getProp(&quot;nodeId&quot;, &quot;foo&quot;);</code></pre>
+require([&quot;dojo/dom-prop&quot;, &quot;dojo/dom&quot;], function(domProp, dom){
+    domProp.get(dom.byId(&quot;nodeId&quot;), &quot;foo&quot;);
+    // or we can just pass the id:
+    domProp.get(&quot;nodeId&quot;, &quot;foo&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -5755,8 +5790,8 @@ will be a calculated value, not just the immediate node.style value.
 Also when getting values, use specific style names,
 like &quot;borderBottomWidth&quot; instead of &quot;border&quot; since compound values like
 &quot;border&quot; are not necessarily reflected as expected.
-If you want to get node dimensions, use <code>dojo.marginBox()</code>,
-<code>dojo.contentBox()</code> or <code>dojo.position()</code>.</p>
+If you want to get node dimensions, use <a class="jsdoc-link" href="/api/1.9/dojo/dom-geometry#getMarginBox">dojo/dom-geometry.getMarginBox()</a>,
+<a class="jsdoc-link" href="/api/1.9/dojo/dom-geometry#getContentBox">dojo/dom-geometry.getContentBox()</a> or <a class="jsdoc-link" href="/api/1.9/dojo/dom-geometry#getPosition">dojo/dom-geometry.getPosition()</a>.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -5788,7 +5823,9 @@ If you want to get node dimensions, use <code>dojo.marginBox()</code>,
 the node:
 
 </p>
-<pre><code>dojo.getStyle(&quot;thinger&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    domStyle.get(&quot;thinger&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -5796,7 +5833,9 @@ the node:
 normalized, computed value for that property:
 
 </p>
-<pre><code>dojo.getStyle(&quot;thinger&quot;, &quot;opacity&quot;); // 1 by default</code></pre>
+<pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    domStyle.get(&quot;thinger&quot;, &quot;opacity&quot;); // 1 by default
+});</code></pre>
 
           </div>
         </div>
@@ -6046,7 +6085,9 @@ whereas JavaScript 1.6&#39;s indexOf skips the holes in the sparse array.</li>
             <h3>Example 1</h3><p>Test is node id=&quot;bar&quot; is a descendant of node id=&quot;foo&quot;
 
 </p>
-<pre><code>if(dojo.isDescendant(&quot;bar&quot;, &quot;foo&quot;)){ ... }</code></pre>
+<pre><code>require([&quot;dojo/dom&quot;], function(dom){
+    if(dom.isDescendant(&quot;bar&quot;, &quot;foo&quot;)){ ... }
+});</code></pre>
 
           </div>
         </div>
@@ -6311,12 +6352,12 @@ var dataPath = dojo.moduleUrl(&quot;acme.util&quot;,&quot;resources/data.json&qu
         <div class="jsdoc-full-summary"><p>Array-like object which adds syntactic
 sugar for chaining, common iteration operations, animation, and
 node manipulation. NodeLists are most often returned as the
-result of dojo.query() calls.</p>
+result of dojo/query() calls.</p>
 </div>
         <div class="jsdoc-full-summary"><p>NodeList instances provide many utilities that reflect
 core Dojo APIs for Array iteration and manipulation, DOM
 manipulation, and event handling. Instead of needing to dig up
-functions in the dojo.* namespace, NodeLists generally make the
+functions in the dojo package, NodeLists generally make the
 full power of Dojo available for DOM manipulation tasks in a
 simple, chainable way.</p>
 </div>
@@ -6340,16 +6381,22 @@ simple, chainable way.</p>
             <h3>Example 1</h3><p>create a node list from a node
 
 </p>
-<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom&quot;
+], function(query, dom){
+    query.NodeList(dom.byId(&quot;foo&quot;));
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-l.forEach(function(node, index, nodeList){
-    console.log(index, node.innerHTML);
+<pre><code>require([&quot;dojo/on&quot;, &quot;dojo/dom&quot;
+], function(on, dom){
+    var l = query(&quot;.thinger&quot;);
+    l.forEach(function(node, index, nodeList){
+        console.log(index, node.innerHTML);
+    });
 });</code></pre>
 
           </div>
@@ -6358,74 +6405,39 @@ l.forEach(function(node, index, nodeList){
 NodeList without needing to use dojo.* functions explicitly:
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-// since NodeLists are real arrays, they have a length
-// property that is both readable and writable and
-// push/pop/shift/unshift methods
-console.log(l.length);
-l.push(dojo.create(&quot;span&quot;));
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom-construct&quot;, &quot;dojo/dom&quot;
+], function(query, domConstruct, dom){
+    var l = query(&quot;.thinger&quot;);
+    // since NodeLists are real arrays, they have a length
+    // property that is both readable and writable and
+    // push/pop/shift/unshift methods
+    console.log(l.length);
+    l.push(domConstruct.create(&quot;span&quot;));
 
-// dojo&#39;s normalized array methods work too:
-console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-// ...including the special &quot;function as string&quot; shorthand
-console.log( l.every(&quot;item.nodeType == 1&quot;) );
+    // dojo&#39;s normalized array methods work too:
+    console.log( l.indexOf(dom.byId(&quot;foo&quot;)) );
+    // ...including the special &quot;function as string&quot; shorthand
+    console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-// NodeLists can be [..] indexed, or you can use the at()
-// function to get specific items wrapped in a new NodeList:
-var node = l[3]; // the 4th element
-var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>the style functions you expect are all there too:
-
-</p>
-<pre><code>// style() as a getter...
-var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-// ...and as a setter:
-dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-// class manipulation
-dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-// even getting the coordinates of all the items
-var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+    // NodeLists can be [..] indexed, or you can use the at()
+    // function to get specific items wrapped in a new NodeList:
+    var node = l[3]; // the 4th element
+    var newList = l.at(1, 3); // the 2nd and 4th elements
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+            <h3>Example 4</h3><p>chainability is a key advantage of NodeLists:
 
 </p>
-<pre><code>// remove all of the elements in the list from their
-// parents (akin to &quot;deleting&quot; them from the document)
-dojo.query(&quot;.thinger&quot;).orphan();
-// place all elements in the list at the front of #foo
-dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:
-
-</p>
-<pre><code>// like dojo.connect(), but with implicit scope
-dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
-
-// many common event handlers are already available directly:
-dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-dojo.query(&quot;p&quot;)
-    .onmouseenter(toggleHovered)
-    .onmouseleave(toggleHovered);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
-
-</p>
-<pre><code>dojo.query(&quot;.thinger&quot;)
-    .onclick(function(e){ /* ... */ })
-    .at(1, 3, 8) // get a subset
-        .style(&quot;padding&quot;, &quot;5px&quot;)
-        .forEach(console.log);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;.thinger&quot;)
+        .onclick(function(e){ /* ... */ })
+        .at(1, 3, 8) // get a subset
+            .style(&quot;padding&quot;, &quot;5px&quot;)
+            .forEach(console.log);
+});</code></pre>
 
           </div>
         </div>
@@ -6530,7 +6542,7 @@ Accepted string values are:
         <div class="jsdoc-return-description"><p>Returned values is the first argument resolved to a DOM node.
 
 </p>
-<p>.place() is also a method of <code>dojo/NodeList</code>, allowing <code>dojo.query</code> node lookups.</p>
+<p>.place() is also a method of <code>dojo/NodeList</code>, allowing <code>dojo/query</code> node lookups.</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
@@ -6538,28 +6550,37 @@ Accepted string values are:
             <h3>Example 1</h3><p>Place a node by string id as the last child of another node by string id:
 
 </p>
-<pre><code>dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.place(&quot;someNode&quot;, &quot;anotherNode&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Place a node by string id before another node by string id
 
 </p>
-<pre><code>dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;, &quot;before&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.place(&quot;someNode&quot;, &quot;anotherNode&quot;, &quot;before&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Create a Node, and place it in the body element (last child):
 
 </p>
-<pre><code>dojo.place(&quot;&lt;div&gt;&lt;/div&gt;&quot;, dojo.body());</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;, &quot;dojo/_base/window&quot;
+], function(domConstruct, win){
+    domConstruct.place(&quot;&lt;div&gt;&lt;/div&gt;&quot;, win.body());
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>Put a new LI as the first child of a list by id:
 
 </p>
-<pre><code>dojo.place(&quot;&lt;li&gt;&lt;/li&gt;&quot;, &quot;someUl&quot;, &quot;first&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.place(&quot;&lt;li&gt;&lt;/li&gt;&quot;, &quot;someUl&quot;, &quot;first&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -7772,53 +7793,23 @@ the handler itself.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><pre><code>// use attr() to set the tab index
-dojo.setAttr(&quot;nodeId&quot;, &quot;tabIndex&quot;, 3);</code></pre>
+require([&quot;dojo/dom-attr&quot;], function(domAttr){
+    domAttr.set(&quot;nodeId&quot;, &quot;tabIndex&quot;, 3);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Set multiple values at once, including event handlers:
 
 </p>
-<pre><code>dojo.setAttr(&quot;formId&quot;, {
-    &quot;foo&quot;: &quot;bar&quot;,
-    &quot;tabIndex&quot;: -1,
-    &quot;method&quot;: &quot;POST&quot;,
-    &quot;onsubmit&quot;: function(e){
-        // stop submitting the form. Note that the IE behavior
-        // of returning true or false will have no effect here
-        // since our handler is connect()ed to the built-in
-        // onsubmit behavior and so we need to use
-        // dojo.stopEvent() to ensure that the submission
-        // doesn&#39;t proceed.
-        dojo.stopEvent(e);
-
-        // submit the form with Ajax
-        dojo.xhrPost({ form: &quot;formId&quot; });
+<pre><code>require([&quot;dojo/dom-attr&quot;],
+function(domAttr){
+    domAttr.set(&quot;formId&quot;, {
+        &quot;foo&quot;: &quot;bar&quot;,
+        &quot;tabIndex&quot;: -1,
+        &quot;method&quot;: &quot;POST&quot;
     }
 });</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Style is s special case: Only set with an object hash of styles
-
-</p>
-<pre><code>dojo.setAttr(&quot;someNode&quot;,{
-    id:&quot;bar&quot;,
-    style:{
-        width:&quot;200px&quot;, height:&quot;100px&quot;, color:&quot;#000&quot;
-    }
-});</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>Again, only set style as an object hash of styles:
-
-</p>
-<pre><code>var obj = { color:&quot;#fff&quot;, backgroundColor:&quot;#000&quot; };
-dojo.setAttr(&quot;someNode&quot;, &quot;style&quot;, obj);
-
-// though shorter to use `dojo.style()` in this case:
-dojo.setStyle(&quot;someNode&quot;, obj);</code></pre>
 
           </div>
         </div>
@@ -7857,8 +7848,8 @@ respectively. All specified properties should have numeric values in whole pixel
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -7933,8 +7924,8 @@ respectively. All specified properties should have numeric values in whole pixel
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>This parameter accepts computed styles object.
 If this parameter is omitted, the functions will call
-dojo.getComputedStyle to get one. It is a better way, calling
-dojo.computedStyle once, and then pass the reference to this
+dojo/dom-style.getComputedStyle to get one. It is a better way, calling
+dojo/dom-style.getComputedStyle once, and then pass the reference to this
 computedStyle parameter. Wherever possible, reuse the returned
 object of dojo/dom-style.getComputedStyle().</p>
  
@@ -8000,53 +7991,22 @@ multiple properties at once.</p>
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><pre><code>// use prop() to set the tab index
-dojo.setProp(&quot;nodeId&quot;, &quot;tabIndex&quot;, 3);</code></pre>
+require([&quot;dojo/dom-prop&quot;], function(domProp){
+    domProp.set(&quot;nodeId&quot;, &quot;tabIndex&quot;, 3);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Set multiple values at once, including event handlers:
 
 </p>
-<pre><code>dojo.setProp(&quot;formId&quot;, {
-    &quot;foo&quot;: &quot;bar&quot;,
-    &quot;tabIndex&quot;: -1,
-    &quot;method&quot;: &quot;POST&quot;,
-    &quot;onsubmit&quot;: function(e){
-        // stop submitting the form. Note that the IE behavior
-        // of returning true or false will have no effect here
-        // since our handler is connect()ed to the built-in
-        // onsubmit behavior and so we need to use
-        // dojo.stopEvent() to ensure that the submission
-        // doesn&#39;t proceed.
-        dojo.stopEvent(e);
-
-        // submit the form with Ajax
-        dojo.xhrPost({ form: &quot;formId&quot; });
-    }
+<pre><code>require([&quot;dojo/dom-prop&quot;], function(domProp){
+    domProp.set(&quot;formId&quot;, {
+        &quot;foo&quot;: &quot;bar&quot;,
+        &quot;tabIndex&quot;: -1,
+        &quot;method&quot;: &quot;POST&quot;,
+    });
 });</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 3</h3><p>Style is s special case: Only set with an object hash of styles
-
-</p>
-<pre><code>dojo.setProp(&quot;someNode&quot;,{
-    id:&quot;bar&quot;,
-    style:{
-        width:&quot;200px&quot;, height:&quot;100px&quot;, color:&quot;#000&quot;
-    }
-});</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>Again, only set style as an object hash of styles:
-
-</p>
-<pre><code>var obj = { color:&quot;#fff&quot;, backgroundColor:&quot;#000&quot; };
-dojo.setProp(&quot;someNode&quot;, &quot;style&quot;, obj);
-
-// though shorter to use `dojo.style()` in this case:
-dojo.style(&quot;someNode&quot;, obj);</code></pre>
 
           </div>
         </div>
@@ -8133,17 +8093,21 @@ Otherwise, in some cases, some browsers will not apply the style.
 current display of the node and returns the new computed value
 
 </p>
-<pre><code>dojo.setStyle(&quot;thinger&quot;, &quot;opacity&quot;, 0.5); // == 0.5</code></pre>
+<pre><code>require([&quot;dojo/dom-style&quot;], function(domStyle){
+    domStyle.set(&quot;thinger&quot;, &quot;opacity&quot;, 0.5); // == 0.5
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Passing a node, an object-style style property sets each of the values in turn and returns the computed style object of the node:
 
 </p>
-<pre><code>dojo.setStyle(&quot;thinger&quot;, {
-    &quot;opacity&quot;: 0.5,
-    &quot;border&quot;: &quot;3px solid black&quot;,
-    &quot;height&quot;: &quot;300px&quot;
+<pre><code>require([&quot;dojo/dom-style&quot;], function(domStyle){
+    domStyle.set(&quot;thinger&quot;, {
+        &quot;opacity&quot;: 0.5,
+        &quot;border&quot;: &quot;3px solid black&quot;,
+        &quot;height&quot;: &quot;300px&quot;
+    });
 });</code></pre>
 
           </div>
@@ -8152,22 +8116,27 @@ current display of the node and returns the new computed value
 font-size becomes fontSize, and so on.
 
 </p>
-<pre><code>dojo.setStyle(&quot;thinger&quot;,{
-    fontSize:&quot;14pt&quot;,
-    letterSpacing:&quot;1.2em&quot;
+<pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    domStyle.set(&quot;thinger&quot;,{
+        fontSize:&quot;14pt&quot;,
+        letterSpacing:&quot;1.2em&quot;
+    });
 });</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>dojo/NodeList implements .style() using the same syntax, omitting the &quot;node&quot; parameter, calling
-dojo.style() on every element of the list. See: <code>dojo.query()</code> and <code>dojo/NodeList</code>
+dojo/dom-style.get() on every element of the list. See: <code>dojo/query</code> and <code>dojo/NodeList</code>
 
 </p>
-<pre><code>dojo.query(&quot;.someClassName&quot;).style(&quot;visibility&quot;,&quot;hidden&quot;);
-// or
-dojo.query(&quot;#baz &gt; div&quot;).style({
-    opacity:0.75,
-    fontSize:&quot;13pt&quot;
+<pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;],
+function(domStyle, query){
+    query(&quot;.someClassName&quot;).style(&quot;visibility&quot;,&quot;hidden&quot;);
+    // or
+    query(&quot;#baz &gt; div&quot;).style({
+        opacity:0.75,
+        fontSize:&quot;13pt&quot;
+    });
 });</code></pre>
 
           </div>
@@ -8406,7 +8375,7 @@ dojo.query(&quot;#baz &gt; div&quot;).style({
             <td class="jsdoc-param-type">DocumentNode</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>optional document to use when creating DOM nodes, defaults to
-dojo.doc if not specified.</p>
+dojo/_base/window.doc if not specified.</p>
  
             </td>
           </tr>
@@ -8420,7 +8389,9 @@ dojo.doc if not specified.</p>
             <h3>Example 1</h3><p>Create a table row:
 
 </p>
-<pre><code>var tr = dojo.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var tr = domConstruct.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -8690,7 +8661,7 @@ is received.</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.9/dojo/promise/Promise">dojo/promise/Promise</a> | The property to get. | undefined</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.9/dojo/promise/Promise">dojo/promise/Promise</a> | summary: | name:</span></div>
         <div class="jsdoc-return-description"><p>Promise, or if a callback is provided, the result of the callback.</p>
 </div>
       </div>

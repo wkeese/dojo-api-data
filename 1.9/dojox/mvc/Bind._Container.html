@@ -102,8 +102,6 @@ system.  </span><span title="Must manually require () dijit/_WidgetBase to acces
         </li>
         <li class="objectIcon public extension-module"><a href="#1_9dojox_mvc_Bind__Container_ownerDocument" class="inline-link">ownerDocument  </a><span>The document this widget belongs to.  </span><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
         </li>
-        <li class="stringIcon public extension-module"><a href="#1_9dojox_mvc_Bind__Container_postMixInProperties" class="inline-link">postMixInProperties  </a><span>  </span><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
-        </li>
         <li class="domnodeIcon public extension-module"><a href="#1_9dojox_mvc_Bind__Container_srcNodeRef" class="inline-link">srcNodeRef  </a><span>pointer to original DOM node  </span><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
         </li>
         <li class="booleanIcon private extension-module"><a href="#1_9dojox_mvc_Bind__Container_stopParser" class="inline-link">stopParser  </a><span>Flag to parser to not try and parse widgets declared inside the container.  </span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/mvc/_Container to access" class="jsdoc-extension"></span>
@@ -205,6 +203,9 @@ already removed/destroyed manually.</span><span title="Must manually require () 
 on standard domConstruct.place() conventions.</span><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind__Container_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is created</span><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_mvc_Bind__Container_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+but before the widget template is instantiated.</span><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon private extension-module"><a href="#1_9dojox_mvc_Bind__Container_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
         </li>
@@ -501,12 +502,6 @@ formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a
         <div class="jsdoc-summary"><p>The document this widget belongs to.  If not specified to constructor, will default to
 srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document global</p>
 </div>
-      </div>
-      <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind__Container_postMixInProperties"></a><span class="stringIcon">postMixInProperties</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/migrationAssist" class="jsdoc-link">dojox/mobile/migrationAssist</a><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
-        </div>
       </div>
       <div class="jsdoc-field public extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind__Container_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
@@ -1412,6 +1407,17 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
         <div class="jsdoc-full-summary"><p>Called after the DOM fragment has been created, but not necessarily
 added to the document.  Do not include any operations which rely on
 node dimensions or placement.</p>
+</div>
+      </div>
+      <div class="jsdoc-field extension-module">
+        <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind__Container_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="Must manually require () dijit/_WidgetBase to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called after the parameters to the widget have been read-in,
+but before the widget template is instantiated. Especially
+useful to set properties that are referenced in the widget
+template.</p>
 </div>
       </div>
       <div class="jsdoc-field private extension-module">

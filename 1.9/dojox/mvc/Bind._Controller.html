@@ -366,13 +366,7 @@ Otherwise, queue it up to this._refs so that _dbstartup() can pick it up.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
-this just retrieves the object&#39;s property.
-For example:
-
-</p>
-<pre><code>stateful = new dojo.Stateful({foo: 3});
-stateful.get(&quot;foo&quot;) // returns 3
-stateful.foo // returns 3</pre></code>
+this just retrieves the object&#39;s property.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -391,6 +385,17 @@ stateful.foo // returns 3</pre></code>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
         <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
 </div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/Stateful&quot;, function(Stateful) {
+    var stateful = new Stateful({foo: 3});
+    stateful.get(&quot;foo&quot;) // returns 3
+    stateful.foo // returns 3
+});</code></pre>
+
+          </div>
+        </div>
       </div>
       <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind__Controller_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> 
@@ -421,6 +426,7 @@ Also, if widget registry is available, register this object.</p>
             </td>
           </tr>
         </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_9dojox_mvc_Bind__Controller_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 

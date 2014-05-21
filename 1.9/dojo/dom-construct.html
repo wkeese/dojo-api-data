@@ -106,21 +106,27 @@ to further control the placement of the new node relative to the refNode.
             <h3>Example 1</h3><p>Create a DIV:
 
 </p>
-<pre><code>var n = dojo.create(&quot;div&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var n = domConstruct.create(&quot;div&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Create a DIV with content:
 
 </p>
-<pre><code>var n = dojo.create(&quot;div&quot;, { innerHTML:&quot;&lt;p&gt;hi&lt;/p&gt;&quot; });</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var n = domConstruct.create(&quot;div&quot;, { innerHTML:&quot;&lt;p&gt;hi&lt;/p&gt;&quot; });
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Place a new DIV in the BODY, with no attributes set
 
 </p>
-<pre><code>var n = dojo.create(&quot;div&quot;, null, dojo.body());</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var n = domConstruct.create(&quot;div&quot;, null, dojo.body());
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -128,10 +134,13 @@ to further control the placement of the new node relative to the refNode.
 node with id=&quot;someId&quot;:
 
 </p>
-<pre><code>var ul = dojo.create(&quot;ul&quot;, null, &quot;someId&quot;, &quot;first&quot;);
-var items = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
-dojo.forEach(items, function(data){
-    dojo.create(&quot;li&quot;, { innerHTML: data }, ul);
+<pre><code>require([&quot;dojo/dom-construct&quot;, &quot;dojo/_base/array&quot;],
+function(domConstruct, arrayUtil){
+    var ul = domConstruct.create(&quot;ul&quot;, null, &quot;someId&quot;, &quot;first&quot;);
+    var items = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
+    arrayUtil.forEach(items, function(data){
+        domConstruct.create(&quot;li&quot;, { innerHTML: data }, ul);
+    });
 });</code></pre>
 
           </div>
@@ -139,17 +148,9 @@ dojo.forEach(items, function(data){
             <h3>Example 5</h3><p>Create an anchor, with an href. Place in BODY:
 
 </p>
-<pre><code>dojo.create(&quot;a&quot;, { href:&quot;foo.html&quot;, title:&quot;Goto FOO!&quot; }, dojo.body());</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Create a <code>dojo/NodeList()</code> from a new element (for syntactic sugar):
-
-</p>
-<pre><code>dojo.query(dojo.create(&#39;div&#39;))
-    .addClass(&quot;newDiv&quot;)
-    .onclick(function(e){ console.log(&#39;clicked&#39;, e.target) })
-    .place(&quot;#someNode&quot;); // redundant, but cleaner.</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.create(&quot;a&quot;, { href:&quot;foo.html&quot;, title:&quot;Goto FOO!&quot; }, dojo.body());
+});</code></pre>
 
           </div>
         </div>
@@ -188,14 +189,9 @@ children. Function only works with DomNodes, and returns nothing.
             <h3>Example 1</h3><p>Destroy a node byId:
 
 </p>
-<pre><code>dojo.destroy(&quot;someId&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Destroy all nodes in a list by reference:
-
-</p>
-<pre><code>dojo.query(&quot;.someNode&quot;).forEach(dojo.destroy);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.destroy(&quot;someId&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -227,14 +223,9 @@ children. Function only works with DomNodes, and returns nothing.
             <h3>Example 1</h3><p>Destroy node&#39;s children byId:
 
 </p>
-<pre><code>dojo.empty(&quot;someId&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Destroy all nodes&#39; children in a list by reference:
-
-</p>
-<pre><code>dojo.query(&quot;.someNode&quot;).forEach(dojo.empty);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.empty(&quot;someId&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -294,7 +285,7 @@ Accepted string values are:
         <div class="jsdoc-return-description"><p>Returned values is the first argument resolved to a DOM node.
 
 </p>
-<p>.place() is also a method of <code>dojo/NodeList</code>, allowing <code>dojo.query</code> node lookups.</p>
+<p>.place() is also a method of <code>dojo/NodeList</code>, allowing <code>dojo/query</code> node lookups.</p>
 </div>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
@@ -302,28 +293,37 @@ Accepted string values are:
             <h3>Example 1</h3><p>Place a node by string id as the last child of another node by string id:
 
 </p>
-<pre><code>dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.place(&quot;someNode&quot;, &quot;anotherNode&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Place a node by string id before another node by string id
 
 </p>
-<pre><code>dojo.place(&quot;someNode&quot;, &quot;anotherNode&quot;, &quot;before&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.place(&quot;someNode&quot;, &quot;anotherNode&quot;, &quot;before&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Create a Node, and place it in the body element (last child):
 
 </p>
-<pre><code>dojo.place(&quot;&lt;div&gt;&lt;/div&gt;&quot;, dojo.body());</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;, &quot;dojo/_base/window&quot;
+], function(domConstruct, win){
+    domConstruct.place(&quot;&lt;div&gt;&lt;/div&gt;&quot;, win.body());
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 4</h3><p>Put a new LI as the first child of a list by id:
 
 </p>
-<pre><code>dojo.place(&quot;&lt;li&gt;&lt;/li&gt;&quot;, &quot;someUl&quot;, &quot;first&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.place(&quot;&lt;li&gt;&lt;/li&gt;&quot;, &quot;someUl&quot;, &quot;first&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -353,7 +353,7 @@ Accepted string values are:
             <td class="jsdoc-param-type">DocumentNode</td>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>optional document to use when creating DOM nodes, defaults to
-dojo.doc if not specified.</p>
+dojo/_base/window.doc if not specified.</p>
  
             </td>
           </tr>
@@ -367,7 +367,9 @@ dojo.doc if not specified.</p>
             <h3>Example 1</h3><p>Create a table row:
 
 </p>
-<pre><code>var tr = dojo.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    var tr = domConstruct.toDom(&quot;&lt;tr&gt;&lt;td&gt;First!&lt;/td&gt;&lt;/tr&gt;&quot;);
+});</code></pre>
 
           </div>
         </div>

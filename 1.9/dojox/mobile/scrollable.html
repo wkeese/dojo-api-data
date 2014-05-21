@@ -44,7 +44,10 @@ this.containerNode is scrollable.
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="numberIcon private"><a href="#1_9dojox_mobile_scrollable__parentPadBorderExtentsBottom" class="inline-link">_parentPadBorderExtentsBottom  </a><span>  </span><span title="private" class="jsdoc-private"></span>
+        <li class="booleanIcon private"><a href="#1_9dojox_mobile_scrollable__moved" class="inline-link">_moved  </a><span>Flag that signals if the user have moved in (one of) the scroll
+direction(s) since touch start (a move under the threshold is ignored).  </span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="numberIcon private"><a href="#1_9dojox_mobile_scrollable__parentPadBorderExtentsBottom" class="inline-link">_parentPadBorderExtentsBottom  </a><span>For Tooltip.js.  </span><span title="private" class="jsdoc-private"></span>
         </li>
         <li class="booleanIcon public"><a href="#1_9dojox_mobile_scrollable_constraint" class="inline-link">constraint  </a><span>bounce back to the content area  </span>
         </li>
@@ -68,10 +71,10 @@ this.containerNode is scrollable.
         </li>
         <li class="stringIcon public"><a href="#1_9dojox_mobile_scrollable_scrollDir" class="inline-link">scrollDir  </a><span>v: vertical, h: horizontal, vh: both, f: flip  </span>
         </li>
-        <li class="numberIcon public"><a href="#1_9dojox_mobile_scrollable_scrollType" class="inline-link">scrollType  </a><span>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim
+        <li class="numberIcon public"><a href="#1_9dojox_mobile_scrollable_scrollType" class="inline-link">scrollType  </a><span>1: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)animation for slide animation
 2: use top/left style,
-3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim
-0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)  </span>
+3: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)transition for slide animation
+0: use default value (3 for Android, iOS6+, and BlackBerry; otherwise 1)  </span>
         </li>
         <li class="numberIcon public"><a href="#1_9dojox_mobile_scrollable_threshold" class="inline-link">threshold  </a><span>drag threshold value in pixels  </span>
         </li>
@@ -84,7 +87,7 @@ this.containerNode is scrollable.
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_9dojox_mobile_scrollable__forceRendering" class="inline-link"> _forceRendering</a><span class="parameters">(</span>elt) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_scrollable__keepInputCaretInActiveElement" class="inline-link"> _keepInputCaretInActiveElement</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon private"><a href="#1_9dojox_mobile_scrollable__runSlideAnimation" class="inline-link"> _runSlideAnimation</a><span class="parameters">(</span>from, to, duration, easing, node, idx) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
@@ -176,10 +179,21 @@ this.containerNode is scrollable.
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_scrollable__moved"></a><span class="booleanIcon">_moved</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that signals if the user have moved in (one of) the scroll
+direction(s) since touch start (a move under the threshold is ignored).</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_scrollable__parentPadBorderExtentsBottom"></a><span class="numberIcon">_parentPadBorderExtentsBottom</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a>
         </div>
+        <div class="jsdoc-summary"><p>For Tooltip.js.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_scrollable_constraint"></a><span class="booleanIcon">constraint</span>
@@ -271,10 +285,10 @@ this.containerNode is scrollable.
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a>
         </div>
         <div class="jsdoc-summary"><ul>
-<li>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim</li>
+<li>1: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)animation for slide animation</li>
 <li>2: use top/left style,</li>
-<li>3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim</li>
-<li>0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)</li>
+<li>3: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)transition for slide animation</li>
+<li>0: use default value (3 for Android, iOS6+, and BlackBerry; otherwise 1)</li>
 </ul>
 </div>
       </div>
@@ -306,24 +320,11 @@ this.containerNode is scrollable.
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_9dojox_mobile_scrollable__forceRendering"></a><span class="functionIcon">_forceRendering</span><span class="parameters">(elt)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_scrollable__keepInputCaretInActiveElement"></a><span class="functionIcon">_keepInputCaretInActiveElement</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a>
         </div>
         <div class="jsdoc-full-summary"></div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">elt</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field private">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_scrollable__runSlideAnimation"></a><span class="functionIcon">_runSlideAnimation</span><span class="parameters">(from, to, duration, easing, node, idx)</span> <span title="private" class="jsdoc-private"> </span>

@@ -80,7 +80,7 @@ browsers.
 reuse the returned object.
 
 </p>
-<p>Use the dojo.style() method for more consistent (pixelized)
+<p>Use the <a class="jsdoc-link" href="/api/1.9/dojo/dom-style#get">dojo/dom-style.get()</a> method for more consistent (pixelized)
 return values.
 </p>
 </div>
@@ -102,15 +102,19 @@ ID string for speed reasons.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>dojo.getComputedStyle(dojo.byId(&#39;foo&#39;)).borderWidth;</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    domStyle.getComputedStyle(dom.byId(&#39;foo&#39;)).borderWidth;
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Reusing the returned object, avoiding multiple lookups:
 
 </p>
-<pre><code>var cs = dojo.getComputedStyle(dojo.byId(&quot;someNode&quot;));
-var w = cs.width, h = cs.height;</code></pre>
+<pre><code>require([&quot;dojo/dom-style&quot;, &quot;dojo/dom&quot;], function(domStyle, dom){
+    var cs = domStyle.getComputedStyle(dom.byId(&quot;someNode&quot;));
+    var w = cs.width, h = cs.height;
+});</code></pre>
 
           </div>
         </div>

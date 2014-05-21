@@ -50,6 +50,12 @@ template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]  </span><span t
         </li>
         <li class="booleanIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__gridMouseDown" class="inline-link">_gridMouseDown  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__hScrollNodes" class="inline-link">_hScrollNodes  </a><span>Array of nodes that will be scrolled horizontally.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__hscrollPos" class="inline-link">_hscrollPos  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__hScrollPos" class="inline-link">_hScrollPos  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
         <li class="booleanIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__isEditing" class="inline-link">_isEditing  </a><span>Whether an item is being edited or not.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
         <li class="numberIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__layoutStep" class="inline-link">_layoutStep  </a><span>The number of units displayed by a visual layout unit (i.e. a column or a row)  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
@@ -103,6 +109,10 @@ the events represented by this item.  </span><span title="inherited from dojox/c
         <li class="booleanIcon public inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_autoScroll" class="inline-link">autoScroll  </a><span>Indicates whether the view can be scrolled automatically.  </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
         <li class="stringIcon public inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_baseClass" class="inline-link">baseClass  </a><span>  </span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_cellHeaderLongPattern" class="inline-link">cellHeaderLongPattern  </a><span>Custom date/time pattern for grid cell label to override default one coming from the CLDR.  </span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon public inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_cellHeaderShortPattern" class="inline-link">cellHeaderShortPattern  </a><span>Custom date/time pattern for grid cell label to override default one coming from the CLDR.  </span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
         </li>
         <li class="numberIcon public"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_cellPaddingTop" class="inline-link">cellPaddingTop  </a><span>  </span>
         </li>
@@ -335,6 +345,8 @@ if rows are not too small, it is not noticeable.</span><span title="private" cla
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__computeVisibleItems" class="inline-link"> _computeVisibleItems</a><span class="parameters">(</span>renderData) <span>Computes the data items that are in the displayed interval.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon private"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__configureHScrollDomNodes" class="inline-link"> _configureHScrollDomNodes</a><span class="parameters">(</span>styleWidth) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__createHorizontalLayoutItems" class="inline-link"> _createHorizontalLayoutItems</a><span class="parameters">(</span>index, startTime, endTime, items) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__createItemEditEvent" class="inline-link"> _createItemEditEvent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
@@ -397,11 +409,13 @@ i.e. for properties with custom setters.</span><span title="private" class="jsdo
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getFormatItemTimeFuncAttr" class="inline-link"> _getFormatItemTimeFuncAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getHScrollPosition" class="inline-link"> _getHScrollPosition</a><span class="parameters">(</span>) <span>Returns the horizontal scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getItemStoreStateObj" class="inline-link"> _getItemStoreStateObj</a><span class="parameters">(</span>item) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getRowHeight" class="inline-link"> _getRowHeight</a><span class="parameters">(</span>index) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getScrollPosition" class="inline-link"> _getScrollPosition</a><span class="parameters">(</span>) <span>Returns the scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getScrollPosition" class="inline-link"> _getScrollPosition</a><span class="parameters">(</span>) <span>Returns the vertical scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__getSelectedItemAttr" class="inline-link"> _getSelectedItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
@@ -480,6 +494,10 @@ registered with watch() if the value has changed.</span><span title="private" cl
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setHoveredItem" class="inline-link"> _setHoveredItem</a><span class="parameters">(</span>item, renderer) <span>Sets the current hovered item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setHScrollPosition" class="inline-link"> _setHScrollPosition</a><span class="parameters">(</span>pos) <span>Sets the horizontal scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setHScrollPositionImpl" class="inline-link"> _setHScrollPositionImpl</a><span class="parameters">(</span>pos, useDom, cssProperty) <span>Sets the horizontal scroll position on sub elements (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setItemsAttr" class="inline-link"> _setItemsAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setItemStoreState" class="inline-link"> _setItemStoreState</a><span class="parameters">(</span>item, state) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/StoreMixin" class="jsdoc-inherited"></span>
@@ -492,7 +510,9 @@ registered with watch() if the value has changed.</span><span title="private" cl
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setScrollMethodAttr" class="inline-link"> _setScrollMethodAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setScrollPosition" class="inline-link"> _setScrollPosition</a><span class="parameters">(</span>pos) <span>Sets the scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setScrollPosition" class="inline-link"> _setScrollPosition</a><span class="parameters">(</span>pos) <span>Sets the verical scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setScrollPositionBase" class="inline-link"> _setScrollPositionBase</a><span class="parameters">(</span>pos, vertical) <span>Sets the scroll position (if the view is scrollable), using the scroll method defined.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet__setSelectedItemAttr" class="inline-link"> _setSelectedItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
@@ -533,9 +553,17 @@ that does not support the subtraction of time correctly (normalization issues).<
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_afterActivate" class="inline-link"> afterActivate</a><span class="parameters">(</span>) <span>Function invoked just after the view is displayed by the calendar.</span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_afterDeactivate" class="inline-link"> afterDeactivate</a><span class="parameters">(</span>) <span>Function invoked just after the view is the view is hidden or removed by the calendar.</span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_applyRendererZIndex" class="inline-link"> applyRendererZIndex</a><span class="parameters">(</span>item, renderer, hovered, selected, edited, focused) <span>Applies the z-index to the renderer based on the state of the item.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget, setting this.domNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_beforeActivate" class="inline-link"> beforeActivate</a><span class="parameters">(</span>) <span>Function invoked just before the view is displayed by the calendar.</span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_beforeDeactivate" class="inline-link"> beforeDeactivate</a><span class="parameters">(</span>) <span>Function invoked just before the view is hidden or removed by the calendar.</span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_collapseRow" class="inline-link"> collapseRow</a><span class="parameters">(</span>duration, easing, apply) <span>Collapses the expanded row, if any.</span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
         </li>
@@ -678,7 +706,7 @@ but before the widget template is instantiated.</span><span title="inherited fro
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_resize" class="inline-link"> resize</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/calendar/MatrixView" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_scrollView" class="inline-link"> scrollView</a><span class="parameters">(</span>dir) <span>If the view is scrollable, scrolls it to the specified direction.</span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_scrollView" class="inline-link"> scrollView</a><span class="parameters">(</span>dir) <span>If the view is scrollable, scrolls it vertically to the specified direction.</span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_ColumnViewSecondarySheet_selectFromEvent" class="inline-link"> selectFromEvent</a><span class="parameters">(</span>e, item, renderer, dispatch) <span></span><span title="inherited from dojox/calendar/ViewBase" class="jsdoc-inherited"></span>
         </li>
@@ -899,6 +927,27 @@ Used by <code>&lt;img&gt;</code> nodes in templates that really get their image 
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__gridMouseDown"></a><span class="booleanIcon">_gridMouseDown</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__hScrollNodes"></a><span class="objectIcon">_hScrollNodes</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Array of nodes that will be scrolled horizontally.
+Must be set by sub class on buildRendering.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__hscrollPos"></a><span class="numberIcon">_hscrollPos</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__hScrollPos"></a><span class="numberIcon">_hScrollPos</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1138,6 +1187,25 @@ and while editing an item. </p>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/MatrixView" class="jsdoc-link">dojox/calendar/MatrixView</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+      </div>
+      <div class="jsdoc-field public inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_cellHeaderLongPattern"></a><span class="stringIcon">cellHeaderLongPattern</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/MatrixView" class="jsdoc-link">dojox/calendar/MatrixView</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Custom date/time pattern for grid cell label to override default one coming from the CLDR.
+The long pattern is used for the first day of month or the first displayed day of a month.
+See <a class="jsdoc-link" href="/api/1.9/dojo/date/locale">dojo/date/locale</a> documentation for format string.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_cellHeaderShortPattern"></a><span class="stringIcon">cellHeaderShortPattern</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/calendar/MatrixView" class="jsdoc-link">dojox/calendar/MatrixView</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Custom date/time pattern for grid cell label to override default one coming from the CLDR.
+See <a class="jsdoc-link" href="/api/1.9/dojo/date/locale">dojo/date/locale</a> documentation for format string.</p>
+</div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_cellPaddingTop"></a><span class="numberIcon">cellPaddingTop</span>
@@ -2451,6 +2519,26 @@ if rows are not too small, it is not noticeable.</li>
           </tr>
         </table>
       </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__configureHScrollDomNodes"></a><span class="functionIcon">_configureHScrollDomNodes</span><span class="parameters">(styleWidth)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ColumnViewSecondarySheet" class="jsdoc-link">dojox/calendar/ColumnViewSecondarySheet</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">styleWidth</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__createHorizontalLayoutItems"></a><span class="functionIcon">_createHorizontalLayoutItems</span><span class="parameters">(index, startTime, endTime, items)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
@@ -3117,6 +3205,15 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__getHScrollPosition"></a><span class="functionIcon">_getHScrollPosition</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the horizontal scroll position (if the view is scrollable), using the scroll method defined.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__getItemStoreStateObj"></a><span class="functionIcon">_getItemStoreStateObj</span><span class="parameters">(item)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/StoreMixin" class="jsdoc-link">dojox/calendar/StoreMixin</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -3163,7 +3260,7 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns the scroll position (if the view is scrollable), using the scroll method defined.</p>
+        <div class="jsdoc-full-summary"><p>Returns the vertical scroll position (if the view is scrollable), using the scroll method defined.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
@@ -4033,6 +4130,61 @@ This method should only be called by editing interaction mixins like Mouse, Keyb
         </table>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__setHScrollPosition"></a><span class="functionIcon">_setHScrollPosition</span><span class="parameters">(pos)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets the horizontal scroll position (if the view is scrollable), using the scroll method defined.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__setHScrollPositionImpl"></a><span class="functionIcon">_setHScrollPositionImpl</span><span class="parameters">(pos, useDom, cssProperty)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets the horizontal scroll position on sub elements (if the view is scrollable), using the scroll method defined.
+Important: must be implemented by sub classes and not called directly. Use _setHScrollPosition() method instead.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">useDom</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cssProperty</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__setItemsAttr"></a><span class="functionIcon">_setItemsAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -4163,6 +4315,27 @@ This method should only be called by editing interaction mixins like Mouse, Keyb
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+        <div class="jsdoc-full-summary"><p>Sets the verical scroll position (if the view is scrollable), using the scroll method defined.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet__setScrollPositionBase"></a><span class="functionIcon">_setScrollPositionBase</span><span class="parameters">(pos, vertical)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
         <div class="jsdoc-full-summary"><p>Sets the scroll position (if the view is scrollable), using the scroll method defined.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -4173,6 +4346,12 @@ This method should only be called by editing interaction mixins like Mouse, Keyb
           </tr>
           <tr>
             <td class="jsdoc-param-name">pos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">vertical</td>
             <td class="jsdoc-param-type">undefined</td>
             <td class="jsdoc-param-description">
             </td>
@@ -4627,6 +4806,22 @@ to watch for.</p>
           </tr>
         </table>
       </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_afterActivate"></a><span class="functionIcon">afterActivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function invoked just after the view is displayed by the calendar.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_afterDeactivate"></a><span class="functionIcon">afterDeactivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function invoked just after the view is the view is hidden or removed by the calendar.</p>
+</div>
+      </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_applyRendererZIndex"></a><span class="functionIcon">applyRendererZIndex</span><span class="parameters">(item, renderer, hovered, selected, edited, focused)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
@@ -4688,13 +4883,27 @@ are stacked according to their lane).</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_beforeActivate"></a><span class="functionIcon">beforeActivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function invoked just before the view is displayed by the calendar.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_beforeDeactivate"></a><span class="functionIcon">beforeDeactivate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function invoked just before the view is hidden or removed by the calendar.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ColumnViewSecondarySheet" class="jsdoc-link">dojox/calendar/ColumnViewSecondarySheet</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Construct the UI for this widget, setting this.domNode.
-Most widgets will mixin <code>dijit._TemplatedMixin</code>, which implements this method.</p>
-</div>
+        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_9dojox_calendar_ColumnViewSecondarySheet_collapseRow"></a><span class="functionIcon">collapseRow</span><span class="parameters">(duration, easing, apply)</span> 
@@ -6657,7 +6866,7 @@ In that case, provide a custom function to the encodeDate property that is using
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/ViewBase" class="jsdoc-link">dojox/calendar/ViewBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>If the view is scrollable, scrolls it to the specified direction.</p>
+        <div class="jsdoc-full-summary"><p>If the view is scrollable, scrolls it vertically to the specified direction.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>

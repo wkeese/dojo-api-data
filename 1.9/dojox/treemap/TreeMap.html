@@ -95,8 +95,6 @@ system.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inhe
         </li>
         <li class="objectIcon public inherited"><a href="#1_9dojox_treemap_TreeMap_ownerDocument" class="inline-link">ownerDocument  </a><span>The document this widget belongs to.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon public extension-module"><a href="#1_9dojox_treemap_TreeMap_postMixInProperties" class="inline-link">postMixInProperties  </a><span>  </span><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
-        </li>
         <li class="objectIcon public"><a href="#1_9dojox_treemap_TreeMap_query" class="inline-link">query  </a><span>A query that can be passed to when querying the store.  </span>
         </li>
         <li class="objectIcon public"><a href="#1_9dojox_treemap_TreeMap_queryOptions" class="inline-link">queryOptions  </a><span>Options to be applied when querying the store.  </span>
@@ -297,6 +295,9 @@ already removed/destroyed manually.</span><span title="inherited from dijit/Dest
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_treemap_TreeMap_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_treemap_TreeMap_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_treemap_TreeMap_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -706,12 +707,6 @@ formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a
         <div class="jsdoc-summary"><p>The document this widget belongs to.  If not specified to constructor, will default to
 srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document global</p>
 </div>
-      </div>
-      <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_9dojox_treemap_TreeMap_postMixInProperties"></a><span class="stringIcon">postMixInProperties</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/migrationAssist" class="jsdoc-link">dojox/mobile/migrationAssist</a><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
-        </div>
       </div>
       <div class="jsdoc-field public">
         <div class="jsdoc-title"><a name="1_9dojox_treemap_TreeMap_query"></a><span class="objectIcon">query</span>
@@ -2721,6 +2716,17 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/treemap/TreeMap" class="jsdoc-link">dojox/treemap/TreeMap</a>
         </div>
         <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_treemap_TreeMap_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called after the parameters to the widget have been read-in,
+but before the widget template is instantiated. Especially
+useful to set properties that are referenced in the widget
+template.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_treemap_TreeMap_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>

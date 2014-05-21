@@ -271,8 +271,10 @@ and sets this color instance to that value.
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var c = new Color(); // no color
-c.setColor(&quot;#ededed&quot;); // greyish</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var c = new Color(); // no color
+    c.setColor(&quot;#ededed&quot;); // greyish
+});</code></pre>
 
           </div>
         </div>
@@ -302,8 +304,10 @@ c.setColor(&quot;#ededed&quot;); // greyish</code></pre>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var c = new Color(&quot;#FFF&quot;).toCss();
-console.log(c); // rgb(&#39;255&#39;,&#39;255&#39;,&#39;255&#39;)</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var c = new Color(&quot;#FFF&quot;).toCss();
+    console.log(c); // rgb(&#39;255&#39;,&#39;255&#39;,&#39;255&#39;)
+});</code></pre>
 
           </div>
         </div>
@@ -319,7 +323,9 @@ console.log(c); // rgb(&#39;255&#39;,&#39;255&#39;,&#39;255&#39;)</code></pre>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>console.log(new Color([0,0,0]).toHex()); // #000000</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    console.log(new Color([0,0,0]).toHex()); // #000000
+});</code></pre>
 
           </div>
         </div>
@@ -335,8 +341,10 @@ console.log(c); // rgb(&#39;255&#39;,&#39;255&#39;,&#39;255&#39;)</code></pre>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var c = new Color(&quot;#000000&quot;);
-console.log(c.toRgb()); // [0,0,0]</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var c = new Color(&quot;#000000&quot;);
+    console.log(c.toRgb()); // [0,0,0]
+});</code></pre>
 
           </div>
         </div>

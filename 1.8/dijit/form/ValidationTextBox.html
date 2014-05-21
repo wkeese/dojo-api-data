@@ -422,7 +422,8 @@ on standard domConstruct.place() conventions.</span><span title="inherited from 
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dijit_form_ValidationTextBox__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>by) <span></span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ValidationTextBox__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_8dijit_form_ValidationTextBox__onInput" class="inline-link"> _onInput</a><span class="parameters">(</span>evt) <span>Called AFTER the input event has happened
+See if the placeHolder text should be removed or added while editing.</span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_8dijit_form_ValidationTextBox__onKeyDown" class="inline-link"> _onKeyDown</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
@@ -3370,10 +3371,13 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dijit_form_ValidationTextBox__onInput"></a><span class="functionIcon">_onInput</span><span class="parameters">(e)</span><span title="private" class="jsdoc-private"></span>
+        <div class="jsdoc-title"><a name="1_8dijit_form_ValidationTextBox__onInput"></a><span class="functionIcon">_onInput</span><span class="parameters">(evt)</span><span title="private" class="jsdoc-private"></span>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.8/dijit/form/TextBox" class="jsdoc-link">dijit/form/TextBox</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+        <div class="jsdoc-full-summary"><p>Called AFTER the input event has happened
+See if the placeHolder text should be removed or added while editing.</p>
+</div>
         <table class="jsdoc-parameters">
           <tr>
             <th>Parameter</th>
@@ -3381,8 +3385,8 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
             <th>Description</th>
           </tr>
           <tr>
-            <td class="jsdoc-param-name">e</td>
-            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">Event</td>
             <td class="jsdoc-param-description">
             </td>
           </tr>

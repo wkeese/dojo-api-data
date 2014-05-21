@@ -282,13 +282,7 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
 potentially be retrieved via a getter method in subclasses. In the base class
-this just retrieves the object&#39;s property.
-For example:
-
-</p>
-<pre><code>stateful = new dojo.Stateful({foo: 3});
-stateful.get(&quot;foo&quot;) // returns 3
-stateful.foo // returns 3</pre></code>
+this just retrieves the object&#39;s property.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -307,6 +301,17 @@ stateful.foo // returns 3</pre></code>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
         <div class="jsdoc-return-description"><p>The property value on this Stateful instance.</p>
 </div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/Stateful&quot;, function(Stateful) {
+    var stateful = new Stateful({foo: 3});
+    stateful.get(&quot;foo&quot;) // returns 3
+    stateful.foo // returns 3
+});</code></pre>
+
+          </div>
+        </div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_dgauges_MultiLinearScaler_positionForValue"></a><span class="functionIcon">positionForValue</span><span class="parameters">(value)</span> 
@@ -362,24 +367,7 @@ stateful.foo // returns 3</pre></code>
         <div class="jsdoc-full-summary"><p>Set a property on a Stateful instance</p>
 </div>
         <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
-the property. A programmatic setter may be defined in subclasses.
-For example:
-
-</p>
-<pre><code>stateful = new dojo.Stateful();
-stateful.watch(function(name, oldValue, value){
-    // this will be called on the set below
-}
-stateful.set(foo, 5);</pre></code>
-<p>set() may also be called with a hash of name/value pairs, ex:
-
-</p>
-<pre><code>myObj.set({
-    foo: &quot;Howdy&quot;,
-    bar: 3
-})</pre></code>
-<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
-</p>
+the property. A programmatic setter may be defined in subclasses.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -405,6 +393,29 @@ stateful.set(foo, 5);</pre></code>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
         <div class="jsdoc-return-description"><p>The function returns this dojo.Stateful instance.</p>
 </div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/Stateful&quot;, function(Stateful) {
+    var stateful = new Stateful();
+    stateful.watch(function(name, oldValue, value){
+        // this will be called on the set below
+    }
+    stateful.set(foo, 5);</code></pre>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+
+</p>
+<pre><code>stateful.set({
+    foo: &quot;Howdy&quot;,
+    bar: 3
+});
+});</code></pre>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)
+</p>
+
+          </div>
+        </div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_dgauges_MultiLinearScaler_valueForPosition"></a><span class="functionIcon">valueForPosition</span><span class="parameters">(position)</span> 

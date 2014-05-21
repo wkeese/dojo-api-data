@@ -79,6 +79,7 @@ this example. To get the build system to intern your dojo.cache calls, use the
 </p>
 <pre><code>//If template.html contains &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot; that will be
 //the value for the text variable.
+//Note: This is pre-AMD, deprecated syntax
 var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;);</code></pre>
 
       </div>
@@ -91,6 +92,7 @@ dojo.cache calls, use the &quot;dojo.cache&quot; style of call):
 </p>
 <pre><code>//If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
 //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+//Note: This is pre-AMD, deprecated syntax
 var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;, {sanitize: true});</code></pre>
 
       </div>
@@ -101,6 +103,7 @@ the first argument, then the value argument can then be the second argument.
 </p>
 <pre><code>//If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
 //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+//Note: This is pre-AMD, deprecated syntax
 var text = dojo[&quot;cache&quot;](new dojo._Url(&quot;my/module/template.html&quot;), {sanitize: true});</code></pre>
 
       </div>

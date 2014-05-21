@@ -186,7 +186,7 @@ registered with watch() if the value has changed.</span><span title="private" cl
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dijit_form__ComboBoxMenu__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit_form__ComboBoxMenu__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_form__ComboBoxMenu__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node, scroll) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dijit_form__ComboBoxMenu__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
@@ -1107,7 +1107,7 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit_form__ComboBoxMenu__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dijit_form__ComboBoxMenu__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node, scroll)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -1122,7 +1122,16 @@ registered with watch() if the value has changed.</p>
           <tr>
             <td class="jsdoc-param-name">node</td>
             <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-description"><p>The option to select</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scroll</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>If necessary, scroll node into view.  Set to false for mouse/touch to
+avoid jumping problems on mobile/RTL, see <a href="https://bugs.dojotoolkit.org/ticket/17739">https://bugs.dojotoolkit.org/ticket/17739</a>.</p>
+ 
             </td>
           </tr>
         </table>

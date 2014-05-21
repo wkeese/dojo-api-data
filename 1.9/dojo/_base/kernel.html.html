@@ -72,14 +72,9 @@ may be a better choice for simple HTML insertion.</span><span title="Must manual
             <h3>Example 1</h3><p>Destroy node&#39;s children byId:
 
 </p>
-<pre><code>dojo.empty(&quot;someId&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><p>Destroy all nodes&#39; children in a list by reference:
-
-</p>
-<pre><code>dojo.query(&quot;.someNode&quot;).forEach(dojo.empty);</code></pre>
+<pre><code>require([&quot;dojo/dom-construct&quot;], function(domConstruct){
+    domConstruct.empty(&quot;someId&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -152,9 +147,12 @@ must go into head, so we need to cut out those tags</p>
 may be a better choice for simple HTML insertion.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Unless you need to use the params capabilities of this method, you should use
-<a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place(cont, node, &quot;only&quot;). <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place() has more robust support for injecting
+<a class="jsdoc-link" href="/api/1.9/dojo/dom-construct#place">dojo/dom-construct.place(cont, node, &quot;only&quot;)</a>. <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place() has more robust support for injecting
 an HTML string into the DOM, but it only handles inserting an HTML string as DOM
 elements, or inserting a DOM node. <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct">dojo/dom-construct</a>..place does not handle NodeList insertions
+<a class="jsdoc-link" href="/api/1.9/dojo/dom-construct#place">dojo/dom-construct.place(cont, node, &quot;only&quot;)</a>. <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct#place">dojo/dom-construct.place()</a> has more robust support for injecting
+an HTML string into the DOM, but it only handles inserting an HTML string as DOM
+elements, or inserting a DOM node. <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct#place">dojo/dom-construct.place</a> does not handle NodeList insertions
 or the other capabilities as defined by the params object for this method.</p>
 </div>
         <table class="jsdoc-parameters">

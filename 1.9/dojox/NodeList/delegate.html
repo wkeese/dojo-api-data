@@ -11,12 +11,12 @@
 <div class="jsdoc-full-summary"><p>Array-like object which adds syntactic
 sugar for chaining, common iteration operations, animation, and
 node manipulation. NodeLists are most often returned as the
-result of dojo.query() calls.</p>
+result of <a class="jsdoc-link" href="/api/1.9/dojo/query">dojo/query()</a> calls.</p>
 </div>
 <div class="jsdoc-full-summary"><p>NodeList instances provide many utilities that reflect
 core Dojo APIs for Array iteration and manipulation, DOM
 manipulation, and event handling. Instead of needing to dig up
-functions in the dojo.* namespace, NodeLists generally make the
+functions in the dojo package, NodeLists generally make the
 full power of Dojo available for DOM manipulation tasks in a
 simple, chainable way.</p>
 </div>
@@ -48,16 +48,22 @@ simple, chainable way.</p>
         <h3>Example 1</h3><p>create a node list from a node
 
 </p>
-<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom&quot;
+], function(query, dom){
+    query.NodeList(dom.byId(&quot;foo&quot;));
+});</code></pre>
 
       </div>
       <div class="jsdoc-example">
         <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-l.forEach(function(node, index, nodeList){
-    console.log(index, node.innerHTML);
+<pre><code>require([&quot;dojo/on&quot;, &quot;dojo/dom&quot;
+], function(on, dom){
+    var l = query(&quot;.thinger&quot;);
+    l.forEach(function(node, index, nodeList){
+        console.log(index, node.innerHTML);
+    });
 });</code></pre>
 
       </div>
@@ -66,74 +72,39 @@ l.forEach(function(node, index, nodeList){
 NodeList without needing to use dojo.* functions explicitly:
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-// since NodeLists are real arrays, they have a length
-// property that is both readable and writable and
-// push/pop/shift/unshift methods
-console.log(l.length);
-l.push(dojo.create(&quot;span&quot;));
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom-construct&quot;, &quot;dojo/dom&quot;
+], function(query, domConstruct, dom){
+    var l = query(&quot;.thinger&quot;);
+    // since NodeLists are real arrays, they have a length
+    // property that is both readable and writable and
+    // push/pop/shift/unshift methods
+    console.log(l.length);
+    l.push(domConstruct.create(&quot;span&quot;));
 
-// dojo&#39;s normalized array methods work too:
-console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-// ...including the special &quot;function as string&quot; shorthand
-console.log( l.every(&quot;item.nodeType == 1&quot;) );
+    // dojo&#39;s normalized array methods work too:
+    console.log( l.indexOf(dom.byId(&quot;foo&quot;)) );
+    // ...including the special &quot;function as string&quot; shorthand
+    console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-// NodeLists can be [..] indexed, or you can use the at()
-// function to get specific items wrapped in a new NodeList:
-var node = l[3]; // the 4th element
-var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
-
-      </div>
-      <div class="jsdoc-example">
-        <h3>Example 4</h3><p>the style functions you expect are all there too:
-
-</p>
-<pre><code>// style() as a getter...
-var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-// ...and as a setter:
-dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-// class manipulation
-dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-// even getting the coordinates of all the items
-var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+    // NodeLists can be [..] indexed, or you can use the at()
+    // function to get specific items wrapped in a new NodeList:
+    var node = l[3]; // the 4th element
+    var newList = l.at(1, 3); // the 2nd and 4th elements
+});</code></pre>
 
       </div>
       <div class="jsdoc-example">
-        <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+        <h3>Example 4</h3><p>chainability is a key advantage of NodeLists:
 
 </p>
-<pre><code>// remove all of the elements in the list from their
-// parents (akin to &quot;deleting&quot; them from the document)
-dojo.query(&quot;.thinger&quot;).orphan();
-// place all elements in the list at the front of #foo
-dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
-
-      </div>
-      <div class="jsdoc-example">
-        <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:
-
-</p>
-<pre><code>// like dojo.connect(), but with implicit scope
-dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
-
-// many common event handlers are already available directly:
-dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-dojo.query(&quot;p&quot;)
-    .onmouseenter(toggleHovered)
-    .onmouseleave(toggleHovered);</code></pre>
-
-      </div>
-      <div class="jsdoc-example">
-        <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
-
-</p>
-<pre><code>dojo.query(&quot;.thinger&quot;)
-    .onclick(function(e){ /* ... */ })
-    .at(1, 3, 8) // get a subset
-        .style(&quot;padding&quot;, &quot;5px&quot;)
-        .forEach(console.log);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;.thinger&quot;)
+        .onclick(function(e){ /* ... */ })
+        .at(1, 3, 8) // get a subset
+            .style(&quot;padding&quot;, &quot;5px&quot;)
+            .forEach(console.log);
+});</code></pre>
 
       </div>
     </div>
@@ -255,7 +226,7 @@ that generated the current NodeList.</span><span title="inherited from dojo/quer
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_even" class="inline-link"> even</a><span class="parameters">(</span>) <span>Returns the even nodes in this dojo/NodeList as a dojo/NodeList.</span><span title="inherited from dojo/NodeList-traverse" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_every" class="inline-link"> every</a><span class="parameters">(</span>callback, thisObject) <span>see dojo.every() and the Array.every
+        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_every" class="inline-link"> every</a><span class="parameters">(</span>callback, thisObject) <span>see dojo/_base/array.every() and the Array.every
 docs.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_9dojox_NodeList_delegate_fadeIn" class="inline-link"> fadeIn</a><span class="parameters">(</span>args) <span>fade in all elements of this NodeList via dojo.fadeIn</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
@@ -269,12 +240,12 @@ objects.</span><span title="inherited from dojo/NodeList-dom" class="jsdoc-inher
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_first" class="inline-link"> first</a><span class="parameters">(</span>) <span>Returns the first node in this dojo/NodeList as a dojo/NodeList.</span><span title="inherited from dojo/NodeList-traverse" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>callback, thisObj) <span>see dojo.forEach().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>callback, thisObj) <span>see dojo/_base/array.forEach().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_9dojox_NodeList_delegate_html" class="inline-link"> html</a><span class="parameters">(</span>value) <span>allows setting the innerHTML of each node in the NodeList,
 if there is a value passed in, otherwise, reads the innerHTML value of the first node.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_indexOf" class="inline-link"> indexOf</a><span class="parameters">(</span>value, fromIndex) <span>see dojo.indexOf().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_indexOf" class="inline-link"> indexOf</a><span class="parameters">(</span>value, fromIndex) <span>see dojo/_base/array.indexOf().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_9dojox_NodeList_delegate_innerHTML" class="inline-link"> innerHTML</a><span class="parameters">(</span>value) <span>allows setting the innerHTML of each node in the NodeList,
 if there is a value passed in, otherwise, reads the innerHTML value of the first node.</span><span title="Must manually require () dojo/NodeList-manipulate to access" class="jsdoc-extension"></span>
@@ -291,9 +262,9 @@ srcNodeRef.</span><span title="inherited from dojo/query" class="jsdoc-inherited
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_last" class="inline-link"> last</a><span class="parameters">(</span>) <span>Returns the last node in this dojo/NodeList as a dojo/NodeList.</span><span title="inherited from dojo/NodeList-traverse" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_lastIndexOf" class="inline-link"> lastIndexOf</a><span class="parameters">(</span>value, fromIndex) <span>see dojo.lastIndexOf().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_lastIndexOf" class="inline-link"> lastIndexOf</a><span class="parameters">(</span>value, fromIndex) <span>see dojo/_base/array.lastIndexOf().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_map" class="inline-link"> map</a><span class="parameters">(</span>func, obj) <span>see dojo.map().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_map" class="inline-link"> map</a><span class="parameters">(</span>func, obj) <span>see dojo/_base/array.map().</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_marginBox" class="inline-link"> marginBox</a><span class="parameters">(</span>) <span>Returns margin-box size of nodes</span><span title="inherited from dojo/NodeList-dom" class="jsdoc-inherited"></span>
         </li>
@@ -357,7 +328,7 @@ in this NodeList.</span><span title="Must manually require () dojo/NodeList-mani
         <li class="functionIcon  extension-module"><a href="#1_9dojox_NodeList_delegate_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>slide all elements of the node list to the specified place via dojo/fx.slideTo()</span><span title="Must manually require () dojo/NodeList-fx to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_some" class="inline-link"> some</a><span class="parameters">(</span>callback, thisObject) <span>Takes the same structure of arguments and returns as
-dojo.some() with the caveat that the passed array is
+dojo/_base/array.some() with the caveat that the passed array is
 implicitly this NodeList.</span><span title="inherited from dojo/query" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_NodeList_delegate_splice" class="inline-link"> splice</a><span class="parameters">(</span>index, howmany, item) <span>Returns a new NodeList, manipulating this NodeList based on
@@ -485,7 +456,7 @@ function.</p>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>adapts a single node function to be used in the map-type
-actions. The return is a new array of values, as via <code>dojo.map</code></p>
+actions. The return is a new array of values, as via <code>dojo/_base/array.map</code></p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -739,12 +710,12 @@ with an optional query and then calls _stash to track parent NodeList.</p>
         <div class="jsdoc-full-summary"><p>Array-like object which adds syntactic
 sugar for chaining, common iteration operations, animation, and
 node manipulation. NodeLists are most often returned as the
-result of dojo.query() calls.</p>
+result of dojo/query() calls.</p>
 </div>
         <div class="jsdoc-full-summary"><p>NodeList instances provide many utilities that reflect
 core Dojo APIs for Array iteration and manipulation, DOM
 manipulation, and event handling. Instead of needing to dig up
-functions in the dojo.* namespace, NodeLists generally make the
+functions in the dojo package, NodeLists generally make the
 full power of Dojo available for DOM manipulation tasks in a
 simple, chainable way.</p>
 </div>
@@ -768,16 +739,22 @@ simple, chainable way.</p>
             <h3>Example 1</h3><p>create a node list from a node
 
 </p>
-<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom&quot;
+], function(query, dom){
+    query.NodeList(dom.byId(&quot;foo&quot;));
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-l.forEach(function(node, index, nodeList){
-    console.log(index, node.innerHTML);
+<pre><code>require([&quot;dojo/on&quot;, &quot;dojo/dom&quot;
+], function(on, dom){
+    var l = query(&quot;.thinger&quot;);
+    l.forEach(function(node, index, nodeList){
+        console.log(index, node.innerHTML);
+    });
 });</code></pre>
 
           </div>
@@ -786,74 +763,39 @@ l.forEach(function(node, index, nodeList){
 NodeList without needing to use dojo.* functions explicitly:
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-// since NodeLists are real arrays, they have a length
-// property that is both readable and writable and
-// push/pop/shift/unshift methods
-console.log(l.length);
-l.push(dojo.create(&quot;span&quot;));
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom-construct&quot;, &quot;dojo/dom&quot;
+], function(query, domConstruct, dom){
+    var l = query(&quot;.thinger&quot;);
+    // since NodeLists are real arrays, they have a length
+    // property that is both readable and writable and
+    // push/pop/shift/unshift methods
+    console.log(l.length);
+    l.push(domConstruct.create(&quot;span&quot;));
 
-// dojo&#39;s normalized array methods work too:
-console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-// ...including the special &quot;function as string&quot; shorthand
-console.log( l.every(&quot;item.nodeType == 1&quot;) );
+    // dojo&#39;s normalized array methods work too:
+    console.log( l.indexOf(dom.byId(&quot;foo&quot;)) );
+    // ...including the special &quot;function as string&quot; shorthand
+    console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-// NodeLists can be [..] indexed, or you can use the at()
-// function to get specific items wrapped in a new NodeList:
-var node = l[3]; // the 4th element
-var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>the style functions you expect are all there too:
-
-</p>
-<pre><code>// style() as a getter...
-var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-// ...and as a setter:
-dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-// class manipulation
-dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-// even getting the coordinates of all the items
-var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+    // NodeLists can be [..] indexed, or you can use the at()
+    // function to get specific items wrapped in a new NodeList:
+    var node = l[3]; // the 4th element
+    var newList = l.at(1, 3); // the 2nd and 4th elements
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+            <h3>Example 4</h3><p>chainability is a key advantage of NodeLists:
 
 </p>
-<pre><code>// remove all of the elements in the list from their
-// parents (akin to &quot;deleting&quot; them from the document)
-dojo.query(&quot;.thinger&quot;).orphan();
-// place all elements in the list at the front of #foo
-dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:
-
-</p>
-<pre><code>// like dojo.connect(), but with implicit scope
-dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
-
-// many common event handlers are already available directly:
-dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-dojo.query(&quot;p&quot;)
-    .onmouseenter(toggleHovered)
-    .onmouseleave(toggleHovered);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
-
-</p>
-<pre><code>dojo.query(&quot;.thinger&quot;)
-    .onclick(function(e){ /* ... */ })
-    .at(1, 3, 8) // get a subset
-        .style(&quot;padding&quot;, &quot;5px&quot;)
-        .forEach(console.log);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;.thinger&quot;)
+        .onclick(function(e){ /* ... */ })
+        .at(1, 3, 8) // get a subset
+            .style(&quot;padding&quot;, &quot;5px&quot;)
+            .forEach(console.log);
+});</code></pre>
 
           </div>
         </div>
@@ -867,12 +809,12 @@ dojo.query(&quot;p&quot;)
 </div>
         <div class="jsdoc-full-summary"><p>If content is an object, it can have special properties &quot;template&quot; and
 &quot;parse&quot;. If &quot;template&quot; is defined, then the template value is run through
-dojo.string.substitute (if <a class="jsdoc-link" href="/api/1.9/dojo/string#substitute">dojo/string.substitute() has been dojo.required elsewhere)</a>,
+<a class="jsdoc-link" href="/api/1.9/dojo/string#substitute">dojo/string.substitute</a> (if <a class="jsdoc-link" href="/api/1.9/dojo/string#substitute">dojo/string.substitute() has been required elsewhere)</a>,
 or if templateFunc is a function on the content, that function will be used to
 transform the template into a final string to be used for for passing to <a class="jsdoc-link" href="/api/1.9/dojo/dom-construct#toDom">dojo/dom-construct.toDom()</a>.
 If content.parse is true, then it is remembered for later, for when the content
 nodes are inserted into the DOM. At that point, the nodes will be parsed for widgets
-(if dojo.parser has been dojo.required elsewhere).</p>
+(if <a class="jsdoc-link" href="/api/1.9/dojo/parser">dojo/parser</a> has been required elsewhere).</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1004,19 +946,22 @@ the nodes in this NodeList if the query matches more than one element.</p>
 the dojo/NodeList but allows access to the original NodeList by using this._stash:
 
 </p>
-<pre><code>dojo.extend(NodeList, {
-    third: function(){
-        var newNodeList = NodeList(this[2]);
-        return newNodeList._stash(this);
-    }
-});
-// then see how _stash applies a sub-list, to be .end()&#39;ed out of
-dojo.query(&quot;.foo&quot;)
-    .third()
-        .addClass(&quot;thirdFoo&quot;)
-    .end()
-    // access to the orig .foo list
-    .removeClass(&quot;foo&quot;)</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/_base/lang&quot;, &quot;dojo/NodeList&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query, lang){
+    lang.extend(NodeList, {
+        third: function(){
+            var newNodeList = NodeList(this[2]);
+            return newNodeList._stash(this);
+        }
+    });
+    // then see how _stash applies a sub-list, to be .end()&#39;ed out of
+    query(&quot;.foo&quot;)
+        .third()
+            .addClass(&quot;thirdFoo&quot;)
+        .end()
+        // access to the orig .foo list
+        .removeClass(&quot;foo&quot;)
+});</code></pre>
 
           </div>
         </div>
@@ -1224,7 +1169,10 @@ list.  Returns the original list.</p>
             <h3>Example 1</h3><p>appends content to the end if the position is omitted
 
 </p>
-<pre><code>dojo.query(&quot;h3 &gt; p&quot;).addContent(&quot;hey there!&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;h3 &gt; p&quot;).addContent(&quot;hey there!&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -1232,14 +1180,20 @@ list.  Returns the original list.</p>
 &quot;thinger&quot; property:
 
 </p>
-<pre><code>dojo.query(&quot;[thinger]&quot;).addContent(&quot;...&quot;, &quot;first&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;[thinger]&quot;).addContent(&quot;...&quot;, &quot;first&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>adds a header before each element of the list
 
 </p>
-<pre><code>dojo.query(&quot;.note&quot;).addContent(&quot;&lt;h4&gt;NOTE:&lt;/h4&gt;&quot;, &quot;before&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;.note&quot;).addContent(&quot;&lt;h4&gt;NOTE:&lt;/h4&gt;&quot;, &quot;before&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -1247,18 +1201,23 @@ list.  Returns the original list.</p>
 the list, removing it from its existing parent.
 
 </p>
-<pre><code>dojo.query(&quot;.note&quot;).addContent(dojo.byId(&quot;foo&quot;));</code></pre>
+<pre><code>require([&quot;dojo/dom&quot;, &quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(dom, query){
+    query(&quot;.note&quot;).addContent(dom.byId(&quot;foo&quot;));
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 5</h3><p>Append nodes from a templatized string.
 
 </p>
-<pre><code>dojo.require(&quot;dojo.string&quot;);
-dojo.query(&quot;.note&quot;).addContent({
-    template: &#39;&lt;b&gt;${id}: &lt;/b&gt;&lt;span&gt;${name}&lt;/span&gt;&#39;,
-    id: &quot;user332&quot;,
-    name: &quot;Mr. Anderson&quot;
+<pre><code>require([&quot;dojo/string&quot;, &quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(string, query){
+    query(&quot;.note&quot;).addContent({
+        template: &#39;&lt;b&gt;${id}: &lt;/b&gt;&lt;span&gt;${name}&lt;/span&gt;&#39;,
+        id: &quot;user332&quot;,
+        name: &quot;Mr. Anderson&quot;
+    });
 });</code></pre>
 
           </div>
@@ -1266,12 +1225,13 @@ dojo.query(&quot;.note&quot;).addContent({
             <h3>Example 6</h3><p>Append nodes from a templatized string that also has widgets parsed.
 
 </p>
-<pre><code>dojo.require(&quot;dojo.string&quot;);
-dojo.require(&quot;dojo.parser&quot;);
-var notes = dojo.query(&quot;.note&quot;).addContent({
-    template: &#39;&lt;button dojoType=&quot;dijit/form/Button&quot;&gt;${text}&lt;/button&gt;&#39;,
-    parse: true,
-    text: &quot;Send&quot;
+<pre><code>require([&quot;dojo/string&quot;, &quot;dojo/parser&quot;, &quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(string, parser, query){
+    var notes = query(&quot;.note&quot;).addContent({
+        template: &#39;&lt;button dojoType=&quot;dijit/form/Button&quot;&gt;${text}&lt;/button&gt;&#39;,
+        parse: true,
+        text: &quot;Send&quot;
+    });
 });</code></pre>
 
           </div>
@@ -1363,7 +1323,10 @@ not the appended content.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).after(&quot;&lt;span&gt;after&lt;/span&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).after(&quot;&lt;span&gt;after&lt;/span&gt;&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -1402,7 +1365,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.second&quot;).prevAll().andSelf();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.second&quot;).prevAll().andSelf();
+});</code></pre>
 <p>returns the two divs with class of &quot;prev&quot;, as well as the div with class &quot;second&quot;.
 </p>
 
@@ -1472,7 +1438,10 @@ NodeList-fx methods.</p>
             <h3>Example 1</h3><p>Another way to fade out:
 
 </p>
-<pre><code>dojo.query(&quot;.thinger&quot;).anim({ opacity: 0 });</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;.thinger&quot;).anim({ opacity: 0 });
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -1480,7 +1449,10 @@ NodeList-fx methods.</p>
 pixels over half a second
 
 </p>
-<pre><code>dojo.query(&quot;.thinger&quot;).anim({ width: 500 }, 700);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;.thinger&quot;).anim({ width: 500 }, 700);
+});</code></pre>
 
           </div>
         </div>
@@ -1520,22 +1492,28 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>dojo.query(&quot;.zork&quot;).animateProperty({
-    duration: 500,
-    properties: {
-        color:      { start: &quot;black&quot;, end: &quot;white&quot; },
-        left:       { end: 300 }
-    }
-}).play();</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;.zork&quot;).animateProperty({
+        duration: 500,
+        properties: {
+            color:      { start: &quot;black&quot;, end: &quot;white&quot; },
+            left:       { end: 300 }
+        }
+    }).play();
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>dojo.query(&quot;.grue&quot;).animateProperty({
-    auto:true,
-    properties: {
-        height:240
-    }
-}).onclick(handler);</code></pre>
+            <h3>Example 2</h3><pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;.grue&quot;).animateProperty({
+        auto:true,
+        properties: {
+            height:240
+        }
+    }).onclick(handler);
+});</code></pre>
 
           </div>
         </div>
@@ -1580,7 +1558,10 @@ not the appended content.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).append(&quot;&lt;span&gt;append&lt;/span&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).append(&quot;&lt;span&gt;append&lt;/span&gt;&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -1633,7 +1614,10 @@ not the matched nodes from the query.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;span&quot;).appendTo(&quot;p&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;span&quot;).appendTo(&quot;p&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -1677,14 +1661,20 @@ list and go backwards.
             <h3>Example 1</h3><p>Shorten the list to the first, second, and third elements
 
 </p>
-<pre><code>query(&quot;a&quot;).at(0, 1, 2).forEach(fn);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;
+], function(query){
+    query(&quot;a&quot;).at(0, 1, 2).forEach(fn);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Retrieve the first and last elements of a unordered list:
 
 </p>
-<pre><code>query(&quot;ul &gt; li&quot;).at(0, -1).forEach(cb);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;
+], function(query){
+    query(&quot;ul &gt; li&quot;).at(0, -1).forEach(cb);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -1692,9 +1682,12 @@ list and go backwards.
 the original list and continue chaining:
 
 </p>
-<pre><code>query(&quot;a&quot;).at(0).onclick(fn).end().forEach(function(n){
-    console.log(n); // all anchors on the page.
-})</code></pre>
+<pre><code>require([&quot;dojo/query&quot;
+], function(query){
+    query(&quot;a&quot;).at(0).onclick(fn).end().forEach(function(n){
+        console.log(n); // all anchors on the page.
+})
+});</code></pre>
 
           </div>
         </div>
@@ -1705,7 +1698,7 @@ the original list and continue chaining:
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>gets or sets the DOM attribute for every element in the
-NodeList. See also <code>dojo.attr</code></p>
+NodeList. See also <code>dojo/dom-attr</code></p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1739,14 +1732,18 @@ If a value is passed, the return is this NodeList</p>
             <h3>Example 1</h3><p>Make all nodes with a particular class focusable:
 
 </p>
-<pre><code>dojo.query(&quot;.focusable&quot;).attr(&quot;tabIndex&quot;, -1);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;], function(query){
+    query(&quot;.focusable&quot;).attr(&quot;tabIndex&quot;, -1);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Disable a group of buttons:
 
 </p>
-<pre><code>dojo.query(&quot;button.group&quot;).attr(&quot;disabled&quot;, true);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;], function(query){
+    query(&quot;button.group&quot;).attr(&quot;disabled&quot;, true);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -1754,7 +1751,9 @@ If a value is passed, the return is this NodeList</p>
 
 </p>
 <pre><code>// get the innerHTML (as an array) for each list item
-var ih = dojo.query(&quot;li.replaceable&quot;).attr(&quot;innerHTML&quot;);</code></pre>
+require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;], function(query){
+    var ih = query(&quot;li.replaceable&quot;).attr(&quot;innerHTML&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -1799,7 +1798,10 @@ not the appended content.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).before(&quot;&lt;span&gt;before&lt;/span&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).before(&quot;&lt;span&gt;before&lt;/span&gt;&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -1856,7 +1858,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.container&quot;).children();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.container&quot;).children();
+});</code></pre>
 <p>returns the four divs that are children of the container div.
 
 </p>
@@ -1898,7 +1903,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.red&quot;).clone().appendTo(&quot;.container&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;.red&quot;).clone().appendTo(&quot;.container&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -1969,7 +1977,10 @@ node in this dojo/NodeList if it matches the query.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;.red&quot;).closest(&quot;.container&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.red&quot;).closest(&quot;.container&quot;);
+});</code></pre>
 <p>returns the div with class &quot;container&quot;.
 </p>
 
@@ -2094,7 +2105,7 @@ the node passed is each node in this list.</p>
 </p>
 </div>
         <div class="jsdoc-full-summary"><p>Stash or get some arbitrary data on/from these nodes. This private _data function is
-exposed publicly on <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>, eg: as the result of a <code>dojo.query</code> call.
+exposed publicly on <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>, eg: as the result of a <a class="jsdoc-link" href="/api/1.9/dojo/query">dojo/query</a> call.
 DIFFERS from jQuery.data in that when used as a getter, the entire list is ALWAYS
 returned. EVEN WHEN THE LIST IS length == 1.
 
@@ -2144,29 +2155,35 @@ when looking up a node by ID (#foo)</p>
             <h3>Example 1</h3><p>Set a key <code>bar</code> to some data, then retrieve it.
 
 </p>
-<pre><code>dojo.query(&quot;.foo&quot;).data(&quot;bar&quot;, &quot;touched&quot;);
-var touched = dojo.query(&quot;.foo&quot;).data(&quot;bar&quot;);
-if(touched[0] == &quot;touched&quot;){ alert(&#39;win&#39;); }</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-data&quot;], function(query){
+    query(&quot;.foo&quot;).data(&quot;bar&quot;, &quot;touched&quot;);
+    var touched = query(&quot;.foo&quot;).data(&quot;bar&quot;);
+    if(touched[0] == &quot;touched&quot;){ alert(&#39;win&#39;); }
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Get all the data items for a given node.
 
 </p>
-<pre><code>var list = dojo.query(&quot;.foo&quot;).data();
-var first = list[0];</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-data&quot;], function(query){
+    var list = query(&quot;.foo&quot;).data();
+    var first = list[0];
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Set the data to a complex hash. Overwrites existing keys with new value
 
 </p>
-<pre><code>dojo.query(&quot;.foo&quot;).data({ bar:&quot;baz&quot;, foo:&quot;bar&quot; });</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-data&quot;], function(query){
+    query(&quot;.foo&quot;).data({ bar:&quot;baz&quot;, foo:&quot;bar&quot; });</code></pre>
 <p>Then get some random key:
 
 
 </p>
-<pre><code>dojo.query(&quot;.foo&quot;).data(&quot;foo&quot;); // returns [`bar`]</code></pre>
+<pre><code>query(&quot;.foo&quot;).data(&quot;foo&quot;); // returns [`bar`]
+});</code></pre>
 
           </div>
         </div>
@@ -2301,13 +2318,16 @@ is no parent NodeList, an empty NodeList is returned.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>dojo.query(&quot;a&quot;)
-    .filter(&quot;.disabled&quot;)
-        // operate on the anchors that only have a disabled class
-        .style(&quot;color&quot;, &quot;grey&quot;)
-    .end()
-    // jump back to the list of anchors
-    .style(...)</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;a&quot;)
+        .filter(&quot;.disabled&quot;)
+            // operate on the anchors that only have a disabled class
+            .style(&quot;color&quot;, &quot;grey&quot;)
+        .end()
+        // jump back to the list of anchors
+        .style(...)
+});</code></pre>
 
           </div>
         </div>
@@ -2341,7 +2361,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.interior&quot;).even();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.interior&quot;).even();
+});</code></pre>
 <p>returns the two divs with class &quot;blue&quot;
 </p>
 
@@ -2353,10 +2376,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>see <code>dojo.every()</code> and the <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every">Array.every
+        <div class="jsdoc-full-summary"><p>see <code>dojo/_base/array.every()</code> and the <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every">Array.every
 docs</a>.
 Takes the same structure of arguments and returns as
-dojo.every() with the caveat that the passed array is
+dojo/_base/array.every() with the caveat that the passed array is
 implicitly this NodeList</p>
 </div>
         <table class="jsdoc-parameters">
@@ -2420,7 +2443,10 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
             <h3>Example 1</h3><p>Fade in all tables with class &quot;blah&quot;:
 
 </p>
-<pre><code>dojo.query(&quot;table.blah&quot;).fadeIn().play();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;table.blah&quot;).fadeIn().play();
+});</code></pre>
 
           </div>
         </div>
@@ -2462,23 +2488,32 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
             <h3>Example 1</h3><p>Fade out all elements with class &quot;zork&quot;:
 
 </p>
-<pre><code>dojo.query(&quot;.zork&quot;).fadeOut().play();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;.zork&quot;).fadeOut().play();
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Fade them on a delay and do something at the end:
 
 </p>
-<pre><code>var fo = dojo.query(&quot;.zork&quot;).fadeOut();
-aspect.after(fo, &quot;onEnd&quot;, function(){ /*...*/ }, true);
-fo.play();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/aspect&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query, aspect){
+    var fo = query(&quot;.zork&quot;).fadeOut();
+    aspect.after(fo, &quot;onEnd&quot;, function(){ /*...*/ }, true);
+    fo.play();
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 3</h3><p>Using <code>auto</code>:
 
 </p>
-<pre><code>dojo.query(&quot;li&quot;).fadeOut({ auto:true }).filter(filterFn).forEach(doit);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;li&quot;).fadeOut({ auto:true }).filter(filterFn).forEach(doit);
+});</code></pre>
 
           </div>
         </div>
@@ -2514,17 +2549,23 @@ objects.</p>
             <h3>Example 1</h3><p>&quot;regular&quot; JS filter syntax as exposed in dojo.filter:
 
 </p>
-<pre><code>dojo.query(&quot;*&quot;).filter(function(item){
-    // highlight every paragraph
-    return (item.nodeName == &quot;p&quot;);
-}).style(&quot;backgroundColor&quot;, &quot;yellow&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;*&quot;).filter(function(item){
+        // highlight every paragraph
+        return (item.nodeName == &quot;p&quot;);
+    }).style(&quot;backgroundColor&quot;, &quot;yellow&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>the same filtering using a CSS selector
 
 </p>
-<pre><code>dojo.query(&quot;*&quot;).filter(&quot;p&quot;).styles(&quot;backgroundColor&quot;, &quot;yellow&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;*&quot;).filter(&quot;p&quot;).styles(&quot;backgroundColor&quot;, &quot;yellow&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -2558,7 +2599,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.blue&quot;).first();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.blue&quot;).first();
+});</code></pre>
 <p>returns the div with class &quot;blue&quot; and &quot;first&quot;.
 </p>
 
@@ -2570,7 +2614,7 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>see <code>dojo.forEach()</code>. The primary difference is that the acted-on
+        <div class="jsdoc-full-summary"><p>see <code>dojo/_base/array.forEach()</code>. The primary difference is that the acted-on
 array is implicitly this NodeList. If you want the option to break out
 of the forEach loop, use every() or some() instead.</p>
 </div>
@@ -2594,7 +2638,7 @@ of the forEach loop, use every() or some() instead.</p>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
-        <div class="jsdoc-return-description"><p>see <code>dojo.forEach()</code>. The primary difference is that the acted-on
+        <div class="jsdoc-return-description"><p>see <code>dojo/_base/array.forEach()</code>. The primary difference is that the acted-on
 array is implicitly this NodeList. If you want the option to break out
 of the forEach loop, use every() or some() instead.</p>
 </div>
@@ -2649,7 +2693,10 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -2662,7 +2709,10 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>var message = dojo.query(&quot;div&quot;).innerHTML();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    var message = query(&quot;div&quot;).innerHTML();
+});</code></pre>
 
           </div>
         </div>
@@ -2672,7 +2722,7 @@ If a value is passed, the return is this dojo/NodeList</p>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>see dojo.indexOf(). The primary difference is that the acted-on
+        <div class="jsdoc-full-summary"><p>see <code>dojo/_base/array.indexOf()</code>. The primary difference is that the acted-on
 array is implicitly this NodeList</p>
 </div>
         <div class="jsdoc-full-summary"><p>For more details on the behavior of indexOf, see Mozilla&#39;s
@@ -2755,7 +2805,10 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).innerHTML(&quot;&lt;p&gt;Hello World&lt;/p&gt;&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -2768,7 +2821,10 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>var message = dojo.query(&quot;div&quot;).innerHTML();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    var message = query(&quot;div&quot;).innerHTML();
+});</code></pre>
 
           </div>
         </div>
@@ -2815,7 +2871,10 @@ not the matched nodes from the query.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;span&quot;).insertAfter(&quot;p&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;span&quot;).insertAfter(&quot;p&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -2868,7 +2927,10 @@ not the matched nodes from the query.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;span&quot;).insertBefore(&quot;p&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;span&quot;).insertBefore(&quot;p&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -2949,7 +3011,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.blue&quot;).last();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+query(&quot;.blue&quot;).last();
+});</code></pre>
 <p>returns the last div with class &quot;blue&quot;,
 </p>
 
@@ -2961,7 +3026,7 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>see dojo.lastIndexOf(). The primary difference is that the
+        <div class="jsdoc-full-summary"><p>see <code>dojo/_base/array.lastIndexOf()</code>. The primary difference is that the
 acted-on array is implicitly this NodeList</p>
 </div>
         <div class="jsdoc-full-summary"><p>For more details on the behavior of lastIndexOf, see
@@ -2999,7 +3064,7 @@ docs</a></p>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>see dojo.map(). The primary difference is that the acted-on
+        <div class="jsdoc-full-summary"><p>see <code>dojo/_base/array.map()</code>. The primary difference is that the acted-on
 array is implicitly this NodeList and the return is a
 NodeList (a subclass of Array)</p>
 </div>
@@ -3079,7 +3144,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).next();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.first&quot;).next();
+});</code></pre>
 <p>returns the div with class &quot;red&quot; and has innerHTML of &quot;Red Two&quot;.
 
 </p>
@@ -3139,14 +3207,17 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).nextAll();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.first&quot;).nextAll();
+});</code></pre>
 <p>returns the two divs with class of &quot;next&quot;.
 
 </p>
 <p>Running this code:
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).nextAll(&quot;.red&quot;);</code></pre>
+<pre><code>query(&quot;.first&quot;).nextAll(&quot;.red&quot;);</code></pre>
 <p>returns the one div with class &quot;red&quot; and innerHTML &quot;Red Two&quot;.
 </p>
 
@@ -3182,7 +3253,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.interior&quot;).odd();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.interior&quot;).odd();
+});</code></pre>
 <p>returns the two divs with class &quot;red&quot;
 </p>
 
@@ -3195,23 +3269,7 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Listen for events on the nodes in the NodeList. Basic usage is:
-
 </p>
-<pre><code>query(&quot;.my-class&quot;).on(&quot;click&quot;, listener);</code></pre>
-<p>This supports event delegation by using selectors as the first argument with the event names as
-
-</p>
-<p>pseudo selectors. For example:
-
-</p>
-<pre><code>dojo.query(&quot;#my-list&quot;).on(&quot;li:click&quot;, listener);</code></pre>
-<p>This will listen for click events within <code>&lt;li&gt;</code> elements that are inside the <code>#my-list</code> element.
-
-</p>
-<p>Because on supports CSS selector syntax, we can use comma-delimited events as well:
-
-</p>
-<pre><code>dojo.query(&quot;#my-list&quot;).on(&quot;li button:mouseover, li:click&quot;, listener);</code></pre>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -3233,6 +3291,30 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/query&quot;
+], function(query){
+    query(&quot;.my-class&quot;).on(&quot;click&quot;, listener);</code></pre>
+<p>This supports event delegation by using selectors as the first argument with the event names as
+
+</p>
+<p>pseudo selectors. For example:
+
+</p>
+<pre><code>query(&quot;#my-list&quot;).on(&quot;li:click&quot;, listener);</code></pre>
+<p>This will listen for click events within <code>&lt;li&gt;</code> elements that are inside the <code>#my-list</code> element.
+
+</p>
+<p>Because on supports CSS selector syntax, we can use comma-delimited events as well:
+
+</p>
+<pre><code>query(&quot;#my-list&quot;).on(&quot;li button:mouseover, li:click&quot;, listener);
+});</code></pre>
+
+          </div>
+        </div>
       </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_9dojox_NodeList_delegate_orphan"></a><span class="functionIcon">orphan</span><span class="parameters">(filter)</span> 
@@ -3306,14 +3388,17 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.text&quot;).parent();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.text&quot;).parent();
+});</code></pre>
 <p>returns the two divs with class &quot;blue&quot;.
 
 </p>
 <p>Running this code:
 
 </p>
-<pre><code>dojo.query(&quot;.text&quot;).parent(&quot;.first&quot;);</code></pre>
+<pre><code>query(&quot;.text&quot;).parent(&quot;.first&quot;);</code></pre>
 <p>returns the one div with class &quot;blue&quot; and &quot;first&quot;.
 </p>
 
@@ -3365,7 +3450,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.text&quot;).parents();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.text&quot;).parents();
+});</code></pre>
 <p>returns the two divs with class &quot;blue&quot;, the div with class &quot;container&quot;,
 
 
@@ -3375,7 +3463,7 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.text&quot;).parents(&quot;.container&quot;);</code></pre>
+<pre><code>query(&quot;.text&quot;).parents(&quot;.container&quot;);</code></pre>
 <p>returns the one div with class &quot;container&quot;.
 </p>
 
@@ -3388,7 +3476,7 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>places elements of this node list relative to the first element matched
-by queryOrNode. Returns the original NodeList. See: <code>dojo.place</code></p>
+by queryOrNode. Returns the original NodeList. See: <code>dojo/dom-construct.place</code></p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -3432,7 +3520,7 @@ for relative positioning.</p>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/NodeList-dom" class="jsdoc-link">dojo/NodeList-dom</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns border-box objects (x/y/w/h) of all elements in a node list
-as an Array (<em>not</em> a NodeList). Acts like <code>dojo.position</code>, though
+as an Array (<em>not</em> a NodeList). Acts like <code>dojo/dom-geometry-position</code>, though
 assumes the node passed is each node in this list.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
@@ -3473,7 +3561,10 @@ assume a DOM created by this markup:
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).prepend(&quot;&lt;span&gt;prepend&lt;/span&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).prepend(&quot;&lt;span&gt;prepend&lt;/span&gt;&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -3524,7 +3615,10 @@ not the matched nodes from the query.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;span&quot;).prependTo(&quot;p&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;span&quot;).prependTo(&quot;p&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -3581,14 +3675,17 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).prev();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.first&quot;).prev();
+});</code></pre>
 <p>returns the div with class &quot;red&quot; and has innerHTML of &quot;Red One&quot;.
 
 </p>
 <p>Running this code:
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).prev(&quot;.blue&quot;);</code></pre>
+<pre><code>query(&quot;.first&quot;).prev(&quot;.blue&quot;);</code></pre>
 <p>does not return any elements.
 </p>
 
@@ -3643,14 +3740,17 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.second&quot;).prevAll();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.second&quot;).prevAll();
+});</code></pre>
 <p>returns the two divs with class of &quot;prev&quot;.
 
 </p>
 <p>Running this code:
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).prevAll(&quot;.red&quot;);</code></pre>
+<pre><code>query(&quot;.first&quot;).prevAll(&quot;.red&quot;);</code></pre>
 <p>returns the one div with class &quot;red prev&quot; and innerHTML &quot;Red One&quot;.
 </p>
 
@@ -3702,14 +3802,17 @@ each search.</p>
 
 
 </p>
-<pre><code>var l = new NodeList(dojo.byId(&quot;foo&quot;), dojo.byId(&quot;bar&quot;));</code></pre>
+<pre><code>require([&quot;dojo/dom&quot;, &quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(dom, query){
+    var l = new NodeList(dom.byId(&quot;foo&quot;), dom.byId(&quot;bar&quot;));</code></pre>
 <p>it&#39;s possible to find all span elements under paragraphs
 
 </p>
 <p>contained by these elements with this sub-query:
 
 </p>
-<pre><code>var spans = l.query(&quot;p span&quot;);</code></pre>
+<pre><code>var spans = l.query(&quot;p span&quot;);
+});</code></pre>
 
           </div>
         </div>
@@ -3901,7 +4004,10 @@ been cloned, so the returned NodeList will include the cloned nodes.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;.red&quot;).replaceAll(&quot;.blue&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;.red&quot;).replaceAll(&quot;.blue&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -3997,7 +4103,10 @@ Note that the returned nodes have been removed from the DOM.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;.red&quot;).replaceWith(&#39;&lt;div class=&quot;green&quot;&gt;Green&lt;/div&gt;&#39;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;.red&quot;).replaceWith(&#39;&lt;div class=&quot;green&quot;&gt;Green&lt;/div&gt;&#39;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -4058,7 +4167,10 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).siblings();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-traverse&quot;
+], function(query){
+    query(&quot;.first&quot;).siblings();
+});</code></pre>
 <p>returns the two divs with class &quot;red&quot; and the other div
 
 
@@ -4068,7 +4180,7 @@ original <a class="jsdoc-link" href="/api/1.9/dojo/NodeList">dojo/NodeList</a>.<
 
 
 </p>
-<pre><code>dojo.query(&quot;.first&quot;).siblings(&quot;.red&quot;);</code></pre>
+<pre><code>query(&quot;.first&quot;).siblings(&quot;.red&quot;);</code></pre>
 <p>returns the two div with class &quot;red&quot;.
 </p>
 
@@ -4151,10 +4263,13 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
           <h2>Examples</h2>
           <div class="jsdoc-example">
             <h3>Example 1</h3><pre><code>Move all tables with class &quot;blah&quot; to 300/300:
-dojo.query(&quot;table.blah&quot;).slideTo({
-    left: 40,
-    top: 50
-}).play();</code></pre>
+require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;table.blah&quot;).slideTo({
+        left: 40,
+        top: 50
+    }).play();
+});</code></pre>
 
           </div>
         </div>
@@ -4165,8 +4280,8 @@ dojo.query(&quot;table.blah&quot;).slideTo({
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojo/query" class="jsdoc-link">dojo/query</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Takes the same structure of arguments and returns as
-<code>dojo.some()</code> with the caveat that the passed array is
-implicitly this NodeList.  See <code>dojo.some()</code> and Mozilla&#39;s
+<code>dojo/_base/array.some()</code> with the caveat that the passed array is
+implicitly this NodeList.  See <code>dojo/_base/array.some()</code> and Mozilla&#39;s
 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/some">Array.some
 documentation</a>.</p>
 </div>
@@ -4321,7 +4436,10 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;div&quot;).text(&quot;Hello World&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;div&quot;).text(&quot;Hello World&quot;);
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
@@ -4334,7 +4452,10 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>var message = dojo.query(&quot;div&quot;).text();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    var message = query(&quot;div&quot;).text();
+});</code></pre>
 
           </div>
         </div>
@@ -4464,10 +4585,13 @@ If a value is passed, the return is this dojo/NodeList</p>
 
 
 </p>
-<pre><code>dojo.query(&#39;[type=&quot;text&quot;]&#39;).val(); //gets value foo
-dojo.query(&#39;[type=&quot;text&quot;]&#39;).val(&quot;bar&quot;); //sets the input&#39;s value to &quot;bar&quot;
-dojo.query(&quot;select&quot;).val() //gets array value [&quot;red&quot;, &quot;yellow&quot;]
-dojo.query(&quot;select&quot;).val([&quot;blue&quot;, &quot;yellow&quot;]) //Sets the blue and yellow options to selected.</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&#39;[type=&quot;text&quot;]&#39;).val(); //gets value foo
+    query(&#39;[type=&quot;text&quot;]&#39;).val(&quot;bar&quot;); //sets the input&#39;s value to &quot;bar&quot;
+    query(&quot;select&quot;).val() //gets array value [&quot;red&quot;, &quot;yellow&quot;]
+    query(&quot;select&quot;).val([&quot;blue&quot;, &quot;yellow&quot;]) //Sets the blue and yellow options to selected.
+});</code></pre>
 
           </div>
         </div>
@@ -4509,14 +4633,20 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
             <h3>Example 1</h3><p>Fade in all tables with class &quot;blah&quot;:
 
 </p>
-<pre><code>dojo.query(&quot;table.blah&quot;).wipeIn().play();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;table.blah&quot;).wipeIn().play();
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Utilizing <code>auto</code> to get the NodeList back:
 
 </p>
-<pre><code>dojo.query(&quot;.titles&quot;).wipeIn({ auto:true }).onclick(someFunction);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;.titles&quot;).wipeIn({ auto:true }).onclick(someFunction);
+});</code></pre>
 
           </div>
         </div>
@@ -4558,7 +4688,10 @@ chaining. Otherwise the dojo/_base/fx.Animation instance is returned and must be
             <h3>Example 1</h3><p>Wipe out all tables with class &quot;blah&quot;:
 
 </p>
-<pre><code>dojo.query(&quot;table.blah&quot;).wipeOut().play();</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-fx&quot;
+], function(query){
+    query(&quot;table.blah&quot;).wipeOut().play();
+});     </code></pre>
 
           </div>
         </div>
@@ -4603,7 +4736,10 @@ not the nodes from html argument.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;b&quot;).wrap(&quot;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&quot;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;b&quot;).wrap(&quot;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&quot;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -4655,7 +4791,10 @@ not the nodes from html argument.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;.red&quot;).wrapAll(&#39;&lt;div class=&quot;allRed&quot;&gt;&lt;/div&gt;&#39;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;.red&quot;).wrapAll(&#39;&lt;div class=&quot;allRed&quot;&gt;&lt;/div&gt;&#39;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 
@@ -4716,7 +4855,10 @@ not the nodes from html argument.</p>
 
 
 </p>
-<pre><code>dojo.query(&quot;.red&quot;).wrapInner(&#39;&lt;span class=&quot;special&quot;&gt;&lt;/span&gt;&#39;);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-manipulate&quot;
+], function(query){
+    query(&quot;.red&quot;).wrapInner(&#39;&lt;span class=&quot;special&quot;&gt;&lt;/span&gt;&#39;);
+});</code></pre>
 <p>Results in this DOM structure:
 
 

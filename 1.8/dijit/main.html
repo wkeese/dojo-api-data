@@ -57,6 +57,8 @@ held down for a specific amount of time.  </span><span title="Must manually requ
         </li>
         <li class="functionIcon  extension-module"><a href="#1_8dijit_main_BackgroundIframe" class="inline-link"> BackgroundIframe</a><span class="parameters">(</span>node) <span>For IE/FF z-index schenanigans. id attribute is required.</span><span title="Must manually require () dijit/BackgroundIframe to access" class="jsdoc-extension"></span>
         </li>
+        <li class="functionIcon  extension-module"><a href="#1_8dijit_main_effectiveTabIndex" class="inline-link"> effectiveTabIndex</a><span class="parameters">(</span>elem) <span>Returns effective tabIndex of an element, either a number, or undefined if element isn&#39;t focusable.</span><span title="Must manually require () dijit/a11y to access" class="jsdoc-extension"></span>
+        </li>
         <li class="functionIcon  extension-module"><a href="#1_8dijit_main_focus" class="inline-link"> focus</a><span class="parameters">(</span>node) <span></span><span title="Must manually require () dijit/focus to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_8dijit_main_getBookmark" class="inline-link"> getBookmark</a><span class="parameters">(</span>) <span>Retrieves a bookmark that can be used with moveToBookmark to return to the same range</span><span title="Must manually require () dijit/_base/focus to access" class="jsdoc-extension"></span>
@@ -89,6 +91,8 @@ that is last in the tabbing order</span><span title="Must manually require () di
         <li class="functionIcon  extension-module"><a href="#1_8dijit_main_hideTooltip" class="inline-link"> hideTooltip</a><span class="parameters">(</span>aroundNode) <span>Static method to hide the tooltip displayed via showTooltip()</span><span title="Must manually require () dijit/Tooltip to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_8dijit_main_isCollapsed" class="inline-link"> isCollapsed</a><span class="parameters">(</span>) <span>Returns true if there is no text selected</span><span title="Must manually require () dijit/_base/focus to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  extension-module"><a href="#1_8dijit_main_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>elem) <span>Tests if an element is focusable by tabbing to it, or clicking it with the mouse.</span><span title="Must manually require () dijit/a11y to access" class="jsdoc-extension"></span>
         </li>
         <li class="functionIcon  extension-module"><a href="#1_8dijit_main_isTabNavigable" class="inline-link"> isTabNavigable</a><span class="parameters">(</span>elem) <span>Tests if an element is tab-navigable</span><span title="Must manually require () dijit/a11y to access" class="jsdoc-extension"></span>
         </li>
@@ -357,6 +361,28 @@ area (and position) of node</p>
             </td>
           </tr>
         </table>
+      </div>
+      <div class="jsdoc-field extension-module">
+        <div class="jsdoc-title"><a name="1_8dijit_main_effectiveTabIndex"></a><span class="functionIcon">effectiveTabIndex</span><span class="parameters">(elem)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a><span title="Must manually require () dijit/a11y to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns effective tabIndex of an element, either a number, or undefined if element isn&#39;t focusable.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">Element</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | number</span></div>
       </div>
       <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dijit_main_focus"></a><span class="functionIcon">focus</span><span class="parameters">(node)</span> 
@@ -743,6 +769,28 @@ false if it does not.</p>
         <div class="jsdoc-full-summary"><p>Returns true if there is no text selected</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field extension-module">
+        <div class="jsdoc-title"><a name="1_8dijit_main_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">(elem)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a><span title="Must manually require () dijit/a11y to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Tests if an element is focusable by tabbing to it, or clicking it with the mouse.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">Element</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field extension-module">
         <div class="jsdoc-title"><a name="1_8dijit_main_isTabNavigable"></a><span class="functionIcon">isTabNavigable</span><span class="parameters">(elem)</span> 

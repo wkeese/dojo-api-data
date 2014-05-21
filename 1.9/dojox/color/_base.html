@@ -145,20 +145,25 @@ and creates a new Color instance to work from.
             <h3>Example 1</h3><p>Work with a Color instance:
 
 </p>
-<pre><code>var c = new Color();
-c.setColor([0,0,0]); // black
-var hex = c.toHex(); // #000000</code></pre>
+<pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var c = new Color();
+    c.setColor([0,0,0]); // black
+    var hex = c.toHex(); // #000000
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>Work with a node&#39;s color:
 
+
 </p>
-<pre><code>var color = dojo.style(&quot;someNode&quot;, &quot;backgroundColor&quot;);
-var n = new Color(color);
-// adjust the color some
-n.r *= .5;
-console.log(n.toString()); // rgb(128, 255, 255);</code></pre>
+<pre><code>  require([&quot;dojo/_base/color&quot;, &quot;dojo/dom-style&quot;], function(Color, domStyle){
+      var color = domStyle(&quot;someNode&quot;, &quot;backgroundColor&quot;);
+      var n = new Color(color);
+      // adjust the color some
+      n.r *= .5;
+      console.log(n.toString()); // rgb(128, 255, 255);
+  });</code></pre>
 
           </div>
         </div>
@@ -197,7 +202,9 @@ element in sequence to the rgb(a) values of the color.</p>
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var myColor = dojo.colorFromArray([237,237,237,0.5]); // grey, 50% alpha</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var myColor = new Color().fromArray([237,237,237,0.5]); // grey, 50% alpha
+});</code></pre>
 
           </div>
         </div>
@@ -315,11 +322,10 @@ Supports 12-bit #rgb shorthand. Optionally accepts a
         <div class="jsdoc-examples">
           <h2>Examples</h2>
           <div class="jsdoc-example">
-            <h3>Example 1</h3><pre><code>var thing = dojo.colorFromHex(&quot;#ededed&quot;); // grey, longhand</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 2</h3><pre><code>var thing = dojo.colorFromHex(&quot;#000&quot;); // black, shorthand</code></pre>
+            <h3>Example 1</h3><pre><code>require([&quot;dojo/_base/color&quot;], function(Color){
+    var thing = new Color().fromHex(&quot;#ededed&quot;); // grey, longhand
+    var thing2 = new Color().fromHex(&quot;#000&quot;); // black, shorthand
+});</code></pre>
 
           </div>
         </div>

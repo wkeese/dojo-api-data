@@ -396,7 +396,7 @@ not destroy it.</span><span title="inherited from dijit/_Container" class="jsdoc
         </li>
         <li class="functionIcon "><a href="#1_9dojox_mobile_ListItem_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon  extension-module"><a href="#1_9dojox_mobile_ListItem_set" class="inline-link"> set</a><span class="parameters">(</span>key, value) <span></span><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_ListItem_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_mobile_ListItem_setArrow" class="inline-link"> setArrow</a><span class="parameters">(</span>) <span>Sets the arrow icon if necessary.</span>
         </li>
@@ -2592,12 +2592,34 @@ the index within the container to remove (ie, removeChild(5) removes the sixth w
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
-      <div class="jsdoc-field extension-module">
-        <div class="jsdoc-title"><a name="1_9dojox_mobile_ListItem_set"></a><span class="functionIcon">set</span><span class="parameters">(key, value)</span> 
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_ListItem_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
         </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/migrationAssist" class="jsdoc-link">dojox/mobile/migrationAssist</a><span title="Must manually require () dojox/mobile/migrationAssist to access" class="jsdoc-extension"></span>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"></div>
+        <div class="jsdoc-full-summary"><p>Set a property on a widget</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Sets named properties on a widget which may potentially be handled by a
+setter in the widget.
+
+</p>
+<p>For example, if the widget has properties <code>foo</code> and <code>bar</code>
+and a method named <code>_setFooAttr()</code>, calling
+<code>myWidget.set(&quot;foo&quot;, &quot;Howdy!&quot;)</code> would be equivalent to calling
+<code>widget._setFooAttr(&quot;Howdy!&quot;)</code> and <code>myWidget.set(&quot;bar&quot;, 3)</code>
+would be equivalent to the statement <code>widget.bar = 3;</code>
+
+</p>
+<p>set() may also be called with a hash of name/value pairs, ex:
+
+
+</p>
+<pre><code>myWidget.set({
+    foo: &quot;Howdy&quot;,
+    bar: 3
+});</pre></code>
+<p>This is equivalent to calling <code>set(foo, &quot;Howdy&quot;)</code> and <code>set(bar, 3)</code></p>
+</div>
         <table class="jsdoc-parameters">
           <tr>
             <th>Parameter</th>
@@ -2605,18 +2627,23 @@ the index within the container to remove (ie, removeChild(5) removes the sixth w
             <th>Description</th>
           </tr>
           <tr>
-            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-name">name</td>
             <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-description"><p>The property to set.</p>
+ 
             </td>
           </tr>
           <tr>
             <td class="jsdoc-param-name">value</td>
             <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-description"><p>The value to set in the property.</p>
+ 
             </td>
           </tr>
         </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function | string</span></div>
+        <div class="jsdoc-return-description"><p>Set a property on a widget</p>
+</div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_ListItem_setArrow"></a><span class="functionIcon">setArrow</span><span class="parameters">()</span> 

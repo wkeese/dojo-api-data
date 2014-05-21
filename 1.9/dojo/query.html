@@ -93,19 +93,17 @@ scanned.</p>
 which causes the form to be sent via Ajax instead:
 
 </p>
-<pre><code>require([&quot;dojo/query&quot;], function(query){
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/request&quot;, &quot;dojo/dom-form&quot;, &quot;dojo/dom-construct&quot;, &quot;dojo/dom-style&quot;
+], function(query, request, domForm, domConstruct, domStyle){
     query(&quot;input[type=&#39;submit&#39;]&quot;).on(&quot;click&quot;, function(e){
-        dojo.stopEvent(e); // prevent sending the form
+        e.preventDefault(); // prevent sending the form
         var btn = e.target;
-        dojo.xhrPost({
-            form: btn.form,
-            load: function(data){
-                // replace the form with the response
-                var div = dojo.doc.createElement(&quot;div&quot;);
-                dojo.place(div, btn.form, &quot;after&quot;);
-                div.innerHTML = data;
-                dojo.style(btn.form, &quot;display&quot;, &quot;none&quot;);
-            }
+        request.post(&quot;http://example.com/&quot;, {
+            data: domForm.toObject(btn.form)
+        }).then(function(response){
+            // replace the form with the response
+            domConstruct.create(div, {innerHTML: response}, btn.form, &quot;after&quot;);
+            domStyle.set(btn.form, &quot;display&quot;, &quot;none&quot;);
         });
     });
 });</code></pre>
@@ -215,12 +213,12 @@ node manipulation.</span>
         <div class="jsdoc-full-summary"><p>Array-like object which adds syntactic
 sugar for chaining, common iteration operations, animation, and
 node manipulation. NodeLists are most often returned as the
-result of dojo.query() calls.</p>
+result of dojo/query() calls.</p>
 </div>
         <div class="jsdoc-full-summary"><p>NodeList instances provide many utilities that reflect
 core Dojo APIs for Array iteration and manipulation, DOM
 manipulation, and event handling. Instead of needing to dig up
-functions in the dojo.* namespace, NodeLists generally make the
+functions in the dojo package, NodeLists generally make the
 full power of Dojo available for DOM manipulation tasks in a
 simple, chainable way.</p>
 </div>
@@ -244,16 +242,22 @@ simple, chainable way.</p>
             <h3>Example 1</h3><p>create a node list from a node
 
 </p>
-<pre><code>new query.NodeList(dojo.byId(&quot;foo&quot;));</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom&quot;
+], function(query, dom){
+    query.NodeList(dom.byId(&quot;foo&quot;));
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
             <h3>Example 2</h3><p>get a NodeList from a CSS query and iterate on it
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-l.forEach(function(node, index, nodeList){
-    console.log(index, node.innerHTML);
+<pre><code>require([&quot;dojo/on&quot;, &quot;dojo/dom&quot;
+], function(on, dom){
+    var l = query(&quot;.thinger&quot;);
+    l.forEach(function(node, index, nodeList){
+        console.log(index, node.innerHTML);
+    });
 });</code></pre>
 
           </div>
@@ -262,74 +266,39 @@ l.forEach(function(node, index, nodeList){
 NodeList without needing to use dojo.* functions explicitly:
 
 </p>
-<pre><code>var l = dojo.query(&quot;.thinger&quot;);
-// since NodeLists are real arrays, they have a length
-// property that is both readable and writable and
-// push/pop/shift/unshift methods
-console.log(l.length);
-l.push(dojo.create(&quot;span&quot;));
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/dom-construct&quot;, &quot;dojo/dom&quot;
+], function(query, domConstruct, dom){
+    var l = query(&quot;.thinger&quot;);
+    // since NodeLists are real arrays, they have a length
+    // property that is both readable and writable and
+    // push/pop/shift/unshift methods
+    console.log(l.length);
+    l.push(domConstruct.create(&quot;span&quot;));
 
-// dojo&#39;s normalized array methods work too:
-console.log( l.indexOf(dojo.byId(&quot;foo&quot;)) );
-// ...including the special &quot;function as string&quot; shorthand
-console.log( l.every(&quot;item.nodeType == 1&quot;) );
+    // dojo&#39;s normalized array methods work too:
+    console.log( l.indexOf(dom.byId(&quot;foo&quot;)) );
+    // ...including the special &quot;function as string&quot; shorthand
+    console.log( l.every(&quot;item.nodeType == 1&quot;) );
 
-// NodeLists can be [..] indexed, or you can use the at()
-// function to get specific items wrapped in a new NodeList:
-var node = l[3]; // the 4th element
-var newList = l.at(1, 3); // the 2nd and 4th elements</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 4</h3><p>the style functions you expect are all there too:
-
-</p>
-<pre><code>// style() as a getter...
-var borders = dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;);
-// ...and as a setter:
-dojo.query(&quot;.thinger&quot;).style(&quot;border&quot;, &quot;1px solid black&quot;);
-// class manipulation
-dojo.query(&quot;li:nth-child(even)&quot;).addClass(&quot;even&quot;);
-// even getting the coordinates of all the items
-var coords = dojo.query(&quot;.thinger&quot;).coords();</code></pre>
+    // NodeLists can be [..] indexed, or you can use the at()
+    // function to get specific items wrapped in a new NodeList:
+    var node = l[3]; // the 4th element
+    var newList = l.at(1, 3); // the 2nd and 4th elements
+});</code></pre>
 
           </div>
           <div class="jsdoc-example">
-            <h3>Example 5</h3><p>DOM manipulation functions from the dojo.* namespace area also available:
+            <h3>Example 4</h3><p>chainability is a key advantage of NodeLists:
 
 </p>
-<pre><code>// remove all of the elements in the list from their
-// parents (akin to &quot;deleting&quot; them from the document)
-dojo.query(&quot;.thinger&quot;).orphan();
-// place all elements in the list at the front of #foo
-dojo.query(&quot;.thinger&quot;).place(&quot;foo&quot;, &quot;first&quot;);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 6</h3><p>Event handling couldn&#39;t be easier. <code>dojo.connect</code> is mapped in,
-and shortcut handlers are provided for most DOM events:
-
-</p>
-<pre><code>// like dojo.connect(), but with implicit scope
-dojo.query(&quot;li&quot;).connect(&quot;onclick&quot;, console, &quot;log&quot;);
-
-// many common event handlers are already available directly:
-dojo.query(&quot;li&quot;).onclick(console, &quot;log&quot;);
-var toggleHovered = dojo.hitch(dojo, &quot;toggleClass&quot;, &quot;hovered&quot;);
-dojo.query(&quot;p&quot;)
-    .onmouseenter(toggleHovered)
-    .onmouseleave(toggleHovered);</code></pre>
-
-          </div>
-          <div class="jsdoc-example">
-            <h3>Example 7</h3><p>chainability is a key advantage of NodeLists:
-
-</p>
-<pre><code>dojo.query(&quot;.thinger&quot;)
-    .onclick(function(e){ /* ... */ })
-    .at(1, 3, 8) // get a subset
-        .style(&quot;padding&quot;, &quot;5px&quot;)
-        .forEach(console.log);</code></pre>
+<pre><code>require([&quot;dojo/query&quot;, &quot;dojo/NodeList-dom&quot;
+], function(query){
+    query(&quot;.thinger&quot;)
+        .onclick(function(e){ /* ... */ })
+        .at(1, 3, 8) // get a subset
+            .style(&quot;padding&quot;, &quot;5px&quot;)
+            .forEach(console.log);
+});</code></pre>
 
           </div>
         </div>

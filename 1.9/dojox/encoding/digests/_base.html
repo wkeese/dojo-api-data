@@ -23,6 +23,10 @@
       <ul class="jsdoc-property-list">
         <li class="functionIcon "><a href="#1_9dojox_encoding_digests__base_addWords" class="inline-link"> addWords</a><span class="parameters">(</span>a, b) <span>add a pair of words together with rollover</span>
         </li>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_encoding_digests__base_MD5" class="inline-link"> MD5</a><span class="parameters">(</span>data, outputType) <span>computes the digest of data, and returns the result according to type outputType</span><span title="Must manually require () dojox/encoding/digests/MD5 to access" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  extension-module"><a href="#1_9dojox_encoding_digests__base_SHA1" class="inline-link"> SHA1</a><span class="parameters">(</span>data, outputType) <span>Computes the SHA1 digest of the data, and returns the result according to output type.</span><span title="Must manually require () dojox/encoding/digests/SHA1 to access" class="jsdoc-extension"></span>
+        </li>
         <li class="functionIcon "><a href="#1_9dojox_encoding_digests__base_stringToUtf8" class="inline-link"> stringToUtf8</a><span class="parameters">(</span>input) <span></span>
         </li>
         <li class="functionIcon "><a href="#1_9dojox_encoding_digests__base_stringToWord" class="inline-link"> stringToWord</a><span class="parameters">(</span>s) <span>convert a string to a word array</span>
@@ -80,6 +84,62 @@ than using dojox.encoding.base64</span>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field extension-module">
+        <div class="jsdoc-title"><a name="1_9dojox_encoding_digests__base_MD5"></a><span class="functionIcon">MD5</span><span class="parameters">(data, outputType)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/encoding/digests/MD5" class="jsdoc-link">dojox/encoding/digests/MD5</a><span title="Must manually require () dojox/encoding/digests/MD5 to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>computes the digest of data, and returns the result according to type outputType</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">outputType</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object with the following properties:</p><ul><li>Base64</li><li>Hex</li><li>String</li><li>Raw</li></ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field extension-module">
+        <div class="jsdoc-title"><a name="1_9dojox_encoding_digests__base_SHA1"></a><span class="functionIcon">SHA1</span><span class="parameters">(data, outputType)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/encoding/digests/SHA1" class="jsdoc-link">dojox/encoding/digests/SHA1</a><span title="Must manually require () dojox/encoding/digests/SHA1 to access" class="jsdoc-extension"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Computes the SHA1 digest of the data, and returns the result according to output type.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">outputType</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object with the following properties:</p><ul><li>Base64</li><li>Hex</li><li>String</li><li>Raw</li></ul>
+            </td>
+          </tr>
+        </table>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_encoding_digests__base_stringToUtf8"></a><span class="functionIcon">stringToUtf8</span><span class="parameters">(input)</span> 
@@ -144,7 +204,6 @@ than using dojox.encoding.base64</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_encoding_digests__base_wordToHex"></a><span class="functionIcon">wordToHex</span><span class="parameters">(wa)</span> 
@@ -166,7 +225,6 @@ than using dojox.encoding.base64</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_encoding_digests__base_wordToString"></a><span class="functionIcon">wordToString</span><span class="parameters">(wa)</span> 
@@ -188,7 +246,6 @@ than using dojox.encoding.base64</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
     </div>
   </div>

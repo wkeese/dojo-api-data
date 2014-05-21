@@ -35,7 +35,7 @@ Abstract methods that must be defined externally:
         <li class="functionIcon private inherited"><a href="#1_9dijit_form__ListMouseMixin__listConnect" class="inline-link"> _listConnect</a><span class="parameters">(</span>eventType, callbackFuncName) <span>Connects &#39;containerNode&#39; to specified method of this object
 and automatically registers for &#39;disconnect&#39; on widget destroy.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dijit_form__ListMouseMixin__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dijit_form__ListMouseMixin__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node, scroll) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon "><a href="#1_9dijit_form__ListMouseMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
         </li>
@@ -119,7 +119,7 @@ before the widget is destroyed.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dijit_form__ListMouseMixin__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dijit_form__ListMouseMixin__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node, scroll)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
@@ -134,7 +134,16 @@ before the widget is destroyed.</p>
           <tr>
             <td class="jsdoc-param-name">node</td>
             <td class="jsdoc-param-type">DomNode</td>
-            <td class="jsdoc-param-description">
+            <td class="jsdoc-param-description"><p>The option to select</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scroll</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>If necessary, scroll node into view.  Set to false for mouse/touch to
+avoid jumping problems on mobile/RTL, see <a href="https://bugs.dojotoolkit.org/ticket/17739">https://bugs.dojotoolkit.org/ticket/17739</a>.</p>
+ 
             </td>
           </tr>
         </table>

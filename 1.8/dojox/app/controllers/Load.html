@@ -50,6 +50,8 @@
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_app_controllers_Load__getViewNamesFromDefaults" class="inline-link"> _getViewNamesFromDefaults</a><span class="parameters">(</span>view) <span>Build the full nested view name from the view and its defaultView(s)</span><span title="private" class="jsdoc-private"> </span>
+        </li>
         <li class="functionIcon  inherited"><a href="#1_8dojox_app_controllers_Load_bind" class="inline-link"> bind</a><span class="parameters">(</span>evented, event, handler) <span>Bind event on dojo/Evented instance, document, domNode or window.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_createChild" class="inline-link"> createChild</a><span class="parameters">(</span>parent, childId, subIds, params) <span>Create a view instance if not already loaded by calling createView.</span>
@@ -60,9 +62,9 @@
         </li>
         <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_load" class="inline-link"> load</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;loadArray&quot; event.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_loadChild" class="inline-link"> loadChild</a><span class="parameters">(</span>parent, childId, subIds, params) <span>Load child and sub children views recursively.</span>
+        <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_loadChild" class="inline-link"> loadChild</a><span class="parameters">(</span>parent, childId, subIds, params, loadEvent) <span>Load child and sub children views recursively.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_loadView" class="inline-link"> loadView</a><span class="parameters">(</span>event) <span>Response to dojox/app &quot;app-load&quot; event.</span>
+        <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_loadView" class="inline-link"> loadView</a><span class="parameters">(</span>loadEvent) <span>Response to dojox/app &quot;app-load&quot; event.</span>
         </li>
         <li class="functionIcon "><a href="#1_8dojox_app_controllers_Load_proceedLoadView" class="inline-link"> proceedLoadView</a><span class="parameters">(</span>loadEvt) <span>Proceed load queue by FIFO by default.</span>
         </li>
@@ -85,6 +87,32 @@
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_Load__getViewNamesFromDefaults"></a><span class="functionIcon">_getViewNamesFromDefaults</span><span class="parameters">(view)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/app/controllers/Load" class="jsdoc-link">dojox/app/controllers/Load</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Build the full nested view name from the view and its defaultView(s)
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">view</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>the view with defaultViews to process</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description"><p>A string with the full nested view names</p>
+</div>
+      </div>
       <div class="jsdoc-field inherited">
         <div class="jsdoc-title"><a name="1_8dojox_app_controllers_Load_bind"></a><span class="functionIcon">bind</span><span class="parameters">(evented, event, handler)</span> 
         </div>
@@ -282,7 +310,7 @@ Otherwise, create the view and return a dojo.Deferred instance.</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
         <div class="jsdoc-return-description"><p>A dojo/Deferred object.
-The return value cannot return directly. 
+The return value cannot return directly.
 If the caller need to use the return value, pass callback function in event parameter and process return value in callback function.</p>
 </div>
         <div class="jsdoc-examples">
@@ -297,7 +325,7 @@ If the caller need to use the return value, pass callback function in event para
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_Load_loadChild"></a><span class="functionIcon">loadChild</span><span class="parameters">(parent, childId, subIds, params)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_Load_loadChild"></a><span class="functionIcon">loadChild</span><span class="parameters">(parent, childId, subIds, params, loadEvent)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/app/controllers/Load" class="jsdoc-link">dojox/app/controllers/Load</a>
         </div>
@@ -338,13 +366,20 @@ If the caller need to use the return value, pass callback function in event para
  
             </td>
           </tr>
+          <tr>
+            <td class="jsdoc-param-name">loadEvent</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>the event passed for the load of this view.</p>
+ 
+            </td>
+          </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
         <div class="jsdoc-return-description"><p>A dojo/Deferred instance which will be resolved when all views loaded.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_Load_loadView"></a><span class="functionIcon">loadView</span><span class="parameters">(event)</span> 
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_Load_loadView"></a><span class="functionIcon">loadView</span><span class="parameters">(loadEvent)</span> 
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.8/dojox/app/controllers/Load" class="jsdoc-link">dojox/app/controllers/Load</a>
         </div>
@@ -358,7 +393,7 @@ If the caller need to use the return value, pass callback function in event para
             <th>Description</th>
           </tr>
           <tr>
-            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-name">loadEvent</td>
             <td class="jsdoc-param-type">Object</td>
             <td class="jsdoc-param-description"><p>Load event parameter. It should be like this: {&quot;parent&quot;:parent, &quot;viewId&quot;:viewId, &quot;callback&quot;:function(){...}}</p>
  
@@ -367,7 +402,7 @@ If the caller need to use the return value, pass callback function in event para
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
         <div class="jsdoc-return-description"><p>A dojo/Deferred object.
-The return value cannot return directly. 
+The return value cannot return directly.
 If the caller need to use the return value, pass callback function in event parameter and process return value in callback function.</p>
 </div>
         <div class="jsdoc-examples">

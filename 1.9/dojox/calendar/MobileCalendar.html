@@ -290,6 +290,8 @@ i.e. for properties with custom setters.</span><span title="private" class="jsdo
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_MobileCalendar__navigate" class="inline-link"> _navigate</a><span class="parameters">(</span>dir) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_MobileCalendar__performViewTransition" class="inline-link"> _performViewTransition</a><span class="parameters">(</span>view, index, timeInterval, duration) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_MobileCalendar__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_calendar_MobileCalendar__refreshItemsRendering" class="inline-link"> _refreshItemsRendering</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/calendar/CalendarBase" class="jsdoc-inherited"></span>
@@ -572,6 +574,9 @@ been clicked.</span><span title="Must manually require () dijit/_FocusMixin to a
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_MobileCalendar_onTimeIntervalChange" class="inline-link"> onTimeIntervalChange</a><span class="parameters">(</span>e) <span>Event dispatched when the displayed time interval has changed.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_MobileCalendar_onViewAdded" class="inline-link"> onViewAdded</a><span class="parameters">(</span>view) <span>Event dispatched when a view is added from the calendar.</span><span title="inherited" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_MobileCalendar_onViewConfigurationChange" class="inline-link"> onViewConfigurationChange</a><span class="parameters">(</span>view) <span>Event dispatched when the view has been configured after the queried 
+time range and before the current view is changed (if needed).</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_calendar_MobileCalendar_onViewRemoved" class="inline-link"> onViewRemoved</a><span class="parameters">(</span>view) <span>Event dispatched when a view is removed from the calendar.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
@@ -1944,6 +1949,44 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">dir</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_MobileCalendar__performViewTransition"></a><span class="functionIcon">_performViewTransition</span><span class="parameters">(view, index, timeInterval, duration)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">view</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">index</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">timeInterval</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">duration</td>
             <td class="jsdoc-param-type">undefined</td>
             <td class="jsdoc-param-description">
             </td>
@@ -4932,6 +4975,30 @@ been clicked.</p>
             <td class="jsdoc-param-name">view</td>
             <td class="jsdoc-param-type"><a class="jsdoc-link" href="/api/1.9/dojox/calendar/ViewBase">dojox/calendar/ViewBase</a></td>
             <td class="jsdoc-param-description"><p>The view that has been added to the calendar.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_calendar_MobileCalendar_onViewConfigurationChange"></a><span class="functionIcon">onViewConfigurationChange</span><span class="parameters">(view)</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/calendar/CalendarBase" class="jsdoc-link">dojox/calendar/CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Event dispatched when the view has been configured after the queried 
+time range and before the current view is changed (if needed).
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">view</td>
+            <td class="jsdoc-param-type">ViewBase</td>
+            <td class="jsdoc-param-description"><p>The view that has been configured. </p>
  
             </td>
           </tr>

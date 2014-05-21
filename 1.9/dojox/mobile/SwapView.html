@@ -59,9 +59,15 @@ occupy the entire width of the screen.</p>
         </li>
         <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_SwapView__blankGif" class="inline-link">_blankGif  </a><span>Path to a blank 1x1 image.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
+        <li class="objectIcon private"><a href="#1_9dojox_mobile_SwapView__endOfTransitionTimeoutHandle" class="inline-link">_endOfTransitionTimeoutHandle  </a><span>The handle (returned by _WidgetBase.defer) for the timeout set on touchEnd in case
+the end of transition event is not fired by the browser.  </span><span title="private" class="jsdoc-private"></span>
+        </li>
         <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_SwapView__fixedAppFooter" class="inline-link">_fixedAppFooter  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/_ScrollableMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="numberIcon private inherited"><a href="#1_9dojox_mobile_SwapView__parentPadBorderExtentsBottom" class="inline-link">_parentPadBorderExtentsBottom  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_SwapView__moved" class="inline-link">_moved  </a><span>Flag that signals if the user have moved in (one of) the scroll
+direction(s) since touch start (a move under the threshold is ignored).  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_mobile_SwapView__parentPadBorderExtentsBottom" class="inline-link">_parentPadBorderExtentsBottom  </a><span>For Tooltip.js.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
         <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_SwapView__setClassAttr" class="inline-link">_setClassAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -131,10 +137,10 @@ system.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inhe
         </li>
         <li class="stringIcon private"><a href="#1_9dojox_mobile_SwapView_scrollDir" class="inline-link">scrollDir  </a><span>Scroll direction, used by dojox/mobile/scrollable (always &quot;f&quot; for this class).  </span><span title="private" class="jsdoc-private"></span>
         </li>
-        <li class="numberIcon public inherited"><a href="#1_9dojox_mobile_SwapView_scrollType" class="inline-link">scrollType  </a><span>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim
+        <li class="numberIcon public inherited"><a href="#1_9dojox_mobile_SwapView_scrollType" class="inline-link">scrollType  </a><span>1: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)animation for slide animation
 2: use top/left style,
-3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim
-0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)  </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+3: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)transition for slide animation
+0: use default value (3 for Android, iOS6+, and BlackBerry; otherwise 1)  </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
         <li class="booleanIcon public inherited"><a href="#1_9dojox_mobile_SwapView_selected" class="inline-link">selected  </a><span>If true, the view is displayed at startup time.  </span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
@@ -177,8 +183,6 @@ the widget DOM, as specified by commands parameter.</span><span title="private" 
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__fixViewState" class="inline-link"> _fixViewState</a><span class="parameters">(</span>toNode) <span>Sanity check for view transition states.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__forceRendering" class="inline-link"> _forceRendering</a><span class="parameters">(</span>elt) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
 i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -196,6 +200,8 @@ i.e. for properties with custom setters.</span><span title="private" class="jsdo
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__isBookmarkable" class="inline-link"> _isBookmarkable</a><span class="parameters">(</span>detail) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__keepInputCaretInActiveElement" class="inline-link"> _keepInputCaretInActiveElement</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__removeTransitionPaddingTop" class="inline-link"> _removeTransitionPaddingTop</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__runSlideAnimation" class="inline-link"> _runSlideAnimation</a><span class="parameters">(</span>from, to, duration, easing, node, idx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
@@ -205,9 +211,13 @@ registered with watch() if the value has changed.</span><span title="private" cl
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_SwapView__setSiblingViewsInMotion" class="inline-link"> _setSiblingViewsInMotion</a><span class="parameters">(</span>inMotion) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_SwapView__siblingViewsInMotion" class="inline-link"> _siblingViewsInMotion</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_SwapView__toCls" class="inline-link"> _toCls</a><span class="parameters">(</span>s) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
@@ -421,7 +431,7 @@ focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_9dojox_mobile_SwapView_onFlickAnimationEnd" class="inline-link"> onFlickAnimationEnd</a><span class="parameters">(</span>e) <span>Overrides dojox/mobile/scrollable.onFlickAnimationEnd().</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_SwapView_onFlickAnimationEnd" class="inline-link"> onFlickAnimationEnd</a><span class="parameters">(</span>e) <span></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_SwapView_onFlickAnimationStart" class="inline-link"> onFlickAnimationStart</a><span class="parameters">(</span>e) <span></span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
@@ -431,7 +441,7 @@ been clicked.</span><span title="Must manually require () dijit/_FocusMixin to a
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_SwapView_onStartView" class="inline-link"> onStartView</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_SwapView_onTouchEnd" class="inline-link"> onTouchEnd</a><span class="parameters">(</span>e) <span>User-defined function to handle touchEnd events.</span><span title="inherited" class="jsdoc-inherited"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_SwapView_onTouchEnd" class="inline-link"> onTouchEnd</a><span class="parameters">(</span>e) <span></span>
         </li>
         <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_SwapView_onTouchMove" class="inline-link"> onTouchMove</a><span class="parameters">(</span>e) <span>User-defined function to handle touchMove events.</span><span title="inherited" class="jsdoc-inherited"></span>
         </li>
@@ -460,6 +470,15 @@ been clicked.</span><span title="Must manually require () dijit/_FocusMixin to a
 Used by <code>&lt;img&gt;</code> nodes in templates that really get their image via CSS background-image.</p>
 </div>
       </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__endOfTransitionTimeoutHandle"></a><span class="objectIcon">_endOfTransitionTimeoutHandle</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/SwapView" class="jsdoc-link">dojox/mobile/SwapView</a>
+        </div>
+        <div class="jsdoc-summary"><p>The handle (returned by _WidgetBase.defer) for the timeout set on touchEnd in case
+the end of transition event is not fired by the browser.</p>
+</div>
+      </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__fixedAppFooter"></a><span class="stringIcon">_fixedAppFooter</span><span title="private" class="jsdoc-private"> </span>
         </div>
@@ -467,10 +486,21 @@ Used by <code>&lt;img&gt;</code> nodes in templates that really get their image 
         </div>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__moved"></a><span class="booleanIcon">_moved</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that signals if the user have moved in (one of) the scroll
+direction(s) since touch start (a move under the threshold is ignored).</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__parentPadBorderExtentsBottom"></a><span class="numberIcon">_parentPadBorderExtentsBottom</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+        <div class="jsdoc-summary"><p>For Tooltip.js.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
@@ -811,10 +841,10 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document glo
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><ul>
-<li>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim</li>
+<li>1: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)animation for slide animation</li>
 <li>2: use top/left style,</li>
-<li>3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim</li>
-<li>0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)</li>
+<li>3: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)transition for slide animation</li>
+<li>0: use default value (3 for Android, iOS6+, and BlackBerry; otherwise 1)</li>
 </ul>
 </div>
       </div>
@@ -1109,26 +1139,6 @@ This function does the uninitialization for all the sibling views.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__forceRendering"></a><span class="functionIcon">_forceRendering</span><span class="parameters">(elt)</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">elt</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__get"></a><span class="functionIcon">_get</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -1264,6 +1274,13 @@ if -1, get the previous sibling</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__keepInputCaretInActiveElement"></a><span class="functionIcon">_keepInputCaretInActiveElement</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__removeTransitionPaddingTop"></a><span class="functionIcon">_removeTransitionPaddingTop</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -1368,6 +1385,26 @@ registered with watch() if the value has changed.</p>
           </tr>
         </table>
       </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__setSiblingViewsInMotion"></a><span class="functionIcon">_setSiblingViewsInMotion</span><span class="parameters">(inMotion)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/SwapView" class="jsdoc-link">dojox/mobile/SwapView</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inMotion</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
@@ -1393,6 +1430,14 @@ in attributeMap.</p>
             </td>
           </tr>
         </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__siblingViewsInMotion"></a><span class="functionIcon">_siblingViewsInMotion</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/SwapView" class="jsdoc-link">dojox/mobile/SwapView</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView__toCls"></a><span class="functionIcon">_toCls</span><span class="parameters">(s)</span> <span title="private" class="jsdoc-private"> </span>
@@ -3593,8 +3638,6 @@ hidden.</p>
         </div>
         <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/mobile/SwapView" class="jsdoc-link">dojox/mobile/SwapView</a>
         </div>
-        <div class="jsdoc-full-summary"><p>Overrides <a class="jsdoc-link" href="/api/1.9/dojox/mobile/scrollable#onFlickAnimationEnd">dojox/mobile/scrollable.onFlickAnimationEnd()</a>.</p>
-</div>
         <table class="jsdoc-parameters">
           <tr>
             <th>Parameter</th>
@@ -3648,13 +3691,11 @@ been clicked.</p>
         <div class="jsdoc-full-summary"><p>Called only when this view is shown at startup time.</p>
 </div>
       </div>
-      <div class="jsdoc-field inherited">
+      <div class="jsdoc-field">
         <div class="jsdoc-title"><a name="1_9dojox_mobile_SwapView_onTouchEnd"></a><span class="functionIcon">onTouchEnd</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by:<a href="/api/1.9/dojox/mobile/SwapView" class="jsdoc-link">dojox/mobile/SwapView</a>
         </div>
-        <div class="jsdoc-full-summary"><p>User-defined function to handle touchEnd events.</p>
-</div>
         <table class="jsdoc-parameters">
           <tr>
             <th>Parameter</th>

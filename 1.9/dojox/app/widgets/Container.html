@@ -57,7 +57,10 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
         </li>
         <li class="stringIcon private inherited"><a href="#1_9dojox_app_widgets_Container__blankGif" class="inline-link">_blankGif  </a><span>Path to a blank 1x1 image.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="numberIcon private inherited"><a href="#1_9dojox_app_widgets_Container__parentPadBorderExtentsBottom" class="inline-link">_parentPadBorderExtentsBottom  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_app_widgets_Container__moved" class="inline-link">_moved  </a><span>Flag that signals if the user have moved in (one of) the scroll
+direction(s) since touch start (a move under the threshold is ignored).  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+        </li>
+        <li class="numberIcon private inherited"><a href="#1_9dojox_app_widgets_Container__parentPadBorderExtentsBottom" class="inline-link">_parentPadBorderExtentsBottom  </a><span>For Tooltip.js.  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
         <li class="objectIcon private inherited"><a href="#1_9dojox_app_widgets_Container__setClassAttr" class="inline-link">_setClassAttr  </a><span>  </span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -128,10 +131,10 @@ system.  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inhe
         </li>
         <li class="stringIcon public inherited"><a href="#1_9dojox_app_widgets_Container_scrollDir" class="inline-link">scrollDir  </a><span>v: vertical, h: horizontal, vh: both, f: flip  </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
-        <li class="numberIcon public inherited"><a href="#1_9dojox_app_widgets_Container_scrollType" class="inline-link">scrollType  </a><span>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim
+        <li class="numberIcon public inherited"><a href="#1_9dojox_app_widgets_Container_scrollType" class="inline-link">scrollType  </a><span>1: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)animation for slide animation
 2: use top/left style,
-3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim
-0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)  </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
+3: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)transition for slide animation
+0: use default value (3 for Android, iOS6+, and BlackBerry; otherwise 1)  </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
         <li class="domnodeIcon public inherited"><a href="#1_9dojox_app_widgets_Container_srcNodeRef" class="inline-link">srcNodeRef  </a><span>pointer to original DOM node  </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -162,8 +165,6 @@ the widget DOM, as specified by commands parameter.</span><span title="private" 
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_app_widgets_Container__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_9dojox_app_widgets_Container__forceRendering" class="inline-link"> _forceRendering</a><span class="parameters">(</span>elt) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
-        </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_app_widgets_Container__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
 i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
@@ -178,6 +179,8 @@ i.e. for properties with custom setters.</span><span title="private" class="jsdo
 
 - list of attributes with custom setters, storing in this.constructor._setterAttrs
 - generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_app_widgets_Container__keepInputCaretInActiveElement" class="inline-link"> _keepInputCaretInActiveElement</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
         <li class="functionIcon private inherited"><a href="#1_9dojox_app_widgets_Container__runSlideAnimation" class="inline-link"> _runSlideAnimation</a><span class="parameters">(</span>from, to, duration, easing, node, idx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/mobile/scrollable" class="jsdoc-inherited"></span>
         </li>
@@ -401,10 +404,21 @@ Used by <code>&lt;img&gt;</code> nodes in templates that really get their image 
 </div>
       </div>
       <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__moved"></a><span class="booleanIcon">_moved</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that signals if the user have moved in (one of) the scroll
+direction(s) since touch start (a move under the threshold is ignored).</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__parentPadBorderExtentsBottom"></a><span class="numberIcon">_parentPadBorderExtentsBottom</span><span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
+        <div class="jsdoc-summary"><p>For Tooltip.js.</p>
+</div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
@@ -742,10 +756,10 @@ srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document glo
         <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><ul>
-<li>1: use -webkit-transform:translate3d(x,y,z) style, use -webkit-animation for slide anim</li>
+<li>1: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)animation for slide animation</li>
 <li>2: use top/left style,</li>
-<li>3: use -webkit-transform:translate3d(x,y,z) style, use -webkit-transition for slide anim</li>
-<li>0: use default value (2 in case of Android &lt; 3, 3 if iOS6, otherwise 1)</li>
+<li>3: use (-webkit-)transform:translate3d(x,y,z) style, use (-webkit-)transition for slide animation</li>
+<li>0: use default value (3 for Android, iOS6+, and BlackBerry; otherwise 1)</li>
 </ul>
 </div>
       </div>
@@ -918,26 +932,6 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__forceRendering"></a><span class="functionIcon">_forceRendering</span><span class="parameters">(elt)</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"></div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">elt</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__get"></a><span class="functionIcon">_get</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
         <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
@@ -1050,6 +1044,13 @@ if -1, get the previous sibling</p>
 <pre><code>- list of attributes with custom setters, storing in this.constructor._setterAttrs
 - generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</code></pre>
 </div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__keepInputCaretInActiveElement"></a><span class="functionIcon">_keepInputCaretInActiveElement</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.9/dojox/mobile/scrollable" class="jsdoc-link">dojox/mobile/scrollable</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field private inherited">
         <div class="jsdoc-title"><a name="1_9dojox_app_widgets_Container__runSlideAnimation"></a><span class="functionIcon">_runSlideAnimation</span><span class="parameters">(from, to, duration, easing, node, idx)</span> <span title="private" class="jsdoc-private"> </span>
