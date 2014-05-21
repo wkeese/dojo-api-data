@@ -1,0 +1,286 @@
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.10/dojox/grid/_Layout" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.10/dojox/grid/_Layout.html</div>
+<h1 class="constructorIcon36 jsdoc-title module-title">dojox/grid/_Layout<span style="font-size:11px;color:#999;"> (version 1.10)</span></h1>
+<div class="jsdoc-full-summary"><p>Controls grid cell layout. Owned by grid and used internally.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h2>Usage:</h2>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _Layout<span class="parameters">(inGrid);</span>
+  </div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.10/dojox/grid/_Layout">dojox/grid/_Layout</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">inGrid</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon public"><a href="#1_10dojox_grid__Layout_cells" class="inline-link">cells  </a><span>  </span>
+        </li>
+        <li class="stringIcon public"><a href="#1_10dojox_grid__Layout_defaultWidth" class="inline-link">defaultWidth  </a><span>  </span>
+        </li>
+        <li class="objectIcon public"><a href="#1_10dojox_grid__Layout_structure" class="inline-link">structure  </a><span>  </span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_addCellDef" class="inline-link"> addCellDef</a><span class="parameters">(</span>inRowIndex, inCellIndex, inDef) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_addRowDef" class="inline-link"> addRowDef</a><span class="parameters">(</span>inRowIndex, inDef) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_addRowsDef" class="inline-link"> addRowsDef</a><span class="parameters">(</span>inDef) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_addViewDef" class="inline-link"> addViewDef</a><span class="parameters">(</span>inDef) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_moveColumn" class="inline-link"> moveColumn</a><span class="parameters">(</span>sourceViewIndex, destViewIndex, cellIndex, targetIndex, before) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_setColumnVisibility" class="inline-link"> setColumnVisibility</a><span class="parameters">(</span>columnIndex, visible) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_10dojox_grid__Layout_setStructure" class="inline-link"> setStructure</a><span class="parameters">(</span>inStructure) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_cells"></a><span class="arrayIcon">cells</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_defaultWidth"></a><span class="stringIcon">defaultWidth</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_structure"></a><span class="objectIcon">structure</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_addCellDef"></a><span class="functionIcon">addCellDef</span><span class="parameters">(inRowIndex, inCellIndex, inDef)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inCellIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDef</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_addRowDef"></a><span class="functionIcon">addRowDef</span><span class="parameters">(inRowIndex, inDef)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDef</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_addRowsDef"></a><span class="functionIcon">addRowsDef</span><span class="parameters">(inDef)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDef</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_addViewDef"></a><span class="functionIcon">addViewDef</span><span class="parameters">(inDef)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDef</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_moveColumn"></a><span class="functionIcon">moveColumn</span><span class="parameters">(sourceViewIndex, destViewIndex, cellIndex, targetIndex, before)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">sourceViewIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">destViewIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cellIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">targetIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">before</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_setColumnVisibility"></a><span class="functionIcon">setColumnVisibility</span><span class="parameters">(columnIndex, visible)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">columnIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">visible</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_10dojox_grid__Layout_setStructure"></a><span class="functionIcon">setStructure</span><span class="parameters">(inStructure)</span> 
+        </div>
+        <div class="jsdoc-inheritance">Defined by <a href="/api/1.10/dojox/grid/_Layout" class="jsdoc-link">dojox/grid/_Layout</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inStructure</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.10/dojox/grid/_Layout" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
