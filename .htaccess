@@ -12,6 +12,7 @@ RewriteRule ^(dijit|dojo|dojox|util|doh)/(.+)$ 1.9/$1/$2
 # (for example) 1.9/dijit/Calendar, so it matches the Calendar.html file.
 RewriteCond %{HTTP_USER_AGENT} !(googlebot|adsbot-google|bingbot|msnbot|psbot|gigabot|twitterbot|linkedinbot|yahoo-mmcrawler|pingdom\.com_bot) [NC]
 RewriteCond %{HTTP:X-Requested-With} !=XMLHttpRequest
+#RewriteCond %{REQUEST_URI} !/tree.html/
 RewriteRule ^([0-9\.]+\/.*?)(.html|)$ ?qs=$1 [R,QSA]
 
 # To load tree.json files for legacy docs
